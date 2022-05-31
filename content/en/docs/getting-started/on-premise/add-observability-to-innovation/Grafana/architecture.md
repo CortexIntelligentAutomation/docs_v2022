@@ -31,4 +31,4 @@ The following architecture requires 1 + 1..n servers:
 
 [Gateway Guide]: {{< url "Cortex.Guides.Gateway.MainDoc" >}}
 [Studio Guide]: {{< url "Cortex.Guides.Studio.MainDoc" >}}
-[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.add-observability-to-innovation.Grafana.Prerequisites" >}}
+[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.addObservabilityToInnovation.Grafana.Prerequisites" >}}
