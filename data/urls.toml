@@ -33,6 +33,11 @@
                     Architecture = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/architecture"
                     Prerequisites = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites"
                     TryItOut = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/try-it-out"
+                    [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced]
+                        PortRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/port-requirements"
+                        CreateSelfSignedCertificates = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/self-signed-certificates"
+                    [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana]
+                        MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-grafana/"
     [Cortex.Guides]
         [Cortex.Guides.Studio]
             MainDoc = "/docs/guides/cortex-studio/"
@@ -644,10 +649,22 @@
     MainDoc = "https://www.elastic.co/"
 [Grafana]
     MainDoc = "https://grafana.com/"
+    [Grafana.SelfManaged.Downloads.GrafanaWebApp]
+        Windows = "https://grafana.com/grafana/download/8.5.4?pg=get&plcmt=selfmanaged-box1-cta1&platform=windows"
+    [Grafana.SelfManaged.Downloads.GrafanaLoki]
+        MainDoc = "https://github.com/grafana/loki/releases/tag/v2.5.0"
+    [Grafana.SelfManaged.Downloads.Promtail]
+        MainDoc = "https://github.com/grafana/loki/releases/tag/v2.5.0"
+[IIS]
+    UrlRewrite-2_1 = "https://www.iis.net/downloads/microsoft/url-rewrite"
 [JsonDotNet]
     JsonReaderException = "https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonReaderException.htm"
     JsonSerializationException = "https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializationException.htm"
     JsonSerializerSettings = "https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm"
+[Microsoft]
+    [Microsoft.Downloads.Windows]
+        Server2019 = "https://www.microsoft.com/en-US/evalcenter/evaluate-windows-server-2019?filetype=ISO"
+        Server2016 = "https://www.microsoft.com/en-US/evalcenter/evaluate-windows-server-2016?filetype=ISO"
 [MSDocs]
     [MSDocs.CSharp]
         MainDoc = "https://docs.microsoft.com/en-us/dotnet/csharp/"
