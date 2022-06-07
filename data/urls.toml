@@ -38,6 +38,7 @@
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced]
                         PortRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/port-requirements"
                         CreateSelfSignedCertificates = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/self-signed-certificates"
+                        SSLBestPractices = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/ssl-best-practices"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana]
                         MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-grafana/"
     [Cortex.Guides]
@@ -663,6 +664,8 @@
     JsonReaderException = "https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonReaderException.htm"
     JsonSerializationException = "https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializationException.htm"
     JsonSerializerSettings = "https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm"
+[LetsEncrypt]
+    MainDoc = "https://letsencrypt.org/"
 [Microsoft]
     [Microsoft.Downloads.Windows]
         Server2019 = "https://www.microsoft.com/en-US/evalcenter/evaluate-windows-server-2019?filetype=ISO"

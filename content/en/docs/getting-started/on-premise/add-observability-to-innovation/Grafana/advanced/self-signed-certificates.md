@@ -41,9 +41,9 @@ Self-signed certificates should be generated using OpenSSL which is bundled in t
     1. Copy the following text into a text editor:
 
         ```shell
-        RANDFILE		= .rnd
+        RANDFILE        = .rnd
         [ ca ]
-        default_ca	= CA_default	# The default ca section
+        default_ca      = CA_default    # The default ca section
         [ CA_default ]
         # Directory and file locations.
         # SHA-1 is deprecated, so use SHA-2 instead.
@@ -69,24 +69,24 @@ Self-signed certificates should be generated using OpenSSL which is bundled in t
         # Extension to add when the -x509 option is used.
         x509_extensions     = v3_ca
         [ req_distinguished_name ]
-        countryName				= Country Name (2 letter code)
-        countryName_min			= 2
-        countryName_max			= 2
-        stateOrProvinceName		= State or Province Name (full name)
-        localityName			= Locality Name (eg, city)
-        0.organizationName		= Organization Name (eg, company)
-        organizationalUnitName	= Organizational Unit Name (eg, section)
-        commonName			= Common Name (eg, your website's domain name)
-        commonName_max			= 64
-        emailAddress			= Email Address
-        emailAddress_max		= 40
+        countryName             = Country Name (2 letter code)
+        countryName_min         = 2
+        countryName_max         = 2
+        stateOrProvinceName     = State or Province Name (full name)
+        localityName            = Locality Name (eg, city)
+        0.organizationName      = Organization Name (eg, company)
+        organizationalUnitName  = Organizational Unit Name (eg, section)
+        commonName              = Common Name (eg, your website's domain name)
+        commonName_max          = 64
+        emailAddress            = Email Address
+        emailAddress_max        = 40
         # Optionally, specify some defaults.
         countryName_default             = GB
         stateOrProvinceName_default     = Hampshire
         localityName_default            = Southampton
         0.organizationName_default      = Cortex Ltd
-        organizationalUnitName_default	= Cortex 
-        emailAddress_default			= info@cortex.co.uk
+        organizationalUnitName_default  = Cortex 
+        emailAddress_default            = info@cortex.co.uk
         [ v3_ca ]
         # Extensions for a typical CA (`man x509v3_config`).
         subjectKeyIdentifier = hash
@@ -132,9 +132,9 @@ Self-signed certificates should be generated using OpenSSL which is bundled in t
     1. Copy the following text into a text editor:
 
         ```shell
-        RANDFILE		= .rnd
+        RANDFILE        = .rnd
         [ ca ]
-        default_ca	= CA_default	# The default ca section
+        default_ca      = CA_default    # The default ca section
         [ CA_default ]
         # SHA-1 is deprecated, so use SHA-2 instead.
         default_md        = sha256
@@ -160,24 +160,24 @@ Self-signed certificates should be generated using OpenSSL which is bundled in t
         x509_extensions     = v3_req
         req_extensions      = v3_req
         [ req_distinguished_name ]
-        countryName			= Country Name (2 letter code)
-        countryName_min			= 2
-        countryName_max			= 2
-        stateOrProvinceName		= State or Province Name (full name)
-        localityName			= Locality Name (eg, city)
-        0.organizationName		= Organization Name (eg, company)
-        organizationalUnitName	= Organizational Unit Name (eg, section)
-        commonName			= Common Name (eg, your website's domain name)
-        commonName_max			= 64
-        emailAddress			= Email Address
-        emailAddress_max		= 40
+        countryName             = Country Name (2 letter code)
+        countryName_min         = 2
+        countryName_max         = 2
+        stateOrProvinceName     = State or Province Name (full name)
+        localityName            = Locality Name (eg, city)
+        0.organizationName      = Organization Name (eg, company)
+        organizationalUnitName  = Organizational Unit Name (eg, section)
+        commonName              = Common Name (eg, your website's domain name)
+        commonName_max          = 64
+        emailAddress            = Email Address
+        emailAddress_max        = 40
         # Optionally, specify some defaults.
         countryName_default             = GB
         stateOrProvinceName_default     = Hampshire
         localityName_default            = Southampton
         0.organizationName_default      = Cortex Ltd
         organizationalUnitName_default  = Cortex 
-        emailAddress_default	       = info@cortex.co.uk
+        emailAddress_default            = info@cortex.co.uk
         [ v3_req ]
         basicConstraints = CA:FALSE
         keyUsage = nonRepudiation, digitalSignature, keyEncipherment

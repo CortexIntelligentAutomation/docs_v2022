@@ -1,7 +1,7 @@
 ---
 title: "SSL Best Practices"
 linkTitle: "SSL Best Practices"
-description: "Information about the recommended security settings for Innovation servers."
+description: "Information about the recommended security settings for Obervability Platform servers."
 ---
 
 # {{< param title >}}
@@ -80,4 +80,4 @@ A collection of registry settings can be applied during installation to guarante
 |                       | TLS_PSK_WITH_NULL_SHA384                | ✕            |
 |                       | TLS_PSK_WITH_NULL_SHA256                | ✕            |
 
-{{% alert type="warning" title="Warning" %}}Disabling specific TLS versions or specific Cipher Suites can have impact on Cortex components themselves as well as their communication capabilities with third party systems and services, e.g. Flow Debugger Service executing flows with blocks which communicate with 3rd parties via PowerShell or REST. All parties communicating together must support a shared protocol version and cipher suite, otherwise they will not be able to establish a secure communication link between each other.{{% /alert %}}
+{{% alert type="warning" title="Warning" %}}Disabling specific TLS versions or specific Cipher Suites can have impact on other applications as well as their communication capabilities with third party systems and services. All parties communicating together must support a shared protocol version and cipher suite, otherwise they will not be able to establish a secure communication link between each other.{{% /alert %}}
