@@ -32,7 +32,9 @@
                     MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/"       
                     Architecture = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/architecture"
                     Prerequisites = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites"
-                    TryItOut = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/try-it-out"
+                    SoftwareRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites#software-requirements"
+                    ConfigureGrafana = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites#software-requirements"
+                    TryItOut = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/configure-grafana"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced]
                         PortRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/port-requirements"
                         CreateSelfSignedCertificates = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/self-signed-certificates"
