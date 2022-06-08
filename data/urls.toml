@@ -33,14 +33,20 @@
                     Architecture = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/architecture"
                     Prerequisites = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites"
                     SoftwareRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites#software-requirements"
-                    ConfigureGrafana = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites#software-requirements"
-                    TryItOut = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/configure-grafana"
+                    ConfigureGrafana = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-grafana/configure-grafana"
+                    SetupGrafana = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/setup-grafana"
+                    TryItOut = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/try-it-out"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced]
                         PortRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/port-requirements"
                         CreateSelfSignedCertificates = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/self-signed-certificates"
                         SSLBestPractices = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/ssl-best-practices"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana]
                         MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-grafana/"
+                    [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki]
+                        MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/"
+                    [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail]
+                        MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-promtail/"
+
     [Cortex.Guides]
         [Cortex.Guides.Studio]
             MainDoc = "/docs/guides/cortex-studio/"
