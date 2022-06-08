@@ -1,6 +1,6 @@
 ---
 title: "Install Grafana"
 linkTitle: "Install Grafana"
-description: "To Do..."
+description: "Information about installing Grafana on the web Application Server."
 weight: 30
 ---

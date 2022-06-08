@@ -9,7 +9,7 @@ weight: 10
 
 This guide describes how to install Grafana on the Web Application Server. Please ensure that the [Prerequisites][] have been read before starting this installation.
 
-## Download Grafana
+## Install Grafana
 
 1. Download the grafana Windows installer specified in [Software Requirements][]
 1. Run the installer and install Grafana to a suitable location.
