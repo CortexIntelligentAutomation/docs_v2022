@@ -9,7 +9,7 @@ weight: 20
 
 This guide describes how to configure Grafana on the Web Application Server.
 
-## Initial Log-in and Password Setup
+## Log-in and Change the Password
 
 It is required that on the first log in into Grafana, a new password for the admin user is set up.
 The password should be different from the default one.
@@ -20,20 +20,20 @@ The password should be different from the default one.
 1. Click Log in.
 1. Set a new password for the admin user when prompted to do so.
 
-## HTTPS configuration
+## Configure HTTPS
 
 By default Grafana allows access over the unsecure HTTP protocol. This needs to be modified to allow access only over the secure HTTPS protocol.
 
 1. Run a text editor in administrator mode.
 1. In the text editor open the `custom.ini` Grafana configuration file, which is located in `C:\Program Files\GrafanaLabs\grafana\conf` folder, if Grafana was installed into the default install location.
-1. In the `server` section uncomment the `protocol` option and set it to HTTPS like in the example below:
+1. In the `server` section uncomment the `protocol` option and set it to HTTPS, e.g.:
 
     ```yaml
     # Protocol (http, https, h2, socket)
     protocol = https
     ```
 
-1. In the `server` section uncomment the `cert_file` and `cert_key` options and set them to the certificate `.pem` and `.key` file locations, like in the example below:
+1. In the `server` section uncomment the `cert_file` and `cert_key` options and set them to the certificate `.pem` and `.key` file locations, e.g.:
 
     ```yaml
     # https certs & key file
@@ -44,6 +44,8 @@ By default Grafana allows access over the unsecure HTTP protocol. This needs to 
 1. Open the Services app.
 1. Restart the Grafana service.
 
-[Configure Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.ConfigureGrafana" >}}
-[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
-[Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}
+## Next Steps?
+
+1. [Try it Out][]
+
+[Try it Out]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.TryItOut" >}}
