@@ -1,13 +1,13 @@
 ---
-title: "Configure Grafana"
-linkTitle: "Configure Grafana"
-description: "Information about Configuring Grafana on the Web Application Server."
+title: "Configure Promtail"
+linkTitle: "Configure Promtail"
+description: "Information about Configuring Promtail on the Application Server(s)."
 weight: 20
 ---
 
 # {{< param title >}}
 
-This guide describes how to configure Grafana on the Web Application Server.
+This guide describes how to configure Promtail on the Application Server(s).
 
 ## Log-in and Change the Password
 
@@ -33,7 +33,7 @@ By default Grafana allows access over the unsecure HTTP protocol. This needs to 
     protocol = https
     ```
 
-1. In the `server` section uncomment the `cert_file` and `cert_key` options and set them to the certificate `.pem` and `.key` filenames and path saved to during the [Certificate Requirements][] step e.g.:
+1. In the `server` section uncomment the `cert_file` and `cert_key` options and set them to the certificate `.pem` and `.key` file locations, e.g.:
 
     ```yaml
     # https certs & key file
@@ -46,7 +46,6 @@ By default Grafana allows access over the unsecure HTTP protocol. This needs to 
 
 ## Next Steps?
 
-1. [Install Loki][]
+1. [Setup Grafana][]
 
-[Install Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
-[Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.CertificateRequirements" >}}
+[Setup Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SetupGrafana" >}}
