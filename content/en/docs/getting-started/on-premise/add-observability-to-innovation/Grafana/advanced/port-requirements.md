@@ -1,10 +1,10 @@
 ---
-title: "Port Requirements for Web Application Server"
+name: "Port Requirements for Web Application Server"
 linkTitle: "Port Requirements for Web Application Server"
 description: "Information about the ports opened when installing observability platform"
 ---
 
-# {{< param title >}}
+# {{< param name >}}
 
 All the required ports for the Web Application Server that forms part of the observability platform must be opened on Windows Firewall. These ports may be altered if there are any conflicts with other application requirements.
 

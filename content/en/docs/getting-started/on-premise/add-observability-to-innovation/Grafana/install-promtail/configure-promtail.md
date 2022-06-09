@@ -1,11 +1,11 @@
 ---
-title: "Configure Promtail"
+name: "Configure Promtail"
 linkTitle: "Configure Promtail"
 description: "Information about Configuring Promtail on the Application Server(s)."
 weight: 20
 ---
 
-# {{< param title >}}
+# {{< param name >}}
 
 This guide describes how to configure Promtail on the Application Server(s).
 

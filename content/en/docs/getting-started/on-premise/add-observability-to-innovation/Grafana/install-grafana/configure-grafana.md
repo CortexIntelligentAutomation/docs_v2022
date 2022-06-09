@@ -1,11 +1,11 @@
 ---
-title: "Configure Grafana"
+name: "Configure Grafana"
 linkTitle: "Configure Grafana"
 description: "Information about Configuring Grafana on the Web Application Server."
 weight: 20
 ---
 
-# {{< param title >}}
+# {{< param name >}}
 
 This guide describes how to configure Grafana on the Web Application Server.
 

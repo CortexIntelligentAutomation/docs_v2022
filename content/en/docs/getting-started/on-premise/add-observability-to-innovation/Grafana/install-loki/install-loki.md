@@ -1,11 +1,11 @@
 ---
-title: "Install Loki"
+name: "Install Loki"
 linkTitle: "Install Loki"
 description: "Information about installing Grafana Loki on the Web Application Server."
 weight: 10
 ---
 
-# {{< param title >}}
+# {{< param name >}}
 
 This guide describes how to install Grafana Loki on the Web Application Server. Please ensure that the [Prerequisites][] have been read before starting this installation.
 

@@ -1,10 +1,10 @@
 ---
-title: "Prerequisites"
+name: "Prerequisites"
 linkTitle: "Prerequisites"
 description: "Information about the prerequisites required on each server type for installation."
 weight: 20
 ---
-# {{< param title >}}
+# {{< param name >}}
 
 The prerequisites required for each server role (as described in [Architecture][]) are laid out in this guide. These must be considered before undertaking installation.
 
