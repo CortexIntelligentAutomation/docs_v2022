@@ -1,11 +1,11 @@
 ---
-name: "Setup Grafana"
+title: "Setup Grafana"
 linkTitle: "Setup Grafana"
 description: "To Do..."
 weight: 60
 ---
 
-# {{< param name >}}
+# {{< param title >}}
 
 This guide describes where to get the default Cortex Dashboards from and how to import them for use in Grafana. This guide also describes how to export the dashboard for use elsewhere or to save as a backup.
 

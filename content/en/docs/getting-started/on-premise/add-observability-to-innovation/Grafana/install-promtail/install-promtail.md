@@ -1,11 +1,11 @@
 ---
-name: "Install Promtail"
+title: "Install Promtail"
 linkTitle: "Install Promtail"
 description: "Information about installing Promtail on the Application Server(s)."
 weight: 10
 ---
 
-# {{< param name >}}
+# {{< param title >}}
 
 This guide describes how to install Promtail on the Application Server(s). Please ensure that the [Prerequisites][] have been read before starting this installation.
 

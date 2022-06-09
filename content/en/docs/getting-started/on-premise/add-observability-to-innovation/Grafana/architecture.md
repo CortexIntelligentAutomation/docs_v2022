@@ -1,11 +1,11 @@
 ---
-name: "Architecture"
+title: "Architecture"
 linkTitle: "Architecture"
 description: "Information about the recommended architecture for a Grafana platform installation."
 weight: 10
 ---
 
-# {{< param name >}}
+# {{< param title >}}
 
 ## Components
 
