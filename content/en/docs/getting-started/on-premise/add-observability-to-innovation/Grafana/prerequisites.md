@@ -22,7 +22,7 @@ The application servers (as described in {{< ahref "Cortex.GettingStarted.OnPrem
 
 | Server&nbsp;Role | Windows&nbsp;Server[^1] | IIS[^2] | Other&nbsp;Software |
 |------------------|-------------------------|---------|----------|
-| Web Application Server | [2019 (x64)][] *Recommended*<br>[2016 (x64)][] | 10.0.17763[^3]<br>10.0.14393[^4]<br>IIS Basic Authentication[^5]<br>[URL Rewrite Module 2.1][] | [Grafana 8.5.4][] (Enterprise Edition)<br>[Grafana Loki 2.5.0][] (loki-windows-amd64.exe.zip)|
+| Web Application Server | [2019 (x64)][] *Recommended*<br>[2016 (x64)][] | 10.0.17763[^3]<br>10.0.14393[^4]<br>IIS Basic Authentication[^5]<br>[URL Rewrite module 2.1][] | [Grafana 8.5.4][] (Enterprise Edition)<br>[Grafana Loki 2.5.0][] (loki-windows-amd64.exe.zip)|
 | Application Server | [2019 (x64)][] *Recommended*<br>[2016 (x64)][] | | [Promtail 2.5.0][] (promtail-windows-amd64.exe.zip) |
 
 [^1]: Windows Server Standard and Datacenter editions are supported. Filesystem **must be NTFS** and networking **must use IPv4**. Linux is not supported, but may be in the future.
@@ -103,11 +103,11 @@ Always enable JavaScript in your browser. Running Grafana without JavaScript ena
 [2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
 [Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Architecture" >}}
 [Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.CreateSelfSignedCertificates" >}}
+[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}
+[2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
+[2016 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2016" >}}
+[URL Rewrite module 2.1]: {{< url "IIS.UrlRewrite-2_1" >}}
 [Grafana 8.5.4]: {{< url "Grafana.SelfManaged.Downloads.GrafanaWebApp.Windows" >}}
 [Grafana Loki 2.5.0]: {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
-[Install Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
-[Let’s Encrypt]: {{< url "LetsEncrypt.MainDoc" >}}
-[Port Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.PortRequirements" >}}
 [Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
-[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}
-[URL Rewrite Module 2.1]: {{< url "IIS.UrlRewrite-2_1" >}}
+[Let’s Encrypt]: {{< url "LetsEncrypt.MainDoc" >}}

@@ -9,40 +9,42 @@ weight: 20
 
 This guide describes how to configure Grafana Loki on the Web Application Server.
 
-## Log-in and Change the Password
+{{% alert type="note" title="Note" %}}For security reasons Grafana Loki should be run behind an encrypted and authenticated reverse proxy as it does not provide theses features by itself.{{% /alert %}}
 
-It is required that on the first log in into Grafana, a new password for the admin user is set up.
-The password should be different from the default one.
+## Setup Reverse Proxy with IIS
 
-1. On the Web Application Server open a web browser.
-1. Browse to `http://localhost:3000/`.
-1. On the login page, enter `admin` for the username and password.
-1. Click Log in.
-1. Set a new password for the admin user when prompted to do so.
+All of the steps must be carried out on the Web Application Server.
 
-## Configure HTTPS
+### Install IIS Basic Authentication
 
-By default Grafana allows access over the unsecure HTTP protocol. This needs to be modified to allow access only over the secure HTTPS protocol.
+1. Run *Server Manager*.
+1. Expand the *Manage* menu and select *Add Roles and Features*.
+1. In the left-hand menu select *Server Selection*.
+1. Select the name of the Web Application Server, click *Next*.
+1. On the *Server Roles* page, in the *Roles* tree expand *Web Server (IIS)* --> *Web Server* --> *Security*.
+1. Select *Basic Authentication*, click *Next*.
+1. Click *Next* to get to the *Confirm installation selections* page.
+1. Click *Install*.
+1. Click *Close* on the *Results* page.
+
+### Install IIS URL Rewrite Module
+
+1. Download the URL Rewrite module specified in [Software Requirements][]
+1. 
+
+### Set Up Reverse Proxy
+
+To set up a reverse proxy carry out the following configuration.
+
+### Configure HTTPS
+
+To encrypt communication between clients and the reverse proxy carry out the following configuration.
 
 1. Run a text editor in administrator mode.
-1. In the text editor open the `custom.ini` Grafana configuration file, which is located in `C:\Program Files\GrafanaLabs\grafana\conf` folder, if Grafana was installed into the default install location.
-1. In the `server` section uncomment the `protocol` option and set it to HTTPS, e.g.:
 
-    ```yaml
-    # Protocol (http, https, h2, socket)
-    protocol = https
-    ```
+### Configure Authentication
 
-1. In the `server` section uncomment the `cert_file` and `cert_key` options and set them to the certificate `.pem` and `.key` file locations, e.g.:
-
-    ```yaml
-    # https certs & key file
-    cert_file = C:\certificates\certificate.pem
-    cert_key = C:\certificates\certificate.key
-    ```
-
-1. Open the Services app.
-1. Restart the Grafana service.
+To provide authentication for the reverse proxy carry out the following configuration.
 
 ## Next Steps?
 

@@ -818,6 +818,8 @@
 [MSGitHub]
     [MSGitHub.MonacoEditor]
         MainDoc = "https://microsoft.github.io/monaco-editor/"
+[NSSM]
+    MainDoc = "https://nssm.cc/"
 [Splunk]
     MainDoc = "https://www.splunk.com/"
 [VisualStudio]
