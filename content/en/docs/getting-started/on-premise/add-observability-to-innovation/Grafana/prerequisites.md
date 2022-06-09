@@ -99,15 +99,15 @@ Always enable JavaScript in your browser. Running Grafana without JavaScript ena
 
 1. [Install Grafana][]
 
-[Port Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.PortRequirements" >}}
-[Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Architecture" >}}
-[Install Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
-[Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.CreateSelfSignedCertificates" >}}
-[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}
-[2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
 [2016 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2016" >}}
-[URL Rewrite Module 2.1]: {{< url "IIS.UrlRewrite-2_1" >}}
+[2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
+[Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Architecture" >}}
+[Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.CreateSelfSignedCertificates" >}}
 [Grafana 8.5.4]: {{< url "Grafana.SelfManaged.Downloads.GrafanaWebApp.Windows" >}}
 [Grafana Loki 2.5.0]: {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
-[Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
+[Install Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
 [Let’s Encrypt]: {{< url "LetsEncrypt.MainDoc" >}}
+[Port Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.PortRequirements" >}}
+[Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
+[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}
+[URL Rewrite Module 2.1]: {{< url "IIS.UrlRewrite-2_1" >}}

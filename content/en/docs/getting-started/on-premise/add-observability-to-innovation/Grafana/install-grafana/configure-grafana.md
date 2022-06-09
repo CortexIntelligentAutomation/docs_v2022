@@ -48,5 +48,5 @@ By default Grafana allows access over the unsecure HTTP protocol. This needs to 
 
 1. [Install Loki][]
 
-[Install Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
 [Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.CertificateRequirements" >}}
+[Install Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
