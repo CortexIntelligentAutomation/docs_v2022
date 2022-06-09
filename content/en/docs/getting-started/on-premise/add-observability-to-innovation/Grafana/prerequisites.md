@@ -103,11 +103,9 @@ Always enable JavaScript in your browser. Running Grafana without JavaScript ena
 [2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
 [Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Architecture" >}}
 [Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.CreateSelfSignedCertificates" >}}
-[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}
-[2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
-[2016 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2016" >}}
-[URL Rewrite module 2.1]: {{< url "IIS.UrlRewrite-2_1" >}}
 [Grafana 8.5.4]: {{< url "Grafana.SelfManaged.Downloads.GrafanaWebApp.Windows" >}}
 [Grafana Loki 2.5.0]: {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
-[Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
 [Let’s Encrypt]: {{< url "LetsEncrypt.MainDoc" >}}
+[Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
+[URL Rewrite module 2.1]: {{< url "IIS.UrlRewrite-2_1" >}}
+[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}

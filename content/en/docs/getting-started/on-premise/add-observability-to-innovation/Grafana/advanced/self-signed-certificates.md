@@ -111,14 +111,17 @@ Self-signed certificates should be generated using OpenSSL which is bundled in t
     ```
 
 1. Enter a memorable string as the Export Password when asked, this will be needed when adding the certificate to certmgr.
-1. Double click on the `cortexCA.pfx` file in the certificates folder to import the certificate into the Windows Certificate Store. Perform the following steps:
-    1. Select `Local Machine` then click `Next`.
-    1. Click `Next`.
-    1. Enter the Export Password which the certificate was generated with then click `Next`.
-    1. Select `Place all certificates in the following store`.
-    1. Click `Browse…`.
-    1. Select `Trusted Root Certification Authorities`, click `OK` then click `Next`.
-    1. Click `Finish`.
+
+## Import the Root CA Certificate
+
+1. Double click on the `cortexCA.pfx` file in the certificates folder to import the certificate into the Windows Certificate Store.
+1. Select `Local Machine` then click `Next`.
+1. Click `Next`.
+1. Enter the Export Password which the certificate was generated with then click `Next`.
+1. Select `Place all certificates in the following store`.
+1. Click `Browse…`.
+1. Select `Trusted Root Certification Authorities`, click `OK` then click `Next`.
+1. Click `Finish`.
 
 ## Generate the Certificate
 
@@ -224,11 +227,11 @@ Self-signed certificates should be generated using OpenSSL which is bundled in t
 
 ## Import the Certificate
 
-1. Double click on the `cortex.pfx` file in the certificates folder to get the certificate imported to the Windows Certificate Store. Perform the following steps:
-    1. Select `Local Machine` then click `Next`.
-    1. Click `Next`.
-    1. Enter the Export Password which the certificate was generated with then click `Next`.
-    1. Select `Place all certificates in the following store`.
-    1. Click `Browse…`.
-    1. Select `Personal`, click `OK` then click `Next`.
-    1. Click `Finish`.
+1. Double click on the `cortex.pfx` file in the certificates folder to get the certificate imported to the Windows Certificate Store.
+1. Select `Local Machine` then click `Next`.
+1. Click `Next`.
+1. Enter the Export Password which the certificate was generated with then click `Next`.
+1. Select `Place all certificates in the following store`.
+1. Click `Browse…`.
+1. Select `Personal`, click `OK` then click `Next`.
+1. Click `Finish`.
