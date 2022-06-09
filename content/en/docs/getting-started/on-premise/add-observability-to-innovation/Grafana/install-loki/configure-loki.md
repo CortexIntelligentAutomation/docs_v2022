@@ -30,24 +30,65 @@ All of the steps must be carried out on the Web Application Server.
 ### Install IIS URL Rewrite Module
 
 1. Download the URL Rewrite module specified in [Software Requirements][]
-1. 
+1. Run the downloaded installer.
+1. When promted by the Web Platform Installer, click *Install*.
+1. On the *Prerequisites* page click *I Accept* to agree to the license terms for the module.
+1. Once the install has completed, click *Finish*.
+1. Click *Exit* to close the Web Platform Installer.
 
 ### Set Up Reverse Proxy
 
 To set up a reverse proxy carry out the following configuration.
 
-### Configure HTTPS
+#### Add a New Website
 
-To encrypt communication between clients and the reverse proxy carry out the following configuration.
+1. Run IIS Manager.
+1. In the *Connection* pane expand the server.
+1. Right-clik on *Sites* and select *Add Website...* from the menu.
+1. In the *Add Website* window:
+    - Provide the site name, e.g. `Grafana Loki`.
+    - Set the *Physical path* to location where the site will be stored and ensure that the path exists, e.g. `C:\inetpub\wwwroot\Grafana Loki`.
+    - For *Binding* set:
+        - *Type*: `https`
+        - *IP address*: `All unasigned`
+        - *Port*: `2100`
+    - *Host name*: The fully qualified machine name of the Web Application Server. This must match what has been set for the SSL certificates.
+    - *SSL certificate*: Select the certificate created as part of the [Certificate Requirements][] instructions.
+    - Click *OK* to add the website.
 
-1. Run a text editor in administrator mode.
+#### Enable Basic Authentication
 
-### Configure Authentication
+1. In the *Connection* pane browse to *Sites*.
+1. Select the newly created website.
+1. Double-click on the *Authentication* icon.
+1. Disable *Anonymous Authentication*.
+1. Enable *Basic Authentication*.
 
-To provide authentication for the reverse proxy carry out the following configuration.
+#### Restart the Website
+
+1. In the *Connection* pane browse to *Sites*.
+1. Select the newly created website.
+1. In the *Manage Website* pane click "Restart"
+
+#### Create Loki User
+
+1. Run Windows PowerShell as Administrator.
+1. Execute the following command to create a new user in the system:
+
+    ```Powershell
+    New-LocalUser "Login" -Password (ConvertTo-SecureString "Password" -AsPlainText -force) -FullName "Name" -Description "Description" –PasswordNeverExpires
+    ```
+
+    Where:
+    - *Login*: The username of the user to be added to the system.
+    - *Password*: The password for the user account.
+    - *Name*: The full nema for the user account.
+    - *Description*: The description of the user account.
 
 ## Next Steps?
 
 1. [Install Promtail][]
 
+[Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.CertificateRequirements" >}}
 [Install Promtail]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail.MainDoc" >}}
+[Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}

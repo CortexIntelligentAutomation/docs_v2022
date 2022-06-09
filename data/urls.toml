@@ -45,8 +45,9 @@
                         ConfigureGrafana = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-grafana/configure-grafana"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki]
                         MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/"
-                         ConfigureLoki = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki"
-                   [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail]
+                        ConfigureLoki = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki"
+                        InstallIISBasicAuthentication = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki#install-iisbasic-authentication"
+                    [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail]
                         MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-promtail/"
                         ConfigurePromtail = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-promtail/configure-promtail"
 

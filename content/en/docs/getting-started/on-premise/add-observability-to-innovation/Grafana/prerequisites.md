@@ -29,7 +29,7 @@ The application servers (as described in {{< ahref "Cortex.GettingStarted.OnPrem
 [^2]: IIS is supported; other web servers, including IIS Express are not supported.
 [^3]: Ships as a windows role within Windows Server 2019.
 [^4]: Ships as a windows role within Windows Server 2016.
-[^5]: Installed as a server role through Add Roles and Features Wizard. To Do... Add link to install instructions for this step.
+[^5]: Installed during the [Install IIS Basic Authentication][] configuration steps.
 
 ### Security Requirements
 
@@ -102,10 +102,12 @@ Always enable JavaScript in your browser. Running Grafana without JavaScript ena
 [2016 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2016" >}}
 [2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
 [Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Architecture" >}}
+[Install Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
+[Install IIS Basic Authentication]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.InstallIISBasicAuthentication" >}}]
 [Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.CreateSelfSignedCertificates" >}}
 [Grafana 8.5.4]: {{< url "Grafana.SelfManaged.Downloads.GrafanaWebApp.Windows" >}}
 [Grafana Loki 2.5.0]: {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
 [Let’s Encrypt]: {{< url "LetsEncrypt.MainDoc" >}}
 [Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
-[URL Rewrite module 2.1]: {{< url "IIS.UrlRewrite-2_1" >}}
 [SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}
+[URL Rewrite module 2.1]: {{< url "IIS.UrlRewrite-2_1" >}}

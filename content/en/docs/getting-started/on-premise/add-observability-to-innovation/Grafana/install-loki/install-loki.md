@@ -28,6 +28,6 @@ This archive contains [NSSM][] - the Non-Sucking Service Manager program and Pow
 [Configure Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.ConfigureLoki" >}}
 [Grafana Loki Install.zip]: "\TODO"
 [loki-local-config.yaml]: "\TODO"
-[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
 [NSSM]: {{< url "NSSM.MainDoc" >}}
+[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
 [Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}
