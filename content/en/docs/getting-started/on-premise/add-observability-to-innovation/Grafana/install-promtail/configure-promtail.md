@@ -7,45 +7,38 @@ weight: 20
 
 # {{< param title >}}
 
-This guide describes how to configure Promtail on the Application Server(s).
+This guide describes how to configure Promtail.
 
-## Log-in and Change the Password
+{{% alert type="note" title="Note" %}}These steps must be performed for every Promtail installation in the cluster.{{% /alert %}}
 
-It is required that on the first log in into Grafana, a new password for the admin user is set up.
-The password should be different from the default one.
+## Configure Promtail
 
-1. On the Web Application Server open a web browser.
-1. Browse to `http://localhost:3000/`.
-1. On the login page, enter `admin` for the username and password.
-1. Click Log in.
-1. Set a new password for the admin user when prompted to do so.
+1. Open the `promtail-local-config.yaml` configuration file which is located in the folder alongside the Promtail executable.
+1. Set the Grafana Loki `url` in the `clients` section. The following template has been provided for convinience: 
+`https://{username}:{password}@{Loki Host}:{Loki Reverse Proxy Port}/loki/api/v1/push`
+| Element | Description |
+|------|-------------|
+| username | The username of the user created during [Create Loki User][] steps |
+| password | The password which was set for the user  during [Create Loki User][] steps |
+| Loki Host | The host address of the machine where reverse proxy was configured during [Add a New Website][] steps |
+| Loki Reverse Proxy Port | The port of the Grafana Loki reverse proxy configured during [Add a New Website][] steps. Usually 2100. |
 
-## Configure HTTPS
+   A corect url should be similar to `https://username:password@hostname:2100/loki/api/v1/push`.
 
-By default Grafana allows access over the unsecure HTTP protocol. This needs to be modified to allow access only over the secure HTTPS protocol.
+## Start Promtail
 
-1. Run a text editor in administrator mode.
-1. In the text editor open the `custom.ini` Grafana configuration file, which is located in `C:\Program Files\GrafanaLabs\grafana\conf` folder, if Grafana was installed into the default install location.
-1. In the `server` section uncomment the `protocol` option and set it to HTTPS, e.g.:
-
-    ```yaml
-    # Protocol (http, https, h2, socket)
-    protocol = https
-    ```
-
-1. In the `server` section uncomment the `cert_file` and `cert_key` options and set them to the certificate `.pem` and `.key` file locations, e.g.:
-
-    ```yaml
-    # https certs & key file
-    cert_file = C:\certificates\certificate.pem
-    cert_key = C:\certificates\certificate.key
-    ```
-
-1. Open the Services app.
-1. Restart the Grafana service.
+1. Run Windows PowerShell as Administrator
+1. Change the location to where the Promtail executable is located.
+1. Execute the `.\Start-Promtail.ps1` command to start the Grafana Loki service.
 
 ## Next Steps?
 
-1. [Setup Grafana][]
+1. [Configure Promtail][]
 
-[Setup Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SetupGrafana" >}}
+[Add a New Website]: {Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.AddANewWebsite}
+[Create Loki User]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.CreateLokiUser" >}}
+[Configure Promtail]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail.ConfigurePromtail" >}}
+[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
+[Promtail Install.zip]: "TODO"
+[promtail-local-config.yaml]: "TODO"
+[Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}

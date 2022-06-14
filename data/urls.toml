@@ -45,6 +45,8 @@
                         ConfigureGrafana = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-grafana/configure-grafana"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki]
                         MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/"
+                        AddANewWebsite = "http://localhost:1313/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#add-a-new-website"
+                        CreateLokiUser = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#create-loki-user"
                         ConfigureLoki = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki"
                         InstallIISBasicAuthentication = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki#install-iisbasic-authentication"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail]
