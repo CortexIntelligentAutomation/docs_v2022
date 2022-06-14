@@ -44,6 +44,18 @@ By default Grafana allows access over the unsecure HTTP protocol. This needs to 
 1. Open the Services app.
 1. Restart the Grafana service.
 
+## Verify That HTTPS Works
+
+It is important to verify that Grafana is only accessible though HTTPS and not HTTP connection.
+
+1. On the Web Application Server open a web browser.
+1. Browse to `http://localhost:3000/`.
+1. Browser should not be able to make a connection to Grafana and a default error page should be displayed.
+1. Browse to `https://localhost:3000/`.
+1. On the login page, enter `admin` and the corresponding password.
+1. Click Log in.
+1. You should have successfully logged into Grafana.
+
 ## Next Steps?
 
 1. [Install Loki][]

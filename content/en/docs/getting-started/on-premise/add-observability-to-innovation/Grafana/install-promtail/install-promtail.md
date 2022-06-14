@@ -7,7 +7,7 @@ weight: 10
 
 # {{< param title >}}
 
-This guide describes how to install Promtail on the Application Server(s). Please ensure that the [Prerequisites][] have been read before starting this installation.
+This guide describes how to install Promtail on the Application Server(s). Please ensure that the [Prerequisites][] have been completed before starting this installation.
 
 ## Install Promtail
 

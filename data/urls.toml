@@ -662,6 +662,9 @@
     MainDoc = "https://www.connectionstrings.com/"
 [ElasticSearch]
     MainDoc = "https://www.elastic.co/"
+[GitHub]
+    [GitHub.Cortex.Observability]
+        Dashboards = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/Grafana/Dashboards/"
 [Grafana]
     MainDoc = "https://grafana.com/"
     [Grafana.SelfManaged.Downloads.GrafanaWebApp]

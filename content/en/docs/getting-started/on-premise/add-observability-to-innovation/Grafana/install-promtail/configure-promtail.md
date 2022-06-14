@@ -33,11 +33,11 @@ This guide describes how to configure Promtail.
 
 ## Next Steps?
 
-1. [Configure Promtail][]
+1. [Setup Grafana][]
 
 [Add a New Website]: {Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.AddANewWebsite}
 [Create Loki User]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.CreateLokiUser" >}}
-[Configure Promtail]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail.ConfigurePromtail" >}}
+[Setup Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SetupGrafana" >}}
 [Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
 [Promtail Install.zip]: "TODO"
 [promtail-local-config.yaml]: "TODO"
