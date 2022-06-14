@@ -1,7 +1,7 @@
 ---
 title: "Configure Grafana"
 linkTitle: "Configure Grafana"
-description: "Information about Configuring Grafana on the Web Application Server."
+description: "Information about configuring Grafana on the Web Application Server."
 weight: 20
 ---
 
@@ -60,5 +60,4 @@ It is important to verify that Grafana is only accessible though HTTPS and not H
 
 1. [Install Loki][]
 
-[Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.CertificateRequirements" >}}
 [Install Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}

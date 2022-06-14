@@ -1,7 +1,7 @@
 ---
 title: "SSL Best Practices"
 linkTitle: "SSL Best Practices"
-description: "Information about the recommended security settings for Obervability Platform servers."
+description: "Information about the recommended security settings for the observability platform servers."
 ---
 
 # {{< param title >}}

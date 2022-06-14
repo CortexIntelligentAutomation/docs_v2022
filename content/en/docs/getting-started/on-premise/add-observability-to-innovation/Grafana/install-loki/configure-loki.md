@@ -1,7 +1,7 @@
 ---
 title: "Configure Loki"
 linkTitle: "Configure Loki"
-description: "Information about Configuring Grafana Loki on the Web Application Server."
+description: "Information about configuring Grafana Loki on the Web Application Server."
 weight: 20
 ---
 

@@ -13,8 +13,11 @@ This guide describes how to install Promtail on the Application Server(s). Pleas
 
 1. Download the Promtail archive specified in [Software Requirements][]
 1. Extract the archive content to a suitable location.
-1. Download the [promtail-local-config.yaml][] configuration file from Github observability repository and save it alongside the previously extracted Promtail executable.
-1. Download the [Promtail Install.zip][] archive from ther Github observability repository and extract its content alongside the previously extracted Promtail executable.
+1. Navigate to the observability repository in [GitHub][Download Promtail Yaml].
+1. Click on the `promtail-local-config.yaml` file.
+1. Copy the contents and save locally as `promtail-local-config.yaml` in the same location as the previously extracted Promtail executable.
+1. Using the browser back button, go back up a level to the file list.
+1. Download the [Promtail Install.zip][] archive and extract its content alongside the previously extracted Promtail executable.
 This archive contains [NSSM][] - the Non-Sucking Service Manager program and PowerShell scripts to help manage Grafana Loki as a service.
 1. Run Windows PowerShell as Administrator
 1. Change the location to where all the files were extracted to.
@@ -25,7 +28,8 @@ This archive contains [NSSM][] - the Non-Sucking Service Manager program and Pow
 1. [Configure Promtail][]
 
 [Configure Promtail]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail.ConfigurePromtail" >}}
+[Download Promtail Yaml]: {{< url "GitHub.Cortex.Observability.PromtailYaml" >}}
+[NSSM]: {{< url "NSSM.MainDoc" >}}
 [Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
-[Promtail Install.zip]: "TODO"
-[promtail-local-config.yaml]: "TODO"
+[Promtail Install.zip]: {{< url "GitHub.Cortex.Observability.PromtailInstallZip" >}}
 [Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}

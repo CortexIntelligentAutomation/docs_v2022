@@ -1,7 +1,7 @@
 ---
 title: "Configure Promtail"
 linkTitle: "Configure Promtail"
-description: "Information about Configuring Promtail on the Application Server(s)."
+description: "Information about configuring Promtail on the Application Server(s)."
 weight: 20
 ---
 
@@ -14,7 +14,7 @@ This guide describes how to configure Promtail.
 ## Configure Promtail
 
 1. Open the `promtail-local-config.yaml` configuration file which is located in the folder alongside the Promtail executable.
-1. Set the Grafana Loki `url` in the `clients` section. The following template has been provided for convinience: 
+1. Set the Grafana Loki `url` in the `clients` section. The following template has been provided for convinience:
 `https://{username}:{password}@{Loki Host}:{Loki Reverse Proxy Port}/loki/api/v1/push`
 | Element | Description |
 |------|-------------|
@@ -38,7 +38,3 @@ This guide describes how to configure Promtail.
 [Add a New Website]: {Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.AddANewWebsite}
 [Create Loki User]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.CreateLokiUser" >}}
 [Setup Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SetupGrafana" >}}
-[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
-[Promtail Install.zip]: "TODO"
-[promtail-local-config.yaml]: "TODO"
-[Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}

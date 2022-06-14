@@ -1,7 +1,7 @@
 ---
 title: "Setup Grafana"
 linkTitle: "Setup Grafana"
-description: "To Do..."
+description: "Information about setting up Grafana to communicate with the installed Grafana Loki as well as importing and configuring the default set of dashboards."
 weight: 60
 ---
 

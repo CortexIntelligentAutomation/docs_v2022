@@ -4,7 +4,3 @@ linkTitle: "Add Observability to Innovation"
 description: "Information about installing an observability platform for Innovation."
 weight: 200
 ---
-
-{{% pageinfo %}}
-To Do...
-{{% /pageinfo %}}

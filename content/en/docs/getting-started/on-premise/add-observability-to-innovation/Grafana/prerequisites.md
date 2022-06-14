@@ -15,7 +15,7 @@ The prerequisites required for each server role (as described in [Architecture][
 | Web&nbsp;Application&nbsp;Server | 1 | 4+&nbsp;*Recommended*<br>2&nbsp;*Minimum* | 16+&nbsp;*Recommended*<br>8&nbsp;*Minimum* | 50+&nbsp;(SSD)&nbsp;*Recommended*<br>40&nbsp;(HDD)&nbsp;*Minimum*<br>5+&nbsp;free&nbsp;on&nbsp;installation&nbsp;drive |
 
 {{% alert title="Note" %}}
-The application servers (as described in {{< ahref "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.Architecture" "Architecture" >}}) to which Promtail will be added have already been installed as part of the Innovation install process and do not require any hardware modifications for observability platform installation.
+The application servers (as described in {{< ahref "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.Architecture" "Architecture" >}}) to which Promtail will be added have already been installed as part of the Innovation install process and do not require any hardware modifications for the observability platform installation.
 {{% /alert %}}
 
 ## Software Requirements
@@ -80,7 +80,7 @@ There is a set of non-compulsory security measures, recommended to be applied to
 * TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
 * TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 
-See [SSL Best Practices][] for a full list of the security changes which will be applied. The `Cortex.Innovation.Install.Multiple.SSLBestPractises.ps1` script provided with the Cortex Innovation installation package can be executed to apply these security changes to the Observability Platform Web Application Server.
+See [SSL Best Practices][] for a full list of the security changes which will be applied. The `Cortex.Innovation.Install.Multiple.SSLBestPractises.ps1` script provided with the Cortex Innovation installation package can be executed to apply these security changes to the observability platform Web Application Server.
 
 ### Web Browser Requirements
 
@@ -102,11 +102,11 @@ Always enable JavaScript in your browser. Running Grafana without JavaScript ena
 [2016 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2016" >}}
 [2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
 [Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Architecture" >}}
-[Install Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
-[Install IIS Basic Authentication]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.InstallIISBasicAuthentication" >}}]
 [Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.CreateSelfSignedCertificates" >}}
 [Grafana 8.5.4]: {{< url "Grafana.SelfManaged.Downloads.GrafanaWebApp.Windows" >}}
 [Grafana Loki 2.5.0]: {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
+[Install Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
+[Install IIS Basic Authentication]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.InstallIISBasicAuthentication" >}}]
 [Let’s Encrypt]: {{< url "LetsEncrypt.MainDoc" >}}
 [Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
 [SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}

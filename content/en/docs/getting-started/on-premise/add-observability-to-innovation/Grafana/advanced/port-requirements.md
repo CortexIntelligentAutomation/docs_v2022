@@ -1,7 +1,7 @@
 ---
-title: "Port Requirements for Web Application Server"
-linkTitle: "Port Requirements for Web Application Server"
-description: "Information about the ports opened when installing observability platform"
+title: "Port Requirements for the Web Application Server"
+linkTitle: "Port Requirements for the Web Application Server"
+description: "Information about the ports to be opened when installing the observability platform"
 ---
 
 # {{< param title >}}
