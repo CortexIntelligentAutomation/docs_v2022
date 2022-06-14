@@ -1,11 +1,11 @@
 ---
-name: "Configure Loki"
+title: "Configure Loki"
 linkTitle: "Configure Loki"
 description: "Information about Configuring Grafana Loki on the Web Application Server."
 weight: 20
 ---
 
-# {{< param name >}}
+# {{< param title >}}
 
 This guide describes how to configure Grafana Loki on the Web Application Server.
 

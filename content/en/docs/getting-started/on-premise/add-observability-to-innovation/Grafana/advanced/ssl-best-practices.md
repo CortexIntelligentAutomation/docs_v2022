@@ -1,10 +1,10 @@
 ---
-name: "SSL Best Practices"
+title: "SSL Best Practices"
 linkTitle: "SSL Best Practices"
 description: "Information about the recommended security settings for Obervability Platform servers."
 ---
 
-# {{< param name >}}
+# {{< param title >}}
 
 A collection of registry settings can be applied during installation to guarantee your server is only using the recommended encryption algorithms and TLS protocols:
 

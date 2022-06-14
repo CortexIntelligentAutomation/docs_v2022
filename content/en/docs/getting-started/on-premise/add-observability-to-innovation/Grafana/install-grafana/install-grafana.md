@@ -1,11 +1,11 @@
 ---
-name: "Install Grafana"
+title: "Install Grafana"
 linkTitle: "Install Grafana"
 description: "Information about installing Grafana on the Web Application Server."
 weight: 10
 ---
 
-# {{< param name >}}
+# {{< param title >}}
 
 This guide describes how to install Grafana on the Web Application Server. Please ensure that the [Prerequisites][] have been read before starting this installation.
 
