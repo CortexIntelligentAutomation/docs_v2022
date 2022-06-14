@@ -665,6 +665,10 @@
 [GitHub]
     [GitHub.Cortex.Observability]
         Dashboards = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/Grafana/Dashboards/"
+        LokiInstallZip = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
+        LokiYaml = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
+        PromtailInstallZip = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
+        PromtailYaml = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
 [Grafana]
     MainDoc = "https://grafana.com/"
     [Grafana.SelfManaged.Downloads.GrafanaWebApp]
