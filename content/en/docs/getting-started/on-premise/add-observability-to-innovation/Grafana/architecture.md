@@ -13,7 +13,7 @@ weight: 10
 |-----------|---------|----------|------------|
 | Grafana| Web application that provides querying and visualisation of data in the form of dashboards. | Required | Web&nbsp;Application&nbsp;Server |
 | Grafana Loki | Log aggregation system designed to store and query logs from applications and infrastructure. | Required | Web&nbsp;Application&nbsp;Server |
-| Promtail | An agent which ships the contents of local logs to a Grafana Loki instance. It should be deployed to every machine that has a Microsoft Service Fabric Node used by Innovation. | Required | Application&nbsp;Server |
+| Promtail | An agent which ships the contents of local logs to a Grafana Loki instance. It should be deployed to every machine that has a Microsoft Service Fabric node used by Innovation. | Required | Application&nbsp;Server |
 | Microsoft&nbsp;Internet&nbsp;Information&nbsp;Services&nbsp;(IIS) | Web server for hosting websites, services, and applications. | Required | Web&nbsp;Application&nbsp;Server |
 
 ## Recommended Architecture

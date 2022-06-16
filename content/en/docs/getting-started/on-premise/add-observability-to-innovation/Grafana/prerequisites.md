@@ -6,7 +6,7 @@ weight: 20
 ---
 # {{< param title >}}
 
-The prerequisites required for each server role (as described in [Architecture][]) are laid out in this guide. These must be considered before undertaking installation.
+The prerequisites required for each server role (as described in [Architecture][]) are laid out in this guide. These must be considered before undertaking the installation.
 
 ## Hardware Requirements
 
@@ -44,7 +44,7 @@ The observability platform requires a range of [firewall ports to be opened][Por
 #### Certificate Requirements
 
 {{% alert title="Note" %}}
-For production systems it is recommended that X.509 SSL wildcard certificates are obtained from a Certificate Authority and used for installation. For non-production systems, self-signed certificates may be used.
+For production systems, it is recommended that X.509 SSL wildcard certificates are obtained from a Certificate Authority and used for installation. For non-production systems, self-signed certificates may be used.
 {{% / alert %}}
 
 An X.509 SSL wildcard certificate should be used to:
@@ -65,9 +65,9 @@ The files should be placed in a known location on the Web Application Server. Th
 
 IIS requires an X.509 SSL certificate to be installed on the Web Application Server. The certificate must have the following property configured:
 
-* Subject Alternative Names (SAN): At minimum the FQDN of the Server. It can also include NetBIOS Name, IP address, localhost, 127.0.0.1
+* Subject Alternative Names (SAN): At minimum, the FQDN of the Server. It can also include NetBIOS Name, IP address, localhost, 127.0.0.1
 
-If the user tries to navigate to an address not in the SAN list, then they will receive a certificate error.
+If the user tries navigating to an address not in the SAN list, they will receive a certificate error.
 
 Wildcard certificates and self-signed certificates can also be used. However, self-signed certificates are not recommended for production instances. Details on how to create a self-signed certificate can be found at [Create Self-Signed Certificates][].
 
@@ -75,12 +75,12 @@ More information about importing the certificate is given during installation.
 
 #### TLS Requirements
 
-There is a set of non-compulsory security measures, recommended to be applied to Web Application Servers, in order to prevent potential attacks that exploit known industry security vulnerabilities. This includes disabling all versions of SSL and TLS apart from TLS 1.2. And disabling all cipher suites apart from the following:
+A set of non-compulsory security measures is recommended to be applied to Web Application Servers to prevent attacks that exploit known industry security vulnerabilities. This includes disabling all versions of SSL and TLS apart from TLS 1.2. And disabling all cipher suites apart from the following:
 
 * TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
 * TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 
-See [SSL Best Practices][] for a full list of the security changes which will be applied. The `Cortex.Innovation.Install.Multiple.SSLBestPractises.ps1` script provided with the Cortex Innovation installation package can be executed to apply these security changes to the observability platform Web Application Server.
+See [SSL Best Practices][] for a complete list of the security changes which will be applied. The `Cortex.Innovation.Install.Multiple.SSLBestPractises.ps1` script provided with the Cortex Innovation installation package can be executed to apply these security changes to the observability platform Web Application Server.
 
 ### Web Browser Requirements
 

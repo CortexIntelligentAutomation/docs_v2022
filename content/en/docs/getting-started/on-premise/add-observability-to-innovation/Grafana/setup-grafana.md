@@ -7,9 +7,9 @@ weight: 60
 
 # {{< param title >}}
 
-This guide describes where to get the default Cortex Dashboards from and how to import them for use in Grafana. This guide also describes how to export the dashboard for use elsewhere or to save as a backup.
+This guide describes where to get the default Cortex Dashboards from and how to import them for use in Grafana. This guide also explains how to export the dashboard for use elsewhere or to save it as a backup.
 
-Please ensure that the Installation for [Grafana][] and [Loki][] have been completed before starting this section.
+Please ensure that the Installations for [Grafana][] and [Loki][] have been completed before starting this section.
 
 ## Configure Loki Data Source in Grafana
 
@@ -31,29 +31,29 @@ Please ensure that the Installation for [Grafana][] and [Loki][] have been compl
 
 1. Navigate to the Observability repository in [GitHub][Download Dashboards].
 1. Click on the `Flow Execution Requests.json` file.
-1. Copy the contents and save locally as `Flow Execution Requests.json`.
+1. Copy the content and save it locally as `Flow Execution Requests.json`.
 1. Using the browser back button, go back up a level to the file list.
 1. Click on the `Platform Health.json` file.
-1. Copy the contents and save locally as `Platform Health.json`.
+1. Copy the content and save it locally as `Platform Health.json`.
 
 ## Create Folder for Dashboards
 
 1. Log in to your configured Grafana with a user that has the `Admin` role.
-1. To create a folder click the + icon in the side menu, and then click *Folder*.
+1. To create a folder, click the + icon in the side menu, and then click *Folder*.
 1. Enter a folder name, e.g. *Cortex*.
 1. Click `Create`.
 
 ## Import Dashboards
 
 1. Log in to your configured Grafana with a user that has the `Admin` role.
-1. To import a dashboard click the + icon in the side menu, and then click *Import*.
+1. To import a dashboard, click the + icon in the side menu, and then click *Import*.
 1. Click the *Upload JSON file* button.
 
     {{% alert type="note" title="Note" %}}This button is broken in the Grafana 8.5.3 version and it may be necessary to use your keyboard's *tab* button until the *Upload JSON file* button is highlighted and press *Enter*.{{% /alert %}}
 
-1. Locate the `Flow Execution Requests.json` file saved locally. 
+1. Locate the `Flow Execution Requests.json` file saved locally.
 1. Select the file and click *Open*.
-1. Select the folder in Grafana you wish the dashboard to saved in, e.g. *Cortex*.
+1. Select the folder in Grafana you wish the dashboard to be saved in, e.g. *Cortex*.
 1. Select your configured Loki data source from the dropdown menu.
 1. Click *Import*.
 1. Repeat steps 2 - 8 for the `Platform Health.json` file.
@@ -66,23 +66,20 @@ To do this, follow these steps for all default Cortex Innovation dashboards impo
 
 1. Log in to your configured Grafana with a user that has the `Admin` role.
 1. To open a dashboard:
-    1. click the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *Browse*.
+    1. Click the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *Browse*.
     1. Click the folder name that the dashboards were imported to.
     1. Click the *Flow Execution Requests* dashboard to open it.
 1. Open the Dashboard Settings menu via the cog icon in the top left side of the dashboard.
-1. Click *Variables* on the left hand side of the page.
-1. Click *Custom Filter* on the right hand side of the page.
-1. Select your configured Loki data source in the Options > Data source drop down menu.
+1. Click *Variables* on the left-hand side of the page.
+1. Click *Custom Filter* on the right-hand side of the page.
+1. Select your configured Loki data source in the Options > Data source drop-down menu.
 1. Click *Update*.
 1. Click the back button on the top left corner of the page to go back to the dashboard.
-1. Click the + icon next to the Custom Filter to confirm that there are a list of available filter options visible.
+1. Click the + icon next to the Custom Filter to confirm that a list of available filter options is visible.
 1. Repeat steps 2 - 9 for the *Platform Health* dashboard.
 
 ## Next Steps?
 
-1. [Try it Out][]
-
 [Download Dashboards]: {{< url "GitHub.Cortex.Observability.Dashboards" >}}
 [Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
 [Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
-[Try it Out]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.TryItOut" >}}

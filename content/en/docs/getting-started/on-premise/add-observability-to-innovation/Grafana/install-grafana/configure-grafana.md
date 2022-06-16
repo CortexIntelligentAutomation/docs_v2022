@@ -52,12 +52,12 @@ It is important to verify that Grafana is only accessible though HTTPS and not H
 1. Browse to `http://localhost:3000/`.
 1. Browser should not be able to make a connection to Grafana and a default error page should be displayed.
 1. Browse to `https://localhost:3000/`.
-1. On the login page, enter `admin` and the corresponding password.
+1. On the login page, enter `admin` as the username and the corresponding password.
 1. Click Log in.
 1. You should have successfully logged into Grafana.
 
 ## Next Steps?
 
-1. [Install Loki][]
+1. [Install Grafana Loki][]
 
-[Install Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
+[Install Grafana Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}

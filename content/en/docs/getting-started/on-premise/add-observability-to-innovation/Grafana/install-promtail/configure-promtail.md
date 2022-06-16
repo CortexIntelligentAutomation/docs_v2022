@@ -13,8 +13,8 @@ This guide describes how to configure Promtail.
 
 ## Configure Promtail
 
-1. Open the `promtail-local-config.yaml` configuration file which is located in the folder alongside the Promtail executable.
-1. Set the Grafana Loki `url` in the `clients` section. The following template has been provided for convinience:
+1. Open the `promtail-local-config.yaml` configuration file, which is located in the folder alongside the Promtail executable.
+1. Set the Grafana Loki `URL` in the `clients` section. The following template has been provided for convenience:
 `https://{username}:{password}@{Loki Host}:{Loki Reverse Proxy Port}/loki/api/v1/push`
 | Element | Description |
 |------|-------------|
@@ -23,7 +23,7 @@ This guide describes how to configure Promtail.
 | Loki Host | The host address of the machine where reverse proxy was configured during [Add a New Website][] steps |
 | Loki Reverse Proxy Port | The port of the Grafana Loki reverse proxy configured during [Add a New Website][] steps. Usually 2100. |
 
-   A corect url should be similar to `https://username:password@hostname:2100/loki/api/v1/push`.
+   A correct URL should be similar to `https://username:password@hostname:2100/loki/api/v1/push`.
 
 ## Start Promtail
 
