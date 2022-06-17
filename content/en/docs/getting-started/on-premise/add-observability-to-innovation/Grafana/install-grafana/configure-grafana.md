@@ -46,7 +46,7 @@ By default Grafana allows access over the unsecure HTTP protocol. This needs to 
 
 ## Verify That HTTPS Works
 
-It is important to verify that Grafana is only accessible though HTTPS and not HTTP connection.
+It is important to verify that Grafana is only accessible through HTTPS.
 
 1. On the Web Application Server open a web browser.
 1. Browse to `http://localhost:3000/`.
@@ -61,3 +61,4 @@ It is important to verify that Grafana is only accessible though HTTPS and not H
 1. [Install Grafana Loki][]
 
 [Install Grafana Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
+[Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.CertificateRequirements" >}}

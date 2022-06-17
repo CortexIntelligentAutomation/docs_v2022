@@ -29,7 +29,7 @@ All of the steps must be carried out on the Web Application Server.
 
 ### Install IIS URL Rewrite Module
 
-1. Download the URL Rewrite module specified in [Software Requirements][]
+1. Download the [URL Rewrite module 2.1][]
 1. Run the downloaded installer.
 1. When prompted by the Web Platform Installer, click *Install*.
 1. On the *Prerequisites* page click *I Accept* to agree to the license terms for the module.
@@ -52,7 +52,7 @@ To set up a reverse proxy, carry out the following configuration.
         - *Type*: `https`
         - *IP address*: `All unassigned`
         - *Port*: `2100`
-    - *Host name*: The fully qualified machine name of the Web Application Server. This must match what has been set for the SSL certificates.
+    - *Host name*: The fully qualified domain name of the Web Application Server. This must match one of the Subject Alternative Names in the SSL certificate selected in the next step.
     - *SSL certificate*: Select the certificate created as part of the [Certificate Requirements][] instructions.
     - Click *OK* to add the website.
 
@@ -68,22 +68,22 @@ To set up a reverse proxy, carry out the following configuration.
 
 1. In the *Connection* pane, browse to *Sites*.
 1. Select the newly created website.
-1. In the *Manage Website* pane, click "Restart".
+1. In the *Manage Website* pane, click *Restart*.
 
 #### Create Loki User
 
 1. Run Windows PowerShell as Administrator.
-1. Execute the following command to create a new user in the system:
+1. Execute the following command to create a new local user on the Web Application Server:
 
     ```Powershell
-    New-LocalUser "Login" -Password (ConvertTo-SecureString "Password" -AsPlainText -force) -FullName "Name" -Description "Description" –PasswordNeverExpires
+    New-LocalUser "<Login>" -Password (ConvertTo-SecureString "<Password>" -AsPlainText -force) -FullName "<Name>" -Description "<Description>" –PasswordNeverExpires
     ```
 
     Where:
-    - *Login*: The username of the user to be added to the system.
-    - *Password*: The password for the user account.
-    - *Name*: The full name for the user account.
-    - *Description*: The description of the user account.
+    - <*Login*>: The username of the user to be created.
+    - <*Password*>: The password for the user account.
+    - <*Name*>: The full name for the user account.
+    - <*Description*>: The description of the user account.
 
 ## Next Steps?
 
@@ -92,3 +92,4 @@ To set up a reverse proxy, carry out the following configuration.
 [Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.CertificateRequirements" >}}
 [Install Promtail]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail.MainDoc" >}}
 [Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}
+[URL Rewrite module 2.1]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}

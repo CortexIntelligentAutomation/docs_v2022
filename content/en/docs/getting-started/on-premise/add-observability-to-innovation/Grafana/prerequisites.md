@@ -22,20 +22,48 @@ The application servers (as described in {{< ahref "Cortex.GettingStarted.OnPrem
 
 | Server&nbsp;Role | Windows&nbsp;Server[^1] | IIS[^2] | Other&nbsp;Software |
 |------------------|-------------------------|---------|----------|
-| Web Application Server | [2019 (x64)][] *Recommended*<br>[2016 (x64)][] | 10.0.17763[^3]<br>10.0.14393[^4]<br>IIS Basic Authentication[^5]<br>[URL Rewrite module 2.1][] | [Grafana 8.5.4][] (Enterprise Edition)<br>[Grafana Loki 2.5.0][] (loki-windows-amd64.exe.zip)|
+| Web Application Server[^3] | [2019 (x64)][] *Recommended*<br>[2016 (x64)][] | 10.0.17763[^4]<br>10.0.14393[^5]<br>IIS Basic Authentication[^6]<br>[URL Rewrite module 2.1][] | [Grafana 8.5.4][] (Enterprise Edition)<br>[Grafana Loki 2.5.0][] (loki-windows-amd64.exe.zip)|
 | Application Server | [2019 (x64)][] *Recommended*<br>[2016 (x64)][] | | [Promtail 2.5.0][] (promtail-windows-amd64.exe.zip) |
 
 [^1]: Windows Server Standard and Datacenter editions are supported. Filesystem **must be NTFS** and networking **must use IPv4**. Linux is not supported, but may be in the future.
 [^2]: IIS is supported; other web servers, including IIS Express are not supported.
-[^3]: Ships as a windows role within Windows Server 2019.
-[^4]: Ships as a windows role within Windows Server 2016.
-[^5]: Installed during the [Install IIS Basic Authentication][] configuration steps.
+[^3]: This should be a separate machine from the one used for Innovation Web Application Server.
+[^4]: Ships as a windows role within Windows Server 2019.
+[^5]: Ships as a windows role within Windows Server 2016.
+[^6]: Installed during the [Install IIS Basic Authentication][] configuration steps.
+
+## Domain Requirements
+
+All servers must be on the same domain and cannot be domain controllers.
+
+## Web Browser Requirements
+
+Grafana supports the latest versions of the following browsers:
+
+* Chrome/Chromium
+* Firefox
+* Safari
+* Microsoft Edge
+
+{{% alert title="Note" %}}
+Always enable JavaScript in your browser. Running Grafana without JavaScript enabled in the browser is not supported.
+{{% / alert %}}
+
+## Additional Application Server Requirements
 
 ### Security Requirements
 
 #### Installation User
 
-A domain user which is a member of the Local Administrators group on all Application Servers and the Web Application Server must be available to perform the installation.
+A domain user which is a member of the Local Administrators group on all Application Servers must be available to perform the installation.
+
+## Additional Web Application Server Requirements
+
+### Security Requirements
+
+#### Installation User
+
+A domain user which is a member of the Local Administrators group on the Web Application Server must be available to perform the installation.
 
 #### Port Requirements
 
@@ -61,7 +89,7 @@ The certificate can be obtained from a Certificate Authority, such as [Let’s E
 * Certificate file must contain the full chain of certificates.
 * Certificate file must include the private key.
 
-The files should be placed in a known location on the Web Application Server. This location will be required when securing Grafana.
+The files should be placed in a known location on the Web Application Server. This location will be required when [configuring Grafana to use HTTPS][].
 
 IIS requires an X.509 SSL certificate to be installed on the Web Application Server. The certificate must have the following property configured:
 
@@ -80,20 +108,7 @@ A set of non-compulsory security measures is recommended to be applied to Web Ap
 * TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
 * TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 
-See [SSL Best Practices][] for a complete list of the security changes which will be applied. The `Cortex.Innovation.Install.Multiple.SSLBestPractises.ps1` script provided with the Cortex Innovation installation package can be executed to apply these security changes to the observability platform Web Application Server.
-
-### Web Browser Requirements
-
-Grafana supports the latest versions of the following browsers:
-
-* Chrome/Chromium
-* Firefox
-* Safari
-* Microsoft Edge
-
-{{% alert title="Note" %}}
-Always enable JavaScript in your browser. Running Grafana without JavaScript enabled in the browser is not supported.
-{{% / alert %}}
+See [SSL Best Practices][] for a full list of the security changes which will be applied. The `Cortex.Innovation.Install.SSLBestPractises.ps1` script is provided during installation to apply these security changes to the Web Application Server.
 
 ## Next Steps?
 
@@ -110,4 +125,6 @@ Always enable JavaScript in your browser. Running Grafana without JavaScript ena
 [Let’s Encrypt]: {{< url "LetsEncrypt.MainDoc" >}}
 [Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
 [SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}
-[URL Rewrite module 2.1]: {{< url "IIS.UrlRewrite-2_1" >}}
+[URL Rewrite module 2.1]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}
+[Port Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.PortRequirements" >}}
+[configuring Grafana to use HTTPS]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.ConfigureHTTPS" >}}
