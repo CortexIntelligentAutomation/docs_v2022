@@ -7,25 +7,25 @@ weight: 60
 
 # {{< param title >}}
 
-This guide describes where to get the default Cortex Dashboards from and how to import them for use in Grafana. This guide also explains how to export the dashboard for use elsewhere or to save it as a backup.
+This guide describes where to get the default Cortex Innovation Dashboards from and how to import them for use in Grafana.
 
 Please ensure that the Installations for [Grafana][] and [Loki][] have been completed before starting this section.
 
 ## Configure Loki Data Source in Grafana
 
-1. Log into your configured Grafana instance with a user that has the `admin` role.
-1. In Grafana, go to Configuration > Data Sources via the cog icon on the left sidebar.
-1. Click the big Add data source button.
-1. Choose Loki from the list.
+1. Log in to your configured Grafana instance with a user that has the *admin* role.
+1. In Grafana, go to *Configuration* > *Data Sources* via the cog icon on the left sidebar.
+1. Click the big *Add data* source button.
+1. Choose *Loki* from the list.
 1. Configure the data source as follows:
 
-    | Option  | Description | Example |
+    | Option  | Description | Value |
     |---------|-------------|---------|
     | Name    | The name of the data source to use in Grafana | `Cortex Loki` |
     | URL     | The address of your Grafana Loki Server | `http://localhost:3100` |
-    | Timeout | The HTTP request timeout in seconds set to the same value as configured in the Grafana Loki configuration file. | `600` |
+    | Timeout | The HTTP request timeout in seconds set to the same value as configured in the Grafana Loki `loki-local-config.yaml` configuration file located alongside the Grafana Loki `loki-windows-amd64.exe` file. | `600` |
 
-1. Click `Save and Test`.
+1. Click *Save and Test*.
 
 ## Download the Cortex Innovation Default Dashboards
 
@@ -38,14 +38,14 @@ Please ensure that the Installations for [Grafana][] and [Loki][] have been comp
 
 ## Create Folder for Dashboards
 
-1. Log in to your configured Grafana with a user that has the `Admin` role.
+1. Log in to your configured Grafana with a user that has the *Admin* role.
 1. To create a folder, click the + icon in the side menu, and then click *Folder*.
-1. Enter a folder name, e.g. *Cortex*.
-1. Click `Create`.
+1. Enter a folder name, e.g. `Cortex`.
+1. Click *Create*.
 
 ## Import Dashboards
 
-1. Log in to your configured Grafana with a user that has the `Admin` role.
+1. Log in to your configured Grafana with a user that has the *Admin* role.
 1. To import a dashboard, click the + icon in the side menu, and then click *Import*.
 1. Click the *Upload JSON file* button.
 
@@ -64,7 +64,7 @@ It is necessary to update the Custom Filter inside the dashboards to use the cor
 
 To do this, follow these steps for all default Cortex Innovation dashboards imported:
 
-1. Log in to your configured Grafana with a user that has the `Admin` role.
+1. Log in to your configured Grafana with a user that has the *Admin* role.
 1. To open a dashboard:
     1. Click the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *Browse*.
     1. Click the folder name that the dashboards were imported to.
@@ -72,7 +72,7 @@ To do this, follow these steps for all default Cortex Innovation dashboards impo
 1. Open the Dashboard Settings menu via the cog icon in the top left side of the dashboard.
 1. Click *Variables* on the left-hand side of the page.
 1. Click *Custom Filter* on the right-hand side of the page.
-1. Select your configured Loki data source in the Options > Data source drop-down menu.
+1. Select your configured Loki data source in the *Options* > *Data source* drop-down menu.
 1. Click *Update*.
 1. Click the back button on the top left corner of the page to go back to the dashboard.
 1. Click the + icon next to the Custom Filter to confirm that a list of available filter options is visible.

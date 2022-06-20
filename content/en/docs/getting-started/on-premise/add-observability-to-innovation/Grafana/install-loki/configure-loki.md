@@ -76,14 +76,15 @@ To set up a reverse proxy, carry out the following configuration.
 1. Execute the following command to create a new local user on the Web Application Server:
 
     ```Powershell
-    New-LocalUser "<Login>" -Password (ConvertTo-SecureString "<Password>" -AsPlainText -force) -FullName "<Name>" -Description "<Description>" –PasswordNeverExpires
+    New-LocalUser "<username>" -Password (ConvertTo-SecureString "<password>" -AsPlainText -force) -FullName "<name>" -Description "<description>" –PasswordNeverExpires
     ```
 
-    Where:
-    - <*Login*>: The username of the user to be created.
-    - <*Password*>: The password for the user account.
-    - <*Name*>: The full name for the user account.
-    - <*Description*>: The description of the user account.
+    | Parameter | Description |
+    |------|-------------|
+    | username | The username of the user to be created. |
+    | password | The password for the user account. |
+    | name | The full name for the user account. |
+    | description | The description of the user account. |
 
 ## Next Steps?
 
