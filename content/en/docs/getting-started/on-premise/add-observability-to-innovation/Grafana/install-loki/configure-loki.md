@@ -11,6 +11,19 @@ This guide describes how to configure Grafana Loki on the Web Application Server
 
 {{% alert type="note" title="Note" %}}For security reasons, Grafana Loki should be run behind an encrypted and authenticated reverse proxy as it does not provide these features by itself.{{% /alert %}}
 
+## Install Certificate
+
+IIS requires the X.509 SSL certificate, obtained in the [prerequisites][], to be installed on the Web Application Server.
+
+You can import the certificate by right clicking the certificate file, selecting `Install Certificate` and following the wizard. When prompted, ensure you import it into the `Local Machine` store and not `Current User`.
+
+To verify the certificate is imported:
+
+1. Click the Windows button (`Start`)
+2. Type `certlm.msc` and press `Enter` to open the Certificate Manager dialog
+3. Expand `Personal` and select `Certificates`
+4. You should see your certificate in this store
+
 ## Setup Reverse Proxy with IIS
 
 All of the steps must be carried out on the Web Application Server.
@@ -90,7 +103,7 @@ To set up a reverse proxy, carry out the following configuration.
 
 1. [Install Promtail][]
 
-[Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.CertificateRequirements" >}}
 [Install Promtail]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail.MainDoc" >}}
+[prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.WebAppCertificateRequirements" >}}
 [Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}
 [URL Rewrite module 2.1]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}

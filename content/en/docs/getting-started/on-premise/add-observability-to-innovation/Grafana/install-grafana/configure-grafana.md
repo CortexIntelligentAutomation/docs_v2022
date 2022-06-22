@@ -41,6 +41,7 @@ By default Grafana allows access over the unsecure HTTP protocol. This needs to 
     cert_key = C:\certificates\certificate.key
     ```
 
+1. Save the file.
 1. Open the Services app.
 1. Restart the Grafana service.
 
@@ -61,4 +62,4 @@ It is important to verify that Grafana is only accessible through HTTPS.
 1. [Install Grafana Loki][]
 
 [Install Grafana Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
-[Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.CertificateRequirements" >}}
+[Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.WebAppCertificateRequirements" >}}

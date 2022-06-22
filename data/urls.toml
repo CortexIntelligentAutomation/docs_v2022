@@ -8,6 +8,7 @@
                 [Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA]
                     MainDoc = "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/"       
                     Architecture = "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/architecture"
+                    ExtractInstallationArtefacts = "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-application-and-loadbalancer-servers/#extract-installation-artefacts"
                     InstallApplicationAndLoadBalancerServers = "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-application-and-loadbalancer-servers"
                     ConfigureInstallationScript = "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-application-and-loadbalancer-servers#configure-installation-script"
                     InstallWebApplicationServer = "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server"
@@ -29,16 +30,18 @@
                 [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation]
                     MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/"
                 [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana]
-                    MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/"       
+                    MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/"
                     Architecture = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/architecture"
                     Prerequisites = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites"
                     SoftwareRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites#software-requirements"
-                    CertificateRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites#certificate-requirements"
+                    AdditionalWebApplicationServerRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites/#additional-web-application-server-requirements"
                     SetupGrafana = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/setup-grafana"
                     TryItOut = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/try-it-out"
+                    WebAppCertificateRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites#certificate-requirements"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced]
                         PortRequirements = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/port-requirements"
                         CreateSelfSignedCertificates = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/self-signed-certificates"
+                        GenerateTheRootCaCertificate = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/self-signed-certificates/#generate-the-root-ca-certificate"
                         SSLBestPractices = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/ssl-best-practices"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana]
                         MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-grafana/"
@@ -46,10 +49,11 @@
                         ConfigureHTTPS = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-grafana/configure-grafana/#configure-https"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki]
                         MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/"
-                        AddANewWebsite = "http://localhost:1313/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#add-a-new-website"
+                        AddANewWebsite = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#add-a-new-website"
                         CreateLokiUser = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#create-loki-user"
                         ConfigureLoki = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki"
                         InstallIISBasicAuthentication = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki#install-iisbasic-authentication"
+                        InstallCertificate = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#install-certificate"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail]
                         MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-promtail/"
                         ConfigurePromtail = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-promtail/configure-promtail"
@@ -667,9 +671,7 @@
     [GitHub.Cortex.Observability]
         Dashboards = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/Grafana/Dashboards/"
         LokiInstallZip = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
-        LokiYaml = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
         PromtailInstallZip = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
-        PromtailYaml = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
 [Grafana]
     MainDoc = "https://grafana.com/"
     [Grafana.Products.Grafana]

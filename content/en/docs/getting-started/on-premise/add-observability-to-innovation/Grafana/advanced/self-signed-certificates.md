@@ -31,13 +31,13 @@ Self-signed certificates should be generated using OpenSSL which is bundled in t
 
 ## Generate the Root CA Certificate
 
-1. Create the Root CA private key by running the following command:
+1. Create the root CA private key by running the following command:
 
     ```powershell
     openssl genrsa -out cortexCA.key 4096
     ```
 
-1. Generate the Root CA certificate signed with the private key:
+1. Generate the root CA certificate signed with the private key:
     1. Copy the following text into a text editor:
 
         ```shell
@@ -211,7 +211,7 @@ Self-signed certificates should be generated using OpenSSL which is bundled in t
         ```
 
     1. Press `Enter` for everything except the Common Name. For this enter `Cortex`.
-    1. Sign the request with a previously generated Root CA by running the following command:
+    1. Sign the request with a previously generated root CA by running the following command:
 
         ```powershell
         openssl x509 -req -sha256 -in cortex.req -CA cortexCA.pem -CAkey cortexCA.key -CAcreateserial -out cortex.pem -days 3650 -extensions v3_req -extfile san.cnf
