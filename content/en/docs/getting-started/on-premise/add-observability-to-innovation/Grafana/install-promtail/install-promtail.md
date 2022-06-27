@@ -11,8 +11,8 @@ This guide describes how to install Promtail on the Application Server(s). Pleas
 
 ## Install Promtail
 
-1. Download [Promtail 2.5.0 (promtail-windows-amd64.exe.zip)][].
-1. Extract the archive content to a suitable location, e.g. `C:\Loki`.
+1. Download [Promtail 2.5.0][] archive.
+1. Extract content of the downloaded archive to a suitable location, e.g. `C:\Promtail`.
 1. Download the [Promtail Install.zip][] archive and extract its contents alongside the previously extracted Grafana Loki `promtail-windows-amd64.exe`.
 This archive contains the `promtail-local-config.yaml` configuration file, [NSSM][] (the Non-Sucking Service Manager program) and PowerShell scripts to help manage Promtail as a Windows service.
 1. Run Windows PowerShell as Administrator
@@ -26,6 +26,6 @@ This archive contains the `promtail-local-config.yaml` configuration file, [NSSM
 [Configure Promtail]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail.ConfigurePromtail" >}}
 [NSSM]: {{< url "NSSM.MainDoc" >}}
 [Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
-[Promtail 2.5.0 (promtail-windows-amd64.exe.zip)]:  {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
+[Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.Promtail.PromtailInstallZip" >}}
 [Promtail Install.zip]: {{< url "GitHub.Cortex.Observability.PromtailInstallZip" >}}
 [Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}

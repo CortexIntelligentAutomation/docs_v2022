@@ -11,8 +11,8 @@ This guide describes how to install Grafana Loki on the Web Application Server. 
 
 ## Install Grafana Loki
 
-1. Download the [Grafana Loki 2.5.0 (loki-windows-amd64.exe.zip)][]
-1. Extract the archive content to a suitable location, e.g. `C:\Loki`.
+1. Download [Grafana Loki 2.5.0][] archive.
+1. Extract content of the downloaded archive to a suitable location, e.g. `C:\Loki`.
 1. Download the [Grafana Loki Install.zip][] archive and extract its contents alongside the previously extracted Grafana Loki `loki-windows-amd64.exe`.
 This archive contains the `loki-local-config.yaml` configuration file, [NSSM][] (the Non-Sucking Service Manager program) and PowerShell scripts to help manage Grafana Loki as a Windows service.
 1. Run Windows PowerShell as Administrator.
@@ -25,8 +25,8 @@ This archive contains the `loki-local-config.yaml` configuration file, [NSSM][] 
 1. [Configure Loki][]
 
 [Configure Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.ConfigureLoki" >}}
-[Grafana Loki 2.5.0 (loki-windows-amd64.exe.zip)]: {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.MainDoc" >}}
-[Grafana Loki Install.zip]: {{< url "GitHub.Cortex.Observability.LokiInstallZip" >}}
+[Grafana Loki 2.5.0]: {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.GrafanaLokiInstallZip" >}}
+[Grafana Loki Install.zip]: {{< url "GitHub.Cortex.Observability.GrafanaLokiInstallZip" >}}
 [NSSM]: {{< url "NSSM.MainDoc" >}}
 [Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
 [Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}

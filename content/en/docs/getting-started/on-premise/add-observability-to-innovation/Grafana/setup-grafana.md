@@ -29,12 +29,8 @@ Please ensure that the Installations for [Grafana][] and [Loki][] have been comp
 
 ## Download the Cortex Innovation Default Dashboards
 
-1. Navigate to the Observability repository in [GitHub][Download Dashboards].
-1. Click on the `Flow Execution Requests.json` file.
-1. Copy the content and save it locally as `Flow Execution Requests.json`.
-1. Using the browser back button, go back up a level to the file list.
-1. Click on the `Platform Health.json` file.
-1. Copy the content and save it locally as `Platform Health.json`.
+1. Download [Grafana.Dashboards.zip] archive containing the Cortex Innovation default dashboards.
+1. Extract the content of the downloaded archive to a suitable location.
 
 ## Create Folder for Dashboards
 
@@ -51,7 +47,7 @@ Please ensure that the Installations for [Grafana][] and [Loki][] have been comp
 
     {{% alert type="note" title="Note" %}}This button is broken in the Grafana 8.5.3 version and it may be necessary to use your keyboard's *tab* button until the *Upload JSON file* button is highlighted and press *Enter*.{{% /alert %}}
 
-1. Locate the `Flow Execution Requests.json` file saved locally.
+1. Locate the `Flow Execution Requests.json` file extracted from the downloaded `Grafana.Dashboards.zip`.
 1. Select the file and click *Open*.
 1. Select the folder in Grafana you wish the dashboard to be saved in, e.g. *Cortex*.
 1. Select your configured Loki data source from the dropdown menu.
@@ -78,6 +74,6 @@ To do this, follow these steps for all default Cortex Innovation dashboards impo
 1. Click the + icon next to the Custom Filter to confirm that a list of available filter options is visible.
 1. Repeat steps 2 - 9 for the *Platform Health* dashboard.
 
-[Download Dashboards]: {{< url "GitHub.Cortex.Observability.Dashboards" >}}
+[Grafana.Dashboards.zip]: {{< url "GitHub.Cortex.Observability.GrafanaDashboardsZip" >}}
 [Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
 [Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}

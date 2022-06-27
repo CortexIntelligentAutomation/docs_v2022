@@ -58,7 +58,7 @@
                         AddANewWebsite = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#add-a-new-website"
                         CreateLokiUser = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#create-loki-user"
                         ConfigureLoki = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki"
-                        InstallIISBasicAuthentication = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki#install-iisbasic-authentication"
+                        InstallIISBasicAuthentication = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#install-iis-basic-authentication"
                         InstallCertificate = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#install-certificate"
                     [Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail]
                         MainDoc = "/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-promtail/"
@@ -806,9 +806,9 @@
     MainDoc = "https://www.elastic.co/"
 [GitHub]
     [GitHub.Cortex.Observability]
-        Dashboards = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/Grafana/Dashboards/"
-        LokiInstallZip = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
-        PromtailInstallZip = "https://github.com/CortexIntelligentAutomation/observability/tree/main/Grafana/ToDo"
+        GrafanaLokiInstallZip = "https://github.com/CortexIntelligentAutomation/observability/releases/download/v1.0.0/Grafana.Loki.Install.zip"
+        PromtailInstallZip = "https://github.com/CortexIntelligentAutomation/observability/releases/download/v1.0.0/Promtail.Install.zip"
+        GrafanaDashboardsZip = "https://github.com/CortexIntelligentAutomation/observability/releases/download/v1.0.0/Grafana.Dashboards.zip"
 [Grafana]
     MainDoc = "https://grafana.com/"
     [Grafana.Products.Grafana]
@@ -820,9 +820,9 @@
     [Grafana.SelfManaged.Downloads.GrafanaWebApp]
         Windows = "https://grafana.com/grafana/download/8.5.4?pg=get&plcmt=selfmanaged-box1-cta1&platform=windows"
     [Grafana.SelfManaged.Downloads.GrafanaLoki]
-        MainDoc = "https://github.com/grafana/loki/releases/tag/v2.5.0"
+        GrafanaLokiInstallZip = "https://github.com/grafana/loki/releases/download/v2.5.0/loki-windows-amd64.exe.zip"
     [Grafana.SelfManaged.Downloads.Promtail]
-        MainDoc = "https://github.com/grafana/loki/releases/tag/v2.5.0"
+        PromtailInstallZip = "https://github.com/grafana/loki/releases/download/v2.5.0/promtail-windows-amd64.exe.zip"
 [IIS]
     MainDoc = "https://www.iis.net/overview"
     [IIS.Downloads]
