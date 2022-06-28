@@ -259,6 +259,14 @@ pre = "<i class='fa fa-heart'></i>"
 url = '/docs/'
 weight = 10
 
+[[menu.main]]
+identifier = 'community'
+name = 'Community'
+pre = "<i class='fa fa-heart'></i>"
+url = 'https://community.cortex.co.uk/'
+weight = 30
+
+
 # Releases menu
 [[params.versions]]
   version = "v2022 (latest)"
