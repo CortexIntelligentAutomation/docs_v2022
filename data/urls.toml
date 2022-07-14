@@ -461,6 +461,10 @@
                         MainDoc = "/docs/reference/blocks/xml/convert-xml/convert-xml-to-structure-block/"
                     [Cortex.Reference.Blocks.Xml.ConvertXml.ConvertStructureToXmlBlock]
                         MainDoc = "/docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/"
+        [Cortex.Reference.Dashboards]
+            [Cortex.Reference.Dashboards.Grafana]
+                [Cortex.Reference.Dashboards.Grafana.ConfigureThresholds]
+                    MainDoc = "/docs/reference/dashboards/grafana/configure-thresholds"
         [Cortex.Reference.Concepts]
             [Cortex.Reference.Concepts.Fundamentals]
                 MainDoc = "/docs/reference/concepts/fundamentals/"
@@ -1085,6 +1089,7 @@
 [Wikipedia]
     Bit = "https://en.wikipedia.org/wiki/Bit"
     Byte = "https://en.wikipedia.org/wiki/Byte"
+    HttpStatusCodes = "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes"
 [W3]
     XmlNodes = "https://www.w3schools.com/XML/dom_nodes.asp"
     CharacterSets = "https://www.w3.org/Style/XSL/TestSuite/results/4/XEP/charsets.pdf"
