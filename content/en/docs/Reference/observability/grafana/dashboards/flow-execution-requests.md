@@ -144,9 +144,21 @@ This table displays the 10 flows with the shortest mean duration during the spec
 
 Note: The Interval filter does not affect this list. Also, any flows with zero executions will not be displayed.
 
+## Remarks
+
+### Unknown values
+
+It is possible that the dashboards may display flow execution requests that have an unknown status code or result. The chances of this occurring are minimal. However, this will occur if a request has failed without returning the reason.  If we do not know the status code or result, we cannot assign it to the relevant category and therefore, these logs will have their status code and/or result recorded as Unknown.
+
+### Known Limitations
+
+#### Graphs do not reset to zero
+
+There is a limitation in Grafana where the graph does not always return to the zero line when there is no data for a given time point.  This only occurs when there is a data point available at the beginning of the graph, followed by a period with no data, then data occurs again.  When hovering the mouse over this area, it will show that the value is 0, and any other tiles will reflect the zero data at this point accordingly.
+
 ## Related Dashboards
 
-## Logging Help
+None
 
 [status codes]: {{< url "Wikipedia.HttpStatusCodes" >}}
 [customise threholds]: {{< url "Cortex.Reference.Dashboards.Grafana.ConfigureThresholds.MainDoc" >}}
