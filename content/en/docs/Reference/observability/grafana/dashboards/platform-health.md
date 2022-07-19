@@ -82,11 +82,11 @@ This section displays the availability of the Cortex Innovation platform and con
 
 #### Availability
 
-This graph displays the availability of the Cortex Innovation Platform by calculating successful requests / total requests. Successful requests are all requests that do not result in a 5xx HTTP response, 4xx responses are considered successful in this scenario.
+This graph displays the availability of the Cortex Innovation Platform by calculating successful requests / total requests. Successful requests are all requests that do not result in a 5xx HTTP response. 4xx responses are considered successful in this scenario.
 
-Each data point value is calculated by aggregating requests based on the Interval filter. If we have no data for the previous interval, the line will be [broken](#breaks-in-graph-lines) as we do not know the availability at this time.
+Each data point value is calculated by aggregating requests based on the Interval filter. If there is no data for the previous interval, the line will be [broken](#breaks-in-graph-lines) as the availability is not known at the time.
 
-This graph has thresholds set to colour code the background to show when availbility drops into warning and critical levels. These thresholds can be [customised][customise threholds], however the default thresholds are:
+This graph has thresholds set to colour code the background to show when availability drops into warning and critical levels. These thresholds can be [customised][customise threholds], however the default thresholds are:
 
 | Threshold | Value | Colour |
 |------------------|-----------|------------|
@@ -94,7 +94,7 @@ This graph has thresholds set to colour code the background to show when availbi
 | WARNING | &gt;= 90% | orange |
 | CRITICAL | &lt; 90% | red |
 
-This graph is configured to start the availability at 80%, however if the availability drops below this level the scale will modify to show the lowest availability level.
+This graph is configured to start the availability at 80%. However, if the availability drops below this level the scale will modify to show the lowest availability level.
 
 ### Requests
 
@@ -102,14 +102,14 @@ This section provides information regarding the history of the requests processe
 
 #### Requests
 
-This graph displays
+This graph displays:
 
 - the count of all requests. Each data point value is calculated by aggregating requests based on the Interval filter.
 - the count of all requests per second.
 
 #### Top 10 Responses by Total Count
 
-This table displays the Top 10 HTTP responses that occured during the specified time range with their mean, minimum and maximum duration in seconds.
+This table displays the Top 10 HTTP responses that occurred during the specified time range with their mean, minimum and maximum duration in seconds.
 
 Note: The Interval filter does not affect this list.
 
@@ -126,11 +126,11 @@ This graph displays the:
 
 Each data point value is calculated by aggregating requests based on the Interval filter.
 
-Errored requests are all requests that result in an unknown or 5xx HTTP response, 4xx responses are considered successful in this scenario.
+Errored requests are all requests that result in an unknown or 5xx HTTP response. 4xx responses are considered successful in this scenario.
 
 #### Top 10 Error Responses by Error Count
 
-This table displays the Top 10 HTTP error responses that occured during the specified time range with their mean, minimum and maximum duration in seconds. Errored requests are all requests that result in an unknown or 5xx HTTP response, 4xx responses are considered successful in this scenario.
+This table displays the Top 10 HTTP error responses that occured during the specified time range with their mean, minimum and maximum duration in seconds. Errored requests are all requests that result in an unknown or 5xx HTTP response. 4xx responses are considered successful in this scenario.
 
 Note: The Interval filter does not affect this list.
 
@@ -152,7 +152,7 @@ Each data point value is calculated by aggregating requests based on the Interva
 
 #### Top 10 Responses by Mean Duration
 
-This table displays the top 10 HTTP responses that occured during the specified time range with their mean, minimum and maximum duration in seconds.
+This table displays the top 10 HTTP responses that occurred during the specified time range with their mean, minimum and maximum duration in seconds.
 
 Note: The Interval filter does not affect this list.
 
@@ -164,13 +164,13 @@ It is possible that the dashboards may display flow execution requests that have
 
 ### Breaks in Graph Lines
 
-When appropriate, there may occur breaks in the line graphs, this is relevant to the Availability graph.  When there is no data, it is not appropriate to say that the availability is the same as the previous data point or that it is zero as if there is no data, we cannot accurately reflect the data at this point and therefore, the line will break.
+When appropriate, there may occur breaks in the line graphs. This is relevant to the Availability graph.  When there is no data, it is not appropriate to say that the availability is the same as the previous data point or that it is zero as if there is no data, we cannot accurately reflect the data at this point, and therefore, the line will break.
 
 ### Known Limitations
 
 #### Graphs do not reset to zero
 
-There is a limitation in Grafana where the graph does not always return to the zero line when there is no data for a given time point.  This only occurs when there is a data point available at the beginning of the graph, followed by a period with no data, then data occurs again.  When hovering the mouse over this area, it will show that the value is 0, and any other tiles will reflect the zero data at this point accordingly.
+There is a limitation in Grafana where the graph does not always return to the zero line when there is no data for a given time point. This only occurs when there is a data point available at the beginning of the graph, followed by a period with no data, then data occurs again.  When hovering the mouse over this area, it will show that the value is 0, and any other tiles will reflect the zero data at this point accordingly.
 
 ## Related Dashboards
 
