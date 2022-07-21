@@ -9,9 +9,11 @@ weight: 10
 
 ## Description
 
-This dashboard provides the information required to analyse the flow execution requests within the Cortex Innovation platform.  
+This dashboard provides the information required to analyse the flow execution requests within the Cortex Innovation platform. It will display data based on the Time Range that has been specified. 
 
-It is split into 4 main sections:
+At the top of the page there is a description section. This section provides information about what the dashboard is reporting and what each of the filters are. The description is always collapsed by default.
+
+The dashboard is then split into 4 main sections:
 
 - Overview
 - Requests
@@ -20,9 +22,13 @@ It is split into 4 main sections:
 
 There are several filters available to filter the data to a more fine-grained level as necessary and are explained in further detail below.
 
+{{< figure src="/images/Flow Execution Requests Dashboard.svg" title="Flow Execution Requests Dashboard" >}}
+
 ## Filters
 
-There are 10 filters available on this dashboard:
+At the top of the dashboard, there are 10 filters available to enable more fine-grained data visibility:
+
+{{< figure src="/images/Flow Execution Requests - Filters.svg" >}}
 
 |Filter  |Description|
 |--------|-----------|
@@ -46,6 +52,8 @@ All filters (excluding Interval and Custom Filter) will display their list of av
 This section displays key flow execution request metrics for the specified time range.
 
 Note: The Interval filter does not affect these values.
+
+{{< figure src="/images/Flow Execution Requests - Overview.svg" >}}
 
 #### Total Requests
 
@@ -78,6 +86,8 @@ This tile displays the mean duration for flow execution requests during the spec
 
 This section provides information regarding the flow execution request history for the specified time range and consists of 3 panels.
 
+{{< figure src="/images/Flow Execution Requests - Requests.svg" >}}
+
 #### Requests
 
 This graph Displays the:
@@ -103,6 +113,8 @@ Note: The Interval filter does not affect this list. Also, any flows with zero e
 
 This section provides information regarding the errored flow execution request history for the specified time range and consists of 2 panels.
 
+{{< figure src="/images/Flow Execution Requests - Errors.svg" >}}
+
 #### Errored Requests
 
 This graph displays the:
@@ -121,6 +133,8 @@ Note: The Interval filter does not affect this list.
 ### Duration
 
 This section provides information regarding the flow execution request duration history for the specified time range and consists of 3 panels.
+
+{{< figure src="/images/Flow Execution Requests - Duration.svg" >}}
 
 #### Request Duration
 
@@ -155,6 +169,8 @@ It is possible that the dashboards may display flow execution requests that have
 #### Graphs do not reset to zero
 
 There is a limitation in Grafana where the graph does not always return to the zero line when there is no data for a given time point.  This only occurs when there is a data point available at the beginning of the graph, followed by a period with no data, then data occurs again.  When hovering the mouse over this area, it will show that the value is 0, and any other tiles will reflect the zero data at this point accordingly.
+
+{{< figure src="/images/Flow Execution Requests - Not Zero.svg" >}}
 
 ## Related Dashboards
 
