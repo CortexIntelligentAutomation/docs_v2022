@@ -27,10 +27,39 @@ There are several filters available to filter the data to a more fine-grained le
 
 ## Time Range
 
-It is possible to change the time range that the dashboard displays data for.  This in configurable in the top right of the dashboard.
+It is possible to change the time range for which the dashboard displays data.  This is configurable in the top right of the dashboard using the Time Range selector:
 
 {{< figure src="/images/Platform Health - Time Range.svg">}}
 
+There are a number of predefined relative time periods to choose from as well as the option to configure a specific time period.  The predefined relative time periods are:
+
+- Last 5, 15 and 30 minutes
+- Last 1, 3, 6, 12 and 24 hours
+- Last 2, 7, 30 and 90 days
+- Last 6 months
+- Last 1, 2 and 5 years
+- Yesterday
+- Day before yesterday
+- This day last week
+- Previous week, month, fiscal quarter, year, fiscal year
+- Today
+- Today so far
+- This month, fiscal quarter, year and fiscal year
+- This month, fiscal quarter, year and fiscal year so far
+
+It should be noted that choosing large time periods will have a negative impact on the dashboard's responsiveness.
+
+To configure an absolute time range, you should specify a From and To date and time.  These values can be in the format of YYYY-MM-DD HH:MM:SS, e.g. 2022-07-22 13:54:23, or alternatively can use times relative to now, e.g. now-24h.  It is also possible to use the date time picker available for both the From and To fields.  Once the absolute time range has been configured you must click the 'Apply time range' button.
+
+The magnifying glass icon allows you to zoom out of the time range specified.  It will increment the time period either side of the initial range specified.
+
+Once an absolute time range is configured, the time range selector will change to include arrows either side:
+
+{{< figure src="/images/Platform Health - Time Range expanded.svg">}}
+
+These arrows can be used to move forwards and backwards from the time range intially specified.
+
+For more information regarding the Time Range selector, see Grafana's [Time range controls][] documentation.
 
 ## Filters
 
@@ -205,3 +234,4 @@ None
 
 [status codes]: {{< url "Wikipedia.HttpStatusCodes" >}}
 [customise threholds]: {{< url "Cortex.Reference.Dashboards.Grafana.ConfigureThresholds.MainDoc" >}}
+[Time range controls]: {{< url "Grafana.Products.Grafana.TimeRange" >}}
