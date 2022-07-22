@@ -9,7 +9,7 @@ weight: 10
 
 ## Description
 
-This dashboard provides the information required to analyse the flow execution requests within the Cortex Innovation platform. It will display data based on the Time Range that has been specified. 
+This dashboard provides the information required to analyse the flow execution requests within the Cortex Innovation platform. It will display data based on the Time Range that has been specified.
 
 At the top of the page there is a description section. This section provides information about what the dashboard is reporting and what each of the filters are. The description is always collapsed by default.
 
@@ -22,7 +22,7 @@ The dashboard is then split into 4 main sections:
 
 There are several filters available to filter the data to a more fine-grained level as necessary and are explained in further detail below.
 
-{{< figure src="/images/Flow Execution Requests Dashboard.svg" title="Flow Execution Requests Dashboard" >}}
+{{< figure src="/images/Flow Execution Requests Dashboard.svg" >}}
 
 ## Filters
 

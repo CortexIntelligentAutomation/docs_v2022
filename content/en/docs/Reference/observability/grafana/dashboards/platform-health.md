@@ -9,9 +9,11 @@ weight: 20
 
 ## Description
 
-This dashboard provides the information required to analyse the health of the Cortex Innovation platform.
+This dashboard provides the information required to analyse the health of the Cortex Innovation platform. It will display data based on the Time Range that has been specified.
 
-It is split into 5 main sections:
+At the top of the page there is a description section. This section provides information about what the dashboard is reporting and what each of the filters are. The description is always collapsed by default.
+
+The dashboard is then split into 5 main sections:
 
 - Overview
 - Availability
@@ -19,11 +21,22 @@ It is split into 5 main sections:
 - Errors
 - Duration
 
-There are several filters available to filter the data to a more fine-grained level as necessary.
+There are several filters available to filter the data to a more fine-grained level as necessary and are explained in further detail below.
+
+{{< figure src="/images/Platform Health Dashboard.svg" >}}
+
+## Time Range
+
+It is possible to change the time range that the dashboard displays data for.  This in configurable in the top right of the dashboard.
+
+{{< figure src="/images/Platform Health - Time Range.svg">}}
+
 
 ## Filters
 
-There are 9 filters available on this dashboard:
+At the top of the dashboard, there are 9 filters available to enable more fine-grained data visibility:
+
+{{< figure src="/images/Platform Health - Filters.svg">}}
 
 |Filter  |Description|
 |--------|-----------|
@@ -46,6 +59,8 @@ All filters (excluding Interval and Custom Filter) will display their list of av
 This section displays key platform health metrics for the specified time range.
 
 Note: The Interval filter does not affect these values.
+
+{{< figure src="/images/Platform Health - Overview.svg">}}
 
 #### Availability
 
@@ -80,6 +95,8 @@ Note: Certain APIs may take significantly longer than others skewing the result.
 
 This section displays the availability of the Cortex Innovation platform and consists of 1 panel.
 
+{{< figure src="/images/Platform Health - Availability.svg">}}
+
 #### Availability
 
 This graph displays the availability of the Cortex Innovation Platform by calculating successful requests / total requests. Successful requests are all requests that do not result in a 5xx HTTP response. 4xx responses are considered successful in this scenario.
@@ -100,6 +117,8 @@ This graph is configured to start the availability at 80%. However, if the avail
 
 This section provides information regarding the history of the requests processed by the Cortex Innovation platform for the specified time range and consists of 2 panels.
 
+{{< figure src="/images/Platform Health - Requests.svg">}}
+
 #### Requests
 
 This graph displays:
@@ -116,6 +135,8 @@ Note: The Interval filter does not affect this list.
 ### Errors
 
 This section provides information regarding the errored request history for the specified time range and consists of 2 panels.
+
+{{< figure src="/images/Platform Health - Errors.svg">}}
 
 #### Errored Requests
 
@@ -139,6 +160,8 @@ Note: The Interval filter does not affect this list.
 This section provides information regarding the request duration history for the specified time range and consists of 2 panels.
 
 Note: Certain APIs may take significantly longer than others skewing the results.
+
+{{< figure src="/images/Platform Health - Duration.svg">}}
 
 #### Request Duration
 
@@ -166,11 +189,15 @@ It is possible that the dashboards may display flow execution requests that have
 
 When appropriate, there may occur breaks in the line graphs. This is relevant to the Availability graph.  When there is no data, it is not appropriate to say that the availability is the same as the previous data point or that it is zero as if there is no data, we cannot accurately reflect the data at this point, and therefore, the line will break.
 
+{{< figure src="/images/Platform Health - Break in Line.svg">}}
+
 ### Known Limitations
 
 #### Graphs do not reset to zero
 
 There is a limitation in Grafana where the graph does not always return to the zero line when there is no data for a given time point. This only occurs when there is a data point available at the beginning of the graph, followed by a period with no data, then data occurs again.  When hovering the mouse over this area, it will show that the value is 0, and any other tiles will reflect the zero data at this point accordingly.
+
+{{< figure src="/images/Platform Health - Not Zeros.svg">}}
 
 ## Related Dashboards
 
