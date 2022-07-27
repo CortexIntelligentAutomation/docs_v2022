@@ -9,29 +9,31 @@ weight: 20
 
 ## Description
 
-This dashboard provides the information required to analyse the health of the Cortex Innovation platform. It will display data based on the Time Range that has been specified.
+This dashboard provides the information required to analyse the health of the Cortex Innovation platform. It will display data based on the [Time Range][] that has been specified.
 
-At the top of the page there is a description section. This section provides information about what the dashboard is reporting and what each of the filters are. The description is always collapsed by default.
+At the top of the page there is a dashboard description. This provides information about what the dashboard is reporting and what each of the filters are. The description is always collapsed by default.
 
 The dashboard is then split into 5 main sections:
 
-- Overview
-- Availability
-- Requests
-- Errors
-- Duration
+- [Overview](#overview-section)
+- [Availability](#availability-section)
+- [Requests](#requests-section)
+- [Errors](#errors-section)
+- [Duration](#duration-section)
 
-There are several filters available to filter the data to a more fine-grained level as necessary and are explained in further detail below.
+There are several [filters](#filters) available to filter the data to a more fine-grained level as necessary and are explained in further detail below.
 
 {{< figure src="/images/Platform Health Dashboard.svg" >}}
 
 ## Time Range
 
-It is possible to change the time range for which the dashboard displays data.  This is configurable in the top right of the dashboard using the Time Range selector:
+{{% alert type="note" title="Note" %}}Choosing large time ranges will increase the time it takes for the data to be loaded into the dashboard.{{% /alert %}}
+
+The time range for which the dashboard displays data is configurable in the top right of the dashboard using the Time Range selector (defaults to the last 3 hours):
 
 {{< figure src="/images/Platform Health - Time Range.svg">}}
 
-There are a number of predefined relative time periods to choose from as well as the option to configure a specific time period.  The predefined relative time periods are:
+There are a number of predefined quick ranges to choose from:
 
 - Last 5, 15 and 30 minutes
 - Last 1, 3, 6, 12 and 24 hours
@@ -47,23 +49,19 @@ There are a number of predefined relative time periods to choose from as well as
 - This month, fiscal quarter, year and fiscal year
 - This month, fiscal quarter, year and fiscal year so far
 
-It should be noted that choosing large time periods will have a negative impact on the dashboard's responsiveness.
+To configure an absolute time range, you should specify a From and To date and time.  These values can be in the format of `YYYY-MM-DD HH:MM:SS`, e.g. `2022-07-22 13:54:23`, or alternatively can use times relative to now, e.g. `now-24h`. It is also possible to use the date time picker available for both the From and To fields. Once the absolute time range has been configured you must click the 'Apply time range' button.
 
-To configure an absolute time range, you should specify a From and To date and time.  These values can be in the format of YYYY-MM-DD HH:MM:SS, e.g. 2022-07-22 13:54:23, or alternatively can use times relative to now, e.g. now-24h.  It is also possible to use the date time picker available for both the From and To fields.  Once the absolute time range has been configured you must click the 'Apply time range' button.
+If an absolute time range is specified, the Time Range selector will show the selected time range with arrows either side. These arrows can be used to shift the time range forwards and backwards. This feature is not available for quick ranges.
 
-The magnifying glass icon allows you to zoom out of the time range specified.  It will increment the time period either side of the initial range specified.
+{{< figure src="/images/Platform Health - Time Range extended.svg">}}
 
-Once an absolute time range is configured, the time range selector will change to include arrows either side:
-
-{{< figure src="/images/Platform Health - Time Range expanded.svg">}}
-
-These arrows can be used to move forwards and backwards from the time range intially specified.
+The magnifying glass icon allows you to zoom out of the time range specified. It will substract half the current time range from the From field and add half the current time range to the To field.
 
 For more information regarding the Time Range selector, see Grafana's [Time range controls][] documentation.
 
 ## Filters
 
-At the top of the dashboard, there are 9 filters available to enable more fine-grained data visibility:
+At the top of the dashboard, there are 9 filters available to restrict the data queried:
 
 {{< figure src="/images/Platform Health - Filters.svg">}}
 
@@ -81,54 +79,52 @@ At the top of the dashboard, there are 9 filters available to enable more fine-g
 
 All filters (excluding Interval and Custom Filter) will display their list of available options dependent on the preceding filters selected.
 
-## Report Sections
+## Overview Section
 
-### Overview
-
-This section displays key platform health metrics for the specified time range.
-
-Note: The Interval filter does not affect these values.
+This section displays key platform health metrics for the specified [time range][] and consists of 4 panels.
 
 {{< figure src="/images/Platform Health - Overview.svg">}}
 
-#### Availability
-
-This tile displays the availability of the platform by calculating the successful requests / total requests during the specified time range. Successful requests are all requests that do not result in a 5xx HTTP response, 4xx responses are considered successful in this scenario. This tile has thresholds set to colour code the tile depending on the value.  These thresholds can be [customised][customise threholds], however the default thresholds are:
-
-| Threshold | Value | Colour |
-|------------------|-----------|------------|
-| OK  | &gt;= 95% | green |
-| WARNING | &gt;= 90% | orange |
-| CRITICAL | &lt; 90% | red |
-
-#### Total Requests
-
-This tile displays the total number of requests during the specified time range.
-
-#### Errored Requests
-
-This tile displays the total number of errored requests during the specified time range. Errored requests are all requests that result in an unknown or 5xx HTTP response, 4xx responses are considered successful in this scenario. This tile has thresholds set to colour code the tile depending on the value.  These thresholds can be [customised][customise threholds], however the default thresholds are:
-
-| Threshold | Value | Colour |
-|------------------|-----------|------------|
-| OK  | 0 | green |
-| CRITICAL | &gt;= 1 | red |
-
-#### Mean Request Duration
-
-This tile displays the mean duration for requests during the specified time range.
-
-Note: Certain APIs may take significantly longer than others skewing the result.
+{{% alert type="note" title="Note" %}}The Interval filter does not affect these panels.{{% /alert %}}
 
 ### Availability
+
+This tile displays the availability of the platform by calculating the successful requests / total requests during the specified [time range][]. Successful requests are all requests that do not result in a 5xx HTTP response, 4xx responses are considered successful in this scenario. This tile has thresholds set to colour code the tile depending on the value. These thresholds can be [customised][customise threholds], however the default thresholds are:
+
+| Threshold | Value | Colour |
+|------------------|-----------|------------|
+| OK  | &gt;= 95% | <span class="threshold-ok">green</span> |
+| WARNING | &gt;= 90% | <span class="threshold-warning">orange</span> |
+| CRITICAL | &lt; 90% | <span class="threshold-critical">red</span> |
+
+### Total Requests
+
+This tile displays the total number of requests during the specified [time range][].
+
+### Errored Requests
+
+This tile displays the total number of errored requests during the specified [time range][]. Errored requests are all requests that result in an unknown or 5xx HTTP response, 4xx responses are considered successful in this scenario. This tile has thresholds set to colour code the tile depending on the value.  These thresholds can be [customised][customise threholds], however the default thresholds are:
+
+| Threshold | Value | Colour |
+|------------------|-----------|------------|
+| OK  | 0 | <span class="threshold-ok">green</span> |
+| CRITICAL | &gt;= 1 | <span class="threshold-critical">red</span> |
+
+### Mean Request Duration
+
+This tile displays the mean duration for requests during the specified [time range][].
+
+{{% alert type="note" title="Note" %}}Certain APIs may take significantly longer than others skewing the result.{{% /alert %}}
+
+## Availability Section
 
 This section displays the availability of the Cortex Innovation platform and consists of 1 panel.
 
 {{< figure src="/images/Platform Health - Availability.svg">}}
 
-#### Availability
+### Availability
 
-This graph displays the availability of the Cortex Innovation Platform by calculating successful requests / total requests. Successful requests are all requests that do not result in a 5xx HTTP response. 4xx responses are considered successful in this scenario.
+This graph displays the availability of the Cortex Innovation Platform during the specified [time range][] by calculating successful requests / total requests. Successful requests are all requests that do not result in a 5xx HTTP response. 4xx responses are considered successful in this scenario.
 
 Each data point value is calculated by aggregating requests based on the Interval filter. If there is no data for the previous interval, the line will be [broken](#breaks-in-graph-lines) as the availability is not known at the time.
 
@@ -136,40 +132,40 @@ This graph has thresholds set to colour code the background to show when availab
 
 | Threshold | Value | Colour |
 |------------------|-----------|------------|
-| OK  | &gt;= 95% | green |
-| WARNING | &gt;= 90% | orange |
-| CRITICAL | &lt; 90% | red |
+| OK  | &gt;= 95% | <span class="threshold-ok">green</span> |
+| WARNING | &gt;= 90% | <span class="threshold-warning">orange</span> |
+| CRITICAL | &lt; 90% | <span class="threshold-critical">red</span> |
 
-This graph is configured to start the availability at 80%. However, if the availability drops below this level the scale will modify to show the lowest availability level.
+This graph is configured to start the availability axis at 80%. However, if the availability drops below this level, the axis will modify to show the lowest availability level.
 
-### Requests
+## Requests Section
 
-This section provides information regarding the history of the requests processed by the Cortex Innovation platform for the specified time range and consists of 2 panels.
+This section provides information regarding the history of the requests processed by the Cortex Innovation platform for the specified [time range][] and consists of 2 panels.
 
 {{< figure src="/images/Platform Health - Requests.svg">}}
 
-#### Requests
+### Requests
 
-This graph displays:
+This graph displays, for the specified [time range][], the:
 
-- the count of all requests. Each data point value is calculated by aggregating requests based on the Interval filter.
-- the count of all requests per second.
+- count of all requests. Each data point value is calculated by aggregating requests based on the Interval filter.
+- count of all requests per second.
 
-#### Top 10 Responses by Total Count
+### Top 10 Responses by Total Count
 
-This table displays the Top 10 HTTP responses that occurred during the specified time range with their mean, minimum and maximum duration in seconds.
+This table displays the Top 10 HTTP responses that occurred during the specified [time range][] with their mean, minimum and maximum duration in seconds.
 
-Note: The Interval filter does not affect this list.
+{{% alert type="note" title="Note" %}}The Interval filter does not affect this table.{{% /alert %}}
 
-### Errors
+## Errors Section
 
-This section provides information regarding the errored request history for the specified time range and consists of 2 panels.
+This section provides information regarding the errored request history for the specified [time range][] and consists of 2 panels.
 
 {{< figure src="/images/Platform Health - Errors.svg">}}
 
-#### Errored Requests
+### Errored Requests
 
-This graph displays the:
+This graph displays, for the specified [time range][], the:
 
 - count of errored requests
 - count of all requests
@@ -178,23 +174,23 @@ Each data point value is calculated by aggregating requests based on the Interva
 
 Errored requests are all requests that result in an unknown or 5xx HTTP response. 4xx responses are considered successful in this scenario.
 
-#### Top 10 Error Responses by Error Count
+### Top 10 Error Responses by Error Count
 
-This table displays the Top 10 HTTP error responses that occured during the specified time range with their mean, minimum and maximum duration in seconds. Errored requests are all requests that result in an unknown or 5xx HTTP response. 4xx responses are considered successful in this scenario.
+This table displays the Top 10 HTTP error responses that occured during the specified [time range][] with their mean, minimum and maximum duration in seconds. Errored requests are all requests that result in an unknown or 5xx HTTP response. 4xx responses are considered successful in this scenario.
 
-Note: The Interval filter does not affect this list.
+{{% alert type="note" title="Note" %}}The Interval filter does not affect this table.{{% /alert %}}
 
-### Duration
+## Duration Section
 
-This section provides information regarding the request duration history for the specified time range and consists of 2 panels.
+This section provides information regarding the request duration history for the specified [time range][] and consists of 2 panels.
 
-Note: Certain APIs may take significantly longer than others skewing the results.
+{{% alert type="note" title="Note" %}}Certain APIs may take significantly longer than others skewing the result.{{% /alert %}}
 
 {{< figure src="/images/Platform Health - Duration.svg">}}
 
-#### Request Duration
+### Request Duration
 
-This graph displays the:
+This graph displays, for the specified [time range][], the:
 
 - mean duration in seconds for all requests
 - minimum duration in seconds for all requests
@@ -202,17 +198,17 @@ This graph displays the:
 
 Each data point value is calculated by aggregating requests based on the Interval filter.
 
-#### Top 10 Responses by Mean Duration
+### Top 10 Responses by Mean Duration
 
-This table displays the top 10 HTTP responses that occurred during the specified time range with their mean, minimum and maximum duration in seconds.
+This table displays the top 10 HTTP responses that occurred during the specified [time range][] with their mean, minimum and maximum duration in seconds.
 
-Note: The Interval filter does not affect this list.
+{{% alert type="note" title="Note" %}}The Interval filter does not affect this table.{{% /alert %}}
 
 ## Remarks
 
 ### Unknown values
 
-It is possible that the dashboards may display flow execution requests that have an unknown status code or result. The chances of this occurring are minimal. However, this will occur if a request has failed without returning the reason.  If we do not know the status code or result, we cannot assign it to the relevant category and therefore, these logs will have their status code and/or result recorded as Unknown.
+The dashboard may display HTTP requests that have an `Unknown` status code or result, if they are missing from the raw logs. The chances of this occurring are minimal.
 
 ### Breaks in Graph Lines
 
@@ -232,6 +228,10 @@ There is a limitation in Grafana where the graph does not always return to the z
 
 None
 
+<!-- Same page links -->
+[time range]: #time-range
+
+<!-- Other links -->
+[customise threholds]: {{< url "Cortex.Reference.Dashboards.Grafana.AdvancedSetup.ConfigureThresholds.MainDoc" >}}
 [status codes]: {{< url "Wikipedia.HttpStatusCodes" >}}
-[customise threholds]: {{< url "Cortex.Reference.Dashboards.Grafana.ConfigureThresholds.MainDoc" >}}
 [Time range controls]: {{< url "Grafana.Products.Grafana.TimeRange" >}}

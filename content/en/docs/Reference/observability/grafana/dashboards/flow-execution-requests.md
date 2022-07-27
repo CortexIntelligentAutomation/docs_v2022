@@ -9,28 +9,30 @@ weight: 10
 
 ## Description
 
-This dashboard provides the information required to analyse the flow execution requests within the Cortex Innovation platform. It will display data based on the Time Range that has been specified.
+This dashboard provides the information required to analyse the flow execution requests within the Cortex Innovation platform. It will display data based on the [Time Range][] that has been specified.
 
-At the top of the page there is a description section. This section provides information about what the dashboard is reporting and what each of the filters are. The description is always collapsed by default.
+At the top of the page there is a dashboard description. This provides information about what the dashboard is reporting and what each of the filters are. The description is always collapsed by default.
 
 The dashboard is then split into 4 main sections:
 
-- Overview
-- Requests
-- Errors
-- Duration
+- [Overview](#overview-section)
+- [Requests](#requests-section)
+- [Errors](#errors-section)
+- [Duration](#duration-section)
 
-There are several filters available to filter the data to a more fine-grained level as necessary and are explained in further detail below.
+There are several [filters](#filters) available to filter the data to a more fine-grained level as necessary and are explained in further detail below.
 
 {{< figure src="/images/Flow Execution Requests Dashboard.svg" >}}
 
 ## Time Range
 
-It is possible to change the time range for which the dashboard displays data.  This is configurable in the top right of the dashboard using the Time Range selector:
+{{% alert type="note" title="Note" %}}Choosing large time ranges will increase the time it takes for the data to be loaded into the dashboard.{{% /alert %}}
+
+The time range for which the dashboard displays data is configurable in the top right of the dashboard using the Time Range selector (defaults to the last 3 hours):
 
 {{< figure src="/images/Flow Execution Requests - Time Range.svg">}}
 
-There are a number of predefined relative time periods to choose from as well as the option to configure a specific time period.  The predefined relative time periods are:
+There are a number of predefined quick ranges to choose from:
 
 - Last 5, 15 and 30 minutes
 - Last 1, 3, 6, 12 and 24 hours
@@ -46,23 +48,19 @@ There are a number of predefined relative time periods to choose from as well as
 - This month, fiscal quarter, year and fiscal year
 - This month, fiscal quarter, year and fiscal year so far
 
-It should be noted that choosing large time periods will have a negative impact on the dashboard's responsiveness.
+To configure an absolute time range, you should specify a From and To date and time.  These values can be in the format of `YYYY-MM-DD HH:MM:SS`, e.g. `2022-07-22 13:54:23`, or alternatively can use times relative to now, e.g. `now-24h`. It is also possible to use the date time picker available for both the From and To fields. Once the absolute time range has been configured you must click the 'Apply time range' button.
 
-To configure an absolute time range, you should specify a From and To date and time.  These values can be in the format of YYYY-MM-DD HH:MM:SS, e.g. 2022-07-22 13:54:23, or alternatively can use times relative to now, e.g. now-24h.  It is also possible to use the date time picker available for both the From and To fields.  Once the absolute time range has been configured you must click the 'Apply time range' button.
-
-The magnifying glass icon allows you to zoom out of the time range specified.  It will increment the time period either side of the initial range specified.
-
-Once an absolute time range is configured, the time range selector will change to include arrows either side:
+If an absolute time range is specified, the Time Range selector will show the selected time range with arrows either side. These arrows can be used to shift the time range forwards and backwards. This feature is not available for quick ranges.
 
 {{< figure src="/images/Flow Execution Requests - Time Range extended.svg">}}
 
-These arrows can be used to move forwards and backwards from the time range intially specified.
+The magnifying glass icon allows you to zoom out of the time range specified. It will substract half the current time range from the From field and add half the current time range to the To field.
 
 For more information regarding the Time Range selector, see Grafana's [Time range controls][] documentation.
 
 ## Filters
 
-At the top of the dashboard, there are 10 filters available to enable more fine-grained data visibility:
+At the top of the dashboard, there are 10 filters available to restrict the data queried:
 
 {{< figure src="/images/Flow Execution Requests - Filters.svg" >}}
 
@@ -81,100 +79,98 @@ At the top of the dashboard, there are 10 filters available to enable more fine-
 
 All filters (excluding Interval and Custom Filter) will display their list of available options dependent on the preceding filters selected.
 
-## Report Sections
+## Overview Section
 
-### Overview
-
-This section displays key flow execution request metrics for the specified time range.
-
-Note: The Interval filter does not affect these values.
+This section displays key flow execution request metrics for the specified [time range][] and consists of 4 panels.
 
 {{< figure src="/images/Flow Execution Requests - Overview.svg" >}}
 
-#### Total Requests
+{{% alert type="note" title="Note" %}}The Interval filter does not affect these panels.{{% /alert %}}
 
-This tile displays the total number of flow execution requests during the specified time range and consists of 4 panels.
+### Total Requests
 
-#### Total Requests Errored
+This tile displays the total number of flow execution requests during the specified [time range][].
 
-This tile displays the total number of flow execution requests errored during the specified time range.  This tile has thresholds set to colour code the tile depending on the value.  These thresholds can be [customised][customise threholds], however the default thresholds are:
+### Total Requests Errored
 
-| Threshold | Value | Colour |
-|------------------|-----------|------------|
-| OK  | 0 | green |
-| CRITICAL | &gt;= 1 | red |
-
-#### Request Error Rate
-
-This tile displays the percentage of errored flow execution requests against the total flow execution requests during the specified time range.  This tile has thresholds set to colour code the tile depending on the value.  These thresholds can be [customised][customise threholds], however the default thresholds are:
+This tile displays the total number of flow execution requests that errored during the specified [time range][]. This tile has thresholds set to colour code the tile depending on the value. These thresholds can be [customised][customise threholds], however the default thresholds are:
 
 | Threshold | Value | Colour |
 |------------------|-----------|------------|
-| OK  | &lt; 5% | green |
-| WARNING | &gt;= 5% | orange |
-| CRITICAL | &gt;= 10% | red |
+| OK  | 0 | <span class="threshold-ok">green</span> |
+| CRITICAL | &gt;= 1 | <span class="threshold-critical">red</span> |
 
-#### Mean Request Duration
+### Request Error Rate
 
-This tile displays the mean duration for flow execution requests during the specified time range.  This is usually reported in seconds, however the unit may change if the number is much smaller or larger.
+This tile displays the percentage of errored flow execution requests against the total flow execution requests during the specified [time range][]. This tile has thresholds set to colour code the tile depending on the value. These thresholds can be [customised][customise threholds], however the default thresholds are:
 
-### Requests
+| Threshold | Value | Colour |
+|------------------|-----------|------------|
+| OK  | &lt; 5% | <span class="threshold-ok">green</span> |
+| WARNING | &gt;= 5% | <span class="threshold-warning">orange</span> |
+| CRITICAL | &gt;= 10% | <span class="threshold-critical">red</span> |
 
-This section provides information regarding the flow execution request history for the specified time range and consists of 3 panels.
+### Mean Request Duration
+
+This tile displays the mean duration for flow execution requests during the specified [time range][]. This is usually reported in seconds, however the unit may change if the number is much smaller or larger.
+
+## Requests Section
+
+This section provides information regarding the flow execution request history for the specified time range[time range][] and consists of 3 panels.
 
 {{< figure src="/images/Flow Execution Requests - Requests.svg" >}}
 
-#### Requests
+### Requests
 
-This graph Displays the:
+This graph displays, for the specified [time range][], the:
 
 - count of all flow execution requests
 - mean duration in seconds for all flow execution requests
 
 Each data point value is calculated by aggregating requests based on the Interval filter.
 
-#### Top 10 Requests by Count
+### Top 10 Requests by Count
 
-This table displays the 10 most executed flows during the specified time range with their mean, minimum and maximum duration in seconds.
+This table displays the 10 flows with the most execution requests during the specified [time range][] with their mean, minimum and maximum duration in seconds.
 
-Note: The Interval filter does not affect this list.
+{{% alert type="note" title="Note" %}}The Interval filter does not affect this table.{{% /alert %}}
 
-#### Bottom 10 Requests by Count
+### Bottom 10 Requests by Count
 
-This table displays the 10 least executed flows during the specified time range with their mean, minimum and maximum duration in seconds.
+This table displays the 10 flows with the least execution requests during the specified [time range][] with their mean, minimum and maximum duration in seconds.
 
-Note: The Interval filter does not affect this list. Also, any flows with zero executions will not be displayed.
+{{% alert type="note" title="Note" %}}The Interval filter does not affect this table. Also, any flows with zero executions will not be displayed.{{% /alert %}}
 
-### Errors
+## Errors Section
 
-This section provides information regarding the errored flow execution request history for the specified time range and consists of 2 panels.
+This section provides information regarding the errored flow execution request history for the specified [time range][] and consists of 2 panels.
 
 {{< figure src="/images/Flow Execution Requests - Errors.svg" >}}
 
-#### Errored Requests
+### Errored Requests
 
-This graph displays the:
+This graph displays, for the specified [time range][], the:
 
 - count of errored flow execution requests
 - mean duration in seconds for errored flow execution requests
 
 Each data point value is calculated by aggregating requests based on the Interval filter.
 
-#### Top 10 Requests by Error Count
+### Top 10 Requests by Error Count
 
-This table displays the 10 most errored (by status code and result) flows during the specified time range with their mean, minimum and maximum duration in seconds.
+This table displays the 10 flows with the most errored execution requests (by status code and result) during the specified [time range][] with their mean, minimum and maximum duration in seconds.
 
-Note: The Interval filter does not affect this list.
+{{% alert type="note" title="Note" %}}The Interval filter does not affect this table.{{% /alert %}}
 
-### Duration
+## Duration Section
 
-This section provides information regarding the flow execution request duration history for the specified time range and consists of 3 panels.
+This section provides information regarding the flow execution request duration history for the specified [time range][] and consists of 3 panels.
 
 {{< figure src="/images/Flow Execution Requests - Duration.svg" >}}
 
-#### Request Duration
+### Request Duration
 
-This graph displays the:
+This graph displays, for the specified [time range][], the:
 
 - mean duration in seconds for all flow execution requests
 - minimum duration in seconds for all flow execution requests
@@ -182,23 +178,23 @@ This graph displays the:
 
 Each data point value is calculated by aggregating requests based on the Interval filter.
 
-#### Top 10 Longest Running Requests by Mean Duration
+### Top 10 Longest Running Requests by Mean Duration
 
-This table displays the 10 flows with the longest mean duration during the specified time range with their total count, error count, minimum and maximum duration in seconds.
+This table displays the 10 flows whose execution requests have the longest mean duration during the specified [time range][] with their total count, error count, minimum and maximum duration in seconds.
 
-Note: The Interval filter does not affect this list.
+{{% alert type="note" title="Note" %}}The Interval filter does not affect this table.{{% /alert %}}
 
-#### Top 10 Shortest Running Requests by Mean Duration
+### Top 10 Shortest Running Requests by Mean Duration
 
-This table displays the 10 flows with the shortest mean duration during the specified time range with their total count, error count, minimum and maximum duration in seconds.
+This table displays the 10 flows whose execution requests have the shortest mean duration during the specified [time range][] with their total count, error count, minimum and maximum duration in seconds.
 
-Note: The Interval filter does not affect this list. Also, any flows with zero executions will not be displayed.
+{{% alert type="note" title="Note" %}}The Interval filter does not affect this table. Also, any flows with zero executions will not be displayed.{{% /alert %}}
 
 ## Remarks
 
 ### Unknown values
 
-It is possible that the dashboards may display flow execution requests that have an unknown status code or result. The chances of this occurring are minimal. However, this will occur if a request has failed without returning the reason.  If we do not know the status code or result, we cannot assign it to the relevant category and therefore, these logs will have their status code and/or result recorded as Unknown.
+The dashboard may display flow execution requests that have an `Unknown` status code or result, if they are missing from the raw logs. The chances of this occurring are minimal.
 
 ### Known Limitations
 
@@ -211,7 +207,10 @@ There is a limitation in Grafana where the graph does not always return to the z
 ## Related Dashboards
 
 None
+<!-- Same page links -->
+[time range]: #time-range
 
+<!-- Other links -->
+[customise threholds]: {{< url "Cortex.Reference.Dashboards.Grafana.AdvancedSetup.ConfigureThresholds.MainDoc" >}}
 [status codes]: {{< url "Wikipedia.HttpStatusCodes" >}}
-[customise threholds]: {{< url "Cortex.Reference.Dashboards.Grafana.ConfigureThresholds.MainDoc" >}}
 [Time range controls]: {{< url "Grafana.Products.Grafana.TimeRange" >}}
