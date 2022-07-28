@@ -462,8 +462,11 @@
                     [Cortex.Reference.Blocks.Xml.ConvertXml.ConvertStructureToXmlBlock]
                         MainDoc = "/docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/"
         [Cortex.Reference.Dashboards]
-            [Cortex.Reference.Dashboards.Grafana.AdvancedSetup]
-                [Cortex.Reference.Dashboards.Grafana.AdvancedSetup.ConfigureThresholds]
+            [Cortex.Reference.Observability.Grafana.Dashboards.FlowExecutionRequests]
+                MainDoc = "/docs/reference/observability/grafana/dashboards/flow-execution-requests/"
+                TotalRequestsErrored = "/docs/reference/observability/grafana/dashboards/flow-execution-requests/#total-requests-errored"
+            [Cortex.Reference.Observability.Grafana.Dashboards.Grafana.AdvancedSetup]
+                [Cortex.Reference.Observability.Grafana.Dashboards.Grafana.AdvancedSetup.ConfigureThresholds]
                     MainDoc = "/docs/reference/observability/grafana/advanced-setup/configuring-thresholds/"
         [Cortex.Reference.Concepts]
             [Cortex.Reference.Concepts.Fundamentals]

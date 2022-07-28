@@ -232,6 +232,6 @@ None
 [time range]: #time-range
 
 <!-- Other links -->
-[customise threholds]: {{< url "Cortex.Reference.Dashboards.Grafana.AdvancedSetup.ConfigureThresholds.MainDoc" >}}
+[customise threholds]: {{< url "Cortex.Reference.Observability.Grafana.Dashboards.Grafana.AdvancedSetup.ConfigureThresholds.MainDoc" >}}
 [status codes]: {{< url "Wikipedia.HttpStatusCodes" >}}
 [Time range controls]: {{< url "Grafana.Products.Grafana.TimeRange" >}}
