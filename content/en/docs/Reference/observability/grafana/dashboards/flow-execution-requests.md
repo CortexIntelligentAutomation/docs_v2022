@@ -116,7 +116,7 @@ This tile displays the mean duration for flow execution requests during the spec
 
 ## Requests Section
 
-This section provides information regarding the flow execution request history for the specified time range[time range][] and consists of 3 panels.
+This section provides information regarding the flow execution request history for the specified [time range][] and consists of 3 panels.
 
 {{< figure src="/images/Flow Execution Requests - Requests.svg" >}}
 

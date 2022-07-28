@@ -124,7 +124,7 @@ This section displays the availability of the Cortex Innovation platform and con
 
 ### Availability
 
-This graph displays the availability of the Cortex Innovation Platform during the specified [time range][] by calculating successful requests / total requests. Successful requests are all requests that do not result in a 5xx HTTP response. 4xx responses are considered successful in this scenario.
+This graph displays the availability of the Cortex Innovation Platform during the specified [time range][] by calculating successful requests / total requests. Successful requests are all requests that do not result in an unknown or 5xx HTTP response. 4xx responses are considered successful in this scenario.
 
 Each data point value is calculated by aggregating requests based on the Interval filter. If there is no data for the previous interval, the line will be [broken](#breaks-in-graph-lines) as the availability is not known at the time.
 
