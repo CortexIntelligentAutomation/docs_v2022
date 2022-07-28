@@ -1,6 +1,6 @@
 ---
-title: "Set up Loki"
-linkTitle: "Set up Loki"
+title: "Set up Grafana Loki"
+linkTitle: "Set up Grafana Loki"
 description: "Information about setting up Grafana Loki in the cloud."
 weight: 40
 ---
