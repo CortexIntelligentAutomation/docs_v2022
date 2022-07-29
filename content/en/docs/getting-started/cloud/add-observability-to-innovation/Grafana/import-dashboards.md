@@ -9,14 +9,14 @@ weight: 60
 
 This guide describes where to get the default Cortex Innovation Dashboards from and how to import them for use in Grafana.
 
-Please ensure that the Installations for [Grafana][] and [Loki][] have been completed before starting this section.
+Please ensure that the set up for [Grafana][] and [Loki][] have been completed before starting this section.
 
 ## Configure Loki Data Source in Grafana
 
 1. Log in to your configured Grafana instance with a user that has the *admin* role.
 1. In Grafana, go to *Configuration* > *Data Sources* via the cog icon on the left sidebar.
-1. Click the big *Add data* source button.
-1. Choose *Loki* from the list.
+1. Click the big *Add data source* button.
+1. Choose your [configured] Grafana Cloud Loki datasource from the list.
 1. Configure the data source as follows:
 
     | Option  | Description | Value |
@@ -74,6 +74,7 @@ To do this, follow these steps for all default Cortex Innovation dashboards impo
 1. Click the + icon next to the Custom Filter to confirm that a list of available filter options is visible.
 1. Repeat steps 2 - 9 for the *Platform Health* dashboard.
 
+[configured]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupLoki" >}}
 [Grafana.Dashboards.zip]: {{< url "GitHub.Cortex.Observability.GrafanaDashboardsZip" >}}
 [Grafana]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupGrafana" >}}
 [Loki]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupLoki" >}}

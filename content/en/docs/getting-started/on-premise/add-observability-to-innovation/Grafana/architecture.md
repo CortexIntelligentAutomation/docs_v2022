@@ -21,7 +21,7 @@ weight: 10
 The following architecture requires 1 + 1..n servers:
 
 * 1 x Web Application Server which contains Grafana, Grafana Loki and Microsoft IIS.
-* 1..n x Application Servers
+* 1..n x Application Servers.
 
 {{< figure src="/images/Grafana Platform Architecture Diagram - On-Premise.svg" >}}
 
