@@ -67,16 +67,22 @@
             MainDoc = "/docs/getting-started/cloud"
                 [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation]
                     MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/"
-                [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana]
-                    MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/"
-                    Architecture = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/architecture"
-                    Prerequisites = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/prerequisites"
-                    SetupGrafana = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/setup-grafana"
-                    SetupLoki = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/setup-loki"
-                    ImportDashboards = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/import-dashboards"
-                    [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.InstallPromtail]
-                        MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/install-promtail/"
-                        ConfigurePromtail = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/install-promtail/configure-promtail"
+                    [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana]
+                        MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/"
+                        [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Architecture]
+                            MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/architecture"
+                        [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Prerequisites]
+                            MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/prerequisites"
+                        [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupGrafana]
+                            MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/setup-grafana"
+                        [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupLoki]
+                            MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/setup-loki/"
+                        [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.ImportDashboards]
+                            MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/import-dashboards"
+                        [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.InstallPromtail]
+                            MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/install-promtail/"
+                            [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.InstallPromtail.ConfigurePromtail]
+                                MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/install-promtail/configure-promtail"
 
 
     [Cortex.Guides]

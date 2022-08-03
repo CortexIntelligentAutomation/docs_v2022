@@ -54,6 +54,6 @@ A domain user which is a member of the Local Administrators group on all Applica
 
 [2016 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2016" >}}
 [2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
-[Architecture]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Architecture" >}}
-[Set up Grafana]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupGrafana" >}}
+[Architecture]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Architecture.MainDoc" >}}
+[Set up Grafana]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupGrafana.MainDoc" >}}
 [Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.Promtail.PromtailInstallZip" >}}

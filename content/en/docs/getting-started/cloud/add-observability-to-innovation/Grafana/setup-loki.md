@@ -28,4 +28,4 @@ This archive contains the `loki-local-config.yaml` configuration file, [NSSM][] 
 [Grafana Loki Install.zip]: {{< url "GitHub.Cortex.Observability.GrafanaLokiInstallZip" >}}
 [Install Promtail]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.InstallPromtail.MainDoc" >}}
 [NSSM]: {{< url "NSSM.MainDoc" >}}
-[Prerequisites]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
+[Prerequisites]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Prerequisites.MainDoc" >}}

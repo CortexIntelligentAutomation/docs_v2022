@@ -57,4 +57,4 @@ If the specified path to the folder for the `positions.yaml` file doesn't exists
 
 1. [Import Dashboards][]
 
-[Import Dashboards]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.ImportDashboards" >}}
+[Import Dashboards]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.ImportDashboards.MainDoc" >}}

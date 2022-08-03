@@ -9,7 +9,7 @@ weight: 30
 
 ## Sign up for Grafana Cloud
 
-1. Browse to [Grafana Labs].
+1. Browse to [Grafana Labs][].
 1. Find and click the link to create free account.
 1. Review the terms and conditions as well as any agreements.
 1. Create your account and follow any account verification steps.
@@ -29,4 +29,4 @@ weight: 30
 
 <!-- Other links -->
 [Grafana Labs]: {{< url "Grafana.MainDoc" >}}
-[Set up Grafana]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupGrafanaLoki" >}}
+[Set up Grafana Loki]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupLoki.MainDoc" >}}
