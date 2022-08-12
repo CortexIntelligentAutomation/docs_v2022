@@ -16,18 +16,8 @@ This guide describes how to configure Promtail on the Application Server(s).
 ### Set Client URL for Grafana Loki
 
 1. Open the `promtail-local-config.yaml` configuration file, which is located in the folder alongside the `promtail-windows-amd64.exe` file.
-1. Set the Grafana Loki `URL` in the `clients` section.
-TODO - Update for Cloud Loki
-   The following template has been provided for convenience:
-   `https://<username>:<password>@<loki host address>:<loki reverse proxy port>/loki/api/v1/push`
-| Element | Description |
-|------|-------------|
-| username | The username of the user created during [Create Loki User][] steps. |
-| password | The password which was set for the user  during [Create Loki User][] steps. |
-| loki host address | The host address of the machine where the Grafana Loki reverse proxy was configured during [Add a New Website][] steps . This must match the configured host name. |
-| loki reverse proxy port | The port of the Grafana Loki reverse proxy configured during [Add a New Website][] steps. Usually 2100. |
-
-   A correct URL should be similar to `https://username:password@hostaddress:2100/loki/api/v1/push`.
+1. Replace the Grafana Loki `URL` template in the `clients` section with the `url` value noted down during [Set Up Grafana Loki][] steps.
+   A correct URL should be similar to `https://239948:eyJrIjoiaWVjNzE4MmVjOThkNTgxMMQ5MzIyZjdlMjAyYWY4NWJjO1I1OTc4NSIsIm4iOiJUZXN0S2V5IiwiaWQiOjY4Nzk0MX0=@logs-prod-008.grafana.net/api/prom/push`.
 1. Save the file.
 
 ### Set the positions.yaml File Path
@@ -58,3 +48,4 @@ If the specified path to the folder for the `positions.yaml` file doesn't exists
 1. [Import Dashboards][]
 
 [Import Dashboards]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.ImportDashboards.MainDoc" >}}
+[Set Up Grafana Loki]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupLoki.SetUpGrafanaLoki" >}}

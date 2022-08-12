@@ -75,8 +75,10 @@
                             MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/prerequisites"
                         [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupGrafana]
                             MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/setup-grafana"
+                            SignUpForGrafanaCloud = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/setup-grafana/#sign-up-for-grafana-cloud"
                         [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupLoki]
                             MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/setup-loki/"
+                            SetUpGrafanaLoki = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/setup-loki/#set-up-grafana-loki"
                         [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.ImportDashboards]
                             MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/import-dashboards"
                         [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.InstallPromtail]
@@ -950,6 +952,7 @@
     MainDoc = "https://www.iis.net/overview"
     [IIS.Downloads]
         UrlRewrite-2_1 = "https://www.iis.net/downloads/microsoft/url-rewrite"
+        ApplicationRequestRouting-3_0 = "https://www.iis.net/downloads/microsoft/application-request-routing"
     
 [JsonDotNet]
     JsonReaderException = "https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonReaderException.htm"
