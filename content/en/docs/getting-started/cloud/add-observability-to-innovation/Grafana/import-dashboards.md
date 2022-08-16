@@ -7,7 +7,7 @@ weight: 60
 
 # {{< param title >}}
 
-This guide describes where to get the default Cortex Innovation Dashboards from and how to import them for use in Grafana.
+This guide describes where to get the default Cortex Innovation Dashboards from and how to import them for use in Grafana Cloud.
 
 Please ensure that the set up for [Grafana][] and [Loki][] have been completed before starting this section.
 
@@ -18,14 +18,14 @@ Please ensure that the set up for [Grafana][] and [Loki][] have been completed b
 
 ## Create Folder for Dashboards
 
-1. Log in to your configured Grafana with a user that has the *Admin* role.
+1. Log in to Grafana Cloud with a user that has the *Admin* role.
 1. Hover over the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *+ New folder*.
 1. Enter a folder name, e.g. `Cortex`.
 1. Click *Create*.
 
 ## Import Dashboards
 
-1. Log in to your configured Grafana with a user that has the *Admin* role.
+1. Log in to Grafana Cloud with a user that has the *Admin* role.
 1. Hover over the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *Import*.
 1. Click the *Upload JSON file* button.
 1. Locate the `Flow Execution Requests.json` file extracted from the downloaded `Grafana.Dashboards.zip`.
@@ -41,7 +41,7 @@ It is necessary to update the Custom Filter inside the dashboards to use the cor
 
 To do this, follow these steps for all default Cortex Innovation dashboards imported:
 
-1. Log in to your configured Grafana with a user that has the *Admin* role.
+1. Log in to Grafana Cloud with a user that has the *Admin* role.
 1. To open a dashboard:
     1. Hover over the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *Browse*.
     1. Click the folder name that the dashboards were imported to.

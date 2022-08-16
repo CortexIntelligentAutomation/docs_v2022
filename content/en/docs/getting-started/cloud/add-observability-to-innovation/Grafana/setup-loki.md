@@ -23,7 +23,6 @@ The key name is used in the Grafana Cloud website to easily identify the key aft
   {{< figure src="/images/Grafana Cloud - Hosted Logs Config Key Name.png" >}}
 1. Make a note of the value of the *url* in the *client* section of the example configuration. Ignore the instruction to copy and paste the whole content.
   {{< figure src="/images/Grafana Cloud - Hosted Logs Config Data.png" >}}
-1. TODO
 
 ## Next Steps?
 

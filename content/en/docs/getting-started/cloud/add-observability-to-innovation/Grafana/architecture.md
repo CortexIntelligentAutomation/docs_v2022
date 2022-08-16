@@ -1,7 +1,7 @@
 ---
 title: "Architecture"
 linkTitle: "Architecture"
-description: "Information about the recommended architecture for a Grafana platform installation."
+description: "Information about the recommended architecture for a Grafana Cloud installation."
 weight: 10
 ---
 
@@ -17,7 +17,7 @@ weight: 10
 
 ## Recommended Architecture
 
-The following architecture requires 1..n Application servers and 1 Grafana Cloud managed service.
+The following architecture requires 1..n Application servers and 1 [Grafana Cloud][] managed service.
 
 {{< figure src="/images/Grafana Platform Architecture Diagram - Cloud.svg" >}}
 
@@ -27,5 +27,6 @@ The following architecture requires 1..n Application servers and 1 Grafana Cloud
 
 [Prerequisites]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Prerequisites.MainDoc" >}}
 [Grafana]: {{< url "Grafana.Products.Grafana.MainDoc" >}}
+[Grafana Cloud]: {{< url "Grafana.MainDoc" >}}
 [Grafana Loki]: {{< url "Grafana.Products.Loki.MainDoc" >}}
 [Promtail]: {{< url "Grafana.Products.Loki.Promtail.MainDoc" >}}
