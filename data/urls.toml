@@ -36,6 +36,7 @@
                     LicensingRequirements = "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites#licensing-requirements"
                     SetupGateway = "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/setup-gateway"
                     TryItOut= "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/try-it-out"
+                    TryItOutPublishedFlow= "/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/try-it-out/#test-publishing-production-flows"
                 [Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA]
                     MainDoc = "/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/"       
                     Architecture = "/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/architecture"
@@ -1173,6 +1174,9 @@
 [Particular]
     [Particular.NServiceBus]
         MainDoc = "https://particular.net/nservicebus"
+[Postman]
+    [Postman.Downloads]
+        MainDoc = "https://www.postman.com/downloads/"
 [RabbitMQ]
     MainDoc = "https://www.rabbitmq.com/"
 [NSSM]
