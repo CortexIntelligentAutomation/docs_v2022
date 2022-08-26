@@ -115,6 +115,8 @@
                             MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/install-promtail/"
                             [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.InstallPromtail.ConfigurePromtail]
                                 MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/install-promtail/configure-promtail"
+                        [Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.TryItOut]
+                            MainDoc = "/docs/getting-started/cloud/add-observability-to-innovation/grafana/try-it-out/"
 
 
     [Cortex.Guides]

@@ -75,6 +75,11 @@ To do this, follow these steps for all default Cortex Innovation dashboards impo
 1. Click the + icon next to the Custom Filter to confirm that a list of available filter options is visible.
 1. Repeat steps 2 - 9 for the *Platform Health* dashboard.
 
+## Next Steps?
+
+1. [Try it Out][]
+
 [Grafana.Dashboards.zip]: {{< url "GitHub.Cortex.Observability.GrafanaDashboardsZip" >}}
 [Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
 [Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
+[Try it Out]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.TryItOut" >}}
