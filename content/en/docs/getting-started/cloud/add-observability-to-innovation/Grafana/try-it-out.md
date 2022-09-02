@@ -8,6 +8,7 @@ weight: 60
 # {{< param title >}}
 
 ## Check Dashboards are Displaying Data
+
 {{% alert title="Note" %}}
 This test uses the test flow published as part of testing the {{< ahref "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.TryItOutPublishedFlow" "Innovation installation" >}}. An alternative flow can be used that exists on the system and can be executed.
 {{% / alert %}}
