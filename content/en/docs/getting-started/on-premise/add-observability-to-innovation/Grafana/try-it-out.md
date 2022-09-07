@@ -8,6 +8,7 @@ weight: 60
 # {{< param title >}}
 
 ## Check Dashboards are Displaying Data
+
 {{% alert title="Note" %}}
 This test uses the test flow published as part of testing the {{< ahref "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.TryItOutPublishedFlow" "Innovation installation" >}}. An alternative flow can be used that exists on the system and can be executed.
 {{% / alert %}}
@@ -16,7 +17,7 @@ This test uses the test flow published as part of testing the {{< ahref "Cortex.
     | Property      | Value                                                                               |
     |---------------|-------------------------------------------------------------------------------------|
     | Action        | POST                                                                                |
-    | URL           | https://{FQDN of Load Balancer Server}/api/default/default/flows/{Flow Name}/executions?packageName={Package Name}<br />e.g. https://load-balancer&#46;domain&#46;com/api/default/default/flows/NewFlow/executions?packageName=NewPackage|
+    | URL           | `https://{FQDN of Load Balancer Server}/api/default/default/flows/{Flow Name}/executions?packageName={Package Name}`<br />e.g. `https://load-balancer&#46;domain&#46;com/api/default/default/flows/NewFlow/executions?packageName=NewPackage` |
     | Content Type  | application/json                                                                    |
     | Body          | {}                                                                                  |
     | Authentication| Basic                                                                               |
