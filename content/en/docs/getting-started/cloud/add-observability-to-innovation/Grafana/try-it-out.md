@@ -10,19 +10,19 @@ weight: 60
 ## Check Dashboards are Displaying Data
 
 {{% alert title="Note" %}}
-This test uses the test flow published as part of testing the {{< ahref "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.TryItOutPublishedFlow" "Innovation installation" >}}. An alternative flow can be used that exists on the system and can be executed.
+This test uses the test flow published as part of testing the Innovation installation. See {{< ahref "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.TryItOutPublishedFlow" "Testing HA installation" >}} or {{< ahref "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.TryItOutPublishedFlow" "Testing non-HA installation" >}}. An alternative flow can be used that exists on the system and can be executed.
 {{% / alert %}}
 
 1. Open an HTTP client, such as [Postman][]. Make a request with the following format:
     | Property      | Value                                                                               |
     |---------------|-------------------------------------------------------------------------------------|
     | Action        | POST                                                                                |
-    | URL           | `https://{FQDN of Load Balancer Server}/api/default/default/flows/{Flow Name}/executions?packageName={Package Name}`<br />e.g. `https://load-balancer&#46;domain&#46;com/api/default/default/flows/NewFlow/executions?packageName=NewPackage` |
+    | URL           | For HA installation use: <br />`https://{FQDN of Load Balancer Server}/api/default/default/flows/{Flow Name}/executions?packageName={Package Name}`<br />e.g. `https://load-balancer&#46;domain&#46;com/api/default/default/flows/NewFlow/executions?packageName=NewPackage` <br /><br /> For non-HA installation use: <br />`https://{FQDN of server}:8722/api/default/default/flows/{Flow Name}/executions?packageName={Package Name}`<br />e.g. `https://server&#46;domain&#46;com:8722/api/default/default/flows/NewFlow/executions?packageName=NewPackage`|
     | Content Type  | application/json                                                                    |
     | Body          | {}                                                                                  |
     | Authentication| Basic                                                                               |
-    | Username      | The value used for `ApiGatewayBasicAuthUserName` when installing Application Services              |
-    | Password      | The value used for `ApiGatewayBasicAuthPwd` when installing Application Services (Unencrypted) |
+    | Username      | The value used for `ApiGatewayBasicAuthUserName` when installing Application Services. See [HA Installation script configuration][] or [Non-HA Installation script configuration][] for the value specified.|
+    | Password      | The value used for `ApiGatewayBasicAuthPwd` when installing Application Services (Unencrypted). See [HA Installation script configuration][] or [Non-HA Installation script configuration][] for the value specified.|
 
     {{% alert title="Note" %}} If you used self-signed certificates when installing the Application Servers you may need to disable SSL certificate validation in your HTTP client. {{% /alert %}}
 
@@ -43,3 +43,5 @@ If other requests have been made then there may be more than one request visible
 {{% / alert %}}
 
 [Postman]: {{< url "Postman.Downloads.MainDoc" >}}
+[HA Installation script configuration]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.ConfigureInstallationScript" >}}
+[Non-HA Installation script configuration]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.ConfigureInstallationScript" >}}

@@ -24,7 +24,8 @@ The password should be different from the default one.
 
 By default Grafana allows access over the unsecure HTTP protocol. This needs to be modified to allow access only over the secure HTTPS protocol.
 
-1. Copy `sample.ini` located in `C:\Program Files\GrafanaLabs\grafana\conf` folder, if Grafana was installed into the default install location, and paste it in the same location renaming it to `custom.ini`.
+1. Locate `sample.ini` file in the `grafana\conf` subfolder in the location Grafana was installed to; by default `C:\Program Files\GrafanaLabs\grafana\conf\sample.ini`.
+1. Copy `sample.ini` and paste it in the same location renaming it to `custom.ini`.
 1. Run a text editor in administrator mode.
 1. In the text editor open the `custom.ini` Grafana configuration file.
 1. In the `server` section uncomment the `protocol` option and set it to HTTPS, e.g.:
