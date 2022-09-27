@@ -12,9 +12,9 @@ description: "Sends an email using the specified SMTP server."
 
 ## Description
 
-Connects to a SMTP server using the specified [Basic Email Session Details][Basic Email Session Details Property], and sends an [Email Message][Email Message Property].
+Connects to an SMTP server using the specified [Basic Email Session Details][Basic Email Session Details Property], and sends an [Email Message][Email Message Property].
 
-[Close Session][Close Session Property] can be specified to choose whether the connection to the SMTP server is closed or is kept open for use on subsequent Send Email Using Smtp Server blocks.
+[Close Session][Close Session Property] can be specified to choose whether the connection to the SMTP server is closed or is kept open for use on subsequent Send Email Using SMTP Server blocks.
 
 ## Examples
 
