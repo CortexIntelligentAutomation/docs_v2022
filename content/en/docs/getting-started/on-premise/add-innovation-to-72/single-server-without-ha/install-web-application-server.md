@@ -13,7 +13,7 @@ The steps to add Innovation functionality to 7.2 are:
 1. Install Flow Debugger Service
 1. Update Gateway
 
-## Extract Installation Artefacts
+## Make Installation Artefacts Available
 
 1. We recommend that the Flow Debugger Service and Gateway are installed on the same Web Application Server. Copy the following artefacts to a folder on the machine (the version numbers may differ):
    * Cortex Innovation 2022.6 - Block Packages.zip
