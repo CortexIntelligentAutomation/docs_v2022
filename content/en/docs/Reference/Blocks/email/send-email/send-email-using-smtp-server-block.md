@@ -95,8 +95,24 @@ An email with Urgent priority is sent from `sender@outlook.com` to `recipient@ou
 ***
 
 ### Sending an email with a HTML body
+
+This example will send an email with a HTML body from `sender@outlook.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp-mail.outlook.com` on port `587` with useSsl set to `false` (for more information, see [Setting useSsl to false][]).
+
+For more information on what other email body types can be used, see [EmailMessageBodyFormat][].
+
 #### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Email Message][Email Message Property] | `($)EmailMessage`, with value `{"To": [{"Address": "recipient@outlook.com"}], "From": {"Address": "sender@outlook.com"}, "Cc": null, "Bcc": null, "Priority": null, "Subject": "Example email subject", "BodyFormat": EmailMessageBodyFormat.Html, "Body": "<h1>Example email body</h1>", "Attachments": null}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, new EmailAddress("sender@outlook.com"), null, null, null, "Example email subject", EmailMessageBodyFormat.Html, "<h1>Example email body</h1>", null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br> As Priority is null, the email will be sent with normal priority. For more information, see [EmailMessage][]. |
+| [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails`, with value `{"ServerDetails": {"Host": "smtp-mail.outlook.com", "Port": 587, "UseSsl": false}, "Credentials": {"Username": "sender@outlook.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(new ServerDetails("smtp-mail.outlook.com", 587, false), new UserCredentials("sender@outlook.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The password in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
+| [Close Session][Close Session Property] | `($)CloseSession`, with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
+
 #### Result
+
+An email is sent from `sender@outlook.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a HTML body of `"<h1>Example email body<h1/>"`, and then the session is closed.
+
+***
 
 ### Sending an email with a single attachment
 #### Properties
@@ -250,6 +266,7 @@ This block cannot currently send emails if credentials are not provided.
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
 [EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
+[EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
