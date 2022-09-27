@@ -6,7 +6,7 @@ description: "Sends an email using the specified SMTP server."
 
 {{< figure src="/blocks/email-send-email-using-smtp-server-block-icon.png" alt="Icon" class="block-icon" >}}
 
-# {{% param title %}} 
+# {{% param title %}}
 
 <p class="namespace">(Cortex.Blocks.Email.SendEmail.SendEmailUsingSmtpServerBlock)</p>
 
@@ -23,7 +23,16 @@ Connects to a SMTP server using the specified [Basic Email Session Details][Basi
 This example will send an email from `sender@outlook.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp-mail.outlook.com` on port `587` with useSsl set to `false` (for more information, see [Setting useSsl to false][]).
 
 #### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Email Message][Email Message Property] | `($)EmailMessage`, with value `{"To": [{"Address": "recipient@outlook.com"}], "From": {"Address": "sender@outlook.com"}, "Cc": null, "Bcc": null, "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": null}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, new EmailAddress("sender@outlook.com"), null, null, null, "Example email subject", null, "Example email body", null)` | `($)EmailMessage` is a variable of type [EmailMessage][] |
+| [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails`, with value `{"ServerDetails": {"Host": "smtp-mail.outlook.com", "Port": 587, "UseSsl": false}, "Credentials": {"Username": "sender@outlook.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(new ServerDetails("smtp-mail.outlook.com", 587, false), new UserCredentials("sender@outlook.com", "encryptedPassword"))`| `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The password in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]|
+| [Close Session][Close Session Property] | `($)CloseSession`, with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
+
 #### Result
+
+An email is sent from `sender@outlook.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`.
 
 ### Sending an email to multiple recipients
 #### Properties
@@ -195,7 +204,9 @@ This block cannot currently send emails if credentials are not provided.
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
+
 [Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
+[EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
 
 [Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 [Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
