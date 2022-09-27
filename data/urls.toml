@@ -964,6 +964,8 @@
                     MainDoc = "/docs/reference/data-types/email/emailmessage"
                 [Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails]
                     MainDoc = "/docs/reference/data-types/email/basicemailsessiondetails"
+                [Cortex.Reference.DataTypes.Email.EmailMessagePriority]
+                    MainDoc = "/docs/reference/data-types/email/emailmessagepriority"
             [Cortex.Reference.DataTypes.Exceptions]
                 MainDoc = "/docs/reference/data-types/exceptions/"
                 [Cortex.Reference.DataTypes.Exceptions.Exception]
