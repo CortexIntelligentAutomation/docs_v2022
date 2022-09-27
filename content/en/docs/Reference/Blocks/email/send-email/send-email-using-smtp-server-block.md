@@ -26,13 +26,15 @@ This example will send an email from `sender@outlook.com` to `recipient@outlook.
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage`, with value `{"To": [{"Address": "recipient@outlook.com"}], "From": {"Address": "sender@outlook.com"}, "Cc": null, "Bcc": null, "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": null}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, new EmailAddress("sender@outlook.com"), null, null, null, "Example email subject", null, "Example email body", null)` | `($)EmailMessage` is a variable of type [EmailMessage][] |
+| [Email Message][Email Message Property] | `($)EmailMessage`, with value `{"To": [{"Address": "recipient@outlook.com"}], "From": {"Address": "sender@outlook.com"}, "Cc": null, "Bcc": null, "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": null}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, new EmailAddress("sender@outlook.com"), null, null, null, "Example email subject", null, "Example email body", null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br> As Priority and BodyFormat are null, the email will be sent with a text body and normal body format. For more information, see [EmailMessage][].|
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails`, with value `{"ServerDetails": {"Host": "smtp-mail.outlook.com", "Port": 587, "UseSsl": false}, "Credentials": {"Username": "sender@outlook.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(new ServerDetails("smtp-mail.outlook.com", 587, false), new UserCredentials("sender@outlook.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The password in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession`, with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
 
 An email is sent from `sender@outlook.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, and then the session is closed.
+
+***
 
 ### Sending an email to multiple recipients
 
@@ -42,7 +44,7 @@ This example will send an email from `sender@gmail.com` to `recipient1@outlook.c
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage`, with value `{"To": [{"Address": "recipient1@outlook.com"}, {"Address": "recipient2@outlook.com"}, {"Address": "recipient3@outlook.com"}], "From": {"Address": "sender@gmail.com"}, "Cc": null, "Bcc": null, "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": null}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(new List<EmailAddress>(){ new EmailAddress("recipient1@outlook.com"), new EmailAddress("recipient2@outlook.com"), new EmailAddress("recipient3@outlook.com") }, new EmailAddress("sender@gmail.com"), null, null, null, "Example email subject", null, "Example email body", null)` | `($)EmailMessage` is a variable of type [EmailMessage][] |
+| [Email Message][Email Message Property] | `($)EmailMessage`, with value `{"To": [{"Address": "recipient1@outlook.com"}, {"Address": "recipient2@outlook.com"}, {"Address": "recipient3@outlook.com"}], "From": {"Address": "sender@gmail.com"}, "Cc": null, "Bcc": null, "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": null}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(new List<EmailAddress>(){ new EmailAddress("recipient1@outlook.com"), new EmailAddress("recipient2@outlook.com"), new EmailAddress("recipient3@outlook.com") }, new EmailAddress("sender@gmail.com"), null, null, null, "Example email subject", null, "Example email body", null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br> As Priority and BodyFormat are null, the email will be sent with a text body and normal body format. For more information, see [EmailMessage][]. |
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails`, with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(new ServerDetails("smtp.gmail.com", 465, true), new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The password in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession`, with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
@@ -50,9 +52,27 @@ This example will send an email from `sender@gmail.com` to `recipient1@outlook.c
 
 An email is sent from `sender@gmail.com` to `recipient1@outlook.com`, `recipient2@outlook.com` and `recipient3@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, and then the session is closed.
 
+***
+
 ### Sending an email with CC or BCC addresses
+
+This example will send an email from `sender@outlook.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the CCs for the email, using the SMTP server hosted at `smtp-mail.outlook.com` on port `587` with useSsl set to `false` (for more information, see [Setting useSsl to false][]).
+
+Note that the same approach would be used in order to send an email with BCC addresses.
+
 #### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Email Message][Email Message Property] | `($)EmailMessage`, with value `{"To": [{"Address": "recipient@outlook.com"}], "From": {"Address": "sender@outlook.com"}, "Cc": [{"Address": "cc1@outlook.com"}, {"Address": "cc2@outlook.com"}], "Bcc": null, "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": null}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, new EmailAddress("sender@outlook.com"), new List<EmailAddress>(){ new EmailAddress("cc1@outlook.com"), new EmailAddress("cc2@outlook.com") }, null, null, "Example email subject", null, "Example email body", null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br> As Priority and BodyFormat are null, the email will be sent with a text body and normal body format. For more information, see [EmailMessage][]. |
+| [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails`, with value `{"ServerDetails": {"Host": "smtp-mail.outlook.com", "Port": 587, "UseSsl": false}, "Credentials": {"Username": "sender@outlook.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(new ServerDetails("smtp-mail.outlook.com", 587, false), new UserCredentials("sender@outlook.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The password in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
+| [Close Session][Close Session Property] | `($)CloseSession`, with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
+
 #### Result
+
+An email is sent from `sender@outlook.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, both `cc1@outlook.com` and `cc2@outlook.com` will also recieve copies of the email as they are CC'd, and then the session is closed.
+
+***
 
 ### Sending an email with a different priority
 #### Properties
