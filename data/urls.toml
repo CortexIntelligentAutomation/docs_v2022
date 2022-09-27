@@ -1,5 +1,9 @@
 # Internal links
 [Cortex]
+    [Cortex.Blogs]
+        MainDoc = "/blog/"
+        [Cortex.Blogs.News]
+            MainDoc = "/blog/news"
     [Cortex.Faqs]
         MainDoc = "/docs/faqs/"
     [Cortex.GettingStarted]
@@ -131,9 +135,14 @@
                 Tools = "/docs/guides/cortex-studio/expression-editor/#tools"
             [Cortex.Guides.Studio.VariableEditor]
                 MainDoc = "/docs/guides/cortex-studio/variable-editor/"
+            [Cortex.Guides.Studio.LiteralEditor]
+                MainDoc = "/docs/guides/cortex-studio/literal-editor/"
             [Cortex.Guides.Studio.EastPanel]
                 MainDoc = "/docs/guides/cortex-studio/east-panel/"
                 PropertyEditor = "/docs/guides/cortex-studio/east-panel/#property-editor"
+                AddVariablesButton = "/docs/guides/cortex-studio/east-panel/#add-variables-button"
+                ShowHideAdvancedPropertiesButton = "/docs/guides/cortex-studio/east-panel/#show-hide-advanced-properties-button"
+                HelpButton = "/docs/guides/cortex-studio/east-panel/#help-button"
                 ExecutionViewer = "/docs/guides/cortex-studio/east-panel/#execution-viewer"
                 VariablesViewer = "/docs/guides/cortex-studio/east-panel/#variables-viewer"
                 VariableDetailsViewer = "/docs/guides/cortex-studio/east-panel/#variable-details-viewer"
@@ -695,6 +704,8 @@
             [Cortex.Reference.Observability.Grafana.Dashboards.FlowExecutionRequests]
                 MainDoc = "/docs/reference/observability/grafana/dashboards/flow-execution-requests/"
                 TotalRequestsErrored = "/docs/reference/observability/grafana/dashboards/flow-execution-requests/#total-requests-errored"
+            [Cortex.Reference.Observability.Grafana.Dashboards.PlatformHealth]
+                MainDoc = "/docs/reference/observability/grafana/dashboards/platform-health/"
             [Cortex.Reference.Observability.Grafana.Dashboards.Grafana.AdvancedSetup]
                 [Cortex.Reference.Observability.Grafana.Dashboards.Grafana.AdvancedSetup.ConfigureThresholds]
                     MainDoc = "/docs/reference/observability/grafana/advanced-setup/configuring-thresholds/"
@@ -719,6 +730,7 @@
                             MainDoc = "/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/"
                         [Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.CommonProperties]
                             MainDoc = "/docs/reference/concepts/fundamentals/blocks/block-properties/common-properties/"
+                            BlockTimeoutProperty = "/docs/reference/concepts/fundamentals/blocks/block-properties/common-properties/#block-timeout-property"
                         [Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors]
                             MainDoc = "/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/"
                             [Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor]
@@ -1236,6 +1248,7 @@
                 Item = "/docs/reference/glossary/f-j/#item"
                 Index = "/docs/reference/glossary/f-j/#index"
                 Intellisense = "/docs/reference/glossary/f-j/#intellisense"
+                Json = "/docs/reference/glossary/f-j/#json"
             [Cortex.Reference.Glossary.K-O]
                 MainDoc = "/docs/reference/glossary/k-o/"
                 List = "/docs/reference/glossary/k-o/#list"
@@ -1265,6 +1278,7 @@
                 Text = "/docs/reference/glossary/p-t/#text"
                 Trigger = "/docs/reference/glossary/p-t/#trigger"
                 Type = "/docs/reference/glossary/p-t/#type"
+                Typeahead = "/docs/reference/glossary/p-t/#typeahead"
             [Cortex.Reference.Glossary.U-Z]
                 MainDoc = "/docs/reference/glossary/u-z/"
                 UpperCase = "/docs/reference/glossary/u-z/#uppercase"

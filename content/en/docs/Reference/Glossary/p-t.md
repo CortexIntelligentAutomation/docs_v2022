@@ -141,6 +141,10 @@ A mechanism used to initiate an action when a specific event occurs (e.g. When a
 
 See [Data Type][data type].
 
+### Typeahead
+
+Typeahead is a language prediction tool that is used to provide suggestions based on what a user has already typed.
+
 [Block Property]: {{< url "Cortex.Reference.Glossary.A-E.BlockProperty" >}}
 [C#]: {{< url "Cortex.Reference.Glossary.A-E.CSharp" >}}
 [camelCase]: {{< url "Cortex.Reference.Glossary.A-E.CamelCase" >}}
