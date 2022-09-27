@@ -195,7 +195,7 @@ For more information, see [BasicEmailSessionDetails][].
 
 ### Close Session
 
-[Close Session][Close Session Property] can be specified to choose whether the connection to the SMTP server is closed or is kept open for use on subsequent Send Email Using Smtp Server blocks, this defaults to `false` if left blank, please see [Closing Sessions][Closing Sessions] for more information.
+[Close Session][Close Session Property] can be specified to choose whether the connection to the SMTP server is closed or is kept open for use on subsequent Send Email Using SMTP Server blocks, this defaults to `false` if left blank, please see [Closing Sessions][Closing Sessions] for more information.
 
 |||
 |-----------------|----------|
@@ -219,7 +219,7 @@ The exceptions thrown by the block can be found below:
 ||Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `true` with a port which does not support SSL.|
 ||Thrown when the TLS/SSL certificate is expired on the host or is untrusted.|
 ||Thrown when a locally installed anti-virus software replaces the TLS/SSL certificate in order to scan web traffic.|
-||Thrown when the CRL (Certificate Revocation List) server for the SSL/TLS certificate is down.|
+||Thrown when the CRL (Certificate Revocation List) server for the TLS/SSL certificate is down.|
 ||Thrown when the host has an invalid SSL certificate.|
 ||Thrown when the username and/or password in the userCredentials within [Basic Email Session Details][Basic Email Session Details Property] is incorrect.|
 | [FileNotFoundException][]            |Thrown when a non-existent file path is provided in attachments within [Email Message][Email Message Property].|
