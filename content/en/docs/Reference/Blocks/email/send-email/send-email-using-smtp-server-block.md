@@ -6,7 +6,7 @@ description: "Sends an email using the specified SMTP server."
 
 {{< figure src="/blocks/email-send-email-using-smtp-server-block-icon.png" alt="Icon" class="block-icon" >}}
 
-# {{% param title %}}
+# {{% param title %}} 
 
 <p class="namespace">(Cortex.Blocks.Email.SendEmail.SendEmailUsingSmtpServerBlock)</p>
 
