@@ -257,7 +257,7 @@ For information on how to explicitly close a connection, please see [Closing Ses
 
 #### Setting useSsl to `false`
 
-If useSsl is set to `false` in serverDetails within [Basic Email Session Details][Basic Email Session Details Property], the client will not attempt to make an SSL-wrapped connection, however SSL/TLS may still be used if the mail server supports the STARTTLS extension. For all SSL connections, the protocol to be used will be negotiated with the server depending on the which protocols are available. Similarly, the SASL mechanism to be used will be negotiated with the mail server based on the avialable mechanisms.
+If useSsl is set to `false` in serverDetails within [Basic Email Session Details][Basic Email Session Details Property], the client will not attempt to make an SSL-wrapped connection, however TLS/SSL may still be used if the mail server supports the STARTTLS extension. For all SSL connections, the protocol to be used will be negotiated with the server depending on the which protocols are available. Similarly, the SASL mechanism to be used will be negotiated with the mail server based on the avialable mechanisms.
 
 ### Closing Sessions
 
