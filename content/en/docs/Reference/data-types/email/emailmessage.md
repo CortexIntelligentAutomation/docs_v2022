@@ -19,7 +19,7 @@ The `EmailMessage` data type is used to define an email.
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailMessage`                  |
 | **Alias:**             | N/A                                                    |
 | **Description:**       | The data type used to define an email.                 |
-| **Default Value:**     | null                                                   |
+| **Default Value:**     | `null`                                                 |
 | **Can be used as:**    | `EmailMessage`, `Object`, `dynamic`                    |
 | **Can be cast to:**    | N/A                                                    |
 

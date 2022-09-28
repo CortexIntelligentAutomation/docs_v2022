@@ -1,5 +1,76 @@
 ---
 title: "EmailMessagePriority"
 linkTitle: "EmailMessagePriority"
-description: ""
+description: "Used to define the priority of an email."
 ---
+
+# {{% param title %}}
+
+<p class="namespace">(Cortex.DataTypes.Email.EmailMessagePriority)</p>
+
+## Summary
+
+The `EmailMessagePriority` data type is used to define the priority an email.
+
+| | |
+|-|-|
+| **Category:**          | Email                                                  |
+| **Name:**              | `EmailMessagePriority`                                 |
+| **Full Name:**         | `Cortex.DataTypes.Email.EmailMessagePriority`          |
+| **Alias:**             | N/A                                                    |
+| **Description:**       | The data type used to define the priority of an email. |
+| **Default Value:**     | `EmailMessagePriority.Normal`                          |
+| **Can be used as:**    | `EmailMessagePriority`, `Object`, `dynamic`            |
+| **Can be cast to:**    | N/A                                                    |
+
+## Values
+
+### Normal
+
+The Normal value is used when an email is marked with normal urgency.
+
+### NonUrgent
+
+The NonUrgent value is used when an email is marked with non-urgent urgency.
+
+### Urgent
+
+The Urgent value is used when an email is marked with urgent urgency.
+
+## Remarks
+
+### Create an EmailMessagePriority
+
+The following table shows some of the ways that `EmailMessagePriority` can be created.
+
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use an expression | `EmailMessagePriority.Normal` | `EmailMessagePriority.Normal`| Expression |  |
+| Use an expression | `EmailMessagePriority.NonUrgent` | `EmailMessagePriority.NonUrgent`| Expression |  |
+| Use an expression | `EmailMessagePriority.Urgent` | `EmailMessagePriority.Urgent`| Expression |  |
+
+A `EmailMessage` can also be created using the Literal Editor by filling in the necessary values for the following properties:
+
+...
+
+### Property Editor Support
+
+* The Expression Editor is available for [Input][] properties where the data type is `EmailMessagePriority`.
+* The Literal Editor is available for [Input][] properties where the data type is `EmailMessagePriority`.
+* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `EmailMessagePriority`.
+  
+### Known Limitations
+
+None
+
+## See Also
+
+### Related Data Types
+
+* [EmailMessage][]
+
+[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+
+[EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
