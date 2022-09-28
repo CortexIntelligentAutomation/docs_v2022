@@ -180,7 +180,7 @@ For more detailed information on each of the properties within the [Email Messag
 
 The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to connect to an SMTP server, including:
 
-- Server Details - must be provided in order to connect to an SMTP server. This contains the see host, port and whether or not to use SSL, see [ServerDetails][] for more information.
+- Server Details - must be provided in order to connect to an SMTP server and is used for SMTP Authentication. This contains the see host, port and whether or not to use SSL, see [ServerDetails][] for more information.
 - Credentials - must be provided in order to connect to an SMTP server. This object contains host, username and password. The username and password must provided to send an email, see [UserCredentials][] for more information.
 
 For more information, see [BasicEmailSessionDetails][].
@@ -293,6 +293,7 @@ This block cannot currently send emails if credentials are not provided.
 [UnauthorizedAccessException]: {{< url "MSDocs.DotNet.Api.System.UnauthorizedAccessException" >}}
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
+[EmailAddress]: {{< url "Cortex.Reference.DataTypes.Email.EmailAddress.MainDoc" >}}
 [EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
 [EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
