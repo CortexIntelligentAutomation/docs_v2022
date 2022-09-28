@@ -49,7 +49,7 @@ The following table shows some of the ways that `EmailMessagePriority` can be cr
 | Use an expression | `EmailMessagePriority.NonUrgent` | `EmailMessagePriority.NonUrgent`| Expression |  |
 | Use an expression | `EmailMessagePriority.Urgent` | `EmailMessagePriority.Urgent`| Expression |  |
 
-A `EmailMessage` can also be created using the Literal Editor by filling in the necessary values for the following properties:
+A `EmailMessagePriority` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
 ...
 
