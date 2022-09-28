@@ -85,6 +85,8 @@ None
 ### Related Data Types
 
 * [BasicEmailSessionDetails][]
+* [EncryptableText][]
+* [EncryptedText][]
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}

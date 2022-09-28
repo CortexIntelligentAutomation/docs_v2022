@@ -83,6 +83,7 @@ None
 ### Related Data Types
 
 * [BasicEmailSessionDetails][]
+* [EncryptableText][]
 
 [Host Property]: {{< ref "#host" >}}
 
