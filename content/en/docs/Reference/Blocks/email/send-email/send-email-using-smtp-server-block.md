@@ -180,8 +180,8 @@ For more detailed information on each of the properties within the [Email Messag
 
 The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to connect to an SMTP server, including:
 
-- Server Details - must be provided in order to connect to an SMTP server and is used for SMTP Authentication. This contains the see host, port and whether or not to use SSL, see [ServerDetails][] for more information.
-- Credentials - must be provided in order to connect to an SMTP server. This object contains host, username and password. The username and password must provided to send an email, see [UserCredentials][] for more information.
+- Server Details - must be provided in order to connect to an SMTP server. This contains the see host, port and whether or not to use SSL, see [ServerDetails][] for more information.
+- Credentials - must be provided in order to connect to an SMTP server and is used for SMTP Authentication. This object contains host, username and password. The username and password must provided to send an email, see [UserCredentials][] for more information.
 
 For more information, see [BasicEmailSessionDetails][].
 
