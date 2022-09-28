@@ -68,12 +68,12 @@ The following table shows some of the ways that `UserCredentials` can be created
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
 | Use a `UserCredentials` constructor | `new UserCredentials("domain", "username", "encryptedPassword")` | `{"Domain": "domain", "Username": "username", "Password": "encryptedPassword"}` | Expression |  |
-| Use a `UserCredentials` constructor | `new UserCredentials("username", "encryptedPassword")` | `{"Username": "username", "Password": "encryptedPassword"}` | Expression |  |
+| Use a `UserCredentials` constructor | `new UserCredentials("username", "encryptedPassword")` | `{"Domain": null, "Username": "username", "Password": "encryptedPassword"}` | Expression |  |
 
 ### Property Editor Support
 
-* The Expression Editor is not available for [Input][] properties where the data type is `UserCredentials`.
-* The Literal Editor is not available for [Input][] properties where the data type is `UserCredentials`.
+* The Expression Editor is available for [Input][] properties where the data type is `UserCredentials`.
+* The Literal Editor is available for [Input][] properties where the data type is `UserCredentials`.
 * The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `UserCredentials`.
   
 ### Known Limitations

@@ -34,7 +34,7 @@ The Server Details are used to configure the SMTP server host and port to connec
 | Data Type | [ServerDetails][] |
 | Is Advanced | `false` |
 | Default Editor | [Expression][] |
-| Default Value | `null` |
+| Default Value | [ServerDetails][] with value `null` |
 
 ### Credentials
 
@@ -59,8 +59,8 @@ The following table shows some of the ways that `BasicEmailSessionDetails` can b
 
 ### Property Editor Support
 
-* The Expression Editor is not available for [Input][] properties where the data type is `BasicEmailSessionDetails`.
-* The Literal Editor is not available for [Input][] properties where the data type is `BasicEmailSessionDetails`.
+* The Expression Editor is available for [Input][] properties where the data type is `BasicEmailSessionDetails`.
+* The Literal Editor is available for [Input][] properties where the data type is `BasicEmailSessionDetails`.
 * The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `BasicEmailSessionDetails`.
   
 ### Known Limitations

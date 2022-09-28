@@ -34,7 +34,7 @@ The Host is used to define the server address with which a session/connection sh
 | Data Type | [EncryptableText][] |
 | Is Advanced | `false` |
 | Default Editor | [Expression][] |
-| Default Value | [EncryptableText][] with value `""` (This varies depending on the block in which the `ServerDetails` is being used) |
+| Default Value | [EncryptableText][] with value `""` |
 
 ### Port
 
@@ -45,7 +45,7 @@ The Port is used to define the server port with which a session/connection shoul
 | Data Type | [Int32][] |
 | Is Advanced | `false` |
 | Default Editor | [Literal][] |
-| Default Value | [Int32][] with value `465` (This varies depending on the block in which the `ServerDetails` is being used) |
+| Default Value | [Int32][] with value `0` |
 
 ### UseSsl
 
@@ -70,8 +70,8 @@ The following table shows some of the ways that `ServerDetails` can be created.
 
 ### Property Editor Support
 
-* The Expression Editor is not available for [Input][] properties where the data type is `ServerDetails`.
-* The Literal Editor is not available for [Input][] properties where the data type is `ServerDetails`.
+* The Expression Editor is available for [Input][] properties where the data type is `ServerDetails`.
+* The Literal Editor is available for [Input][] properties where the data type is `ServerDetails`.
 * The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `ServerDetails`.
   
 ### Known Limitations
