@@ -23,7 +23,7 @@ The `BasicEmailSessionDetails` data type is used when opening a session with an 
 | **Can be used as:**    | `BasicEmailSessionDetails`, `Object`, `dynamic`        |
 | **Can be cast to:**    | N/A                                                    |
 
-### Properties
+## Properties
 
 ### Server Details
 
