@@ -26,7 +26,7 @@ This example will send an email from `sender@outlook.com` to `recipient@outlook.
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage`, with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [], "Bcc": [],"Priority": null, "Subject": "Example email subject", "BodyFormat":null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, new EmailAddress("sender@outlook.com"), null, null, null, "Example email subject", null, "Example email body", null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br> As Priority and BodyFormat are null, the email will be sent with a text body and normal priority. For more information, see [EmailMessage][].|
+| [Email Message][Email Message Property] | `($)EmailMessage`, with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [], "Bcc": [],"Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, new EmailAddress("sender@outlook.com"), null, null, null, "Example email subject", null, "Example email body", null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br> As Priority and BodyFormat are null, the email will be sent with a text body and normal priority. For more information, see [EmailMessage][].|
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails`, with value `{"ServerDetails": {"Host": "smtp-mail.outlook.com", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "sender@outlook.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(new ServerDetails("smtp-mail.outlook.com", 587, false), new UserCredentials("sender@outlook.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The password in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession`, with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
@@ -174,7 +174,7 @@ For more detailed information on each of the properties within the [Email Messag
 | Property Type | [Input][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Literal][] |
-| Default Value | [EmailMessage][] with value `{}` |
+| Default Value | [EmailMessage][] with value:<br>To: `[{"Name": null, "Address": ""}]`<br>From: `{"Name": null, "Address": ""}`<br>Cc: `[]`<br>Bcc: `[]`<br>Priority: `null`<br> Subject: `""`<br>BodyFormat: `null`<br>Body: `$@""`,<br>Attachments: `[]` |
 
 ### Basic Email Session Details
 
@@ -191,7 +191,7 @@ For more information, see [BasicEmailSessionDetails][].
 | Property Type | [InputOutput][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Variable][] |
-| Default Value | [BasicEmailSessionDetails][] with value `{}` |
+| Default Value | `($)BasicEmailSessionDetails` with no value |
 
 ### Close Session
 
