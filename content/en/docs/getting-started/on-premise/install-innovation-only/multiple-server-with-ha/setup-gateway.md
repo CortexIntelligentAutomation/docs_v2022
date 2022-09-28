@@ -74,9 +74,9 @@ Log on to Gateway and run through the setup wizard:
 
 ## Configure the Gateway Databases to use Transparent Data Encryption
 
-Once Gateway has been configured, if you wish to encrypt the databases using [Transparent Data Encryption][] for improved security, this should now be performed by following the steps in [Configuring TDE][].
+{{% alert title="Note" %}}Transparent Data Encryption cannot be applied to SQL Server Express, only full SQL Server instances.{{% /alert %}}
 
-{{% alert title="Note" %}}TDE cannot be applied to SQL Server Express, only full SQL Server instances.{{% /alert %}}
+Once Gateway has been configured, if you wish to encrypt the databases using [Transparent Data Encryption][] for improved security, this should now be performed by following the steps in [Configuring TDE][].
 
 ## Next Steps?
 

@@ -190,7 +190,7 @@ Apply the settings by following these instructions:
 To avoid answering all of the prompts `-Override 0` can be added to the end of the script. This will automatically apply all settings and forcibly restart the server.
     {{% /alert %}}
 
-    If `-Override 0` has been specified no further steps need to be taken and you can move on to the next section when completed.
+    If `-Override 0` has been specified no further steps need to be taken and you can move on to the next section when the server has restarted.
 1. To use all the recommended settings click `Apply all` to the first prompt.
 
     To selectively apply each setting select `Choose which to apply`. Each change will then be prompted with a Yes/No confirmation before applying.
