@@ -1,7 +1,7 @@
 ---
 title: "UserCredentials"
 linkTitle: "UserCredentials"
-description: "Used for authentication."
+description: "The data type representing configuration for authentication when establishing a connection with a server."
 ---
 
 
@@ -11,7 +11,7 @@ description: "Used for authentication."
 
 ## Summary
 
-The `UserCredentials` data type is used for authentication.
+The `UserCredentials` data type is used for authentication when establishing a connection with a server.
 
 | | |
 |-|-|
@@ -19,7 +19,7 @@ The `UserCredentials` data type is used for authentication.
 | **Name:**              | `UserCredentials`                                      |
 | **Full Name:**         | `Cortex.DataTypes.Credentials.UserCredentials`         |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | The data type used for authentication.                 |
+| **Description:**       | The data type representing configuration for authentication when establishing a connection with a server. |
 | **Default Value:**     | null                                                   |
 | **Can be used as:**    | `UserCredentials`, `Object`, `dynamic`                 |
 | **Can be cast to:**    | N/A                                                    |
@@ -50,7 +50,7 @@ The Username is used to define the username to be used in authentication.
 
 ### Password
 
-The Password is used to define the password to be used in authentication.
+The Password is used to define the password to be used in authentication. This property is an [EncryptedText][] and so it must be encrypted, for more information on how to encrypt the password, see [EncryptedText][].
 
 | | |
 |--------------------|---------------------------|
@@ -67,15 +67,19 @@ The following table shows some of the ways that `UserCredentials` can be created
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `UserCredentials` constructor | `new UserCredentials("domain", "username", "encryptedPassword")` | `{"Domain": "domain", "Username": "username", "Password": "encryptedPassword"}` | Expression |  |
-| Use a `UserCredentials` constructor | `new UserCredentials("username", "encryptedPassword")` | `{"Domain": null, "Username": "username", "Password": "encryptedPassword"}` | Expression |  |
+| Use a `UserCredentials` constructor | `new UserCredentials(domain: "domain", username: "username", password: "encryptedPassword")` | `{"Domain": "domain", "Username": "username", "Password": "encryptedPassword"}` | Expression |  |
+| Use a `UserCredentials` constructor | `new UserCredentials(username: "username", password: "encryptedPassword")` | `{"Domain": null, "Username": "username", "Password": "encryptedPassword"}` | Expression |  |
 
 ### Property Editor Support
 
 * The Expression Editor is available for [Input][] properties where the data type is `UserCredentials`.
 * The Literal Editor is available for [Input][] properties where the data type is `UserCredentials`.
 * The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `UserCredentials`.
-  
+
+A `UserCredentials` can also be created using the Literal Editor by filling in the necessary values for the following properties:
+
+...
+
 ### Known Limitations
 
 None
