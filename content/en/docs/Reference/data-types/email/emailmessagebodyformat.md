@@ -52,9 +52,9 @@ The following table shows some of the ways that `EmailMessageBodyFormat` can be 
 | Use an enum expression | `EmailMessageBodyFormat.Text` | `EmailMessageBodyFormat.Text`| Expression |  |
 | Use an enum expression | `EmailMessageBodyFormat.Html` | `EmailMessageBodyFormat.Html`| Expression |  |
 
-A `EmailMessageBodyFormat` can also be created using the Literal Editor by filling in the necessary values for the following properties:
+An `EmailMessageBodyFormat` can also be created using the Literal Editor by selecting the desired option from the dropdown list containing the range of options.
 
-...
+### Convert EmailMessageBodyFormat to Text
 
 ### Property Editor Support
 

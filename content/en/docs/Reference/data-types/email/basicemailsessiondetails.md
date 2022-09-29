@@ -65,7 +65,12 @@ The following table shows some of the ways that `BasicEmailSessionDetails` can b
 
 A `BasicEmailSessionDetails` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
-...
+| Property | Data Type | Example | Notes |
+|-|-|-|-|
+| `ServerDetails` | `ServerDetails` | Host: `host`<br>Port: `587`<br>UseSsl: `false` | The [Server Details][Server Details Property] that are used to connect to the server. |
+| `Credentials` | `UserCredentials` | Domain: `"domain"`<br>Username: `"username"`<br>Password: `"encryptedPassword"` | The [Credentials][Credentials Property] that are used for authentication on the server. |
+
+### Convert BasicEmailSessionDetails to Text
 
 ### Known Limitations
 
@@ -77,6 +82,9 @@ A `BasicEmailSessionDetails` can also be created using the Literal Editor by fil
 
 * [UserCredentials][]
 * [ServerDetails][]
+
+[Server Details Property]: {{< ref "#server-details" >}}
+[Credentials Property]: {{< ref "#credentials" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}

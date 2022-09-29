@@ -68,17 +68,23 @@ The following table shows some of the ways that `UserCredentials` can be created
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
 | Use a `UserCredentials` constructor | `new UserCredentials(domain: "domain", username: "username", password: "encryptedPassword")` | `{"Domain": "domain", "Username": "username", "Password": "encryptedPassword"}` | Expression |  |
-| Use a `UserCredentials` constructor | `new UserCredentials(username: "username", password: "encryptedPassword")` | `{"Domain": null, "Username": "username", "Password": "encryptedPassword"}` | Expression |  |
+| | `new UserCredentials(username: "username", password: "encryptedPassword")` | `{"Domain": null, "Username": "username", "Password": "encryptedPassword"}` | Expression |  |
+
+A `UserCredentials` can also be created using the Literal Editor by filling in the necessary values for the following properties:
+
+| Property | Data Type | Example | Notes |
+|-|-|-|-|
+| `Domain` | `EncryptableText` | `"domain"` | The [Domain][Domain Property] used in authentication. |
+| `Username` | `EncryptableText` | `"username"` | The [Username][Username Property] used in authentication. |
+| `Password` | `EncryptedText` | `"encryptedPassword"` | The [Password][Password Property] used in authentication. This property is an [EncryptedText][] and so it must be encrypted, for more information on how to encrypt the password, see [EncryptedText][].  |
+
+### Convert UserCredentials to Text
 
 ### Property Editor Support
 
 * The Expression Editor is available for [Input][] properties where the data type is `UserCredentials`.
 * The Literal Editor is available for [Input][] properties where the data type is `UserCredentials`.
 * The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `UserCredentials`.
-
-A `UserCredentials` can also be created using the Literal Editor by filling in the necessary values for the following properties:
-
-...
 
 ### Known Limitations
 
@@ -91,6 +97,10 @@ None
 * [BasicEmailSessionDetails][]
 * [EncryptableText][]
 * [EncryptedText][]
+
+[Domain Property]: {{< ref "#domain" >}}
+[Username Property]: {{< ref "#username" >}}
+[Password Property]: {{< ref "#password" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}

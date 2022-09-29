@@ -60,7 +60,12 @@ The following table shows some of the ways that `EmailMessage` can be created.
 
 A `EmailAddress` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
-...
+| Property | Data Type | Example | Notes |
+|-|-|-|-|
+| `Name` | `String`    | `"Sender"`             | The [Name][Name Property] associated with the email address. |
+| `Address` | `String`    | `"sender@outlook.com"` | The email address. |
+
+### Convert EmailAddress to Text
 
 ### Property Editor Support
 
@@ -78,15 +83,13 @@ None
 
 * [EmailMessage][]
 
+[Name Property]: {{< ref "#name" >}}
+
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
-[EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
-[EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
 
-[IList]: {{< url "Cortex.Reference.DataTypes.Collections.IList.MainDoc" >}}
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}

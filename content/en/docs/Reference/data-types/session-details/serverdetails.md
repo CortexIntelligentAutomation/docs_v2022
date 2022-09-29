@@ -70,7 +70,13 @@ The following table shows some of the ways that `ServerDetails` can be created.
 
 A `ServerDetails` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
-...
+| Property | Data Type | Example | Notes |
+|-|-|-|-|
+| `Host` | `EncryptableText` | `"host"` | The server address of the [Host][Host Property]. |
+| `Port` | `Int32` | `465` | The [Port][Port Property] on the server address on which the session/connection should be opened. |
+| `UseSsl` | `Boolean` | `true` | The [Boolean][] used to determine whether or not an SSL-wrapped connection should be made. |
+
+### Convert ServerDetails to Text
 
 ### Property Editor Support
 
@@ -90,6 +96,7 @@ None
 * [EncryptableText][]
 
 [Host Property]: {{< ref "#host" >}}
+[Port Property]: {{< ref "#port" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}

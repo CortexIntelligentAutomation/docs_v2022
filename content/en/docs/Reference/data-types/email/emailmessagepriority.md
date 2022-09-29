@@ -61,9 +61,9 @@ The following table shows some of the ways that `EmailMessagePriority` can be cr
 | Use an enum expression | `EmailMessagePriority.NonUrgent` | `EmailMessagePriority.NonUrgent`| Expression |  |
 | Use an enum expression | `EmailMessagePriority.Urgent` | `EmailMessagePriority.Urgent`| Expression |  |
 
-A `EmailMessagePriority` can also be created using the Literal Editor by filling in the necessary values for the following properties:
+An `EmailMessagePriority` can also be created using the Literal Editor by selecting the desired option from the dropdown list containing the range of options.
 
-...
+### Convert EmailMessagePriority to Text
 
 ### Property Editor Support
 

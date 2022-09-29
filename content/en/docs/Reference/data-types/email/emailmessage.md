@@ -137,7 +137,19 @@ The following table shows some of the ways that `EmailMessage` can be created.
 
 A `EmailMessage` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
-...
+| Property      | Data Type                | Example                                               | Notes                                         |
+|-|-|-|-|
+| `To`          | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "recipient@outlook.com" }` | The recipients of the email. |
+| `From`        | `EmailAddress`           | Name: `Sender`<br>Address: `sender@outlook.com` | The sender of the email. |
+| `Cc`          | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "cc@outlook.com" }` | The [Cc][Cc Property] addresses. |
+| `Bcc`         | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "bcc@outlook.com" }` | The [Bcc][Bcc Property] addresses. |
+| `Priority`    | `EmailMessagePriority`   | `Normal` | The [Priority][Priority Property] of the email. |
+| `Subject`     | `String`                 | `"Example subject"` | The [Subject][Subject Property] of the email. |
+| `BodyFormat`  | `EmailMessageBodyFormat` | `Text` | The [Body Format][Body Format Property] of the email body. |
+| `Body`        | `String`                 | `"Example body"` | The email [Body][Body Property]. |
+| `Attachments` |  `IList<String>`         | `new List<string>(){ "C:/attachment.txt" }` | A list of file paths pointing to [Attachments][Attachments Property]. |
+
+### Convert EmailMessage to Text
 
 ### Property Editor Support
 
@@ -156,6 +168,14 @@ None
 * [EmailAddress][]
 * [EmailMessagePriority][]
 * [EmailMessageBodyFormat][]
+
+[Cc Property]: {{< ref "#cc" >}}
+[Bcc Property]: {{< ref "#bcc" >}}
+[Priority Property]: {{< ref "#priority" >}}
+[Subject Property]: {{< ref "#subject" >}}
+[Body Format Property]: {{< ref "#body-format" >}}
+[Body Property]: {{< ref "#body" >}}
+[Attachments Property]: {{< ref "#attachments" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
