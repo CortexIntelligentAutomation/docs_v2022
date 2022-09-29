@@ -1,7 +1,7 @@
 ---
 title: "ServerDetails"
 linkTitle: "ServerDetails"
-description: "Used when opening a session/connection with a server."
+description: "The data type representing configuration for establishing and maintaining a connection/session with a server."
 ---
 
 # {{% param title %}}
@@ -10,7 +10,7 @@ description: "Used when opening a session/connection with a server."
 
 ## Summary
 
-The `ServerDetails` data type is used when opening a session/connection with a server.
+The `ServerDetails` data type is used to establish and maintain a session/connection with a server.
 
 | | |
 |-|-|
@@ -18,7 +18,7 @@ The `ServerDetails` data type is used when opening a session/connection with a s
 | **Name:**              | `ServerDetails`                                        |
 | **Full Name:**         | `Cortex.DataTypes.SessionDetails.ServerDetails`        |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | The data type representing configuration for opening a session/connection with a server. |
+| **Description:**       | The data type representing configuration for establishing and maintaining a connection/session with a server. |
 | **Default Value:**     | null                                                   |
 | **Can be used as:**    | `ServerDetails`, `Object`, `dynamic`                   |
 | **Can be cast to:**    | N/A                                                    |
@@ -49,7 +49,7 @@ The Port is used to define the server port with which a session/connection shoul
 
 ### UseSsl
 
-UseSsl is used to define whether or not the connection should be SSL-wrapped or not. Setting this to `false` does not necessarily mean that SSL will not be used, if the mail server supports the STARTTLS extension, SSL may still be used.
+UseSsl is used to define whether or not the connection should be SSL-wrapped or not. Setting this to `false` does not necessarily mean that SSL will not be used, if the server supports the STARTTLS extension, SSL may still be used.
 
 | | |
 |--------------------|---------------------------|
@@ -66,7 +66,11 @@ The following table shows some of the ways that `ServerDetails` can be created.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `ServerDetails` constructor | `new ServerDetails("host", 465, true)` | `{"Host": "host", "Port": 465, "UseSsl": true}` | Expression |  |
+| Use a `ServerDetails` constructor | `new ServerDetails(host: "host", port: 465, useSsl: true)` | `{"Host": "host", "Port": 465, "UseSsl": true}` | Expression |  |
+
+A `ServerDetails` can also be created using the Literal Editor by filling in the necessary values for the following properties:
+
+...
 
 ### Property Editor Support
 
