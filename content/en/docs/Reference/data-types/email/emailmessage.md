@@ -1,7 +1,7 @@
 ---
 title: "EmailMessage"
 linkTitle: "EmailMessage"
-description: "Used to define an email. "
+description: "Defines an email. "
 ---
 
 # {{% param title %}}
@@ -18,7 +18,7 @@ The `EmailMessage` data type is used to define an email.
 | **Name:**              | `EmailMessage`                                         |
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailMessage`                  |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | The data type used to define an email.                 |
+| **Description:**       | Defines an email.                                      |
 | **Default Value:**     | `null`                                                 |
 | **Can be used as:**    | `EmailMessage`, `Object`, `dynamic`                    |
 | **Can be cast to:**    | N/A                                                    |
@@ -27,7 +27,7 @@ The `EmailMessage` data type is used to define an email.
 
 ### To
 
-The To property is used to define the recipients of the email.
+The To property is used to define the recipients of the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] item is a recipient.
 
 | | |
 |--------------------|---------------------------|
@@ -49,7 +49,7 @@ The From property is used to define who/where the email is from.
 
 ### Cc
 
-The Cc property is used to define the Cc addresses for the email.
+The Cc property is used to define the Cc addresses for the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] item is a Cc address of the email.
 
 | | |
 |--------------------|---------------------------|
@@ -60,7 +60,7 @@ The Cc property is used to define the Cc addresses for the email.
 
 ### Bcc
 
-The Bcc property is used to define the Bcc addresses for the email.
+The Bcc property is used to define the Bcc addresses for the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] item is a Bcc address of the email.
 
 | | |
 |--------------------|---------------------------|

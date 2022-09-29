@@ -1,7 +1,7 @@
 ---
 title: "EmailMessagePriority"
 linkTitle: "EmailMessagePriority"
-description: "Used to define the priority of an email."
+description: "Defines the priority of an email."
 ---
 
 # {{% param title %}}
@@ -18,7 +18,7 @@ The `EmailMessagePriority` data type is used to define the priority an email.
 | **Name:**              | `EmailMessagePriority`                                 |
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailMessagePriority`          |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | The data type used to define the priority of an email. |
+| **Description:**       | Defines the priority of an email.                      |
 | **Default Value:**     | `EmailMessagePriority.Normal`                          |
 | **Can be used as:**    | `EmailMessagePriority`, `Object`, `dynamic`            |
 | **Can be cast to:**    | N/A                                                    |
@@ -27,15 +27,27 @@ The `EmailMessagePriority` data type is used to define the priority an email.
 
 ### Normal
 
-The Normal value is used when an email is marked with normal urgency.
+| | |
+|-|-|
+| **Name:**    | Normal                                                |
+| **Value:**   | [Int32][] with value `0`                              |
+| **Notes:**   | Used when an email is marked with normal urgency.     |
 
 ### NonUrgent
 
-The NonUrgent value is used when an email is marked with non-urgent urgency.
+| | |
+|-|-|
+| **Name:**    | NonUrgent                                             |
+| **Value:**   | [Int32][] with value `1`                              |
+| **Notes:**   | Used when an email is marked with non-urgent urgency. |
 
 ### Urgent
 
-The Urgent value is used when an email is marked with urgent urgency.
+| | |
+|-|-|
+| **Name:**    | Urgent                                                |
+| **Value:**   | [Int32][] with value `2`                              |
+| **Notes:**   | Used when an email is marked with urgent urgency.     |
 
 ## Remarks
 
@@ -45,9 +57,9 @@ The following table shows some of the ways that `EmailMessagePriority` can be cr
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use an expression | `EmailMessagePriority.Normal` | `EmailMessagePriority.Normal`| Expression |  |
-| Use an expression | `EmailMessagePriority.NonUrgent` | `EmailMessagePriority.NonUrgent`| Expression |  |
-| Use an expression | `EmailMessagePriority.Urgent` | `EmailMessagePriority.Urgent`| Expression |  |
+| Use an enum expression | `EmailMessagePriority.Normal` | `EmailMessagePriority.Normal`| Expression |  |
+| Use an enum expression | `EmailMessagePriority.NonUrgent` | `EmailMessagePriority.NonUrgent`| Expression |  |
+| Use an enum expression | `EmailMessagePriority.Urgent` | `EmailMessagePriority.Urgent`| Expression |  |
 
 A `EmailMessagePriority` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
@@ -72,5 +84,7 @@ None
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+
+[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}

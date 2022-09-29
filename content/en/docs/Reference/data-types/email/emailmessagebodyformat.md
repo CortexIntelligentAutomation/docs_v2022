@@ -1,7 +1,7 @@
 ---
 title: "EmailMessageBodyFormat"
 linkTitle: "EmailMessageBodyFormat"
-description: "Used to define the format of an email body."
+description: "Defines the format of an email body."
 ---
 
 # {{% param title %}}
@@ -18,7 +18,7 @@ The `EmailMessageBodyFormat` data type is used to define the format of an email 
 | **Name:**              | `EmailMessageBodyFormat`                               |
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailMessageBodyFormat`        |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | The data type used to define the format of an email body. |
+| **Description:**       | Defines the format of an email body.                   |
 | **Default Value:**     | `EmailMessageBodyFormat.Text`                          |
 | **Can be used as:**    | `EmailMessageBodyFormat`, `Object`, `dynamic`          |
 | **Can be cast to:**    | N/A                                                    |
@@ -27,11 +27,19 @@ The `EmailMessageBodyFormat` data type is used to define the format of an email 
 
 ### Text
 
-The Text value is used when an email body format is plain text.
+| | |
+|-|-|
+| **Name:**    | Text                                          |
+| **Value:**   | [Int32][] with value `0`                      |
+| **Notes:**   | Used when an email body format is plain text. |
 
 ### Html
 
-The Html value is used when an email body format is HTML.
+| | |
+|-|-|
+| **Name:**    | Text                                          |
+| **Value:**   | [Int32][] with value `1`                      |
+| **Notes:**   | Used when an email body format is HTML.       |
 
 ## Remarks
 
@@ -41,8 +49,8 @@ The following table shows some of the ways that `EmailMessageBodyFormat` can be 
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use an expression | `EmailMessageBodyFormat.Text` | `EmailMessageBodyFormat.Text`| Expression |  |
-| Use an expression | `EmailMessageBodyFormat.Html` | `EmailMessageBodyFormat.Html`| Expression |  |
+| Use an enum expression | `EmailMessageBodyFormat.Text` | `EmailMessageBodyFormat.Text`| Expression |  |
+| Use an enum expression | `EmailMessageBodyFormat.Html` | `EmailMessageBodyFormat.Html`| Expression |  |
 
 A `EmailMessageBodyFormat` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
@@ -69,3 +77,5 @@ None
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
+
+[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
