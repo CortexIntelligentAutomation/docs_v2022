@@ -65,11 +65,15 @@ An `EmailMessagePriority` can also be created using the Literal Editor by select
 
 ### Casting an Int32 to EmailMessagePriority
 
+[Int32][] values can be cast to an `EmailMessagePriority` in the following ways:
+
 | Example | Result | Editor&nbsp;Support |
 |-|-|-|
 | `(EmailMessagePriority)($)IntVar` where `($)IntVar` has a value `0` | `EmailMessagePriority.Normal` | Expression |
 | `(EmailMessagePriority)($)IntVar` where `($)IntVar` has a value `1` | `EmailMessagePriority.NonUrgent` | Expression |
 | `(EmailMessagePriority)($)IntVar` where `($)IntVar` has a value `2` | `EmailMessagePriority.Urgent` | Expression |
+
+For more information on casting [Int32][] values to enums, see [Working with Enums][].
 
 ### Convert EmailMessagePriority to Text
 
@@ -91,6 +95,10 @@ None
 
 ## See Also
 
+### Related Concepts
+
+* [Working with Enums][]
+
 ### Related Data Types
 
 * [EmailMessage][]
@@ -102,5 +110,6 @@ None
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
+[Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

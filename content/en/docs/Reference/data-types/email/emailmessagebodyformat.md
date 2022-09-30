@@ -56,10 +56,14 @@ An `EmailMessageBodyFormat` can also be created using the Literal Editor by sele
 
 ### Casting an Int32 to EmailMessageBodyFormat
 
+[Int32][] values can be cast to an `EmailMessageBodyFormat` in the following ways:
+
 | Example | Result | Editor&nbsp;Support |
 |-|-|-|
 | `(EmailMessageBodyFormat)($)IntVar` where `($)IntVar` has a value `0` | `EmailMessageBodyFormat.Text` | Expression |
 | `(EmailMessageBodyFormat)($)IntVar` where `($)IntVar` has a value `1` | `EmailMessageBodyFormat.Html` | Expression |
+
+For more information on casting [Int32][] values to enums, see [Working with Enums][].
 
 ### Convert EmailMessageBodyFormat to Text
 
@@ -81,6 +85,10 @@ None
 
 ## See Also
 
+### Related Concepts
+
+* [Working with Enums][]
+
 ### Related Data Types
 
 * [EmailMessage][]
@@ -92,5 +100,6 @@ None
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
 
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
+[Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
