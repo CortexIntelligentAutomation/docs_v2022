@@ -80,6 +80,12 @@ A `UserCredentials` can also be created using the Literal Editor by filling in t
 
 ### Convert UserCredentials to Text
 
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use `ToString` | `($)UserCredentials.ToString()` | `"Cortex.DataTypes.Credentials.UserCredentials"` | Expression | ToString will return the Full Name of the UserCredentials Data Type |
+| Use `Convert Object To Text` block | where `Object` property has a value of `{"Domain": "domain", "Username": "username", "Password": "encryptedPassword"}` | `"Cortex.DataTypes.Credentials.UserCredentials"` | N/A  | See [Convert Object To Text][] |
+| Use `Convert Object To Json` block | where `Object` property has a value of `{"Domain": "domain", "Username": "username", "Password": "encryptedPassword"}` | `"{\r\n  \"Domain\": \"domain\",\r\n  \"Username\": \"username\",\r\n  \"Password\": \"encryptedPassword\"\r\n}"` | N/A  | See [Convert Object To Json][] |
+
 ### Property Editor Support
 
 * The Expression Editor is available for [Input][] properties where the data type is `UserCredentials`.
@@ -88,7 +94,9 @@ A `UserCredentials` can also be created using the Literal Editor by filling in t
 
 ### Known Limitations
 
-None
+Currently, if the `ToString()` method is used on a UserCredentials, then its Full Name will be returned; instead of a representation of the data within the UserCredentials.
+
+In future this limitation may be removed.
 
 ## See Also
 
@@ -111,3 +119,6 @@ None
 
 [EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 [EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
+
+[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

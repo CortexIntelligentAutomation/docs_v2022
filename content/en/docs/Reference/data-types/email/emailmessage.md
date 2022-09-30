@@ -133,7 +133,7 @@ The following table shows some of the ways that `EmailMessage` can be created.
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
 | Use a `EmailMessage` constructor | `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@outlook.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`| Expression |  |
-| | `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@outlook.com"), cc: new List<EmailAddress>(){ new EmailAddress("cc@outlook.com") }, bcc: new List<EmailAddress>(){ new EmailAddress("bcc@outlook.com") }, priority: EmailMessagePriority.Urgent, body: "Example email subject", bodyFormat: EmailMessageBodyFormat.Text, body: "Example email body", attachments: new List<string>(){ "C:/attachment.txt" })` | `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [{"To": [{"Name": null, "Address": "cc@outlook.com"}], "Bcc": [{"To": [{"Name": null, "Address": "bcc@outlook.com"}], "Priority": EmailMessagePriority.Urgent, "Subject": "Example email subject", "BodyFormat": EmailMessageBodyFormat.Text, "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}`| Expression |  |
+| | `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@outlook.com"), cc: new List<EmailAddress>(){ new EmailAddress("cc@outlook.com") }, bcc: new List<EmailAddress>(){ new EmailAddress("bcc@outlook.com") }, priority: EmailMessagePriority.Urgent, subject: "Example email subject", bodyFormat: EmailMessageBodyFormat.Text, body: "Example email body", attachments: new List<string>(){ "C:/attachment.txt" })` | `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [{"To": [{"Name": null, "Address": "cc@outlook.com"}], "Bcc": [{"To": [{"Name": null, "Address": "bcc@outlook.com"}], "Priority": EmailMessagePriority.Urgent, "Subject": "Example email subject", "BodyFormat": EmailMessageBodyFormat.Text, "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}`| Expression |  |
 
 A `EmailMessage` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
@@ -151,6 +151,12 @@ A `EmailMessage` can also be created using the Literal Editor by filling in the 
 
 ### Convert EmailMessage to Text
 
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use `ToString` | `($)EmailMessage.ToString()` | `"Cortex.DataTypes.Email.EmailMessage"` | Expression | ToString will return the Full Name of the EmailMessage Data Type |
+| Use `Convert Object To Text` block | where `Object` property has a value of `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [{"To": [{"Name": null, "Address": "cc@outlook.com"}], "Bcc": [{"To": [{"Name": null, "Address": "bcc@outlook.com"}], "Priority": EmailMessagePriority.Urgent, "Subject": "Example email subject", "BodyFormat": EmailMessageBodyFormat.Text, "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}` | `"Cortex.DataTypes.Email.EmailMessage"` | N/A  | See [Convert Object To Text][] |
+| Use `Convert Object To Json` block | where `Object` property has a value of `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [{"To": [{"Name": null, "Address": "cc@outlook.com"}], "Bcc": [{"To": [{"Name": null, "Address": "bcc@outlook.com"}], "Priority": EmailMessagePriority.Urgent, "Subject": "Example email subject", "BodyFormat": EmailMessageBodyFormat.Text, "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}` | `"{\r\n  \"To\": [\r\n    {\r\n      \"Name\": null,\r\n      \"Address\": \"recipient@outlook.com\"\r\n    }\r\n  ],\r\n  \"From\": {\r\n    \"Name\": null,\r\n    \"Address\": \"sender@outlook.com\"\r\n  },\r\n  \"Cc\": [\r\n    {\r\n      \"Name\": null,\r\n      \"Address\": \"cc@outlook.com\"\r\n    }\r\n  ],\r\n  \"Bcc\": [\r\n    {\r\n      \"Name\": null,\r\n      \"Address\": \"bcc@outlook.com\"\r\n    }\r\n  ],\r\n  \"Priority\": 2,\r\n  \"Subject\": \"Example email subject\",\r\n  \"BodyFormat\": 0,\r\n  \"Body\": \"Example email body\",\r\n  \"Attachments\": [\r\n    \"C:/attachment.txt\"\r\n  ]\r\n}"` | N/A  | See [Convert Object To Json][] |
+
 ### Property Editor Support
 
 * The Expression Editor is available for [Input][] properties where the data type is `EmailMessage`.
@@ -159,7 +165,9 @@ A `EmailMessage` can also be created using the Literal Editor by filling in the 
   
 ### Known Limitations
 
-None
+Currently, if the `ToString()` method is used on a EmailMessage, then its Full Name will be returned; instead of a representation of the data within the EmailMessage.
+
+In future this limitation may be removed.
 
 ## See Also
 
@@ -189,3 +197,5 @@ None
 
 [IList]: {{< url "Cortex.Reference.DataTypes.Collections.IList.MainDoc" >}}
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

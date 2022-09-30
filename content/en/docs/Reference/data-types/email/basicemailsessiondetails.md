@@ -72,9 +72,17 @@ A `BasicEmailSessionDetails` can also be created using the Literal Editor by fil
 
 ### Convert BasicEmailSessionDetails to Text
 
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use `ToString` | `($)BasicEmailSessionDetails.ToString()` | `"Cortex.DataTypes.Email.BasicEmailSessionDetails"` | Expression | ToString will return the Full Name of the BasicEmailSessionDetails Data Type |
+| Use `Convert Object To Text` block | where `Object` property has a value of `{"ServerDetails": {"Host": "host", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "username", "Password": "encryptedPassword"}}` | `"Cortex.DataTypes.Email.BasicEmailSessionDetails"` | N/A  | See [Convert Object To Text][] |
+| Use `Convert Object To Json` block | where `Object` property has a value of `{"ServerDetails": {"Host": "host", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "username", "Password": "encryptedPassword"}}` | `"{\r\n  \"ServerDetails\": {\r\n    \"Host\": \"host\",\r\n    \"Port\": 587,\r\n    \"UseSsl\": false\r\n  },\r\n  \"Credentials\": {\r\n    \"Domain\": null,\r\n    \"Username\": \"username\",\r\n    \"Password\": \"encryptedPassword\"\r\n  }\r\n}"` | N/A  | See [Convert Object To Json][] |
+
 ### Known Limitations
 
 * Currently emails cannot be sent using this data type if credentials are not provided.
+
+* Currently, if the `ToString()` method is used on a BasicEmailSessionDetails, then its Full Name will be returned; instead of a representation of the data within the BasicEmailSessionDetails. In future this limitation may be removed.
 
 ## See Also
 
@@ -93,3 +101,6 @@ A `BasicEmailSessionDetails` can also be created using the Literal Editor by fil
 
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
+
+[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

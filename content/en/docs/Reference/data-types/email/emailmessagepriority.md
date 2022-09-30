@@ -65,6 +65,12 @@ An `EmailMessagePriority` can also be created using the Literal Editor by select
 
 ### Convert EmailMessagePriority to Text
 
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use `ToString` | `($)EmailMessagePriority.ToString()` where `($)EmailMessagePriority` has a value of `EmailMessagePriority.Normal`| `"Normal"` | Expression | ToString will return the Name of the enum value |
+| Use `Convert Object To Text` block | where `Object` property has a value of `EmailMessagePriority.Normal` | `"Normal"` | N/A  | See [Convert Object To Text][] |
+| Use `Convert Object To Json` block | where `Object` property has a value of `EmailMessagePriority.Normal` | `"0"` | N/A  | See [Convert Object To Json][] |
+
 ### Property Editor Support
 
 * The Expression Editor is available for [Input][] properties where the data type is `EmailMessagePriority`.
@@ -88,3 +94,5 @@ None
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
+[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

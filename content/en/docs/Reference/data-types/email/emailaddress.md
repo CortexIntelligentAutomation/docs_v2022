@@ -62,10 +62,16 @@ A `EmailAddress` can also be created using the Literal Editor by filling in the 
 
 | Property | Data Type | Example | Notes |
 |-|-|-|-|
-| `Name` | `String`    | `"Sender"`             | The [Name][Name Property] associated with the email address. |
-| `Address` | `String`    | `"sender@outlook.com"` | The email address. |
+| `Name` | `String` | `"Sender"` | The [Name][Name Property] associated with the email address. |
+| `Address` | `String` | `"sender@outlook.com"` | The email address. |
 
 ### Convert EmailAddress to Text
+
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use `ToString` | `($)EmailAddress.ToString()` | `"Cortex.DataTypes.Email.EmailAddress"` | Expression | ToString will return the Full Name of the EmailAddress Data Type |
+| Use `Convert Object To Text` block | where `Object` property has a value of `{"Name": "Sender", "Address": "sender@outlook.com"}` | `"Cortex.DataTypes.Email.EmailAddress"` | N/A  | See [Convert Object To Text][] |
+| Use `Convert Object To Json` block | where `Object` property has a value of `{"Name": "Sender", "Address": "sender@outlook.com"}` | `"{\r\n  \"Name\": \"Sender\",\r\n  \"Address\": \"sender@outlook.com\"\r\n}"` | N/A  | See [Convert Object To Json][] |
 
 ### Property Editor Support
 
@@ -75,7 +81,9 @@ A `EmailAddress` can also be created using the Literal Editor by filling in the 
   
 ### Known Limitations
 
-None
+Currently, if the `ToString()` method is used on a EmailAddress, then its Full Name will be returned; instead of a representation of the data within the EmailAddress.
+
+In future this limitation may be removed.
 
 ## See Also
 
@@ -93,3 +101,5 @@ None
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
 
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

@@ -78,6 +78,12 @@ A `ServerDetails` can also be created using the Literal Editor by filling in the
 
 ### Convert ServerDetails to Text
 
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use `ToString` | `($)ServerDetails.ToString()` | `"Cortex.DataTypes.SessionDetails.ServerDetails"` | Expression | ToString will return the Full Name of the ServerDetails Data Type |
+| Use `Convert Object To Text` block | where `Object` property has a value of `{"Host": "host", "Port": 465, "UseSsl": true}` | `"Cortex.DataTypes.SessionDetails.ServerDetails"` | N/A  | See [Convert Object To Text][] |
+| Use `Convert Object To Json` block | where `Object` property has a value of `{"Host": "host", "Port": 465, "UseSsl": true}` | `"{\r\n  \"Host\": \"host\",\r\n  \"Port\": 465,\r\n  \"UseSsl\": true\r\n}"` | N/A  | See [Convert Object To Json][] |
+
 ### Property Editor Support
 
 * The Expression Editor is available for [Input][] properties where the data type is `ServerDetails`.
@@ -86,7 +92,9 @@ A `ServerDetails` can also be created using the Literal Editor by filling in the
   
 ### Known Limitations
 
-None
+Currently, if the `ToString()` method is used on a ServerDetails, then its Full Name will be returned; instead of a representation of the data within the ServerDetails.
+
+In future this limitation may be removed.
 
 ## See Also
 
@@ -109,3 +117,6 @@ None
 [EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 [Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
+
+[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
