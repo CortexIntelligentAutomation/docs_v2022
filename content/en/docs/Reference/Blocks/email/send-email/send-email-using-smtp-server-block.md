@@ -217,10 +217,9 @@ The exceptions thrown by the block can be found below:
 ||Thrown when an invalid host is provided in the serverDetails within the [Basic Email Session Details][Basic Email Session Details Property].|
 ||Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `false` with a port which requires SSL.|
 ||Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `true` with a port which does not support SSL.|
-||Thrown when the TLS/SSL certificate is expired on the host or is untrusted.|
+||Thrown when the TLS/SSL certificate is expired on the host or is untrusted or invalid.|
 ||Thrown when a locally installed anti-virus software replaces the TLS/SSL certificate in order to scan web traffic.|
 ||Thrown when the CRL (Certificate Revocation List) server for the TLS/SSL certificate is down.|
-||Thrown when the host has an invalid SSL certificate.|
 ||Thrown when the username and/or password in the userCredentials within [Basic Email Session Details][Basic Email Session Details Property] is incorrect.|
 | [FileNotFoundException][]            |Thrown when a non-existent file path is provided in attachments within [Email Message][Email Message Property].|
 | [IOException][]                      |Thrown when the desired socket is held by another process - re-running the flow typically solves this.|

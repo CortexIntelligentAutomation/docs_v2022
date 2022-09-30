@@ -285,7 +285,7 @@
                 [Cortex.Reference.Blocks.Email.SendEmail]
                     MainDoc = "/docs/reference/blocks/email/send-email"
                     [Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer]
-                        MainDoc = "/docs/reference/blocks/email/send-email/send-email-using-smtp-server"
+                        MainDoc = "/docs/reference/blocks/email/send-email/send-email-using-smtp-server-block"
             [Cortex.Reference.Blocks.Exceptions]
                 MainDoc = "/docs/reference/blocks/exceptions/"
                 [Cortex.Reference.Blocks.Exceptions.HandleBlock]
@@ -426,7 +426,7 @@
                     [Cortex.Reference.Blocks.GoogleWorkspace.Gmail.SendEmail]
                         MainDoc = "/docs/reference/blocks/google-workspace/gmail/send-email"
                         [Cortex.Reference.Blocks.GoogleWorkspace.Gmail.SendEmail.SendEmailUsingGmail]
-                            MainDoc = "/docs/reference/blocks/google-workspace/gmail/send-email/send-email-using-gmail"
+                            MainDoc = "/docs/reference/blocks/google-workspace/gmail/send-email/send-email-using-gmail-block"
             [Cortex.Reference.Blocks.Http]
                 MainDoc = "/docs/reference/blocks/http/"
                 [Cortex.Reference.Blocks.Http.ExecuteHttpRequest]
@@ -567,7 +567,7 @@
                     [Cortex.Reference.Blocks.Microsoft365.Outlook.SendEmail]
                         MainDoc = "/docs/reference/blocks/microsoft365/outlook/send-email"
                         [Cortex.Reference.Blocks.Microsoft365.Outlook.SendEmail.SendEmailUsingMicrosoft365]
-                            MainDoc = "/docs/reference/blocks/microsoft365/outlook/send-email/send-email-using-microsoft365"
+                            MainDoc = "/docs/reference/blocks/microsoft365/outlook/send-email/send-email-using-microsoft365-block"
             [Cortex.Reference.Blocks.Objects]
                 MainDoc = "/docs/reference/blocks/objects/"
                 [Cortex.Reference.Blocks.Objects.ConvertObject]
