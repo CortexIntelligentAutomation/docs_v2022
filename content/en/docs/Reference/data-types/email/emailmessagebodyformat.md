@@ -54,6 +54,14 @@ The following table shows some of the ways that `EmailMessageBodyFormat` can be 
 
 An `EmailMessageBodyFormat` can also be created using the Literal Editor by selecting the desired option from the dropdown list containing the range of options.
 
+### Convert EmailMessageBodyFormat to Text
+
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use `ToString` | `($)EmailMessageBodyFormat.ToString()` where `($)EmailMessageBodyFormat` has a value of `EmailMessageBodyFormat.Text`| `"Text"` | Expression | ToString will return the Name of the enum value |
+| Use `Convert Object To Text` block | where `Object` property has a value of `EmailMessageBodyFormat.Text` | `"Text"` | N/A  | See [Convert Object To Text][] |
+| Use `Convert Object To Json` block | where `Object` property has a value of `EmailMessageBodyFormat.Text` | `"0"` | N/A  | See [Convert Object To Json][] |
+
 ### Casting an Int32 to EmailMessageBodyFormat
 
 [Int32][] values can be cast to an `EmailMessageBodyFormat` in the following ways:
@@ -64,14 +72,6 @@ An `EmailMessageBodyFormat` can also be created using the Literal Editor by sele
 | `(EmailMessageBodyFormat)($)IntVar` where `($)IntVar` has a value `1` | `EmailMessageBodyFormat.Html` | Expression |
 
 For more information on casting [Int32][] values to enums, see [Working with Enums][].
-
-### Convert EmailMessageBodyFormat to Text
-
-| Method | Example | Result | Editor&nbsp;Support | Notes |
-|-|-|-|-|-|
-| Use `ToString` | `($)EmailMessageBodyFormat.ToString()` where `($)EmailMessageBodyFormat` has a value of `EmailMessageBodyFormat.Text`| `"Text"` | Expression | ToString will return the Name of the enum value |
-| Use `Convert Object To Text` block | where `Object` property has a value of `EmailMessageBodyFormat.Text` | `"Text"` | N/A  | See [Convert Object To Text][] |
-| Use `Convert Object To Json` block | where `Object` property has a value of `EmailMessageBodyFormat.Text` | `"0"` | N/A  | See [Convert Object To Json][] |
 
 ### Property Editor Support
 
