@@ -63,6 +63,14 @@ The following table shows some of the ways that `EmailMessagePriority` can be cr
 
 An `EmailMessagePriority` can also be created using the Literal Editor by selecting the desired option from the dropdown list containing the range of options.
 
+### Casting an Int32 to EmailMessagePriority
+
+| Example | Result | Editor&nbsp;Support |
+|-|-|-|
+| `(EmailMessagePriority)($)IntVar` where `($)IntVar` has a value `0` | `EmailMessagePriority.Normal` | Expression |
+| `(EmailMessagePriority)($)IntVar` where `($)IntVar` has a value `1` | `EmailMessagePriority.NonUrgent` | Expression |
+| `(EmailMessagePriority)($)IntVar` where `($)IntVar` has a value `2` | `EmailMessagePriority.Urgent` | Expression |
+
 ### Convert EmailMessagePriority to Text
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |

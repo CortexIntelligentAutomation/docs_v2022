@@ -54,6 +54,13 @@ The following table shows some of the ways that `EmailMessageBodyFormat` can be 
 
 An `EmailMessageBodyFormat` can also be created using the Literal Editor by selecting the desired option from the dropdown list containing the range of options.
 
+### Casting an Int32 to EmailMessageBodyFormat
+
+| Example | Result | Editor&nbsp;Support |
+|-|-|-|
+| `(EmailMessageBodyFormat)($)IntVar` where `($)IntVar` has a value `0` | `EmailMessageBodyFormat.Text` | Expression |
+| `(EmailMessageBodyFormat)($)IntVar` where `($)IntVar` has a value `1` | `EmailMessageBodyFormat.Html` | Expression |
+
 ### Convert EmailMessageBodyFormat to Text
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
