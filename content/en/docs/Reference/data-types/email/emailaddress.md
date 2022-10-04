@@ -55,8 +55,8 @@ The following table shows some of the ways that `EmailMessage` can be created.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `EmailAddress` constructor | `new EmailAddress(address: "sender@outlook.com")`| `{"Name": null, "Address": "sender@outlook.com"}` | Expression |  |
-| Use a `EmailAddress` constructor | `new EmailAddress(name: "Sender", address: "sender@outlook.com")`| `{"Name": "Sender", "Address": "sender@outlook.com"}` | Expression |  |
+| Use a `EmailAddress` constructor | `new EmailAddress(address: "sender@outlook.com")`| `{"Name": null, "Address": "sender@outlook.com"}` | Expression | N/A |
+| Use a `EmailAddress` constructor | `new EmailAddress(name: "Sender", address: "sender@outlook.com")`| `{"Name": "Sender", "Address": "sender@outlook.com"}` | Expression | N/A |
 
 A `EmailAddress` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 

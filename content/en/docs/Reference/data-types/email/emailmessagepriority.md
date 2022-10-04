@@ -19,7 +19,7 @@ The `EmailMessagePriority` data type is used to define the priority an email.
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailMessagePriority`          |
 | **Alias:**             | N/A                                                    |
 | **Description:**       | Defines the priority of an email.                      |
-| **Default Value:**     | `EmailMessagePriority.Normal`                          |
+| **Default Value:**     | `0`                                                    |
 | **Can be used as:**    | `EmailMessagePriority`, `Object`, `dynamic`            |
 | **Can be cast to:**    | N/A                                                    |
 
@@ -57,9 +57,9 @@ The following table shows some of the ways that `EmailMessagePriority` can be cr
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use an enum expression | `EmailMessagePriority.Normal` | `EmailMessagePriority.Normal`| Expression |  |
-| Use an enum expression | `EmailMessagePriority.NonUrgent` | `EmailMessagePriority.NonUrgent`| Expression |  |
-| Use an enum expression | `EmailMessagePriority.Urgent` | `EmailMessagePriority.Urgent`| Expression |  |
+| Use an enum expression | `EmailMessagePriority.Normal` | `EmailMessagePriority.Normal`| Expression | N/A |
+| Use an enum expression | `EmailMessagePriority.NonUrgent` | `EmailMessagePriority.NonUrgent`| Expression | N/A |
+| Use an enum expression | `EmailMessagePriority.Urgent` | `EmailMessagePriority.Urgent`| Expression | N/A |
 
 An `EmailMessagePriority` can also be created using the Literal Editor by selecting the desired option from the dropdown list containing the range of options.
 
@@ -95,13 +95,13 @@ None
 
 ## See Also
 
-### Related Concepts
-
-* [Working with Enums][]
-
 ### Related Data Types
 
 * [EmailMessage][]
+
+### Related Concepts
+
+* [Working with Enums][]
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}

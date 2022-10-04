@@ -960,16 +960,18 @@
                     MainDoc = "/docs/reference/data-types/date-and-time/timespan"
             [Cortex.Reference.DataTypes.Email]
                 MainDoc = "/docs/reference/data-types/email/"
-                [Cortex.Reference.DataTypes.Email.EmailMessage]
-                    MainDoc = "/docs/reference/data-types/email/emailmessage"
                 [Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails]
                     MainDoc = "/docs/reference/data-types/email/basicemailsessiondetails"
-                [Cortex.Reference.DataTypes.Email.EmailMessagePriority]
-                    MainDoc = "/docs/reference/data-types/email/emailmessagepriority"
-                [Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat]
-                    MainDoc = "/docs/reference/data-types/email/emailmessagebodyformat"
                 [Cortex.Reference.DataTypes.Email.EmailAddress]
                     MainDoc = "/docs/reference/data-types/email/emailaddress"
+                [Cortex.Reference.DataTypes.Email.EmailMessage]
+                    MainDoc = "/docs/reference/data-types/email/emailmessage"
+                [Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat]
+                    MainDoc = "/docs/reference/data-types/email/emailmessagebodyformat"
+                [Cortex.Reference.DataTypes.Email.EmailMessagePriority]
+                    MainDoc = "/docs/reference/data-types/email/emailmessagepriority"
+                [Cortex.Reference.DataTypes.Email.EmailSessionErrorCode]
+                    MainDoc = "/docs/reference/data-types/email/emailsessionerrorcode"
             [Cortex.Reference.DataTypes.Exceptions]
                 MainDoc = "/docs/reference/data-types/exceptions/"
                 [Cortex.Reference.DataTypes.Exceptions.Exception]
@@ -990,7 +992,17 @@
                     MainDoc = "/docs/reference/data-types/flows/flowreference"
                 [Cortex.Reference.DataTypes.Flows.InputVariables]
                     MainDoc = "/docs/reference/data-types/flows/inputvariables"
-            [Cortex.Reference.DataTypes.Json]
+            [Cortex.Reference.DataTypes.GoogleWorkspace]
+                MainDoc = "/docs/reference/data-types/google-workspace/"
+                [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail]
+                    MainDoc = "/docs/reference/data-types/google-workspace/gmail/"
+                    [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication]
+                        MainDoc = "/docs/reference/data-types/google-workspace/gmail/authentication/"
+                        [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth]
+                            MainDoc = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/"
+                            [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials]
+                                MainDoc = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials"
+                [Cortex.Reference.DataTypes.Json]
                 MainDoc = "/docs/reference/data-types/json/"
                 [Cortex.Reference.DataTypes.Json.JsonSerializerSettings]
                     MainDoc = "/docs/reference/data-types/json/jsonserializersettings"
@@ -1096,6 +1108,7 @@
                 MainDoc = "/docs/reference/exceptions/email/"
                     [Cortex.Reference.Exceptions.Email.EmailSessionException]
                         MainDoc = "/docs/reference/exceptions/email/emailsessionexception/"
+                        SslUnsupported = "/docs/reference/exceptions/email/emailsessionexception/#ssl-wrapped-connection-not-supported"
             [Cortex.Reference.Exceptions.FilesAndFolders]
                 MainDoc = "/docs/reference/exceptions/files-and-folders/"
                 [Cortex.Reference.Exceptions.FilesAndFolders.InvalidFolderNameException]

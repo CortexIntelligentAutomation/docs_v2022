@@ -19,7 +19,7 @@ The `EmailMessageBodyFormat` data type is used to define the format of an email 
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailMessageBodyFormat`        |
 | **Alias:**             | N/A                                                    |
 | **Description:**       | Defines the format of an email body.                   |
-| **Default Value:**     | `EmailMessageBodyFormat.Text`                          |
+| **Default Value:**     | `0`                                                    |
 | **Can be used as:**    | `EmailMessageBodyFormat`, `Object`, `dynamic`          |
 | **Can be cast to:**    | N/A                                                    |
 
@@ -49,8 +49,8 @@ The following table shows some of the ways that `EmailMessageBodyFormat` can be 
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use an enum expression | `EmailMessageBodyFormat.Text` | `EmailMessageBodyFormat.Text`| Expression |  |
-| Use an enum expression | `EmailMessageBodyFormat.Html` | `EmailMessageBodyFormat.Html`| Expression |  |
+| Use an enum expression | `EmailMessageBodyFormat.Text` | `EmailMessageBodyFormat.Text`| Expression | N/A |
+| Use an enum expression | `EmailMessageBodyFormat.Html` | `EmailMessageBodyFormat.Html`| Expression | N/A |
 
 An `EmailMessageBodyFormat` can also be created using the Literal Editor by selecting the desired option from the dropdown list containing the range of options.
 
@@ -85,13 +85,13 @@ None
 
 ## See Also
 
-### Related Concepts
-
-* [Working with Enums][]
-
 ### Related Data Types
 
 * [EmailMessage][]
+  
+### Related Concepts
+
+* [Working with Enums][]
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}

@@ -142,7 +142,7 @@ Provide a path pointing to a valid SSL certificate and ensure that the certifica
 
 ### Invalid Client Credentials
 
-A [Category][] of `OAuthCredentials` and an [Error Code][] of `401` indicates that an invalid client credentials have been provided.
+A [Category][] of `OAuthCredentials` and an [Error Code][] of `401` indicates that an invalid `FromAddress` and `ClientId` combination has been provided.
 
 #### Message Format
 
@@ -262,6 +262,7 @@ None
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
+[EmailSessionErrorCode]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.MainDoc" >}}
 [Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
 [Send Email Using SMTP Server Block]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.MainDoc" >}}
 [Send Email Using Gmail Block]: {{< url "Cortex.Reference.Blocks.GoogleWorkspace.Gmail.SendEmail.SendEmailUsingGmail.MainDoc" >}}
