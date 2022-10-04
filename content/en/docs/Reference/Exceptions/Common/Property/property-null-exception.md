@@ -120,6 +120,8 @@ Currently, only the `<property-name>` has been included in the exception. In fut
   * [Handle Block Exception Matching Messages][]
   * [Handle Block Exception Matching Type Name][]
   * [Handle Block Exception Matching Type Names][]
+* Email  
+  * [Send Email Using SMTP Server][]
 * Files & Folders
   * [Copy File][]
   * [Copy Files][]
@@ -244,6 +246,8 @@ None
 [Set Items With Keys]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithKeys.MainDoc" >}}
 [Set Items With Value]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithValue.MainDoc" >}}
 [Set Items With Values]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithValues.MainDoc" >}}
+
+[Send Email Using SMTP Server]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.MainDoc" >}}
 
 [Handle Block Exception Matching Messages]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingMessages.MainDoc" >}}
 [Handle Block Exception Matching Type Name]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeName.MainDoc" >}}
