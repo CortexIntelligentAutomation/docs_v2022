@@ -14,17 +14,17 @@ The exception thrown when an issue occurs while working with an email block.
 
 There are multiple reasons that this exception can be thrown:
 
-* [Invalid Port Provided][InvalidPortProvided]
-* [Invalid Host Provided][InvalidHostProvided]
+* [Invalid Port][InvalidPortProvided]
+* [Invalid Host][InvalidHostProvided]
 * [SSL-Wrapped Connection Required][SslWrappedConnectionRequired]
 * [SSL-Wrapped Connection Not Supported][SslWrappedConnectionNotSupported]
-* [Invalid Username or Password][InvalidUsernameOrPassword]
+* [Invalid Username and Password][InvalidUsernameAndPassword]
 * [Invalid SSL Certificate][InvalidSslCertificate]
 * [Invalid Client Credentials][InvalidClientCredentials]
 
 ## Reasons
 
-### Invalid Port Provided
+### Invalid Port
 
 A [Category][] of `Socket` and an [Error Code][] of `100` indicates that the port provided is invalid.
 
@@ -44,7 +44,7 @@ Provide a valid port and ensure that the mail server is up and running without i
 
 ***
 
-### Invalid Host Provided
+### Invalid Host
 
 A [Category][] of `Socket` and an [Error Code][] of `101` indicates the host provided is invalid.
 
@@ -105,7 +105,7 @@ If the issue persists, please check the inner exception as instructed by the [Me
 
 ***
 
-### Invalid Username or Password
+### Invalid Username and Password
 
 A [Category][] of `UserCredentials` and an [Error Code][] of `300` indicates that the username or password provided is incorrect.
 
@@ -124,12 +124,15 @@ Provide a valid username and password combination in the [UserCredentials][].
 
 ### Invalid SSL Certificate
 
-A [Category][] of `OAuthCredentials` and an [Error Code][] of `400` indicates that an invalid certificate path or password has been provided.
+A [Category][] of `OAuthCredentials` and an [Error Code][] of `400` indicates that one of the following issues occurred:
+
+* An invalid certificate path and password combination has been provided
+* The certificate path points to an invalid certificate
 
 #### Message Format
 
 ```json
-"The 'Certificate Path' ('<certificate-path>') or 'Certificate Password' is invalid.The 'Gmail OAuth Certificate Credentials'
+"The 'Certificate Path' ('<certificate-path>') or 'Certificate Password' is invalid. The 'Gmail OAuth Certificate Credentials'
 in 'Email Session Details' has been provided an incorrect certificate path or certificate password. Please click the HelpLink
 for more information on how to fix this."
 ```
@@ -201,7 +204,7 @@ For `EmailSessionException` there are the following error codes:
 * [101][InvalidHostProvided] - indicates that the host provided is invalid
 * [200][SslWrappedConnectionRequired] - indicates that an SSL-wrapped connection is required
 * [201][SslWrappedConnectionNotSupported] - indicates that an SSL-wrapped connection is not supported
-* [300][InvalidUsernameOrPassword] - indicated that the username and password combination is invalid
+* [300][InvalidUsernameAndPassword] - indicated that the username and password combination is invalid
 * [400][InvalidSslCertificate] - indicates that the certificate path or password provided is invalid
 * [401][InvalidClientCredentials] - indicates that the from address or client ID provided is invalid
 
@@ -246,12 +249,12 @@ None
 
 None
 
-[InvalidPortProvided]: {{< ref "#invalid-port-provided">}}
-[InvalidHostProvided]: {{< ref "#invalid-host-provided">}}
+[InvalidPortProvided]: {{< ref "#invalid-port">}}
+[InvalidHostProvided]: {{< ref "#invalid-host">}}
 [SslWrappedConnectionRequired]: {{< ref "#ssl-wrapped-connection-required">}}
 [SslWrappedConnectionNotSupported]: {{< ref "#ssl-wrapped-connection-not-supported">}}
 [InvalidSslCertificate]: {{< ref "#invalid-ssl-certificate">}}
-[InvalidUsernameOrPassword]: {{< ref "#invalid-username-or-password">}}
+[InvalidUsernameAndPassword]: {{< ref "#invalid-username-and-password">}}
 [InvalidClientCredentials]: {{< ref "#invalid-client-credentials">}}
 
 [Message]: {{< ref "#message" >}}

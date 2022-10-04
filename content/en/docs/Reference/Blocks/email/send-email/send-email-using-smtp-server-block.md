@@ -212,28 +212,28 @@ The exceptions thrown by the block can be found below:
 | Name                                 | Description |
 |--------------------------------------|-------------|
 | [ArgumentException][]                |Thrown when an invalid value is provided for the bodyFormat in the [Email Message][Email Message Property].|
-||Thrown when an invalid value is provided for the priority in the [Email Message][Email Message Property].|
-| [EmailSessionException][]            |Thrown when an invalid port is provided in the serverDetails within the [Basic Email Session Details][Basic Email Session Details Property].|
-||Thrown when an invalid host is provided in the serverDetails within the [Basic Email Session Details][Basic Email Session Details Property].|
-||Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `false` with a port which requires SSL.|
-||Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `true` with a port which does not support SSL.|
-||Thrown when the TLS/SSL certificate is expired on the host or is untrusted or invalid.|
-||Thrown when a locally installed anti-virus software replaces the TLS/SSL certificate in order to scan web traffic.|
-||Thrown when the CRL (Certificate Revocation List) server for the TLS/SSL certificate is down.|
-||Thrown when the username and/or password in the userCredentials within [Basic Email Session Details][Basic Email Session Details Property] is incorrect.|
+| |Thrown when an invalid value is provided for the priority in the [Email Message][Email Message Property].|
+| [EmailSessionException][]            |Thrown when an invalid port is provided in the serverDetails within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Port][].|
+| |Thrown when an invalid host is provided in the serverDetails within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
+| |Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `false` with a port which requires SSL. For more information, see [SSL-Wrapped Connection Required][]. |
+| |Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `true` with a port which does not support SSL. For more information, see [SSL-Wrapped Connection Not Supported][]. |
+| |Thrown when the TLS/SSL certificate is expired on the host or is untrusted or invalid. For more information, see [SSL-Wrapped Connection Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when a locally installed anti-virus software replaces the TLS/SSL certificate in order to scan web traffic. For more information, see [SSL-Wrapped Connection Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when the CRL (Certificate Revocation List) server for the TLS/SSL certificate is down. For more information, see [SSL-Wrapped Connection Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when the username and/or password in the userCredentials within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][]|
 | [FileNotFoundException][]            |Thrown when a non-existent file path is provided in attachments within [Email Message][Email Message Property].|
 | [IOException][]                      |Thrown when the desired socket is held by another process - re-running the flow typically solves this.|
 | [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is null.|
-||Thrown when the credentials within [Basic Email Session Details][Basic Email Session Details Property] is null.|
-||Thrown when the serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is null.|
-||Thrown when the host in serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is null.|
-||Thrown when the [Email Message][Email Message Property] is null.|
-||Thrown when the to within [Email Message][Email Message Property] is null.|
-||Thrown when the from within [Email Message][Email Message Property] is null.|
-||Thrown when the address in an emailAddress within [Email Message][Email Message Property] is null.|
+| |Thrown when the credentials within [Basic Email Session Details][Basic Email Session Details Property] is null.|
+| |Thrown when the serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is null.|
+| |Thrown when the host in serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is null.|
+| |Thrown when the [Email Message][Email Message Property] is null.|
+| |Thrown when the to within [Email Message][Email Message Property] is null.|
+| |Thrown when the from within [Email Message][Email Message Property] is null.|
+| |Thrown when the address in an emailAddress within [Email Message][Email Message Property] is null.|
 | [PropertyEmptyException][]           |Thrown when the host in serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is empty.|
-||Thrown when the to within [Email Message][Email Message Property] is empty.|
-||Thrown when the address in an emailAddress in within [Email Message][Email Message Property] is empty.|
+| |Thrown when the to within [Email Message][Email Message Property] is empty.|
+| |Thrown when the address in an emailAddress in within [Email Message][Email Message Property] is empty.|
 | [PropertyValueOutOfRangeException][] |Thrown when the port in the serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is below 1 or above 65535|
 | [SmtpCommandException][]             |Thrown when the address in an emailAddress within [Email Message][Email Message Property] is not of the correct format (RFC-5321).|
 | [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in attachments within [Email Message][Email Message Property].|
@@ -281,8 +281,16 @@ This block cannot currently send emails if credentials are not provided.
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
-[ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
 [EmailSessionException]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.MainDoc" >}}
+[Invalid Port]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidPort" >}}
+[Invalid Host]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidHost" >}}
+[SSL-Wrapped Connection Required]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslRequired" >}}
+[SSL-Wrapped Connection Not Supported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
+[Invalid Username and Password]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidUserCredentials" >}}
+
+[EmailSessionErrorCode Limitations]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.Limitations" >}}
+
+[ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
 [FileNotFoundException]: {{< url "MSDocs.DotNet.Api.System.IO.FileNotFoundException" >}}
 [IOException]: {{< url "MSDocs.DotNet.Api.System.IO.IOException" >}}
 [PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}

@@ -972,6 +972,7 @@
                     MainDoc = "/docs/reference/data-types/email/emailmessagepriority"
                 [Cortex.Reference.DataTypes.Email.EmailSessionErrorCode]
                     MainDoc = "/docs/reference/data-types/email/emailsessionerrorcode"
+                    Limitations = "/docs/reference/data-types/email/emailsessionerrorcode/#known-limitations"
             [Cortex.Reference.DataTypes.Exceptions]
                 MainDoc = "/docs/reference/data-types/exceptions/"
                 [Cortex.Reference.DataTypes.Exceptions.Exception]
@@ -1108,7 +1109,13 @@
                 MainDoc = "/docs/reference/exceptions/email/"
                     [Cortex.Reference.Exceptions.Email.EmailSessionException]
                         MainDoc = "/docs/reference/exceptions/email/emailsessionexception/"
+                        InvalidPort = "/docs/reference/exceptions/email/emailsessionexception/#invalid-port"
+                        InvalidHost = "/docs/reference/exceptions/email/emailsessionexception/#invalid-host"
+                        SslRequired = "/docs/reference/exceptions/email/emailsessionexception/#ssl-wrapped-connection-required"
                         SslUnsupported = "/docs/reference/exceptions/email/emailsessionexception/#ssl-wrapped-connection-not-supported"
+                        InvalidUserCredentials = "/docs/reference/exceptions/email/emailsessionexception/#invalid-username-and-password"
+                        InvalidSslCertificate = "/docs/reference/exceptions/email/emailsessionexception/#invalid-ssl-certificate"
+                        InvalidClientCredentials = "/docs/reference/exceptions/email/emailsessionexception/#invalid-client-credentials"
             [Cortex.Reference.Exceptions.FilesAndFolders]
                 MainDoc = "/docs/reference/exceptions/files-and-folders/"
                 [Cortex.Reference.Exceptions.FilesAndFolders.InvalidFolderNameException]
