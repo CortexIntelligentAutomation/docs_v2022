@@ -166,6 +166,8 @@ The [Email Message][Email Message Property] to send via the SMTP server specifie
 - Body
 - Attachments
 
+Note that if the properties Priority and BodyFormat can be set to `null` when creating an [EmailMessage][] using a constructor, when the email is sent this will result in the email being sent with normal priority and with a text body.
+
 For more detailed information on each of the properties within the [Email Message][Email Message Property], see [EmailMessage][].
 
 |||
@@ -180,8 +182,8 @@ For more detailed information on each of the properties within the [Email Messag
 
 The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to connect to an SMTP server, including:
 
-- Server Details - must be provided in order to connect to an SMTP server. This contains the see host, port and whether or not to use SSL, see [ServerDetails][] for more information.
-- Credentials - must be provided in order to connect to an SMTP server and is used for SMTP Authentication. This object contains host, username and password. The username and password must provided to send an email, see [UserCredentials][] for more information.
+- Server Details - must be provided in order to connect to an SMTP server. This contains the host, port and whether or not to use SSL, see [ServerDetails][] for more information.
+- Credentials - must be provided in order to connect to an SMTP server and is used for SMTP Authentication. This object contains the username and password which must be provided to send an email, see [UserCredentials][] for more information.
 
 For more information, see [BasicEmailSessionDetails][].
 
@@ -195,7 +197,7 @@ For more information, see [BasicEmailSessionDetails][].
 
 ### Close Session
 
-[Close Session][Close Session Property] can be specified to choose whether the connection to the SMTP server is closed or is kept open for use on subsequent Send Email Using SMTP Server blocks, this defaults to `false` if left blank, please see [Closing Sessions][Closing Sessions] for more information.
+[Close Session][Close Session Property] can be specified to choose whether the session is closed or is kept open for use on subsequent Send Email Using SMTP Server blocks, this defaults to `false` if left blank, please see [Closing Sessions][Closing Sessions] for more information.
 
 |||
 |-----------------|----------|
@@ -215,28 +217,28 @@ The exceptions thrown by the block can be found below:
 | |Thrown when an invalid value is provided for the priority in the [Email Message][Email Message Property].|
 | [EmailSessionException][]            |Thrown when an invalid port is provided in the serverDetails within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Port][].|
 | |Thrown when an invalid host is provided in the serverDetails within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
-| |Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `false` with a port which requires SSL. For more information, see [SSL-Wrapped Connection Required][]. |
-| |Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `true` with a port which does not support SSL. For more information, see [SSL-Wrapped Connection Not Supported][]. |
+| |Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `false` with a port which requires an SSL-wrapped connection. For more information, see [SSL-Wrapped Connection Required][]. |
+| |Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `true` with a port which does not support SSL-wrapped connections. For more information, see [SSL-Wrapped Connection Not Supported][]. |
 | |Thrown when the TLS/SSL certificate is expired on the host or is untrusted or invalid. For more information, see [SSL-Wrapped Connection Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when a locally installed anti-virus software replaces the TLS/SSL certificate in order to scan web traffic. For more information, see [SSL-Wrapped Connection Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when the CRL (Certificate Revocation List) server for the TLS/SSL certificate is down. For more information, see [SSL-Wrapped Connection Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when the username and/or password in the userCredentials within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][]|
 | [FileNotFoundException][]            |Thrown when a non-existent file path is provided in attachments within [Email Message][Email Message Property].|
 | [IOException][]                      |Thrown when the desired socket is held by another process - re-running the flow typically solves this.|
-| [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is null.|
-| |Thrown when the credentials within [Basic Email Session Details][Basic Email Session Details Property] is null.|
-| |Thrown when the serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is null.|
-| |Thrown when the host in serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is null.|
-| |Thrown when the [Email Message][Email Message Property] is null.|
-| |Thrown when the to within [Email Message][Email Message Property] is null.|
-| |Thrown when the from within [Email Message][Email Message Property] is null.|
-| |Thrown when the address in an emailAddress within [Email Message][Email Message Property] is null.|
-| [PropertyEmptyException][]           |Thrown when the host in serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is empty.|
-| |Thrown when the to within [Email Message][Email Message Property] is empty.|
-| |Thrown when the address in an emailAddress in within [Email Message][Email Message Property] is empty.|
-| [PropertyValueOutOfRangeException][] |Thrown when the port in the serverDetails within [Basic Email Session Details][Basic Email Session Details Property] is below 1 or above 65535|
-| [SmtpCommandException][]             |Thrown when the address in an emailAddress within [Email Message][Email Message Property] is not of the correct format (RFC-5321).|
-| [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in attachments within [Email Message][Email Message Property].|
+| [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is `null`.|
+| |Thrown when the `credentials` within [Basic Email Session Details][Basic Email Session Details Property] is `null`.|
+| |Thrown when the `serverDetails` within [Basic Email Session Details][Basic Email Session Details Property] is `null`.|
+| |Thrown when the host in `serverDetails` within [Basic Email Session Details][Basic Email Session Details Property] is `null`.|
+| |Thrown when the [Email Message][Email Message Property] is `null`.|
+| |Thrown when the `to` within [Email Message][Email Message Property] is `null`.|
+| |Thrown when the `from` within [Email Message][Email Message Property] is `null`.|
+| |Thrown when the `address` in an `emailAddress` within [Email Message][Email Message Property] is `null`.|
+| [PropertyEmptyException][]           |Thrown when the `host` in `serverDetails` within [Basic Email Session Details][Basic Email Session Details Property] is empty.|
+| |Thrown when the `to` within [Email Message][Email Message Property] is empty.|
+| |Thrown when the `address` in an emailAddress in within [Email Message][Email Message Property] is empty.|
+| [PropertyValueOutOfRangeException][] |Thrown when the `port` in the `serverDetails` within [Basic Email Session Details][Basic Email Session Details Property] is below 1 or above 65535|
+| [SmtpCommandException][]             |Thrown when the `address` in an `emailAddress` within [Email Message][Email Message Property] is not of the correct format (RFC-5321).|
+| [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in `attachments` within [Email Message][Email Message Property].|
 
 For more information on the [EmailSessionException][] including error codes, see [EmailSessionException][].
 
@@ -256,7 +258,7 @@ For information on how to explicitly close a connection, please see [Closing Ses
 
 #### Setting useSsl to `false`
 
-If useSsl is set to `false` in serverDetails within [Basic Email Session Details][Basic Email Session Details Property], the client will not attempt to make an SSL-wrapped connection, however TLS/SSL may still be used if the mail server supports the STARTTLS extension. For all SSL connections, the protocol to be used will be negotiated with the server depending on which protocols are available. Similarly, the SASL mechanism to be used will be negotiated with the mail server based on the avialable mechanisms.
+If useSsl is set to `false` in serverDetails within [Basic Email Session Details][Basic Email Session Details Property], the client will not attempt to make an SSL-wrapped connection, however TLS/SSL may still be used if the mail server supports the STARTTLS extension. For all SSL connections, the protocol to be used will be negotiated with the server depending on which protocols are available. Similarly, the SASL mechanism to be used will be negotiated with the mail server based on the available mechanisms.
 
 ### Closing Sessions
 
