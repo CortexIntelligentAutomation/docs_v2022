@@ -1053,6 +1053,7 @@
                     MainDoc = "/docs/reference/data-types/email/emailmessagebodyformat"
                 [Cortex.Reference.DataTypes.Email.EmailMessagePriority]
                     MainDoc = "/docs/reference/data-types/email/emailmessagepriority"
+                    Urgent = "/docs/reference/data-types/email/emailmessagepriority/#urgent"
                 [Cortex.Reference.DataTypes.Email.EmailSessionErrorCode]
                     MainDoc = "/docs/reference/data-types/email/emailsessionerrorcode"
                     Limitations = "/docs/reference/data-types/email/emailsessionerrorcode/#known-limitations"
