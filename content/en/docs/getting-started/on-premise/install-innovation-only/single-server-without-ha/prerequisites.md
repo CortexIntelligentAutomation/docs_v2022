@@ -17,21 +17,18 @@ The prerequisites required for a single server (as described in [Architecture][]
 |------------------|-----------------------|-----------------------------------|---------------|----------------------|
 | Single&nbsp;Server<br>*Application Server +<br>Web Application Server* | 1 | 4+&nbsp;*Recommended*<br>2&nbsp;*Minimum* | 16+&nbsp;*Recommended*<br>12&nbsp;*Minimum* | 150+&nbsp;*Recommended*<br>100&nbsp;*Minimum*<br>30+&nbsp;free&nbsp;on&nbsp;installation&nbsp;drive<br>40+&nbsp;free&nbsp;on&nbsp;%ProgramData%&nbsp;drive |
 
-[^1]: A software-based load balancer called [gobetween](https://github.com/yyyar/gobetween) is provided with the platform. This must be installed on its own server as it doesn't support routing traffic to itself. It also doesn't currently support HA, but it may be possible to use multiple gobetween load balancers with Anycast network addressing and routing to provide high availability, as described in [https://en.wikipedia.org/wiki/Anycast](https://en.wikipedia.org/wiki/Anycast); however, this has not been verified yet. It is possible to use an [alternative load balancer](#alternative-load-balancer-requirements) to the one provided.
-[^2]: Application Servers support HA via clustering. A cluster must consist of a minimum of 3 nodes, and the number of nodes must be an odd number to ensure a quorum. Currently only the Bronze availability (3 nodes) is supported. Silver, Gold and Platinum support will be added in future.
-
 ## Software Requirements
 
-| Server&nbsp;Role | Windows&nbsp;Server[^3] | SQL&nbsp;Server[^4] | .Net | PowerShell[^5] | IIS[^6] | Other Software |
+| Server&nbsp;Role | Windows&nbsp;Server[^1] | SQL&nbsp;Server[^2] | .Net | PowerShell[^3] | IIS[^4] | Other Software |
 |------------------|-------------------------|---------------------|------|------------|---------|----------|
-| Single&nbsp;Server<br>*Application Server +<br>Web Application Server*  | [2019&nbsp;(x64)][Microsoft Server 2019]&nbsp;*Recommended*<br>[2016&nbsp;(x64)][Microsoft Server 2016] | [2019][Microsoft SQL Server 2019]<br />[2016][Microsoft SQL Server 2016]<br />[2016&nbsp;Express][Microsoft SQL Express 2016] | [Framework&nbsp;4.7.1][NET Framework 471] | 5.1 | 10.0.17763[^7]<br>10.0.14393[^8]<br>[URL&nbsp;Rewrite&nbsp;Module&nbsp;2.1][IIS Url Rewrite] | [Microsoft Web Deploy 3.0 or later][Web Deploy]<br>[Visual C++ Redistributable 2013 (x64)][C++ Redistributable] |
+| Single&nbsp;Server<br>*Application Server +<br>Web Application Server*  | [2019&nbsp;(x64)][Microsoft Server 2019]&nbsp;*Recommended*<br>[2016&nbsp;(x64)][Microsoft Server 2016] | [2019][Microsoft SQL Server 2019]<br />[2016][Microsoft SQL Server 2016]<br />[2016&nbsp;Express][Microsoft SQL Express 2016] | [Framework&nbsp;4.7.1][NET Framework 471] | 5.1 | 10.0.17763[^5]<br>10.0.14393[^6]<br>[URL&nbsp;Rewrite&nbsp;Module&nbsp;2.1][IIS Url Rewrite] | [Microsoft Web Deploy 3.0 or later][Web Deploy]<br>[Visual C++ Redistributable 2013 (x64)][C++ Redistributable] |
 
-[^3]: Windows Server Standard and Datacenter editions are supported. Filesystem **must be NTFS** and networking **must use IPv4**. Linux is not supported, but may be in the future.
-[^4]: SQL Server Express, Standard and Enterprise are supported. Other databases are not supported. Note that [Transparent Data Encryption][] is not supported on SQL Server Express.
-[^5]: PowerShell 5.1 ships with Windows Server 2016 and 2019.
-[^6]: IIS is supported; other web servers, including IIS Express are not supported.
-[^7]: Ships as a windows role within Windows Server 2019.
-[^8]: Ships as a windows role within Windows Server 2016.
+[^1]: Windows Server Standard and Datacenter editions are supported. Filesystem **must be NTFS** and networking **must use IPv4**. Linux is not supported, but may be in the future.
+[^2]: SQL Server Express, Standard and Enterprise are supported. Other databases are not supported. Note that [Transparent Data Encryption][] is not supported on SQL Server Express.
+[^3]: PowerShell 5.1 ships with Windows Server 2016 and 2019.
+[^4]: IIS is supported; other web servers, including IIS Express are not supported.
+[^5]: Ships as a windows role within Windows Server 2019.
+[^6]: Ships as a windows role within Windows Server 2016.
 
 ## Domain Requirements
 
@@ -43,7 +40,7 @@ The installation requires IP to hostname resolution to be available. Please ensu
 
 ## Licensing Requirements
 
-A valid Cortex licence file and Cortex Innovation feature identifier must be procured from Cortex. The feature identifier is a GUID which will be used when configuring the Gateway installation. The licence file is needed when installing the Web Application server and it should contain fingerprints for the Web Application Server and each Application Server.
+A valid Cortex licence file and Cortex Innovation feature identifier must be procured from Cortex. The feature identifier is a GUID which will be used when configuring the Gateway installation. The licence file is needed when installing the server and it should contain that server's fingerprint.
 
 To get a licence file and feature identifier take the following steps:
 

@@ -23,7 +23,8 @@ A `null` value was provided for the [property][] when a non-null was required.
 The format of the [Message][] is as follows:
 
 ```json
-"'<property-name>' is null; it must be provided with a non-null value.\r\nPlease click the HelpLink for more information on how to fix this."
+"'<property-name>' is null; it must be provided with a non-null value.
+Please click the HelpLink for more information on how to fix this."
 ```
 
 where:
@@ -120,6 +121,7 @@ Currently, only the `<property-name>` has been included in the exception. In fut
   * [Handle Block Exception Matching Messages][]
   * [Handle Block Exception Matching Type Name][]
   * [Handle Block Exception Matching Type Names][]
+  * [Rethrow Exception][]
 * Email  
   * [Send Email Using SMTP Server][]
 * Files & Folders
@@ -252,6 +254,7 @@ None
 [Handle Block Exception Matching Messages]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingMessages.MainDoc" >}}
 [Handle Block Exception Matching Type Name]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeName.MainDoc" >}}
 [Handle Block Exception Matching Type Names]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeNames.MainDoc" >}}
+[Rethrow Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.RethrowException.RethrowException.MainDoc" >}}
 
 [Copy File]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFile.MainDoc" >}}
 [Copy Files]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFiles.MainDoc" >}}

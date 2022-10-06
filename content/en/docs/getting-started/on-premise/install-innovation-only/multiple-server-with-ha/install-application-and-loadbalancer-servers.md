@@ -7,9 +7,9 @@ weight: 30
 
 # {{% param title %}}
 
-This guide describes how to install the Application Servers and Load Balancer Server. Please ensure that the [Prerequisites][] have been read before starting this installation.
+This guide describes how to install the Application Servers and Load Balancer Server. Please ensure that the [Prerequisites for installing Innovation][] have been read before starting this installation.
 
-## Extract Installation Artefacts
+## Make Installation Artefacts Available
 
 1. Choose one of the Application Servers to be used for installation, and copy the following artefacts to a folder on it (the version numbers may differ):
    * Cortex Innovation 2022.6 - Block Packages.zip
@@ -68,6 +68,8 @@ To avoid answering all of the prompts `-Override 0` can be added to the end of t
     {{% /alert %}}
 
 1. A credentials prompt will appear. Enter credentials of a domain user that is a member of the local Administrators group on all servers (Application and Load Balancer) and press `OK`.
+
+    If `-Override 0` has been specified no further steps need to be taken and you can move on to the next section when the servers have restarted.
 1. To use all the recommended settings click `Apply all` to the each `Apply Cortex recommended security best practices` prompt.
 
     To selectively apply each setting select `Choose which to apply`. Each change will then be prompted with a Yes/No confirmation before applying. This will need to be done for each server.
@@ -327,7 +329,7 @@ Ensure that the installation files are backed up or kept on the server, especial
 [Troubleshooting During Installation]: {{< url "Cortex.Reference.Troubleshooting.Installation.TroubleshootingDuringInstallation" >}}
 [Antivirus Exclusions]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.AntivirusExclusions" >}}
 [Configure Installation Script]:  {{< ref "#configure-installation-script" >}}
-[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.Prerequisites" >}}
+[Prerequisites for installing Innovation]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.Prerequisites" >}}
 [alternative load balancer]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.AltLoadBalancer" >}}
 [SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
 [Cortex Encrypted]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.EncryptText" >}}
