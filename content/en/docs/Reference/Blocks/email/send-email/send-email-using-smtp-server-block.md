@@ -54,7 +54,7 @@ An email is sent from `sender@gmail.com` to `recipient1@outlook.com`, `recipient
 
 ***
 
-### Sending an email with CC or BCC addresses
+### Sending an email with CC or BCC recipients
 
 This example will send an email from `sender@outlook.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the CCs for the email, using the SMTP server hosted at `smtp-mail.outlook.com` on port `587` with useSsl set to `false` (for more information, see [Setting useSsl to false][]).
 
@@ -94,7 +94,7 @@ An email with Urgent priority is sent from `sender@outlook.com` to `recipient@ou
 
 ***
 
-### Sending an email with a HTML body
+### Sending an email with an HTML body
 
 This example will send an email with a HTML body from `sender@outlook.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp-mail.outlook.com` on port `587` with useSsl set to `false` (for more information, see [Setting useSsl to false][]).
 
@@ -132,7 +132,7 @@ An email containing a text file attachment, `attachment.txt`, is sent from `send
 
 ***
 
-### Sending an email with mutiple attachments
+### Sending an email with multiple attachments
 
 This example will send an email with mutiple attachments, `attachment1.txt` and `attachment2.txt` at `C:\attachment1.txt` and `C:\attachment2.txt` respectively, from `sender@outlook.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp-mail.outlook.com` on port `587` with useSsl set to `false` (for more information, see [Setting useSsl to false][]).
 
@@ -156,19 +156,19 @@ An email containing two text file attachments, `attachment1.txt` and `attachment
 
 The [Email Message][Email Message Property] to send via the SMTP server specified in the [Basic Email Session Details][Basic Email Session Details Property]. This property contains all of the information in relation to the email to be sent, these are:
 
-- To
-- From
-- CC
-- BCC
-- Priority
-- Subject
-- BodyFormat
-- Body
-- Attachments
+- [To][]
+- [From][]
+- [Cc][]
+- [Bcc][]
+- [Priority][]
+- [Subject][]
+- [BodyFormat][]
+- [Body][]
+- [Attachments][]
 
-Note that if the properties `Priority` and `BodyFormat` are set to `null` when creating an [EmailMessage][] using a constructor, when the email is sent this will result in the email being sent with normal priority and with a text body.
+Note that if the properties `Priority` and `BodyFormat` are set to `null` when [creating an EmailMessage using a constructor][], the email will be sent with normal priority and with a text body.
 
-For more detailed information on each of the properties within the [Email Message][Email Message Property], see [EmailMessage][].
+For more detailed information on each of the properties, see [EmailMessage][].
 
 |||
 |----------|----------|
@@ -176,16 +176,42 @@ For more detailed information on each of the properties within the [Email Messag
 | Property Type | [Input][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Literal][] |
-| Default Value | [EmailMessage][] with value:<br>To: `[{"Name": null, "Address": ""}]`<br>From: `{"Name": null, "Address": ""}`<br>Cc: `[]`<br>Bcc: `[]`<br>Priority: `null`<br> Subject: `""`<br>BodyFormat: `null`<br>Body: `$@""`,<br>Attachments: `[]` |
+| Default Value | [EmailMessage][] with value shown below: |
+
+```json
+{
+  "To": [
+    {
+      "Name": null,
+      "Address": ""
+    }
+  ],
+  "From": {
+    "Name": "",
+    "Address": ""
+  },
+  "Cc": [],
+  "Bcc": [],
+  "Priority": "EmailMessagePriority.Normal",
+  "Subject": "",
+  "BodyFormat": "EmailMessageBodyFormat.Text",
+  "Body": "",
+  "Attachments": []
+}
+```
+
+**TODO: WE ARE HERE IN DOC REVIEW**
 
 ### Basic Email Session Details
 
-The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to connect to an SMTP server, including:
+The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to open and maintain a session with an SMTP server, including:
 
-- Server Details - must be provided in order to connect to an SMTP server. This contains the host, port and whether or not to use SSL, see [ServerDetails][] for more information.
-- Credentials - must be provided in order to connect to an SMTP server and is used for SMTP Authentication. This object contains the username and password which must be provided to send an email, see [UserCredentials][] for more information.
+- [Server Details][] - must be provided in order to connect to an SMTP server. This object contains the properties [Host][], [Port][] and [UseSsl][], see [Server Details][] for more information on the configuration of this object for this block. For more information on this data type, see [ServerDetails][].
+- [Credentials][] - must be provided in order to connect to an SMTP server. This object contains the properties Username and Password to be used for authentication, see [Credentials][] for more information on the configuration of this object for this block. For more information on this data type, see [UserCredentials][].
 
-For more information, see [BasicEmailSessionDetails][].
+Note that this property is an [InputOutput][] property and so it must be set to a variable. If the [Close Session][Close Session Property] property is set to `false`, then the session will be kept open and can be used in subsequent Send Email Using SMTP Server blocks which improves performance, see [Opening Sessions][] for more information.
+
+For more detailed information on each of the properties, see [BasicEmailSessionDetails][].
 
 |||
 |----------|----------|
@@ -244,6 +270,14 @@ For more information on the [EmailSessionException][] including error codes, see
 
 ## Remarks
 
+### Server Details
+
+blah blah
+
+### Credentials
+
+blah blah
+
 ### Opening Sessions
 
 The Send Email Using SMTP Server block automatically handles creating and opening sessions for the specified [Basic Email Session Details][Basic Email Session Details Property] using the following rules:
@@ -276,6 +310,8 @@ This block cannot currently send emails if credentials are not provided.
 [Basic Email Session Details Property]: {{< ref "#basic-email-session-details" >}}
 [Close Session Property]: {{< ref "#close-session" >}}
 
+[Server Details]: {{< ref "#server-details" >}}
+[Credentials]: {{< ref "#credentials" >}}
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
 [Closing Sessions]: {{< ref "#closing-sessions" >}}
 [Setting useSsl to false]: {{< ref "#setting-usessl-to-false" >}}
@@ -289,6 +325,7 @@ This block cannot currently send emails if credentials are not provided.
 [SSL-Wrapped Connection Required]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslRequired" >}}
 [SSL-Wrapped Connection Not Supported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
 [Invalid Username and Password]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidUserCredentials" >}}
+[creating an EmailMessage using a constructor]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.CreateAnEmailMessage" >}}
 
 [EmailSessionErrorCode Limitations]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.Limitations" >}}
 
@@ -302,11 +339,24 @@ This block cannot currently send emails if credentials are not provided.
 [UnauthorizedAccessException]: {{< url "MSDocs.DotNet.Api.System.UnauthorizedAccessException" >}}
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
+[To]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.To" >}}
+[From]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.From" >}}
+[Cc]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Cc" >}}
+[Bcc]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Bcc" >}}
+[Priority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Priority" >}}
+[Subject]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Subject" >}}
+[BodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.BodyFormat" >}}
+[Body]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Body" >}}
+[Attachments]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Attachments" >}}
+
 [EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
 [EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
+[Host]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
+[Port]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Port" >}}
+[UseSsl]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.UseSsl" >}}
 
 [Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
 [EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}

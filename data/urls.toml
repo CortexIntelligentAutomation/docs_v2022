@@ -1036,6 +1036,16 @@
                     MainDoc = "/docs/reference/data-types/email/emailaddress"
                 [Cortex.Reference.DataTypes.Email.EmailMessage]
                     MainDoc = "/docs/reference/data-types/email/emailmessage"
+                    To = "/docs/reference/data-types/email/emailmessage/#to"
+                    From = "/docs/reference/data-types/email/emailmessage/#from"
+                    Cc = "/docs/reference/data-types/email/emailmessage/#cc"
+                    Bcc = "/docs/reference/data-types/email/emailmessage/#bcc"
+                    Priority = "/docs/reference/data-types/email/emailmessage/#priority"
+                    Subject = "/docs/reference/data-types/email/emailmessage/#subject"
+                    BodyFormat = "/docs/reference/data-types/email/emailmessage/#bodyformat"
+                    Body = "/docs/reference/data-types/email/emailmessage/#body"
+                    Attachments = "/docs/reference/data-types/email/emailmessage/#attachments"
+                    CreateAnEmailMessage = "/docs/reference/data-types/email/emailmessage/#create-an-emailmessage"
                 [Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat]
                     MainDoc = "/docs/reference/data-types/email/emailmessagebodyformat"
                 [Cortex.Reference.DataTypes.Email.EmailMessagePriority]
@@ -1107,6 +1117,9 @@
                 MainDoc = "/docs/reference/data-types/session-details/"
                 [Cortex.Reference.DataTypes.SessionDetails.ServerDetails]
                     MainDoc = "/docs/reference/data-types/session-details/serverdetails"
+                    Host = "/docs/reference/data-types/session-details/serverdetails/#host"
+                    Port = "/docs/reference/data-types/session-details/serverdetails/#port"
+                    UseSsl = "/docs/reference/data-types/session-details/serverdetails/#usessl"
             [Cortex.Reference.DataTypes.Text]
                 MainDoc = "/docs/reference/data-types/text/"
                 [Cortex.Reference.DataTypes.Text.Char]

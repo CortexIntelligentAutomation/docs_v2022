@@ -91,9 +91,9 @@ The Subject property is used to define the subject of the email.
 | Default Editor | [Literal][] |
 | Default Value | [String][] with value `""` |
 
-### Body Format
+### BodyFormat
 
-The Body Format property is used to define the format of the email body, for more information on the range of values this can take, see [EmailMessageBodyFormat][].
+The BodyFormat property is used to define the format of the email body, for more information on the range of values this can take, see [EmailMessageBodyFormat][].
 
 | | |
 |--------------------|---------------------------|
@@ -145,7 +145,7 @@ A `EmailMessage` can also be created using the Literal Editor by filling in the 
 | `Bcc`         | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "bcc@outlook.com" }` | The [Bcc][Bcc Property] addresses. |
 | `Priority`    | `EmailMessagePriority`   | `Normal` | The [Priority][Priority Property] of the email. |
 | `Subject`     | `String`                 | `"Example subject"` | The [Subject][Subject Property] of the email. |
-| `BodyFormat`  | `EmailMessageBodyFormat` | `Text` | The [Body Format][Body Format Property] of the email body. |
+| `BodyFormat`  | `EmailMessageBodyFormat` | `Text` | The [BodyFormat][Body Format Property] of the email body. |
 | `Body`        | `String`                 | `"Example body"` | The email [Body][Body Property]. |
 | `Attachments` |  `IList<String>`         | `new List<string>(){ "C:/attachment.txt" }` | A list of file paths pointing to [Attachments][Attachments Property]. |
 
@@ -181,7 +181,7 @@ In future this limitation may be removed.
 [Bcc Property]: {{< ref "#bcc" >}}
 [Priority Property]: {{< ref "#priority" >}}
 [Subject Property]: {{< ref "#subject" >}}
-[Body Format Property]: {{< ref "#body-format" >}}
+[Body Format Property]: {{< ref "#bodyformat" >}}
 [Body Property]: {{< ref "#body" >}}
 [Attachments Property]: {{< ref "#attachments" >}}
 
@@ -198,4 +198,3 @@ In future this limitation may be removed.
 [IList]: {{< url "Cortex.Reference.DataTypes.Collections.IList.MainDoc" >}}
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
-[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
