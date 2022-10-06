@@ -207,7 +207,7 @@ For more detailed information on each of the properties, see [EmailMessage][].
 The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to open and maintain a session with an SMTP server, including:
 
 - [Server Details][] - must be provided in order to connect to an SMTP server. This object contains the properties [Host][], [Port][] and [UseSsl][], see [Server Details][] for more information on the configuration of this object for this block. For more information on this data type, see [ServerDetails][].
-- [Credentials][] - must be provided in order to connect to an SMTP server. This object contains the properties Username and Password to be used for authentication, see [Credentials][] for more information on the configuration of this object for this block. For more information on this data type, see [UserCredentials][].
+- [Credentials][] - must be provided in order to connect to an SMTP server. This object contains the properties [Username][] and [Password][] to be used for authentication, see [Credentials][] for more information on the configuration of this object for this block. For more information on this data type, see [UserCredentials][].
 
 Note that this property is an [InputOutput][] property and so it must be set to a variable. If the [Close Session][Close Session Property] property is set to `false`, then the session will be kept open and can be used in subsequent Send Email Using SMTP Server blocks which improves performance, see [Opening Sessions][] for more information.
 
@@ -272,11 +272,25 @@ For more information on the [EmailSessionException][] including error codes, see
 
 ### Server Details
 
-blah blah
+A [ServerDetails][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an SMTP server. The value of the [UseSsl][] property inside this object depends on the host and port being connected to. There are two types of SSL/TLS connections that can occur:
+
+- SSL/TLS is used as soon as a connection is established
+- SSL/TLS is used via the STARTTLS command if it is available
+
+The above two points correspond to the [UseSsl][] property being set to `true` and `false` respectively. As such, generally the following rules can be followed to determine whether [UseSsl][] should be set to `true` or `false`:
+
+- If the port being connected to is `465` then [UseSsl][] should be set to `true`
+- If the port being connected to is `25` or `567` then [UseSsl][] should be set to `false`
+
+For more information, see [ServerDetails][].
 
 ### Credentials
 
-blah blah
+A [UserCredentials][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an SMTP server. The value of the [Username][] property may be encrypted if a user wishes, however the [Password][] must be encrypted otherwise an exception will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
+
+Note that the [UserCredentials][] object also contains a [Domain][] property which does not need to be specified for use in this block.
+
+For more information, see [UserCredentials][].
 
 ### Opening Sessions
 
@@ -288,11 +302,9 @@ The Send Email Using SMTP Server block automatically handles creating and openin
 
 [Basic Email Session Details][Basic Email Session Details Property] is an [InputOutput][] and so it must be set to a [Variable][], because of this it can be used to keep the session alive across multiple Send Email Using SMTP Server blocks as long as [Close Session][Close Session Property] is set to `false`. Keeping the session open helps increase the performance of the block due to the subsequent blocks not having to spend resources creating and opening sessions for each execution.
 
+Note that for all SSL connections, the protocol to be used will be negotiated with the server depending on which protocols are available. Similarly, the SASL mechanism to be used will be negotiated with the mail server based on the available mechanisms.
+
 For information on how to explicitly close a connection, please see [Closing Sessions][].
-
-#### Setting useSsl to `false`
-
-If useSsl is set to `false` in serverDetails within [Basic Email Session Details][Basic Email Session Details Property], the client will not attempt to make an SSL-wrapped connection, however TLS/SSL may still be used if the mail server supports the STARTTLS extension. For all SSL connections, the protocol to be used will be negotiated with the server depending on which protocols are available. Similarly, the SASL mechanism to be used will be negotiated with the mail server based on the available mechanisms.
 
 ### Closing Sessions
 
@@ -352,7 +364,12 @@ This block cannot currently send emails if credentials are not provided.
 [EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
 [EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
+
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
+[Domain]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Domain" >}}
+[Username]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
+[Password]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
+
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
 [Host]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
 [Port]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Port" >}}
