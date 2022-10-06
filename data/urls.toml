@@ -1051,8 +1051,10 @@
                     CreateAnEmailMessage = "/docs/reference/data-types/email/emailmessage/#create-an-emailmessage"
                 [Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat]
                     MainDoc = "/docs/reference/data-types/email/emailmessagebodyformat"
+                    HTML = "/docs/reference/data-types/email/emailmessagebodyformat/#html"
                 [Cortex.Reference.DataTypes.Email.EmailMessagePriority]
                     MainDoc = "/docs/reference/data-types/email/emailmessagepriority"
+                    Normal = "/docs/reference/data-types/email/emailmessagepriority/#normal"
                     Urgent = "/docs/reference/data-types/email/emailmessagepriority/#urgent"
                 [Cortex.Reference.DataTypes.Email.EmailSessionErrorCode]
                     MainDoc = "/docs/reference/data-types/email/emailsessionerrorcode"
