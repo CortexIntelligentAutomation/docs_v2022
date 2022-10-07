@@ -61,9 +61,9 @@ Provide a valid host.
 
 ***
 
-### SSL-Wrapped Connection Required
+### SSL Required
 
-A [Category][] of `SSL` and an [Error Code][] of `200` indicates that an SSL-wrapped connection is required.
+A [Category][] of `SSL` and an [Error Code][] of `200` indicates that SSL is required. More specifically, the mail server is expecting that SSL is used as soon as the connection is established.
 
 #### Message Format
 
@@ -74,15 +74,15 @@ requires that'Use SSL' be set to true. Please click the HelpLink for more inform
 
 #### How to Fix
 
-Change `UseSsl` in the [ServerDetails][] to `true`, or make a connection on a port which does not require an SSL-wrapped connection to be made.
+Change `UseSsl` in the [ServerDetails][] to `true`, or make a connection on a port which does not require SSL.
 
 ***
 
-### SSL-Wrapped Connection Not Supported
+### SSL Not Supported
 
 A [Category][] of `SSL` and an [Error Code][] of `201` indicates that one of the following issues occurred:
 
-* An SSL-wrapped connection is not supported
+* An SSL connection is not supported. More specifically, the mail server either does not support SSL connections or only supports SSL connections via the STARTTLS command.
 * Certificate on the host is expired, untrusted or invalid
 * Certificate replaced by anti-virus software in order to scan web traffic resulting in failed certificate validation
 * CRL server is down
