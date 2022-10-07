@@ -1037,6 +1037,7 @@
                     MainDoc = "/docs/reference/data-types/email/basicemailsessiondetails"
                 [Cortex.Reference.DataTypes.Email.EmailAddress]
                     MainDoc = "/docs/reference/data-types/email/emailaddress"
+                    Address = "/docs/reference/data-types/email/emailaddress/#address"
                 [Cortex.Reference.DataTypes.Email.EmailMessage]
                     MainDoc = "/docs/reference/data-types/email/emailmessage"
                     To = "/docs/reference/data-types/email/emailmessage/#to"
