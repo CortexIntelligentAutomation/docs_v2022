@@ -275,27 +275,27 @@ The exceptions thrown by the block can be found below:
 | [ArgumentException][]                |Thrown when an invalid value is provided for the [BodyFormat][] in the [Email Message][Email Message Property].|
 | |Thrown when an invalid value is provided for the [Priority][] in the [Email Message][Email Message Property].|
 | [EmailSessionException][]            |Thrown when an invalid [Port][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Port][].|
-| |Thrown when an invalid [Host][] is provided in the serverDetails within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
-| |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `false` with a port which requires it to be set to `true`. For more information, see [Should UseSsl be set to true or false?][] |
-| |Thrown when a connection cannot be established - this is typically because of a mismatch in the serverDetails object within [Basic Email Session Details][Basic Email Session Details Property] when useSsl is set to `true` with a port which requires it to be set to `false`. For more information, see [Should UseSsl be set to true or false?][] |
-| |Thrown when the TLS/SSL certificate is expired on the host or is untrusted or invalid. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when an invalid [Host][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
+| |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `false` with a [Port][] which requires it to be set to `true`. For more information, see [Should UseSsl be set to true or false?][] |
+| |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `true` with a [Port][] which requires it to be set to `false`. For more information, see [Should UseSsl be set to true or false?][] |
+| |Thrown when the TLS/SSL certificate is expired on the [Host][] or is untrusted or invalid. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when a locally installed anti-virus software replaces the TLS/SSL certificate in order to scan web traffic. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when the CRL (Certificate Revocation List) server for the TLS/SSL certificate is down. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
-| |Thrown when the [Username][] and/or [Password][] in the [Credentials][] within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][]|
-| [FileNotFoundException][]            |Thrown when a non-existent file path is provided in attachments within [Email Message][Email Message Property].|
-| [IOException][]                      |Thrown when the desired socket is held by another process - re-running the flow typically solves this.|
-| [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is `null`.|
-| |Thrown when the [Credentials][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`.|
-| |Thrown when the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`.|
-| |Thrown when the host in [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`.|
-| |Thrown when the [Email Message][Email Message Property] is `null`.|
-| |Thrown when the [To][] within [Email Message][Email Message Property] is `null`.|
-| |Thrown when the [From][] within [Email Message][Email Message Property] is `null`.|
-| |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is `null`.|
-| [PropertyEmptyException][]           |Thrown when the `host` in `serverDetails` within [Basic Email Session Details][Basic Email Session Details Property] is empty.|
-| |Thrown when the [To][] within [Email Message][Email Message Property] is empty.|
-| |Thrown when the [Address][] in an [EmailAddress][] in within [Email Message][Email Message Property] is empty.|
-| [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is below 1 or above 65535|
+| |Thrown when the [Username][] and [Password][] in the [Credentials][] within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][] |
+| [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
+| [IOException][]                      |Thrown when the desired socket is held by another process - re-running the flow typically solves this. |
+| [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
+| |Thrown when the [Credentials][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
+| |Thrown when the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
+| |Thrown when the [Host][] in [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
+| |Thrown when the [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [To][] within [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [From][] within [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is `null`. |
+| [PropertyEmptyException][]           |Thrown when the [Host][] in [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is empty. |
+| |Thrown when the [To][] within [Email Message][Email Message Property] is empty. |
+| |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty. |
+| [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is below 1 or above 65535. |
 | [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format (RFC-5321).|
 | [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property].|
 
