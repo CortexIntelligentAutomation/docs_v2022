@@ -54,7 +54,7 @@ An email is sent from `sender@gmail.com` to `recipient1@outlook.com`, `recipient
 
 ***
 
-### Sending an email with CC or BCC recipients
+### Sending an email with a CC or BCC recipient
 
 This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc@outlook.com` and `bcc@outlook.com` as the CC and BCC recipients for the email respectively, using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
