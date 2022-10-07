@@ -349,7 +349,10 @@ For information on how to open a connection, please see [Opening Sessions][].
 
 ### Known Limitations
 
-This block cannot currently send emails if credentials are not provided.
+- This block cannot currently send emails if the [Credentials][] are `null`.
+- This block cannot currently send emails if the [Password][] in the [Credentials][] is empty or `null`.
+
+These limitations may be removed in the future.
 
 [Email Message Property]: {{< ref "#email-message" >}}
 [Basic Email Session Details Property]: {{< ref "#basic-email-session-details" >}}
