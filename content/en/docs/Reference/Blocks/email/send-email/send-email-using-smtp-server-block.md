@@ -12,15 +12,15 @@ description: "Sends an email using the specified SMTP server."
 
 ## Description
 
-Connects to an SMTP server using the specified [Basic Email Session Details][Basic Email Session Details Property], and sends an [Email Message][Email Message Property].
+Connects to an [SMTP][] server using the specified [Basic Email Session Details][Basic Email Session Details Property], and sends an [Email Message][Email Message Property].
 
-[Close Session][Close Session Property] can be specified to choose whether the connection to the SMTP server is closed or is kept open for use on subsequent Send Email Using SMTP Server blocks.
+[Close Session][Close Session Property] can be specified to choose whether the connection to the [SMTP][] server is closed or is kept open for use on subsequent Send Email Using SMTP Server blocks.
 
 ## Examples
 
 ### Sending an email to a single recipient
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
@@ -38,7 +38,7 @@ An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subje
 
 ### Sending an email to multiple recipients
 
-This example will send an email from `sender@gmail.com` to `recipient1@outlook.com`, `recipient2@outlook.com` and `recipient3@outlook.com` using the SMTP server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient1@outlook.com`, `recipient2@outlook.com` and `recipient3@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
@@ -56,7 +56,7 @@ An email is sent from `sender@gmail.com` to `recipient1@outlook.com`, `recipient
 
 ### Sending an email with CC or BCC recipients
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc@outlook.com` and `bcc@outlook.com` as the CC and BCC recipients for the email respectively, using the SMTP server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc@outlook.com` and `bcc@outlook.com` as the CC and BCC recipients for the email respectively, using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
@@ -74,7 +74,7 @@ An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subje
 
 ### Sending an email with multiple CC or BCC recipients
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the CC recipients and `bcc1@outlook.com` and `bcc2@outlook.com` as the BCC recipients for the email, using the SMTP server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the CC recipients and `bcc1@outlook.com` and `bcc2@outlook.com` as the BCC recipients for the email, using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
@@ -92,7 +92,7 @@ An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subje
 
 ### Sending an email with a different priority
 
-This example will send an email with [Urgent][] priority from `sender@gmail.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with [Urgent][] priority from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 For more information on what other priority emails can be sent, see [EmailMessagePriority][].
 
@@ -112,7 +112,7 @@ An email with [Urgent][] priority is sent from `sender@gmail.com` to `recipient@
 
 ### Sending an email with an HTML body
 
-This example will send an email with an [HTML][] body from `sender@gmail.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with an [HTML][] body from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 For more information on what other email body types can be used, see [EmailMessageBodyFormat][].
 
@@ -132,7 +132,7 @@ An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subje
 
 ### Sending an email with a single attachment
 
-This example will send an email with a single attachment, `attachment.txt` at the path `C:\attachment.txt` on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with a single attachment, `attachment.txt` at the path `C:\attachment.txt` on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
@@ -150,7 +150,7 @@ An email containing a text file attachment, `attachment.txt`, is sent from `send
 
 ### Sending an email with multiple attachments
 
-This example will send an email with mutiple attachments, `attachment1.txt` and `attachment2.txt` at the paths `C:\attachment1.txt` and `C:\attachment2.txt` respectively on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with mutiple attachments, `attachment1.txt` and `attachment2.txt` at the paths `C:\attachment1.txt` and `C:\attachment2.txt` respectively on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
@@ -168,7 +168,7 @@ An email containing two text file attachments, `attachment1.txt` and `attachment
 
 ### Sending an email through a mail server with UseSsl set to false
 
-This example will send an email from `sender@outlook.com` to `recipient@outlook.com` using the SMTP server hosted at `smtp-mail.outlook.com` on [Port][] `587` with [UseSsl][] set to `false`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@outlook.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp-mail.outlook.com` on [Port][] `587` with [UseSsl][] set to `false`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 #### Properties
 
 | Property           | Value                     | Notes                                    |
@@ -187,7 +187,7 @@ An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subje
 
 ### Email Message
 
-The [Email Message][Email Message Property] to send via the SMTP server specified in the [Basic Email Session Details][Basic Email Session Details Property]. This property contains all of the information in relation to the email to be sent, these are:
+The [Email Message][Email Message Property] to send via the [SMTP][] server specified in the [Basic Email Session Details][Basic Email Session Details Property]. This property contains all of the information in relation to the email to be sent, these are:
 
 - [To][]
 - [From][]
@@ -237,10 +237,10 @@ For more detailed information on each of the properties, see [EmailMessage][].
 
 ### Basic Email Session Details
 
-The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to open and maintain a session with an SMTP server, including:
+The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to open and maintain a session with an [SMTP][] server, including:
 
-- Server Details - must be provided in order to connect to an SMTP server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on the configuration of this object for this block, see [Should UseSsl be set to true or false?][]
-- [Credentials][] - must be provided in order to connect to an SMTP server. This object contains the properties [Username][] and [Password][] to be used for authentication, see [Credentials][] for more information on the configuration of this object for this block.
+- Server Details - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on the configuration of this object for this block, see [Should UseSsl be set to true or false?][]
+- [Credentials][] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Username][] and [Password][] to be used for authentication, see [Credentials][] for more information on the configuration of this object for this block.
 
 Note that this property is an [InputOutput][] property and so it must be set to a variable. If the [Close Session][Close Session Property] property is set to `false`, then the session will be kept open and can be used in subsequent Send Email Using SMTP Server blocks which improves performance, see [Opening Sessions][] for more information.
 
@@ -305,10 +305,10 @@ For more information on the [EmailSessionException][] including error codes, see
 
 ### Should UseSsl be set to true or false?
 
-A [ServerDetails][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an SMTP server. The value of the [UseSsl][] property inside this object depends on the host and port being connected to. There are two types of SSL/TLS connections that can occur:
+A [ServerDetails][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an [SMTP][] server. The value of the [UseSsl][] property inside this object depends on the host and port being connected to. There are two types of [SSL][]/[TLS][] connections that can occur:
 
-- SSL/TLS is used as soon as a connection is established
-- SSL/TLS is used via the STARTTLS command if it is available
+- [SSL][]/[TLS][] is used as soon as a connection is established
+- [SSL][]/[TLS][] is used via the STARTTLS command if it is available
 
 The above two points correspond to the [UseSsl][] property being set to `true` and `false` respectively. As such, generally the following rules can be followed to determine whether [UseSsl][] should be set to `true` or `false`:
 
@@ -335,7 +335,7 @@ The Send Email Using SMTP Server block automatically handles creating and openin
 
 [Basic Email Session Details][Basic Email Session Details Property] is an [InputOutput][] and so it must be set to a [Variable][], because of this it can be used to keep the session alive across multiple Send Email Using SMTP Server blocks as long as [Close Session][Close Session Property] is set to `false`. Keeping the session open helps increase the performance of the block due to the subsequent blocks not having to spend resources creating and opening sessions for each execution.
 
-Note that for all SSL connections, the protocol to be used will be negotiated with the server depending on which protocols are available. Similarly, the SASL mechanism to be used will be negotiated with the mail server based on the available mechanisms.
+Note that for all [SSL][] connections, the protocol to be used will be negotiated with the server depending on which protocols are available. Similarly, the [SASL][] mechanism to be used will be negotiated with the mail server based on the available mechanisms.
 
 For information on how to explicitly close a connection, please see [Closing Sessions][].
 
@@ -359,8 +359,6 @@ This block cannot currently send emails if credentials are not provided.
 [Credentials]: {{< ref "#credentials" >}}
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
 [Closing Sessions]: {{< ref "#closing-sessions" >}}
-[Setting useSsl to false]: {{< ref "#setting-usessl-to-false" >}}
-[Sending an email to multiple recipients]: {{< ref "#sending-an-email-to-multiple-recipients" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
@@ -424,3 +422,8 @@ This block cannot currently send emails if credentials are not provided.
 [Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
 
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+
+[SASL]: {{< url "Cortex.Reference.Glossary.P-T.SASL" >}}
+[SMTP]: {{< url "Cortex.Reference.Glossary.P-T.SMTP" >}}
+[SSL]: {{< url "Cortex.Reference.Glossary.P-T.SSL" >}}
+[TLS]: {{< url "Cortex.Reference.Glossary.P-T.TLS" >}}

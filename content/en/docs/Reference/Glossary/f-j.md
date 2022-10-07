@@ -98,6 +98,10 @@ Some common and popular examples of IDE's include:
 * VSCode
 * Eclipse
 
+### IMAP
+
+Internet Messaging Access Protocol (IMAP) in an internet protocol used by email clients to retrieve email messages from a mail server.
+
 ### Immutable
 
 Unable to be changed.
