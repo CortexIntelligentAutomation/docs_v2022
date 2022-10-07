@@ -305,15 +305,15 @@ For more information on the [EmailSessionException][] including error codes, see
 
 ### Should UseSsl be set to true or false?
 
-A [ServerDetails][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an [SMTP][] server. The value of the [UseSsl][] property inside this object depends on the host and port being connected to. There are two types of [SSL][]/[TLS][] connections that can occur:
+A [ServerDetails][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an [SMTP][] server. The value of the [UseSsl][] property inside this object depends on the [Host][] and [Port][] being connected to. There are two types of [SSL][]/[TLS][] connections that can occur:
 
 - [SSL][]/[TLS][] is used as soon as a connection is established
 - [SSL][]/[TLS][] is used via the STARTTLS command if it is available
 
 The above two points correspond to the [UseSsl][] property being set to `true` and `false` respectively. As such, generally the following rules can be followed to determine whether [UseSsl][] should be set to `true` or `false`:
 
-- If the port being connected to is `465` then [UseSsl][] should be set to `true`
-- If the port being connected to is `25` or `567` then [UseSsl][] should be set to `false`
+- If the [Port][] being connected to is `465` then [UseSsl][] should be set to `true`
+- If the [Port][] being connected to is `25` or `567` then [UseSsl][] should be set to `false`
 
 For more information, see [ServerDetails][].
 
