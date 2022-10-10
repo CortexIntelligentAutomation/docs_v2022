@@ -27,42 +27,44 @@ The `EmailAddress` data type is used to define an email address.
 
 ### Name
 
-The Name property is used to define the name associated with an email address.
+The `Name` property is used to define the name associated with the email address.
 
 | | |
 |--------------------|---------------------------|
 | Data Type | [String][] |
-| Is Advanced | `true` |
+| Is [Advanced][] | `true` |
 | Default Editor | [Literal][] |
 | Default Value | [String][] with value `""` |
 
 ### Address
 
-The Address property is used to define the actual email address.
+The `Address` property is used to define the actual email address.
+
+This must be a valid email address as outlined in [RFC 5321][].
 
 | | |
 |--------------------|---------------------------|
 | Data Type | [String][] |
-| Is Advanced | `false` |
+| Is [Advanced][] | `false` |
 | Default Editor | [Literal][] |
 | Default Value | [String][] with value `""` |
 
 ## Remarks
 
-### Create an EmailMessage
+### Create an EmailAddress
 
-The following table shows some of the ways that `EmailMessage` can be created.
+The following table shows some of the ways that an `EmailAddress` can be created.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `EmailAddress` constructor | `new EmailAddress(address: "sender@outlook.com")`| `{"Name": null, "Address": "sender@outlook.com"}` | Expression | N/A |
-| Use a `EmailAddress` constructor | `new EmailAddress(name: "Sender", address: "sender@outlook.com")`| `{"Name": "Sender", "Address": "sender@outlook.com"}` | Expression | N/A |
+| Use an `EmailAddress` constructor | `new EmailAddress(address: "sender@outlook.com")`| `{"Name": null, "Address": "sender@outlook.com"}` | Expression | N/A |
+| | `new EmailAddress(name: "Sender", address: "sender@outlook.com")`| `{"Name": "Sender", "Address": "sender@outlook.com"}` | Expression | N/A |
 
-A `EmailAddress` can also be created using the Literal Editor by filling in the necessary values for the following properties:
+An `EmailAddress` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
 | Property | Data Type | Example | Notes |
 |-|-|-|-|
-| `Name` | `String` | `"Sender"` | The [Name][Name Property] associated with the email address. |
+| `Name` | `String` | `"Sender"` | The name associated with the email address. |
 | `Address` | `String` | `"sender@outlook.com"` | The email address. |
 
 ### Convert EmailAddress to Text
@@ -81,7 +83,7 @@ A `EmailAddress` can also be created using the Literal Editor by filling in the 
   
 ### Known Limitations
 
-Currently, if the `ToString()` method is used on a EmailAddress, then its Full Name will be returned; instead of a representation of the data within the EmailAddress.
+Currently, if the `ToString()` method is used on a `EmailAddress`, then its Full Name will be returned; instead of a representation of the data within the `EmailAddress`.
 
 In future this limitation may be removed.
 
@@ -91,15 +93,20 @@ In future this limitation may be removed.
 
 * [EmailMessage][]
 
-[Name Property]: {{< ref "#name" >}}
+### External Documentation
+
+* [RFC 5321][]
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
 
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+
+[RFC 5321]: {{< url "IETF.Email.RFC5321" >}}

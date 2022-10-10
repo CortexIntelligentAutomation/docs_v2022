@@ -296,7 +296,7 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [To][] within [Email Message][Email Message Property] is empty. |
 | |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty. |
 | [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is below 1 or above 65535. |
-| [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format (RFC-5321).|
+| [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format.|
 | [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property].|
 
 For more information on the [EmailSessionException][] including error codes, see [EmailSessionException][].

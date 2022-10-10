@@ -1431,6 +1431,10 @@
         GrafanaLokiInstallZip = "https://github.com/grafana/loki/releases/download/v2.5.0/loki-windows-amd64.exe.zip"
     [Grafana.SelfManaged.Downloads.Promtail]
         PromtailInstallZip = "https://github.com/grafana/loki/releases/download/v2.5.0/promtail-windows-amd64.exe.zip"
+[IETF]
+    MainDoc = "https://www.ietf.org/"
+    [IETF.Email]
+        RFC5321 = "https://www.ietf.org/rfc/rfc5321.txt"
 [IIS]
     MainDoc = "https://www.iis.net/overview"
     [IIS.Downloads]

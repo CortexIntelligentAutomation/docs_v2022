@@ -128,14 +128,14 @@ The `Attachments` property is used to define any attachments to be sent with the
 
 ### Create an EmailMessage
 
-The following table shows some of the ways that `EmailMessage` can be created.
+The following table shows some of the ways that an `EmailMessage` can be created.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `EmailMessage` constructor | `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@outlook.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`| Expression | N/A |
+| Use an `EmailMessage` constructor | `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@outlook.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`| Expression | N/A |
 | | `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@outlook.com"), cc: new List<EmailAddress>(){ new EmailAddress("cc@outlook.com") }, bcc: new List<EmailAddress>(){ new EmailAddress("bcc@outlook.com") }, priority: EmailMessagePriority.Urgent, subject: "Example email subject", bodyFormat: EmailMessageBodyFormat.Text, body: "Example email body", attachments: new List<string>(){ "C:/attachment.txt" })` | `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [{"To": [{"Name": null, "Address": "cc@outlook.com"}], "Bcc": [{"To": [{"Name": null, "Address": "bcc@outlook.com"}], "Priority": "EmailMessagePriority.Urgent", "Subject": "Example email subject", "BodyFormat": "EmailMessageBodyFormat.Text", "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}`| Expression | N/A |
 
-A `EmailMessage` can also be created using the Literal Editor by filling in the necessary values for the following properties:
+An `EmailMessage` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
 | Property      | Data Type                | Example                                               | Notes                                         |
 |-|-|-|-|
@@ -165,7 +165,7 @@ A `EmailMessage` can also be created using the Literal Editor by filling in the 
   
 ### Known Limitations
 
-Currently, if the `ToString()` method is used on a `EmailMessage`, then its Full Name will be returned; instead of a representation of the data within the `EmailMessage`.
+Currently, if the `ToString()` method is used on an `EmailMessage`, then its Full Name will be returned; instead of a representation of the data within the `EmailMessage`.
 
 In future this limitation may be removed.
 
