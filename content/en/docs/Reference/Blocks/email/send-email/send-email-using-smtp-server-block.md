@@ -233,7 +233,7 @@ For more detailed information on each of the properties, see [EmailMessage][].
 }
 ```
 
-**TODO: WE ARE HERE IN DOC REVIEW**
+**TODO: WE ARE HERE IN DOC REVIEW, WE ALSO NEED TO LOOK AT EXAMPLES**
 
 ### Basic Email Session Details
 

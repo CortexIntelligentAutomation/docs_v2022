@@ -16,8 +16,8 @@ There are multiple reasons that this exception can be thrown:
 
 * [Invalid Port][InvalidPortProvided]
 * [Invalid Host][InvalidHostProvided]
-* [SSL-Wrapped Connection Required][SslWrappedConnectionRequired]
-* [SSL-Wrapped Connection Not Supported][SslWrappedConnectionNotSupported]
+* [SSL Required][SslWrappedConnectionRequired]
+* [SSL Not Supported][SslWrappedConnectionNotSupported]
 * [Invalid Username and Password][InvalidUsernameAndPassword]
 * [Invalid SSL Certificate][InvalidSslCertificate]
 * [Invalid Client Credentials][InvalidClientCredentials]
@@ -26,7 +26,7 @@ There are multiple reasons that this exception can be thrown:
 
 ### Invalid Port
 
-A [Category][] of `Socket` and an [Error Code][] of `100` indicates that the port provided is invalid.
+A [Category][] of `Socket` and an [Error Code][] of `100` indicates that the [Port][] provided is invalid.
 
 #### Message Format
 
@@ -40,13 +40,13 @@ Please click the HelpLink for more information on how to fix this."
 
 #### How to Fix
 
-Provide a valid port and ensure that the mail server is up and running without issues.
+Provide a valid [Port][] between the [Int32][] values 1 and 65535 and ensure that the mail server is up and running without issues.
 
 ***
 
 ### Invalid Host
 
-A [Category][] of `Socket` and an [Error Code][] of `101` indicates the host provided is invalid.
+A [Category][] of `Socket` and an [Error Code][] of `101` indicates the [Host][] provided is invalid.
 
 #### Message Format
 
@@ -57,7 +57,7 @@ provided a host that does not exist. Please click the HelpLink for more informat
 
 #### How to Fix
 
-Provide a valid host.
+Provide a valid [Host][].
 
 ***
 
@@ -74,7 +74,7 @@ requires that'Use SSL' be set to true. Please click the HelpLink for more inform
 
 #### How to Fix
 
-Change `UseSsl` in the [ServerDetails][] to `true`, or make a connection on a port which does not require SSL.
+Change [UseSsl][] in the [ServerDetails][] to `true`, or make a connection on a [Port][] which does not require SSL.
 
 ***
 
@@ -83,7 +83,7 @@ Change `UseSsl` in the [ServerDetails][] to `true`, or make a connection on a po
 A [Category][] of `SSL` and an [Error Code][] of `201` indicates that one of the following issues occurred:
 
 * An SSL connection is not supported. More specifically, the mail server either does not support SSL connections or only supports SSL connections via the STARTTLS command.
-* Certificate on the host is expired, untrusted or invalid
+* Certificate on the [Host][] is expired, untrusted or invalid
 * Certificate replaced by anti-virus software in order to scan web traffic resulting in failed certificate validation
 * CRL server is down
 
@@ -201,7 +201,7 @@ The error code for the exception, which is used to indicate the reason that the 
 For `EmailSessionException` there are the following error codes:
 
 * [100][InvalidPortProvided] - indicates that the port provided is invalid
-* [101][InvalidHostProvided] - indicates that the host provided is invalid
+* [101][InvalidHostProvided] - indicates that the [Host][] provided is invalid
 * [200][SslWrappedConnectionRequired] - indicates that an SSL-wrapped connection is required
 * [201][SslWrappedConnectionNotSupported] - indicates that an SSL-wrapped connection is not supported
 * [300][InvalidUsernameAndPassword] - indicated that the username and password combination is invalid
@@ -251,18 +251,23 @@ None
 
 [InvalidPortProvided]: {{< ref "#invalid-port">}}
 [InvalidHostProvided]: {{< ref "#invalid-host">}}
-[SslWrappedConnectionRequired]: {{< ref "#ssl-wrapped-connection-required">}}
-[SslWrappedConnectionNotSupported]: {{< ref "#ssl-wrapped-connection-not-supported">}}
+[SslWrappedConnectionRequired]: {{< ref "#ssl-required">}}
+[SslWrappedConnectionNotSupported]: {{< ref "#ssl-not-supported">}}
 [InvalidSslCertificate]: {{< ref "#invalid-ssl-certificate">}}
 [InvalidUsernameAndPassword]: {{< ref "#invalid-username-and-password">}}
 [InvalidClientCredentials]: {{< ref "#invalid-client-credentials">}}
-
 [Message]: {{< ref "#message" >}}
 [Category]: {{< ref "#category" >}}
 [Error Code]: {{< ref "#error-code" >}}
 
+[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
+[Host]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
+[Port]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Port" >}}
+[UseSsl]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.UseSsl" >}}
+
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
 [EmailSessionErrorCode]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.MainDoc" >}}
