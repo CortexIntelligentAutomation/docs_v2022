@@ -217,11 +217,11 @@
             [Cortex.Guides.Studio.Debugging]
                 MainDoc = "/docs/guides/cortex-studio/debugging/"
         [Cortex.Guides.FlowExecutionService]
-            MainDoc = "/docs/guides/flow-execution-service/"
+            MainDoc = "/docs/guides/cortex-flow-execution-service/"
         [Cortex.Guides.FlowDebuggerService]
-            MainDoc = "/docs/guides/flow-debugger-service/"
+            MainDoc = "/docs/guides/cortex-flow-debugger-service/"
         [Cortex.Guides.ApiGatewayService]
-            MainDoc = "/docs/guides/api-gateway-service/"
+            MainDoc = "/docs/guides/cortex-api-gateway-service/"
         [Cortex.Guides.Gateway]
             MainDoc = "/docs/guides/cortex-gateway/"
             [Cortex.Guides.Gateway.Settings]
