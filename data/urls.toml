@@ -197,7 +197,9 @@
                 StartAnExecution = "/docs/guides/cortex-studio/main-display-area/#start-an-execution"
                 EditAndContinueAnExecution = "/docs/guides/cortex-studio/main-display-area/#edit-and-continue-an-execution"
             [Cortex.Guides.Studio.Navigation]
-                MainDoc = "/docs/guides/cortex-studio/navigation/"                    
+                MainDoc = "/docs/guides/cortex-studio/navigation/" 
+            [Cortex.Guides.Studio.PackageManagement]
+                MainDoc = "/docs/guides/cortex-studio/package-management/"                   
             [Cortex.Guides.Studio.Palettes]
                 MainDoc = "/docs/guides/cortex-studio/palettes/"
             [Cortex.Guides.Studio.SouthPanel]
@@ -1257,12 +1259,16 @@
             MainDoc = "/docs/reference/glossary/"
             [Cortex.Reference.Glossary.A-E]
                 MainDoc = "/docs/reference/glossary/a-e/"
+                Autogeneration = "/docs/reference/glossary/a-e/#autogeneration"
                 Automation = "/docs/reference/glossary/a-e/#automation"
+                AWSLambda = "/docs/reference/glossary/a-e/#aws-lambda"
+                AzureFunctions = "/docs/reference/glossary/a-e/#azure-functions"
                 Block = "/docs/reference/glossary/a-e/#block"
                 BlockProperty = "/docs/reference/glossary/a-e/#block-property"
                 Boolean = "/docs/reference/glossary/a-e/#boolean"
                 Char = "/docs/reference/glossary/a-e/#char"
                 CSharp = "/docs/reference/glossary/a-e/#c-1"
+                CloudServiceProvider = "/docs/reference/glossary/a-e/#cloud-service-provider"
                 CamelCase = "/docs/reference/glossary/a-e/#camelcase"
                 Code = "/docs/reference/glossary/a-e/#code"
                 Cortex = "/docs/reference/glossary/a-e/#cortex"
@@ -1270,6 +1276,7 @@
                 DataType = "/docs/reference/glossary/a-e/#data-type"
                 Developer = "/docs/reference/glossary/a-e/#developer"
                 Dictionary = "/docs/reference/glossary/a-e/#dictionary"
+                DLL = "/docs/reference/glossary/a-e/#dll"
                 DragAndDrop = "/docs/reference/glossary/a-e/#drag-and-drop"
                 Double = "/docs/reference/glossary/a-e/#double"
                 Expression = "/docs/reference/glossary/a-e/#expression"
@@ -1297,11 +1304,13 @@
                 Json = "/docs/reference/glossary/f-j/#json"
             [Cortex.Reference.Glossary.K-O]
                 MainDoc = "/docs/reference/glossary/k-o/"
+                Linux = "/docs/reference/glossary/k-o/#linux"
                 List = "/docs/reference/glossary/k-o/#list"
                 Literal = "/docs/reference/glossary/k-o/#literal"
                 LowerCase = "/docs/reference/glossary/k-o/#lowercase"
                 Method = "/docs/reference/glossary/k-o/#method"
                 NonNull = "/docs/reference/glossary/k-o/#non-null"
+                NuGetPackage = "/docs/reference/glossary/k-o/#nuget-package"
                 Null = "/docs/reference/glossary/k-o/#null"
                 Operand = "/docs/reference/glossary/k-o/#operand"
                 Operator = "/docs/reference/glossary/k-o/#operator"
@@ -1315,6 +1324,8 @@
                 PropertyBlock = "/docs/reference/glossary/p-t/#block-property"
                 PropertyCSharp = "/docs/reference/glossary/p-t/#c-property"
                 Request = "/docs/reference/glossary/p-t/#request"
+                SDK = "/docs/reference/glossary/p-t/#sdk"
+                ServiceFabric = "/docs/reference/glossary/p-t/#service-fabric"
                 Single = "/docs/reference/glossary/p-t/#single"
                 Snippets = "/docs/reference/glossary/p-t/#snippets"
                 String = "/docs/reference/glossary/p-t/#string"
