@@ -9,7 +9,7 @@ weight: 40
 
 This guide describes how to install the Web Application Server components on the server. Please ensure that [Install Application Server][] has been completed before starting this installation.
 
-## Extract Installation Artefacts
+## Make Installation Artefacts Available
 
 1. Copy the following artefacts to a folder on the server (the version numbers may differ):
    * Cortex Innovation 2022.6 - Block Packages.zip
@@ -255,7 +255,7 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
     cd "C:\Install\Cortex Innovation 2022.6 - Web App Server Install Scripts"
     ```
 
-1. 1. Type the following command into PowerShell:
+1. Type the following command into PowerShell:
 
     ```powershell
     .\Cortex.Innovation.Install.FlowDebuggerService.ps1

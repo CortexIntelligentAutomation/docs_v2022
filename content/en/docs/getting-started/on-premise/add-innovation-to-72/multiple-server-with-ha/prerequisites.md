@@ -135,6 +135,17 @@ Gateway supports the latest versions of the following browsers:
 
 ## Additional Load Balancer Server Requirements
 
+### Filesystem Requirements
+If using the included [gobetween][] load balancer, Network Discovery and File Sharing must be enabled on the Load Balancer Server:
+
+1. Open File Explorer.
+1. Click `Network` on the left.
+1. A banner similar to the following will appear if Network Discovery and File Sharing is turned off:
+    {{< figure src="/images/Network Discovery 1.png" title="Network and File Discovery Disabled" >}}
+1. Click the banner.
+1. Click `Turn on network discovery and file sharing`:
+    {{< figure src="/images/Network Discovery 2.png" title="Enable Network and File Discovery" >}}
+
 ### Alternative Load Balancer Requirements
 
 Innovation has a [gobetween][] load balancer included that isn't highly available; It is possible to use an alternative. The requirements for installing an alternative load balancer are as follows:
@@ -241,12 +252,12 @@ If required, a separate X.509 SSL certificate can be obtained to be used by the 
 
 #### TLS Requirements
 
-There is a set of non-compulsory security measures, recommended to be applied to Web Application Servers, in order to prevent potential attacks that exploit known industry security vulnerabilities. This includes disabling all versions of SSL and TLS apart from TLS 1.2. And disabling all cipher suites apart from the following:
+There is a set of non-compulsory security measures, recommended to be applied to the Application Servers, in order to prevent potential attacks that exploit known industry security vulnerabilities. This includes disabling all versions of SSL and TLS apart from TLS 1.2. And disabling all cipher suites apart from the following:
 
 * TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
 * TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 
-See [SSL Best Practices][] for a full list of the security changes which will be applied. The `Cortex.Innovation.Install.Multiple.SSLBestPractices.ps1` script is provided during installation to apply these security changes to the Web Application Server.
+See [SSL Best Practices][] for a full list of the security changes which will be applied. The `Cortex.Innovation.Install.Multiple.SSLBestPractices.ps1` script is provided during installation to apply these security changes to the Application Servers.
 
 ## Additional Web Application Server Requirements
 
@@ -293,7 +304,7 @@ More information about importing the certificate is given during installation.
 
 #### TLS Requirements
 
-There is a set of non-compulsory security measures, recommended to be applied to Web Application Servers, in order to prevent potential attacks that exploit known industry security vulnerabilities. This includes disabling all versions of SSL and TLS apart from TLS 1.2. And disabling all cipher suites apart from the following:
+There is a set of non-compulsory security measures, recommended to be applied to the Web Application Server, in order to prevent potential attacks that exploit known industry security vulnerabilities. This includes disabling all versions of SSL and TLS apart from TLS 1.2. And disabling all cipher suites apart from the following:
 
 * TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
 * TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
