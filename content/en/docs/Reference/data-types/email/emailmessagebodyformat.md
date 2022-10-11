@@ -37,7 +37,7 @@ The `EmailMessageBodyFormat` data type is used to define the format of an email 
 
 | | |
 |-|-|
-| **Name:**    | Text                                          |
+| **Name:**    | Html                                          |
 | **Value:**   | [Int32][] with value `1`                      |
 | **Notes:**   | Used when an email body format is HTML.       |
 

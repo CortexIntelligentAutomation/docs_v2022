@@ -47,7 +47,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | SslRequired                                     |
 | **Value:**   | [Int32][] with value `200`                      |
-| **Notes:**   | Used when an `EmailSessionException` occured due to `UseSsl` being set to `false` in [ServerDetails][] when trying to establish a connection on a host's port which requires an SSL-wrapped connection to be made. |
+| **Notes:**   | Used when an `EmailSessionException` occured due to `UseSsl` being set to `false` in [ServerDetails][] when trying to establish a connection on a host's port which requires SSL. |
 
 ### SslUnsupported
 
@@ -55,7 +55,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | SslUnsupported                                  |
 | **Value:**   | [Int32][] with value `201`                      |
-| **Notes:**   | Used when an `EmailSessionException` occured due to `UseSsl` being set to `true` in [ServerDetails][] when trying to establish a connection on a host's port which does not support SSL-wrapped connections. |
+| **Notes:**   | Used when an `EmailSessionException` occured due to `UseSsl` being set to `true` in [ServerDetails][] when trying to establish a connection on a host's port which does not support SSL. |
 
 ### InvalidUserCredentials
 
@@ -63,7 +63,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | InvalidUserCredentials                          |
 | **Value:**   | [Int32][] with value `300`                      |
-| **Notes:**   | Used when an `EmailSessionException` occured due to an incorrect username and password combination being provided in [UserCredentials][]. |
+| **Notes:**   | Used when an `EmailSessionException` occured due to an invalid username and password combination being provided in [UserCredentials][]. |
 
 ### InvalidCertificate
 
@@ -71,7 +71,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | InvalidCertificate                              |
 | **Value:**   | [Int32][] with value `400`                      |
-| **Notes:**   | Used when an `EmailSessionException` occured due to an certificate path and certificate password combination being provided in [GmailOAuthCertificateCredentials][]. |
+| **Notes:**   | Used when an `EmailSessionException` occured due to an invalid certificate path and password combination being provided in [GmailOAuthCertificateCredentials][]. |
 
 ### InvalidGmailClientCredentials
 
@@ -131,7 +131,7 @@ For more information on casting [Int32][] values to enums, see [Working with Enu
 
 ### Known Limitations
 
-Currently for the [SslUnsupported][] error code, there are numerous reasons for why the exception may have occurred. For more information, see [SSL-Wrapped Connection Not Supported][].
+Currently for the [SslUnsupported][] error code, there are numerous reasons for why the exception may have occurred. For more information, see [SSL Not Supported][].
 
 In the future this may change.
 
@@ -159,7 +159,7 @@ None
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [EmailSessionException]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.MainDoc" >}}
 [GmailOAuthCertificateCredentials]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.MainDoc" >}}
-[SSL-Wrapped Connection Not Supported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
+[SSL Not Supported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
 
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 [Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}

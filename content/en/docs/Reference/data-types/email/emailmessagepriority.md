@@ -10,7 +10,7 @@ description: "Defines the priority of an email."
 
 ## Summary
 
-The `EmailMessagePriority` data type is used to define the priority an email.
+The `EmailMessagePriority` data type is used to define the priority of an email.
 
 | | |
 |-|-|
@@ -58,8 +58,8 @@ The following table shows some of the ways that `EmailMessagePriority` can be cr
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
 | Use an enum expression | `EmailMessagePriority.Normal` | `EmailMessagePriority.Normal`| Expression | N/A |
-| Use an enum expression | `EmailMessagePriority.NonUrgent` | `EmailMessagePriority.NonUrgent`| Expression | N/A |
-| Use an enum expression | `EmailMessagePriority.Urgent` | `EmailMessagePriority.Urgent`| Expression | N/A |
+| | `EmailMessagePriority.NonUrgent` | `EmailMessagePriority.NonUrgent`| Expression | N/A |
+| | `EmailMessagePriority.Urgent` | `EmailMessagePriority.Urgent`| Expression | N/A |
 
 An `EmailMessagePriority` can also be created using the Literal Editor by selecting the desired option from the dropdown list containing the range of options.
 

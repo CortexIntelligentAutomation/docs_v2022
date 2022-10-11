@@ -20,101 +20,103 @@ Connects to an [SMTP][] server using the specified [Basic Email Session Details]
 
 ### Sending an email to a single recipient
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To":  [{"Name":  null,  "Address":  "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br>`new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a text body and [Normal][] priority.|
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To":  [{"Name":  null,  "Address":  "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br>`new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.|
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
 
-An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
 
 ***
 
 ### Sending an email to multiple recipients
 
-This example will send an email from `sender@gmail.com` to `recipient1@outlook.com`, `recipient2@outlook.com` and `recipient3@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient1@outlook.com`, `recipient2@outlook.com` and `recipient3@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To":  [{"Name":  null,  "Address":  "recipient1@outlook.com"},  {"Name":  null,  "Address":  "recipient2@outlook.com"}, {"Name": null, "Address": "recipient3@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient1@outlook.com"), new EmailAddress("recipient2@outlook.com"), new EmailAddress("recipient3@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a text body and [Normal][] priority. |
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To":  [{"Name":  null,  "Address":  "recipient1@outlook.com"},  {"Name":  null,  "Address":  "recipient2@outlook.com"}, {"Name": null, "Address": "recipient3@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient1@outlook.com"), new EmailAddress("recipient2@outlook.com"), new EmailAddress("recipient3@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority. |
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
 
-An email is sent from `sender@gmail.com` to `recipient1@outlook.com`, `recipient2@outlook.com` and `recipient3@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient1@outlook.com`, `recipient2@outlook.com` and `recipient3@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
 
 ***
 
 ### Sending an email with a CC or BCC recipient
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc@outlook.com` and `bcc@outlook.com` as the CC and BCC recipients for the email respectively, using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc@outlook.com` and `bcc@outlook.com` as the CC and BCC recipients for the email respectively. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [{"Name": null, "Address": "cc@outlook.com"}], "Bcc": [{"Name": null, "Address": "bcc@outlook.com"}], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: new List<EmailAddress>(){ new EmailAddress("cc@outlook.com") }, bcc: new List<EmailAddress>(){ new EmailAddress("bcc@outlook.com") }, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a text body and [Normal][] priority. |
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [{"Name": null, "Address": "cc@outlook.com"}], "Bcc": [{"Name": null, "Address": "bcc@outlook.com"}], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: new List<EmailAddress>(){ new EmailAddress("cc@outlook.com") }, bcc: new List<EmailAddress>(){ new EmailAddress("bcc@outlook.com") }, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority. |
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
 
-An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, both `cc@outlook.com` and `bcc@outlook.com` will also recieve copies of the email as they are listed as CC and BCC recipients, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`. Both `cc@outlook.com` and `bcc@outlook.com` will also recieve copies of the email as they are listed as CC and BCC recipients, and then the session is closed.
 
 ***
 
 ### Sending an email with multiple CC or BCC recipients
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the CC recipients and `bcc1@outlook.com` and `bcc2@outlook.com` as the BCC recipients for the email, using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the CC recipients and `bcc1@outlook.com` and `bcc2@outlook.com` as the BCC recipients for the email. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [{"Name": null, "Address": "cc1@outlook.com"}, {"Name": null, "Address": "cc2@outlook.com"}], "Bcc": [{"Name": null, "Address": "bcc1@outlook.com"}, {"Name": null, "Address": "bcc2@outlook.com"}], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: new List<EmailAddress>(){ new EmailAddress("cc1@outlook.com"), new EmailAddress("cc2@outlook.com") }, bcc: new List<EmailAddress>(){ new EmailAddress("bcc1@outlook.com"), new EmailAddress("bcc2@outlook.com") }, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a text body and [Normal][] priority. |
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [{"Name": null, "Address": "cc1@outlook.com"}, {"Name": null, "Address": "cc2@outlook.com"}], "Bcc": [{"Name": null, "Address": "bcc1@outlook.com"}, {"Name": null, "Address": "bcc2@outlook.com"}], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: new List<EmailAddress>(){ new EmailAddress("cc1@outlook.com"), new EmailAddress("cc2@outlook.com") }, bcc: new List<EmailAddress>(){ new EmailAddress("bcc1@outlook.com"), new EmailAddress("bcc2@outlook.com") }, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority. |
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
 
-An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, both `cc1@outlook.com` and `cc2@outlook.com` will also recieve copies of the email as they are listed as CC recipients, and both `bcc1@outlook.com` and `bcc2@outlook.com` will recieve copies of the email as they are listed as BCC recipients, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`. Both `cc1@outlook.com` and `cc2@outlook.com` will also recieve copies of the email as they are listed as CC recipients, and both `bcc1@outlook.com` and `bcc2@outlook.com` will recieve copies of the email as they are listed as BCC recipients. Finally, the session is closed.
 
 ***
 
 ### Sending an email with a different priority
 
-This example will send an email with [Urgent][] priority from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with [Urgent][] priority from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
-For more information on what other priority emails can be sent, see [EmailMessagePriority][].
+For more information on what priorities an email can be sent as, see [EmailMessagePriority][].
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": "EmailMessagePriority.Urgent", "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: EmailMessagePriority.Urgent, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [BodyFormat][] is `null`, the email will be sent with a text body.|
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": "EmailMessagePriority.Urgent", "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: EmailMessagePriority.Urgent, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [BodyFormat][] is `null`, the email will be sent with a [Text][] body.|
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
 
-An email with [Urgent][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, and then the session is closed.
+An email with [Urgent][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
 
 ***
 
+**TODO: WE ARE HERE IN DOC REVIEW**
+
 ### Sending an email with an HTML body
 
-This example will send an email with an [HTML][] body from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with an [HTML][] body from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
-For more information on what other email body types can be used, see [EmailMessageBodyFormat][].
+For more information on what other body types an email can be sent with, see [EmailMessageBodyFormat][].
 
 #### Properties
 
@@ -126,60 +128,60 @@ For more information on what other email body types can be used, see [EmailMessa
 
 #### Result
 
-An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and an [HTML][] body of `"<h1>Example email body<h1/>"`, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and an [HTML][] body of `"<h1>Example email body<h1/>"`, and then the session is closed.
 
 ***
 
 ### Sending an email with a single attachment
 
-This example will send an email with a single attachment, `attachment.txt` at the path `C:\attachment.txt` on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with a single attachment, `attachment.txt` at the path `C:\attachment.txt` on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ "C:/attachment.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a text body and [Normal][] priority.<br><br>The attachments are added to the email by providing paths pointing to the attachments to be attached to the email. |
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ "C:/attachment.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.<br><br>The attachments are added to the email by providing paths pointing to the attachments to be attached to the email. |
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
 
-An email containing a text file attachment, `attachment.txt`, is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, and then the session is closed.
+An email with [Normal][] priority containing a text file attachment, `attachment.txt`, is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
 
 ***
 
 ### Sending an email with multiple attachments
 
-This example will send an email with mutiple attachments, `attachment1.txt` and `attachment2.txt` at the paths `C:\attachment1.txt` and `C:\attachment2.txt` respectively on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with mutiple attachments, `attachment1.txt` and `attachment2.txt` at the paths `C:\attachment1.txt` and `C:\attachment2.txt` respectively on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:/attachment1.txt", "C:/attachment2.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ "C:/attachment1.txt", "C:/attachment2.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a text body and [Normal][] priority.<br><br>The attachments are added to the email by providing paths pointing to the attachments to be attached to the email. |
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:/attachment1.txt", "C:/attachment2.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ "C:/attachment1.txt", "C:/attachment2.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.<br><br>The attachments are added to the email by providing paths pointing to the attachments to be attached to the email. |
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
 
-An email containing two text file attachments, `attachment1.txt` and `attachment2.txt`, is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, and then the session is closed.
+An email with [Normal][] priority containing two text file attachments, `attachment1.txt` and `attachment2.txt`, is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
 
 ***
 
 ### Sending an email through a mail server with UseSsl set to false
 
-This example will send an email from `sender@outlook.com` to `recipient@outlook.com` using the [SMTP][] server hosted at `smtp-mail.outlook.com` on [Port][] `587` with [UseSsl][] set to `false`. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@outlook.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp-mail.outlook.com` on [Port][] `587` with [UseSsl][] set to `false` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To":  [{"Name":  null,  "Address":  "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br>`new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@outlook.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a text body and [Normal][] priority.|
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To":  [{"Name":  null,  "Address":  "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br>`new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@outlook.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.|
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp-mail.outlook.com", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "sender@outlook.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp-mail.outlook.com", 587, false), credentials: new UserCredentials("sender@outlook.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
 
-An email is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a text body of `"Example email body"`, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@outlook.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
 
 ***
 
@@ -303,6 +305,28 @@ For more information on the [EmailSessionException][] including error codes, see
 
 ## Remarks
 
+### How does Priority affect sending an email?
+
+An email sent with [Urgent][] or [NonUrgent][] priority will have its priority displayed differently depending on the email client. For example, Outlook displays an email that has an [Urgent][] priority with a red exclamation mark like so:
+
+![Important email](/images/send-email-using-smtp-server-important-email.png)
+
+For more information on how the priority of an email will be displayed, see the help provided by the respective email client.
+
+### How does BodyFormat affect sending an email?
+
+An email sent with a [HTML][] body will have its body displayed as an HTML page instead of as plain text. How the email looks in the email client may differ depending on the email client in use. For example, if the [Email Message][Email Message Property] has its [BodyFormat][] set to [HTML][] and the [Body][] has a value of:
+
+```json
+"<h1>Example header text</h1>\n<p>Example paragraph text</p>"
+```
+
+Outlook will display the email [Body][] as follows:
+
+![HTML email](/images/send-email-using-smtp-server-html-email.png)
+
+For more information on how the body of an email will be displayed, see the help provided by the respective email client.
+
 ### Should UseSsl be set to true or false?
 
 A [ServerDetails][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an [SMTP][] server. The value of the [UseSsl][] property inside this object depends on the [Host][] and [Port][] being connected to. There are two types of [SSL][]/[TLS][] connections that can occur:
@@ -401,9 +425,11 @@ These limitations may be removed in the future.
 [EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
 [Normal]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.Normal" >}}
 [Urgent]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.Urgent" >}}
+[NonUrgent]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.NonUrgent" >}}
 
 [EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
 [HTML]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.HTML" >}}
+[Text]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
 
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
 
