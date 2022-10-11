@@ -20,7 +20,9 @@ Connects to an [SMTP][] server using the specified [Basic Email Session Details]
 
 ### Sending an email to a single recipient
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be to set to `true` within the [Basic Email Session Details][Basic Email Session Details Property].
+
+For more information about when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
 #### Properties
 
@@ -38,7 +40,9 @@ An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@
 
 ### Sending an email to multiple recipients
 
-This example will send an email from `sender@gmail.com` to `recipient1@outlook.com`, `recipient2@outlook.com` and `recipient3@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient1@outlook.com`, `recipient2@outlook.com` and `recipient3@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be set to `true` within the [Basic Email Session Details][Basic Email Session Details Property].
+
+For more information about when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
 #### Properties
 
@@ -56,7 +60,9 @@ An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient1
 
 ### Sending an email with a CC or BCC recipient
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc@outlook.com` and `bcc@outlook.com` as the [CC][CC Glossary] and [BCC][BCC Glossary] recipients for the email respectively. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc@outlook.com` and `bcc@outlook.com` as the [CC][CC Glossary] and [BCC][BCC Glossary] recipients for the email respectively. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be set to `true` within the [Basic Email Session Details][Basic Email Session Details Property].
+
+For more information about when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
 #### Properties
 
@@ -74,7 +80,9 @@ An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@
 
 ### Sending an email with multiple CC or BCC recipients
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the [CC][CC Glossary] recipients and `bcc1@outlook.com` and `bcc2@outlook.com` as the [BCC][BCC Glossary] recipients for the email. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the [CC][CC Glossary] recipients and `bcc1@outlook.com` and `bcc2@outlook.com` as the [BCC][BCC Glossary] recipients for the email. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be set to `true` within the [Basic Email Session Details][Basic Email Session Details Property].
+
+For more information about when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
 #### Properties
 
@@ -92,9 +100,13 @@ An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@
 
 ### Sending an email with a different priority
 
-This example will send an email with [Urgent][] priority from `sender@gmail.com` to `recipient@outlook.com`. For more information on the effect of changing the [Priority][] of the [Email Message][Email Message Property], see [How does Priority affect sending an email?][] The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with [Urgent][] priority from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be set to `true` within the [Basic Email Session Details][Basic Email Session Details Property].
 
-For more information on what priorities an email can be sent as, see [EmailMessagePriority][].
+For more information on:
+
+- What priorities an email can be sent as, see [EmailMessagePriority][]
+- The effect of changing the [Priority][] of the [Email Message][Email Message Property], see [How does Priority affect sending an email?][]
+- When [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
 #### Properties
 
@@ -110,13 +122,15 @@ An email with [Urgent][] priority is sent from `sender@gmail.com` to `recipient@
 
 ***
 
-**TODO: WE ARE HERE IN DOC REVIEW**
-
 ### Sending an email with an HTML body
 
-This example will send an email with an [HTML][] body from `sender@gmail.com` to `recipient@outlook.com`. For more information on the effect of changing the [BodyFormat][] of the [Email Message][Email Message Property], see [How does BodyFormat affect sending an email?][] The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with an [HTML][] body from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be set to `true` within the [Basic Email Session Details][Basic Email Session Details Property].
 
-For more information on what other body types an email can be sent with, see [EmailMessageBodyFormat][].
+For more information on:
+
+- What other body formats an email can be sent with, see [EmailMessageBodyFormat][]
+- The effect of changing the [BodyFormat][] of the [Email Message][Email Message Property], see [How does BodyFormat affect sending an email?][]
+- When [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
 #### Properties
 
@@ -128,19 +142,24 @@ For more information on what other body types an email can be sent with, see [Em
 
 #### Result
 
-An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and an [HTML][] body of `"<h1>Example email body<h1/>"`, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and an [HTML][] body of `"<h1>Example email body</h1>"`, and then the session is closed.
 
 ***
 
 ### Sending an email with a single attachment
 
-This example will send an email with a single attachment, `attachment.txt` at the path `C:\attachment.txt` on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with a single attachment, `attachment.txt`, from `sender@gmail.com` to `recipient@outlook.com`. The attachment is located at `C:\attachment.txt` on the server executing the flow. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be set to `true` within the [Basic Email Session Details][Basic Email Session Details Property].
+
+For more information on:
+
+- Email attachments, see [Attachments][Attachments Remarks]
+- When [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ "C:/attachment.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.<br><br>The attachments are added to the email by providing paths pointing to the attachments to be attached to the email. |
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:\\attachment.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ @"C:\attachment.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.<br><br>The [Attachments][Attachments Remarks] are added to the email by providing file paths pointing to the files to be attached to the email. |
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
@@ -152,13 +171,18 @@ An email with [Normal][] priority containing a text file attachment, `attachment
 
 ### Sending an email with multiple attachments
 
-This example will send an email with mutiple attachments, `attachment1.txt` and `attachment2.txt` at the paths `C:\attachment1.txt` and `C:\attachment2.txt` respectively on the server executing the flow, from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with mutiple attachments, `attachment1.txt` and `attachment2.txt` from `sender@gmail.com` to `recipient@outlook.com`.  The attachments are located at the paths `C:\attachment1.txt` and `C:\attachment2.txt` on the server executing the flow. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be set to `true` within the [Basic Email Session Details][Basic Email Session Details Property].
+
+For more information on:
+
+- Email attachments, see [Attachments][Attachments Remarks]
+- When [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:/attachment1.txt", "C:/attachment2.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ "C:/attachment1.txt", "C:/attachment2.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.<br><br>The attachments are added to the email by providing paths pointing to the attachments to be attached to the email. |
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:\\attachment1.txt", "C:\\attachment2.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ @"C:\attachment1.txt", @"C:\attachment2.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.<br><br>The [Attachments][Attachments Remarks] are added to the email by providing file paths pointing to the files to be attached to the email. |
 | [Basic Email Session Details][Basic Email Session Details Property] | `($)BasicEmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)BasicEmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)BasicEmailSessionDetails` is a variable of type [BasicEmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
@@ -168,9 +192,12 @@ An email with [Normal][] priority containing two text file attachments, `attachm
 
 ***
 
-### Sending an email through a mail server with UseSsl set to false
+### Sending an email with UseSsl set to false
 
-This example will send an email from `sender@outlook.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp-mail.outlook.com` on [Port][] `587` with [UseSsl][] set to `false` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@outlook.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp-mail.outlook.com` on [Port][] `587` which requires [UseSsl][] to be set to `false` within the [Basic Email Session Details][Basic Email Session Details Property].
+
+For more information on when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
+
 #### Properties
 
 | Property           | Value                     | Notes                                    |
@@ -235,16 +262,14 @@ For more detailed information on each of the properties, see [EmailMessage][].
 }
 ```
 
-**TODO: WE ARE HERE IN DOC REVIEW, WE ALSO NEED TO LOOK AT EXAMPLES**
-
 ### Basic Email Session Details
 
 The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to open and maintain a session with an [SMTP][] server, including:
 
-- Server Details - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on the configuration of this object for this block, see [Should UseSsl be set to true or false?][]
-- [Credentials][] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Username][] and [Password][] to be used for authentication, see [Credentials][] for more information on the configuration of this object for this block.
+- [ServerDetails][] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
+- [UserCredentials][] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Username][] and [Password][] to be used for authentication. For more information, see [Setting Credentials][].
 
-Note that this property is an [InputOutput][] property and so it must be set to a variable. If the [Close Session][Close Session Property] property is set to `false`, then the session will be kept open and can be used in subsequent Send Email Using SMTP Server blocks which improves performance, see [Opening Sessions][] for more information.
+If the [Close Session][Close Session Property] property is set to `false`, then the session will be kept open and can be used in subsequent Send Email Using SMTP Server blocks which improves performance, see [Opening Sessions][] for more information.
 
 For more detailed information on each of the properties, see [BasicEmailSessionDetails][].
 
@@ -255,6 +280,8 @@ For more detailed information on each of the properties, see [BasicEmailSessionD
 | Is [Advanced][] | `false` |
 | Default Editor | [Variable][] |
 | Default Value | `($)BasicEmailSessionDetails` with no value |
+
+**TODO: WE ARE UP TO HERE IN DOC REVIEW**
 
 ### Close Session
 
@@ -278,16 +305,16 @@ The exceptions thrown by the block can be found below:
 | |Thrown when an invalid value is provided for the [Priority][] in the [Email Message][Email Message Property].|
 | [EmailSessionException][]            |Thrown when an invalid [Port][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Port][].|
 | |Thrown when an invalid [Host][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
-| |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `false` with a [Port][] which requires it to be set to `true`. For more information, see [Should UseSsl be set to true or false?][] |
-| |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `true` with a [Port][] which requires it to be set to `false`. For more information, see [Should UseSsl be set to true or false?][] |
+| |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `false` with a [Port][] which requires it to be set to `true`. For more information, see [Setting UseSsl][]. |
+| |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `true` with a [Port][] which requires it to be set to `false`. For more information, see [Setting UseSsl][]. |
 | |Thrown when the TLS/SSL certificate is expired on the [Host][] or is untrusted or invalid. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when a locally installed anti-virus software replaces the TLS/SSL certificate in order to scan web traffic. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when the CRL (Certificate Revocation List) server for the TLS/SSL certificate is down. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
-| |Thrown when the [Username][] and [Password][] in the [Credentials][] within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][] |
+| |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][] |
 | [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
 | [IOException][]                      |Thrown when the desired socket is held by another process - re-running the flow typically solves this. |
 | [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
-| |Thrown when the [Credentials][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
+| |Thrown when the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [Host][] in [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [Email Message][Email Message Property] is `null`. |
@@ -327,7 +354,47 @@ Outlook will display the email body as follows:
 
 For more information on how the body of an email will be displayed, see the help provided by the respective email client.
 
-### Should UseSsl be set to true or false?
+**TODO: REVIEW ALL SECTIONS ABOUT FILES**
+
+### Attachments
+
+#### Attachment size limit
+
+#### File Paths
+For information about the supported file path formats (i.e. absolute, relative, UNC etc.) and examples of each, please see File & Folder Paths.
+
+#### File Path needs escaping
+File Path requires \ characters to be escaped, otherwise each unescaped \ will be reported as an Invalid property value message when trying to debug the flow.
+
+Escaping can be done in two ways:
+
+Escaping the \ character with another \ character (e.g. "C:\\Windows\\System32\\cmd.exe"), or
+Prepending an @ character before the start of the File Path (e.g. @"C:\Windows\System32\cmd.exe")
+
+#### Null File Path
+If File Path is null the variable specified in the File Exists property will be set to false.
+
+#### Empty File Path
+If File Path is empty (i.e. "") the variable specified in the File Exists property will be set to false.
+
+#### Invalid File Path
+If File Path is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /) the variable specified in the File Exists property will be set to false.
+
+#### File Path points to a folder
+If File Path points to a folder, the variable specified in the File Exists property will be set to false.
+
+To check if a folder exists, use the Check Folder Exists block.
+
+#### File Path contains leading spaces
+If File Path contains leading spaces they are not removed; however, trailing spaces are removed.
+
+#### Error occurs whilst checking if the file exists
+If any error occurs whilst checking if a file exists at the specified File Path, the variable specified in the File Exists property will be set to false.
+
+#### User does not have necessary permissions to check if the file exists
+If the user the flow is executing as does not have permissions to check if a file exists at the specified File Path, the variable specified in the File Exists property will be set to false.
+
+### Setting UseSsl
 
 A [ServerDetails][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an [SMTP][] server. The value of the [UseSsl][] property inside this object depends on the [Host][] and [Port][] being connected to. There are two types of [SSL][]/[TLS][] connections that can occur:
 
@@ -341,7 +408,7 @@ The above two points correspond to the [UseSsl][] property being set to `true` a
 
 For more information, see [ServerDetails][].
 
-### Credentials
+### Setting Credentials
 
 A [UserCredentials][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an SMTP server. The value of the [Username][] property may be encrypted if a user wishes, however the [Password][] must be encrypted otherwise an exception will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
 
@@ -373,10 +440,9 @@ For information on how to open a connection, please see [Opening Sessions][].
 
 ### Known Limitations
 
-- This block cannot currently send emails if the [Credentials][] are `null`.
-- This block cannot currently send emails if the [Password][] in the [Credentials][] is empty or `null`.
+Currently unauthenticated [SMTP][] servers are not supported.
 
-These limitations may be removed in the future.
+This limitation may be removed in the future.
 
 [Email Message Property]: {{< ref "#email-message" >}}
 [Basic Email Session Details Property]: {{< ref "#basic-email-session-details" >}}
@@ -384,10 +450,11 @@ These limitations may be removed in the future.
 
 [How does Priority affect sending an email?]: {{< ref "#how-does-priority-affect-sending-an-email" >}}
 [How does BodyFormat affect sending an email?]: {{< ref "#how-does-bodyformat-affect-sending-an-email" >}}
-[Should UseSsl be set to true or false?]: {{< ref "#should-usessl-be-set-to-true-or-false" >}}
-[Credentials]: {{< ref "#credentials" >}}
+[Setting UseSsl]: {{< ref "#setting-usessl" >}}
+[Setting Credentials]: {{< ref "#setting-credentials" >}}
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
 [Closing Sessions]: {{< ref "#closing-sessions" >}}
+[Attachments Remarks]: {{< ref "#attachments" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
