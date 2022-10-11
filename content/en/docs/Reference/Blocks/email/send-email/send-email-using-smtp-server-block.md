@@ -56,7 +56,7 @@ An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient1
 
 ### Sending an email with a CC or BCC recipient
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc@outlook.com` and `bcc@outlook.com` as the CC and BCC recipients for the email respectively. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc@outlook.com` and `bcc@outlook.com` as the [CC][CC Glossary] and [BCC][BCC Glossary] recipients for the email respectively. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
@@ -68,13 +68,13 @@ This example will send an email from `sender@gmail.com` to `recipient@outlook.co
 
 #### Result
 
-An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`. Both `cc@outlook.com` and `bcc@outlook.com` will also recieve copies of the email as they are listed as CC and BCC recipients, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`. Both `cc@outlook.com` and `bcc@outlook.com` will also recieve copies of the email as they are listed as [CC][CC Glossary] and [BCC][BCC Glossary] recipients, and then the session is closed.
 
 ***
 
 ### Sending an email with multiple CC or BCC recipients
 
-This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the CC recipients and `bcc1@outlook.com` and `bcc2@outlook.com` as the BCC recipients for the email. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com` with `cc1@outlook.com` and `cc2@outlook.com` as the [CC][CC Glossary] recipients and `bcc1@outlook.com` and `bcc2@outlook.com` as the [BCC][BCC Glossary] recipients for the email. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 #### Properties
 
@@ -86,13 +86,13 @@ This example will send an email from `sender@gmail.com` to `recipient@outlook.co
 
 #### Result
 
-An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`. Both `cc1@outlook.com` and `cc2@outlook.com` will also recieve copies of the email as they are listed as CC recipients, and both `bcc1@outlook.com` and `bcc2@outlook.com` will recieve copies of the email as they are listed as BCC recipients. Finally, the session is closed.
+An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`. Both `cc1@outlook.com` and `cc2@outlook.com` will also recieve copies of the email as they are listed as [CC][CC Glossary] recipients, and both `bcc1@outlook.com` and `bcc2@outlook.com` will recieve copies of the email as they are listed as [BCC][BCC Glossary] recipients. Finally, the session is closed.
 
 ***
 
 ### Sending an email with a different priority
 
-This example will send an email with [Urgent][] priority from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with [Urgent][] priority from `sender@gmail.com` to `recipient@outlook.com`. For more information on the effect of changing the [Priority][] of the [Email Message][Email Message Property], see [How does Priority affect sending an email?][] The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 For more information on what priorities an email can be sent as, see [EmailMessagePriority][].
 
@@ -114,7 +114,7 @@ An email with [Urgent][] priority is sent from `sender@gmail.com` to `recipient@
 
 ### Sending an email with an HTML body
 
-This example will send an email with an [HTML][] body from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
+This example will send an email with an [HTML][] body from `sender@gmail.com` to `recipient@outlook.com`. For more information on the effect of changing the [BodyFormat][] of the [Email Message][Email Message Property], see [How does BodyFormat affect sending an email?][] The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` with [UseSsl][] set to `true` within the [Basic Email Session Details][Basic Email Session Details Property]. For more information on whether [UseSsl][] should be set to `true` or `false`, see [Should UseSsl be set to true or false?][]
 
 For more information on what other body types an email can be sent with, see [EmailMessageBodyFormat][].
 
@@ -315,13 +315,13 @@ For more information on how the priority of an email will be displayed, see the 
 
 ### How does BodyFormat affect sending an email?
 
-An email sent with a [HTML][] body will have its body displayed as an HTML page instead of as plain text. How the email looks in the email client may differ depending on the email client in use. For example, if the [Email Message][Email Message Property] has its [BodyFormat][] set to [HTML][] and the [Body][] has a value of:
+An email sent with an [HTML][] body will have its body displayed as an HTML page instead of as plain text. How the email looks in the email client may differ depending on the email client in use. For example, if the [Email Message][Email Message Property] has its [BodyFormat][] set to [HTML][] and the [Body][] has a value of:
 
 ```json
 "<h1>Example header text</h1>\n<p>Example paragraph text</p>"
 ```
 
-Outlook will display the email [Body][] as follows:
+Outlook will display the email body as follows:
 
 ![HTML email](/images/send-email-using-smtp-server-html-email.png)
 
@@ -382,6 +382,8 @@ These limitations may be removed in the future.
 [Basic Email Session Details Property]: {{< ref "#basic-email-session-details" >}}
 [Close Session Property]: {{< ref "#close-session" >}}
 
+[How does Priority affect sending an email?]: {{< ref "#how-does-priority-affect-sending-an-email" >}}
+[How does BodyFormat affect sending an email?]: {{< ref "#how-does-bodyformat-affect-sending-an-email" >}}
 [Should UseSsl be set to true or false?]: {{< ref "#should-usessl-be-set-to-true-or-false" >}}
 [Credentials]: {{< ref "#credentials" >}}
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
@@ -458,3 +460,5 @@ These limitations may be removed in the future.
 [SMTP]: {{< url "Cortex.Reference.Glossary.P-T.SMTP" >}}
 [SSL]: {{< url "Cortex.Reference.Glossary.P-T.SSL" >}}
 [TLS]: {{< url "Cortex.Reference.Glossary.P-T.TLS" >}}
+[BCC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.BCC" >}}
+[CC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.CC" >}}

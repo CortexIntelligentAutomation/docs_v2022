@@ -49,7 +49,7 @@ The `From` property is used to define who/where the email is from.
 
 ### Cc
 
-The `Cc` property is used to define the CC recipients for the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] in the list is a CC recipient of the email.
+The `Cc` property is used to define the [CC][CC Glossary] recipients for the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] in the list is a [CC][CC Glossary] recipient of the email.
 
 | | |
 |--------------------|---------------------------|
@@ -60,7 +60,7 @@ The `Cc` property is used to define the CC recipients for the email. It is a [IL
 
 ### Bcc
 
-The `Bcc` property is used to define the BCC recipients for the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] in the list is a BCC recipient of the email.
+The `Bcc` property is used to define the [BCC][BCC Glossary] recipients for the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] in the list is a [BCC][BCC Glossary] recipient of the email.
 
 | | |
 |--------------------|---------------------------|
@@ -192,3 +192,5 @@ In future this limitation may be removed.
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+[BCC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.BCC" >}}
+[CC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.CC" >}}

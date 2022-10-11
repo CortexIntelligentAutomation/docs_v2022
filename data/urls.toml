@@ -1295,9 +1295,11 @@
             [Cortex.Reference.Glossary.A-E]
                 MainDoc = "/docs/reference/glossary/a-e/"
                 Automation = "/docs/reference/glossary/a-e/#automation"
+                BCC = "/docs/reference/glossary/a-e/#bcc"
                 Block = "/docs/reference/glossary/a-e/#block"
                 BlockProperty = "/docs/reference/glossary/a-e/#block-property"
                 Boolean = "/docs/reference/glossary/a-e/#boolean"
+                CC = "/docs/reference/glossary/a-e/#cc"
                 Char = "/docs/reference/glossary/a-e/#char"
                 CSharp = "/docs/reference/glossary/a-e/#c-1"
                 CamelCase = "/docs/reference/glossary/a-e/#camelcase"
