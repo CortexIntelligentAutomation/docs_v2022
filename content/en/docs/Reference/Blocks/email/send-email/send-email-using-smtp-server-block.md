@@ -303,6 +303,8 @@ The exceptions thrown by the block can be found below:
 |--------------------------------------|-------------|
 | [ArgumentException][]                |Thrown when an invalid value is provided for the [BodyFormat][] in the [Email Message][Email Message Property].|
 | |Thrown when an invalid value is provided for the [Priority][] in the [Email Message][Email Message Property].|
+| |Thrown when an empty string is provided as a file path within [Attachments][] within the [Email Message][Email Message Property].|
+| [ArgumentNullException][]            |Thrown when `null` is provided as a file path within [Attachments][] within the [Email Message][Email Message Property].|
 | [EmailSessionException][]            |Thrown when an invalid [Port][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Port][].|
 | |Thrown when an invalid [Host][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
 | |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `false` with a [Port][] which requires it to be set to `true`. For more information, see [Setting UseSsl][]. |
@@ -313,6 +315,7 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][] |
 | [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
 | [IOException][]                      |Thrown when the desired socket is held by another process - re-running the flow typically solves this. |
+| |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains invalid characters.|
 | [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
@@ -326,7 +329,9 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty. |
 | [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is below 1 or above 65535. |
 | [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format.|
+| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit.|
 | [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property].|
+| |Thrown when a file path within the [Attachments][] property within [Email Message][Email Message Property] points to a folder.|
 
 For more information on the [EmailSessionException][] including error codes, see [EmailSessionException][].
 
@@ -360,17 +365,17 @@ Attachments can be sent in an email by providing a list of file paths in the [At
 
 #### Supported file paths
 
-Each file path provided in the [Attachments][] property of the [Email Message][Email Message Property] can be a:
+Each file path in the [Attachments][] within the [Email Message][Email Message Property] can be a:
 
 - Absolute file path
 - Relative file path
 - UNC file path
 
-For information about each of these supported file path formats, please see [File & Folder Paths][].
+For more information about each of these supported file path formats, please see [File & Folder Paths][].
 
 #### File paths need escaping
 
-Each file path provided in the [Attachments][] property of the [Email Message][Email Message Property] requires \ characters to be escaped, otherwise each unescaped \ will be reported as an Invalid property value message when trying to debug the flow.
+Each file path in the [Attachments][] within the [Email Message][Email Message Property] requires \ characters to be escaped, otherwise each unescaped \ will be reported as an Invalid property value message when trying to debug the flow.
 
 Escaping can be done in two ways:
 
@@ -379,31 +384,31 @@ Escaping can be done in two ways:
 
 #### Null file path
 
-If `null` is provided as a file path in the the list of [Attachments][] within the [Email Message][Email Message Property], an [ArgumentNullException][] is thrown.
+If `null` is provided as a file path in the [Attachments][] within the [Email Message][Email Message Property], an [ArgumentNullException][] is thrown.
 
 #### Empty file path
 
-If an empty string is provided as a file path in the the list of [Attachments][] within the [Email Message][Email Message Property], an [ArgumentException][] is thrown.
+If an empty string is provided as a file path in the the [Attachments][] within the [Email Message][Email Message Property], an [ArgumentException][] is thrown.
 
 #### Invalid file path
 
-If a provided file path in the the list of [Attachments][] within the [Email Message][Email Message Property] is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /), an [IOException][] will be thrown.
+If a file path in the [Attachments][] within the [Email Message][Email Message Property] is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /), an [IOException][] will be thrown.
 
 #### File path points to a folder
 
-If a provided file path in the the list of [Attachments][] within the [Email Message][Email Message Property] points to a folder, an [UnauthorizedAccessException][] will be thrown.
+If a file path in the [Attachments][] within the [Email Message][Email Message Property] points to a folder, an [UnauthorizedAccessException][] will be thrown.
 
 #### File path contains leading spaces
 
-If a provided file path in the the list of [Attachments][] within the [Email Message][Email Message Property] contains leading spaces they are not removed; however, trailing spaces are removed.
+If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains leading spaces they are not removed; however, trailing spaces are removed.
 
 #### User does not have necessary permissions to attach the file
 
-If the user the flow is executing as does not have permissions to access the file at the provided file path in the the list of [Attachments][] within the [Email Message][Email Message Property], an [UnauthorizedAccessException][] will be thrown.
+If the user the flow is executing as does not have permissions to access the file at the provided file path in the [Attachments][] within the [Email Message][Email Message Property], an [UnauthorizedAccessException][] will be thrown.
 
 #### Attachment size limit
 
-The combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] must be less than the limit specified by the email service provider. If the combined size of all of the attachments is greater than the limit, an [SmtpCommandException][] will be thrown.
+The combined size of all of the attachments in the [Attachments][] within the [Email Message][Email Message Property] must be less than the limit specified by the email service provider. If the combined size of all of the attachments is greater than the limit, an [SmtpCommandException][] will be thrown.
 
 For more information on the size limits for specific email service providers, see the help provided by the respective email service provider.
 
@@ -517,7 +522,6 @@ This limitation may be removed in the future.
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
 [Credentials Property]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.Credentials" >}}
 [ServerDetails Property]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.ServerDetails" >}}
-
 
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [Domain]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Domain" >}}
