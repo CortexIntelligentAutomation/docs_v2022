@@ -301,21 +301,22 @@ The exceptions thrown by the block can be found below:
 
 | Name                                 | Description |
 |--------------------------------------|-------------|
-| [ArgumentException][]                |Thrown when an invalid value is provided for the [BodyFormat][] in the [Email Message][Email Message Property].|
-| |Thrown when an invalid value is provided for the [Priority][] in the [Email Message][Email Message Property].|
-| |Thrown when an empty string is provided as a file path within [Attachments][] within the [Email Message][Email Message Property].|
-| [ArgumentNullException][]            |Thrown when `null` is provided as a file path within [Attachments][] within the [Email Message][Email Message Property].|
+| [ArgumentException][]                |Thrown when [BodyFormat][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessageBodyFormat][] values (e.g. `(EmailMessageBodyFormat)10`).|
+| |Thrown when [Priority][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessagePriority][] values (e.g. `(EmailMessagePriority)10`).|
+| |**TODO: [DONE]**Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`).|
+| [ArgumentNullException][]            |**TODO: [DONE]** Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is `null`.|
 | [EmailSessionException][]            |Thrown when an invalid [Port][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Port][].|
 | |Thrown when an invalid [Host][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
-| |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `false` with a [Port][] which requires it to be set to `true`. For more information, see [Setting UseSsl][]. |
-| |Thrown when a connection cannot be established - this is typically because of a mismatch in the [ServerDetails][] object within [Basic Email Session Details][Basic Email Session Details Property] when [UseSsl][] is set to `true` with a [Port][] which requires it to be set to `false`. For more information, see [Setting UseSsl][]. |
-| |Thrown when the TLS/SSL certificate is expired on the [Host][] or is untrusted or invalid. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
-| |Thrown when a locally installed anti-virus software replaces the TLS/SSL certificate in order to scan web traffic. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
-| |Thrown when the CRL (Certificate Revocation List) server for the TLS/SSL certificate is down. For more information, see [SSL Not Supported][].<br><br>Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
-| |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][] |
-| [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
-| [IOException][]                      |Thrown when the desired socket is held by another process - re-running the flow typically solves this. |
-| |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains invalid characters.|
+| |Thrown when a connection cannot be established; this typically occurs when [UseSsl][] within [Basic Email Session Details][Basic Email Session Details Property] is set to `false` with a [Port][] which requires it to be set to `true`. For more information, see [SSL Required][]. |
+| |Thrown when a connection cannot be established; this typically occurs when [UseSsl][] within [Basic Email Session Details][Basic Email Session Details Property] is set to `true` with a [Port][] which requires it to be set to `false`. For more information, see [SSL Not Supported][]. |
+| |Thrown when the [TLS][]/[SSL][] certificate has expired on the [Host][] or is untrusted or invalid. For more information, see [SSL Not Supported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when a locally installed anti-virus software replaces the [TLS][]/[SSL][] certificate in order to scan web traffic. For more information, see [SSL Not Supported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when the CRL (Certificate Revocation List) server for the [TLS][]/[SSL][] certificate is down. For more information, see [SSL Not Supported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][]. |
+| [FileNotFoundException][]            |**TODO: [DONE]** Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
+| [IOException][]                      |Thrown when the desired socket is held by another process; re-running the flow typically solves this. |
+| |**TODO: [DONE]** Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains leading spaces.|
+| |**TODO: [DONE]** Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains invalid characters (i.e. `"`, `*`, `?`, `\|`, `<`, `>`, `:`, `\`, `/`).|
 | [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
@@ -324,16 +325,14 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [To][] within [Email Message][Email Message Property] is `null`. |
 | |Thrown when the [From][] within [Email Message][Email Message Property] is `null`. |
 | |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is `null`. |
-| [PropertyEmptyException][]           |Thrown when the [Host][] in [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is empty. |
-| |Thrown when the [To][] within [Email Message][Email Message Property] is empty. |
-| |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty. |
-| [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is below 1 or above 65535. |
-| [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format.|
-| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit.|
+| [PropertyEmptyException][]           |Thrown when the [Host][] in [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is empty (i.e. `""`). |
+| |Thrown when the [To][] within [Email Message][Email Message Property] is empty (i.e. `[]`). |
+| |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty (i.e. `""`). |
+| [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is below `1` or above `65535`. For more information, see [Property Is Invalid][]. |
+| [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format ([RFC 5321][]).|
+| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit specified by the email service provider; for Outlook this is `20 MB` and for Gmail this is `25 MB`).|
 | [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property].|
 | |Thrown when a file path within the [Attachments][] property within [Email Message][Email Message Property] points to a folder.|
-
-For more information on the [EmailSessionException][] including error codes, see [EmailSessionException][].
 
 ## Remarks
 
@@ -363,9 +362,9 @@ For more information on how the body of an email will be displayed, see the help
 
 Attachments can be sent in an email by providing a list of file paths in the [Attachments][] property of the [Email Message][Email Message Property]. For more information concerning attaching files to an email, see the sections below.
 
-#### Supported file paths
+#### Supported file paths **TODO: [DONE]**
 
-Each file path in the [Attachments][] within the [Email Message][Email Message Property] can be a:
+Each file path in the [Attachments][] within the [Email Message][Email Message Property] can be an:
 
 - Absolute file path
 - Relative file path
@@ -373,7 +372,7 @@ Each file path in the [Attachments][] within the [Email Message][Email Message P
 
 For more information about each of these supported file path formats, please see [File & Folder Paths][].
 
-#### File paths need escaping
+#### File paths need escaping **TODO: [DONE]**
 
 Each file path in the [Attachments][] within the [Email Message][Email Message Property] requires \ characters to be escaped, otherwise each unescaped \ will be reported as an Invalid property value message when trying to debug the flow.
 
@@ -382,39 +381,39 @@ Escaping can be done in two ways:
 - Escaping the `\` character with another `\` character (e.g. `"C:\\Attachments\\attachment.txt"`), or
 - Prepending an `@` character before the start of the File Path (e.g. `@"C:\Attachments\attachment.txt"`)
 
-#### Null file path
+#### Null file path **TODO: [DONE]**
 
 If `null` is provided as a file path in the [Attachments][] within the [Email Message][Email Message Property], an [ArgumentNullException][] is thrown.
 
-#### Empty file path
+#### Empty file path **TODO: [DONE]**
 
 If an empty string is provided as a file path in the the [Attachments][] within the [Email Message][Email Message Property], an [ArgumentException][] is thrown.
 
-#### Invalid file path
+#### Invalid file path **TODO: [DONE]**
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /), an [IOException][] will be thrown.
 
-#### File path points to a folder
+#### File path points to a folder **TODO: [DONE]**
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] points to a folder, an [UnauthorizedAccessException][] will be thrown.
 
-#### File path contains leading spaces
+#### File path contains leading spaces **TODO: [DONE]**
 
-If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains leading spaces they are not removed; however, trailing spaces are removed.
+If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains leading spaces they are not removed and an [IOException][] will be thrown; however, trailing spaces are removed.
 
-#### User does not have necessary permissions to attach the file
+#### User does not have necessary permissions to attach the file **TODO: [DONE]**
 
 If the user the flow is executing as does not have permissions to access the file at the provided file path in the [Attachments][] within the [Email Message][Email Message Property], an [UnauthorizedAccessException][] will be thrown.
 
-#### Attachment size limit
+#### Attachment size limit **TODO: [DONE]**
 
-The combined size of all of the attachments in the [Attachments][] within the [Email Message][Email Message Property] must be less than the limit specified by the email service provider. If the combined size of all of the attachments is greater than the limit, an [SmtpCommandException][] will be thrown.
+The combined size of all the [Attachments][] within the [Email Message][Email Message Property] must be less than the limit specified by the email service provider. If the combined size of all of the attachments is greater than the limit, an [SmtpCommandException][] will be thrown.
 
-For more information on the size limits for specific email service providers, see the help provided by the respective email service provider.
+For Outlook this is `20 MB` and for Gmail this is `25 MB`, for more information on the size limits for other email service providers, see the help provided by the respective email service provider.
 
 ### Setting UseSsl
 
-A [ServerDetails][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an [SMTP][] server. The value of the [UseSsl][] property inside this object depends on the [Host][] and [Port][] being connected to. There are two types of [SSL][]/[TLS][] connections that can occur:
+The [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property] specifies which [SMTP][] server to connect to. The value of the [UseSsl][] property inside this object depends on the [Host][] and [Port][] being connected to. There are two types of [SSL][]/[TLS][] connections that can occur:
 
 - [SSL][]/[TLS][] is used as soon as a connection is established
 - [SSL][]/[TLS][] is used via the STARTTLS command if it is available
@@ -424,15 +423,13 @@ The above two points correspond to the [UseSsl][] property being set to `true` a
 - If the [Port][] being connected to is `465` then [UseSsl][] should be set to `true`
 - If the [Port][] being connected to is `25` or `567` then [UseSsl][] should be set to `false`
 
-For more information, see [ServerDetails][].
-
 ### Setting Credentials
 
-A [UserCredentials][] must be provided in the [Basic Email Session Details][Basic Email Session Details Property] in order to connect to an SMTP server. The value of the [Username][] property may be encrypted if a user wishes, however the [Password][] must be encrypted otherwise an exception will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
+**TODO: Add Exceptions section to the UserCredentials DataType**
 
-Note that the [UserCredentials][] object also contains a [Domain][] property which does not need to be specified for use in this block.
+The [UserCredentials][] within the [Basic Email Session Details][Basic Email Session Details Property] specifies what user to connect as on the [SMTP][] server. The value of the [Username][] property may optionally be encrypted, however the [Password][] must be encrypted otherwise an [UnencryptedTextException][] will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
 
-For more information, see [UserCredentials][].
+Note that the [UserCredentials][] object also contains a [Domain][] property which is ignored by this block.
 
 ### Opening Sessions
 
@@ -480,6 +477,7 @@ This limitation may be removed in the future.
 [EmailSessionException]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.MainDoc" >}}
 [Invalid Port]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidPort" >}}
 [Invalid Host]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidHost" >}}
+[SSL Required]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslRequired" >}}
 [SSL Not Supported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
 [Invalid Username and Password]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidUserCredentials" >}}
 [creating an EmailMessage using a constructor]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.CreateAnEmailMessage" >}}
@@ -492,9 +490,13 @@ This limitation may be removed in the future.
 [IOException]: {{< url "MSDocs.DotNet.Api.System.IO.IOException" >}}
 [PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
 [PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
+
 [PropertyValueOutOfRangeException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyValueOutOfRangeException.MainDoc" >}}
+[Property Is Invalid]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyValueOutOfRangeException.PropertyIsInvalid">}}
+
 [SmtpCommandException]: {{< url "MimeKit.Docs.SmtpCommandException" >}}
 [UnauthorizedAccessException]: {{< url "MSDocs.DotNet.Api.System.UnauthorizedAccessException" >}}
+[UnencryptedTextException]: {{< url "Cortex.Reference.Exceptions.Common.UnencryptedTextException.MainDoc" >}}
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
 [To]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.To" >}}
@@ -550,3 +552,4 @@ This limitation may be removed in the future.
 [TLS]: {{< url "Cortex.Reference.Glossary.P-T.TLS" >}}
 [BCC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.BCC" >}}
 [CC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.CC" >}}
+[RFC 5321]: {{< url "IETF.Email.RFC5321" >}}

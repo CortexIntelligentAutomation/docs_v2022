@@ -27,23 +27,25 @@ The `BasicEmailSessionDetails` data type is used to open and maintain a session 
 
 ### ServerDetails
 
-The [ServerDetails][] are used to configure the SMTP server host and port to connect to as well as whether the connection is SSL-wrapped or not.
+The ServerDetails are used to configure the [SMTP][] server [Host][] and [Port][] to connect to and whether or not to [UseSsl][]. The value of the [Host][] and [Port][] properties may be encrypted if a user wishes. For more information on how to encrypt these properties, see [EncryptedText][].
 
 | | |
 |--------------------|---------------------------|
 | Data Type | [ServerDetails][] |
-| Is Advanced | `false` |
+| Is [Advanced][] | `false` |
 | Default Editor | [Literal][] |
 | Default Value | [ServerDetails][] with value:<br>Host: `""`<br>Port: `465`<br>UseSsl: `true` |
 
 ### Credentials
 
-The Credentials are used for SMTP Authentication.
+The Credentials are used to configure the [Username][] and [Password][] to be used for [SMTP][] Authentication. The value of the [Username][] property may be encrypted if a user wishes, however the [Password][] must be encrypted otherwise an exception will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
+
+Note that the [UserCredentials][] object also contains a [Domain][] property which does not need to be specified for use with this data type.
 
 | | |
 |--------------------|---------------------------|
 | Data Type | [UserCredentials][] |
-| Is Advanced | `false` |
+| Is [Advanced][] | `false` |
 | Default Editor | [Literal][] |
 | Default Value | [UserCredentials][] with value:<br>Domain: `""`<br>Username: `""`<br>Password: `""` |
 
@@ -80,9 +82,11 @@ A `BasicEmailSessionDetails` can also be created using the Literal Editor by fil
 
 ### Known Limitations
 
-* Currently emails cannot be sent using this data type if credentials are not provided.
+* Currently this data type is not compatible for use with unauthenticated [SMTP][] servers.
 
-* Currently, if the `ToString()` method is used on a BasicEmailSessionDetails, then its Full Name will be returned; instead of a representation of the data within the BasicEmailSessionDetails. In future this limitation may be removed.
+* Currently, if the `ToString()` method is used on a `BasicEmailSessionDetails`, then its Full Name will be returned; instead of a representation of the data within the `BasicEmailSessionDetails`.
+
+These limitations may be removed in the future.
 
 ## See Also
 
@@ -98,9 +102,21 @@ A `BasicEmailSessionDetails` can also be created using the Literal Editor by fil
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+
+[EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
+
+[ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
+[Host]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
+[Port]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Port" >}}
+[UseSsl]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.UseSsl" >}}
 
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
-[ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
+[Domain]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Domain" >}}
+[Username]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
+[Password]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
 
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+
+[SMTP]: {{< url "Cortex.Reference.Glossary.P-T.SMTP" >}}
