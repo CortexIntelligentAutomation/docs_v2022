@@ -25,9 +25,9 @@ The `BasicEmailSessionDetails` data type is used to open and maintain a session 
 
 ## Properties
 
-### Server Details
+### ServerDetails
 
-The Server Details are used to configure the SMTP server host and port to connect to as well as whether the connection is SSL-wrapped or not.
+The [ServerDetails][] are used to configure the SMTP server host and port to connect to as well as whether the connection is SSL-wrapped or not.
 
 | | |
 |--------------------|---------------------------|
@@ -67,7 +67,7 @@ A `BasicEmailSessionDetails` can also be created using the Literal Editor by fil
 
 | Property | Data Type | Example | Notes |
 |-|-|-|-|
-| `ServerDetails` | `ServerDetails` | Host: `host`<br>Port: `587`<br>UseSsl: `false` | The [Server Details][Server Details Property] that are used to connect to the server. |
+| `ServerDetails` | `ServerDetails` | Host: `host`<br>Port: `587`<br>UseSsl: `false` | The [ServerDetails][ServerDetails Property] that are used to connect to the server. |
 | `Credentials` | `UserCredentials` | Domain: `"domain"`<br>Username: `"username"`<br>Password: `"encryptedPassword"` | The [Credentials][Credentials Property] that are used for authentication on the server. |
 
 ### Convert BasicEmailSessionDetails to Text
@@ -91,7 +91,7 @@ A `BasicEmailSessionDetails` can also be created using the Literal Editor by fil
 * [UserCredentials][]
 * [ServerDetails][]
 
-[Server Details Property]: {{< ref "#server-details" >}}
+[ServerDetails Property]: {{< ref "#serverdetails" >}}
 [Credentials Property]: {{< ref "#credentials" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}

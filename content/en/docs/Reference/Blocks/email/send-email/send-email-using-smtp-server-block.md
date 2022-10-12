@@ -266,8 +266,8 @@ For more detailed information on each of the properties, see [EmailMessage][].
 
 The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to open and maintain a session with an [SMTP][] server, including:
 
-- [ServerDetails][] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
-- [UserCredentials][] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Username][] and [Password][] to be used for authentication. For more information, see [Setting Credentials][].
+- [ServerDetails][ServerDetails Property] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
+- [Credentials][Credentials Property] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Username][] and [Password][] to be used for authentication. For more information, see [Setting Credentials][].
 
 If the [Close Session][Close Session Property] property is set to `false`, then the session will be kept open and can be used in subsequent Send Email Using SMTP Server blocks which improves performance, see [Opening Sessions][] for more information.
 
@@ -354,45 +354,58 @@ Outlook will display the email body as follows:
 
 For more information on how the body of an email will be displayed, see the help provided by the respective email client.
 
-**TODO: REVIEW ALL SECTIONS ABOUT FILES**
-
 ### Attachments
 
-#### Attachment size limit
+Attachments can be sent in an email by providing a list of file paths in the [Attachments][] property of the [Email Message][Email Message Property]. For more information concerning attaching files to an email, see the sections below.
 
-#### File Paths
-For information about the supported file path formats (i.e. absolute, relative, UNC etc.) and examples of each, please see File & Folder Paths.
+#### Supported file paths
 
-#### File Path needs escaping
-File Path requires \ characters to be escaped, otherwise each unescaped \ will be reported as an Invalid property value message when trying to debug the flow.
+Each file path provided in the [Attachments][] property of the [Email Message][Email Message Property] can be a:
+
+- Absolute file path
+- Relative file path
+- UNC file path
+
+For information about each of these supported file path formats, please see [File & Folder Paths][].
+
+#### File paths need escaping
+
+Each file path provided in the [Attachments][] property of the [Email Message][Email Message Property] requires \ characters to be escaped, otherwise each unescaped \ will be reported as an Invalid property value message when trying to debug the flow.
 
 Escaping can be done in two ways:
 
-Escaping the \ character with another \ character (e.g. "C:\\Windows\\System32\\cmd.exe"), or
-Prepending an @ character before the start of the File Path (e.g. @"C:\Windows\System32\cmd.exe")
+- Escaping the `\` character with another `\` character (e.g. `"C:\\Attachments\\attachment.txt"`), or
+- Prepending an `@` character before the start of the File Path (e.g. `@"C:\Attachments\attachment.txt"`)
 
-#### Null File Path
-If File Path is null the variable specified in the File Exists property will be set to false.
+#### Null file path
 
-#### Empty File Path
-If File Path is empty (i.e. "") the variable specified in the File Exists property will be set to false.
+If `null` is provided as a file path in the the list of [Attachments][] within the [Email Message][Email Message Property], an [ArgumentNullException][] is thrown.
 
-#### Invalid File Path
-If File Path is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /) the variable specified in the File Exists property will be set to false.
+#### Empty file path
 
-#### File Path points to a folder
-If File Path points to a folder, the variable specified in the File Exists property will be set to false.
+If an empty string is provided as a file path in the the list of [Attachments][] within the [Email Message][Email Message Property], an [ArgumentException][] is thrown.
 
-To check if a folder exists, use the Check Folder Exists block.
+#### Invalid file path
 
-#### File Path contains leading spaces
-If File Path contains leading spaces they are not removed; however, trailing spaces are removed.
+If a provided file path in the the list of [Attachments][] within the [Email Message][Email Message Property] is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /), an [IOException][] will be thrown.
 
-#### Error occurs whilst checking if the file exists
-If any error occurs whilst checking if a file exists at the specified File Path, the variable specified in the File Exists property will be set to false.
+#### File path points to a folder
 
-#### User does not have necessary permissions to check if the file exists
-If the user the flow is executing as does not have permissions to check if a file exists at the specified File Path, the variable specified in the File Exists property will be set to false.
+If a provided file path in the the list of [Attachments][] within the [Email Message][Email Message Property] points to a folder, an [UnauthorizedAccessException][] will be thrown.
+
+#### File path contains leading spaces
+
+If a provided file path in the the list of [Attachments][] within the [Email Message][Email Message Property] contains leading spaces they are not removed; however, trailing spaces are removed.
+
+#### User does not have necessary permissions to attach the file
+
+If the user the flow is executing as does not have permissions to access the file at the provided file path in the the list of [Attachments][] within the [Email Message][Email Message Property], an [UnauthorizedAccessException][] will be thrown.
+
+#### Attachment size limit
+
+The combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] must be less than the limit specified by the email service provider. If the combined size of all of the attachments is greater than the limit, an [SmtpCommandException][] will be thrown.
+
+For more information on the size limits for specific email service providers, see the help provided by the respective email service provider.
 
 ### Setting UseSsl
 
@@ -469,6 +482,7 @@ This limitation may be removed in the future.
 [EmailSessionErrorCode Limitations]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.Limitations" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
+[ArgumentNullException]: {{< url "MSDocs.DotNet.Api.System.ArgumentNullException" >}}
 [FileNotFoundException]: {{< url "MSDocs.DotNet.Api.System.IO.FileNotFoundException" >}}
 [IOException]: {{< url "MSDocs.DotNet.Api.System.IO.IOException" >}}
 [PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
@@ -501,6 +515,9 @@ This limitation may be removed in the future.
 [Text]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
 
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
+[Credentials Property]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.Credentials" >}}
+[ServerDetails Property]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.ServerDetails" >}}
+
 
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [Domain]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Domain" >}}
@@ -520,8 +537,8 @@ This limitation may be removed in the future.
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
 
 [Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
-
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[File & Folder Paths]: {{< url "Cortex.Reference.Concepts.WorkingWith.FilesAndFolders.Paths.MainDoc" >}}
 
 [SASL]: {{< url "Cortex.Reference.Glossary.P-T.SASL" >}}
 [SMTP]: {{< url "Cortex.Reference.Glossary.P-T.SMTP" >}}
