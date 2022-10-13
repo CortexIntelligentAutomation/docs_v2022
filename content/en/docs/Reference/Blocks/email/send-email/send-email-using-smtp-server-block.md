@@ -406,9 +406,9 @@ If a file path in the [Attachments][] within the [Email Message][Email Message P
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains leading spaces they are not removed and an [IOException][] will be thrown; however, trailing spaces are removed.
 
-#### File path contains only whitespace **TODO**
+#### File path contains only whitespace or the NUL character **TODO**
 
-If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains only whitespace, an [ArgumentException][] will be thrown.
+If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains only whitespace (i.e. `"  "`) or the NUL character (i.e. `\0`), an [ArgumentException][] will be thrown.
 
 #### File path exceeds the system-defined maximum length **TODO**
 
@@ -442,7 +442,7 @@ The [UserCredentials][] within the [Basic Email Session Details][Basic Email Ses
 
 Note that the [UserCredentials][] object also contains a [Domain][] property which is ignored by this block.
 
-**TODO: WE ARE HERE IN DOC REVIEW**
+**TODO: WE ARE HERE IN DOC REVIEW, ALSO CHECK THE TODOS IN THE EXCEPTIONS TABLE**
 
 ### Opening Sessions
 
