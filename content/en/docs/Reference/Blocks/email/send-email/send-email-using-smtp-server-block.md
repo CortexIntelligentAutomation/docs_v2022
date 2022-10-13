@@ -303,8 +303,8 @@ The exceptions thrown by the block can be found below:
 |--------------------------------------|-------------|
 | [ArgumentException][]                |Thrown when [BodyFormat][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessageBodyFormat][] values (e.g. `(EmailMessageBodyFormat)10`).|
 | |Thrown when [Priority][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessagePriority][] values (e.g. `(EmailMessagePriority)10`).|
-| |**TODO: [DONE]** Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`).|
-| [ArgumentNullException][]            |**TODO: [DONE]** Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is `null`.|
+| |**TODO** Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`), contains only whitespace (i.e. `"   "`) or contains the NUL character (i.e. `\0`).|
+| [ArgumentNullException][]            |Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is `null`.|
 | [EmailSessionException][]            |Thrown when an invalid [Port][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Port][].|
 | |Thrown when an invalid [Host][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
 | |Thrown when a connection cannot be established; this typically occurs when [UseSsl][] within [Basic Email Session Details][Basic Email Session Details Property] is set to `false` with a [Port][] which requires it to be set to `true`. For more information, see [SSL Required][]. |
@@ -313,10 +313,11 @@ The exceptions thrown by the block can be found below:
 | |Thrown when a locally installed anti-virus software replaces the [TLS][]/[SSL][] certificate in order to scan web traffic. For more information, see [SSL Not Supported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when the [CRL][] (Certificate Revocation List) server for the [TLS][]/[SSL][] certificate is down. For more information, see [SSL Not Supported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][]. |
-| [FileNotFoundException][]            |**TODO: [DONE]** Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
+| [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
 | [IOException][]                      |Thrown when the desired socket is held by another process; re-running the flow typically solves this. |
-| |**TODO: [DONE]** Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains leading spaces.|
-| |**TODO: [DONE]** Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains invalid characters (i.e. `"`, `*`, `?`, `\|`, `<`, `>`, `:`, `\`, `/`).|
+| |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains leading spaces.|
+| |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains invalid characters (i.e. `"`, `*`, `?`, `\|`, `<`, `>`, `:`, `\`, `/`).|
+| [PathTooLongException][]             |**TODO** Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] exceeds the system-defined maximum length (typically 32,767).|
 | [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
@@ -362,7 +363,7 @@ For more information on how the body of an email will be displayed, see the help
 
 Attachments can be sent in an email by providing a list of file paths in the [Attachments][] property of the [Email Message][Email Message Property]. For more information concerning attaching files to an email, see the sections below.
 
-#### Supported file paths **TODO: [DONE]**
+#### Supported file paths
 
 Each file path in the [Attachments][] within the [Email Message][Email Message Property] can be an:
 
@@ -372,7 +373,7 @@ Each file path in the [Attachments][] within the [Email Message][Email Message P
 
 For more information about each of these supported file path formats, please see [File & Folder Paths][].
 
-#### File paths need escaping **TODO: [DONE]**
+#### File paths need escaping
 
 Each file path in the [Attachments][] within the [Email Message][Email Message Property] requires \ characters to be escaped, otherwise each unescaped \ will be reported as an Invalid property value message when trying to debug the flow.
 
@@ -381,31 +382,43 @@ Escaping can be done in two ways:
 - Escaping the `\` character with another `\` character (e.g. `"C:\\Attachments\\attachment.txt"`), or
 - Prepending an `@` character before the start of the File Path (e.g. `@"C:\Attachments\attachment.txt"`)
 
-#### Null file path **TODO: [DONE]**
+#### Null file path
 
 If `null` is provided as a file path in the [Attachments][] within the [Email Message][Email Message Property], an [ArgumentNullException][] is thrown.
 
-#### Empty file path **TODO: [DONE]**
+#### Empty file path
 
 If an empty string is provided as a file path in the the [Attachments][] within the [Email Message][Email Message Property], an [ArgumentException][] is thrown.
 
-#### Invalid file path **TODO: [DONE]**
+#### File path does not exist **TODO**
+
+If a file path in the [Attachments][] within the [Email Message][Email Message Property] does not exist, a [FileNotFoundException][] is thrown.
+
+#### Invalid file path
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /), an [IOException][] will be thrown.
 
-#### File path points to a folder **TODO: [DONE]**
+#### File path points to a folder
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] points to a folder, an [UnauthorizedAccessException][] will be thrown.
 
-#### File path contains leading spaces **TODO: [DONE]**
+#### File path contains leading spaces
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains leading spaces they are not removed and an [IOException][] will be thrown; however, trailing spaces are removed.
 
-#### User does not have necessary permissions to attach the file **TODO: [DONE]**
+#### File path contains only whitespace **TODO**
+
+If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains only whitespace, an [ArgumentException][] will be thrown.
+
+#### File path exceeds the system-defined maximum length **TODO**
+
+If a file path in the [Attachments][] within the [Email Message][Email Message Property] exceeds the system-defined maximum length (typically 32,767), a [PathTooLongException][] will be thrown.
+
+#### User does not have necessary permissions to attach the file
 
 If the user the flow is executing as does not have permissions to access the file at the provided file path in the [Attachments][] within the [Email Message][Email Message Property], an [UnauthorizedAccessException][] will be thrown.
 
-#### Attachment size limit **TODO: [DONE]**
+#### Attachment size limit
 
 The combined size of all the [Attachments][] within the [Email Message][Email Message Property] must be less than the limit specified by the email service provider. If the combined size of all of the attachments is greater than the limit, an [SmtpCommandException][] will be thrown.
 
@@ -490,6 +503,7 @@ This limitation may be removed in the future.
 [ArgumentNullException]: {{< url "MSDocs.DotNet.Api.System.ArgumentNullException" >}}
 [FileNotFoundException]: {{< url "MSDocs.DotNet.Api.System.IO.FileNotFoundException" >}}
 [IOException]: {{< url "MSDocs.DotNet.Api.System.IO.IOException" >}}
+[PathTooLongException]: {{< url "MSDocs.DotNet.Api.System.IO.PathTooLongException" >}}
 [PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
 [PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
 

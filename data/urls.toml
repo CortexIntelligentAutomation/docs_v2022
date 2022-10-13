@@ -1613,6 +1613,7 @@
         [MSDocs.DotNet.Api.System.IO]
             FileNotFoundException = "https://learn.microsoft.com/en-us/dotnet/api/system.io.filenotfoundexception"
             IOException = "https://learn.microsoft.com/en-us/dotnet/api/system.io.ioexception"
+            PathTooLongException = "https://docs.microsoft.com/en-us/dotnet/api/system.io.pathtoolongexception"
         [MSDocs.DotNet.Api.System.Object]
             MainDoc = "https://docs.microsoft.com/en-us/dotnet/api/system.object"
             ToString = "https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring"
