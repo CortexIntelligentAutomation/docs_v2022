@@ -173,6 +173,10 @@ The current culture used by the executing thread; it determines the default form
 
 For more detailed information about Culture, see [Working With > Current Culture][].
 
+### CRL
+
+Certificate Revocation List (CRL) is a list of certificates that have been revoked by the issuing certificate authority prior to their actual/assigned expiration date. It is essentially a blacklist of certificates that should no longer be trusted.
+
 ## D
 
 ### Data Type

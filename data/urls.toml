@@ -1311,6 +1311,7 @@
                 Code = "/docs/reference/glossary/a-e/#code"
                 Cortex = "/docs/reference/glossary/a-e/#cortex"
                 CortexStudio = "/docs/reference/glossary/a-e/#cortex-studio"
+                CRL = "/docs/reference/glossary/a-e/#crl"
                 DataType = "/docs/reference/glossary/a-e/#data-type"
                 Developer = "/docs/reference/glossary/a-e/#developer"
                 Dictionary = "/docs/reference/glossary/a-e/#dictionary"
@@ -1327,6 +1328,7 @@
                 FlowDeveloper = "/docs/reference/glossary/f-j/#flow-developer"
                 FunctionalBlock = "/docs/reference/glossary/f-j/#functional-block"
                 GUI = "/docs/reference/glossary/f-j/#gui"
+                Gmail = "/docs/reference/glossary/f-j/#gmail"
                 Heterogenous = "/docs/reference/glossary/f-j/#heterogenous"
                 Homogenous = "/docs/reference/glossary/f-j/#homogenous"
                 Initialised = "/docs/reference/glossary/f-j/#initialised"
@@ -1349,6 +1351,7 @@
                 Null = "/docs/reference/glossary/k-o/#null"
                 Operand = "/docs/reference/glossary/k-o/#operand"
                 Operator = "/docs/reference/glossary/k-o/#operator"
+                Outlook = "/docs/reference/glossary/k-o/#outlook"
             [Cortex.Reference.Glossary.P-T]
                 MainDoc = "/docs/reference/glossary/p-t/"
                 PascalCase = "/docs/reference/glossary/p-t/#pascalcase"

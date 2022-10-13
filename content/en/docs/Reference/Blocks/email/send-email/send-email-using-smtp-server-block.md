@@ -303,7 +303,7 @@ The exceptions thrown by the block can be found below:
 |--------------------------------------|-------------|
 | [ArgumentException][]                |Thrown when [BodyFormat][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessageBodyFormat][] values (e.g. `(EmailMessageBodyFormat)10`).|
 | |Thrown when [Priority][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessagePriority][] values (e.g. `(EmailMessagePriority)10`).|
-| |**TODO: [DONE]**Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`).|
+| |**TODO: [DONE]** Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`).|
 | [ArgumentNullException][]            |**TODO: [DONE]** Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is `null`.|
 | [EmailSessionException][]            |Thrown when an invalid [Port][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Port][].|
 | |Thrown when an invalid [Host][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
@@ -311,7 +311,7 @@ The exceptions thrown by the block can be found below:
 | |Thrown when a connection cannot be established; this typically occurs when [UseSsl][] within [Basic Email Session Details][Basic Email Session Details Property] is set to `true` with a [Port][] which requires it to be set to `false`. For more information, see [SSL Not Supported][]. |
 | |Thrown when the [TLS][]/[SSL][] certificate has expired on the [Host][] or is untrusted or invalid. For more information, see [SSL Not Supported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when a locally installed anti-virus software replaces the [TLS][]/[SSL][] certificate in order to scan web traffic. For more information, see [SSL Not Supported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
-| |Thrown when the CRL (Certificate Revocation List) server for the [TLS][]/[SSL][] certificate is down. For more information, see [SSL Not Supported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when the [CRL][] (Certificate Revocation List) server for the [TLS][]/[SSL][] certificate is down. For more information, see [SSL Not Supported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is incorrect. For more information, see [Invalid Username and Password][]. |
 | [FileNotFoundException][]            |**TODO: [DONE]** Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
 | [IOException][]                      |Thrown when the desired socket is held by another process; re-running the flow typically solves this. |
@@ -330,7 +330,7 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty (i.e. `""`). |
 | [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is below `1` or above `65535`. For more information, see [Property Is Invalid][]. |
 | [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format ([RFC 5321][]).|
-| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit specified by the email service provider; for Outlook this is `20 MB` and for Gmail this is `25 MB`).|
+| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit specified by the email service provider; for [Outlook][] this is `20 MB` and for [Gmail][] this is `25 MB`).|
 | [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property].|
 | |Thrown when a file path within the [Attachments][] property within [Email Message][Email Message Property] points to a folder.|
 
@@ -338,7 +338,7 @@ The exceptions thrown by the block can be found below:
 
 ### How does Priority affect sending an email?
 
-An email sent with [Urgent][] or [NonUrgent][] priority will have its priority displayed differently depending on the email client. For example, Outlook displays an email that has an [Urgent][] priority with a red exclamation mark like so:
+An email sent with [Urgent][] or [NonUrgent][] priority will have its priority displayed differently depending on the email client. For example, [Outlook][] displays an email that has an [Urgent][] priority with a red exclamation mark like so:
 
 ![Important email](/images/send-email-using-smtp-server-important-email.png)
 
@@ -352,7 +352,7 @@ An email sent with an [HTML][] body will have its body displayed as an HTML page
 "<h1>Example header text</h1>\n<p>Example paragraph text</p>"
 ```
 
-Outlook will display the email body as follows:
+[Outlook][] will display the email body as follows:
 
 ![HTML email](/images/send-email-using-smtp-server-html-email.png)
 
@@ -409,7 +409,7 @@ If the user the flow is executing as does not have permissions to access the fil
 
 The combined size of all the [Attachments][] within the [Email Message][Email Message Property] must be less than the limit specified by the email service provider. If the combined size of all of the attachments is greater than the limit, an [SmtpCommandException][] will be thrown.
 
-For Outlook this is `20 MB` and for Gmail this is `25 MB`, for more information on the size limits for other email service providers, see the help provided by the respective email service provider.
+For [Outlook][] this is `20 MB` and for [Gmail][] this is `25 MB`, for more information on the size limits for other email service providers, see the help provided by the respective email service provider.
 
 ### Setting UseSsl
 
@@ -430,6 +430,8 @@ The above two points correspond to the [UseSsl][] property being set to `true` a
 The [UserCredentials][] within the [Basic Email Session Details][Basic Email Session Details Property] specifies what user to connect as on the [SMTP][] server. The value of the [Username][] property may optionally be encrypted, however the [Password][] must be encrypted otherwise an [UnencryptedTextException][] will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
 
 Note that the [UserCredentials][] object also contains a [Domain][] property which is ignored by this block.
+
+**TODO: WE ARE HERE IN DOC REVIEW**
 
 ### Opening Sessions
 
@@ -552,4 +554,7 @@ This limitation may be removed in the future.
 [TLS]: {{< url "Cortex.Reference.Glossary.P-T.TLS" >}}
 [BCC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.BCC" >}}
 [CC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.CC" >}}
+[CRL]: {{< url "Cortex.Reference.Glossary.A-E.CRL" >}}
+[Gmail]: {{< url "Cortex.Reference.Glossary.F-J.Gmail" >}}
+[Outlook]: {{< url "Cortex.Reference.Glossary.K-O.Outlook" >}}
 [RFC 5321]: {{< url "IETF.Email.RFC5321" >}}
