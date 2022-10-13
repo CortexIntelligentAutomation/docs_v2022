@@ -27,7 +27,7 @@ The `BasicEmailSessionDetails` data type is used to open and maintain a session 
 
 ### ServerDetails
 
-The ServerDetails are used to configure the [SMTP][] server [Host][] and [Port][] to connect to and whether or not to [UseSsl][]. The value of the [Host][] and [Port][] properties may be encrypted if a user wishes. For more information on how to encrypt these properties, see [EncryptedText][].
+The ServerDetails are used to configure the [SMTP][] server [Host][] and [Port][] to connect to and whether or not to [UseSsl][]. The value of the [Host][] property may optionally be encrypted, for more information on how to encrypt this property, see [EncryptableText][].
 
 | | |
 |--------------------|---------------------------|
@@ -38,9 +38,9 @@ The ServerDetails are used to configure the [SMTP][] server [Host][] and [Port][
 
 ### Credentials
 
-The Credentials are used to configure the [Username][] and [Password][] to be used for [SMTP][] Authentication. The value of the [Username][] property may be encrypted if a user wishes, however the [Password][] must be encrypted otherwise an exception will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
+The Credentials are used to configure the [Username][] and [Password][] to be used for [SMTP][] Authentication. The value of the [Username][] property may optionally be encrypted, however the [Password][] must be encrypted otherwise an [UnencryptedTextException][] will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
 
-Note that the [UserCredentials][] object also contains a [Domain][] property which does not need to be specified for use with this data type.
+Note that the [UserCredentials][] object also contains a [Domain][] property which is ignored by this data type.
 
 | | |
 |--------------------|---------------------------|
@@ -57,7 +57,7 @@ The following table shows some of the ways that `BasicEmailSessionDetails` can b
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `BasicEmailSessionDetails` constructor | `new BasicEmailSessionDetails(serverDetails: new ServerDetails("host", 587, false), credentials: new UserCredentials("username", "encryptedPassword"))` | `{"ServerDetails": {"Host": "host", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "username", "Password": "encryptedPassword"}}` | Expression | N/A |
+| Use a `BasicEmailSessionDetails` constructor | `new BasicEmailSessionDetails(serverDetails: new ServerDetails("host", 587, false), credentials: new UserCredentials("username", "encryptedPassword"))` | `{"ServerDetails": {"Host": "host", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "username", "Password": "encryptedPassword"}}` | Expression | The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the [Password][], see [EncryptedText][]. |
 
 ### Property Editor Support
 
@@ -76,13 +76,13 @@ A `BasicEmailSessionDetails` can also be created using the Literal Editor by fil
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use `ToString` | `($)BasicEmailSessionDetails.ToString()` | `"Cortex.DataTypes.Email.BasicEmailSessionDetails"` | Expression | ToString will return the Full Name of the BasicEmailSessionDetails Data Type |
+| Use `ToString` | `($)BasicEmailSessionDetails.ToString()` | `"Cortex.DataTypes.Email.BasicEmailSessionDetails"` | Expression | ToString will return the Full Name of the BasicEmailSessionDetails data type |
 | Use `Convert Object To Text` block | where `Object` property has a value of `{"ServerDetails": {"Host": "host", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "username", "Password": "encryptedPassword"}}` | `"Cortex.DataTypes.Email.BasicEmailSessionDetails"` | N/A  | See [Convert Object To Text][] |
 | Use `Convert Object To Json` block | where `Object` property has a value of `{"ServerDetails": {"Host": "host", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "username", "Password": "encryptedPassword"}}` | `"{\r\n  \"ServerDetails\": {\r\n    \"Host\": \"host\",\r\n    \"Port\": 587,\r\n    \"UseSsl\": false\r\n  },\r\n  \"Credentials\": {\r\n    \"Domain\": null,\r\n    \"Username\": \"username\",\r\n    \"Password\": \"encryptedPassword\"\r\n  }\r\n}"` | N/A  | See [Convert Object To Json][] |
 
 ### Known Limitations
 
-* Currently this data type is not compatible for use with unauthenticated [SMTP][] servers.
+* Currently, this data type is not compatible for use with unauthenticated [SMTP][] servers.
 
 * Currently, if the `ToString()` method is used on a `BasicEmailSessionDetails`, then its Full Name will be returned; instead of a representation of the data within the `BasicEmailSessionDetails`.
 
@@ -104,7 +104,9 @@ These limitations may be removed in the future.
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 
+[EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 [EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
+[UnencryptedTextException]: {{< url "Cortex.Reference.Exceptions.Common.UnencryptedTextException.MainDoc" >}}
 
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
 [Host]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}

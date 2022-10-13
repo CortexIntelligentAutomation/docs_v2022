@@ -27,7 +27,7 @@ The `ServerDetails` data type is used to establish and maintain a session/connec
 
 ### Host
 
-The Host is used to define the server address with which a session/connection should be opened.
+The Host is used to define the server address with which a session/connection should be opened. The value of this property may optionally be encrypted, for more information on how to encrypt this property, see [EncryptableText][].
 
 | | |
 |--------------------|---------------------------|
@@ -49,7 +49,9 @@ The Port is used to define the server port with which a session/connection shoul
 
 ### UseSsl
 
-UseSsl is used to define whether or not the connection should be SSL-wrapped or not. Setting this to `false` does not necessarily mean that SSL will not be used, if the server supports the STARTTLS extension, SSL may still be used.
+UseSsl is used to define whether or not [SSL][] should be used.
+
+When using this data type with [Send Email Using SMTP Server Block][], the value of this property depends on the [Port][Port Property]. For more information, see [Setting UseSsl for the Send Email Using SMTP Server block][].
 
 | | |
 |--------------------|---------------------------|
@@ -84,15 +86,27 @@ A `ServerDetails` can also be created using the Literal Editor by filling in the
 | Use `Convert Object To Text` block | where `Object` property has a value of `{"Host": "host", "Port": 465, "UseSsl": true}` | `"Cortex.DataTypes.SessionDetails.ServerDetails"` | N/A  | See [Convert Object To Text][] |
 | Use `Convert Object To Json` block | where `Object` property has a value of `{"Host": "host", "Port": 465, "UseSsl": true}` | `"{\r\n  \"Host\": \"host\",\r\n  \"Port\": 465,\r\n  \"UseSsl\": true\r\n}"` | N/A  | See [Convert Object To Json][] |
 
+### Setting UseSsl for the Send Email Using SMTP Server block
+
+The value of the [UseSsl][UseSsl Property] property depends on the [Host][Host Property] and [Port][Port Property] being connected to. There are two types of [SSL][]/[TLS][] connections that can occur:
+
+- [SSL][]/[TLS][] is used as soon as a connection is established
+- [SSL][]/[TLS][] is used via the STARTTLS command if it is available
+
+The above two points correspond to the [UseSsl][UseSsl Property] property being set to `true` and `false` respectively. As such, generally the following rules can be followed to determine whether [UseSsl][UseSsl Property] should be set to `true` or `false`:
+
+- If the [Port][Port Property] being connected to is `465` then [UseSsl][UseSsl Property] should be set to `true`
+- If the [Port][Port Property] being connected to is `25` or `567` then [UseSsl][UseSsl Property] should be set to `false`
+
 ### Property Editor Support
 
-* The Expression Editor is available for [Input][] properties where the data type is `ServerDetails`.
-* The Literal Editor is available for [Input][] properties where the data type is `ServerDetails`.
-* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `ServerDetails`.
+- The Expression Editor is available for [Input][] properties where the data type is `ServerDetails`.
+- The Literal Editor is available for [Input][] properties where the data type is `ServerDetails`.
+- The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `ServerDetails`.
   
 ### Known Limitations
 
-Currently, if the `ToString()` method is used on a ServerDetails, then its Full Name will be returned; instead of a representation of the data within the ServerDetails.
+Currently, if the `ToString()` method is used on a `ServerDetails`, then its Full Name will be returned; instead of a representation of the data within the `ServerDetails`.
 
 In future this limitation may be removed.
 
@@ -100,11 +114,13 @@ In future this limitation may be removed.
 
 ### Related Data Types
 
-* [BasicEmailSessionDetails][]
-* [EncryptableText][]
+- [BasicEmailSessionDetails][]
+- [EncryptableText][]
 
 [Host Property]: {{< ref "#host" >}}
 [Port Property]: {{< ref "#port" >}}
+[UseSsl Property]: {{< ref "#usessl" >}}
+[Setting UseSsl for the Send Email Using SMTP Server block]: {{< ref "#setting-usessl-for-the-send-email-using-smtp-server-block" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
@@ -113,10 +129,13 @@ In future this limitation may be removed.
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
 
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
-
+[Send Email Using SMTP Server Block]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.MainDoc" >}}
 [EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 [Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
 
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+
+[SSL]: {{< url "Cortex.Reference.Glossary.P-T.SSL" >}}
+[TLS]: {{< url "Cortex.Reference.Glossary.P-T.TLS" >}}

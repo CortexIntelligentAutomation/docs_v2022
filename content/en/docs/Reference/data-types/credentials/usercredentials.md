@@ -4,7 +4,6 @@ linkTitle: "UserCredentials"
 description: "The data type representing configuration for authentication when establishing a connection with a server."
 ---
 
-
 # {{% param title %}}
 
 <p class="namespace">(Cortex.DataTypes.Credentials.UserCredentials)</p>
@@ -28,7 +27,7 @@ The `UserCredentials` data type is used for authentication when establishing a c
 
 ### Domain
 
-The Domain is used to define the domain to be used in authentication.
+The Domain is used to define the domain to be used in authentication. The value of this property may optionally be encrypted, for more information on how to encrypt this property, see [EncryptableText][].
 
 | | |
 |--------------------|---------------------------|
@@ -39,7 +38,7 @@ The Domain is used to define the domain to be used in authentication.
 
 ### Username
 
-The Username is used to define the username to be used in authentication.
+The Username is used to define the username to be used in authentication. The value of this property may optionally be encrypted, for more information on how to encrypt this property, see [EncryptableText][].
 
 | | |
 |--------------------|---------------------------|
@@ -65,7 +64,7 @@ The exceptions thrown by the data type can be found below:
 
 | Name                                 | Description |
 |--------------------------------------|-------------|
-| [UnencryptedTextException][]         |Thrown when the [Password][Password Property] is not encrypted.|
+| [UnencryptedTextException][]         |Thrown when the [Password][Password Property] is not encrypted. For more|
 
 ## Remarks
 
@@ -102,7 +101,7 @@ A `UserCredentials` can also be created using the Literal Editor by filling in t
 
 ### Known Limitations
 
-Currently, if the `ToString()` method is used on a UserCredentials, then its Full Name will be returned; instead of a representation of the data within the UserCredentials.
+Currently, if the `ToString()` method is used on a `UserCredentials`, then its Full Name will be returned; instead of a representation of the data within the `UserCredentials`.
 
 In future this limitation may be removed.
 
