@@ -59,6 +59,14 @@ The Password is used to define the password to be used in authentication. This p
 | Default Editor | [Expression][] |
 | Default Value | [EncryptedText][] with value `""` |
 
+## Exceptions
+
+The exceptions thrown by the data type can be found below:
+
+| Name                                 | Description |
+|--------------------------------------|-------------|
+| [UnencryptedTextException][]         |Thrown when the [Password][Password Property] is not encrypted.|
+
 ## Remarks
 
 ### Create a UserCredentials
@@ -119,6 +127,8 @@ In future this limitation may be removed.
 
 [EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 [EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
+
+[UnencryptedTextException]: {{< url "Cortex.Reference.Exceptions.Common.UnencryptedTextException.MainDoc" >}}
 
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

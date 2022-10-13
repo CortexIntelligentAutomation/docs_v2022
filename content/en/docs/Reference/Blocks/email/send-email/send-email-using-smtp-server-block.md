@@ -438,8 +438,6 @@ The above two points correspond to the [UseSsl][] property being set to `true` a
 
 ### Setting Credentials
 
-**TODO: Add Exceptions section to the UserCredentials DataType**
-
 The [UserCredentials][] within the [Basic Email Session Details][Basic Email Session Details Property] specifies what user to connect as on the [SMTP][] server. The value of the [Username][] property may optionally be encrypted, however the [Password][] must be encrypted otherwise an [UnencryptedTextException][] will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
 
 Note that the [UserCredentials][] object also contains a [Domain][] property which is ignored by this block.
