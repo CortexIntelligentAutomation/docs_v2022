@@ -532,7 +532,7 @@ If the site hosting the Gateway web application is a newly created Cortex site o
    1. In the dialog, click the `Security` tab.
    1. Click the user identified in [Get Application Pool User][] within the `Group or user names` section.
    1. In the `Permissions` section, ensure the user has `Full control` checked. If not:
-      1. Click the `Edit` button
+      1. Click the `Edit` button.
       1. Select the user identified in [Get Application Pool User][] within the `Group or user names` section.
       1. In the `Permissions` section, check `Full control`.
       1. Click `OK`, then wait for `Windows Security` to update the security information to the folder.
