@@ -526,6 +526,17 @@ If the site hosting the Gateway web application is a newly created Cortex site o
 
 1. Run the PowerShell command to install Gateway.
     In the event of any errors, there will be an error message displayed at the end of the output with a line confirming the Error Count.
+1. Ensure that the user identified in [Get Application Pool User][] has `Full control` access to the Gateway folder created in [Create New Web Application][]:
+   1. Navigate to `C:\inetpub\wwwroot\Cortex\`.
+   1. Right-click the `Gateway` folder and click `Properties`.
+   1. In the dialog, click the `Security` tab.
+   1. Click the user identified in [Get Application Pool User][] within the `Group or user names` section.
+   1. In the `Permissions` section, ensure the user has `Full control` checked. If not:
+      1. Click the `Edit` button
+      1. Select the user identified in [Get Application Pool User][] within the `Group or user names` section.
+      1. In the `Permissions` section, check `Full control`.
+      1. Click `OK`, then wait for `Windows Security` to update the security information to the folder.
+      1. Click `OK`.
 1. Start the Gateway application pool:
     1. Open Internet Information Service (IIS) Manager.
     1. In the left pane, expand the server node.
