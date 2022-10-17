@@ -111,7 +111,7 @@ The process of developing software.
 
 ### SSL
 
-Secure Sockets Layers (SSL) is the technology that keeps an internet connection secure via the encryption of data in transit.
+Secure Sockets Layer (SSL) is the technology that keeps an internet connection secure via the encryption of data in transit.
 
 ### String
 

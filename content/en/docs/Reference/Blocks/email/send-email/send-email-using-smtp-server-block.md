@@ -266,7 +266,9 @@ For more detailed information on each of the properties, see [EmailMessage][].
 
 The [Basic Email Session Details][Basic Email Session Details Property] object that includes all of the information required to open and maintain a session with an [SMTP][] server, including:
 
-- [ServerDetails][ServerDetails Property] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
+- [ServerDetails][ServerDetails Property] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on:
+  - Supported server address formats, see [Supported formats for ServerDetails.Host][].
+  - When [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 - [Credentials][Credentials Property] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Username][] and [Password][] to be used for authentication. For more information, see [Setting Credentials][].
 
 If the [Close Session][Close Session Property] property is set to `false`, then the session will be kept open and can be used in subsequent Send Email Using SMTP Server blocks which improves performance, see [Opening Sessions][] for more information.
@@ -280,8 +282,6 @@ For more detailed information on each of the properties, see [BasicEmailSessionD
 | Is [Advanced][] | `false` |
 | Default Editor | [Variable][] |
 | Default Value | `($)BasicEmailSessionDetails` with no value |
-
-**TODO: WE ARE UP TO HERE IN DOC REVIEW**
 
 ### Close Session
 
@@ -303,7 +303,7 @@ The exceptions thrown by the block can be found below:
 |--------------------------------------|-------------|
 | [ArgumentException][]                |Thrown when [BodyFormat][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessageBodyFormat][] values (e.g. `(EmailMessageBodyFormat)10`).|
 | |Thrown when [Priority][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessagePriority][] values (e.g. `(EmailMessagePriority)10`).|
-| |**TODO** Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`), contains only whitespace (i.e. `"   "`) or contains the NUL character (i.e. `\0`).|
+| |Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`), contains only whitespace (i.e. `"   "`) or contains the NUL character (i.e. `\0`).|
 | [ArgumentNullException][]            |Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is `null`.|
 | [EmailSessionException][]            |Thrown when an invalid [Port][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Port][].|
 | |Thrown when an invalid [Host][] is provided in the [ServerDetails][] within the [Basic Email Session Details][Basic Email Session Details Property]. For more information, see [Invalid Host][].|
@@ -317,7 +317,7 @@ The exceptions thrown by the block can be found below:
 | [IOException][]                      |Thrown when the desired socket is held by another process; re-running the flow typically solves this. |
 | |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains leading spaces.|
 | |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains invalid characters (i.e. `"`, `*`, `?`, `\|`, `<`, `>`, `:`, `\`, `/`).|
-| [PathTooLongException][]             |**TODO** Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] exceeds the system-defined maximum length (typically 32,767).|
+| [PathTooLongException][]             |Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] exceeds the system-defined maximum length (typically 32,767).|
 | [PropertyNullException][]            |Thrown when the [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [UserCredentials][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
 | |Thrown when the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is `null`. |
@@ -390,7 +390,7 @@ If `null` is provided as a file path in the [Attachments][] within the [Email Me
 
 If an empty string is provided as a file path in the the [Attachments][] within the [Email Message][Email Message Property], an [ArgumentException][] is thrown.
 
-#### File path does not exist **TODO**
+#### File path does not exist
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] does not exist, a [FileNotFoundException][] is thrown.
 
@@ -406,11 +406,11 @@ If a file path in the [Attachments][] within the [Email Message][Email Message P
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains leading spaces they are not removed and an [IOException][] will be thrown; however, trailing spaces are removed.
 
-#### File path contains only whitespace or the NUL character **TODO**
+#### File path contains only whitespace or the NUL character
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] contains only whitespace (i.e. `"  "`) or the NUL character (i.e. `\0`), an [ArgumentException][] will be thrown.
 
-#### File path exceeds the system-defined maximum length **TODO**
+#### File path exceeds the system-defined maximum length
 
 If a file path in the [Attachments][] within the [Email Message][Email Message Property] exceeds the system-defined maximum length (typically 32,767), a [PathTooLongException][] will be thrown.
 
@@ -423,6 +423,10 @@ If the user the flow is executing as does not have permissions to access the fil
 The combined size of all the [Attachments][] within the [Email Message][Email Message Property] must be less than the limit specified by the email service provider. If the combined size of all of the attachments is greater than the limit, an [SmtpCommandException][] will be thrown.
 
 For [Outlook][] this is `20 MB` and for [Gmail][] this is `25 MB`, for more information on the size limits for other email service providers, see the help provided by the respective email service provider.
+
+### Supported formats for ServerDetails.Host
+
+**TODO: Complete this section**
 
 ### Setting UseSsl
 
@@ -442,8 +446,6 @@ The [UserCredentials][] within the [Basic Email Session Details][Basic Email Ses
 
 Note that the [UserCredentials][] object also contains a [Domain][] property which is ignored by this block.
 
-**TODO: WE ARE HERE IN DOC REVIEW, ALSO CHECK THE TODOS IN THE EXCEPTIONS TABLE**
-
 ### Opening Sessions
 
 The Send Email Using SMTP Server block automatically handles creating and opening sessions for the specified [Basic Email Session Details][Basic Email Session Details Property] using the following rules:
@@ -452,19 +454,19 @@ The Send Email Using SMTP Server block automatically handles creating and openin
 - If a session already exists but is closed, the session will be opened and used when the block runs.
 - If a session already exists and is open, the session will be used when the block runs.
 
-[Basic Email Session Details][Basic Email Session Details Property] is an [InputOutput][] and so it must be set to a [Variable][], because of this it can be used to keep the session alive across multiple Send Email Using SMTP Server blocks as long as [Close Session][Close Session Property] is set to `false`. Keeping the session open helps increase the performance of the block due to the subsequent blocks not having to spend resources creating and opening sessions for each execution.
+[Basic Email Session Details][Basic Email Session Details Property] will keep the session open across multiple Send Email Using SMTP Server blocks as long as [Close Session][Close Session Property] is set to `false`. Keeping the session open helps increase the performance of the block due to the subsequent blocks not having to spend resources creating and opening sessions for each execution.
 
 Note that for all [SSL][] connections, the protocol to be used will be negotiated with the server depending on which protocols are available. Similarly, the [SASL][] mechanism to be used will be negotiated with the mail server based on the available mechanisms.
 
-For information on how to explicitly close a connection, please see [Closing Sessions][].
+For information on how to explicitly close a session, please see [Closing Sessions][].
 
 ### Closing Sessions
 
 Sessions can be explicitly closed by setting [Close Session][Close Session Property] to `true`. This causes the session to be closed after the [Email Message][Email Message Property] has been sent.
 
-If [Close Session][Close Session Property] is set to `false` the connection will be closed when the [Variable][] that [Basic Email Session Details][Basic Email Session Details Property] is set to goes out of scope or the flow ends, whichever happens first. For more information about variables and scope, please see [Variables][].
+If [Close Session][Close Session Property] is set to `false` the session will be closed when the [Variable][] that [Basic Email Session Details][Basic Email Session Details Property] is set to goes out of scope or the flow ends, whichever happens first. For more information about variables and scope, please see [Variables][].
 
-For information on how to open a connection, please see [Opening Sessions][].
+For information on how to open a session, please see [Opening Sessions][].
 
 ### Known Limitations
 
@@ -483,6 +485,7 @@ This limitation may be removed in the future.
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
 [Closing Sessions]: {{< ref "#closing-sessions" >}}
 [Attachments Remarks]: {{< ref "#attachments" >}}
+[Supported formats for ServerDetails.Host]: {{< ref "#supported-formats-for-serverdetailshost" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}

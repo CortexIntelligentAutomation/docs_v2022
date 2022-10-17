@@ -1,7 +1,7 @@
 ---
 title: "ServerDetails"
 linkTitle: "ServerDetails"
-description: "The data type representing configuration for establishing and maintaining a connection/session with a server."
+description: "Used to represent details required to connect to a server."
 ---
 
 # {{% param title %}}
@@ -10,7 +10,7 @@ description: "The data type representing configuration for establishing and main
 
 ## Summary
 
-The `ServerDetails` data type is used to establish and maintain a session/connection with a server.
+The `ServerDetails` data type is used to represent details required to connect to a server.
 
 | | |
 |-|-|
@@ -18,7 +18,7 @@ The `ServerDetails` data type is used to establish and maintain a session/connec
 | **Name:**              | `ServerDetails`                                        |
 | **Full Name:**         | `Cortex.DataTypes.SessionDetails.ServerDetails`        |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | The data type representing configuration for establishing and maintaining a connection/session with a server. |
+| **Description:**       | Details required to connect to a server. |
 | **Default Value:**     | null                                                   |
 | **Can be used as:**    | `ServerDetails`, `Object`, `dynamic`                   |
 | **Can be cast to:**    | N/A                                                    |
@@ -27,36 +27,47 @@ The `ServerDetails` data type is used to establish and maintain a session/connec
 
 ### Host
 
-The Host is used to define the server address with which a session/connection should be opened. The value of this property may optionally be encrypted, for more information on how to encrypt this property, see [EncryptableText][].
+The Host is used to define the address of the server to connect to. The value of this property may optionally be encrypted; for more information on how to encrypt this property, see [EncryptableText][].
+
+A server address can typically be represented in one of the following formats:
+
+- Fully Qualified Domain Name (e.g. `"smtp.gmail.com"`)
+- Machine name (e.g. `"mail-server1"`)
+- IP address (e.g. `"127.0.0.1"`)
+- Localhost (e.g. `"localhost"`)
+
+The server address formats supported are dependent on the block being used:
+
+- [Send Email Using SMTP Server Block][Send Email Using SMTP Server Block Supported Server Address Formats]
 
 | | |
 |--------------------|---------------------------|
 | Data Type | [EncryptableText][] |
-| Is Advanced | `false` |
+| Is [Advanced][] | `false` |
 | Default Editor | [Expression][] |
 | Default Value | [EncryptableText][] with value `""` |
 
 ### Port
 
-The Port is used to define the server port with which a session/connection should be opened on the [Host][Host Property].
+The Port is used to define the port on the server to connect to.
 
 | | |
 |--------------------|---------------------------|
 | Data Type | [Int32][] |
-| Is Advanced | `false` |
+| Is [Advanced][] | `false` |
 | Default Editor | [Literal][] |
 | Default Value | [Int32][] with value `0` |
 
 ### UseSsl
 
-UseSsl is used to define whether or not [SSL][] should be used.
+UseSsl is used to define whether or not connection to the server should use [SSL][].
 
-When using this data type with [Send Email Using SMTP Server Block][], the value of this property depends on the [Port][Port Property]. For more information, see [Setting UseSsl for the Send Email Using SMTP Server block][].
+When using this data type with [Send Email Using SMTP Server Block][], the value of this property depends on the [Port][Port Property]. For more information, see [Send Email Using SMTP Server Block][Send Email Using SMTP Server Block Setting UseSsl].
 
 | | |
 |--------------------|---------------------------|
 | Data Type | [Boolean][] |
-| Is Advanced | `false` |
+| Is [Advanced][] | `false` |
 | Default Editor | [Literal][] |
 | Default Value | [Boolean][] with value `true` |
 
@@ -68,74 +79,72 @@ The following table shows some of the ways that `ServerDetails` can be created.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `ServerDetails` constructor | `new ServerDetails(host: "host", port: 465, useSsl: true)` | `{"Host": "host", "Port": 465, "UseSsl": true}` | Expression |  |
+| Use a `ServerDetails` constructor | `new ServerDetails(host: "smtp.gmail.com", port: 465, useSsl: true)` | `{"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}` | Expression |  |
 
 A `ServerDetails` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
 | Property | Data Type | Example | Notes |
 |-|-|-|-|
-| `Host` | `EncryptableText` | `"host"` | The server address of the [Host][Host Property]. |
-| `Port` | `Int32` | `465` | The [Port][Port Property] on the server address on which the session/connection should be opened. |
-| `UseSsl` | `Boolean` | `true` | The [Boolean][] used to determine whether or not an SSL-wrapped connection should be made. |
+| `Host` | `EncryptableText` | `"smtp.gmail.com"` | [Host][Host Property] defines the address of the server to connect to. |
+| `Port` | `Int32` | `465` | [Port][Port Property] defines the port on the server to connect to. |
+| `UseSsl` | `Boolean` | `true` | [UseSsl][UseSsl Property] defines whether or not connection to the server should use [SSL][]. |
 
 ### Convert ServerDetails to Text
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use `ToString` | `($)ServerDetails.ToString()` | `"Cortex.DataTypes.SessionDetails.ServerDetails"` | Expression | ToString will return the Full Name of the ServerDetails Data Type |
-| Use `Convert Object To Text` block | where `Object` property has a value of `{"Host": "host", "Port": 465, "UseSsl": true}` | `"Cortex.DataTypes.SessionDetails.ServerDetails"` | N/A  | See [Convert Object To Text][] |
-| Use `Convert Object To Json` block | where `Object` property has a value of `{"Host": "host", "Port": 465, "UseSsl": true}` | `"{\r\n  \"Host\": \"host\",\r\n  \"Port\": 465,\r\n  \"UseSsl\": true\r\n}"` | N/A  | See [Convert Object To Json][] |
-
-### Setting UseSsl for the Send Email Using SMTP Server block
-
-The value of the [UseSsl][UseSsl Property] property depends on the [Host][Host Property] and [Port][Port Property] being connected to. There are two types of [SSL][]/[TLS][] connections that can occur:
-
-- [SSL][]/[TLS][] is used as soon as a connection is established
-- [SSL][]/[TLS][] is used via the STARTTLS command if it is available
-
-The above two points correspond to the [UseSsl][UseSsl Property] property being set to `true` and `false` respectively. As such, generally the following rules can be followed to determine whether [UseSsl][UseSsl Property] should be set to `true` or `false`:
-
-- If the [Port][Port Property] being connected to is `465` then [UseSsl][UseSsl Property] should be set to `true`
-- If the [Port][Port Property] being connected to is `25` or `567` then [UseSsl][UseSsl Property] should be set to `false`
+| Use `Convert Object To Json` block | where `Object` property has a value of `{"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}` | `"{\r\n  \"Host\": \"smtp.gmail.com\",\r\n  \"Port\": 465,\r\n  \"UseSsl\": true\r\n}"` | N/A  | See [Convert Object To Json][] |
 
 ### Property Editor Support
 
 - The Expression Editor is available for [Input][] properties where the data type is `ServerDetails`.
 - The Literal Editor is available for [Input][] properties where the data type is `ServerDetails`.
-- The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `ServerDetails`.
+- The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `ServerDetails`.
   
 ### Known Limitations
 
-Currently, if the `ToString()` method is used on a `ServerDetails`, then its Full Name will be returned; instead of a representation of the data within the `ServerDetails`.
-
-In future this limitation may be removed.
+None
 
 ## See Also
 
 ### Related Data Types
 
 - [BasicEmailSessionDetails][]
+- [Boolean][]
 - [EncryptableText][]
+- [Int32][]
+
+### Related Concepts
+
+- [Working with Email][]
+
+### External Documentation
+
+None
 
 [Host Property]: {{< ref "#host" >}}
 [Port Property]: {{< ref "#port" >}}
 [UseSsl Property]: {{< ref "#usessl" >}}
-[Setting UseSsl for the Send Email Using SMTP Server block]: {{< ref "#setting-usessl-for-the-send-email-using-smtp-server-block" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 [Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
+
 [Send Email Using SMTP Server Block]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.MainDoc" >}}
+[Send Email Using SMTP Server Block Supported Server Address Formats]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.SupportedServerAddressFormats" >}}
+[Send Email Using SMTP Server Block Setting UseSsl]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.SettingUseSsl" >}}
+
+[Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
+
 [EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 [Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
 
-[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
 
 [SSL]: {{< url "Cortex.Reference.Glossary.P-T.SSL" >}}
-[TLS]: {{< url "Cortex.Reference.Glossary.P-T.TLS" >}}

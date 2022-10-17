@@ -1,7 +1,7 @@
 ---
 title: "BasicEmailSessionDetails"
 linkTitle: "BasicEmailSessionDetails"
-description: "The data type representing configuration for establishing and maintaining a session with a mail server."
+description: "Used to represent configuration for opening and maintaining a session with a mail server."
 ---
 
 # {{% param title %}}
@@ -10,7 +10,7 @@ description: "The data type representing configuration for establishing and main
 
 ## Summary
 
-The `BasicEmailSessionDetails` data type is used to open and maintain a session with a mail server.
+The `BasicEmailSessionDetails` data type is used to represent configuration for opening and maintaining a session with a mail server.
 
 | | |
 |-|-|
@@ -18,7 +18,7 @@ The `BasicEmailSessionDetails` data type is used to open and maintain a session 
 | **Name:**              | `BasicEmailSessionDetails`                             |
 | **Full Name:**         | `Cortex.DataTypes.Email.BasicEmailSessionDetails`      |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | The data type representing configuration for opening and maintaining a session with a mail server. |
+| **Description:**       | Configuration for opening and maintaining a session with a mail server. |
 | **Default Value:**     | null                                                   |
 | **Can be used as:**    | `BasicEmailSessionDetails`, `Object`, `dynamic`        |
 | **Can be cast to:**    | N/A                                                    |
@@ -27,27 +27,41 @@ The `BasicEmailSessionDetails` data type is used to open and maintain a session 
 
 ### ServerDetails
 
-The ServerDetails are used to configure the [SMTP][] server [Host][] and [Port][] to connect to and whether or not to [UseSsl][]. The value of the [Host][] property may optionally be encrypted, for more information on how to encrypt this property, see [EncryptableText][].
+The ServerDetails are used to configure the [Host][] and [Port][] of the [SMTP][] server to connect to and whether or not to [UseSsl][].
 
 | | |
 |--------------------|---------------------------|
 | Data Type | [ServerDetails][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Literal][] |
-| Default Value | [ServerDetails][] with value:<br>Host: `""`<br>Port: `465`<br>UseSsl: `true` |
+| Default Value | [ServerDetails][] with value shown below: |
+
+```json
+{ 
+    "Host": "",
+    "Port": 465,
+    "UseSsl": true
+}
+```
 
 ### Credentials
 
-The Credentials are used to configure the [Username][] and [Password][] to be used for [SMTP][] Authentication. The value of the [Username][] property may optionally be encrypted, however the [Password][] must be encrypted otherwise an [UnencryptedTextException][] will be thrown when the object is created. For more information on how to encrypt the password, see [EncryptedText][].
-
-Note that the [UserCredentials][] object also contains a [Domain][] property which is ignored by this data type.
+The Credentials are used to configure the [Username][] and [Password][] used for [SMTP][] Authentication.
 
 | | |
 |--------------------|---------------------------|
 | Data Type | [UserCredentials][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Literal][] |
-| Default Value | [UserCredentials][] with value:<br>Domain: `""`<br>Username: `""`<br>Password: `""` |
+| Default Value | [UserCredentials][] with value shown below: |
+
+```json
+{ 
+    "Domain": "",
+    "Username": "",
+    "Password": ""
+}
+```
 
 ## Remarks
 
@@ -57,43 +71,48 @@ The following table shows some of the ways that `BasicEmailSessionDetails` can b
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `BasicEmailSessionDetails` constructor | `new BasicEmailSessionDetails(serverDetails: new ServerDetails("host", 587, false), credentials: new UserCredentials("username", "encryptedPassword"))` | `{"ServerDetails": {"Host": "host", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "username", "Password": "encryptedPassword"}}` | Expression | The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the [Password][], see [EncryptedText][]. |
-
-### Property Editor Support
-
-* The Expression Editor is available for [Input][] properties where the data type is `BasicEmailSessionDetails`.
-* The Literal Editor is available for [Input][] properties where the data type is `BasicEmailSessionDetails`.
-* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `BasicEmailSessionDetails`.
+| Use a `BasicEmailSessionDetails` constructor | `new BasicEmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}` | Expression | The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the [Password][], see [EncryptedText][]. |
 
 A `BasicEmailSessionDetails` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
 | Property | Data Type | Example | Notes |
 |-|-|-|-|
-| `ServerDetails` | `ServerDetails` | Host: `host`<br>Port: `587`<br>UseSsl: `false` | The [ServerDetails][ServerDetails Property] that are used to connect to the server. |
-| `Credentials` | `UserCredentials` | Domain: `"domain"`<br>Username: `"username"`<br>Password: `"encryptedPassword"` | The [Credentials][Credentials Property] that are used for authentication on the server. |
+| `ServerDetails` | `ServerDetails` | Host:&nbsp;`"smtp.gmail.com"`<br>Port:&nbsp;`465`<br>UseSsl:&nbsp;`true` | The [ServerDetails][ServerDetails Property] that are used to connect to the server. |
+| `Credentials` | `UserCredentials` | Domain:&nbsp;`""`<br>Username:&nbsp;`"sender@gmail.com"`<br>Password:&nbsp;`"encryptedPassword"` | The [Credentials][Credentials Property] that are used for authentication on the server.<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the [Password][], see [EncryptedText][].|
 
 ### Convert BasicEmailSessionDetails to Text
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use `ToString` | `($)BasicEmailSessionDetails.ToString()` | `"Cortex.DataTypes.Email.BasicEmailSessionDetails"` | Expression | ToString will return the Full Name of the BasicEmailSessionDetails data type |
-| Use `Convert Object To Text` block | where `Object` property has a value of `{"ServerDetails": {"Host": "host", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "username", "Password": "encryptedPassword"}}` | `"Cortex.DataTypes.Email.BasicEmailSessionDetails"` | N/A  | See [Convert Object To Text][] |
-| Use `Convert Object To Json` block | where `Object` property has a value of `{"ServerDetails": {"Host": "host", "Port": 587, "UseSsl": false}, "Credentials": {"Domain": null, "Username": "username", "Password": "encryptedPassword"}}` | `"{\r\n  \"ServerDetails\": {\r\n    \"Host\": \"host\",\r\n    \"Port\": 587,\r\n    \"UseSsl\": false\r\n  },\r\n  \"Credentials\": {\r\n    \"Domain\": null,\r\n    \"Username\": \"username\",\r\n    \"Password\": \"encryptedPassword\"\r\n  }\r\n}"` | N/A  | See [Convert Object To Json][] |
+| Use `Convert Object To Json` block | where `Object` property has a value of `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}` | `"{\r\n  \"ServerDetails\": {\r\n    \"Host\": \"smtp.gmail.com\",\r\n    \"Port\": 465,\r\n    \"UseSsl\": true\r\n  },\r\n  \"Credentials\": {\r\n    \"Domain\": null,\r\n    \"Username\": \"sender@gmail.com\",\r\n    \"Password\": \"encryptedPassword\"\r\n  }\r\n}"` | N/A  | See [Convert Object To Json][] |
+
+### Property Editor Support
+
+- The Expression Editor is available for [Input][] properties where the data type is `BasicEmailSessionDetails`.
+- The Literal Editor is available for [Input][] properties where the data type is `BasicEmailSessionDetails`.
+- The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `BasicEmailSessionDetails`.
 
 ### Known Limitations
 
-* Currently, this data type is not compatible for use with unauthenticated [SMTP][] servers.
+Currently, this data type is not compatible for use with unauthenticated [SMTP][] servers.
 
-* Currently, if the `ToString()` method is used on a `BasicEmailSessionDetails`, then its Full Name will be returned; instead of a representation of the data within the `BasicEmailSessionDetails`.
-
-These limitations may be removed in the future.
+This limitation may be removed in the future.
 
 ## See Also
 
 ### Related Data Types
 
-* [UserCredentials][]
-* [ServerDetails][]
+- [ServerDetails][]
+- [UserCredentials][]
+- [EncryptedText][]
+
+### Related Concepts
+
+- [Working with Email][]
+
+### External Documentation
+
+None
 
 [ServerDetails Property]: {{< ref "#serverdetails" >}}
 [Credentials Property]: {{< ref "#credentials" >}}
@@ -120,5 +139,7 @@ These limitations may be removed in the future.
 
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+
+[Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
 
 [SMTP]: {{< url "Cortex.Reference.Glossary.P-T.SMTP" >}}
