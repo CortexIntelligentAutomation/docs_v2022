@@ -1,7 +1,7 @@
 ---
 title: "EmailMessageBodyFormat"
 linkTitle: "EmailMessageBodyFormat"
-description: "Defines the format of an email body."
+description: "Used to define the format of an email body."
 ---
 
 # {{% param title %}}

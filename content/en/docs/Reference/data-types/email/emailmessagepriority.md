@@ -1,7 +1,7 @@
 ---
 title: "EmailMessagePriority"
 linkTitle: "EmailMessagePriority"
-description: "Defines the priority of an email."
+description: "Used to define the priority of an email."
 ---
 
 # {{% param title %}}

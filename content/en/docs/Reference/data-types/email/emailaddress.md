@@ -1,7 +1,7 @@
 ---
 title: "EmailAddress"
 linkTitle: "EmailAddress"
-description: "Defines an email address."
+description: "Used to define an email address."
 ---
 
 # {{% param title %}}
@@ -27,7 +27,9 @@ The `EmailAddress` data type is used to define an email address.
 
 ### Name
 
-The `Name` property is used to define the name associated with the email address.
+The Name is used to define the name associated with the email address.
+
+This property is not required.
 
 | | |
 |--------------------|---------------------------|
@@ -38,9 +40,7 @@ The `Name` property is used to define the name associated with the email address
 
 ### Address
 
-The `Address` property is used to define the actual email address.
-
-This must be a valid email address as outlined in [RFC 5321][].
+The Address is used to define the email address. This must be a valid email address as outlined in [RFC 5321][].
 
 | | |
 |--------------------|---------------------------|
@@ -57,45 +57,49 @@ The following table shows some of the ways that an `EmailAddress` can be created
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use an `EmailAddress` constructor | `new EmailAddress(address: "sender@outlook.com")`| `{"Name": null, "Address": "sender@outlook.com"}` | Expression | N/A |
-| | `new EmailAddress(name: "Sender", address: "sender@outlook.com")`| `{"Name": "Sender", "Address": "sender@outlook.com"}` | Expression | N/A |
+| Use an `EmailAddress` constructor | `new EmailAddress(name: "Sender", address: "sender@outlook.com")`| `{"Name": "Sender", "Address": "sender@outlook.com"}` | Expression | Name specified |
+| | `new EmailAddress(address: "sender@outlook.com")`| `{"Name": null, "Address": "sender@outlook.com"}` | Expression | Name not specified |
 
 An `EmailAddress` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
 | Property | Data Type | Example | Notes |
 |-|-|-|-|
-| `Name` | `String` | `"Sender"` | The name associated with the email address. |
-| `Address` | `String` | `"sender@outlook.com"` | The email address. |
+| `Name` | `String` | `"Sender"` | [Name][Name Property] defines the name associated with the email address. |
+| `Address` | `String` | `"sender@outlook.com"` | [Address][Address Property] defines the email address. |
 
 ### Convert EmailAddress to Text
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use `ToString` | `($)EmailAddress.ToString()` | `"Cortex.DataTypes.Email.EmailAddress"` | Expression | ToString will return the Full Name of the EmailAddress Data Type |
-| Use `Convert Object To Text` block | where `Object` property has a value of `{"Name": "Sender", "Address": "sender@outlook.com"}` | `"Cortex.DataTypes.Email.EmailAddress"` | N/A  | See [Convert Object To Text][] |
 | Use `Convert Object To Json` block | where `Object` property has a value of `{"Name": "Sender", "Address": "sender@outlook.com"}` | `"{\r\n  \"Name\": \"Sender\",\r\n  \"Address\": \"sender@outlook.com\"\r\n}"` | N/A  | See [Convert Object To Json][] |
 
 ### Property Editor Support
 
-* The Expression Editor is available for [Input][] properties where the data type is `EmailAddress`.
-* The Literal Editor is available for [Input][] properties where the data type is `EmailAddress`.
-* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `EmailAddress`.
+- The Expression Editor is available for [Input][] properties where the data type is `EmailAddress`.
+- The Literal Editor is available for [Input][] properties where the data type is `EmailAddress`.
+- The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `EmailAddress`.
   
 ### Known Limitations
 
-Currently, if the `ToString()` method is used on a `EmailAddress`, then its Full Name will be returned; instead of a representation of the data within the `EmailAddress`.
-
-In future this limitation may be removed.
+None
 
 ## See Also
 
 ### Related Data Types
 
-* [EmailMessage][]
+- [EmailMessage][]
+- [String][]
+
+### Related Concepts
+
+- [Working with Email][]
 
 ### External Documentation
 
-* [RFC 5321][]
+- [RFC 5321][]
+
+[Name Property]: {{< ref "#name" >}}
+[Address Property]: {{< ref "#address" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
@@ -105,8 +109,9 @@ In future this limitation may be removed.
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
 
+[Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
+
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
 
 [RFC 5321]: {{< url "IETF.Email.RFC5321" >}}

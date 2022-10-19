@@ -1,7 +1,7 @@
 ---
 title: "EmailMessage"
 linkTitle: "EmailMessage"
-description: "Defines an email. "
+description: "Used to define an email."
 ---
 
 # {{% param title %}}
@@ -27,7 +27,7 @@ The `EmailMessage` data type is used to define an email.
 
 ### To
 
-The `To` property is used to define the recipients of the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] in the list is a recipient.
+The To is used to define the list of recipients for the email, where each [EmailAddress][] in the list is a recipient.
 
 | | |
 |--------------------|---------------------------|
@@ -38,7 +38,7 @@ The `To` property is used to define the recipients of the email. It is a [IList]
 
 ### From
 
-The `From` property is used to define who/where the email is from.
+The From is used to define the sender of the email.
 
 | | |
 |--------------------|---------------------------|
@@ -49,7 +49,7 @@ The `From` property is used to define who/where the email is from.
 
 ### Cc
 
-The `Cc` property is used to define the [CC][CC Glossary] recipients for the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] in the list is a [CC][CC Glossary] recipient of the email.
+The Cc is used to define the list of [CC][CC Glossary] recipients for the email, where each [EmailAddress][] in the list is a [CC][CC Glossary] recipient.
 
 | | |
 |--------------------|---------------------------|
@@ -60,7 +60,7 @@ The `Cc` property is used to define the [CC][CC Glossary] recipients for the ema
 
 ### Bcc
 
-The `Bcc` property is used to define the [BCC][BCC Glossary] recipients for the email. It is a [IList][]&lt;[EmailAddress][]&gt;, where each [EmailAddress][] in the list is a [BCC][BCC Glossary] recipient of the email.
+The Bcc is used to define the list of [BCC][BCC Glossary] recipients for the email, where each [EmailAddress][] in the list is a [BCC][BCC Glossary] recipient.
 
 | | |
 |--------------------|---------------------------|
@@ -71,7 +71,7 @@ The `Bcc` property is used to define the [BCC][BCC Glossary] recipients for the 
 
 ### Priority
 
-The `Priority` property is used to define the priority of the email, for more information on the range of values this can take, see [EmailMessagePriority][].
+The Priority is used to define the priority of the email, for more information on the range of values this can take, see [EmailMessagePriority][].
 
 | | |
 |--------------------|---------------------------|
@@ -82,7 +82,7 @@ The `Priority` property is used to define the priority of the email, for more in
 
 ### Subject
 
-The `Subject` property is used to define the subject of the email.
+The Subject is used to define the subject of the email.
 
 | | |
 |--------------------|---------------------------|
@@ -93,7 +93,7 @@ The `Subject` property is used to define the subject of the email.
 
 ### BodyFormat
 
-The `BodyFormat` property is used to define the format of the email body, for more information on the range of values this can take, see [EmailMessageBodyFormat][].
+The BodyFormat is used to define the format of the email body, for more information on the range of values this can take, see [EmailMessageBodyFormat][].
 
 | | |
 |--------------------|---------------------------|
@@ -104,7 +104,7 @@ The `BodyFormat` property is used to define the format of the email body, for mo
 
 ### Body
 
-The `Body` property is used to define the body of the email.
+The Body is used to define the body of the email.
 
 | | |
 |--------------------|---------------------------|
@@ -115,7 +115,7 @@ The `Body` property is used to define the body of the email.
 
 ### Attachments
 
-The `Attachments` property is used to define any attachments to be sent with the email. It is an [IList][]&lt;[String][]&gt; where each [String][] item in the list is a path pointing to the attachment on the server that is executing the flow.
+The Attachments is used to define the list of attachments for the email, where each [String][] in the list is a path pointing to the attachment on the server that is executing the flow.
 
 | | |
 |--------------------|---------------------------|
@@ -139,43 +139,59 @@ An `EmailMessage` can also be created using the Literal Editor by filling in the
 
 | Property      | Data Type                | Example                                               | Notes                                         |
 |-|-|-|-|
-| `To`          | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "recipient@outlook.com" }` | The recipients of the email. |
-| `From`        | `EmailAddress`           | Name: `Sender`<br>Address: `sender@outlook.com` | The sender of the email. |
-| `Cc`          | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "cc@outlook.com" }` | The CC recipients. |
-| `Bcc`         | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "bcc@outlook.com" }` | The BCC recipients. |
-| `Priority`    | `EmailMessagePriority`   | `Normal` | The priority of the email. |
-| `Subject`     | `String`                 | `"Example subject"` | The subject of the email. |
-| `BodyFormat`  | `EmailMessageBodyFormat` | `Text` | The format of the email body. |
-| `Body`        | `String`                 | `$@"Example body"` | The email body. |
-| `Attachments` |  `IList<String>`         | `new List<string>(){ "C:/attachment.txt" }` | A list of file paths pointing to attachments. |
+| `To`          | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "recipient@outlook.com" }` | [To][To Property] defines a list of recipients for the email. |
+| `From`        | `EmailAddress`           | Name: `Sender`<br>Address: `sender@outlook.com` | [From][From Property] defines the sender of the email. |
+| `Cc`          | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "cc@outlook.com" }` | [Cc][Cc Property] defines a list of [CC][CC Glossary] recipients for the email. |
+| `Bcc`         | `IList<EmailAddress>`    | `new List<EmailAddress>(){ "bcc@outlook.com" }` | [Bcc][Bcc Property] defines a list of [BCC][BCC Glossary] recipients for the email. |
+| `Priority`    | `EmailMessagePriority`   | `Normal` | [Priority][Priority Property] defines the priority of the email. |
+| `Subject`     | `String`                 | `"Example subject"` | [Subject][Subject Property] defines the subject of the email. |
+| `BodyFormat`  | `EmailMessageBodyFormat` | `Text` | [BodyFormat][BodyFormat Property] defines the format of the email body. |
+| `Body`        | `String`                 | `$@"Example body"` | [Body][Body Property] defines the body of the email. |
+| `Attachments` |  `IList<String>`         | `new List<string>(){ "C:/attachment.txt" }` | [Attachments][Attachments Property] defines the list of attachments for the email. |
 
 ### Convert EmailMessage to Text
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use `ToString` | `($)EmailMessage.ToString()` | `"Cortex.DataTypes.Email.EmailMessage"` | Expression | ToString will return the Full Name of the EmailMessage Data Type |
-| Use `Convert Object To Text` block | where `Object` property has a value of `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [{"To": [{"Name": null, "Address": "cc@outlook.com"}], "Bcc": [{"To": [{"Name": null, "Address": "bcc@outlook.com"}], "Priority": "EmailMessagePriority.Urgent", "Subject": "Example email subject", "BodyFormat": "EmailMessageBodyFormat.Text", "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}` | `"Cortex.DataTypes.Email.EmailMessage"` | N/A  | See [Convert Object To Text][] |
 | Use `Convert Object To Json` block | where `Object` property has a value of `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [{"To": [{"Name": null, "Address": "cc@outlook.com"}], "Bcc": [{"To": [{"Name": null, "Address": "bcc@outlook.com"}], "Priority": "EmailMessagePriority.Urgent", "Subject": "Example email subject", "BodyFormat": "EmailMessageBodyFormat.Text", "Body": "Example email body", "Attachments": ["C:/attachment.txt"]}` | `"{\r\n  \"To\": [\r\n    {\r\n      \"Name\": null,\r\n      \"Address\": \"recipient@outlook.com\"\r\n    }\r\n  ],\r\n  \"From\": {\r\n    \"Name\": null,\r\n    \"Address\": \"sender@outlook.com\"\r\n  },\r\n  \"Cc\": [\r\n    {\r\n      \"Name\": null,\r\n      \"Address\": \"cc@outlook.com\"\r\n    }\r\n  ],\r\n  \"Bcc\": [\r\n    {\r\n      \"Name\": null,\r\n      \"Address\": \"bcc@outlook.com\"\r\n    }\r\n  ],\r\n  \"Priority\": 2,\r\n  \"Subject\": \"Example email subject\",\r\n  \"BodyFormat\": 0,\r\n  \"Body\": \"Example email body\",\r\n  \"Attachments\": [\r\n    \"C:/attachment.txt\"\r\n  ]\r\n}"` | N/A  | See [Convert Object To Json][] |
 
 ### Property Editor Support
 
-* The Expression Editor is available for [Input][] properties where the data type is `EmailMessage`.
-* The Literal Editor is available for [Input][] properties where the data type is `EmailMessage`.
-* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `EmailMessage`.
+- The Expression Editor is available for [Input][] properties where the data type is `EmailMessage`.
+- The Literal Editor is available for [Input][] properties where the data type is `EmailMessage`.
+- The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `EmailMessage`.
   
 ### Known Limitations
 
-Currently, if the `ToString()` method is used on an `EmailMessage`, then its Full Name will be returned; instead of a representation of the data within the `EmailMessage`.
-
-In future this limitation may be removed.
+None
 
 ## See Also
 
 ### Related Data Types
 
-* [EmailAddress][]
-* [EmailMessagePriority][]
-* [EmailMessageBodyFormat][]
+- [EmailAddress][]
+- [EmailMessageBodyFormat][]
+- [EmailMessagePriority][]
+- [IList][]
+- [String][]
+
+### Related Concepts
+
+- [Working with Email][]
+
+### External Documentation
+
+None
+
+[To Property]: {{< ref "#to" >}}
+[From Property]: {{< ref "#from" >}}
+[Cc Property]: {{< ref "#cc" >}}
+[Bcc Property]: {{< ref "#bcc" >}}
+[Priority Property]: {{< ref "#priority" >}}
+[Subject Property]: {{< ref "#subject" >}}
+[BodyFormat Property]: {{< ref "#bodyformat" >}}
+[Body Property]: {{< ref "#body" >}}
+[Attachments Property]: {{< ref "#attachments" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
@@ -188,9 +204,10 @@ In future this limitation may be removed.
 [EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
 [EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
 
+[Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
+
+[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
 [IList]: {{< url "Cortex.Reference.DataTypes.Collections.IList.MainDoc" >}}
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
-[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
 [BCC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.BCC" >}}
 [CC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.CC" >}}

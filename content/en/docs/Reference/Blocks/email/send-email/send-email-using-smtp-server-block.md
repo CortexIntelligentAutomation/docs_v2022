@@ -426,7 +426,11 @@ For [Outlook][] this is `20 MB` and for [Gmail][] this is `25 MB`, for more info
 
 ### Supported formats for ServerDetails.Host
 
-**TODO: Complete this section**
+The following formats are supported for [Host][] in [ServerDetails][]:
+
+- Fully Qualified Domain Name (e.g. `"smtp.gmail.com"`)
+- IP address (e.g. `"127.0.0.1"`)
+- Localhost (e.g. `"localhost"`)
 
 ### Setting UseSsl
 
