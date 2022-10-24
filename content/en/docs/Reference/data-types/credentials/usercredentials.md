@@ -128,7 +128,7 @@ None
 
 ### External Documentation
 
-None
+- [NetworkCredential][]
 
 [Domain Property]: {{< ref "#domain" >}}
 [Username Property]: {{< ref "#username" >}}
@@ -150,6 +150,8 @@ None
 [ISshCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.ISshCredentials.MainDoc" >}}
 [SshCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.SshCredentials.MainDoc" >}}
 [SshUserCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.SshUserCredentials.MainDoc" >}}
+
+[NetworkCredential]: {{< url "MSDocs.DotNet.Api.System.Net.NetworkCredential" >}}
 
 [Send Email Using SMTP Server Block Setting Credentials]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.SettingCredentials" >}}
 
