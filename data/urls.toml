@@ -1108,7 +1108,17 @@
                             MainDoc = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/"
                             [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials]
                                 MainDoc = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials"
-                [Cortex.Reference.DataTypes.Json]
+            [Cortex.Reference.DataTypes.Http]
+                MainDoc = "/docs/reference/data-types/http/"
+                [Cortex.Reference.DataTypes.Http.Authentication]
+                    MainDoc = "/docs/reference/data-types/http/authentication/"
+                    [Cortex.Reference.DataTypes.Http.Authentication.IHttpCredentials]
+                        MainDoc = "/docs/reference/data-types/http/authentication/ihttpcredentials"
+                    [Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials]
+                        MainDoc = "/docs/reference/data-types/http/authentication/httpcredentials"
+                    [Cortex.Reference.DataTypes.Http.Authentication.HttpUserCredentials]
+                        MainDoc = "/docs/reference/data-types/http/authentication/httpusercredentials"
+            [Cortex.Reference.DataTypes.Json]
                 MainDoc = "/docs/reference/data-types/json/"
                 [Cortex.Reference.DataTypes.Json.JsonSerializerSettings]
                     MainDoc = "/docs/reference/data-types/json/jsonserializersettings"

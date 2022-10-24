@@ -114,7 +114,10 @@ None
 - [EmailUserCredentials][]
 - [EncryptableText][]
 - [EncryptedText][]
+- [HttpCredentials][]
+- [HttpUserCredentials][]
 - [IEmailCredentials][]
+- [IHttpCredentials][]
 
 ### Related Concepts
 
@@ -138,6 +141,9 @@ None
 [IEmailCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.IEmailCredentials.MainDoc" >}}
 [EmailCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.EmailCredentials.MainDoc" >}}
 [EmailUserCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.EmailUserCredentials.MainDoc" >}}
+[IHttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.IHttpCredentials.MainDoc" >}}
+[HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
+[HttpUserCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpUserCredentials.MainDoc" >}}
 
 [Send Email Using SMTP Server Block Setting Credentials]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.SettingCredentials" >}}
 
