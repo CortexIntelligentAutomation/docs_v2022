@@ -118,6 +118,9 @@ None
 - [HttpUserCredentials][]
 - [IEmailCredentials][]
 - [IHttpCredentials][]
+- [ISshCredentials][]
+- [SshCredentials][]
+- [SshUserCredentials][]
 
 ### Related Concepts
 
@@ -144,6 +147,9 @@ None
 [IHttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.IHttpCredentials.MainDoc" >}}
 [HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
 [HttpUserCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpUserCredentials.MainDoc" >}}
+[ISshCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.ISshCredentials.MainDoc" >}}
+[SshCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.SshCredentials.MainDoc" >}}
+[SshUserCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.SshUserCredentials.MainDoc" >}}
 
 [Send Email Using SMTP Server Block Setting Credentials]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.SettingCredentials" >}}
 

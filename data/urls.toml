@@ -1155,6 +1155,16 @@
                     Host = "/docs/reference/data-types/session-details/serverdetails/#host"
                     Port = "/docs/reference/data-types/session-details/serverdetails/#port"
                     UseSsl = "/docs/reference/data-types/session-details/serverdetails/#usessl"
+            [Cortex.Reference.DataTypes.Ssh]
+                MainDoc = "/docs/reference/data-types/ssh/"
+                [Cortex.Reference.DataTypes.Ssh.Authentication]
+                    MainDoc = "/docs/reference/data-types/ssh/authentication/"
+                    [Cortex.Reference.DataTypes.Ssh.Authentication.ISshCredentials]
+                        MainDoc = "/docs/reference/data-types/ssh/authentication/isshcredentials"
+                    [Cortex.Reference.DataTypes.Ssh.Authentication.SshCredentials]
+                        MainDoc = "/docs/reference/data-types/ssh/authentication/sshcredentials"
+                    [Cortex.Reference.DataTypes.Ssh.Authentication.SshUserCredentials]
+                        MainDoc = "/docs/reference/data-types/ssh/authentication/sshusercredentials"
             [Cortex.Reference.DataTypes.Text]
                 MainDoc = "/docs/reference/data-types/text/"
                 [Cortex.Reference.DataTypes.Text.Char]
