@@ -18,7 +18,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 | **Name:**              | `EmailSessionErrorCode`                                |
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailSessionErrorCode`         |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | The data type used to represent an error code explaining the reason an `EmailSessionException` occurred. |
+| **Description:**       | Error code explaining the reason an `EmailSessionException` occurred. |
 | **Default Value:**     | `0`                                                    |
 | **Can be used as:**    | `EmailSessionErrorCode`, `Object`, `dynamic`           |
 | **Can be cast to:**    | N/A                                                    |
@@ -125,9 +125,9 @@ For more information on casting [Int32][] values to enums, see [Working with Enu
 
 ### Property Editor Support
 
-* The Expression Editor is available for [Input][] properties where the data type is `EmailSessionErrorCode`.
-* The Literal Editor is available for [Input][] properties where the data type is `EmailSessionErrorCode`.
-* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `EmailSessionErrorCode`.
+- The Expression Editor is available for [Input][] properties where the data type is `EmailSessionErrorCode`.
+- The Literal Editor is available for [Input][] properties where the data type is `EmailSessionErrorCode`.
+- The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `EmailSessionErrorCode`.
 
 ### Known Limitations
 
@@ -139,11 +139,12 @@ In the future this may change.
 
 ### Related Data Types
 
-* [EmailSessionException][]
+- [EmailSessionException][]
 
 ### Related Concepts
 
-* [Working with Enums][]
+- [Working with Email][]
+- [Working with Enums][]
 
 ### External Documentation
 
@@ -163,5 +164,6 @@ None
 
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 [Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
+[Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
