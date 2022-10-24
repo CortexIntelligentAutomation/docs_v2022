@@ -110,8 +110,11 @@ None
 ### Related Data Types
 
 - [BasicEmailSessionDetails][]
+- [EmailCredentials][]
+- [EmailUserCredentials][]
 - [EncryptableText][]
 - [EncryptedText][]
+- [IEmailCredentials][]
 
 ### Related Concepts
 
@@ -132,6 +135,10 @@ None
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
+[IEmailCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.IEmailCredentials.MainDoc" >}}
+[EmailCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.EmailCredentials.MainDoc" >}}
+[EmailUserCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.EmailUserCredentials.MainDoc" >}}
+
 [Send Email Using SMTP Server Block Setting Credentials]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.SettingCredentials" >}}
 
 [Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}

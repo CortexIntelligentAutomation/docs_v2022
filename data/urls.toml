@@ -1039,6 +1039,14 @@
                     MainDoc = "/docs/reference/data-types/date-and-time/timespan"
             [Cortex.Reference.DataTypes.Email]
                 MainDoc = "/docs/reference/data-types/email/"
+                [Cortex.Reference.DataTypes.Email.Authentication]
+                    MainDoc = "/docs/reference/data-types/email/authentication/"
+                    [Cortex.Reference.DataTypes.Email.Authentication.IEmailCredentials]
+                        MainDoc = "/docs/reference/data-types/email/authentication/iemailcredentials"
+                    [Cortex.Reference.DataTypes.Email.Authentication.EmailCredentials]
+                        MainDoc = "/docs/reference/data-types/email/authentication/emailcredentials"
+                    [Cortex.Reference.DataTypes.Email.Authentication.EmailUserCredentials]
+                        MainDoc = "/docs/reference/data-types/email/authentication/emailusercredentials"
                 [Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails]
                     MainDoc = "/docs/reference/data-types/email/basicemailsessiondetails"
                     Credentials = "/docs/reference/data-types/email/basicemailsessiondetails/#credentials"
