@@ -1,7 +1,7 @@
 ---
 title: "EmailMessagePriority"
 linkTitle: "EmailMessagePriority"
-description: "Used to define the priority of an email."
+description: "Used to represent the priority of an email message."
 ---
 
 # {{% param title %}}
@@ -10,7 +10,7 @@ description: "Used to define the priority of an email."
 
 ## Summary
 
-The `EmailMessagePriority` data type is used to define the priority of an email.
+The `EmailMessagePriority` data type is used to represent the priority of an email message.
 
 | | |
 |-|-|
@@ -18,7 +18,7 @@ The `EmailMessagePriority` data type is used to define the priority of an email.
 | **Name:**              | `EmailMessagePriority`                                 |
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailMessagePriority`          |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | Defines the priority of an email.                      |
+| **Description:**       | Priority of an email message.                          |
 | **Default Value:**     | `0`                                                    |
 | **Can be used as:**    | `EmailMessagePriority`, `Object`, `dynamic`            |
 | **Can be cast to:**    | N/A                                                    |
@@ -31,7 +31,7 @@ The `EmailMessagePriority` data type is used to define the priority of an email.
 |-|-|
 | **Name:**    | Normal                                                |
 | **Value:**   | [Int32][] with value `0`                              |
-| **Notes:**   | Used when an email is marked with normal urgency.     |
+| **Notes:**   | Used when an email is marked with normal priority.     |
 
 ### NonUrgent
 
@@ -39,7 +39,7 @@ The `EmailMessagePriority` data type is used to define the priority of an email.
 |-|-|
 | **Name:**    | NonUrgent                                             |
 | **Value:**   | [Int32][] with value `1`                              |
-| **Notes:**   | Used when an email is marked with non-urgent urgency. |
+| **Notes:**   | Used when an email is marked with non-urgent priority. |
 
 ### Urgent
 
@@ -47,7 +47,7 @@ The `EmailMessagePriority` data type is used to define the priority of an email.
 |-|-|
 | **Name:**    | Urgent                                                |
 | **Value:**   | [Int32][] with value `2`                              |
-| **Notes:**   | Used when an email is marked with urgent urgency.     |
+| **Notes:**   | Used when an email is marked with urgent priority.     |
 
 ## Remarks
 
@@ -85,9 +85,9 @@ For more information on casting [Int32][] values to enums, see [Working with Enu
 
 ### Property Editor Support
 
-* The Expression Editor is available for [Input][] properties where the data type is `EmailMessagePriority`.
-* The Literal Editor is available for [Input][] properties where the data type is `EmailMessagePriority`.
-* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `EmailMessagePriority`.
+- The Expression Editor is available for [Input][] properties where the data type is `EmailMessagePriority`.
+- The Literal Editor is available for [Input][] properties where the data type is `EmailMessagePriority`.
+- The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `EmailMessagePriority`.
   
 ### Known Limitations
 
@@ -97,11 +97,16 @@ None
 
 ### Related Data Types
 
-* [EmailMessage][]
+- [EmailMessage][]
 
 ### Related Concepts
 
-* [Working with Enums][]
+- [Working with Email][]
+- [Working with Enums][]
+
+### External Documentation
+
+None
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
@@ -111,5 +116,6 @@ None
 
 [EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
 [Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
+[Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

@@ -1,7 +1,7 @@
 ---
 title: "EmailMessageBodyFormat"
 linkTitle: "EmailMessageBodyFormat"
-description: "Used to define the format of an email body."
+description: "Used to represent the format of an email message body."
 ---
 
 # {{% param title %}}
@@ -10,7 +10,7 @@ description: "Used to define the format of an email body."
 
 ## Summary
 
-The `EmailMessageBodyFormat` data type is used to define the format of an email body.
+The `EmailMessageBodyFormat` data type is used to represent the format of an email message body.
 
 | | |
 |-|-|
@@ -18,7 +18,7 @@ The `EmailMessageBodyFormat` data type is used to define the format of an email 
 | **Name:**              | `EmailMessageBodyFormat`                               |
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailMessageBodyFormat`        |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | Defines the format of an email body.                   |
+| **Description:**       | Format of an email message body.                       |
 | **Default Value:**     | `0`                                                    |
 | **Can be used as:**    | `EmailMessageBodyFormat`, `Object`, `dynamic`          |
 | **Can be cast to:**    | N/A                                                    |
@@ -31,7 +31,7 @@ The `EmailMessageBodyFormat` data type is used to define the format of an email 
 |-|-|
 | **Name:**    | Text                                          |
 | **Value:**   | [Int32][] with value `0`                      |
-| **Notes:**   | Used when an email body format is plain text. |
+| **Notes:**   | Used when an email message body format is plain text. |
 
 ### Html
 
@@ -39,7 +39,7 @@ The `EmailMessageBodyFormat` data type is used to define the format of an email 
 |-|-|
 | **Name:**    | Html                                          |
 | **Value:**   | [Int32][] with value `1`                      |
-| **Notes:**   | Used when an email body format is HTML.       |
+| **Notes:**   | Used when an email message body format is HTML.       |
 
 ## Remarks
 
@@ -75,9 +75,9 @@ For more information on casting [Int32][] values to enums, see [Working with Enu
 
 ### Property Editor Support
 
-* The Expression Editor is available for [Input][] properties where the data type is `EmailMessageBodyFormat`.
-* The Literal Editor is available for [Input][] properties where the data type is `EmailMessageBodyFormat`.
-* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `EmailMessageBodyFormat`.
+- The Expression Editor is available for [Input][] properties where the data type is `EmailMessageBodyFormat`.
+- The Literal Editor is available for [Input][] properties where the data type is `EmailMessageBodyFormat`.
+- The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `EmailMessageBodyFormat`.
   
 ### Known Limitations
 
@@ -87,11 +87,16 @@ None
 
 ### Related Data Types
 
-* [EmailMessage][]
+- [EmailMessage][]
   
 ### Related Concepts
 
-* [Working with Enums][]
+- [Working with Email][]
+- [Working with Enums][]
+
+### External Documentation
+
+None
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
@@ -101,5 +106,6 @@ None
 
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 [Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
+[Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
