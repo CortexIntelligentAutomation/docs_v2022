@@ -363,13 +363,15 @@ For more information on how the body of an email will be displayed, see the help
 
 Attachments can be sent in an email by providing a list of file paths in the [Attachments][] property of the [Email Message][Email Message Property]. For more information concerning attaching files to an email, see the sections below.
 
-#### Supported file paths
+#### Supported file path formats
 
 Each file path in the [Attachments][] within the [Email Message][Email Message Property] can be an:
 
 - Absolute file path
 - Relative file path
 - UNC file path
+
+where each file path must be accessible from the server executing the flow.
 
 For more information about each of these supported file path formats, please see [File & Folder Paths][].
 
@@ -429,6 +431,7 @@ For [Outlook][] this is `20 MB` and for [Gmail][] this is `25 MB`, for more info
 The following formats are supported for [Host][] in [ServerDetails][]:
 
 - Fully Qualified Domain Name (e.g. `"smtp.gmail.com"`)
+- Machine name (e.g. `"mail-server1"`)
 - IP address (e.g. `"127.0.0.1"`)
 - Localhost (e.g. `"localhost"`)
 

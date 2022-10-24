@@ -1,7 +1,7 @@
 ---
 title: "EmailAddress"
 linkTitle: "EmailAddress"
-description: "Used to define an email address."
+description: "Used to represent an email address."
 ---
 
 # {{% param title %}}
@@ -10,7 +10,7 @@ description: "Used to define an email address."
 
 ## Summary
 
-The `EmailAddress` data type is used to define an email address.
+The `EmailAddress` data type is used to represent an email address.
 
 | | |
 |-|-|
@@ -18,7 +18,7 @@ The `EmailAddress` data type is used to define an email address.
 | **Name:**              | `EmailAddress`                                         |
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailAddress`                  |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | Defines an email address.                              |
+| **Description:**       | An email address.                              |
 | **Default Value:**     | `null`                                                 |
 | **Can be used as:**    | `EmailAddress`, `Object`, `dynamic`                    |
 | **Can be cast to:**    | N/A                                                    |
@@ -27,7 +27,7 @@ The `EmailAddress` data type is used to define an email address.
 
 ### Name
 
-The Name is used to define the name associated with the email address.
+Name is used to define the name for the email address.
 
 This property is not required.
 
@@ -40,7 +40,7 @@ This property is not required.
 
 ### Address
 
-The Address is used to define the email address. This must be a valid email address as outlined in [RFC 5321][].
+Address is used to define the email address. This must be a valid email address as outlined in [RFC 5321][].
 
 | | |
 |--------------------|---------------------------|
@@ -64,7 +64,7 @@ An `EmailAddress` can also be created using the Literal Editor by filling in the
 
 | Property | Data Type | Example | Notes |
 |-|-|-|-|
-| `Name` | `String` | `"Sender"` | [Name][Name Property] defines the name associated with the email address. |
+| `Name` | `String` | `"Sender"` | [Name][Name Property] defines the name for the email address. |
 | `Address` | `String` | `"sender@outlook.com"` | [Address][Address Property] defines the email address. |
 
 ### Convert EmailAddress to Text

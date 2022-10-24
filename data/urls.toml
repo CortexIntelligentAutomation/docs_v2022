@@ -324,6 +324,7 @@
                         SupportedServerAddressFormats = "/docs/reference/blocks/email/send-email/send-email-using-smtp-server-block/#supported-formats-for-serverdetailshost"
                         SettingUseSsl = "/docs/reference/blocks/email/send-email/send-email-using-smtp-server-block/#setting-usessl"
                         SettingCredentials = "/docs/reference/blocks/email/send-email/send-email-using-smtp-server-block/#setting-credentials"
+                        SupportedFilePaths = "/docs/reference/blocks/email/send-email/send-email-using-smtp-server-block/#supported-file-path-formats"
             [Cortex.Reference.Blocks.Exceptions]
                 MainDoc = "/docs/reference/blocks/exceptions/"
                 [Cortex.Reference.Blocks.Exceptions.HandleBlock]
