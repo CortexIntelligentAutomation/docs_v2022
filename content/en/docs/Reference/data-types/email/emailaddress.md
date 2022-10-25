@@ -27,7 +27,7 @@ The `EmailAddress` data type is used to represent an email address.
 
 ### Name
 
-Name is used to define the name for the email address.
+Name is used to define the display name associated with the email address.
 
 This property is not required.
 
@@ -64,7 +64,7 @@ An `EmailAddress` can also be created using the Literal Editor by filling in the
 
 | Property | Data Type | Example | Notes |
 |-|-|-|-|
-| `Name` | `String` | `"Sender"` | [Name][Name Property] defines the name for the email address. |
+| `Name` | `String` | `"Sender"` | [Name][Name Property] defines the display name associated with the email address. |
 | `Address` | `String` | `"sender@outlook.com"` | [Address][Address Property] defines the email address. |
 
 ### Convert EmailAddress to Text

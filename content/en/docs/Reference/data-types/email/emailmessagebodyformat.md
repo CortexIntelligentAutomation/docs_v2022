@@ -12,6 +12,8 @@ description: "Used to represent the format of an email message body."
 
 The `EmailMessageBodyFormat` data type is used to represent the format of an email message body.
 
+`EmailMessageBodyFormat` is an [enum][Working with Enums] data type, which means it has a defined set of values, where each value has an associated [String][] name and [Int32][] value.
+
 | | |
 |-|-|
 | **Category:**          | Email                                                  |
@@ -19,7 +21,8 @@ The `EmailMessageBodyFormat` data type is used to represent the format of an ema
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailMessageBodyFormat`        |
 | **Alias:**             | N/A                                                    |
 | **Description:**       | Format of an email message body.                       |
-| **Default Value:**     | `0`                                                    |
+| **Size:**              | `4` bytes                                              |
+| **Default Value:**     | `EmailMessageBodyFormat.Text`                          |
 | **Can be used as:**    | `EmailMessageBodyFormat`, `Object`, `dynamic`          |
 | **Can be cast to:**    | N/A                                                    |
 
@@ -49,29 +52,46 @@ The following table shows some of the ways that `EmailMessageBodyFormat` can be 
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use an enum expression | `EmailMessageBodyFormat.Text` | `EmailMessageBodyFormat.Text`| Expression | N/A |
-| Use an enum expression | `EmailMessageBodyFormat.Html` | `EmailMessageBodyFormat.Html`| Expression | N/A |
+| Declare an `EmailMessageBodyFormat` literal | `Text` | `EmailMessageBodyFormat.Text`| Literal | Indicates Text |
+| | `Html` | `EmailMessageBodyFormat.Html`| Literal | Indicates Html |
+| Use an `EmailMessageBodyFormat` expression | `EmailMessageBodyFormat.Text` | `EmailMessageBodyFormat.Text`| Expression | Indicates Text |
+| | `EmailMessageBodyFormat.Html` | `EmailMessageBodyFormat.Html`| Expression | Indicates Html |
+| Use [Explicit Casting][] | `(EmailMessageBodyFormat)0`  | `EmailMessageBodyFormat.Text` | Expression | Indicates Text |
+| | `(EmailMessageBodyFormat)1`  | `EmailMessageBodyFormat.Html` | Expression | Indicates Html |
+| Use `Enum.Parse` | `(EmailMessageBodyFormat)Enum.Parse(typeof(EmailMessageBodyFormat), "Text")` | `EmailMessageBodyFormat.Text` | Expression | Parses `"Text"` and converts it to `EmailMessageBodyFormat.Text`. See [Enum.Parse][] |
+| | `(EmailMessageBodyFormat)Enum.Parse(typeof(EmailMessageBodyFormat), "Html")` | `EmailMessageBodyFormat.Html` | Expression | Parses `"Html"` and converts it to `EmailMessageBodyFormat.Html`. See [Enum.Parse][] |
+| Use `Enum.ToObject` | `(EmailMessageBodyFormat)Enum.ToObject(typeof(EmailMessageBodyFormat), 0)` | `EmailMessageBodyFormat.Text` | Expression | Converts `0` to `EmailMessageBodyFormat.Text` value. See [Enum.ToObject][] |
+| | `(EmailMessageBodyFormat)Enum.ToObject(typeof(EmailMessageBodyFormat), 1)` | `EmailMessageBodyFormat.Html` | Expression | Converts `1` to `EmailMessageBodyFormat.Html` value. See [Enum.ToObject][] |
 
-An `EmailMessageBodyFormat` can also be created using the Literal Editor by selecting the desired option from the dropdown list containing the range of options.
+Please see [Instantiating an enumeration type][] for further information.
 
 ### Convert EmailMessageBodyFormat to Text
 
+The following table shows some of the ways that a `EmailMessageBodyFormat` can be converted to text.
+
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use `ToString` | `($)EmailMessageBodyFormat.ToString()` where `($)EmailMessageBodyFormat` has a value of `EmailMessageBodyFormat.Text`| `"Text"` | Expression | ToString will return the Name of the enum value |
-| Use `Convert Object To Text` block | where `Object` property has a value of `EmailMessageBodyFormat.Text` | `"Text"` | N/A  | See [Convert Object To Text][] |
-| Use `Convert Object To Json` block | where `Object` property has a value of `EmailMessageBodyFormat.Text` | `"0"` | N/A  | See [Convert Object To Json][] |
+| Use `ToString` | `EmailMessageBodyFormat.Text.ToString()` | `"Text"` | Expression | Converts `EmailMessageBodyFormat.Text` to `"Text"`. See [Enum.ToString][] |
+| | `EmailMessageBodyFormat.Html.ToString()` | `"Html"` | Expression | Converts `EmailMessageBodyFormat.Html` to `"Html"`. See [Enum.ToString][] |
+| Use `Convert.ToString` | `Convert.ToString(EmailMessageBodyFormat.Text)` | `"Text"` | Expression | Converts `EmailMessageBodyFormat.Text` to `"Text"`. See [Convert.ToString][] |
+| | `Convert.ToString(EmailMessageBodyFormat.Html)` | `"Html"` | Expression | Converts `EmailMessageBodyFormat.Html` to `"Html"`. See [Convert.ToString][] |
+| Use `Convert Object To Text` block | where `Object` property has a value of `EmailMessageBodyFormat.Text` | `"Text"` | N/A  | Converts `EmailMessageBodyFormat.Text` to `"Text"`. See [Convert Object To Text][] |
+| | where `Object` property has a value of `EmailMessageBodyFormat.Html` | `"Html"` | N/A  | Converts `EmailMessageBodyFormat.Html` to `"Html"`. See [Convert Object To Text][] |
+| Use `Convert Object To Json` block | where `Object` property has a value of `EmailMessageBodyFormat.Text` | `"0"` | N/A  | Converts `EmailMessageBodyFormat.Text` to `"0"`. See [Convert Object To Json][] |
+| | where `Object` property has a value of `EmailMessageBodyFormat.Html` | `"1"` | N/A  | Converts `EmailMessageBodyFormat.Html` to `"1"`. See [Convert Object To Json][] |
 
-### Casting an Int32 to EmailMessageBodyFormat
+Please see [Formatting enumeration values][] for further information.
 
-[Int32][] values can be cast to an `EmailMessageBodyFormat` in the following ways:
+### Convert EmailMessageBodyFormat to a Number
 
-| Example | Result | Editor&nbsp;Support |
-|-|-|-|
-| `(EmailMessageBodyFormat)($)IntVar` where `($)IntVar` has a value `0` | `EmailMessageBodyFormat.Text` | Expression |
-| `(EmailMessageBodyFormat)($)IntVar` where `($)IntVar` has a value `1` | `EmailMessageBodyFormat.Html` | Expression |
+The following table shows some of the ways that a `EmailMessageBodyFormat` can be converted to a number.
 
-For more information on casting [Int32][] values to enums, see [Working with Enums][].
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use [Explicit Casting][]              | `(Int32)EmailMessageBodyFormat.Text`   | `0` | Expression | [Casts][Explicit Casting] `EmailMessageBodyFormat.Text` to `0` |
+|                                       | `(Int32)EmailMessageBodyFormat.Html`   | `1` | Expression | [Casts][Explicit Casting] `EmailMessageBodyFormat.Html` to `1` |
+| Use `Convert.ToInt32`                 | `Convert.ToInt32(EmailMessageBodyFormat.Text)`   | `0` | Expression | Converts `EmailMessageBodyFormat.Text` to `0`. See [Convert.ToInt32][] |
+|                                       | `Convert.ToInt32(EmailMessageBodyFormat.Html)`   | `1` | Expression | Converts `EmailMessageBodyFormat.Html` to `1`.  See [Convert.ToInt32][] |
 
 ### Property Editor Support
 
@@ -88,24 +108,39 @@ None
 ### Related Data Types
 
 - [EmailMessage][]
-  
+- [Int32][]
+- [String][]
+
 ### Related Concepts
 
+- [Explicit Casting][]
 - [Working with Email][]
 - [Working with Enums][]
 
 ### External Documentation
 
-None
+- [System.Enum][]
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
-[EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
-
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
-[Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
+[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+
+[EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
 [Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+[Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
+[Explicit Casting]: {{< url "Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ExplicitCast" >}}
+[Enum.Parse]: {{< url "MSDocs.DotNet.Api.System.Enum.Parse" >}}
+[Enum.ToObject]: {{< url "MSDocs.DotNet.Api.System.Enum.ToObject" >}}
+[Enum.ToString]: {{< url "MSDocs.DotNet.Api.System.Enum.ToString" >}}
+[Convert.ToInt32]: {{< url "MSDocs.DotNet.Api.System.Convert.ToInt32" >}}
+[Convert.ToString]: {{< url "MSDocs.DotNet.Api.System.Convert.ToString" >}}
+
+[Instantiating an enumeration type]: {{< url "MSDocs.DotNet.Api.System.Enum.InstantiatingAnEnum" >}}
+[Formatting enumeration values]: {{< url "MSDocs.DotNet.Api.System.Enum.FormattingEnumerationValues" >}}
+
+[System.Enum]: {{< url "MSDocs.DotNet.Api.System.Enum.MainDoc" >}}

@@ -10,7 +10,7 @@ description: "Used to represent an email message."
 
 ## Summary
 
-The `EmailMessage` data type is represent an email message.
+The `EmailMessage` data type is used to represent an email message.
 
 | | |
 |-|-|
