@@ -1108,6 +1108,10 @@
                             MainDoc = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/"
                             [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials]
                                 MainDoc = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials"
+                                CertificatePath = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath"
+                                CertificatePassword = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepassword"
+                                FromAddress = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#fromaddress"
+                                ClientId = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#clientid"
             [Cortex.Reference.DataTypes.Http]
                 MainDoc = "/docs/reference/data-types/http/"
                 [Cortex.Reference.DataTypes.Http.Authentication]

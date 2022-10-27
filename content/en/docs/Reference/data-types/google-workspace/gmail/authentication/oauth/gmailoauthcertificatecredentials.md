@@ -10,3 +10,15 @@ weight: 1
 <p class="namespace">(Cortex.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials)</p>
 
 <img src="/images/work-in-progress.jpg">
+
+## Summary
+
+## Properties
+
+### CertificatePath
+
+### CertificatePassword
+
+### FromAddress
+
+### ClientId

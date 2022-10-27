@@ -63,7 +63,7 @@ Provide a valid [Host][].
 
 ### SSL Required
 
-A [Category][] of `SSL` and an [Error Code][] of `200` indicates that SSL is required. More specifically, the mail server is expecting that SSL is used as soon as the connection is established.
+A [Category][] of `SSL` and an [Error Code][] of `200` indicates that [SSL][] is required. More specifically, the mail server is expecting that [SSL][] is used as soon as the connection is established.
 
 #### Message Format
 
@@ -74,7 +74,7 @@ requires that'Use SSL' be set to true. Please click the HelpLink for more inform
 
 #### How to Fix
 
-Change [UseSsl][] in the [ServerDetails][] to `true`, or make a connection on a [Port][] which does not require SSL.
+Change [UseSsl][] in the [ServerDetails][] to `true`, or make a connection on a [Port][] which does not require [SSL][].
 
 ***
 
@@ -82,10 +82,10 @@ Change [UseSsl][] in the [ServerDetails][] to `true`, or make a connection on a 
 
 A [Category][] of `SSL` and an [Error Code][] of `201` indicates that one of the following issues occurred:
 
-* An SSL connection is not supported. More specifically, the mail server either does not support SSL connections or only supports SSL connections via the STARTTLS command.
+* An [SSL][] connection is not supported. More specifically, the mail server either does not support [SSL][] connections or only supports [SSL][] connections via the STARTTLS command.
 * Certificate on the [Host][] is expired, untrusted or invalid
 * Certificate replaced by anti-virus software in order to scan web traffic resulting in failed certificate validation
-* CRL server is down
+* [CRL][] server is down
 
 #### Message Format
 
@@ -97,9 +97,9 @@ Please click the HelpLink for more information on how to fix this."
 
 #### How to Fix
 
-Change `UseSsl` in the [ServerDetails][] to `false`, or make a connection on a port which supports/requires an SSL-wrapped connection.
+Change [UseSsl][] in the [ServerDetails][] to `false`, or make a connection on a port which supports [SSL][].
 
-If the above suggestion does not fix the problem check if the anti-virus software on the server running the flow is replacing the SSL certificate in order to scan the web traffic and change the settings appropriately if needed.
+If the above suggestion does not fix the problem check if the anti-virus software on the server running the flow is replacing the [SSL][] certificate in order to scan the web traffic and change the settings appropriately if needed.
 
 If the issue persists, please check the inner exception as instructed by the [Message][].
 
@@ -107,7 +107,7 @@ If the issue persists, please check the inner exception as instructed by the [Me
 
 ### Invalid Username and Password
 
-A [Category][] of `UserCredentials` and an [Error Code][] of `300` indicates that the username or password provided is incorrect.
+A [Category][] of `UserCredentials` and an [Error Code][] of `300` indicates that the [Username][] or [Password][] provided is incorrect.
 
 #### Message Format
 
@@ -118,7 +118,7 @@ an incorrect username and password combination. Please click the HelpLink for mo
 
 #### How to Fix
 
-Provide a valid username and password combination in the [UserCredentials][].
+Provide a valid [Username][] and [Password][] combination in the [UserCredentials][].
 
 ***
 
@@ -126,8 +126,8 @@ Provide a valid username and password combination in the [UserCredentials][].
 
 A [Category][] of `OAuthCredentials` and an [Error Code][] of `400` indicates that one of the following issues occurred:
 
-* An invalid certificate path and password combination has been provided
-* The certificate path points to an invalid certificate
+* An invalid [CertificatePath][] and [CertificatePassword][] combination has been provided in the [GmailOAuthCertificateCredentials][]
+* The [CertificatePath][] points to an invalid [SSL][] certificate
 
 #### Message Format
 
@@ -139,13 +139,13 @@ for more information on how to fix this."
 
 #### How to Fix
 
-Provide a path pointing to a valid SSL certificate and ensure that the certificate password is correct.
+Provide a [CertificatePath][] pointing to a valid [SSL][] certificate and ensure that the [CertificatePassword][] is correct in the [GmailOAuthCertificateCredentials][].
 
 ***
 
 ### Invalid Client Credentials
 
-A [Category][] of `OAuthCredentials` and an [Error Code][] of `401` indicates that an invalid `FromAddress` and `ClientId` combination has been provided.
+A [Category][] of `OAuthCredentials` and an [Error Code][] of `401` indicates that an invalid [FromAddress][] and [ClientId][] combination has been provided in the [GmailOAuthCertificateCredentials][].
 
 #### Message Format
 
@@ -157,7 +157,7 @@ information on how to fix this."
 
 #### How to Fix
 
-Provide a valid From Address and ensure that the Client ID is correct.
+Provide a valid [FromAddress][] and ensure that the [ClientId][] is correct in the [GmailOAuthCertificateCredentials][].
 
 ***
 
@@ -263,15 +263,24 @@ None
 [Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 
+[GmailOAuthCertificateCredentials]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.MainDoc" >}}
+[CertificatePath]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePath" >}}
+[CertificatePassword]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePassword" >}}
+[FromAddress]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.FromAddress" >}}
+[ClientId]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.ClientId" >}}
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
 [Host]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
 [Port]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Port" >}}
 [UseSsl]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.UseSsl" >}}
-
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
+[Username]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
+[Password]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
 [BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
 [EmailSessionErrorCode]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.MainDoc" >}}
 [Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
 [Send Email Using SMTP Server Block]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.MainDoc" >}}
 [Send Email Using Gmail Block]: {{< url "Cortex.Reference.Blocks.GoogleWorkspace.Gmail.SendEmail.SendEmailUsingGmail.MainDoc" >}}
 [Send Email Using Microsoft 365 Block]: {{< url "Cortex.Reference.Blocks.Microsoft365.Outlook.SendEmail.SendEmailUsingMicrosoft365.MainDoc" >}}
+
+[CRL]: {{< url "Cortex.Reference.Glossary.A-E.CRL" >}}
+[SSL]: {{< url "Cortex.Reference.Glossary.P-T.SSL" >}}
