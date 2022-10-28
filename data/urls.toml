@@ -1102,6 +1102,8 @@
                 MainDoc = "/docs/reference/data-types/google-workspace/"
                 [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail]
                     MainDoc = "/docs/reference/data-types/google-workspace/gmail/"
+                    [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails]
+                        MainDoc = "/docs/reference/data-types/google-workspace/gmail/gmailsessiondetails"
                     [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication]
                         MainDoc = "/docs/reference/data-types/google-workspace/gmail/authentication/"
                         [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth]
@@ -1245,14 +1247,14 @@
             [Cortex.Reference.Exceptions.Email]
                 MainDoc = "/docs/reference/exceptions/email/"
                     [Cortex.Reference.Exceptions.Email.EmailSessionException]
-                        MainDoc = "/docs/reference/exceptions/email/emailsessionexception/"
-                        InvalidPort = "/docs/reference/exceptions/email/emailsessionexception/#invalid-port"
-                        InvalidHost = "/docs/reference/exceptions/email/emailsessionexception/#invalid-host"
-                        SslRequired = "/docs/reference/exceptions/email/emailsessionexception/#ssl-required"
-                        SslUnsupported = "/docs/reference/exceptions/email/emailsessionexception/#ssl-not-supported"
-                        InvalidUserCredentials = "/docs/reference/exceptions/email/emailsessionexception/#invalid-username-and-password"
-                        InvalidSslCertificate = "/docs/reference/exceptions/email/emailsessionexception/#invalid-ssl-certificate"
-                        InvalidClientCredentials = "/docs/reference/exceptions/email/emailsessionexception/#invalid-client-credentials"
+                        MainDoc = "/docs/reference/exceptions/email/email-session-exception/"
+                        InvalidPort = "/docs/reference/exceptions/email/email-session-exception/#invalid-port"
+                        InvalidHost = "/docs/reference/exceptions/email/email-session-exception/#invalid-host"
+                        SslRequired = "/docs/reference/exceptions/email/email-session-exception/#ssl-required"
+                        SslUnsupported = "/docs/reference/exceptions/email/email-session-exception/#ssl-unsupported"
+                        InvalidUserCredentials = "/docs/reference/exceptions/email/email-session-exception/#invalid-user-credentials"
+                        InvalidSslCertificate = "/docs/reference/exceptions/email/email-session-exception/#invalid-ssl-certificate"
+                        InvalidClientCredentials = "/docs/reference/exceptions/email/email-session-exception/#invalid-gmail-client-credentials"
             [Cortex.Reference.Exceptions.FilesAndFolders]
                 MainDoc = "/docs/reference/exceptions/files-and-folders/"
                 [Cortex.Reference.Exceptions.FilesAndFolders.InvalidFolderNameException]

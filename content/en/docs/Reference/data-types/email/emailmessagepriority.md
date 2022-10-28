@@ -24,7 +24,11 @@ The `EmailMessagePriority` data type is used to represent the priority of an ema
 | **Size:**              | `4` bytes                                              |
 | **Default Value:**     | `EmailMessagePriority.Normal`                          |
 | **Can be used as:**    | `EmailMessagePriority`, `Object`, `dynamic`            |
-| **Can be cast to:**    | N/A                                                    |
+| **Can be cast to:**    | `Int16` (e.g. `(Int16)EmailMessagePriority.Normal` or `(System.Int16)EmailMessagePriority.Normal` or `(short)EmailMessagePriority.Normal`)  |
+|                        | `Int32` (e.g. `(Int32)EmailMessagePriority.Normal` or `(System.Int32)EmailMessagePriority.Normal` or `(int)EmailMessagePriority.Normal`)  |
+|                        | `Int64` (e.g. `(Int64)EmailMessagePriority.Normal` or `(System.Int64)EmailMessagePriority.Normal` or `(long)EmailMessagePriority.Normal`)  |
+|                        | `Single` (e.g. `(Single)EmailMessagePriority.Normal` or `(System.Single)EmailMessagePriority.Normal` or `(float)EmailMessagePriority.Normal`)  |
+|                        | `Double` (e.g. `(Double)EmailMessagePriority.Normal` or `(System.Double)EmailMessagePriority.Normal` or `(double)EmailMessagePriority.Normal`)  |
 
 ## Values
 

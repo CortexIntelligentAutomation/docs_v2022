@@ -21,9 +21,14 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 | **Full Name:**         | `Cortex.DataTypes.Email.EmailSessionErrorCode`         |
 | **Alias:**             | N/A                                                    |
 | **Description:**       | Error code explaining the reason an [EmailSessionException][] occurred. |
+| **Size:**              | `4` bytes                                              |
 | **Default Value:**     | `(EmailSessionErrorCode)0`                             |
 | **Can be used as:**    | `EmailSessionErrorCode`, `Object`, `dynamic`           |
-| **Can be cast to:**    | N/A                                                    |
+| **Can be cast to:**    | `Int16` (e.g. `(Int16)EmailSessionErrorCode.InvalidPort` or `(System.Int16)EmailSessionErrorCode.InvalidPort` or `(short)EmailSessionErrorCode.InvalidPort`)  |
+|                        | `Int32` (e.g. `(Int32)EmailSessionErrorCode.InvalidPort` or `(System.Int32)EmailSessionErrorCode.InvalidPort` or `(int)EmailSessionErrorCode.InvalidPort`)  |
+|                        | `Int64` (e.g. `(Int64)EmailSessionErrorCode.InvalidPort` or `(System.Int64)EmailSessionErrorCode.InvalidPort` or `(long)EmailSessionErrorCode.InvalidPort`)  |
+|                        | `Single` (e.g. `(Single)EmailSessionErrorCode.InvalidPort` or `(System.Single)EmailSessionErrorCode.InvalidPort` or `(float)EmailSessionErrorCode.InvalidPort`)  |
+|                        | `Double` (e.g. `(Double)EmailSessionErrorCode.InvalidPort` or `(System.Double)EmailSessionErrorCode.InvalidPort` or `(double)EmailSessionErrorCode.InvalidPort`)  |
 
 ## Values
 
@@ -33,7 +38,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | InvalidPort                                     |
 | **Value:**   | [Int32][] with value `100`                      |
-| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [Port][] being provided in [ServerDetails][]. |
+| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [Port][] being provided in [ServerDetails][]. See [Invalid Port][InvalidPort]. |
 
 ### InvalidHost
 
@@ -41,7 +46,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | InvalidHost                                     |
 | **Value:**   | [Int32][] with value `101`                      |
-| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [Host][] being provided in [ServerDetails][]. |
+| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [Host][] being provided in [ServerDetails][]. See [Invalid Host][InvalidHost]. |
 
 ### SslRequired
 
@@ -49,7 +54,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | SslRequired                                     |
 | **Value:**   | [Int32][] with value `200`                      |
-| **Notes:**   | Used when an [EmailSessionException][] occured due to [UseSsl][] being set to `false` in [ServerDetails][] when trying to establish a connection on a [Port][] which requires [SSL][]. |
+| **Notes:**   | Used when an [EmailSessionException][] occured due to [UseSsl][] being set to `false` in [ServerDetails][] when trying to establish a connection on a [Port][] which requires [SSL][]. See [SSL Required][SslRequired]. |
 
 ### SslUnsupported
 
@@ -57,7 +62,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | SslUnsupported                                  |
 | **Value:**   | [Int32][] with value `201`                      |
-| **Notes:**   | Used when an [EmailSessionException][] occured due to [UseSsl][] being set to `true` in [ServerDetails][] when trying to establish a connection on a [Port][] which does not support [SSL][]. |
+| **Notes:**   | Used when an [EmailSessionException][] occured due to [UseSsl][] being set to `true` in [ServerDetails][] when trying to establish a connection on a [Port][] which does not support [SSL][].  See [SSL Unsupported][SslUnsupported Exception].|
 
 ### InvalidUserCredentials
 
@@ -65,7 +70,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | InvalidUserCredentials                          |
 | **Value:**   | [Int32][] with value `300`                      |
-| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [Username][] and [Password][] combination being provided in [UserCredentials][]. |
+| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [Username][] and [Password][] combination being provided in [UserCredentials][]. See [Invalid User Credentials][InvalidUserCredentials]. |
 
 ### InvalidCertificate
 
@@ -73,7 +78,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | InvalidCertificate                              |
 | **Value:**   | [Int32][] with value `400`                      |
-| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][]. |
+| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][]. See [Invalid SSL Certificate][InvalidSslCertificate]. |
 
 ### InvalidGmailClientCredentials
 
@@ -81,7 +86,7 @@ The `EmailSessionErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | InvalidGmailClientCredentials                   |
 | **Value:**   | [Int32][] with value `401`                      |
-| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [FromAddress][] and [ClientId][] combination being provided in [GmailOAuthCertificateCredentials][]. |
+| **Notes:**   | Used when an [EmailSessionException][] occured due to an invalid [FromAddress][] and [ClientId][] combination being provided in [GmailOAuthCertificateCredentials][]. See [Invalid Gmail Client Credentials][InvalidClientCredentials]. |
 
 ## Remarks
 
@@ -91,27 +96,20 @@ The following table shows some of the ways that `EmailSessionErrorCode` can be c
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Declare an `EmailSessionErrorCode` literal | `EmailSessionErrorCode.InvalidPort` | `EmailSessionErrorCode.InvalidPort`| Literal | Indicates than [EmailSessionException][] occured due to an invalid [Port][] being provided in [ServerDetails][] |
-| | `InvalidHost` | `EmailSessionErrorCode.InvalidHost`| Literal | Indicates than [EmailSessionException][] occured due to an invalid [Host][] being provided in [ServerDetails][] |
-| | `SslRequired` | `EmailSessionErrorCode.SslRequired`| Literal | Indicates than [EmailSessionException][] occured due to [UseSsl][] being set to `false` in [ServerDetails][] when trying to establish a connection on a [Port][] which requires [SSL][] |
-| | `SslUnsupported` | `EmailSessionErrorCode.SslUnsupported`| Literal | Indicates than [EmailSessionException][] occured due to [UseSsl][] being set to `true` in [ServerDetails][] when trying to establish a connection on a [Port][] which does not support [SSL][] |
-| | `InvalidUserCredentials` | `EmailSessionErrorCode.InvalidUserCredentials`| Literal | Indicates than [EmailSessionException][] occured due to an invalid [Username][] and [Password][] combination being provided in [UserCredentials][] |
-| | `InvalidCertificate` | `EmailSessionErrorCode.InvalidCertificate`| Literal | Indicates than [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][] |
-| | `InvalidGmailClientCredentials` | `EmailSessionErrorCode.InvalidGmailClientCredentials`| Literal | Indicates than [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][] |
-| Use an `EmailSessionErrorCode` expression | `EmailSessionErrorCode.InvalidPort` | `EmailSessionErrorCode.InvalidPort`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [Port][] being provided in [ServerDetails][] |
-| | `EmailSessionErrorCode.InvalidHost` | `EmailSessionErrorCode.InvalidHost`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [Host][] being provided in [ServerDetails][] |
-| | `EmailSessionErrorCode.SslRequired` | `EmailSessionErrorCode.SslRequired`| Expression | Indicates than [EmailSessionException][] occured due to [UseSsl][] being set to `false` in [ServerDetails][] when trying to establish a connection on a [Port][] which requires [SSL][] |
-| | `EmailSessionErrorCode.SslUnsupported` | `EmailSessionErrorCode.SslUnsupported`| Expression | Indicates than [EmailSessionException][] occured due to [UseSsl][] being set to `true` in [ServerDetails][] when trying to establish a connection on a [Port][] which does not support [SSL][] |
-| | `EmailSessionErrorCode.InvalidUserCredentials` | `EmailSessionErrorCode.InvalidUserCredentials`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [Username][] and [Password][] combination being provided in [UserCredentials][] |
-| | `EmailSessionErrorCode.InvalidCertificate` | `EmailSessionErrorCode.InvalidCertificate`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][] |
-| | `EmailSessionErrorCode.InvalidGmailClientCredentials` | `EmailSessionErrorCode.InvalidGmailClientCredentials`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][] |
-| Use [Explicit Casting][] | `(EmailSessionErrorCode)100` | `EmailSessionErrorCode.InvalidPort`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [Port][] being provided in [ServerDetails][] |
-| | `(EmailSessionErrorCode)101` | `EmailSessionErrorCode.InvalidHost`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [Host][] being provided in [ServerDetails][] |
-| | `(EmailSessionErrorCode)200` | `EmailSessionErrorCode.SslRequired`| Expression | Indicates than [EmailSessionException][] occured due to [UseSsl][] being set to `false` in [ServerDetails][] when trying to establish a connection on a [Port][] which requires [SSL][] |
-| | `(EmailSessionErrorCode)201` | `EmailSessionErrorCode.SslUnsupported`| Expression | Indicates than [EmailSessionException][] occured due to [UseSsl][] being set to `true` in [ServerDetails][] when trying to establish a connection on a [Port][] which does not support [SSL][] |
-| | `(EmailSessionErrorCode)300` | `EmailSessionErrorCode.InvalidUserCredentials`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [Username][] and [Password][] combination being provided in [UserCredentials][] |
-| | `(EmailSessionErrorCode)400` | `EmailSessionErrorCode.InvalidCertificate`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][] |
-| | `(EmailSessionErrorCode)401` | `EmailSessionErrorCode.InvalidGmailClientCredentials`| Expression | Indicates than [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][] |
+| Use an `EmailSessionErrorCode` expression | `EmailSessionErrorCode.InvalidPort` | `EmailSessionErrorCode.InvalidPort`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [Port][] being provided in [ServerDetails][] |
+| | `EmailSessionErrorCode.InvalidHost` | `EmailSessionErrorCode.InvalidHost`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [Host][] being provided in [ServerDetails][] |
+| | `EmailSessionErrorCode.SslRequired` | `EmailSessionErrorCode.SslRequired`| Expression | Indicates an [EmailSessionException][] occured due to [UseSsl][] being set to `false` in [ServerDetails][] when trying to establish a connection on a [Port][] which requires [SSL][] |
+| | `EmailSessionErrorCode.SslUnsupported` | `EmailSessionErrorCode.SslUnsupported`| Expression | Indicates an [EmailSessionException][] occured due to [UseSsl][] being set to `true` in [ServerDetails][] when trying to establish a connection on a [Port][] which does not support [SSL][] |
+| | `EmailSessionErrorCode.InvalidUserCredentials` | `EmailSessionErrorCode.InvalidUserCredentials`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [Username][] and [Password][] combination being provided in [UserCredentials][] |
+| | `EmailSessionErrorCode.InvalidCertificate` | `EmailSessionErrorCode.InvalidCertificate`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][] |
+| | `EmailSessionErrorCode.InvalidGmailClientCredentials` | `EmailSessionErrorCode.InvalidGmailClientCredentials`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [FromAddress][] and [ClientId][] combination being provided in [GmailOAuthCertificateCredentials][] |
+| Use [Explicit Casting][] | `(EmailSessionErrorCode)100` | `EmailSessionErrorCode.InvalidPort`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [Port][] being provided in [ServerDetails][] |
+| | `(EmailSessionErrorCode)101` | `EmailSessionErrorCode.InvalidHost`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [Host][] being provided in [ServerDetails][] |
+| | `(EmailSessionErrorCode)200` | `EmailSessionErrorCode.SslRequired`| Expression | Indicates an [EmailSessionException][] occured due to [UseSsl][] being set to `false` in [ServerDetails][] when trying to establish a connection on a [Port][] which requires [SSL][] |
+| | `(EmailSessionErrorCode)201` | `EmailSessionErrorCode.SslUnsupported`| Expression | Indicates an [EmailSessionException][] occured due to [UseSsl][] being set to `true` in [ServerDetails][] when trying to establish a connection on a [Port][] which does not support [SSL][] |
+| | `(EmailSessionErrorCode)300` | `EmailSessionErrorCode.InvalidUserCredentials`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [Username][] and [Password][] combination being provided in [UserCredentials][] |
+| | `(EmailSessionErrorCode)400` | `EmailSessionErrorCode.InvalidCertificate`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [CertificatePath][] and [CertificatePassword][] combination being provided in [GmailOAuthCertificateCredentials][] |
+| | `(EmailSessionErrorCode)401` | `EmailSessionErrorCode.InvalidGmailClientCredentials`| Expression | Indicates an [EmailSessionException][] occured due to an invalid [FromAddress][] and [ClientId][] combination being provided in [GmailOAuthCertificateCredentials][] |
 | Use `Enum.Parse` | `(EmailSessionErrorCode)Enum.Parse(typeof(EmailSessionErrorCode), "InvalidPort")` | `EmailSessionErrorCode.InvalidPort`| Expression | Parses `"InvalidPort"` and converts it to `EmailSessionErrorCode.InvalidPort`. See [Enum.Parse][] |
 | | `(EmailSessionErrorCode)Enum.Parse(typeof(EmailSessionErrorCode), "InvalidHost")` | `EmailSessionErrorCode.InvalidHost`| Expression | Parses `"InvalidHost"` and converts it to `EmailSessionErrorCode.InvalidHost`. See [Enum.Parse][] |
 | | `(EmailSessionErrorCode)Enum.Parse(typeof(EmailSessionErrorCode), "SslRequired")` | `EmailSessionErrorCode.SslRequired`| Expression | Parses `"SslRequired"` and converts it to `EmailSessionErrorCode.SslRequired`. See [Enum.Parse][] |
@@ -131,7 +129,7 @@ Please see [Instantiating an enumeration type][] for further information.
 
 ### Convert EmailSessionErrorCode to Text
 
-The following table shows some of the ways that a `EmailSessionErrorCode` can be converted to text.
+The following table shows some of the ways that an `EmailSessionErrorCode` can be converted to text.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
@@ -168,7 +166,7 @@ Please see [Formatting enumeration values][] for further information.
 
 ### Convert EmailSessionErrorCode to a Number
 
-The following table shows some of the ways that a `EmailSessionErrorCode` can be converted to a number.
+The following table shows some of the ways that an `EmailSessionErrorCode` can be converted to a number.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
@@ -177,8 +175,8 @@ The following table shows some of the ways that a `EmailSessionErrorCode` can be
 |                                       | `(Int32)EmailSessionErrorCode.SslRequired`   | `200` | Expression | [Casts][Explicit Casting] `EmailSessionErrorCode.SslRequired` to `200` |
 |                                       | `(Int32)EmailSessionErrorCode.SslUnsupported`   | `201` | Expression | [Casts][Explicit Casting] `EmailSessionErrorCode.SslUnsupported` to `201` |
 |                                       | `(Int32)EmailSessionErrorCode.InvalidUserCredentials`   | `300` | Expression | [Casts][Explicit Casting] `EmailSessionErrorCode.InvalidUserCredentials` to `300` |
-|                                       | `(Int32)EmailSessionErrorCode.InvalidCertificate`   | `400` | Expression | [Casts][Explicit Casting] `EmailSessionErrorCode.InvalidCertificate` to ``400` |
-|                                       | `(Int32)EmailSessionErrorCode.InvalidGmailClientCredentials`   | `401` | Expression | [Casts][Explicit Casting] `EmailSessionErrorCode.InvalidGmailClientCredentials` to ``401` |
+|                                       | `(Int32)EmailSessionErrorCode.InvalidCertificate`   | `400` | Expression | [Casts][Explicit Casting] `EmailSessionErrorCode.InvalidCertificate` to `400` |
+|                                       | `(Int32)EmailSessionErrorCode.InvalidGmailClientCredentials`   | `401` | Expression | [Casts][Explicit Casting] `EmailSessionErrorCode.InvalidGmailClientCredentials` to `401` |
 | Use `Convert.ToInt32`                 | `Convert.ToInt32(EmailSessionErrorCode.InvalidPort)`   | `100` | Expression | Converts `EmailSessionErrorCode.InvalidPort` to `100`. See [Convert.ToInt32][] |
 |                                       | `Convert.ToInt32(EmailSessionErrorCode.InvalidHost)`   | `101` | Expression | Converts `EmailSessionErrorCode.InvalidHost` to `101`. See [Convert.ToInt32][] |
 |                                       | `Convert.ToInt32(EmailSessionErrorCode.SslRequired)`   | `200` | Expression | Converts `EmailSessionErrorCode.SslRequired` to `200`. See [Convert.ToInt32][] |
@@ -195,7 +193,7 @@ The following table shows some of the ways that a `EmailSessionErrorCode` can be
 
 ### Known Limitations
 
-Currently for the [SslUnsupported][] error code, there are numerous reasons for why the exception may have occurred. For more information, see [SSL Not Supported][].
+Currently for the [SslUnsupported][] error code, there are numerous reasons for why the exception may have occurred. For more information, see [SSL Unsupported][SslUnsupported Exception].
 
 In the future this may change.
 
@@ -230,13 +228,21 @@ In the future this may change.
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 [Username]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
 [Password]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
+
 [EmailSessionException]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.MainDoc" >}}
+[InvalidPort]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidPort" >}}
+[InvalidHost]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidHost" >}}
+[SslRequired]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslRequired" >}}
+[SslUnsupported Exception]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
+[InvalidUserCredentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidUserCredentials" >}}
+[InvalidSslCertificate]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidSslCertificate" >}}
+[InvalidClientCredentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidClientCredentials" >}}
+
 [GmailOAuthCertificateCredentials]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.MainDoc" >}}
 [CertificatePath]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePath" >}}
 [CertificatePassword]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePassword" >}}
 [FromAddress]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.FromAddress" >}}
 [ClientId]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.ClientId" >}}
-[SSL Not Supported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
 
 [Instantiating an enumeration type]: {{< url "MSDocs.DotNet.Api.System.Enum.InstantiatingAnEnum" >}}
 [Formatting enumeration values]: {{< url "MSDocs.DotNet.Api.System.Enum.FormattingEnumerationValues" >}}

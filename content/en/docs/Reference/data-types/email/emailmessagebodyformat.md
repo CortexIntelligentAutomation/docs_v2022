@@ -24,7 +24,11 @@ The `EmailMessageBodyFormat` data type is used to represent the format of an ema
 | **Size:**              | `4` bytes                                              |
 | **Default Value:**     | `EmailMessageBodyFormat.Text`                          |
 | **Can be used as:**    | `EmailMessageBodyFormat`, `Object`, `dynamic`          |
-| **Can be cast to:**    | N/A                                                    |
+| **Can be cast to:**    | `Int16` (e.g. `(Int16)EmailMessageBodyFormat.Text` or `(System.Int16)EmailMessageBodyFormat.Text` or `(short)EmailMessageBodyFormat.Text`)  |
+|                        | `Int32` (e.g. `(Int32)EmailMessageBodyFormat.Text` or `(System.Int32)EmailMessageBodyFormat.Text` or `(int)EmailMessageBodyFormat.Text`)  |
+|                        | `Int64` (e.g. `(Int64)EmailMessageBodyFormat.Text` or `(System.Int64)EmailMessageBodyFormat.Text` or `(long)EmailMessageBodyFormat.Text`)  |
+|                        | `Single` (e.g. `(Single)EmailMessageBodyFormat.Text` or `(System.Single)EmailMessageBodyFormat.Text` or `(float)EmailMessageBodyFormat.Text`)  |
+|                        | `Double` (e.g. `(Double)EmailMessageBodyFormat.Text` or `(System.Double)EmailMessageBodyFormat.Text` or `(double)EmailMessageBodyFormat.Text`)  |
 
 ## Values
 
