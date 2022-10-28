@@ -19,6 +19,10 @@ See [Acceleration Program][].
 
 An API (Application Programming Interface) is a set of functions that allows applications to access data from and interact with external systems, services or applications.
 
+### Autogeneration
+
+Autogeneration, is the process in which something is created automatically for use within a process.
+
 ### Automate
 
 The application of [automation][].
@@ -26,6 +30,14 @@ The application of [automation][].
 ### Automation
 
 Automation is a term for techniques, methods, systems or technologies that reduce human intervention in [tasks][] and [processes][].
+
+### AWS Lambda
+
+AWS Lambda is an event driven serverless solution from AWS. Instead of deploying and maintaining servers, cloud infrastructure is used to run applications.
+
+### Azure Functions
+
+Azure Functions is an event driven serverless solution from Microsoft. Instead of deploying and maintaining servers, cloud infrastructure is used to run applications.
 
 ## B
 
@@ -105,6 +117,14 @@ Also see [Explicit Cast][] for more information.
 
 Carbon Copy (CC) is a way of sending copies of an email to other people. The other recipients of the email will be able to see who recieved the email via CC.
 
+### CI/CD
+
+CI/CD is a software development practice and is broken down into the following concepts:
+
+- [Continuous Integration][]
+- [Continuous Delivery][]
+- [Continuous Deployment][]
+
 ### Char
 
 A [data type][] that represents a character or letter.
@@ -121,6 +141,10 @@ Examples of publicly available Cloud providers include:
 * Google Cloud Platform
 * Microsoft Azure
 
+### Cloud Service Provider
+
+A cloud service provider is a third-party company offering a cloud-based platform, infrastructure, application, or storage services.
+
 ### Code
 
 A set of instructions in a computer program.
@@ -128,6 +152,26 @@ A set of instructions in a computer program.
 ### Concurrent
 
 At the same time.
+
+### Continuous Integration
+
+Continuous Integration is a software development practice where developers frequently:
+
+- Integrate their local changes with source code from the main branch
+- Use automated testing to ensure that their changes work as expected
+- Merge their changes into the main branch, if no issues were found
+
+### Continuous Delivery
+
+Continuous Delivery is a software development practice where:
+
+- Changes to the main branch are detected
+- The main branch is packaged into deployment artefacts
+- Deployment artefacts are made available
+
+### Continuous Deployment
+
+Continuous Deployment is a software development practice which extends [Continuous Delivery][] by automatically deploying the generated artefacts.
 
 ### Convert
 
@@ -210,6 +254,10 @@ A developer is an individual that builds and creates software and applications.
 A [data type][] that represents an unordered collection of key-item pairs, where each pair consists of a unique key and its associated item. Dictionaries are optimised for fast lookup of items using their key.
 
 For more detailed information about the Dictionary data type, see [Data Types > Dictionary&lt;TKey, TItem&gt;][].
+
+### DLL
+
+DLL files are binary files that can contain executable code and resources.
 
 ### Drag-and-Drop
 
@@ -308,6 +356,9 @@ For more detailed information about the Expression Editor, see [Cortex Studio > 
 [CC]: {{< ref "#cc" >}}
 [Code]: {{< ref "#code" >}}
 [Concurrent]: {{< ref "#concurrent" >}}
+[Continuous Integration]: {{< ref "#continuous-integration" >}}
+[Continuous Delivery]: {{< ref "#continuous-delivery" >}}
+[Continuous Deployment]: {{< ref "#continuous-deployment" >}}
 [Cortex]: {{< ref "#cortex" >}}
 [Cortex Studio]: {{< ref "#cortex-studio" >}}
 [Data Type]: {{< ref "#data-type" >}}

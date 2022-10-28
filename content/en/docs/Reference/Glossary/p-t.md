@@ -89,6 +89,18 @@ A method of communication over a network, in which one computer sends a request 
 
 Simple Authentication and Security Layer (SASL) is a framework for protocols like [SMTP][] and [IMAP][] to add authentication support.
 
+### SDK
+
+SDK stands for "Software Development Kit", and is a collection of software development tools.
+
+An SDK facilitates the creation of applications by having a compiler, debugger and sometimes a software framework.
+
+### Service Fabric
+
+Service Fabric is an open source project developed by Microsoft used to deliver highly available and durable services at cloud-scale.
+
+For more information see [What is Service Fabric?][]
+
 ### Single
 
 A [data type][] that represents a fractional, or very large or small number from `-3.402823e+38` through `3.402823e+38`.
@@ -157,6 +169,10 @@ A mechanism used to initiate an action when a specific event occurs (e.g. When a
 
 See [Data Type][data type].
 
+### Typeahead
+
+Typeahead is a language prediction tool that is used to provide suggestions based on what a user has already typed.
+
 [SMTP]: {{< ref "#smtp" >}}
 [SSL]: {{< ref "#ssl" >}}
 
@@ -186,3 +202,5 @@ See [Data Type][data type].
 [Property Expressions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.PropertyExpressions" >}}
 
 [What is PowerShell?]: {{< url "MSDocs.PowerShell.WhatIsPowerShell" >}}
+
+[What is Service Fabric?]: {{< url "MSDocs.ServiceFabric.MainDoc" >}}

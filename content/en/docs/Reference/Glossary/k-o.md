@@ -25,6 +25,10 @@ A twelve week program which takes your team through the phases of mobilisation, 
 
 See [Launch Program][].
 
+### Linux
+
+Linux is an open-source Unix-like operating system based on the Linux kernel.
+
 ### List
 
 A [data type][] that represents a list of items that can iterated or looped over.
@@ -68,6 +72,12 @@ See [Method Expressions][] for information on how methods can be used within the
 ### Non-Null
 
 Non-Null indicates that a [data type][] has been [initialised][] and has a value.
+
+### Nuget Package
+
+A NuGet package is a ZIP file with the .nupkg extension. It contains compiled code ([DLLs][]), other files related to that code.
+
+NuGet can be published and shared to a public or private host.
 
 ### Null
 
@@ -134,6 +144,7 @@ Outlook is a free web-based email service provided by Microsoft.
 [C#]: {{< url "Cortex.Reference.Glossary.A-E.CSharp" >}}
 [data type]: {{< url "Cortex.Reference.Glossary.A-E.DataType" >}}
 [developers]: {{< url "Cortex.Reference.Glossary.A-E.Developer" >}}
+[DLLs]: {{< url "Cortex.Reference.Glossary.A-E.DLL" >}}
 [drag-and-drop]: {{< url "Cortex.Reference.Glossary.A-E.DragAndDrop" >}}
 [Dictionary]: {{< url "Cortex.Reference.Glossary.A-E.Dictionary" >}}
 [Double]: {{< url "Cortex.Reference.Glossary.A-E.Double" >}}
