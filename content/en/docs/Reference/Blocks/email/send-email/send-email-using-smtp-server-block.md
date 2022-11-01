@@ -445,7 +445,7 @@ The [ServerDetails][] within the [Basic Email Session Details][Basic Email Sessi
 The above two points correspond to the [UseSsl][] property being set to `true` and `false` respectively. As such, generally the following rules can be followed to determine whether [UseSsl][] should be set to `true` or `false`:
 
 - If the [Port][] being connected to is `465` then [UseSsl][] should be set to `true`
-- If the [Port][] being connected to is `25` or `567` then [UseSsl][] should be set to `false`
+- If the [Port][] being connected to is `25` or `587` then [UseSsl][] should be set to `false`
 
 ### Setting Credentials
 
