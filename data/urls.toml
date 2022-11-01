@@ -1534,6 +1534,10 @@
     MainDoc = "https://github.com/erlang/otp"
 [GoBetween]
     MainDoc = "https://github.com/yyyar/gobetween"
+[Google]
+    [Google.Authentication]
+        [Google.Authentication.LessSecureApps]
+            MainDoc = "https://support.google.com/accounts/answer/6010255"
 [GitHub]
     [GitHub.Cortex.Observability]
         GrafanaLokiInstallZip = "https://github.com/CortexIntelligentAutomation/observability/releases/download/v1.0.0/Grafana.Loki.Install.zip"
