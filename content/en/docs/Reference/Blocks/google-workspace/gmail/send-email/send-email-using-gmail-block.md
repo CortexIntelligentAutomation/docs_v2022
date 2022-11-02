@@ -154,9 +154,47 @@ An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@
 
 ### Sending an email with a single attachment
 
+This example will send an email with a single attachment, `attachment.txt`, from `sender@gmail.com` to `recipient@outlook.com`. The attachment is located at `C:\attachment.txt` on the server executing the flow. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be set to `true` within the [Gmail Session Details][Gmail Session Details Property].
+
+For more information on:
+
+- Email attachments, see [Attachments][Attachments Remarks]
+- When [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
+
+#### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:\\attachment.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ @"C:\attachment.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.<br><br>The [Attachments][Attachments Remarks] are added to the email by providing file paths pointing to the files to be attached to the email. |
+| [Gmail Session Details][Gmail Session Details Property] | `($)GmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)GmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new GmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)GmailSessionDetails` is a variable of type [GmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] can be the password associated with the username or an app password, for more information, see [Setting Credentials][].<br><br>The [Password][] property must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
+| [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
+
+#### Result
+
+An email with [Normal][] priority containing a text file attachment, `attachment.txt`, is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
+
 ***
 
 ### Sending an email with multiple attachments
+
+This example will send an email with mutiple attachments, `attachment1.txt` and `attachment2.txt` from `sender@gmail.com` to `recipient@outlook.com`.  The attachments are located at the paths `C:\attachment1.txt` and `C:\attachment2.txt` on the server executing the flow. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be set to `true` within the [Basic Email Session Details][Basic Email Session Details Property].
+
+For more information on:
+
+- Email attachments, see [Attachments][Attachments Remarks]
+- When [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
+
+#### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To": [{"Name": null, "Address": "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": ["C:\\attachment1.txt", "C:\\attachment2.txt"]}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br> `new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: new List<string>(){ @"C:\attachment1.txt", @"C:\attachment2.txt" })` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.<br><br>The [Attachments][Attachments Remarks] are added to the email by providing file paths pointing to the files to be attached to the email. |
+| [Gmail Session Details][Gmail Session Details Property] | `($)GmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"Domain": null, "Username": "sender@gmail.com", "Password": "encryptedPassword"}}`<br><br>In this example `($)GmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new GmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new UserCredentials("sender@gmail.com", "encryptedPassword"))` | `($)GmailSessionDetails` is a variable of type [GmailSessionDetails][]<br><br>The [Password][] property in the [UserCredentials][] can be the password associated with the username or an app password, for more information, see [Setting Credentials][].<br><br>The [Password][] property must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
+| [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
+
+#### Result
+
+An email with [Normal][] priority containing two text file attachments, `attachment1.txt` and `attachment2.txt`, is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
 
 ***
 
@@ -340,6 +378,7 @@ None
 [Close Session Property]: {{< ref "#close-session" >}}
 [How does Priority affect sending an email?]: {{< ref "#how-does-priority-affect-sending-an-email" >}}
 [How does BodyFormat affect sending an email?]: {{< ref "#how-does-bodyformat-affect-sending-an-email" >}}
+[Attachments Remarks]: {{< ref "#attachments" >}}
 [Setting Credentials]: {{< ref "#setting-credentials" >}}
 [Setting UseSsl]: {{< ref "#setting-usessl" >}}
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
