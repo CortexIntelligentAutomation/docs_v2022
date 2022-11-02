@@ -377,6 +377,18 @@ The above two points correspond to the [UseSsl][] property being set to `true` a
 
 ### Opening Sessions
 
+The Send Email Using Gmail block automatically handles creating and opening sessions for the specified [Gmail Session Details][Gmail Session Details Property] using the following rules:
+
+- If a session does not exist, a new session will be created, opened and used when the block runs.
+- If a session already exists but is closed, the session will be opened and used when the block runs.
+- If a session already exists and is open, the session will be used when the block runs.
+
+[Gmail Session Details][Gmail Session Details Property] will keep the session open across multiple Send Email Using Gmail blocks as long as [Close Session][Close Session Property] is set to `false`. Keeping the session open helps increase the performance of the block due to the subsequent blocks not having to spend resources creating and opening sessions for each execution.
+
+Note that for all [SSL][] connections, the protocol to be used will be negotiated with the server depending on which protocols are available. Similarly, the [SASL][] mechanism to be used will be negotiated with the mail server based on the available mechanisms.
+
+For information on how to explicitly close a session, please see [Closing Sessions][].
+
 ### Closing Sessions
 
 Sessions can be explicitly closed by setting [Close Session][Close Session Property] to `true`. This causes the session to be closed after the [Email Message][Email Message Property] has been sent.
