@@ -220,6 +220,36 @@ An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@
 
 ### Sending an email using OAuth
 
+This example will send an email from `sender@gmail.com` to `recipient@outlook.com`. The example uses the [SMTP][] server hosted at `smtp.gmail.com` on [Port][] `465` which requires [UseSsl][] to be to set to `true` within the [Gmail Session Details][Gmail Session Details Property].
+
+For more information about when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
+
+The authentication mechanism used in this example is OAuth, the specific flow used is often referred to as "two-legged OAuth" or "2LO". As such, for this example to work correctly:
+
+- Credentials provided must be for a [Gmail][] account connected to a Google Workspace
+- Credentials in [Gmail Session Details][Gmail Session Details Property] must be a [GmailOAuthCertificateCredentials][] which requires:
+  - [CertificatePath][]
+  - [CertificatePassword][]
+  - [FromAddress][]
+  - [ClientId][]
+
+For more information on:
+
+- What each of the properties in the [GmailOAuthCertificateCredentials][] needs to be, see [GmailOAuthCertificateCredentials][];
+- How to set up the Gmail account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][].
+
+#### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To":  [{"Name":  null,  "Address":  "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br>`new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.|
+| [Gmail Session Details][Gmail Session Details Property] | `($)GmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"CertificatePath": "C:\\certificate.p12", "CertificatePassword": "encryptedPassword", "FromAddress": "sender@gmail.com", "ClientId": "clientId"}}`<br><br>In this example `($)GmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new GmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new GmailOAuthCertificateCredentials(@"C:\certificate.p12", "encryptedPassword", "sender@gmail.com", "clientId"))` | `($)GmailSessionDetails` is a variable of type [GmailSessionDetails][]<br><br>The [CertificatePassword][] property in the [GmailOAuthCertificateCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][].<br><br>For information on:<ul><li>What each of the properties in the [GmailOAuthCertificateCredentials][] needs to be, see [GmailOAuthCertificateCredentials][]</li><li>How to set up the [Gmail][] account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][]</li></ul> |
+| [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
+
+#### Result
+
+An email with [Normal][] priority is sent from `sender@gmail.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
+
 ***
 
 ## Properties
@@ -439,6 +469,12 @@ None
 [Username]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
 [Password]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
 
+[GmailOAuthCertificateCredentials]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.MainDoc" >}}
+[CertificatePath]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePath" >}}
+[CertificatePassword]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePassword" >}}
+[FromAddress]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.FromAddress" >}}
+[ClientId]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.ClientId" >}}
+
 [EmailAddress]: {{< url "Cortex.Reference.DataTypes.Email.EmailAddress.MainDoc" >}}
 [Address]: {{< url "Cortex.Reference.DataTypes.Email.EmailAddress.Address" >}}
 
@@ -450,6 +486,8 @@ None
 [EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
 [HTML]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.HTML" >}}
 [Text]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
+
+[Setting up a Gmail account for OAuth authentication]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpOAuthGmail" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
 [ArgumentNullException]: {{< url "MSDocs.DotNet.Api.System.ArgumentNullException" >}}
