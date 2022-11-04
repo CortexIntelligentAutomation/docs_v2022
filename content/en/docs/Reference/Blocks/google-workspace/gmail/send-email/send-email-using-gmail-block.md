@@ -318,6 +318,47 @@ For more detailed information on each of the properties, see [EmailMessage][].
 
 ## Exceptions
 
+The exceptions thrown by the block can be found below:
+
+| Name                                 | Description |
+|--------------------------------------|-------------|
+| [ArgumentException][]                |Thrown when [BodyFormat][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessageBodyFormat][] values (e.g. `(EmailMessageBodyFormat)10`).|
+| |Thrown when [Priority][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessagePriority][] values (e.g. `(EmailMessagePriority)10`).|
+| |Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`), contains only whitespace (i.e. `"   "`) or contains the NUL character (i.e. `\0`).|
+| [ArgumentNullException][]            |Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is `null`.|
+| [EmailSessionException][]            |Thrown when an invalid [Port][] is provided in the [ServerDetails][] within the [Gmail Session Details][Gmail Session Details Property]. For more information, see [Invalid Port][].|
+| |Thrown when an invalid [Host][] is provided in the [ServerDetails][] within the [Gmail Session Details][Gmail Session Details Property]. For more information, see [Invalid Host][].|
+| |Thrown when a connection cannot be established; this typically occurs when [UseSsl][] within [Gmail Session Details][Gmail Session Details Property] is set to `false` with a [Port][] which requires it to be set to `true`. For more information, see [SSL Required][]. |
+| |Thrown when a connection cannot be established; this typically occurs when [UseSsl][] within [Gmail Session Details][Gmail Session Details Property] is set to `true` with a [Port][] which requires it to be set to `false`. For more information, see [SSL Unsupported][]. |
+| |Thrown when the [TLS][]/[SSL][] certificate has expired on the [Host][] or is untrusted or invalid. For more information, see [SSL Unsupported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when a locally installed anti-virus software replaces the [TLS][]/[SSL][] certificate in order to scan web traffic. For more information, see [SSL Unsupported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when the [CRL][] (Certificate Revocation List) server for the [TLS][]/[SSL][] certificate is down. For more information, see [SSL Unsupported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
+| |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Gmail Session Details][Gmail Session Details Property] is incorrect. For more information, see [Invalid User Credentials][]. |
+| |Thrown when an invalid [CertificatePath][] and [CertificatePassword][] combination has been provided in the [GmailOAuthCertificateCredentials][]. |
+| |Thrown when the [CertificatePath][] in the [GmailOAuthCertificateCredentials][] points to an invalid [SSL][] certificate. |
+| |Thrown when an invalid [FromAddress][] and [ClientId][] combination has been provided in the [GmailOAuthCertificateCredentials][]. |
+| [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
+| [IOException][]                      |Thrown when the desired socket is held by another process; re-running the flow typically solves this. |
+| |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains leading spaces.|
+| |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains invalid characters (i.e. `"`, `*`, `?`, `\|`, `<`, `>`, `:`, `\`, `/`).|
+| [PathTooLongException][]             |Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] exceeds the system-defined maximum length (typically 32,767).|
+| [PropertyNullException][]            |Thrown when the [Gmail Session Details][Gmail Session Details Property] is `null`. |
+| |Thrown when the [UserCredentials][] within [Gmail Session Details][Gmail Session Details Property] is `null`. |
+| |Thrown when the [ServerDetails][] within [Gmail Session Details][Gmail Session Details Property] is `null`. |
+| |Thrown when the [Host][] in [ServerDetails][] within [Gmail Session Details][Gmail Session Details Property] is `null`. |
+| |Thrown when the [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [To][] within [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [From][] within [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is `null`. |
+| [PropertyEmptyException][]           |Thrown when the [Host][] in [ServerDetails][] within [Gmail Session Details][Gmail Session Details Property] is empty (i.e. `""`). |
+| |Thrown when the [To][] within [Email Message][Email Message Property] is empty (i.e. `[]`). |
+| |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty (i.e. `""`). |
+| [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Gmail Session Details][Gmail Session Details Property] is below `1` or above `65535`. For more information, see [Property Is Invalid][]. |
+| [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format ([RFC 5321][]).|
+| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit specified by the email service provider; for [Gmail][] this is `25 MB`).|
+| [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property].|
+| |Thrown when a file path within the [Attachments][] property within [Email Message][Email Message Property] points to a folder.|
+
 ## Remarks
 
 ### How does Priority affect sending an email?
@@ -390,6 +431,12 @@ If the user the flow is executing as does not have permissions to access the fil
 The combined size of all the [Attachments][] within the [Email Message][Email Message Property] must be less than the limit specified by the email service provider. If the combined size of all of the attachments is greater than the limit, an [SmtpCommandException][] will be thrown.
 
 For [Outlook][] this is `20 MB` and for [Gmail][] this is `25 MB`, for more information on the size limits for other email service providers, see the help provided by the respective email service provider.
+
+### Supported formats for ServerDetails.Host
+
+The following formats are supported for [Host][] in [ServerDetails][]:
+
+- Fully Qualified Domain Name (e.g. `"smtp.gmail.com"`)
 
 ### Setting UseSsl
 
@@ -488,6 +535,14 @@ None
 [Text]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
 
 [Setting up a Gmail account for OAuth authentication]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpOAuthGmail" >}}
+
+[EmailSessionException]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.MainDoc" >}}
+[Invalid Port]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidPort" >}}
+[Invalid Host]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidHost" >}}
+[SSL Required]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslRequired" >}}
+[SSL Unsupported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
+[Invalid User Credentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidUserCredentials" >}}
+[EmailSessionErrorCode Limitations]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.Limitations" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
 [ArgumentNullException]: {{< url "MSDocs.DotNet.Api.System.ArgumentNullException" >}}
