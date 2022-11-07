@@ -9,3 +9,11 @@ description: "Used to represent configuration for opening and maintaining a sess
 <p class="namespace">(Cortex.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails)</p>
 
 <img src="/images/work-in-progress.jpg">
+
+## Summary
+
+## Properties
+
+### ServerDetails
+
+### Credentials

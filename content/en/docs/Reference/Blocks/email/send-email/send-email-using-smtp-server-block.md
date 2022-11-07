@@ -350,7 +350,7 @@ For more information on how the priority of an email will be displayed, see the 
 An email sent with an [HTML][] body will have its body displayed as an HTML page instead of as plain text. How the email looks in the email client may differ depending on the email client in use. For example, if the [Email Message][Email Message Property] has its [BodyFormat][] set to [HTML][] and the [Body][] has a value of:
 
 ```json
-"<h1>Example header text</h1>\n<p>Example paragraph text</p>"
+"<h1>Example header text</h1><p>Example paragraph text</p>"
 ```
 
 [Outlook][] will display the email body as follows:

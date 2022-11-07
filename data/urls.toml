@@ -1166,6 +1166,8 @@
                     MainDoc = "/docs/reference/data-types/google-workspace/gmail/"
                     [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails]
                         MainDoc = "/docs/reference/data-types/google-workspace/gmail/gmailsessiondetails"
+                        ServerDetails = "/docs/reference/data-types/google-workspace/gmail/gmailsessiondetails/#serverdetails"
+                        Credentials = "/docs/reference/data-types/google-workspace/gmail/gmailsessiondetails/#credentials"
                     [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication]
                         MainDoc = "/docs/reference/data-types/google-workspace/gmail/authentication/"
                         [Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth]

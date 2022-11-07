@@ -224,7 +224,7 @@ This example will send an email from `sender@gmail.com` to `recipient@outlook.co
 
 For more information about when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
-The authentication mechanism used in this example is OAuth, the specific flow used is often referred to as "two-legged OAuth" or "2LO". As such, for this example to work correctly:
+The authentication mechanism used in this example is OAuth, the specific authentication flow used is often referred to as "two-legged OAuth". As such, for this example to work correctly:
 
 - Credentials provided must be for a [Gmail][] account connected to a Google Workspace
 - Credentials in [Gmail Session Details][Gmail Session Details Property] must be a [GmailOAuthCertificateCredentials][] which requires:
@@ -304,6 +304,17 @@ For more detailed information on each of the properties, see [EmailMessage][].
 
 ### Gmail Session Details
 
+The [Gmail Session Details][Gmail Session Details Property] object that includes all of the information required to open and maintain a session with an [SMTP][] server hosted by [Gmail][], including:
+
+- [ServerDetails][ServerDetails Property] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on:
+  - Supported server address formats, see [Supported formats for ServerDetails.Host][].
+  - When [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
+- [Credentials][Credentials Property] - must be provided in order to connect to an [SMTP][] server. This object must be a [UserCredentials][] or a [GmailOAuthCertificateCredentials][]. For more information on how to configure each of these, see [Setting Credentials][].
+
+If the [Close Session][Close Session Property] property is set to `false`, then the session will be kept open and can be used in subsequent Send Email Using Gmail blocks which improves performance, see [Opening Sessions][] for more information.
+
+For more detailed information on each of the properties, see [GmailSessionDetails][].
+
 ### Close Session
 
 [Close Session][Close Session Property] can be specified to choose whether the session is closed or is kept open for use on subsequent Send Email Using Gmail blocks, this defaults to `false` if left blank, please see [Closing Sessions][Closing Sessions] for more information.
@@ -363,7 +374,25 @@ The exceptions thrown by the block can be found below:
 
 ### How does Priority affect sending an email?
 
+An email sent with [Urgent][] or [NonUrgent][] priority will have its priority displayed differently depending on the email client. For example, [Outlook][] displays an email that has an [Urgent][] priority with a red exclamation mark like so:
+
+![Important email](/images/send-email-using-smtp-server-important-email.png)
+
+For more information on how the priority of an email will be displayed, see the help provided by the respective email client.
+
 ### How does BodyFormat affect sending an email?
+
+An email sent with an [HTML][] body will have its body displayed as an HTML page instead of as plain text. How the email looks in the email client may differ depending on the email client in use. For example, if the [Email Message][Email Message Property] has its [BodyFormat][] set to [HTML][] and the [Body][] has a value of:
+
+```json
+"<h1>Example header text</h1><p>Example paragraph text</p>"
+```
+
+[Outlook][] will display the email body as follows:
+
+![HTML email](/images/send-email-using-smtp-server-html-email.png)
+
+For more information on how the body of an email will be displayed, see the help provided by the respective email client.
 
 ### Attachments
 
@@ -484,6 +513,7 @@ None
 [How does Priority affect sending an email?]: {{< ref "#how-does-priority-affect-sending-an-email" >}}
 [How does BodyFormat affect sending an email?]: {{< ref "#how-does-bodyformat-affect-sending-an-email" >}}
 [Attachments Remarks]: {{< ref "#attachments" >}}
+[Supported formats for ServerDetails.Host]: {{< ref "#supported-formats-for-serverdetailshost" >}}
 [Setting Credentials]: {{< ref "#setting-credentials" >}}
 [Setting UseSsl]: {{< ref "#setting-usessl" >}}
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
@@ -505,6 +535,8 @@ None
 [creating an EmailMessage using a constructor]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.CreateAnEmailMessage" >}}
 
 [GmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.MainDoc" >}}
+[ServerDetails Property]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.ServerDetails" >}}
+[Credentials Property]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.Credentials" >}}
 
 [ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
 [Host]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
