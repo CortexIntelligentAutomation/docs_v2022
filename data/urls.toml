@@ -952,6 +952,7 @@
                     MainDoc = "/docs/reference/concepts/working-with/email/"
                     [Cortex.Reference.Concepts.WorkingWith.Email.Authentication]
                         MainDoc = "/docs/reference/concepts/working-with/email/authentication"
+                        SettingUpAppPassword = "/docs/reference/concepts/working-with/email/authentication/#setting-up-an-app-password-for-a-gmail-account"
                         SettingUpOAuthGmail = "/docs/reference/concepts/working-with/email/authentication/#setting-up-a-gmail-account-for-oauth-authentication"
                 [Cortex.Reference.Concepts.WorkingWith.Enums]
                     MainDoc = "/docs/reference/concepts/working-with/enums/"

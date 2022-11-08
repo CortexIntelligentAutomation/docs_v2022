@@ -224,7 +224,7 @@ This example will send an email from `sender@gmail.com` to `recipient@outlook.co
 
 For more information about when [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
 
-The authentication mechanism used in this example is OAuth, the specific authentication flow used is often referred to as "two-legged OAuth". As such, for this example to work correctly:
+The authentication mechanism used in this example is OAuth, the specific authentication flow used is often referred to as "Two-Legged OAuth". Therefore, for this example to work correctly:
 
 - Credentials provided must be for a [Gmail][] account connected to a Google Workspace
 - Credentials in [Gmail Session Details][Gmail Session Details Property] must be a [GmailOAuthCertificateCredentials][] which requires:
@@ -309,11 +309,19 @@ The [Gmail Session Details][Gmail Session Details Property] object that includes
 - [ServerDetails][ServerDetails Property] - must be provided in order to connect to an [SMTP][] server. This object contains the properties [Host][], [Port][] and [UseSsl][]. For more information on:
   - Supported server address formats, see [Supported formats for ServerDetails.Host][].
   - When [UseSsl][] should be set to `true` or `false`, see [Setting UseSsl][].
-- [Credentials][Credentials Property] - must be provided in order to connect to an [SMTP][] server. This object must be a [UserCredentials][] or a [GmailOAuthCertificateCredentials][]. For more information on how to configure each of these, see [Setting Credentials][].
+- [Credentials][Credentials Property] - must be provided in order to connect to an [SMTP][] server. This object must be a [UserCredentials][] or a [GmailOAuthCertificateCredentials][] and is used for authentication. For more information on how to configure each of these, see [Setting Credentials][].
 
 If the [Close Session][Close Session Property] property is set to `false`, then the session will be kept open and can be used in subsequent Send Email Using Gmail blocks which improves performance, see [Opening Sessions][] for more information.
 
 For more detailed information on each of the properties, see [GmailSessionDetails][].
+
+|||
+|----------|----------|
+| Data Type | [GmailSessionDetails][] |
+| Property Type | [InputOutput][] |
+| Is [Advanced][] | `false` |
+| Default Editor | [Variable][] |
+| Default Value | `($)GmailSessionDetails` with no value |
 
 ### Close Session
 
@@ -481,6 +489,46 @@ The above two points correspond to the [UseSsl][] property being set to `true` a
 
 ### Setting Credentials
 
+The [Credentials][Credentials Property] within the [Gmail Session Details][Gmail Session Details Property] specifies what user to connect as on the [SMTP][] server hosted by [Gmail][]. Two types of authentication are supported:
+
+- Basic
+- OAuth (Two-Legged OAuth)
+
+The above two authentication mechanisms correspond to the [Credentials][Credentials Property] within the [Gmail Session Details][Gmail Session Details Property] being a [UserCredentials][] and a [GmailOAuthCertificateCredentials][] respectively.
+
+#### Setting Credentials to UserCredentials
+
+Currently, [Gmail][] will not allow emails to be sent using the username and password of an account unless the account is associated with a Google Workspace account.
+
+As such, the recommended approach for using a [UserCredentials][] as the [Credentials][Credentials Property] within the [Gmail Session Details][Gmail Session Details Property] is to set up an app password and use that in place of the actual password associated with the account, see [Setting up an app password for a Gmail account][] for more information.
+
+Note the following:
+
+- The value of the [Username][] property may optionally be encrypted, however the [Password][] must be encrypted otherwise an [UnencryptedTextException][] will be thrown when the object is created.
+- Note that the [UserCredentials][] also contains a [Domain][] property which is ignored by this block.
+
+#### Setting Credentials to GmailOAuthCertificateCredentials
+
+In order to use OAuth as the authentication mechanism:
+
+- A client application must be set up on the Google Workspace
+- A service account must be set up for the client application
+- A private key (.p12 file) must be generated for the service account
+- An administrator of the Google Workspace must grant the client application domain-wide delegation for the scope `https://mail.google.com/`
+
+For more information on how to configure a [Gmail][] account to work with OAuth, see [Setting up a Gmail account for OAuth authentication][].
+
+Once the account has been set up to work with OAuth, a [GmailOAuthCertificateCredentials][] can be used as the [Credentials][Credentials Property] within the [Gmail Session Details][Gmail Session Details Property]. The properties in the [GmailOAuthCertificateCredentials][] correspond with the client application data as follows:
+
+- [CertificatePath][] - The path pointing to the certificate (.p12) file generated when setting up the client application
+- [CertificatePassword][] - The password associated with the certificate (.p12)
+- [FromAddress][] - The address of the account used to set up the client application
+- [ClientId][] - The Client ID of the client application
+
+Note that the values of the [CertificatePath][] and [ClientId][] properties may optionally be encrypted, however the [CertificatePassword][] must be encrypted otherwise an [UnencryptedTextException][] will be thrown when the object is created
+
+For more detailed information on each of these properties, see [GmailOAuthCertificateCredentials][].
+
 ### Opening Sessions
 
 The Send Email Using Gmail block automatically handles creating and opening sessions for the specified [Gmail Session Details][Gmail Session Details Property] using the following rules:
@@ -566,6 +614,7 @@ None
 [HTML]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.HTML" >}}
 [Text]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
 
+[Setting up an app password for a Gmail account]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpAppPassword" >}}
 [Setting up a Gmail account for OAuth authentication]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpOAuthGmail" >}}
 
 [EmailSessionException]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.MainDoc" >}}

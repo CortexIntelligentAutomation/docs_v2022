@@ -11,4 +11,6 @@ weight: 1
 
 ## Overview
 
+### Setting up an app password for a Gmail account
+
 ### Setting up a Gmail account for OAuth authentication
