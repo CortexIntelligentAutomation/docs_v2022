@@ -324,7 +324,7 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
 1. Please read the End User Licence Agreement which can be found [here][Eula]. Once you agree to the terms, add the flag `-AcceptEULA` to the command entered above, e.g:
 
     ```powershell
-    .\<CortexInnovationInstallScriptName>.ps1 -AcceptEULA
+    .\Cortex.Innovation.Install.FlowDebuggerService.ps1 -AcceptEULA
     ```
 
 1. Run the PowerShell command to install the Flow Debugger Service.
