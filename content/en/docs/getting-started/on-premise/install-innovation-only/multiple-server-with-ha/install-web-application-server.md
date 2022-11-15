@@ -250,7 +250,7 @@ This user must currently have access to the default NuGet directory, in order to
 1. Click the `Add...` button.
 1. Enter the username of the application pool user and click `OK`.
 1. In the `Permissions` section at the bottom, check `Full control`
-1. Clck `OK`.
+1. Click `OK`.
 
 The user must be given `Log on as a service` and `Log on as a batch job` permissions. To do this take the following steps:
 
