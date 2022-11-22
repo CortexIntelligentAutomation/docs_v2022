@@ -331,7 +331,7 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty (i.e. `""`). |
 | [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Basic Email Session Details][Basic Email Session Details Property] is below `1` or above `65535`. For more information, see [Property Is Invalid][]. |
 | [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format ([RFC 5321][]).|
-| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit specified by the email service provider; for [Outlook][] this is `20 MB` and for [Gmail][] this is `25 MB`).|
+| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit specified by the email service provider; for [Outlook][] this is `20 MB` and for [Gmail][] this is `25 MB`.|
 | [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property].|
 | |Thrown when a file path within the [Attachments][] property within [Email Message][Email Message Property] points to a folder.|
 

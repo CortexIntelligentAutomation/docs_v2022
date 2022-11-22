@@ -232,18 +232,19 @@ The authentication mechanism used in this example is OAuth, the specific authent
   - [CertificatePassword][]
   - [FromAddress][]
   - [ClientId][]
+- [CertificatePath][] must be a path pointing to a certificate accessible from the server executing the flow
 
 For more information on:
 
-- What each of the properties in the [GmailOAuthCertificateCredentials][] needs to be, see [GmailOAuthCertificateCredentials][];
-- How to set up the Gmail account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][].
+- What each of the properties in the [GmailOAuthCertificateCredentials][] needs to be, see [GmailOAuthCertificateCredentials][]
+- How to set up the Gmail account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][]
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To":  [{"Name":  null,  "Address":  "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@gmail.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br>`new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@gmail.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.|
-| [Gmail Session Details][Gmail Session Details Property] | `($)GmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"CertificatePath": "C:\\certificate.p12", "CertificatePassword": "encryptedPassword", "FromAddress": "sender@gmail.com", "ClientId": "clientId"}}`<br><br>In this example `($)GmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new GmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new GmailOAuthCertificateCredentials(@"C:\certificate.p12", "encryptedPassword", "sender@gmail.com", "clientId"))` | `($)GmailSessionDetails` is a variable of type [GmailSessionDetails][]<br><br>The [CertificatePassword][] property in the [GmailOAuthCertificateCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][].<br><br>For information on:<ul><li>What each of the properties in the [GmailOAuthCertificateCredentials][] needs to be, see [GmailOAuthCertificateCredentials][]</li><li>How to set up the [Gmail][] account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][]</li></ul> |
+| [Gmail Session Details][Gmail Session Details Property] | `($)GmailSessionDetails` with value `{"ServerDetails": {"Host": "smtp.gmail.com", "Port": 465, "UseSsl": true}, "Credentials": {"CertificatePath": "C:\\certificate.p12", "CertificatePassword": "encryptedPassword", "FromAddress": "sender@gmail.com", "ClientId": "clientId"}}`<br><br>In this example `($)GmailSessionDetails` has been set up using the following [Expression][]:<br><br> `new GmailSessionDetails(serverDetails: new ServerDetails("smtp.gmail.com", 465, true), credentials: new GmailOAuthCertificateCredentials(@"C:\certificate.p12", "encryptedPassword", "sender@gmail.com", "clientId"))` | `($)GmailSessionDetails` is a variable of type [GmailSessionDetails][]<br><br>The [CertificatePassword][] property in the [GmailOAuthCertificateCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][].<br><br>The [CertificatePath][] is a path pointing to a certificate accessible from the server executing the flow.<br><br>For information on:<ul><li>What each of the properties in the [GmailOAuthCertificateCredentials][] needs to be, see [GmailOAuthCertificateCredentials][]</li><li>How to set up the [Gmail][] account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][]</li></ul> |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` |`($)CloseSession` is a variable of type [Boolean][] |
 
 #### Result
@@ -268,7 +269,7 @@ The [Email Message][Email Message Property] to send via the [SMTP][] server host
 - [Body][]
 - [Attachments][]
 
-Note that if the properties [Priority][] and [BodyFormat][] are set to `null` when [creating an EmailMessage using a constructor][], the email will be sent with [Normal][] priority and with a text body.
+Note that if the properties [Priority][] and [BodyFormat][] are set to `null` when [creating an EmailMessage using a constructor][], the email will be sent with [Normal][] priority and with a [Text][] body.
 
 For more detailed information on each of the properties, see [EmailMessage][].
 
@@ -353,9 +354,9 @@ The exceptions thrown by the block can be found below:
 | |Thrown when a locally installed anti-virus software replaces the [TLS][]/[SSL][] certificate in order to scan web traffic. For more information, see [SSL Unsupported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when the [CRL][] (Certificate Revocation List) server for the [TLS][]/[SSL][] certificate is down. For more information, see [SSL Unsupported][]. Note that this exception has the same category and error code as the above row, this is a known limitation, see [EmailSessionErrorCode Limitations][]. |
 | |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Gmail Session Details][Gmail Session Details Property] is incorrect. For more information, see [Invalid User Credentials][]. |
-| |Thrown when an invalid [CertificatePath][] and [CertificatePassword][] combination has been provided in the [GmailOAuthCertificateCredentials][]. |
-| |Thrown when the [CertificatePath][] in the [GmailOAuthCertificateCredentials][] points to an invalid [SSL][] certificate. |
-| |Thrown when an invalid [FromAddress][] and [ClientId][] combination has been provided in the [GmailOAuthCertificateCredentials][]. |
+| |Thrown when an invalid [CertificatePath][] and [CertificatePassword][] combination has been provided in the [GmailOAuthCertificateCredentials][]. For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when the [CertificatePath][] in the [GmailOAuthCertificateCredentials][] points to an invalid [SSL][] certificate. For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when an invalid [FromAddress][] and [ClientId][] combination has been provided in the [GmailOAuthCertificateCredentials][].  For more information, see [Invalid Client Credentials][].|
 | [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
 | [IOException][]                      |Thrown when the desired socket is held by another process; re-running the flow typically solves this. |
 | |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains leading spaces.|
@@ -374,7 +375,7 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty (i.e. `""`). |
 | [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Gmail Session Details][Gmail Session Details Property] is below `1` or above `65535`. For more information, see [Property Is Invalid][]. |
 | [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format ([RFC 5321][]).|
-| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit specified by the email service provider; for [Gmail][] this is `25 MB`).|
+| |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit specified by the email service provider; for [Gmail][] this is `25 MB`.|
 | [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property].|
 | |Thrown when a file path within the [Attachments][] property within [Email Message][Email Message Property] points to a folder.|
 
@@ -520,7 +521,7 @@ For more information on how to configure a [Gmail][] account to work with OAuth,
 
 Once the account has been set up to work with OAuth, a [GmailOAuthCertificateCredentials][] can be used as the [Credentials][Credentials Property] within the [Gmail Session Details][Gmail Session Details Property]. The properties in the [GmailOAuthCertificateCredentials][] correspond with the client application data as follows:
 
-- [CertificatePath][] - The path pointing to the certificate (.p12) file generated when setting up the client application
+- [CertificatePath][] - The path pointing to the certificate (.p12) file generated when setting up the client application; the certificate must be accessible from the server executing the flow
 - [CertificatePassword][] - The password associated with the certificate (.p12)
 - [FromAddress][] - The address of the account used to set up the client application
 - [ClientId][] - The Client ID of the client application
@@ -623,6 +624,8 @@ None
 [SSL Required]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslRequired" >}}
 [SSL Unsupported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
 [Invalid User Credentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidUserCredentials" >}}
+[Invalid SSL Certificate]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidSslCertificate" >}}
+[Invalid Client Credentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidClientCredentials" >}}
 [EmailSessionErrorCode Limitations]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.Limitations" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
