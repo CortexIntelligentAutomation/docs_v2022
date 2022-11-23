@@ -237,6 +237,7 @@ The authentication mechanism used in this example is OAuth, the specific authent
 For more information on:
 
 - What each of the properties in the [GmailOAuthCertificateCredentials][] needs to be, see [GmailOAuthCertificateCredentials][]
+- Using a certificate file, see [Certificate Files][]
 - How to set up the Gmail account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][]
 
 #### Properties
@@ -536,7 +537,7 @@ For more information on how to configure a [Gmail][] account to work with OAuth,
 
 Once the account has been set up to work with OAuth, a [GmailOAuthCertificateCredentials][] can be used as the [Credentials][Credentials Property] within the [Gmail Session Details][Gmail Session Details Property]. The properties in the [GmailOAuthCertificateCredentials][] correspond with the client application data as follows:
 
-- [CertificatePath][] - The path pointing to the certificate (.p12) file generated when setting up the client application; the certificate must be accessible from the server executing the flow
+- [CertificatePath][] - The path pointing to the certificate (.p12) file generated when setting up the client application; the certificate must be accessible from the server executing the flow, for more information on using a certificate file, see [Certificate Files][].
 - [CertificatePassword][] - The password associated with the certificate (.p12)
 - [FromAddress][] - The address of the account used to set up the client application
 - [ClientId][] - The Client ID of the client application
@@ -544,6 +545,67 @@ Once the account has been set up to work with OAuth, a [GmailOAuthCertificateCre
 Note that the values of the [CertificatePath][] and [ClientId][] properties may optionally be encrypted, however the [CertificatePassword][] must be encrypted otherwise an [UnencryptedTextException][] will be thrown when the object is created
 
 For more detailed information on each of these properties, see [GmailOAuthCertificateCredentials][].
+
+### Certificate Files
+
+OAuth can be used as the authentication mechanism when sending an email using this block by providing a [GmailOAuthCertificateCredentials][] as the [Credentials][Credentials Property] in the [Gmail Session Details][Gmail Session Details Property]. [GmailOAuthCertificateCredentials][] requires a [CertificatePath][] to be provided, which is a path pointing to a certificate file accessible from the server executing the flow. For more information concerning using a certificate, see the sections below.
+
+#### Supported CertificatePath formats
+
+The [CertificatePath][] within the [GmailOAuthCertificateCredentials][] can be an:
+
+- Absolute file path
+- Relative file path
+- UNC file path
+
+where each file path must be accessible from the server executing the flow.
+
+For more information about each of these supported file path formats, please see [File & Folder Paths][].
+
+#### CertificatePath need escaping
+
+The [CertificatePath][] within the [GmailOAuthCertificateCredentials][] requires \ characters to be escaped, otherwise each unescaped \ will be reported as an Invalid property value message when trying to debug the flow.
+
+Escaping can be done in two ways:
+
+- Escaping the `\` character with another `\` character (e.g. `"C:\\Certificates\\certificate.p12"`), or
+- Prepending an `@` character before the start of the File Path (e.g. `@"C:\Certificates\certificate.p12"`)
+
+#### Null CertificatePath
+
+If `null` is provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][], a [PropertyNullException][] is thrown.
+
+#### Empty CertificatePath
+
+If an empty string is provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][], a [PropertyEmptyException][] is thrown.
+
+#### CertificatePath does not exist
+
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] does not exist, an [EmailSessionException][] is thrown.
+
+#### Invalid CertificatePath
+
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /), an [EmailSessionException][] will be thrown.
+
+#### CertificatePath points to a folder
+
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] points to a folder, an [EmailSessionException][] will be thrown.
+
+#### CertificatePath contains leading spaces
+
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] contains leading spaces they are not removed and an [EmailSessionException][] will be thrown; however, trailing spaces are removed.
+
+#### CertificatePath contains only whitespace or the NUL character
+
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] contains only whitespace (i.e. `"  "`) or the NUL character (i.e. `\0`), an [EmailSessionException][] will be thrown.
+
+#### CertificatePath exceeds the system-defined maximum length
+
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] exceeds the system-defined maximum length (typically 32,767), an [EmailSessionException][] will be thrown.
+
+#### User does not have necessary permissions to use the certificate file
+
+If the user the flow is executing as does not have permissions to access the file at the [CertificatePath][] within the [GmailOAuthCertificateCredentials][], an [EmailSessionException][] will be thrown.
 
 ### Opening Sessions
 
@@ -580,6 +642,7 @@ None
 [Supported formats for ServerDetails.Host]: {{< ref "#supported-formats-for-serverdetailshost" >}}
 [Setting Credentials]: {{< ref "#setting-credentials" >}}
 [Setting UseSsl]: {{< ref "#setting-usessl" >}}
+[Certificate Files]: {{< ref "#certificate-files" >}}
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
 [Closing Sessions]: {{< ref "#closing-sessions" >}}
 
