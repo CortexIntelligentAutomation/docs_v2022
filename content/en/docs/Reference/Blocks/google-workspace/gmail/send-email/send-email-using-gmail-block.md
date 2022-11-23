@@ -356,7 +356,14 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Gmail Session Details][Gmail Session Details Property] is incorrect. For more information, see [Invalid User Credentials][]. |
 | |Thrown when an invalid [CertificatePath][] and [CertificatePassword][] combination has been provided in the [GmailOAuthCertificateCredentials][]. For more information, see [Invalid SSL Certificate][]. |
 | |Thrown when the [CertificatePath][] in the [GmailOAuthCertificateCredentials][] points to an invalid [SSL][] certificate. For more information, see [Invalid SSL Certificate][]. |
-| |Thrown when an invalid [FromAddress][] and [ClientId][] combination has been provided in the [GmailOAuthCertificateCredentials][].  For more information, see [Invalid Client Credentials][].|
+| |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] points to a non-existant file. For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] points to a folder. For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] is longer than the system defined maximum length (typically 32,767). For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] contains only whitespace (i.e. `" "`) or contains the NUL character (i.e. `\0`). For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] contains leading spaces. For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] contains invalid characters (i.e. `"`, `*`, `?`, `\|`, `<`, `>`, `:`, `\`, `/`). For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when access is denied to the file at the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][]. For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when an invalid [FromAddress][] and [ClientId][] combination has been provided in the [GmailOAuthCertificateCredentials][].  For more information, see [Invalid Gmail Client Credentials][].|
 | [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
 | [IOException][]                      |Thrown when the desired socket is held by another process; re-running the flow typically solves this. |
 | |Thrown when a file path within [Attachments][] within the [Email Message][Email Message Property] contains leading spaces.|
@@ -370,9 +377,17 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [To][] within [Email Message][Email Message Property] is `null`. |
 | |Thrown when the [From][] within [Email Message][Email Message Property] is `null`. |
 | |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [CertificatePath][] in the [GmailOAuthCertificateCredentials][] within [Gmail Session Details][Gmail Session Details Property] is `null`. |
+| |Thrown when the [CertificatePassword][] in the [GmailOAuthCertificateCredentials][] within [Gmail Session Details][Gmail Session Details Property] is `null`. |
+| |Thrown when the [FromAddress][] in the [GmailOAuthCertificateCredentials][] within [Gmail Session Details][Gmail Session Details Property] is `null`. |
+| |Thrown when the [ClientId][] in the [GmailOAuthCertificateCredentials][] within [Gmail Session Details][Gmail Session Details Property] is `null`. |
 | [PropertyEmptyException][]           |Thrown when the [Host][] in [ServerDetails][] within [Gmail Session Details][Gmail Session Details Property] is empty (i.e. `""`). |
 | |Thrown when the [To][] within [Email Message][Email Message Property] is empty (i.e. `[]`). |
 | |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty (i.e. `""`). |
+| |Thrown when the [CertificatePath][] in the [GmailOAuthCertificateCredentials][] within [Gmail Session Details][Gmail Session Details Property] is empty (i.e. `""`). |
+| |Thrown when the [CertificatePassword][] in the [GmailOAuthCertificateCredentials][] within [Gmail Session Details][Gmail Session Details Property] is empty (i.e. `""`). |
+| |Thrown when the [FromAddress][] in the [GmailOAuthCertificateCredentials][] within [Gmail Session Details][Gmail Session Details Property] is empty (i.e. `""`). |
+| |Thrown when the [ClientId][] in the [GmailOAuthCertificateCredentials][] within [Gmail Session Details][Gmail Session Details Property] is empty (i.e. `""`). |
 | [PropertyValueOutOfRangeException][] |Thrown when the [Port][] in the [ServerDetails][] within [Gmail Session Details][Gmail Session Details Property] is below `1` or above `65535`. For more information, see [Property Is Invalid][]. |
 | [SmtpCommandException][]             |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format ([RFC 5321][]).|
 | |Thrown when the combined size of all of the attachments in the list of [Attachments][] within the [Email Message][Email Message Property] is greater than the limit specified by the email service provider; for [Gmail][] this is `25 MB`.|
@@ -625,7 +640,7 @@ None
 [SSL Unsupported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
 [Invalid User Credentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidUserCredentials" >}}
 [Invalid SSL Certificate]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidSslCertificate" >}}
-[Invalid Client Credentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidClientCredentials" >}}
+[Invalid Gmail Client Credentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidClientCredentials" >}}
 [EmailSessionErrorCode Limitations]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.Limitations" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
