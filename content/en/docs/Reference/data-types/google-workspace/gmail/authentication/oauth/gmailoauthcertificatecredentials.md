@@ -11,7 +11,7 @@ weight: 1
 
 ## Summary
 
-The `GmailOAuthCertificateCredentials` data type is used to represent configuration for authentication via OAuth when establishing a connection with a mail server hosted by [Gmail][]. For more information on how to set up a Gmail account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][]
+The `GmailOAuthCertificateCredentials` data type is used to represent configuration for authentication via OAuth when establishing a connection with a mail server hosted by [Gmail][]. For more information on how to set up a [Gmail][] account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][]
 
 | | |
 |-|-|

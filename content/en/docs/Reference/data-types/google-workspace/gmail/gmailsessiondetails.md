@@ -46,7 +46,7 @@ The ServerDetails are used to configure the [Host][] and [Port][] of the mail se
 
 ### Credentials
 
-The Credentials are used to represent details required for authentication with the mail server. There are multiple data types that can be used:
+The Credentials are used to configure the information required for authentication with the mail server. There are multiple data types that can be used:
 
 - [UserCredentials][]: Used to configure the [Username][] and [Password][] for Basic authentication
 - [GmailOAuthCertificateCredentials][]: Used to configure the [CertificatePath][], [CertificatePassword][], [FromAddress][] and [ClientId][] for OAuth
