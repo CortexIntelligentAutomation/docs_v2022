@@ -89,7 +89,7 @@ A `GmailSessionDetails` with a [GmailOAuthCertificateCredentials][] as the [Cred
 | Property | Data Type | Example | Notes |
 |-|-|-|-|
 | `ServerDetails` | `ServerDetails` | Host:&nbsp;`"smtp.gmail.com"`<br>Port:&nbsp;`465`<br>UseSsl:&nbsp;`true` | The [ServerDetails][ServerDetails Property] that are used to connect to the server. |
-| `Credentials` | `GmailOAuthCertificateCredentials` | CertificatePath:&nbsp;`$@"C:\certificate.p12"`<br>CertificatePassword:&nbsp;`"encryptedPassword"`<br>FromAddress:&nbsp;`"sender@gmail.com"`<br>ClientId:&nbsp;`"clientId"` | The [Credentials][Credentials Property] that are used for authentication on the server.<br><br>The [CertificatePath][] in the [GmailOAuthCertificateCredentials][] is a path pointing to a certificate accessible from the server executing the flow.<br><br>For information on:<ul><li>What each of the properties in the [GmailOAuthCertificateCredentials][] needs to be, see [GmailOAuthCertificateCredentials][]</li><li>How to set up the [Gmail][] account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][]</li></ul>The [CertificatePassword][] property  must be encrypted, for more information on how to encrypt the password, see [EncryptedText][].|
+| `Credentials` | `GmailOAuthCertificateCredentials` | CertificatePath:&nbsp;`$@"C:\certificate.p12"`<br>CertificatePassword:&nbsp;`"encryptedPassword"`<br>FromAddress:&nbsp;`"sender@gmail.com"`<br>ClientId:&nbsp;`"clientId"` | The [Credentials][Credentials Property] that are used for authentication on the server.<br><br>The [CertificatePath][] in the [GmailOAuthCertificateCredentials][] is a path pointing to a certificate which must be accessible from the server executing the flow.<br><br>For information on:<ul><li>What each of the properties in the [GmailOAuthCertificateCredentials][] needs to be, see [GmailOAuthCertificateCredentials][]</li><li>How to set up the [Gmail][] account so that this authentication mechanism can be used, see [Setting up a Gmail account for OAuth authentication][]</li></ul>The [CertificatePassword][] property  must be encrypted, for more information on how to encrypt the password, see [EncryptedText][].|
 
 ### Convert GmailSessionDetails to Text
 
@@ -111,10 +111,10 @@ None
 
 ### Related Data Types
 
+- [EncryptedText][]
+- [GmailOAuthCertificateCredentials][]
 - [ServerDetails][]
 - [UserCredentials][]
-- [GmailOAuthCertificateCredentials][]
-- [EncryptedText][]
 
 ### Related Concepts
 

@@ -522,6 +522,10 @@
                         MainDoc = "/docs/reference/blocks/google-workspace/gmail/send-email"
                         [Cortex.Reference.Blocks.GoogleWorkspace.Gmail.SendEmail.SendEmailUsingGmail]
                             MainDoc = "/docs/reference/blocks/google-workspace/gmail/send-email/send-email-using-gmail-block"
+                            SupportedServerAddressFormats = "/docs/reference/blocks/google-workspace/gmail/send-email/send-email-using-gmail-block/#supported-formats-for-serverdetailshost"
+                            SettingUseSsl = "/docs/reference/blocks/google-workspace/gmail/send-email/send-email-using-gmail-block/#setting-usessl"
+                            SettingCredentials = "/docs/reference/blocks/google-workspace/gmail/send-email/send-email-using-gmail-block/#setting-credentials"
+                            SupportedFilePaths = "/docs/reference/blocks/google-workspace/gmail/send-email/send-email-using-gmail-block/#supported-file-path-formats"
             [Cortex.Reference.Blocks.Http]
                 MainDoc = "/docs/reference/blocks/http/"
                 [Cortex.Reference.Blocks.Http.ExecuteHttpRequest]
