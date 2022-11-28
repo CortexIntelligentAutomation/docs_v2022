@@ -40,7 +40,7 @@ The [Email Message][Email Message Property] to send via the [SMTP][] server host
 - [Body][]
 - [Attachments][]
 
-Note that if the properties [Priority][] and [BodyFormat][] are set to `null` when [creating an EmailMessage using a constructor][], the email will be sent with [Normal][] priority and with a text body.
+Note that if the properties [Priority][] and [BodyFormat][] are set to `null` when [creating an EmailMessage using a constructor][], the email will be sent with [Normal][] priority and with a [Text][] body.
 
 For more detailed information on each of the properties, see [EmailMessage][].
 
@@ -76,6 +76,28 @@ For more detailed information on each of the properties, see [EmailMessage][].
 
 ### Credentials
 
+The [Credentials][Credentials Property] object that includes all of the information required to open and maintain a session with an [SMTP][] server hosted by [Outlook][]. There are multiple data types that can be used which depends on the desired OAuth mechanism:
+
+- [Microsoft365OAuthCredentials][]: using client credentials
+- [Microsoft365OAuthCertificateCredentials][]: using a certificate
+
+|||
+|----------|----------|
+| Data Type | [Microsoft365Credentials][] |
+| Property Type | [Input][] |
+| Is [Advanced][] | `false` |
+| Default Editor | [Literal][] |
+| Default Value | [Microsoft365OAuthCredentials][] with value shown below: |
+
+```json
+{
+  "ClientId": "",
+  "ClientSecret": "",
+  "TenantId": "",
+  "ObjectId": "",
+}
+```
+
 ## Exceptions
 
 ## Remarks
@@ -107,6 +129,10 @@ None
 [Normal]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.Normal" >}}
 [Urgent]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.Urgent" >}}
 [NonUrgent]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.NonUrgent" >}}
+
+[EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
+[HTML]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.HTML" >}}
+[Text]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
 
 [Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 [Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
