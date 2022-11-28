@@ -1195,6 +1195,18 @@
                 MainDoc = "/docs/reference/data-types/loops/"
                 [Cortex.Reference.DataTypes.Loops.InfiniteLoopErrorCode]
                     MainDoc = "/docs/reference/data-types/loops/infinitelooperrorcode"
+            [Cortex.Reference.DataTypes.Microsoft365]
+                MainDoc = "/docs/reference/data-types/microsoft365/"
+                [Cortex.Reference.DataTypes.Microsoft365.Authentication]
+                    MainDoc = "/docs/reference/data-types/microsoft365/authentication"
+                    [Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth]
+                        MainDoc = "/docs/reference/data-types/microsoft365/authentication/oauth"
+                        [Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365Credentials]
+                            MainDoc = "/docs/reference/data-types/microsoft365/authentication/oauth/microsoft365credentials"
+                        [Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCredentials]
+                            MainDoc = "/docs/reference/data-types/microsoft365/authentication/oauth/microsoft365oauthcredentials"
+                        [Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCertificateCredentials]
+                            MainDoc = "/docs/reference/data-types/microsoft365/authentication/oauth/microsoft365oauthcertificatecredentials"
             [Cortex.Reference.DataTypes.Numbers]
                 MainDoc = "/docs/reference/data-types/numbers/"
                 [Cortex.Reference.DataTypes.Numbers.Double]
