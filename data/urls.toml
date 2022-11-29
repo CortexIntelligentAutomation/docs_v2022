@@ -1639,6 +1639,16 @@
         ErrorCodes = "https://docs.microsoft.com/en-us/sql/relational-databases/errors-events/database-engine-events-and-errors?view=sql-server-ver15"
         SqlException = "https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlexception?view=dotnet-plat-ext-6.0&viewFallbackFrom=netcore-3.1"
         TransparentDataEncryption = "https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver15"
+    [MSDocs.DotNet.Api.Microsoft]
+        MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/microsoft"
+        [MSDocs.DotNet.Api.Microsoft.Identity.Client]
+            MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/microsoft.identity.client"
+            [MSDocs.DotNet.Api.Microsoft.Identity.Client.MsalServiceException]
+                MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/microsoft.identity.client.msalserviceexception"
+        [MSDocs.DotNet.Api.Microsoft.Graph]
+            MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/microsoft.graph"
+            [MSDocs.DotNet.Api.Microsoft.Graph.ServiceException]
+                MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/microsoft.graph.serviceexception"
     [MSDocs.DotNet.Api.System]
         ArgumentException = "https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception"
         ArgumentNullException = "https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception"
@@ -1755,6 +1765,12 @@
         [MSDocs.DotNet.Api.System.Object]
             MainDoc = "https://docs.microsoft.com/en-us/dotnet/api/system.object"
             ToString = "https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring"
+        [MSDocs.DotNet.Api.System.Security]
+            MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/system.security"
+            [MSDocs.DotNet.Api.System.Security.Cryptography]
+                MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography"
+                [MSDocs.DotNet.Api.System.Security.Cryptography.CryptographicException]
+                    MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.cryptographicexception"
         [MSDocs.DotNet.Api.System.Single]
             MainDoc = "https://docs.microsoft.com/en-us/dotnet/api/system.single"
             MaxValue = "https://docs.microsoft.com/en-us/dotnet/api/system.single.maxvalue"

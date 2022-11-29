@@ -10,7 +10,7 @@ description: "Sends an email using the SMTP server hosted by Outlook."
 
 <p class="namespace">(Cortex.Blocks.Microsoft365.Outlook.SendEmail.SendEmailUsingMicrosoft365Block)</p>
 
-{{% alert type="warning" title="Warning" %}}This page is not complete and currently only contains basic information. This will be completed in the future.{{% /alert %}}
+{{% alert type="information" title="Information" %}}Improvements to this page are planned for the future; this will include further examples and remarks.{{% /alert %}}
 
 ## Description
 
@@ -36,7 +36,7 @@ For more information on:
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Email Message][Email Message Property] | `($)EmailMessage` with value `{"To":  [{"Name":  null,  "Address":  "recipient@outlook.com"}], "From": {"Name": null, "Address": "sender@outlook.com"}, "Cc": [], "Bcc": [], "Priority": null, "Subject": "Example email subject", "BodyFormat": null, "Body": "Example email body", "Attachments": []}`<br><br>In this example `($)EmailMessage` has been set up using the following [Expression][]:<br><br>`new EmailMessage(to: new List<EmailAddress>(){ new EmailAddress("recipient@outlook.com") }, from: new EmailAddress("sender@outlook.com"), cc: null, bcc: null, priority: null, subject: "Example email subject", bodyFormat: null, body: "Example email body", attachments: null)` | `($)EmailMessage` is a variable of type [EmailMessage][]<br><br>As [Priority][] and [BodyFormat][] are `null`, the email will be sent with a [Text][] body and [Normal][] priority.|
-| [Credentials][Credentials Property] | `($)Credentials` with value `{"ClientId": "clientId", "ClientSecret": "encryptedClientSecret", "TenantId": "tenantId", ObjectId: "objectId"}`<br><br>In this example `($)Credentials` has been set up using the following [Expression][]:<br><br> `new Microsoft365OAuthCredentials(clientId: "clientId", clientSecret: "encryptedClientSecret", tenantId: "tenantId", objectId: "objectId")` | `($)Credentials` is a variable of type [Microsoft365OAuthCredentials][]<br><br>The [ClientSecret][] property in the [Microsoft365OAuthCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
+| [Credentials][Credentials Property] | `($)Credentials` with value `{"ClientId": "clientId", "ClientSecret": "encryptedClientSecret", "TenantId": "tenantId", ObjectId: "objectId"}`<br><br>In this example `($)Credentials` has been set up using the following [Expression][]:<br><br> `new Microsoft365OAuthCredentials(clientId: "clientId", clientSecret: "encryptedClientSecret", tenantId: "tenantId", objectId: "objectId")` | `($)Credentials` is a variable of type [Microsoft365OAuthCredentials][]<br><br>The [ClientSecret][ClientSecret Client Credentials] property in the [Microsoft365OAuthCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 
 #### Result
 
@@ -151,6 +151,54 @@ The [Credentials][Credentials Property] object that includes all of the informat
 
 ## Exceptions
 
+The exceptions thrown by the block can be found below:
+
+| Name                                 | Description |
+|--------------------------------------|-------------|
+| [ArgumentException][]                |Thrown when [BodyFormat][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessageBodyFormat][] values (e.g. `(EmailMessageBodyFormat)10`).|
+| |Thrown when [Priority][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessagePriority][] values (e.g. `(EmailMessagePriority)10`).|
+| |Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`), contains only whitespace (i.e. `"   "`) or contains the NUL character (i.e. `\0`).|
+| [CryptographicException][] | Thrown when an incorrect [CertificatePath][] is provided within [Microsoft365OAuthCertificateCredentials][]. |
+| | Thrown when an incorrect [CertificatePassword][] is provided within [Microsoft365OAuthCertificateCredentials][]. |
+| [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
+| [IOException][]                      |Thrown when the desired socket is held by another process; re-running the flow typically solves this. |
+| [MsalServiceException][] | Thrown when an invalid [ClientId][ClientId Client Credentials] is provided within [Microsoft365OAuthCredentials][]|
+| | Thrown when an invalid [ClientSecret][ClientSecret Client Credentials] is provided within [Microsoft365OAuthCredentials][] |
+| | Thrown when an invalid [TenantId][TenantId Client Credentials] is provided within [Microsoft365OAuthCredentials][] |
+| | Thrown when an invalid [ClientId][ClientId Certificate Credentials] is provided within [Microsoft365OAuthCertificateCredentials][] |
+| | Thrown when an invalid [TenantId][TenantId Certificate Credentials] is provided within [Microsoft365OAuthCertificateCredentials][] |
+| [PropertyNullException][] |Thrown when the [Email Message][Email Message Property]  is `null`. |
+| |Thrown when the [To][] within [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [From][] within [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is `null`. |
+| |Thrown when the [Credentials][Credentials Property] is `null`. |
+| |Thrown when the [ClientId][ClientId Client Credentials] within [Microsoft365OAuthCredentials][] is `null`. |
+| |Thrown when the [ClientSecret][ClientSecret Client Credentials] within [Microsoft365OAuthCredentials][] is `null`. |
+| |Thrown when the [TenantId][TenantId Client Credentials] within [Microsoft365OAuthCredentials][] is `null`. |
+| |Thrown when the [ObjectId][ObjectId Client Credentials] within [Microsoft365OAuthCredentials][] is `null`. |
+| |Thrown when the [CertificatePath][] within [Microsoft365OAuthCertificateCredentials][] is `null`. |
+| |Thrown when the [CertificatePassword][] within [Microsoft365OAuthCertificateCredentials][] is `null`. |
+| |Thrown when the [ClientId][ClientId Certificate Credentials] within [Microsoft365OAuthCertificateCredentials][] is `null`. |
+| |Thrown when the [TenantId][TenantId Certificate Credentials] within [Microsoft365OAuthCertificateCredentials][] is `null`. |
+| |Thrown when the [ObjectId][ObjectId Certificate Credentials] within [Microsoft365OAuthCertificateCredentials][] is `null`. |
+| [PropertyEmptyException][] |Thrown when the [To][] within [Email Message][Email Message Property] is empty (i.e. `[]`). |
+| |Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is empty (i.e. `""`). |
+| |Thrown when the [ClientId][ClientId Client Credentials] within [Microsoft365OAuthCredentials][] is empty (i.e. `""`). |
+| |Thrown when the [ClientSecret][ClientSecret Client Credentials] within [Microsoft365OAuthCredentials][] is empty (i.e. `""`). |
+| |Thrown when the [TenantId][TenantId Client Credentials] within [Microsoft365OAuthCredentials][] is empty (i.e. `""`). |
+| |Thrown when the [ObjectId][ObjectId Client Credentials] within [Microsoft365OAuthCredentials][] is empty (i.e. `""`). |
+| |Thrown when the [CertificatePath][] within [Microsoft365OAuthCertificateCredentials][] is empty (i.e. `""`). |
+| |Thrown when the [CertificatePassword][] within [Microsoft365OAuthCertificateCredentials][] is empty (i.e. `""`). |
+| |Thrown when the [ClientId][ClientId Certificate Credentials] within [Microsoft365OAuthCertificateCredentials][] is empty (i.e. `""`). |
+| |Thrown when the [TenantId][TenantId Certificate Credentials] within [Microsoft365OAuthCertificateCredentials][] is empty (i.e. `""`). |
+| |Thrown when the [ObjectId][ObjectId Certificate Credentials] within [Microsoft365OAuthCertificateCredentials][] is empty (i.e. `""`). |
+| [ServiceException][] | Thrown when an invalid [ObjectId][ObjectId Client Credentials] is provided within [Microsoft365OAuthCredentials][]. |
+| | Thrown when an invalid [ObjectId][ObjectId Certificate Credentials] is provided within [Microsoft365OAuthCertificateCredentials][]. |
+| | Thrown when trying to send an email as a user that the client application does not have rights to send as. |
+| | Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format ([RFC 5321][]). |
+| [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property]. |
+| |Thrown when a file path within the [Attachments][] property within [Email Message][Email Message Property] points to a folder. |
+
 ## Remarks
 
 ### Known Limitations
@@ -172,30 +220,44 @@ None
 [Attachments]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Attachments" >}}
 [creating an EmailMessage using a constructor]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.CreateAnEmailMessage" >}}
 
+[EmailAddress]: {{< url "Cortex.Reference.DataTypes.Email.EmailAddress.MainDoc" >}}
+[Address]: {{< url "Cortex.Reference.DataTypes.Email.EmailAddress.Address" >}}
+
+[EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
+[Normal]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.Normal" >}}
+
+[EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
+[Text]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
+
 [Microsoft365Credentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365Credentials.MainDoc" >}}
 
 [Microsoft365OAuthCredentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCredentials.MainDoc" >}}
-[ClientSecret]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCredentials.ClientSecret" >}}
+[ClientId Client Credentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCredentials.ClientId" >}}
+[ClientSecret Client Credentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCredentials.ClientSecret" >}}
+[TenantId Client Credentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCredentials.TenantId" >}}
+[ObjectId Client Credentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCredentials.ObjectId" >}}
 
 [Microsoft365OAuthCertificateCredentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCertificateCredentials.MainDoc" >}}
 [CertificatePath]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCertificateCredentials.CertificatePath" >}}
 [CertificatePassword]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCertificateCredentials.CertificatePassword" >}}
-
-[EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
-[Normal]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.Normal" >}}
-[Urgent]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.Urgent" >}}
-[NonUrgent]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.NonUrgent" >}}
-
-[EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
-[HTML]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.HTML" >}}
-[Text]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
+[ClientId Certificate Credentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCertificateCredentials.ClientId" >}}
+[TenantId Certificate Credentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCertificateCredentials.TenantId" >}}
+[ObjectId Certificate Credentials]: {{< url "Cortex.Reference.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365OAuthCertificateCredentials.ObjectId" >}}
 
 [EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
 
+[ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
+[CryptographicException]: {{< url "MSDocs.DotNet.Api.System.Security.Cryptography.CryptographicException.MainDoc" >}}
+[FileNotFoundException]: {{< url "MSDocs.DotNet.Api.System.IO.FileNotFoundException" >}}
+[IOException]: {{< url "MSDocs.DotNet.Api.System.IO.IOException" >}}
+[MsalServiceException]: {{< url "MSDocs.DotNet.Api.Microsoft.Identity.Client.MsalServiceException.MainDoc" >}}
+[PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
+[PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
+[ServiceException]: {{< url "MSDocs.DotNet.Api.Microsoft.Graph.ServiceException.MainDoc" >}}
+[UnauthorizedAccessException]: {{< url "MSDocs.DotNet.Api.System.UnauthorizedAccessException" >}}
+
 [Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 
@@ -204,13 +266,6 @@ None
 [Setting up an Outlook account for OAuth authentication using client credentials]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpClientCredentialsOutlook" >}}
 [Setting up an Outlook account for OAuth authentication using certificate credentials]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpCertificateCredentialsOutlook" >}}
 
-[SASL]: {{< url "Cortex.Reference.Glossary.P-T.SASL" >}}
 [SMTP]: {{< url "Cortex.Reference.Glossary.P-T.SMTP" >}}
-[SSL]: {{< url "Cortex.Reference.Glossary.P-T.SSL" >}}
-[TLS]: {{< url "Cortex.Reference.Glossary.P-T.TLS" >}}
-[BCC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.BCC" >}}
-[CC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.CC" >}}
-[CRL]: {{< url "Cortex.Reference.Glossary.A-E.CRL" >}}
-[Gmail]: {{< url "Cortex.Reference.Glossary.F-J.Gmail" >}}
 [Outlook]: {{< url "Cortex.Reference.Glossary.K-O.Outlook" >}}
 [RFC 5321]: {{< url "IETF.Email.RFC5321" >}}
