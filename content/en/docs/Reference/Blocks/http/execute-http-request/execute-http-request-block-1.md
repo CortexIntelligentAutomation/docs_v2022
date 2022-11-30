@@ -58,7 +58,12 @@ For more detailed information on each of the properties see [HttpRequest][].
 
 ### Http Credentials
 
-The [Http Credentials][Http Credentials Property] object that includes all of the information required for authentication.
+The [Http Credentials][Http Credentials Property] object that includes all of the information required for authentication. Mutliple authentication mechanisms are supported which correspond to specific values/data types:
+
+- `null`: No authentication
+- [UserCredentials][]: Basic authentication
+- [HttpOAuthPasswordCredentials][]: OAuth authentication using password credentials
+- [HttpOAuthCientCredentials][]: OAuth authentication using client credentials
 
 |||
 |----------|----------|
@@ -93,6 +98,8 @@ None
 [Http Request Property]: {{< ref "#http-request" >}}
 [Http Credentials Property]: {{< ref "#http-credentials" >}}
 [Http Response Property]: {{< ref "#http-response" >}}
+
+[HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
 
 [Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 [Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
