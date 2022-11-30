@@ -32,9 +32,17 @@ Executes an [HTTP request][Http Request Property] using the specified [Http Cred
 
 ### Http Request
 
-The [Http Request][Http Request Property] to execute using the [Http Credentials][Http Credentials Property].
+The [Http Request][Http Request Property] to execute using the [Http Credentials][Http Credentials Property]. This property contains all of the information in relation to the request to be sent, these are:
 
-For more detailed information on each of the properties see [HttpRequest][].
+- [Uri][]
+- [QueryParameters][]
+- [Verb][]
+- [ContentType][]
+- [Headers][]
+- [Body][]
+- [HttpVersion][]
+
+For more detailed information on each of the properties, see [HttpRequest][].
 
 |||
 |----------|----------|
@@ -63,7 +71,7 @@ The [Http Credentials][Http Credentials Property] object that includes all of th
 - `null`: No authentication
 - [UserCredentials][]: Basic authentication
 - [HttpOAuthPasswordCredentials][]: OAuth authentication using password credentials
-- [HttpOAuthCientCredentials][]: OAuth authentication using client credentials
+- [HttpOAuthClientCredentials][]: OAuth authentication using client credentials
 
 |||
 |----------|----------|
@@ -75,7 +83,12 @@ The [Http Credentials][Http Credentials Property] object that includes all of th
 
 ### Http Response
 
-The [Http Response][Http Response Property] object which contains the response returned from the server.
+The [Http Response][Http Response Property] object which contains the response returned from the server. This property contains all of the information in relation to the response from the server, these are:
+
+- [ResponseBody][]
+- [ErrorMessage][]
+- [Headers][]
+- [StatusCode][]
 
 For more detailed information on each of the properties, see [HttpResponse][].
 
@@ -89,6 +102,19 @@ For more detailed information on each of the properties, see [HttpResponse][].
 
 ## Exceptions
 
+The exceptions thrown by the block can be found below:
+
+| Name                                 | Description |
+|--------------------------------------|-------------|
+| [HttpAuthorisationException][] | Thrown when |
+| | Thrown when |
+| [InvalidRequestException][] | Thrown when |
+| | Thrown when |
+| [PropertyNullException][] | Thrown when |
+| | Thrown when |
+| [PropertyEmptyException][] | Thrown when |
+| | Thrown when |
+
 ## Remarks
 
 ### Known Limitations
@@ -99,7 +125,32 @@ None
 [Http Credentials Property]: {{< ref "#http-credentials" >}}
 [Http Response Property]: {{< ref "#http-response" >}}
 
+[UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
+
 [HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
+[HttpOAuthClientCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.MainDoc" >}}
+[HttpOAuthPasswordCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.MainDoc" >}}
+[HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
+
+[HttpRequest]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.MainDoc" >}}
+[Uri]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Uri" >}}
+[QueryParameters]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.QueryParameters" >}}
+[Verb]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Verb" >}}
+[ContentType]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.ContentType" >}}
+[Headers]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Headers" >}}
+[Body]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Body" >}}
+[HttpVersion]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.HttpVersion" >}}
+
+[HttpResponse]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.MainDoc" >}}
+[ResponseBody]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.ResponseBody" >}}
+[ErrorMessage]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.ErrorMessage" >}}
+[Headers]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.Headers" >}}
+[StatusCode]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.StatusCode" >}}
+
+[PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
+[PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
+[HttpAuthorisationException]: {{< url "Cortex.Reference.Exceptions.Http.HttpAuthorisationException.MainDoc" >}}
+[InvalidRequestException]: {{< url "Cortex.Reference.Exceptions.Http.InvalidRequestException.MainDoc" >}}
 
 [Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 [Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}

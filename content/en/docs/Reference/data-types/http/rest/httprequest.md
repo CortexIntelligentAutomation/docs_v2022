@@ -10,3 +10,21 @@ weight: 1
 <p class="namespace">(Cortex.DataTypes.Http.Rest.HttpRequest)</p>
 
 <img src="/images/work-in-progress.jpg">
+
+## Summary
+
+## Properties
+
+### Uri
+
+### QueryParameters
+
+### Verb
+
+### ContentType
+
+### Headers
+
+### Body
+
+### HttpVersion

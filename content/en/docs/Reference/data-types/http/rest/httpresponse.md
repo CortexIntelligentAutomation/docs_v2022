@@ -10,3 +10,15 @@ weight: 1
 <p class="namespace">(Cortex.DataTypes.Http.Rest.HttpResponse)</p>
 
 <img src="/images/work-in-progress.jpg">
+
+## Summary
+
+## Properties
+
+### ResponseBody
+
+### ErrorMessage
+
+### Headers
+
+### StatusCode

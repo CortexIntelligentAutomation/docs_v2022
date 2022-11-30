@@ -1189,6 +1189,35 @@
                         MainDoc = "/docs/reference/data-types/http/authentication/httpcredentials"
                     [Cortex.Reference.DataTypes.Http.Authentication.HttpUserCredentials]
                         MainDoc = "/docs/reference/data-types/http/authentication/httpusercredentials"
+                    [Cortex.Reference.DataTypes.Http.Authentication.OAuth]
+                        MainDoc = "/docs/reference/data-types/http/authentication/oauth/"
+                        [Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication]
+                            MainDoc = "/docs/reference/data-types/http/authentication/oauth/clientauthentication"
+                        [Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthType]
+                            MainDoc = "/docs/reference/data-types/http/authentication/oauth/clientauthtype"
+                        [Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials]
+                            MainDoc = "/docs/reference/data-types/http/authentication/oauth/httpoauthclientcredentials"
+                        [Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthCredentials]
+                            MainDoc = "/docs/reference/data-types/http/authentication/oauth/httpoauthcredentials"
+                        [Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials]
+                            MainDoc = "/docs/reference/data-types/http/authentication/oauth/httpoauthpasswordcredentials"
+                [Cortex.Reference.DataTypes.Http.Rest]
+                    MainDoc = "/docs/reference/data-types/http/rest/"
+                    [Cortex.Reference.DataTypes.Http.Rest.HttpRequest]
+                        MainDoc = "/docs/reference/data-types/http/rest/httprequest"
+                        Uri = "/docs/reference/data-types/http/rest/httprequest/#uri"
+                        QueryParameters = "/docs/reference/data-types/http/rest/httprequest/#queryparameters"
+                        Verb = "/docs/reference/data-types/http/rest/httprequest/#verb"
+                        ContentType = "/docs/reference/data-types/http/rest/httprequest/#contenttype"
+                        Headers = "/docs/reference/data-types/http/rest/httprequest/#headers"
+                        Body = "/docs/reference/data-types/http/rest/httprequest/#body"
+                        HttpVersion = "/docs/reference/data-types/http/rest/httprequest/#httpversion"
+                    [Cortex.Reference.DataTypes.Http.Rest.HttpResponse]
+                        MainDoc = "/docs/reference/data-types/http/rest/httpresponse"
+                        ResponseBody = "/docs/reference/data-types/http/rest/httpresponse/#responsebody"
+                        ErrorMessage = "/docs/reference/data-types/http/rest/httpresponse/#errormessage"
+                        Headers = "/docs/reference/data-types/http/rest/httpresponse/#headers"
+                        StatusCode = "/docs/reference/data-types/http/rest/httpresponse/#statuscode"
             [Cortex.Reference.DataTypes.Json]
                 MainDoc = "/docs/reference/data-types/json/"
                 [Cortex.Reference.DataTypes.Json.JsonSerializerSettings]
@@ -1372,6 +1401,12 @@
                         InputVariablesOfAnInvalidType = "/docs/reference/exceptions/flows/execution/invalidinputvariablesexception/#input-variables-of-an-invalid-type"
             [Cortex.Reference.Exceptions.FlowException]
                 MainDoc = "/docs/reference/exceptions/flowexception/"
+            [Cortex.Reference.Exceptions.Http]
+                MainDoc = "/docs/reference/exceptions/http/"
+                [Cortex.Reference.Exceptions.Http.HttpAuthorisationException]
+                    MainDoc = "/docs/reference/exceptions/http/http-authorisation-exception"
+                [Cortex.Reference.Exceptions.Http.InvalidRequestException]
+                    MainDoc = "/docs/reference/exceptions/http/invalid-request-exception"
             [Cortex.Reference.Exceptions.Lists]
                 MainDoc = "/docs/reference/exceptions/lists/"
                     [Cortex.Reference.Exceptions.Lists.CannotModifyReadOnlyListException]
