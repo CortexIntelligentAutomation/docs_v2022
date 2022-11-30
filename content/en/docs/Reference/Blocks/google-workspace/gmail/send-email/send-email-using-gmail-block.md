@@ -357,7 +357,7 @@ The exceptions thrown by the block can be found below:
 | |Thrown when the [Username][] and [Password][] in the [UserCredentials][] within [Gmail Session Details][Gmail Session Details Property] is incorrect. For more information, see [Invalid User Credentials][]. |
 | |Thrown when an invalid [CertificatePath][] and [CertificatePassword][] combination has been provided in the [GmailOAuthCertificateCredentials][]. For more information, see [Invalid SSL Certificate][]. |
 | |Thrown when the [CertificatePath][] in the [GmailOAuthCertificateCredentials][] points to an invalid [SSL][] certificate. For more information, see [Invalid SSL Certificate][]. |
-| |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] points to a non-existant file. For more information, see [Invalid SSL Certificate][]. |
+| |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] points to a non-existent file. For more information, see [Invalid SSL Certificate][]. |
 | |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] points to a folder. For more information, see [Invalid SSL Certificate][]. |
 | |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] is longer than the system defined maximum length (typically 32,767). For more information, see [Invalid SSL Certificate][]. |
 | |Thrown when the [CertificatePath][] provided in the [GmailOAuthCertificateCredentials][] contains only whitespace (i.e. `" "`) or contains the NUL character (i.e. `\0`). For more information, see [Invalid SSL Certificate][]. |
@@ -562,7 +562,7 @@ where each file path must be accessible from the server executing the flow.
 
 For more information about each of these supported file path formats, please see [File & Folder Paths][].
 
-#### CertificatePath need escaping
+#### CertificatePath needs escaping
 
 The [CertificatePath][] within the [GmailOAuthCertificateCredentials][] requires \ characters to be escaped, otherwise each unescaped \ will be reported as an Invalid property value message when trying to debug the flow.
 
@@ -581,31 +581,31 @@ If an empty string is provided as the [CertificatePath][] within the [GmailOAuth
 
 #### CertificatePath does not exist
 
-If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] does not exist, an [EmailSessionException][] is thrown.
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] does not exist, an [EmailSessionException][] is thrown. For more information, see [Invalid SSL Certificate][].
 
 #### Invalid CertificatePath
 
-If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /), an [EmailSessionException][] will be thrown.
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] is invalid (i.e. contains any of the following characters: ", *, ?, |, <, >, :, \, /), an [EmailSessionException][] will be thrown. For more information, see [Invalid SSL Certificate][].
 
 #### CertificatePath points to a folder
 
-If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] points to a folder, an [EmailSessionException][] will be thrown.
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] points to a folder, an [EmailSessionException][] will be thrown. For more information, see [Invalid SSL Certificate][].
 
 #### CertificatePath contains leading spaces
 
-If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] contains leading spaces they are not removed and an [EmailSessionException][] will be thrown; however, trailing spaces are removed.
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] contains leading spaces they are not removed and an [EmailSessionException][] will be thrown; however, trailing spaces are removed. For more information, see [Invalid SSL Certificate][].
 
 #### CertificatePath contains only whitespace or the NUL character
 
-If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] contains only whitespace (i.e. `"  "`) or the NUL character (i.e. `\0`), an [EmailSessionException][] will be thrown.
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] contains only whitespace (i.e. `"  "`) or the NUL character (i.e. `\0`), an [EmailSessionException][] will be thrown. For more information, see [Invalid SSL Certificate][].
 
 #### CertificatePath exceeds the system-defined maximum length
 
-If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] exceeds the system-defined maximum length (typically 32,767), an [EmailSessionException][] will be thrown.
+If the path provided as the [CertificatePath][] within the [GmailOAuthCertificateCredentials][] exceeds the system-defined maximum length (typically 32,767), an [EmailSessionException][] will be thrown. For more information, see [Invalid SSL Certificate][].
 
 #### User does not have necessary permissions to use the certificate file
 
-If the user the flow is executing as does not have permissions to access the file at the [CertificatePath][] within the [GmailOAuthCertificateCredentials][], an [EmailSessionException][] will be thrown.
+If the user the flow is executing as does not have permissions to access the file at the [CertificatePath][] within the [GmailOAuthCertificateCredentials][], an [EmailSessionException][] will be thrown. For more information, see [Invalid SSL Certificate][].
 
 ### Opening Sessions
 

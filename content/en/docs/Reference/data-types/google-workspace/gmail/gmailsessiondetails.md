@@ -14,7 +14,7 @@ The `GmailSessionDetails` data type is used to represent configuration for openi
 
 | | |
 |-|-|
-| **Category:**          | Email                                                  |
+| **Category:**          | Gmail                                                  |
 | **Name:**              | `GmailSessionDetails`                             |
 | **Full Name:**         | `Cortex.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails`      |
 | **Alias:**             | N/A                                                    |

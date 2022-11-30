@@ -15,7 +15,7 @@ The `GmailOAuthCertificateCredentials` data type is used to represent configurat
 
 | | |
 |-|-|
-| **Category:**          | Email |
+| **Category:**          | Gmail |
 | **Name:**              | `GmailOAuthCertificateCredentials` |
 | **Full Name:**         | `Cortex.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials` |
 | **Alias:**             | N/A |
@@ -86,7 +86,7 @@ The following table shows how a `GmailOAuthCertificateCredentials` can be create
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `GmailSessionDetails` constructor | `new GmailOAuthCertificateCredentials(certificatePath: @"C:\certificate.p12", certificatePassword: "encryptedPassword", fromAddress: "sender@gmail.com", clientId: "clientId")` | `{"CertificatePath": "C:\\certificate.p12", "CertificatePassword": "encryptedPassword", "FromAddress": "sender@gmail.com", "ClientId": "clientId"}` | Expression | N/A |
+| Use a `GmailOAuthCertificateCredentials` constructor | `new GmailOAuthCertificateCredentials(certificatePath: @"C:\certificate.p12", certificatePassword: "encryptedPassword", fromAddress: "sender@gmail.com", clientId: "clientId")` | `{"CertificatePath": "C:\\certificate.p12", "CertificatePassword": "encryptedPassword", "FromAddress": "sender@gmail.com", "ClientId": "clientId"}` | Expression | N/A |
 
 A `GmailOAuthCertificateCredentials` can also be created using the Literal Editor by filling in the necessary values for the following properties:
 
@@ -118,7 +118,6 @@ None
 ### Related Data Types
 
 - [EmailCredentials][]
-- [EmailUserCredentials][]
 - [EncryptedText][]
 - [EncryptableText][]
 - [GmailSessionDetails][]
@@ -140,7 +139,6 @@ None
 [GmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.MainDoc" >}}
 [IEmailCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.IEmailCredentials.MainDoc" >}}
 [EmailCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.EmailCredentials.MainDoc" >}}
-[EmailUserCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.EmailUserCredentials.MainDoc" >}}
 
 [EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 [EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
