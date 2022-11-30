@@ -40,7 +40,7 @@ For more information on:
 
 #### Result
 
-An email with [Normal][] priority is sent from `sender@outlook.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@outlook.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the connection is closed.
 
 ***
 
@@ -67,7 +67,7 @@ For more information on:
 
 #### Result
 
-An email with [Normal][] priority is sent from `sender@outlook.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the session is closed.
+An email with [Normal][] priority is sent from `sender@outlook.com` to `recipient@outlook.com` with a subject of `"Example email subject"` and a [Text][] body of `"Example email body"`, and then the connection is closed.
 
 ***
 
@@ -157,16 +157,15 @@ The exceptions thrown by the block can be found below:
 |--------------------------------------|-------------|
 | [ArgumentException][]                |Thrown when [BodyFormat][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessageBodyFormat][] values (e.g. `(EmailMessageBodyFormat)10`).|
 | |Thrown when [Priority][] within the [Email Message][Email Message Property] is not one of the specified [EmailMessagePriority][] values (e.g. `(EmailMessagePriority)10`).|
-| |Thrown when a file path provided in the [Attachments][] within the [Email Message][Email Message Property] is empty (i.e. `""`), contains only whitespace (i.e. `"   "`) or contains the NUL character (i.e. `\0`).|
 | [CryptographicException][] | Thrown when an incorrect [CertificatePath][] is provided within [Microsoft365OAuthCertificateCredentials][]. |
 | | Thrown when an incorrect [CertificatePassword][] is provided within [Microsoft365OAuthCertificateCredentials][]. |
 | [FileNotFoundException][]            |Thrown when a non-existent file path is provided in [Attachments][] within [Email Message][Email Message Property]. |
 | [IOException][]                      |Thrown when the desired socket is held by another process; re-running the flow typically solves this. |
-| [MsalServiceException][] | Thrown when an invalid [ClientId][ClientId Client Credentials] is provided within [Microsoft365OAuthCredentials][]|
-| | Thrown when an invalid [ClientSecret][ClientSecret Client Credentials] is provided within [Microsoft365OAuthCredentials][] |
-| | Thrown when an invalid [TenantId][TenantId Client Credentials] is provided within [Microsoft365OAuthCredentials][] |
-| | Thrown when an invalid [ClientId][ClientId Certificate Credentials] is provided within [Microsoft365OAuthCertificateCredentials][] |
-| | Thrown when an invalid [TenantId][TenantId Certificate Credentials] is provided within [Microsoft365OAuthCertificateCredentials][] |
+| [MsalServiceException][] | Thrown when an invalid [ClientId][ClientId Client Credentials] is provided within [Microsoft365OAuthCredentials][]. |
+| | Thrown when an invalid [ClientSecret][ClientSecret Client Credentials] is provided within [Microsoft365OAuthCredentials][]. |
+| | Thrown when an invalid [TenantId][TenantId Client Credentials] is provided within [Microsoft365OAuthCredentials][]. |
+| | Thrown when an invalid [ClientId][ClientId Certificate Credentials] is provided within [Microsoft365OAuthCertificateCredentials][]. |
+| | Thrown when an invalid [TenantId][TenantId Certificate Credentials] is provided within [Microsoft365OAuthCertificateCredentials][]. |
 | [PropertyNullException][] |Thrown when the [Email Message][Email Message Property]  is `null`. |
 | |Thrown when the [To][] within [Email Message][Email Message Property] is `null`. |
 | |Thrown when the [From][] within [Email Message][Email Message Property] is `null`. |
@@ -197,7 +196,6 @@ The exceptions thrown by the block can be found below:
 | | Thrown when trying to send an email as a user that the client application does not have rights to send as. |
 | | Thrown when the [Address][] in an [EmailAddress][] within [Email Message][Email Message Property] is not of the correct format ([RFC 5321][]). |
 | [UnauthorizedAccessException][]      |Thrown when access is denied to a file provided in [Attachments][] within [Email Message][Email Message Property]. |
-| |Thrown when a file path within the [Attachments][] property within [Email Message][Email Message Property] points to a folder. |
 
 ## Remarks
 
