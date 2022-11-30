@@ -28,7 +28,7 @@ The OAuth mechanism in this example uses client credentials. Therefore, for this
 
 For more information on:
 
-- What each of the properties inside [Microsoft365OAuthCredentials][] needs to be, see [Microsoft365OAuthCredentials][]
+- What each of the properties in the [Microsoft365OAuthCredentials][] needs to be, see [Microsoft365OAuthCredentials][]
 - How to set up an [Outlook][] account so that this authentication mechanism can be used, see [Setting up an Outlook account for OAuth authentication using client credentials][]
 
 #### Properties
@@ -55,7 +55,7 @@ The OAuth mechanism in this example uses certificate credentials. Therefore, for
 
 For more information on:
 
-- What each of the properties inside [Microsoft365OAuthCertificateCredentials][] needs to be, see [Microsoft365OAuthCertificateCredentials][]
+- What each of the properties in the [Microsoft365OAuthCertificateCredentials][] needs to be, see [Microsoft365OAuthCertificateCredentials][]
 - How to set up an [Outlook][] account so that this authentication mechanism can be used, see [Setting up an Outlook account for OAuth authentication using certificate credentials][]
 
 #### Properties
@@ -123,14 +123,16 @@ For more detailed information on each of the properties, see [EmailMessage][].
 
 ### Credentials
 
-The [Credentials][Credentials Property] object that includes all of the information required to connect to an [SMTP][] server hosted by [Outlook][]. There are multiple data types that can be used which depends on the desired OAuth mechanism:
+The [Credentials][Credentials Property] object that includes all of the information required to connect to an [SMTP][] server hosted by [Outlook][]. There are two data types that can be used, which depends on the desired OAuth mechanism:
 
 - [Microsoft365OAuthCredentials][]: Using client credentials. For information on:
-  - What each of the properties inside [Microsoft365OAuthCredentials][] needs to be, see [Microsoft365OAuthCredentials][]
+  - What each of the properties in the [Microsoft365OAuthCredentials][] needs to be, see [Microsoft365OAuthCredentials][]
   - How to set up an [Outlook][] account so that this authentication mechanism can be used, see [Setting up an Outlook account for OAuth authentication using client credentials][]
 - [Microsoft365OAuthCertificateCredentials][]: Using certificate credentials. For information on:
-  - What each of the properties inside [Microsoft365OAuthCertificateCredentials][], see [Microsoft365OAuthCertificateCredentials][]
+  - What each of the properties in the [Microsoft365OAuthCertificateCredentials][], see [Microsoft365OAuthCertificateCredentials][]
   - How to set up an [Outlook][] account so that this authentication mechanism can be used, see [Setting up an Outlook account for OAuth authentication using certificate credentials][]
+
+Note it is recommended to use a [Variable][] for [Credentials][Credentials Property] when it will be used across multiple Send Email Using Microsoft 365 blocks, as using a variable will allow for reuse of the same access token. Using a [Literal][] to set the [Credentials][Credentials Property] will cause the access token to only be used once and a new acccess token will be requested for every Send Email Using Microsoft 365 block.
 
 |||
 |----------|----------|
@@ -254,6 +256,7 @@ None
 [ServiceException]: {{< url "MSDocs.DotNet.Api.Microsoft.Graph.ServiceException.MainDoc" >}}
 [UnauthorizedAccessException]: {{< url "MSDocs.DotNet.Api.System.UnauthorizedAccessException" >}}
 
+[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
 [Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
