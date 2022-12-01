@@ -87,7 +87,11 @@ This example will send a [POST][] request to `https://test-shop-api.com/items` u
 
 #### Properties
 
-
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.POST", "ContentType": "application/json", "Body": "{'name': 'item 3', 'id': 3}", "Uri": "https://test-api.com/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.POST, contentType: "application/json", headers: null, body: "{'name': 'item 3', 'id': 3}", httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
+| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `null`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`null` | `($)HttpCredentials` is a variable with no value<br><br>As `($)HttpCredentials` has no value, no authentication will occur when making the request. |
+| [Http Response][Http Response Property] | `($)HttpResponse`, with no value | `($)HttpResponse` will be set to the type [HttpResponse][] |
 
 #### Result
 
