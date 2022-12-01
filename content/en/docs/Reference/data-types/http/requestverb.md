@@ -10,3 +10,19 @@ weight: 1
 <p class="namespace">(Cortex.DataTypes.Http.RequestVerb)</p>
 
 <img src="/images/work-in-progress.jpg">
+
+## Summary
+
+## Values
+
+### GET
+
+### POST
+
+### PUT
+
+### DELETE
+
+### PATCH
+
+### HEAD

@@ -1189,8 +1189,16 @@
                 MainDoc = "/docs/reference/data-types/http/"
                 [Cortex.Reference.DataTypes.Http.RequestVerb]
                     MainDoc = "/docs/reference/data-types/http/requestverb"
+                    GET = "/docs/reference/data-types/http/requestverb/#get"
+                    POST = "/docs/reference/data-types/http/requestverb/#post"
+                    PUT = "/docs/reference/data-types/http/requestverb/#put"
+                    DELETE = "/docs/reference/data-types/http/requestverb/#delete"
+                    PATCH = "/docs/reference/data-types/http/requestverb/#patch"
+                    HEAD = "/docs/reference/data-types/http/requestverb/#head"
                 [Cortex.Reference.DataTypes.Http.HttpRequestVersion]
                     MainDoc = "/docs/reference/data-types/http/httprequestversion"
+                    HTTP10 = "/docs/reference/data-types/http/httprequestversion/#http10"
+                    HTTP11 = "/docs/reference/data-types/http/httprequestversion/#http11"
                 [Cortex.Reference.DataTypes.Http.Authentication]
                     MainDoc = "/docs/reference/data-types/http/authentication/"
                     [Cortex.Reference.DataTypes.Http.Authentication.IHttpCredentials]
@@ -1481,6 +1489,7 @@
             MainDoc = "/docs/reference/glossary/"
             [Cortex.Reference.Glossary.A-E]
                 MainDoc = "/docs/reference/glossary/a-e/"
+                API = "/docs/reference/glossary/a-e/#api"
                 Autogeneration = "/docs/reference/glossary/a-e/#autogeneration"
                 Automation = "/docs/reference/glossary/a-e/#automation"
                 AWSLambda = "/docs/reference/glossary/a-e/#aws-lambda"

@@ -18,15 +18,131 @@ Executes an [HTTP request][Http Request Property] using the specified [Http Cred
 
 ## Examples
 
+The following examples will use an example [API][] with a base [Uri][] of `https://test-shop-api.com` and resource called `items` at `https://test-shop-api.com/items`. Each example assumes that the resource `items` contains the following data before the example is executed:
+
+```json
+[
+    {
+        "name": "item 1",
+        "id": 1
+    },
+    {
+        "name": "item 2",
+        "id": 2
+    }
+]
+```
+
+The example [API][] supports:
+
+- Retrieval of every item in the `items` resource via a [GET][] request
+- Creation of a new item in the `items` resource via a [POST][] request
+- Unauthenticated requests
+- Basic authentication
+- OAuth authentication using password credentials
+- OAuth authentication using client credentials
+
 ### Executing a GET request
+
+This example will send a [GET][] request to `https://test-shop-api.com/items` using [HTTP 1.1][HTTP11] with no authentication.
+
+#### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.GET", "ContentType": null, "Body": null, "Uri": "https://test-api.com/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.GET, contentType: null, headers: null, body: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
+| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `null`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`null` | `($)HttpCredentials` is a variable with no value<br><br>As `($)HttpCredentials` has no value, no authentication will occur when making the request. |
+| [Http Response][Http Response Property] | `($)HttpResponse`, with no value | `($)HttpResponse` will be set to the type [HttpResponse][] |
+
+#### Result
+
+Executing a [HttpRequest][] with a [Uri][] of `https://test-shop-api.com/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+
+```json
+{
+    "ResponseBody": [
+        {
+            "name": "item 1",
+            "id": 1
+        },
+        {
+            "name": "item 2",
+            "id": 2
+        }
+    ],
+    "ErrorMessage": null,
+    "Headers": {
+        "Content-Length": 1024,
+        "Content-Type": "application/json",
+    },
+    "StatusCode": "HttpStatusCode.OK (200)"
+}
+```
+
+***
 
 ### Executing a POST request
 
+This example will send a [POST][] request to `https://test-shop-api.com/items` using [HTTP 1.1][HTTP11] with no authentication.
+
+#### Properties
+
+
+
+#### Result
+
+Executing a [HttpRequest][] with a [Uri][] of `https://test-shop-api.com/items` and a [Verb][] of [POST][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+
+```json
+{
+    "ResponseBody": [
+        {
+            "name": "item 1",
+            "id": 1
+        },
+        {
+            "name": "item 2",
+            "id": 2
+        },
+        {
+            "name": "item 3",
+            "id": 3
+        }
+    ],
+    "ErrorMessage": null,
+    "Headers": {
+        "Content-Length": 1024,
+        "Content-Type": "application/json",
+    },
+    "StatusCode": "HttpStatusCode.OK (200)"
+}
+```
+
+***
+
 ### Executing a request using Basic authentication
+
+#### Properties
+
+#### Result
+
+***
 
 ### Executing a request using OAuth password credentials
 
+#### Properties
+
+#### Result
+
+***
+
 ### Executing a request using OAuth client Credentials
+
+#### Properties
+
+#### Result
+
+***
 
 ## Properties
 
@@ -182,8 +298,16 @@ None
 [HttpVersion]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.HttpVersion" >}}
 
 [RequestVerb]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.MainDoc" >}}
+[GET]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.GET" >}}
+[POST]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.POST" >}}
+[PUT]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PUT" >}}
+[DELETE]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.DELETE" >}}
+[PATCH]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PATCH" >}}
+[HEAD]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.HEAD" >}}
 
 [HttpRequestVersion]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.MainDoc" >}}
+[HTTP10]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.HTTP10" >}}
+[HTTP11]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.HTTP11" >}}
 
 [HttpResponse]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.MainDoc" >}}
 [ResponseBody]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.ResponseBody" >}}
@@ -203,3 +327,5 @@ None
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+
+[API]: {{< url "Cortex.Reference.Glossary.A-E.API" >}}
