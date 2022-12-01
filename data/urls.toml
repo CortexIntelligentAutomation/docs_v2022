@@ -1193,14 +1193,25 @@
                         MainDoc = "/docs/reference/data-types/http/authentication/oauth/"
                         [Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication]
                             MainDoc = "/docs/reference/data-types/http/authentication/oauth/clientauthentication"
+                            ClientId = "/docs/reference/data-types/http/authentication/oauth/clientauthentication/#clientid"
+                            ClientSecret = "/docs/reference/data-types/http/authentication/oauth/clientauthentication/#clientsecret"
+                            SendAs = "/docs/reference/data-types/http/authentication/oauth/clientauthentication/#sendas"
                         [Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthType]
                             MainDoc = "/docs/reference/data-types/http/authentication/oauth/clientauthtype"
                         [Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials]
                             MainDoc = "/docs/reference/data-types/http/authentication/oauth/httpoauthclientcredentials"
+                            AccessTokenUri = "/docs/reference/data-types/http/authentication/oauth/httpoauthclientcredentials/#accesstokenuri"
+                            ClientAuthentication = "/docs/reference/data-types/http/authentication/oauth/httpoauthclientcredentials/#clientauthentication"
+                            Scope = "/docs/reference/data-types/http/authentication/oauth/httpoauthclientcredentials/#scope"
                         [Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthCredentials]
                             MainDoc = "/docs/reference/data-types/http/authentication/oauth/httpoauthcredentials"
                         [Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials]
                             MainDoc = "/docs/reference/data-types/http/authentication/oauth/httpoauthpasswordcredentials"
+                            ResourceOwnerUsername = "/docs/reference/data-types/http/authentication/oauth/httpoauthpasswordcredentials/#resourceownerusername"
+                            ResourceOwnerPassword = "/docs/reference/data-types/http/authentication/oauth/httpoauthpasswordcredentials/#resourceownerpassword"
+                            AccessTokenUri = "/docs/reference/data-types/http/authentication/oauth/httpoauthpasswordcredentials/#accesstokenuri"
+                            ClientAuthentication = "/docs/reference/data-types/http/authentication/oauth/httpoauthpasswordcredentials/#clientauthentication"
+                            Scope = "/docs/reference/data-types/http/authentication/oauth/httpoauthpasswordcredentials/#scope"
                 [Cortex.Reference.DataTypes.Http.Rest]
                     MainDoc = "/docs/reference/data-types/http/rest/"
                     [Cortex.Reference.DataTypes.Http.Rest.HttpRequest]

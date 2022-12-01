@@ -10,3 +10,13 @@ weight: 1
 <p class="namespace">(Cortex.DataTypes.Http.Authentication.OAuth.HttpOAuthCientCredentials)</p>
 
 <img src="/images/work-in-progress.jpg">
+
+## Summary
+
+## Properties
+
+### AccessTokenUri
+
+### ClientAuthentication
+
+### Scope

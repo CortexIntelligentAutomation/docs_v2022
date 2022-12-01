@@ -106,14 +106,31 @@ The exceptions thrown by the block can be found below:
 
 | Name                                 | Description |
 |--------------------------------------|-------------|
-| [HttpAuthorisationException][] | Thrown when |
-| | Thrown when |
-| [InvalidRequestException][] | Thrown when |
-| | Thrown when |
-| [PropertyNullException][] | Thrown when |
-| | Thrown when |
-| [PropertyEmptyException][] | Thrown when |
-| | Thrown when |
+| [HttpAuthorisationException][] | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is invalid. |
+| | Thrown when the [ResourceOwnerUsername][] within [HttpOAuthPasswordCredentials][] is invalid. |
+| | Thrown when the [ResourceOwnerPassword][] within [HttpOAuthPasswordCredentials][] is invalid. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is invalid. |
+| | Thrown when the [ClientId][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is invalid. |
+| | Thrown when the [ClientSecret][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is invalid. |
+| [InvalidRequestException][] | Thrown when the [Uri][] within [Http Request][Http Request Property] is not in the correct format or contains invalid characters. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is not in the correct format or contains invalid characters. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is not in the correct format or contains invalid characters. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is not in the correct format or contains invalid characters. |
+| [PropertyNullException][] | Thrown when the [Http Request][Http Request Property] is `null`. |
+| | Thrown when the [Username][] within [UserCredentials][] is `null`. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is `null`. |
+| | Thrown when the [ResourceOwnerUsername][] within [HttpOAuthPasswordCredentials][] is `null`. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is `null`. |
+| | Thrown when the [ClientAuthentication][ClientAuthentication Client Credentials] within [HttpOAuthClientCredentials][] is `null`. |
+| | Thrown when the [ClientId][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is `null`. |
+| | Thrown when the [ClientSecret][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is `null`. |
+| [PropertyEmptyException][] | Thrown when the [Uri][] within [Http Request][Http Request Property] is empty (i.e. `""`). |
+| | Thrown when the [Username][] within [UserCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [ResourceOwnerUsername][] within [HttpOAuthPasswordCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [ClientId][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [ClientSecret][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is empty (i.e. `""`). |
 
 ## Remarks
 
@@ -126,11 +143,26 @@ None
 [Http Response Property]: {{< ref "#http-response" >}}
 
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
+[Username]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
 
 [HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
+
 [HttpOAuthClientCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.MainDoc" >}}
+[ResourceOwnerUsername]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.ResourceOwnerUsername" >}}
+[ResourceOwnerPassword]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.ResourceOwnerPassword" >}}
+[AccessTokenUri Client Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.AccessTokenUri" >}}
+[ClientAuthentication Client Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.ClientAuthentication" >}}
+
 [HttpOAuthPasswordCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.MainDoc" >}}
+[AccessTokenUri Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.AccessTokenUri" >}}
+[AccessTokenUri Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.AccessTokenUri" >}}
+
 [HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
+
+[ClientAuthentication]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.MainDoc" >}}
+[ClientId]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.ClientId" >}}
+[ClientSecret]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.ClientSecret" >}}
+[SendAs]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.SendAs" >}}
 
 [HttpRequest]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.MainDoc" >}}
 [Uri]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Uri" >}}
