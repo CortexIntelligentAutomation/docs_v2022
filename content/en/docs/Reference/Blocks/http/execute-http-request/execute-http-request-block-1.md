@@ -115,7 +115,15 @@ The exceptions thrown by the block can be found below:
 | [InvalidRequestException][] | Thrown when the [Uri][] within [Http Request][Http Request Property] is not in the correct format or contains invalid characters. |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is not in the correct format or contains invalid characters. |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is not in the correct format or contains invalid characters. |
-| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is not in the correct format or contains invalid characters. |
+| | Thrown when the [Verb][] within [Http Request][Http Request Property] is not one of the specified [RequestVerb][] values (e.g. `(RequestVerb)10`). |
+| | Thrown when a header key in [Headers][] within [Http Request][Http Request Property] is empty (i.e. `""`). |
+| | Thrown when a header key in [Headers][] within [Http Request][Http Request Property] is restricted. |
+| | Thrown when a header key in [Headers][] within [Http Request][Http Request Property] is restricted and forbidden. |
+| | Thrown when a header value in [Headers][] within [Http Request][Http Request Property] could not be assigned to its restricted header key. |
+| | Thrown when a header value in [Headers][] within [Http Request][Http Request Property] could not be converted to its restricted header key's type. |
+| | Thrown when the [Body][] within [Http Request][Http Request Property] is not `null` or empty (i.e. `""`) and [RequestVerb][] is GET or HEAD. |
+| | Thrown when the [Body][] within [Http Request][Http Request Property] does not match the [ContentType][]. |
+| | Thrown when the [HttpVersion][] within [Http Request][Http Request Property] is not one of the specified [HttpRequestVersion][] values (e.g. `(HttpRequestVersion)10`). |
 | [PropertyNullException][] | Thrown when the [Http Request][Http Request Property] is `null`. |
 | | Thrown when the [Username][] within [UserCredentials][] is `null`. |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is `null`. |
@@ -172,6 +180,10 @@ None
 [Headers]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Headers" >}}
 [Body]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Body" >}}
 [HttpVersion]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.HttpVersion" >}}
+
+[RequestVerb]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.MainDoc" >}}
+
+[HttpRequestVersion]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.MainDoc" >}}
 
 [HttpResponse]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.MainDoc" >}}
 [ResponseBody]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.ResponseBody" >}}

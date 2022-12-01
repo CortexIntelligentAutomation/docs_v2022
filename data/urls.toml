@@ -1187,6 +1187,10 @@
                                 ClientId = "/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#clientid"
             [Cortex.Reference.DataTypes.Http]
                 MainDoc = "/docs/reference/data-types/http/"
+                [Cortex.Reference.DataTypes.Http.RequestVerb]
+                    MainDoc = "/docs/reference/data-types/http/requestverb"
+                [Cortex.Reference.DataTypes.Http.HttpRequestVersion]
+                    MainDoc = "/docs/reference/data-types/http/httprequestversion"
                 [Cortex.Reference.DataTypes.Http.Authentication]
                     MainDoc = "/docs/reference/data-types/http/authentication/"
                     [Cortex.Reference.DataTypes.Http.Authentication.IHttpCredentials]
