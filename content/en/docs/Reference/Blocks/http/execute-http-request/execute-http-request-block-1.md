@@ -353,7 +353,7 @@ The exceptions thrown by the block can be found below:
 | | Thrown when a header key in [Headers][] within [Http Request][Http Request Property] is restricted and forbidden. |
 | | Thrown when a header value in [Headers][] within [Http Request][Http Request Property] could not be assigned to its restricted header key. |
 | | Thrown when a header value in [Headers][] within [Http Request][Http Request Property] could not be converted to its restricted header key's type. |
-| | Thrown when the [Body][] within [Http Request][Http Request Property] is not `null` or empty (i.e. `""`) and [RequestVerb][] is GET or HEAD. |
+| | Thrown when the [Body][] within [Http Request][Http Request Property] is not `null` or empty (i.e. `""`) and [RequestVerb][] is [GET][] or [HEAD][]. |
 | | Thrown when the [Body][] within [Http Request][Http Request Property] does not match the [ContentType][]. |
 | | Thrown when the [HttpVersion][] within [Http Request][Http Request Property] is not one of the specified [HttpRequestVersion][] values (e.g. `(HttpRequestVersion)10`). |
 | [PropertyNullException][] | Thrown when the [Http Request][Http Request Property] is `null`. |
