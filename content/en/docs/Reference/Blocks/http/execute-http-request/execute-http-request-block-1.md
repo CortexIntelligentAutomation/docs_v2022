@@ -18,7 +18,7 @@ Executes an [HTTP request][Http Request Property] using the specified [Http Cred
 
 ## Examples
 
-The following examples will use an example [API][] with a base [Uri][] of `https://test-shop-api.com` and resource called `items` at `https://test-shop-api.com/items`. Each example assumes that the resource `items` contains the following data before the example is executed:
+The following examples will use an example [API][] with a base [Uri][] of `https://test-shop.com/api` and resource called `items` at `https://test-shop.com/api/items`. Each example assumes that the resource `items` contains the following data before the example is executed:
 
 ```json
 [
@@ -39,13 +39,13 @@ The example [API][] supports:
 - Creation of a new item in the `items` resource via a [POST][] request
 - Unauthenticated requests
 - Basic authentication
-- Retrieval of access tokens from `https://test-shop-api.com/oauth2/token`
+- Retrieval of access tokens from `https://test-shop.com/api/oauth2/token`
 - OAuth authentication using password credentials
 - OAuth authentication using client credentials
 
 ### Executing a GET request
 
-This example will send a [GET][] request to `https://test-shop-api.com/items` using [HTTP 1.1][HTTP11] with no authentication which requires [Http Credentials][Http Credentials Property] to be `null`.
+This example will send a [GET][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] with no authentication which requires [Http Credentials][Http Credentials Property] to be `null`.
 
 Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
 
@@ -53,13 +53,13 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.GET", "ContentType": null, "Body": null, "Uri": "https://test-api.com/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.GET, contentType: null, headers: null, body: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
+| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.GET", "ContentType": null, "Body": null, "Uri": "https://test-shop.com/api/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.GET, contentType: null, headers: null, body: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
 | [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `null`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`null` | `($)HttpCredentials` is a variable with value `null`<br><br>As `($)HttpCredentials` is `null`, no authentication will occur when making the request. |
 | [Http Response][Http Response Property] | `($)HttpResponse`, with no value | `($)HttpResponse` will be set to the type [HttpResponse][] |
 
 #### Result
 
-Executing a [HttpRequest][] with a [Uri][] of `https://test-shop-api.com/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
 {
@@ -86,7 +86,7 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop-api.com/items` 
 
 ### Executing a POST request
 
-This example will send a [POST][] request to `https://test-shop-api.com/items` using [HTTP 1.1][HTTP11] with no authentication which requires [Http Credentials][Http Credentials Property] to be `null`.
+This example will send a [POST][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] with no authentication which requires [Http Credentials][Http Credentials Property] to be `null`.
 
 Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
 
@@ -94,7 +94,7 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.POST", "ContentType": "application/json", "Body": "{'name': 'item 3', 'id': 3}", "Uri": "https://test-api.com/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.POST, contentType: "application/json", headers: null, body: "{'name': 'item 3', 'id': 3}", httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
+| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.POST", "ContentType": "application/json", "Body": "{'name': 'item 3', 'id': 3}", "Uri": "https://test-shop.com/api/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.POST, contentType: "application/json", headers: null, body: "{'name': 'item 3', 'id': 3}", httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
 | [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `null`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`null` | `($)HttpCredentials` is a variable with value `null`<br><br>As `($)HttpCredentials` is `null`, no authentication will occur when making the request. |
 | [Http Response][Http Response Property] | `($)HttpResponse`, with no value | `($)HttpResponse` will be set to the type [HttpResponse][] |
 
@@ -102,7 +102,7 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 **TODO: MAKE RESULT CORRECT**
 
-Executing a [HttpRequest][] with a [Uri][] of `https://test-shop-api.com/items` and a [Verb][] of [POST][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [POST][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
 {
@@ -133,7 +133,7 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop-api.com/items` 
 
 ### Executing a request using Basic authentication
 
-This example will send a [GET][] request to `https://test-shop-api.com/items` using [HTTP 1.1][HTTP11] using Basic authentication which requires [Http Credentials][Http Credentials Property] to be a [UserCredentials][].
+This example will send a [GET][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] using Basic authentication which requires [Http Credentials][Http Credentials Property] to be a [UserCredentials][].
 
 Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
 
@@ -141,13 +141,13 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.GET", "ContentType": null, "Body": null, "Uri": "https://test-api.com/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.GET, contentType: null, headers: null, body: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
+| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.GET", "ContentType": null, "Body": null, "Uri": "https://test-shop.com/api/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.GET, contentType: null, headers: null, body: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
 | [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `{"Domain": null, "Username": "username", "Password": "encryptedPassword"}`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`new UserCredentials(username: "username", password: "encryptedPassword")` | `($)HttpCredentials` is a variable of type [UserCredentials][]<br><br>The [Password][] property in the [UserCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Http Response][Http Response Property] | `($)HttpResponse`, with no value | `($)HttpResponse` will be set to the type [HttpResponse][] |
 
 #### Result
 
-Executing a [HttpRequest][] with a [Uri][] of `https://test-shop-api.com/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
 {
@@ -174,7 +174,7 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop-api.com/items` 
 
 ### Executing a request using OAuth password credentials
 
-This example will send a [GET][] request to `https://test-shop-api.com/items` using [HTTP 1.1][HTTP11] using OAuth authentication with password credentials which requires [Http Credentials][Http Credentials Property] to be a [HttpOAuthPasswordCredentials][].
+This example will send a [GET][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] using OAuth authentication with password credentials which requires [Http Credentials][Http Credentials Property] to be a [HttpOAuthPasswordCredentials][].
 
 Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
 
@@ -182,13 +182,13 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.GET", "ContentType": null, "Body": null, "Uri": "https://test-api.com/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.GET, contentType: null, headers: null, body: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
-| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `{"AccessTokenUri": "https://test-shop-api.com/oauth2/token", "ClientAuthentication": null, "Scope": null, "ResourceOwnerUsername": "username", "ResourceOwnerPassword": "encryptedPassword"}`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`new HttpOAuthPasswordCredentials(accessTokenUri: "https://test-shop-api.com/oauth2/token", clientAuthentication: null, scope: null, resourceOwnerUsername: "username", resourceOwnerPassword: "encryptedPassword")` | `($)HttpCredentials` is a variable of type [HttpOAuthPasswordCredentials][]<br><br>The [ResourceOwnerPassword][] property in the [HttpOAuthPasswordCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
+| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.GET", "ContentType": null, "Body": null, "Uri": "https://test-shop.com/api/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.GET, contentType: null, headers: null, body: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
+| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `{"AccessTokenUri": "https://test-shop.com/api/oauth2/token", "ClientAuthentication": null, "Scope": null, "ResourceOwnerUsername": "username", "ResourceOwnerPassword": "encryptedPassword"}`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`new HttpOAuthPasswordCredentials(accessTokenUri: "https://test-shop.com/api/oauth2/token", clientAuthentication: null, scope: null, resourceOwnerUsername: "username", resourceOwnerPassword: "encryptedPassword")` | `($)HttpCredentials` is a variable of type [HttpOAuthPasswordCredentials][]<br><br>The [ResourceOwnerPassword][] property in the [HttpOAuthPasswordCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Http Response][Http Response Property] | `($)HttpResponse`, with no value | `($)HttpResponse` will be set to the type [HttpResponse][] |
 
 #### Result
 
-Executing a [HttpRequest][] with a [Uri][] of `https://test-shop-api.com/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
 {
