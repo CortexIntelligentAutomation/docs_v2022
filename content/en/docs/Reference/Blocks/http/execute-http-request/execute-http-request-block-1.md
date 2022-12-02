@@ -14,7 +14,7 @@ description: "Executes an HTTP request and returns a response."
 
 ## Description
 
-Executes an [HTTP request][Http Request Property] using the specified [Http Credentials][Http Credentials Property] and returns the [Http Response][Http Response Property].
+Executes an [HTTP Request][Http Request Property] using the specified [Http Credentials][Http Credentials Property] and returns the [Http Response][Http Response Property].
 
 ## Examples
 
@@ -127,7 +127,7 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 }
 ```
 
-Note that the resource `items` at `https://test-shop.com/api/items` has the value shown in the [ResponseBody][] of [Http Response][Http Response Property] shown above.
+Note that the resource `items` at `https://test-shop.com/api/items` has the value shown in the [ResponseBody][] of the [Http Response][Http Response Property] shown above.
 
 ***
 
