@@ -35,8 +35,8 @@ The following examples will use an example [API][] with a base [Uri][] of `https
 
 The example [API][] supports:
 
-- Retrieval of every item in the `items` resource via a [GET][] request
-- Creation of a new item in the `items` resource via a [POST][] request
+- Retrieval of every item in the `items` resource via a [GET][] request which returns the `items` resource as the [ResponseBody][] of the [Http Response][Http Response Property]
+- Creation of a new item in the `items` resource via a [POST][] request which returns the updated `items` resource as the [ResponseBody][] of the [Http Response][Http Response Property]
 - Unauthenticated requests
 - Basic authentication
 - Retrieval of access tokens from `https://test-shop.com/api/oauth2/token`
@@ -100,8 +100,6 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 #### Result
 
-**TODO: MAKE RESULT CORRECT**
-
 Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [POST][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
@@ -128,6 +126,8 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
     "StatusCode": "HttpStatusCode.OK (200)"
 }
 ```
+
+Note that the resource `items` at `https://test-shop.com/api/items` has the value shown in the [ResponseBody][] of [Http Response][Http Response Property] shown above.
 
 ***
 
@@ -183,7 +183,7 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.GET", "ContentType": null, "Body": null, "Uri": "https://test-shop.com/api/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.GET, contentType: null, headers: null, body: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
-| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `{"AccessTokenUri": "https://test-shop.com/api/oauth2/token", "ClientAuthentication": null, "Scope": null, "ResourceOwnerUsername": "username", "ResourceOwnerPassword": "encryptedPassword"}`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`new HttpOAuthPasswordCredentials(accessTokenUri: "https://test-shop.com/api/oauth2/token", clientAuthentication: null, scope: null, resourceOwnerUsername: "username", resourceOwnerPassword: "encryptedPassword")` | `($)HttpCredentials` is a variable of type [HttpOAuthPasswordCredentials][]<br><br>The [ResourceOwnerPassword][] property in the [HttpOAuthPasswordCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
+| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `{"AccessTokenUri": "https://test-shop.com/api/oauth2/token", "ClientAuthentication": null, "Scope": null, "ResourceOwnerUsername": "username", "ResourceOwnerPassword": "encryptedPassword"}`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`new HttpOAuthPasswordCredentials(accessTokenUri: "https://test-shop.com/api/oauth2/token", clientAuthentication: null, scope: null, resourceOwnerUsername: "username", resourceOwnerPassword: "encryptedPassword")` | `($)HttpCredentials` is a variable of type [HttpOAuthPasswordCredentials][]<br><br>The [ResourceOwnerPassword][ResourceOwnerPassword Password Credentials] property in the [HttpOAuthPasswordCredentials][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Http Response][Http Response Property] | `($)HttpResponse`, with no value | `($)HttpResponse` will be set to the type [HttpResponse][] |
 
 #### Result
@@ -215,9 +215,42 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 
 ### Executing a request using OAuth client Credentials
 
+This example will send a [GET][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] using OAuth authentication with client credentials which requires [Http Credentials][Http Credentials Property] to be a [HttpOAuthClientCredentials][].
+
+Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
+
 #### Properties
 
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Http Request][Http Request Property] | `($)HttpRequest`, with value `{"QueryStringParameters": null, "Verb": "RequestVerb.GET", "ContentType": null, "Body": null, "Uri": "https://test-shop.com/api/items", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)HttpRequest` has been set up using the following [Expression][]:<br><br>`new HttpRequest(uri: "https://test-api/com/items", queryParameters: null, verb: RequestVerb.GET, contentType: null, headers: null, body: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)HttpRequest` is a variable of type [HttpRequest][] |
+| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `{"AccessTokenUri": "https://test-shop.com/api/oauth2/token", "ClientAuthentication": {"ClientId": "clientId", "ClientSecret": "encryptedClientSecret", "SendAs": "ClientAuthType.Header"}, "Scope": null}`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`new HttpOAuthClientCredentials(accessTokenUri: "https://test-shop.com/api/oauth2/token", clientAuthentication: new ClientAuthentication("clientId", "encryptedClientSecret", ClientAuthType.Header), scope: null)` | `($)HttpCredentials` is a variable of type [HttpOAuthClientCredentials][]<br><br>The [ClientSecret][] property in [ClientAuthentication][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
+| [Http Response][Http Response Property] | `($)HttpResponse`, with no value | `($)HttpResponse` will be set to the type [HttpResponse][] |
+
 #### Result
+
+Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+
+```json
+{
+    "ResponseBody": [
+        {
+            "name": "item 1",
+            "id": 1
+        },
+        {
+            "name": "item 2",
+            "id": 2
+        }
+    ],
+    "ErrorMessage": null,
+    "Headers": {
+        "Content-Length": 1024,
+        "Content-Type": "application/json",
+    },
+    "StatusCode": "HttpStatusCode.OK (200)"
+}
+```
 
 ***
 
@@ -306,8 +339,8 @@ The exceptions thrown by the block can be found below:
 | Name                                 | Description |
 |--------------------------------------|-------------|
 | [HttpAuthorisationException][] | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is invalid. |
-| | Thrown when the [ResourceOwnerUsername][] within [HttpOAuthPasswordCredentials][] is invalid. |
-| | Thrown when the [ResourceOwnerPassword][] within [HttpOAuthPasswordCredentials][] is invalid. |
+| | Thrown when the [ResourceOwnerUsername][ResourceOwnerUsername Password Credentials] within [HttpOAuthPasswordCredentials][] is invalid. |
+| | Thrown when the [ResourceOwnerPassword][ResourceOwnerPassword Password Credentials] within [HttpOAuthPasswordCredentials][] is invalid. |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is invalid. |
 | | Thrown when the [ClientId][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is invalid. |
 | | Thrown when the [ClientSecret][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is invalid. |
@@ -326,7 +359,7 @@ The exceptions thrown by the block can be found below:
 | [PropertyNullException][] | Thrown when the [Http Request][Http Request Property] is `null`. |
 | | Thrown when the [Username][] within [UserCredentials][] is `null`. |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is `null`. |
-| | Thrown when the [ResourceOwnerUsername][] within [HttpOAuthPasswordCredentials][] is `null`. |
+| | Thrown when the [ResourceOwnerUsername][ResourceOwnerUsername Password Credentials] within [HttpOAuthPasswordCredentials][] is `null`. |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is `null`. |
 | | Thrown when the [ClientAuthentication][ClientAuthentication Client Credentials] within [HttpOAuthClientCredentials][] is `null`. |
 | | Thrown when the [ClientId][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is `null`. |
@@ -334,7 +367,7 @@ The exceptions thrown by the block can be found below:
 | [PropertyEmptyException][] | Thrown when the [Uri][] within [Http Request][Http Request Property] is empty (i.e. `""`). |
 | | Thrown when the [Username][] within [UserCredentials][] is empty (i.e. `""`). |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is empty (i.e. `""`). |
-| | Thrown when the [ResourceOwnerUsername][] within [HttpOAuthPasswordCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [ResourceOwnerUsername][ResourceOwnerUsername Password Credentials] within [HttpOAuthPasswordCredentials][] is empty (i.e. `""`). |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is empty (i.e. `""`). |
 | | Thrown when the [ClientId][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is empty (i.e. `""`). |
 | | Thrown when the [ClientSecret][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is empty (i.e. `""`). |
@@ -356,13 +389,12 @@ None
 [HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
 
 [HttpOAuthClientCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.MainDoc" >}}
-[ResourceOwnerUsername]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.ResourceOwnerUsername" >}}
-[ResourceOwnerPassword]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.ResourceOwnerPassword" >}}
 [AccessTokenUri Client Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.AccessTokenUri" >}}
 [ClientAuthentication Client Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.ClientAuthentication" >}}
 
 [HttpOAuthPasswordCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.MainDoc" >}}
-[AccessTokenUri Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.AccessTokenUri" >}}
+[ResourceOwnerUsername Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.ResourceOwnerUsername" >}}
+[ResourceOwnerPassword Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.ResourceOwnerPassword" >}}
 [AccessTokenUri Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.AccessTokenUri" >}}
 
 [HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
