@@ -21,16 +21,7 @@ Executes a [Soap Request][Soap Request Property] using the specified [Http Crede
 The following examples will use an example [API][] with a base [Uri][] of `https://test-shop.com/api` and resource called `items` at `https://test-shop.com/api/items`. Each example assumes that the resource `items` contains the following data before the example is executed:
 
 ```xml
-[
-    {
-        "name": "item 1",
-        "id": 1
-    },
-    {
-        "name": "item 2",
-        "id": 2
-    }
-]
+
 ```
 
 The example [API][] supports:
