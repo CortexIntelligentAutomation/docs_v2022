@@ -35,8 +35,8 @@ The following examples will use an example [API][] with a base [Uri][] of `https
 
 The example [API][] supports:
 
-- Retrieval of every item in the `items` resource via a [GET][] request which returns the `items` resource as the [ResponseBody][] of the [Http Response][Http Response Property]
-- Creation of a new item in the `items` resource via a [POST][] request which returns the updated `items` resource as the [ResponseBody][] of the [Http Response][Http Response Property]
+- Retrieval of every item in the `items` resource via a [GET][] request which returns the `items` resource as the [ResponseBody][] of the [Soap Response][Soap Response Property]
+- Creation of a new item in the `items` resource via a [POST][] request which returns the updated `items` resource as the [ResponseBody][] of the [Soap Response][Soap Response Property]
 - Unauthenticated requests
 - Basic authentication
 - Retrieval of access tokens from `https://test-shop.com/api/oauth2/token`
@@ -78,6 +78,8 @@ Note that when using [HttpOAuthPasswordCredentials][] or [HttpOAuthClientCredent
 
 The [Soap Response][Soap Response Property] object which contains the response returned from the server. This property contains all of the information in relation to the response from the server, these are:
 
+
+
 ## Exceptions
 
 ## Remarks
@@ -89,6 +91,14 @@ None
 [Soap Request Property]: {{< ref "#soap-request" >}}
 [Http Credentials Property]: {{< ref "#http-credentials" >}}
 [Soap Response Property]: {{< ref "#soap-response" >}}
+
+[RequestVerb]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.MainDoc" >}}
+[GET]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.GET" >}}
+[POST]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.POST" >}}
+[PUT]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PUT" >}}
+[DELETE]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.DELETE" >}}
+[PATCH]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PATCH" >}}
+[HEAD]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.HEAD" >}}
 
 [HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
 
