@@ -82,6 +82,8 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 }
 ```
 
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
+
 ***
 
 ### Executing a POST request
@@ -129,6 +131,8 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 
 Note that the resource `items` at `https://test-shop.com/api/items` has the value shown in the [ResponseBody][] of the [Http Response][Http Response Property] shown above.
 
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
+
 ***
 
 ### Executing a request using Basic authentication
@@ -169,6 +173,8 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
     "StatusCode": "HttpStatusCode.OK (200)"
 }
 ```
+
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
 
 ***
 
@@ -211,6 +217,8 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 }
 ```
 
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
+
 ***
 
 ### Executing a request using OAuth client Credentials
@@ -252,6 +260,8 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 }
 ```
 
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
+
 ***
 
 ## Properties
@@ -264,7 +274,7 @@ The [Http Request][Http Request Property] to execute using the [Http Credentials
 - [QueryParameters][]
 - [Verb][]
 - [ContentType][]
-- [Headers][]
+- [Headers][Headers Request]
 - [Body][]
 - [HttpVersion][]
 
@@ -319,8 +329,10 @@ The [Http Response][Http Response Property] object which contains the response r
 
 - [ResponseBody][]
 - [ErrorMessage][]
-- [Headers][]
+- [Headers][Headers Response]
 - [StatusCode][]
+
+Note that if the [Headers][Headers Response] contains a key of `Content-Type` with a value containing `json` or `xml`, the [ResponseBody][] will be set to a [Structure][] containing the data.
 
 For more detailed information on each of the properties, see [HttpResponse][].
 
@@ -348,11 +360,11 @@ The exceptions thrown by the block can be found below:
 | | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is not in the correct format or contains invalid characters. |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is not in the correct format or contains invalid characters. |
 | | Thrown when the [Verb][] within [Http Request][Http Request Property] is not one of the specified [RequestVerb][] values (e.g. `(RequestVerb)10`). |
-| | Thrown when a header key in [Headers][] within [Http Request][Http Request Property] is empty (i.e. `""`). |
-| | Thrown when a header key in [Headers][] within [Http Request][Http Request Property] is restricted. |
-| | Thrown when a header key in [Headers][] within [Http Request][Http Request Property] is restricted and forbidden. |
-| | Thrown when a header value in [Headers][] within [Http Request][Http Request Property] could not be assigned to its restricted header key. |
-| | Thrown when a header value in [Headers][] within [Http Request][Http Request Property] could not be converted to its restricted header key's type. |
+| | Thrown when a header key in [Headers][Headers Request] within [Http Request][Http Request Property] is empty (i.e. `""`). |
+| | Thrown when a header key in [Headers][Headers Request] within [Http Request][Http Request Property] is restricted. |
+| | Thrown when a header key in [Headers][Headers Request] within [Http Request][Http Request Property] is restricted and forbidden. |
+| | Thrown when a header value in [Headers][Headers Request] within [Http Request][Http Request Property] could not be assigned to its restricted header key. |
+| | Thrown when a header value in [Headers][Headers Request] within [Http Request][Http Request Property] could not be converted to its restricted header key's type. |
 | | Thrown when the [Body][] within [Http Request][Http Request Property] is not `null` or empty (i.e. `""`) and [RequestVerb][] is [GET][] or [HEAD][]. |
 | | Thrown when the [Body][] within [Http Request][Http Request Property] does not match the [ContentType][]. |
 | | Thrown when the [HttpVersion][] within [Http Request][Http Request Property] is not one of the specified [HttpRequestVersion][] values (e.g. `(HttpRequestVersion)10`). |
@@ -407,7 +419,7 @@ None
 [QueryParameters]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.QueryParameters" >}}
 [Verb]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Verb" >}}
 [ContentType]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.ContentType" >}}
-[Headers]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Headers" >}}
+[Headers Request]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Headers" >}}
 [Body]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.Body" >}}
 [HttpVersion]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpRequest.HttpVersion" >}}
 
@@ -426,8 +438,10 @@ None
 [HttpResponse]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.MainDoc" >}}
 [ResponseBody]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.ResponseBody" >}}
 [ErrorMessage]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.ErrorMessage" >}}
-[Headers]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.Headers" >}}
+[Headers Response]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.Headers" >}}
 [StatusCode]: {{< url "Cortex.Reference.DataTypes.Http.Rest.HttpResponse.StatusCode" >}}
+
+[Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
 
 [EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
 
