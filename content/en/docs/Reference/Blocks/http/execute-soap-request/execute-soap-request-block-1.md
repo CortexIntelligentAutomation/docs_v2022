@@ -18,21 +18,7 @@ Executes a [Soap Request][Soap Request Property] using the specified [Http Crede
 
 ## Examples
 
-The following examples will use an example [API][] with a base [Uri][] of `https://test-shop.com/api` and resource called `items` at `https://test-shop.com/api/items`. Each example assumes that the resource `items` contains the following data before the example is executed:
 
-```xml
-
-```
-
-The example [API][] supports:
-
-- Retrieval of every item in the `items` resource via a [GET][] request which returns the `items` resource as the [ResponseEnvelope][] of the [Soap Response][Soap Response Property]
-- Creation of a new item in the `items` resource via a [POST][] request which returns the updated `items` resource as the [ResponseEnvelope][] of the [Soap Response][Soap Response Property]
-- Unauthenticated requests
-- Basic authentication
-- Retrieval of access tokens from `https://test-shop.com/api/oauth2/token`
-- OAuth authentication using password credentials
-- OAuth authentication using client credentials
 
 ## Properties
 
@@ -40,7 +26,7 @@ The example [API][] supports:
 
 The [Soap Request][Soap Request Property] to execute using the [Http Credentials][Http Credentials Property]. This property contains all of the information in relation to the request to be sent, these are:
 
-- [SoapMessage][]
+- [SoapMessage][SoapMessage Property]
 - [Uri][]
 - [Headers][Headers Request]
 - [HttpVersion][]
@@ -77,7 +63,7 @@ The [Http Credentials][Http Credentials Property] object that includes all of th
 - [HttpOAuthPasswordCredentials][]: OAuth authentication using password credentials
 - [HttpOAuthClientCredentials][]: OAuth authentication using client credentials
 
-Note that when using [HttpOAuthPasswordCredentials][] or [HttpOAuthClientCredentials][] as the [Http Credentials][Http Credentials Property], the Execute Http Request block automatically handles retrieval of access tokens using the following rules:
+Note that when using [HttpOAuthPasswordCredentials][] or [HttpOAuthClientCredentials][] as the [Http Credentials][Http Credentials Property], the Execute Soap Request block automatically handles retrieval of access tokens using the following rules:
 
 - If an access token does not exist, a new access token will be retrieved and used when executing the [Soap Request][Soap Request Property].
 - If an access token already exists but is expired, a new access token will be retrieved and used when executing the [Soap Request][Soap Request Property].
@@ -118,7 +104,42 @@ The exceptions thrown by the block can be found below:
 
 | Name                                 | Description |
 |--------------------------------------|-------------|
-| | |
+| [HttpAuthorisationException][] | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is invalid. |
+| | Thrown when the [ResourceOwnerUsername][ResourceOwnerUsername Password Credentials] within [HttpOAuthPasswordCredentials][] is invalid. |
+| | Thrown when the [ResourceOwnerPassword][ResourceOwnerPassword Password Credentials] within [HttpOAuthPasswordCredentials][] is invalid. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is invalid. |
+| | Thrown when the [ClientId][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is invalid. |
+| | Thrown when the [ClientSecret][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is invalid. |
+| [InvalidRequestException][] | Thrown when the [Uri][] within [Soap Request][Soap Request Property] is not in the correct format or contains invalid characters. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is not in the correct format or contains invalid characters. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is not in the correct format or contains invalid characters. |
+| | Thrown when a header key in [Headers][Headers Request] within [Soap Request][Soap Request Property] is empty (i.e. `""`). |
+| | Thrown when a header key in [Headers][Headers Request] within [Soap Request][Soap Request Property] is restricted. |
+| | Thrown when a header key in [Headers][Headers Request] within [Soap Request][Soap Request Property] is restricted and forbidden. |
+| | Thrown when a header value in [Headers][Headers Request] within [Soap Request][Soap Request Property] could not be assigned to its restricted header key. |
+| | Thrown when a header value in [Headers][Headers Request] within [Soap Request][Soap Request Property] could not be converted to its restricted header key's type. |
+| | Thrown when the [Envelope][] in the [SoapMessage][SoapMessage Property] within [Soap Request][Soap Request Property] is not valid XML. |
+| | Thrown when the [HttpVersion][] within [Soap Request][Soap Request Property] is not one of the specified [HttpRequestVersion][] values (e.g. `(HttpRequestVersion)10`). |
+| [InvalidResponseException][] | Thrown when the [ResponseEnvelope][] within [Soap Response][Soap Response Property] is not valid XML. |
+| [PropertyNullException][] | Thrown when the [Soap Request][Soap Request Property] is `null`. |
+| | Thrown when the [Uri][] within [Soap Request][Soap Request Property] is `null`. |
+| | Thrown when the [SoapMessage][SoapMessage Property] within [Soap Request][Soap Request Property] is `null`. |
+| | Thrown when the [Action][] in the [Soap11Message][] within [Soap Request][Soap Request Property] is `null`. |
+| | Thrown when the [Envelope][] in the [SoapMessage][SoapMessage Property] within [Soap Request][Soap Request Property] is `null`. |
+| | Thrown when the [Username][] within [UserCredentials][] is `null`. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is `null`. |
+| | Thrown when the [ResourceOwnerUsername][ResourceOwnerUsername Password Credentials] within [HttpOAuthPasswordCredentials][] is `null`. |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is `null`. |
+| | Thrown when the [ClientAuthentication][ClientAuthentication Client Credentials] within [HttpOAuthClientCredentials][] is `null`. |
+| | Thrown when the [ClientId][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is `null`. |
+| | Thrown when the [ClientSecret][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is `null`. |
+| [PropertyEmptyException][] | Thrown when the [Uri][] within [Soap Request][Soap Request Property] is empty (i.e. `""`). |
+| | Thrown when the [Username][] within [UserCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [ResourceOwnerUsername][ResourceOwnerUsername Password Credentials] within [HttpOAuthPasswordCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [AccessTokenUri][AccessTokenUri Client Credentials] within [HttpOAuthClientCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [ClientId][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is empty (i.e. `""`). |
+| | Thrown when the [ClientSecret][] in [ClientAuthentication][] within [HttpOAuthClientCredentials][] is empty (i.e. `""`). |
 
 ## Remarks
 
@@ -131,10 +152,18 @@ None
 [Soap Response Property]: {{< ref "#soap-response" >}}
 
 [SoapRequest]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.MainDoc" >}}
-[SoapMessage]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.SoapMessage" >}}
+[SoapMessage Property]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.SoapMessage" >}}
 [Uri]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Uri" >}}
 [Headers Request]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Headers" >}}
 [HttpVersion]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.HttpVersion" >}}
+
+[SoapMessage]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapMessage.MainDoc" >}}
+[Envelope]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapMessage.Envelope" >}}
+
+[Soap11Message]: {{< url "Cortex.Reference.DataTypes.Http.Soap.Soap11Message.MainDoc" >}}
+[Action]: {{< url "Cortex.Reference.DataTypes.Http.Soap.Soap11Message.Action" >}}
+
+[Soap12Message]: {{< url "Cortex.Reference.DataTypes.Http.Soap.Soap12Message.MainDoc" >}}
 
 [HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
 
@@ -151,21 +180,28 @@ None
 [ResourceOwnerPassword Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.ResourceOwnerPassword" >}}
 [AccessTokenUri Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.AccessTokenUri" >}}
 
-[SoapResponse]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.MainDoc" >}}
-[ResponseEnvelope]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.ResponseEnvelope" >}}
-[ErrorMessage]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.ErrorMessage" >}}
-[Headers Response]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Headers" >}}
-[StatusCode]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.StatusCode" >}}
+[ClientAuthentication]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.MainDoc" >}}
+[ClientId]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.ClientId" >}}
+[ClientSecret]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.ClientSecret" >}}
+[SendAs]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.SendAs" >}}
 
-[RequestVerb]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.MainDoc" >}}
-[GET]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.GET" >}}
-[POST]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.POST" >}}
-[PUT]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PUT" >}}
-[DELETE]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.DELETE" >}}
-[PATCH]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PATCH" >}}
-[HEAD]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.HEAD" >}}
+[SoapResponse]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.MainDoc" >}}
+[ResponseEnvelope]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.ResponseEnvelope" >}}
+[ErrorMessage]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.ErrorMessage" >}}
+[Headers Response]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.Headers" >}}
+[StatusCode]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.StatusCode" >}}
+
+[HttpRequestVersion]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.MainDoc" >}}
+[HTTP10]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.HTTP10" >}}
+[HTTP11]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.HTTP11" >}}
 
 [Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
+
+[PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
+[PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
+[HttpAuthorisationException]: {{< url "Cortex.Reference.Exceptions.Http.HttpAuthorisationException.MainDoc" >}}
+[InvalidRequestException]: {{< url "Cortex.Reference.Exceptions.Http.InvalidRequestException.MainDoc" >}}
+[InvalidResponseException]: {{< url "Cortex.Reference.Exceptions.Http.InvalidResponseException.MainDoc" >}}
 
 [Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 [Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}

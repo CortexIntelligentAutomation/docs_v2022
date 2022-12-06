@@ -370,6 +370,7 @@ The exceptions thrown by the block can be found below:
 | | Thrown when the [Body][] within [Http Request][Http Request Property] does not match the [ContentType][]. |
 | | Thrown when the [HttpVersion][] within [Http Request][Http Request Property] is not one of the specified [HttpRequestVersion][] values (e.g. `(HttpRequestVersion)10`). |
 | [PropertyNullException][] | Thrown when the [Http Request][Http Request Property] is `null`. |
+| | Thrown when the [Uri][] within [Http Request][Http Request Property] is `null`. |
 | | Thrown when the [Username][] within [UserCredentials][] is `null`. |
 | | Thrown when the [AccessTokenUri][AccessTokenUri Password Credentials] within [HttpOAuthPasswordCredentials][] is `null`. |
 | | Thrown when the [ResourceOwnerUsername][ResourceOwnerUsername Password Credentials] within [HttpOAuthPasswordCredentials][] is `null`. |

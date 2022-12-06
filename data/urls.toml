@@ -1251,10 +1251,13 @@
                     MainDoc = "/docs/reference/data-types/http/soap/"
                     [Cortex.Reference.DataTypes.Http.Soap.Soap11Message]
                         MainDoc = "/docs/reference/data-types/http/soap/soap11message"
+                        Action = "/docs/reference/data-types/http/soap/soap11message/#action"
                     [Cortex.Reference.DataTypes.Http.Soap.Soap12Message]
                         MainDoc = "/docs/reference/data-types/http/soap/soap12message"
                     [Cortex.Reference.DataTypes.Http.Soap.SoapMessage]
                         MainDoc = "/docs/reference/data-types/http/soap/soapmessage"
+                        Envelope = "/docs/reference/data-types/http/soap/soapmessage/#envelope"
+                        Version = "/docs/reference/data-types/http/soap/soapmessage/#version"
                     [Cortex.Reference.DataTypes.Http.Soap.SoapRequest]
                         MainDoc = "/docs/reference/data-types/http/soap/soaprequest"
                         SoapMessage = "/docs/reference/data-types/http/soap/soaprequest/#soapmessage"
@@ -1456,6 +1459,8 @@
                     MainDoc = "/docs/reference/exceptions/http/http-authorisation-exception"
                 [Cortex.Reference.Exceptions.Http.InvalidRequestException]
                     MainDoc = "/docs/reference/exceptions/http/invalid-request-exception"
+                [Cortex.Reference.Exceptions.Http.InvalidResponseException]
+                    MainDoc = "/docs/reference/exceptions/http/invalid-response-exception"
             [Cortex.Reference.Exceptions.Lists]
                 MainDoc = "/docs/reference/exceptions/lists/"
                     [Cortex.Reference.Exceptions.Lists.CannotModifyReadOnlyListException]
