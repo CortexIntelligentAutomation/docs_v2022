@@ -321,7 +321,7 @@ Note that when using [HttpOAuthPasswordCredentials][] or [HttpOAuthClientCredent
 | Data Type | [HttpCredentials][] |
 | Property Type | [InputOutput][] |
 | Is [Advanced][] | `false` |
-| Default Editor | [Literal][] |
+| Default Editor | [Variable][] |
 | Default Value | `($)HttpCredentials` with no value |
 
 ### Http Response

@@ -88,7 +88,7 @@ Note that when using [HttpOAuthPasswordCredentials][] or [HttpOAuthClientCredent
 | Data Type | [HttpCredentials][] |
 | Property Type | [InputOutput][] |
 | Is [Advanced][] | `false` |
-| Default Editor | [Literal][] |
+| Default Editor | [Variable][] |
 | Default Value | `($)HttpCredentials` with no value |
 
 ### Soap Response
@@ -109,7 +109,7 @@ For more detailed information on each of the properties, see [SoapResponse][].
 | Data Type | [SoapResponse][] |
 | Property Type | [Output][] |
 | Is [Advanced][] | `false` |
-| Default Editor | [Literal][] |
+| Default Editor | [Variable][] |
 | Default Value | `($)SoapResponse` with no value |
 
 ## Exceptions
