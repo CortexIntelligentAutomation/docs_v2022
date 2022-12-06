@@ -18,7 +18,21 @@ Executes a [Soap Request][Soap Request Property] using the specified [Http Crede
 
 ## Examples
 
+### Executing a request with no authentication
 
+***
+
+### Executing a request using Basic authentication
+
+***
+
+### Executing a request using OAuth password credentials
+
+***
+
+### Executing a request using OAuth client credentials
+
+***
 
 ## Properties
 
@@ -50,7 +64,7 @@ For more detailed information on each of the properties, see [SoapRequest][].
     },
     "Uri": "",
     "Headers": null,
-    "HttpVersion": "HttpRequestVersion.Http10"
+    "HttpVersion": "HttpRequestVersion.HTTP10"
 }
 ```
 
@@ -119,7 +133,7 @@ The exceptions thrown by the block can be found below:
 | | Thrown when a header value in [Headers][Headers Request] within [Soap Request][Soap Request Property] could not be assigned to its restricted header key. |
 | | Thrown when a header value in [Headers][Headers Request] within [Soap Request][Soap Request Property] could not be converted to its restricted header key's type. |
 | | Thrown when the [Envelope][] in the [SoapMessage][SoapMessage Property] within [Soap Request][Soap Request Property] is not valid XML. |
-| | Thrown when the [HttpVersion][] within [Soap Request][Soap Request Property] is not one of the specified [HttpRequestVersion][] values (e.g. `(HttpRequestVersion)10`). |
+| | Thrown when the [HttpVersion][] within [Soap Request][Soap Request Property] is not one of the specified [HttpRequestVersion][] values (e.g. `(HttpRequestVersion)20`). |
 | [InvalidResponseException][] | Thrown when the [ResponseEnvelope][] within [Soap Response][Soap Response Property] is not valid XML. |
 | [PropertyNullException][] | Thrown when the [Soap Request][Soap Request Property] is `null`. |
 | | Thrown when the [Uri][] within [Soap Request][Soap Request Property] is `null`. |

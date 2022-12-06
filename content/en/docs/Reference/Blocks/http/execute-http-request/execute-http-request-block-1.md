@@ -297,7 +297,7 @@ For more detailed information on each of the properties, see [HttpRequest][].
     "ContentType": "application/json",
     "Headers": null,
     "Body": "",
-    "HttpVersion": "HttpRequestVersion.Http10"
+    "HttpVersion": "HttpRequestVersion.HTTP10"
 }
 ```
 
@@ -368,7 +368,7 @@ The exceptions thrown by the block can be found below:
 | | Thrown when a header value in [Headers][Headers Request] within [Http Request][Http Request Property] could not be converted to its restricted header key's type. |
 | | Thrown when the [Body][] within [Http Request][Http Request Property] is not `null` or empty (i.e. `""`) and [RequestVerb][] is [GET][] or [HEAD][]. |
 | | Thrown when the [Body][] within [Http Request][Http Request Property] does not match the [ContentType][]. |
-| | Thrown when the [HttpVersion][] within [Http Request][Http Request Property] is not one of the specified [HttpRequestVersion][] values (e.g. `(HttpRequestVersion)10`). |
+| | Thrown when the [HttpVersion][] within [Http Request][Http Request Property] is not one of the specified [HttpRequestVersion][] values (e.g. `(HttpRequestVersion)20`). |
 | [PropertyNullException][] | Thrown when the [Http Request][Http Request Property] is `null`. |
 | | Thrown when the [Uri][] within [Http Request][Http Request Property] is `null`. |
 | | Thrown when the [Username][] within [UserCredentials][] is `null`. |
