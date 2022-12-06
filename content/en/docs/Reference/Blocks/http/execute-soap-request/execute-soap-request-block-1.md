@@ -26,8 +26,8 @@ The following examples will use an example [API][] with a base [Uri][] of `https
 
 The example [API][] supports:
 
-- Retrieval of every item in the `items` resource via a [GET][] request which returns the `items` resource as the [ResponseBody][] of the [Soap Response][Soap Response Property]
-- Creation of a new item in the `items` resource via a [POST][] request which returns the updated `items` resource as the [ResponseBody][] of the [Soap Response][Soap Response Property]
+- Retrieval of every item in the `items` resource via a [GET][] request which returns the `items` resource as the [ResponseEnvelope][] of the [Soap Response][Soap Response Property]
+- Creation of a new item in the `items` resource via a [POST][] request which returns the updated `items` resource as the [ResponseEnvelope][] of the [Soap Response][Soap Response Property]
 - Unauthenticated requests
 - Basic authentication
 - Retrieval of access tokens from `https://test-shop.com/api/oauth2/token`
@@ -40,7 +40,33 @@ The example [API][] supports:
 
 The [Soap Request][Soap Request Property] to execute using the [Http Credentials][Http Credentials Property]. This property contains all of the information in relation to the request to be sent, these are:
 
+- [SoapMessage][]
+- [Uri][]
+- [Headers][Headers Request]
+- [HttpVersion][]
 
+For more detailed information on each of the properties, see [SoapRequest][].
+
+|||
+|----------|----------|
+| Data Type | [SoapRequest][] |
+| Property Type | [Input][] |
+| Is [Advanced][] | `false` |
+| Default Editor | [Literal][] |
+| Default Value | [SoapRequest][] with value shown below: |
+
+```json
+{
+    "SoapMessage": {
+        "Action": "",
+        "Envelope": "",
+        "Version": 11
+    },
+    "Uri": "",
+    "Headers": null,
+    "HttpVersion": "HttpRequestVersion.Http10"
+}
+```
 
 ### Http Credentials
 
@@ -69,9 +95,30 @@ Note that when using [HttpOAuthPasswordCredentials][] or [HttpOAuthClientCredent
 
 The [Soap Response][Soap Response Property] object which contains the response returned from the server. This property contains all of the information in relation to the response from the server, these are:
 
+- [ResponseEnvelope][]
+- [ErrorMessage][]
+- [Headers][Headers Response]
+- [StatusCode][]
 
+Note that if the [Headers][Headers Response] contains a key of `Content-Type` with a value containing `json` or `xml`, the [ResponseEnvelope][] will be set to a [Structure][] containing the data.
+
+For more detailed information on each of the properties, see [SoapResponse][].
+
+|||
+|----------|----------|
+| Data Type | [SoapResponse][] |
+| Property Type | [Output][] |
+| Is [Advanced][] | `false` |
+| Default Editor | [Literal][] |
+| Default Value | `($)SoapResponse` with no value |
 
 ## Exceptions
+
+The exceptions thrown by the block can be found below:
+
+| Name                                 | Description |
+|--------------------------------------|-------------|
+| | |
 
 ## Remarks
 
@@ -83,13 +130,11 @@ None
 [Http Credentials Property]: {{< ref "#http-credentials" >}}
 [Soap Response Property]: {{< ref "#soap-response" >}}
 
-[RequestVerb]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.MainDoc" >}}
-[GET]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.GET" >}}
-[POST]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.POST" >}}
-[PUT]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PUT" >}}
-[DELETE]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.DELETE" >}}
-[PATCH]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PATCH" >}}
-[HEAD]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.HEAD" >}}
+[SoapRequest]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.MainDoc" >}}
+[SoapMessage]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.SoapMessage" >}}
+[Uri]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Uri" >}}
+[Headers Request]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Headers" >}}
+[HttpVersion]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.HttpVersion" >}}
 
 [HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
 
@@ -105,6 +150,22 @@ None
 [ResourceOwnerUsername Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.ResourceOwnerUsername" >}}
 [ResourceOwnerPassword Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.ResourceOwnerPassword" >}}
 [AccessTokenUri Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.AccessTokenUri" >}}
+
+[SoapResponse]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.MainDoc" >}}
+[ResponseEnvelope]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.ResponseEnvelope" >}}
+[ErrorMessage]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.ErrorMessage" >}}
+[Headers Response]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Headers" >}}
+[StatusCode]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.StatusCode" >}}
+
+[RequestVerb]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.MainDoc" >}}
+[GET]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.GET" >}}
+[POST]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.POST" >}}
+[PUT]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PUT" >}}
+[DELETE]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.DELETE" >}}
+[PATCH]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.PATCH" >}}
+[HEAD]: {{< url "Cortex.Reference.DataTypes.Http.RequestVerb.HEAD" >}}
+
+[Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
 
 [Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 [Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}

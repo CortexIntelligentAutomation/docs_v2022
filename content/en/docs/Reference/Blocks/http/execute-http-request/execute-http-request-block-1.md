@@ -82,7 +82,7 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 }
 ```
 
-Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] is a [Structure][] containing the data.
 
 ***
 
@@ -129,9 +129,10 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 }
 ```
 
-Note that the resource `items` at `https://test-shop.com/api/items` has the value shown in the [ResponseBody][] of the [Http Response][Http Response Property] shown above.
+Note the following:
 
-Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
+- The resource `items` at `https://test-shop.com/api/items` has the value shown in the [ResponseBody][] of the [Http Response][Http Response Property] shown above
+- As the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] is a [Structure][] containing the data
 
 ***
 
@@ -174,7 +175,7 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 }
 ```
 
-Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] is a [Structure][] containing the data.
 
 ***
 
@@ -217,7 +218,7 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 }
 ```
 
-Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] is a [Structure][] containing the data.
 
 ***
 
@@ -260,7 +261,7 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 }
 ```
 
-Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] will be set to a [Structure][] containing the data.
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] is a [Structure][] containing the data.
 
 ***
 

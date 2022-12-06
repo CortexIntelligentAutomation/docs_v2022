@@ -1247,6 +1247,26 @@
                         ErrorMessage = "/docs/reference/data-types/http/rest/httpresponse/#errormessage"
                         Headers = "/docs/reference/data-types/http/rest/httpresponse/#headers"
                         StatusCode = "/docs/reference/data-types/http/rest/httpresponse/#statuscode"
+                [Cortex.Reference.DataTypes.Http.Soap]
+                    MainDoc = "/docs/reference/data-types/http/soap/"
+                    [Cortex.Reference.DataTypes.Http.Soap.Soap11Message]
+                        MainDoc = "/docs/reference/data-types/http/soap/soap11message"
+                    [Cortex.Reference.DataTypes.Http.Soap.Soap12Message]
+                        MainDoc = "/docs/reference/data-types/http/soap/soap12message"
+                    [Cortex.Reference.DataTypes.Http.Soap.SoapMessage]
+                        MainDoc = "/docs/reference/data-types/http/soap/soapmessage"
+                    [Cortex.Reference.DataTypes.Http.Soap.SoapRequest]
+                        MainDoc = "/docs/reference/data-types/http/soap/soaprequest"
+                        SoapMessage = "/docs/reference/data-types/http/soap/soaprequest/#soapmessage"
+                        Uri = "/docs/reference/data-types/http/soap/soaprequest/#uri"
+                        Headers = "/docs/reference/data-types/http/soap/soaprequest/#headers"
+                        HttpVersion = "/docs/reference/data-types/http/soap/soaprequest/#httpversion"
+                    [Cortex.Reference.DataTypes.Http.Soap.SoapResponse]
+                        MainDoc = "/docs/reference/data-types/http/soap/soapresponse"
+                        ResponseEnvelope = "/docs/reference/data-types/http/soap/soapresponse/#responseenvelope"
+                        ErrorMessage = "/docs/reference/data-types/http/soap/soapresponse/#errormessage"
+                        Headers = "/docs/reference/data-types/http/soap/soapresponse/#headers"
+                        StatusCode = "/docs/reference/data-types/http/soap/soapresponse/#statuscode"
             [Cortex.Reference.DataTypes.Json]
                 MainDoc = "/docs/reference/data-types/json/"
                 [Cortex.Reference.DataTypes.Json.JsonSerializerSettings]

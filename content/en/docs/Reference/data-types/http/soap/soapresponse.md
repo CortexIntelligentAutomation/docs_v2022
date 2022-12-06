@@ -14,3 +14,11 @@ weight: 1
 ## Summary
 
 ## Properties
+
+### ResponseEnvelope
+
+### ErrorMessage
+
+### Headers
+
+### StatusCode
