@@ -158,7 +158,7 @@ The server that the script will be executed on contains a text file in the follo
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Script][Script Property] | `($)Script` with value `$@"Get-Content \"C:\\Folder\\Example.txt\"; $DebugPreference = 'Continue'; Write-Warning 'Warning'; Write-Debug 'Debug'; Write-Information 'Information'; Write-Verbose 'Verbose' -Verbose; Test Error"` | `($)Script` is a variable of type [String][] |
+| [Script][Script Property] | `($)Script` with value `$@"Get-Content \"C:\\Folder\\Example.txt\"; $DebugPreference = 'Continue'; Write-Warning 'Warning'; Write-Debug 'Debug'; Write-Information 'Information'; Write-Verbose 'Verbose' -Verbose; Get-Error"` | `($)Script` is a variable of type [String][] |
 | [Parameters][Parameters Property] | `($)Parameters` with no value |  `($)Parameters` is a variable of type [Dictionary][]&lt;[String][], [dynamic][]&gt; |
 | [PowerShell Session Details][PowerShell Session Details Property] | `($)PowerShellSessionDetails` with value `{"ServerDetails": {"Host": "host.domain.com", "Port": 5986, "UseSsl": "true"}, "Credentials": {"Domain": "domain.com", "Username": "username", "Password": "encryptedPassword"}}`<br><br>In this example `($)PowerShellSessionDetails` has been set up using the following [Expression][]:<br><br> `new PowerShellWinRMSessionDetails(serverDetails: new ServerDetails("host.domain.com", 5986, true), credentials: new UserCredentials("domain.com", "username", "encryptedPassword"))` | `($)Credentials` is a variable of type [PowerShellWinRMSessionDetails][]<br><br>The [Password][UserCredentials Password] property within [UserCredentials][] of the [PowerShellWinRMSessionDetails][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
 | [Close Session][Close Session Property] | `($)CloseSession`, with value `true` | `($)CloseSession` is a variable of type [Boolean][] |
@@ -301,18 +301,18 @@ The exceptions thrown by the block can be found below:
 | | Thrown when the [UseSsl][ServerDetails UseSsl] is `true` and the specified [Port][ServerDetails Port] within the [PowerShell Session Details][PowerShell Session Details Property] is not configured for HTTPS protocols. |
 | | Thrown when the [UseSsl][ServerDetails UseSsl] is `true` and the host does not have a valid certificate configured. |
 | | Thrown when the [Domain][UserCredentials Domain], [Username][UserCredentials Username], or [Password][UserCredentials Password] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is invalid. |
-| | Thrown when the [Domain][UserCredentials Domain] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is null or empty and is required. |
+| | Thrown when the [Domain][UserCredentials Domain] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is `null` or empty and is required. |
 | | Thrown when the user does not have the correct user permissions to execute PowerShell scripts or cmdlets on the [Host][ServerDetails Host]. |
 | | Thrown when the [PsConfiguration][] within the [PowerShell Session Details][PowerShell Session Details Property] is invalid or is not configured on the [Host][ServerDetails Host]. |
 | [PSException][] | Thrown when the [Script][Script Property] contains any unexpected or invalid tokens. |
 | | Thrown when the [Script][Script Property] is missing any necessary tokens. |
-| [PropertyNullException][] | Thrown when the [Script][Script Property] is null. |
-| | Thrown when [PowerShell Session Details][PowerShell Session Details Property] is null. |
-| | Thrown when the [ServerDetails][] within the [PowerShell Session Details][PowerShell Session Details Property] is null. |
-| | Thrown when the [Host][ServerDetails Host] within the [ServerDetails][] within the [PowerShell Session Details][PowerShell Session Details Property] is null. |
-| | Thrown when the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is null. |
-| | Thrown when the [Username][UserCredentials Username] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is null. |
-| | Thrown when the [Password][UserCredentials Password] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is null. |
+| [PropertyNullException][] | Thrown when the [Script][Script Property] is `null`. |
+| | Thrown when [PowerShell Session Details][PowerShell Session Details Property] is `null`. |
+| | Thrown when the [ServerDetails][] within the [PowerShell Session Details][PowerShell Session Details Property] is `null`. |
+| | Thrown when the [Host][ServerDetails Host] within the [ServerDetails][] within the [PowerShell Session Details][PowerShell Session Details Property] is `null`. |
+| | Thrown when the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is `null`. |
+| | Thrown when the [Username][UserCredentials Username] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is `null`. |
+| | Thrown when the [Password][UserCredentials Password] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is `null`. |
 | [PropertyEmptyException][] | Thrown when [Script][Script Property] is empty. |
 | | Thrown when the [Host][ServerDetails Host] within the [ServerDetails][] within the [PowerShell Session Details][PowerShell Session Details Property] is empty. |
 | | Thrown when the [Username][UserCredentials Username] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is empty. |
