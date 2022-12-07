@@ -72,6 +72,8 @@ It also results in the variable `($)Records` being updated to the following:
 }
 ```
 
+After the [Script][Script Property] has been executed, the session will be closed, for more information see [Closing Sessions][].
+
 ***
 
 ### Execute a Script with Parameters using PowerShellWinRMSessionDetails
@@ -129,6 +131,8 @@ It also results in the variable `($)Records` being updated to the following:
     "InformationRecords": []
 }
 ```
+
+After the [Script][Script Property] has been executed, the session will be closed, for more information see [Closing Sessions][].
 
 ***
 
@@ -195,6 +199,8 @@ It also results in the variable `($)Records` being updated to the following:
     ]
 }
 ```
+
+After the [Script][Script Property] has been executed, the session will be closed, for more information see [Closing Sessions][].
 
 ***
 
@@ -282,20 +288,20 @@ The exceptions thrown by the block can be found below:
 
 | Name                                 | Description |
 |--------------------------------------|-------------|
-| [PSRemotingException][] | Thrown when the host within the [PowerShell Session Details][PowerShell Session Details Property] is invalid (e.g. host does not exist or contains invalid characters/whitespace). |
-| | Thrown when the specified host within the [PowerShell Session Details][PowerShell Session Details Property] does not have PSRemoting configured correctly. |
-| | Thrown when the specified host within the [PowerShell Session Details][PowerShell Session Details Property] is a host name; is being accessed through a private or domain network, and Kerberos authentication is disabled on the host's WinRM service or the server's WinRM client. |
-| | Thrown when the specified host within the [PowerShell Session Details][PowerShell Session Details Property] is a host name; is being accessed through a public network, and its name is not on the server's WinRM TrustedHosts list. |
-| | Thrown when the specified host within the [PowerShell Session Details][PowerShell Session Details Property] is an IP Address; is being accessed through any network (i.e. public, private or domain), and is not on the server's WinRM TrustedHosts list. |
-| | Thrown when the specified host within the [PowerShell Session Details][PowerShell Session Details Property] is an IP Address being accessed through any network (i.e. public, private or domain) or a host name being accessed through a public network, and Negotiate authentication is disabled on the host's WinRM service. |
-| | Thrown when the specified port within the [PowerShell Session Details][PowerShell Session Details Property] is invalid. |
-| | Thrown when the specified [UseSsl][ServerDetails UseSsl] is false and the specified [Port][ServerDetails Port] within the [PowerShell Session Details][PowerShell Session Details Property] is not configured for HTTP protocols. |
-| | Thrown when the specified [UseSsl][ServerDetails UseSsl] is true and the specified [Port][ServerDetails Port] within the [PowerShell Session Details][PowerShell Session Details Property] is not configured for HTTPS protocols. |
-| | Thrown when the specified [UseSsl][ServerDetails UseSsl] is true and the host does not have a valid certificate configured. |
+| [PSRemotingException][] | Thrown when the [Host][ServerDetails Host] within the [PowerShell Session Details][PowerShell Session Details Property] is invalid (e.g. host does not exist or invalid characters/whitespace). |
+| | Thrown when the specified [Host][ServerDetails Host] within the [PowerShell Session Details][PowerShell Session Details Property] does not have PSRemoting configured correctly. |
+| | Thrown when the [Host][ServerDetails Host] within the [PowerShell Session Details][PowerShell Session Details Property] is a host name; is being accessed through a private or domain network, and Kerberos authentication is disabled on the host's WinRM service or the server's WinRM client. |
+| | Thrown when the [Host][ServerDetails Host] within the [PowerShell Session Details][PowerShell Session Details Property] is a host name; is being accessed through a public network, and its name is not on the server's WinRM TrustedHosts list. |
+| | Thrown when the [Host][ServerDetails Host] within the [PowerShell Session Details][PowerShell Session Details Property] is an IP Address; is being accessed through any network (i.e. public, private or domain), and is not on the server's WinRM TrustedHosts list. |
+| | Thrown when the [Host][ServerDetails Host] within the [PowerShell Session Details][PowerShell Session Details Property] is an IP Address being accessed through any network (i.e. public, private or domain) or a host name being accessed through a public network, and Negotiate authentication is disabled on the host's WinRM service. |
+| | Thrown when the specified [Port][ServerDetails Port] within the [PowerShell Session Details][PowerShell Session Details Property] is invalid. |
+| | Thrown when the specified [UseSsl][ServerDetails UseSsl] is `false` and the specified [Port][ServerDetails Port] within the [PowerShell Session Details][PowerShell Session Details Property] is not configured for HTTP protocols. |
+| | Thrown when the specified [UseSsl][ServerDetails UseSsl] is `true` and the specified [Port][ServerDetails Port] within the [PowerShell Session Details][PowerShell Session Details Property] is not configured for HTTPS protocols. |
+| | Thrown when the specified [UseSsl][ServerDetails UseSsl] is `true` and the host does not have a valid certificate configured. |
 | | Thrown when the [Domain][UserCredentials Domain], [Username][UserCredentials Username], or [Password][UserCredentials Password] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is invalid. |
 | | Thrown when the [Domain][UserCredentials Domain] in the [Credentials][] within the [PowerShell Session Details][PowerShell Session Details Property] is null or empty and is required. |
-| | Thrown when the user does not have the correct user permissions to execute PowerShell scripts or cmdlets on the host. |
-| | Thrown when the specified [PsConfiguration][] within the [PowerShell Session Details][PowerShell Session Details Property] is invalid or is not configured on the host. |
+| | Thrown when the user does not have the correct user permissions to execute PowerShell scripts or cmdlets on the [Host][ServerDetails Host]. |
+| | Thrown when the specified [PsConfiguration][] within the [PowerShell Session Details][PowerShell Session Details Property] is invalid or is not configured on the [Host][ServerDetails Host]. |
 | [PSException][] | Thrown when the [Script][Script Property] contains any unexpected or invalid tokens. |
 | | Thrown when the [Script][Script Property] is missing any necessary tokens. |
 | [PropertyNullException][] | Thrown when the [Script][Script Property] is null. |
