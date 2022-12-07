@@ -18,7 +18,47 @@ Executes a [Soap Request][Soap Request Property] using the specified [Http Crede
 
 ## Examples
 
-### Executing a request with no authentication
+The following examples will use an example SOAP service with a base [Uri][] of `https://test-converter.com/xml`.
+
+The example SOAP service supports the following:
+
+- Conversion of a temperature in Degrees Celcius to Kelvin using an [Action][] of `https://test-converter.com/DegreesToKelvin`
+- Unauthenticated requests
+- Basic authentication
+- Retrieval of access tokens from `https://test-converter.com/oauth2/token`
+- OAuth authentication using password credentials
+- OAuth authentication using client credentials
+
+### Executing a request using SOAP 11
+
+This example will send a [Soap Request][Soap Request Property] to `https://test-converter.com/xml` using SOAP 11 with no authentication which requires:
+
+- [SoapMessage][SoapMessage Property] to be a [Soap11Message][]
+- [Http Credentials][Http Credentials Property] to be `null`
+
+Note that the result of executing a [Soap Request][Soap Request Property] is dependent on the SOAP service that the request is being made to.
+
+#### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Soap Request][Soap Request Property] | `($)SoapRequest`, with value `{}`<br><br>In this example `($)SoapRequest` has been set up using the following [Expression][]:<br><br>`new SoapRequest(...)` | `($)SoapRequest` is a variable of type [SoapRequest][] |
+| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `null`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`null` | `($)HttpCredentials` is a variable with value `null`<br><br>As `($)HttpCredentials` is `null`, no authentication will occur when making the request. |
+| [Soap Response][Soap Response Property] | `($)SoapResponse`, with no value | `($)SoapResponse` will be set to the type [SoapResponse][] |
+
+#### Result
+
+Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` and a [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
+
+```json
+
+```
+
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `text/xml; charset=utf-8`, the [ResponseEnvelope][] is a [Structure][] containing the data.
+
+***
+
+### Executing a request using SOAP 11
 
 ***
 
