@@ -222,7 +222,7 @@ Note that as the [Headers][Headers Response] contains a key of `Content-Type` wi
 
 ***
 
-### Executing a request using OAuth client Credentials
+### Executing a request using OAuth client credentials
 
 This example will send a [GET][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] using OAuth authentication with client credentials which requires [Http Credentials][Http Credentials Property] to be a [HttpOAuthClientCredentials][].
 

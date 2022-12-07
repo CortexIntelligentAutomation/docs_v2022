@@ -42,7 +42,7 @@ Note that the result of executing a [Soap Request][Soap Request Property] is dep
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Soap Request][Soap Request Property] | `($)SoapRequest`, with value `{}`<br><br>In this example `($)SoapRequest` has been set up using the following [Expression][]:<br><br>`new SoapRequest(...)` | `($)SoapRequest` is a variable of type [SoapRequest][] |
+| [Soap Request][Soap Request Property] | `($)SoapRequest`, with value `{"SoapMessage": {"Action": "https://test-converter.com/DegreesToKelvin", "Envelope": "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><DegreesToKelvin xmlns=\"https://test-converter.com/DegreesToKelvin/schema\"><degrees>20</degrees></DegreesToKelvin></soap:Body></soap:Envelope>", "Version": 11}, "Uri": "https://test-converter.com/xml", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)SoapRequest` has been set up using the following [Expression][]:<br><br>`new SoapRequest(uri: "https://test-converter.com/xml", soapMessage: new Soap11Message("https://test-converter.com/DegreesToKelvin", "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><DegreesToKelvin xmlns=\"https://test-converter.com/DegreesToKelvin/schema\"><degrees>20</degrees></DegreesToKelvin></soap:Body></soap:Envelope>"), headers: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)SoapRequest` is a variable of type [SoapRequest][] |
 | [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `null`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`null` | `($)HttpCredentials` is a variable with value `null`<br><br>As `($)HttpCredentials` is `null`, no authentication will occur when making the request. |
 | [Soap Response][Soap Response Property] | `($)SoapResponse`, with no value | `($)SoapResponse` will be set to the type [SoapResponse][] |
 
@@ -51,26 +51,93 @@ Note that the result of executing a [Soap Request][Soap Request Property] is dep
 Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` and a [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
 
 ```json
-
+{
+  "ResponseEnvelope": {
+    "?xml": {
+      "@version": "1.0",
+      "@encoding": "utf-8"
+    },
+    "soap:Envelope": {
+      "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+      "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+      "@xmlns:soap": "http://schemas.xmlsoap.org/soap/envelope/",
+      "soap:Body": {
+        "DegreesToKelvinResponse": {
+          "@xmlns": "https://test-converter.com/DegreesToKelvin/schema",
+          "kelvin": "293"
+        }
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "Content-Type": "text/xml; charset=utf-8"
+  },
+  "StatusCode": "HttpStatusCode.OK (200)"
+}
 ```
 
 Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `text/xml; charset=utf-8`, the [ResponseEnvelope][] is a [Structure][] containing the data.
 
 ***
 
-### Executing a request using SOAP 11
+### Executing a request using SOAP 12
+
+This example will send a [Soap Request][Soap Request Property] to `https://test-converter.com/xml` using SOAP 12 with no authentication which requires:
+
+- [SoapMessage][SoapMessage Property] to be a [Soap12Message][]
+- [Http Credentials][Http Credentials Property] to be `null`
+
+Note that the result of executing a [Soap Request][Soap Request Property] is dependent on the SOAP service that the request is being made to.
+
+#### Properties
+
+#### Result
 
 ***
 
 ### Executing a request using Basic authentication
 
+This example will send a [Soap Request][Soap Request Property] to `https://test-converter.com/xml` using SOAP 11 with Basic authentication which requires:
+
+- [SoapMessage][SoapMessage Property] to be a [Soap11Message][]
+- [Http Credentials][Http Credentials Property] to be a [UserCredentials][]
+
+Note that the result of executing a [Soap Request][Soap Request Property] is dependent on the SOAP service that the request is being made to.
+
+#### Properties
+
+#### Result
+
 ***
 
 ### Executing a request using OAuth password credentials
 
+This example will send a [Soap Request][Soap Request Property] to `https://test-converter.com/xml` using SOAP 11 with OAuth authentication using password credentials which requires:
+
+- [SoapMessage][SoapMessage Property] to be a [Soap11Message][]
+- [Http Credentials][Http Credentials Property] to be a [HttpOAuthPasswordCredentials][]
+
+Note that the result of executing a [Soap Request][Soap Request Property] is dependent on the SOAP service that the request is being made to.
+
+#### Properties
+
+#### Result
+
 ***
 
 ### Executing a request using OAuth client credentials
+
+This example will send a [Soap Request][Soap Request Property] to `https://test-converter.com/xml` using SOAP 11 with OAuth authentication using client credentials which requires:
+
+- [SoapMessage][SoapMessage Property] to be a [Soap11Message][]
+- [Http Credentials][Http Credentials Property] to be a [HttpOAuthClientCredentials][]
+
+Note that the result of executing a [Soap Request][Soap Request Property] is dependent on the SOAP service that the request is being made to.
+
+#### Properties
+
+#### Result
 
 ***
 
