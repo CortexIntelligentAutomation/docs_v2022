@@ -1240,6 +1240,17 @@
                     MainDoc = "/docs/reference/data-types/other/guid"
                 [Cortex.Reference.DataTypes.Other.Nullable]
                     MainDoc = "/docs/reference/data-types/other/nullable-1"
+            [Cortex.Reference.DataTypes.PowerShell]
+                MainDoc = "/docs/reference/data-types/powershell/"
+                [Cortex.Reference.DataTypes.PowerShell.PowerShellSessionDetails]
+                    MainDoc = "/docs/reference/data-types/powershell/powershellsessiondetails"
+                    ServerDetails = "/docs/reference/data-types/powershell/powershellsessiondetails/#serverdetails"
+                    Credentials = "/docs/reference/data-types/powershell/powershellsessiondetails/#credentials"
+                    PsConfiguration = "/docs/reference/data-types/powershell/powershellsessiondetails/#psconfiguration"
+                [Cortex.Reference.DataTypes.PowerShell.PowerShellWinRMSessionDetails]
+                    MainDoc = "/docs/reference/data-types/powershell/powershellwinrmsessiondetails"
+                [Cortex.Reference.DataTypes.PowerShell.Records]
+                    MainDoc = "/docs/reference/data-types/powershell/records"
             [Cortex.Reference.DataTypes.SessionDetails]
                 MainDoc = "/docs/reference/data-types/session-details/"
                 [Cortex.Reference.DataTypes.SessionDetails.ServerDetails]
@@ -1387,6 +1398,12 @@
                         IncrementIsZero = "/docs/reference/exceptions/loops/infinite-loop-exception/#100"
                         IncrementIsNegative = "/docs/reference/exceptions/loops/infinite-loop-exception/#101"
                         IncrementIsPositive = "/docs/reference/exceptions/loops/infinite-loop-exception/#102"
+            [Cortex.Reference.Exceptions.PowerShell]
+                MainDoc = "/docs/reference/exceptions/powershell/"
+                [Cortex.Reference.Exceptions.PowerShell.PSRemotingException]
+                    MainDoc = "/docs/reference/exceptions/powershell/psremotingexception"
+                [Cortex.Reference.Exceptions.PowerShell.PSException]
+                    MainDoc = "/docs/reference/exceptions/powershell/psexception"
             [Cortex.Reference.Exceptions.Text.Regex]
                 MainDoc = "/docs/reference/exceptions/text/regex/"
                     [Cortex.Reference.Exceptions.Text.Regex.RegexParsingFailedException]
