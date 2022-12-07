@@ -132,7 +132,13 @@ The [Credentials][Credentials Property] object that includes all of the informat
   - What each of the properties in the [Microsoft365OAuthCertificateCredentials][], see [Microsoft365OAuthCertificateCredentials][]
   - How to set up an [Outlook][] account so that this authentication mechanism can be used, see [Setting up an Outlook account for OAuth authentication using certificate credentials][]
 
-Note it is recommended to use a [Variable][] for [Credentials][Credentials Property] when it will be used across multiple Send Email Using Microsoft 365 blocks, as using a variable will allow for reuse of the same access token. Using a [Literal][] to set the [Credentials][Credentials Property] will cause the access token to only be used once and a new acccess token will be requested for every Send Email Using Microsoft 365 block.
+Note that the Send Email Using Microsoft 365 block automatically handles retrieval of access tokens using the following rules:
+
+- If an access token does not exist, a new access token will be retrieved and used when the block runs.
+- If an access token already exists but is expired, a new access token will be retrieved and used when the block runs.
+- If an access token already exists and is valid, it will be used when the block runs.
+
+It is recommended to use a [Variable][] for [Credentials][Credentials Property] when it will be used across multiple Send Email Using Microsoft 365 blocks, as using a variable will allow for reuse of the same access token. Using a [Literal][] to set the [Credentials][Credentials Property] will cause the access token to only be used once and a new acccess token will be requested for every Send Email Using Microsoft 365 block.
 
 |||
 |----------|----------|
