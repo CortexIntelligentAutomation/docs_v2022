@@ -329,13 +329,13 @@ The Execute PowerShell Script block automatically handles creating and opening s
 - If a session already exists but is closed, the session will be opened and used when the block runs.
 - If a session already exists and is open, the session will used the block runs.
 
-For information on how to explicitly close a connection, please see [Closing Sessions][].
+For information on how to explicitly close a session, please see [Closing Sessions][].
 
 ### Closing Sessions
 
 Sessions can be explicitly closed by setting [Close Session][Close Session Property] to `true`. This causes the session to be closed after the [Script][Script Property] has been executed.
 
-For information on how to open a connection, please see [Opening Sessions][].
+For information on how to open a session, please see [Opening Sessions][].
 
 ### Known Limitations
 
