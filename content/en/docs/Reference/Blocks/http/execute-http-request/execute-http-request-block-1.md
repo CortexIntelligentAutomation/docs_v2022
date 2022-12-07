@@ -47,7 +47,7 @@ The example [API][] supports:
 
 This example will send a [GET][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] with no authentication which requires [Http Credentials][Http Credentials Property] to be `null`.
 
-Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
+Note that the result of executing an [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
 
 #### Properties
 
@@ -59,7 +59,7 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 #### Result
 
-Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+Executing an [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
 {
@@ -90,7 +90,7 @@ Note that as the [Headers][Headers Response] contains a key of `Content-Type` wi
 
 This example will send a [POST][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] with no authentication which requires [Http Credentials][Http Credentials Property] to be `null`.
 
-Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
+Note that the result of executing an [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
 
 #### Properties
 
@@ -102,7 +102,7 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 #### Result
 
-Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [POST][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+Executing an [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [POST][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
 {
@@ -131,7 +131,7 @@ Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` 
 
 Note the following:
 
-- The resource `items` at `https://test-shop.com/api/items` has the value shown in the [ResponseBody][] of the [Http Response][Http Response Property] shown above
+- The resource `items` at `https://test-shop.com/api/items` contains `item 3` as shown in the [ResponseBody][] of the [Http Response][Http Response Property] shown above
 - As the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/json`, the [ResponseBody][] is a [Structure][] containing the data
 
 ***
@@ -140,7 +140,7 @@ Note the following:
 
 This example will send a [GET][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] using Basic authentication which requires [Http Credentials][Http Credentials Property] to be a [UserCredentials][].
 
-Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
+Note that the result of executing an [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
 
 #### Properties
 
@@ -152,7 +152,7 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 #### Result
 
-Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+Executing an [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
 {
@@ -183,7 +183,7 @@ Note that as the [Headers][Headers Response] contains a key of `Content-Type` wi
 
 This example will send a [GET][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] using OAuth authentication with password credentials which requires [Http Credentials][Http Credentials Property] to be a [HttpOAuthPasswordCredentials][].
 
-Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
+Note that the result of executing an [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
 
 #### Properties
 
@@ -195,7 +195,7 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 #### Result
 
-Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+Executing an [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
 {
@@ -226,7 +226,7 @@ Note that as the [Headers][Headers Response] contains a key of `Content-Type` wi
 
 This example will send a [GET][] request to `https://test-shop.com/api/items` using [HTTP 1.1][HTTP11] using OAuth authentication with client credentials which requires [Http Credentials][Http Credentials Property] to be a [HttpOAuthClientCredentials][].
 
-Note that the result of executing a [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
+Note that the result of executing an [Http Request][Http Request Property] is dependent on the [API][] that the request is being made to.
 
 #### Properties
 
@@ -238,7 +238,7 @@ Note that the result of executing a [Http Request][Http Request Property] is dep
 
 #### Result
 
-Executing a [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
+Executing an [HttpRequest][] with a [Uri][] of `https://test-shop.com/api/items` and a [Verb][] of [GET][] using [HTTP 1.1][HTTP11] results in the variable `($)HttpResponse` being updated to the following:
 
 ```json
 {
@@ -312,9 +312,9 @@ The [Http Credentials][Http Credentials Property] object that includes all of th
 
 Note that when using [HttpOAuthPasswordCredentials][] or [HttpOAuthClientCredentials][] as the [Http Credentials][Http Credentials Property], the Execute Http Request block automatically handles retrieval of access tokens using the following rules:
 
-- If an access token does not exist, a new access token will be retrieved and used when executing the [Http Request][Http Request Property].
-- If an access token already exists but is expired, a new access token will be retrieved and used when executing the [Http Request][Http Request Property].
-- If an access token already exists and is valid, it will be used when executing the [Http Request][Http Request Property].
+- If an access token does not exist, a new access token will be retrieved and used when the block runs.
+- If an access token already exists but is expired, a new access token will be retrieved and used when the block runs.
+- If an access token already exists and is valid, it will be used when the block runs.
 
 |||
 |----------|----------|
