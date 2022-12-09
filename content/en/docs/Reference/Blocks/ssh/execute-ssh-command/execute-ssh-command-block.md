@@ -45,8 +45,8 @@ This example will execute a [Command][Command Property] on the server with the f
 
 Running the [Command][Command Property] results in the variable `($)Response` being updated to the following:
 
-```csharp
-$@"Windows IP Configuration
+```
+Windows IP Configuration
 
 Ethernet adapter Ethernet 3:
 
@@ -54,7 +54,7 @@ Connection-specific DNS Suffix. : reddog.microsoft.com
 Link-local IPv6 Address. . . . . : fe80::78eb:a051:2b84:e8bd%6
 IPv4 Address. . . . . . . . . . . : 10.3.0.4
 Subnet Mask . . . . . . . . . . . : 255.255.255.0
-Default Gateway . . . . . . . . . : 10.3.0.1"
+Default Gateway . . . . . . . . . : 10.3.0.1
 ```
 
 It also results in the variable `($)SshLogs` being updated to the following:
@@ -100,8 +100,8 @@ The server can be connected to using a valid certificate.
 
 Running the [Command][Command Property] results in the variable `($)Response` being updated to the following:
 
-```csharp
-$@"Windows IP Configuration
+```
+Windows IP Configuration
 
 Ethernet adapter Ethernet 3:
 
@@ -109,7 +109,7 @@ Connection-specific DNS Suffix. : reddog.microsoft.com
 Link-local IPv6 Address. . . . . : fe80::78eb:a051:2b84:e8bd%6
 IPv4 Address. . . . . . . . . . . : 10.3.0.4
 Subnet Mask . . . . . . . . . . . : 255.255.255.0
-Default Gateway . . . . . . . . . : 10.3.0.1"
+Default Gateway . . . . . . . . . : 10.3.0.1
 ```
 
 It also results in the variable `($)SshLogs` being updated to the following:
