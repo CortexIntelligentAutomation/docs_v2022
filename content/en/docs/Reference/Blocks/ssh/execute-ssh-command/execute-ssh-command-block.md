@@ -169,11 +169,11 @@ The [Configuration Settings][Configuration Settings Property] for the SSH connec
 
 |||
 |----------|----------|
-| Data Type | [IDictionary][]&lt;[String][], [EncryptableText][]&gt; |
+| Data Type | [IDictionary][]&lt;[String][], [dynamic][]&gt; |
 | Property Type | [Input][] |
 | Is [Advanced][] | `true` |
 | Default Editor | [Expression][] |
-| Default Value | [IDictionary][]&lt;[String][], [EncryptableText][]&gt; with value shown below: |
+| Default Value | [IDictionary][]&lt;[String][], [dynamic][]&gt; with value shown below: |
 
 ```csharp
 new Dictionary<string, dynamic> {
@@ -284,6 +284,7 @@ None
 [SshLogs]: {{< url "Cortex.Reference.DataTypes.Ssh.SshLogs.MainDoc" >}}
 
 [Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
+[dynamic]: {{< url "Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 [UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 
