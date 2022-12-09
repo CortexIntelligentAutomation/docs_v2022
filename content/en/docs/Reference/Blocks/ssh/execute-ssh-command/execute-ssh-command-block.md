@@ -289,7 +289,7 @@ None
 [SshSessionDetails Host]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Host" >}}
 [SshSessionDetails Port]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Port" >}}
 [SshSessionDetails Credentials]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Credentials" >}}
-[SshSessionDetails TerminalPrompt]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.MainDoc" >}}
+[SshSessionDetails TerminalPrompt]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.TerminalPrompt" >}}
 
 [SshLogs]: {{< url "Cortex.Reference.DataTypes.Ssh.SshLogs.MainDoc" >}}
 
