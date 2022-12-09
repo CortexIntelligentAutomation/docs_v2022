@@ -183,7 +183,7 @@ The [Configuration Settings][Configuration Settings Property] for the SSH connec
 | Property Type | [Input][] |
 | Is [Advanced][] | `true` |
 | Default Editor | [Expression][] |
-| Default Value | Value shown below: |
+| Default Value | [IDictionary][]&lt;[String][], [EncryptableText][]&gt; with value shown below: |
 
 ```csharp
 new Dictionary<string, dynamic> {
