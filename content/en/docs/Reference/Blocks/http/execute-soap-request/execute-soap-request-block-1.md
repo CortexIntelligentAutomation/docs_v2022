@@ -48,7 +48,7 @@ Note that the result of executing a [Soap Request][Soap Request Property] is dep
 
 #### Result
 
-Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` and a [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
+Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` using a [Soap11Message][] with an [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
 
 ```json
 {
@@ -152,7 +152,7 @@ Note that the result of executing a [Soap Request][Soap Request Property] is dep
 
 #### Result
 
-Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` and a [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
+Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` using a [Soap11Message][] with an [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
 
 ```json
 {
@@ -204,7 +204,7 @@ Note that the result of executing a [Soap Request][Soap Request Property] is dep
 
 #### Result
 
-Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` and a [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
+Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` using a [Soap11Message][] with an [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
 
 ```json
 {
@@ -251,12 +251,12 @@ Note that the result of executing a [Soap Request][Soap Request Property] is dep
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Soap Request][Soap Request Property] | `($)SoapRequest`, with value `{"SoapMessage": {"Action": "https://test-converter.com/DegreesToKelvin", "Envelope": "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><DegreesToKelvin xmlns=\"https://test-converter.com/DegreesToKelvin/schema\"><degrees>20</degrees></DegreesToKelvin></soap:Body></soap:Envelope>", "Version": 11}, "Uri": "https://test-converter.com/xml", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)SoapRequest` has been set up using the following [Expression][]:<br><br>`new SoapRequest(uri: "https://test-converter.com/xml", soapMessage: new Soap11Message("https://test-converter.com/DegreesToKelvin", "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><DegreesToKelvin xmlns=\"https://test-converter.com/DegreesToKelvin/schema\"><degrees>20</degrees></DegreesToKelvin></soap:Body></soap:Envelope>"), headers: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)SoapRequest` is a variable of type [SoapRequest][] |
-| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `{"AccessTokenUri": "https://test-converter.com/oauth2/token", "ClientAuthentication": {"ClientId": "clientId", "ClientSecret": "encryptedClientSecret", "SendAs": "ClientAuthType.Header"}, "Scope": null}`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`new HttpOAuthClientCredentials(accessTokenUri: "https://test-converter.com/oauth2/token", clientAuthentication: new ClientAuthentication("clientId", "encryptedClientSecret", ClientAuthType.Header), scope: null)` | `($)HttpCredentials` is a variable of type [HttpOAuthClientCredentials][]<br><br>The [ClientSecret][] property in [ClientAuthentication][] must be encrypted, for more information on how to encrypt the password, see [EncryptedText][]. |
+| [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `{"AccessTokenUri": "https://test-converter.com/oauth2/token", "ClientAuthentication": {"ClientId": "clientId", "ClientSecret": "encryptedClientSecret", "SendAs": "ClientAuthType.Header"}, "Scope": null}`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`new HttpOAuthClientCredentials(accessTokenUri: "https://test-converter.com/oauth2/token", clientAuthentication: new ClientAuthentication("clientId", "encryptedClientSecret", ClientAuthType.Header), scope: null)` | `($)HttpCredentials` is a variable of type [HttpOAuthClientCredentials][]<br><br>The [ClientSecret][] property in [ClientAuthentication][] must be encrypted, for more information on how to encrypt the [ClientSecret][], see [EncryptedText][]. |
 | [Soap Response][Soap Response Property] | `($)SoapResponse`, with no value | `($)SoapResponse` will be set to the type [SoapResponse][] |
 
 #### Result
 
-Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` and a [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
+Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` using a [Soap11Message][] with an [Action][] of `https://test-converter.com/DegreesToKelvin` results in the variable `($)SoapResponse` being updated to the following:
 
 ```json
 {
@@ -300,12 +300,12 @@ The [Soap Request][Soap Request Property] to execute using the [Http Credentials
 - [Headers][Headers Request]
 - [HttpVersion][]
 
-SOAP 1.1 and SOAP 1.2 are both supported, which correspond to [SoapMessage][SoapMessage Property] within [Soap Request][Soap Request Property] being a [Soap11Message][] and [Soap12Message][] respectively.
+SOAP 1.1 and SOAP 1.2 are both supported, which correspond to [SoapMessage][SoapMessage Property] within [SoapRequest][] being a [Soap11Message][] and [Soap12Message][] respectively.
 
 For more information on:
 
-- How to use each a [Soap11Message][], see [Executing a request using SOAP 1.1][]
-- How to use each a [Soap12Message][], see [Executing a request using SOAP 1.2][]
+- How to use a [Soap11Message][], see [Executing a request using SOAP 1.1][]
+- How to use a [Soap12Message][], see [Executing a request using SOAP 1.2][]
 - Each of the properties, see [SoapRequest][]
 
 |||
@@ -340,9 +340,9 @@ The [Http Credentials][Http Credentials Property] object that includes all of th
 
 Note that when using [HttpOAuthPasswordCredentials][] or [HttpOAuthClientCredentials][] as the [Http Credentials][Http Credentials Property], the Execute Soap Request block automatically handles retrieval of access tokens using the following rules:
 
-- If an access token does not exist, a new access token will be retrieved and used when executing the [Soap Request][Soap Request Property].
-- If an access token already exists but is expired, a new access token will be retrieved and used when executing the [Soap Request][Soap Request Property].
-- If an access token already exists and is valid, it will be used when executing the [Soap Request][Soap Request Property].
+- If an access token does not exist, a new access token will be retrieved and used when the block runs.
+- If an access token already exists but is expired, a new access token will be retrieved and used when the block runs.
+- If an access token already exists and is valid, it will be used when the block runs.
 
 |||
 |----------|----------|
