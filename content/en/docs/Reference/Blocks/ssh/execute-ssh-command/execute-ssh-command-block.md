@@ -45,7 +45,7 @@ This example will execute a [Command][Command Property] on the server with the f
 
 Running the [Command][Command Property] results in the variable `($)Response` being updated to the following:
 
-```
+```text
 Windows IP Configuration
 
 Ethernet adapter Ethernet 3:
@@ -62,12 +62,7 @@ It also results in the variable `($)SshLogs` being updated to the following:
 ```json
 {
     "WelcomeMessage": "Last login: Tue Mar  1 06:50:23 2022 from 10.8.0.224",
-    "Logs":           "[Info] Sending local version: \"SSH-2.0-IPWorks SSH Client 2020\".
-                       [Info] Read remote version string: \"SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1.2\".
-                       [Info] Beginning key exchange.[Info] Sending local version: \"SSH-2.0-IPWorks SSH Client 2020\".
-                       [Info] Read remote version string: \"SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1.2\".
-                       [Info] Beginning key exchange.
-                       ..."
+    "Logs": "[Info] Sending local version: \"SSH-2.0-IPWorks SSH Client 2020\".\r\n[Info] Read remote version string: \"SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1.2\".\r\n[Info] Beginning key exchange.[Info] Sending local version: \"SSH-2.0-IPWorks SSH Client 2020\".\r\n[Info] Read remote version string: \"SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1.2\".\r\n[Info] Beginning key exchange..."
 }
 ```
 
@@ -100,7 +95,7 @@ The server can be connected to using a valid certificate.
 
 Running the [Command][Command Property] results in the variable `($)Response` being updated to the following:
 
-```
+```text
 Windows IP Configuration
 
 Ethernet adapter Ethernet 3:
@@ -117,12 +112,7 @@ It also results in the variable `($)SshLogs` being updated to the following:
 ```json
 {
     "WelcomeMessage": "Last login: Tue Mar  1 06:50:23 2022 from 10.8.0.224",
-    "Logs":           "[Info] Sending local version: \"SSH-2.0-IPWorks SSH Client 2020\".
-                       [Info] Read remote version string: \"SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1.2\".
-                       [Info] Beginning key exchange.[Info] Sending local version: \"SSH-2.0-IPWorks SSH Client 2020\".
-                       [Info] Read remote version string: \"SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1.2\".
-                       [Info] Beginning key exchange.
-                       ..."
+    "Logs": "[Info] Sending local version: \"SSH-2.0-IPWorks SSH Client 2020\".\r\n[Info] Read remote version string: \"SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1.2\".\r\n[Info] Beginning key exchange.[Info] Sending local version: \"SSH-2.0-IPWorks SSH Client 2020\".\r\n[Info] Read remote version string: \"SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1.2\".\r\n[Info] Beginning key exchange..."
 }
 ```
 
