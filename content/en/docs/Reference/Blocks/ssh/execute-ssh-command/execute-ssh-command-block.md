@@ -283,7 +283,7 @@ None
 [Dictionary]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
 [EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 
-[SshCertificateCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication,SshCertificateCredentials.MainDoc" >}}
+[SshCertificateCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.SshCertificateCredentials.MainDoc" >}}
 
 [SshSessionDetails]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.MainDoc" >}}
 [SshSessionDetails Host]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Host" >}}
