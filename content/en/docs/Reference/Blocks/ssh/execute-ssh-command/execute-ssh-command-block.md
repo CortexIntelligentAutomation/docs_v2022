@@ -35,7 +35,7 @@ This example will execute a [Command][Command Property] on the server with the f
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Command][Command Property] | `($)Command` with value `"ipconfig"` | `($)Command` is a variable of type [EncryptableText][] |
-| [Ssh Session Details][Ssh Session Details Property] | `($)SshSessionDetails` with value `{\"Host\": \"localhost\", \"Port\": 22, \"Credentials\": {\"Domain\": \"domain\", \"Username\": \"username\", \"Password\": "encryptedPassword\"}, \"TerminalPrompt\": \"(.*(~(.*[\r\n]?)\$|>))\"}`<br><br>In this example `($)SshSessionDetails` has been set up using the following [Expression][]:<br><br> `new SshSessionDetails("localhost", 22, new UserCredentials("domain", "username",  "encryptedPassword"), "(.*(~(.*[\r\n]?)\$|>))")`  |  `($)SshSessionDetails` is a variable of type [SshSessionDetails][] |
+| [Ssh Session Details][Ssh Session Details Property] | `($)SshSessionDetails` with value `{"Host": "localhost", "Port": 22, "Credentials": {"Domain": "domain", "Username": "username", "Password": "encryptedPassword"}, "TerminalPrompt": "(.*(~(.*[\\r\\n]?)\\$\|>))"}`<br><br>In this example `($)SshSessionDetails` has been set up using the following [Expression][]:<br><br> `new SshSessionDetails("localhost", 22, new UserCredentials("domain", "username",  "encryptedPassword"), @"(.*(~(.*[\r\n]?)\$\|>))")`  |  `($)SshSessionDetails` is a variable of type [SshSessionDetails][] |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` | `($)CloseSession` is a variable of type [Boolean][] |
 | [Configuration Settings][Configuration Settings Property] | `($)ConfigurationSettings`, with no value | `($)CloseSession` is a variable of type [Dictionary][]&lt;[String][], [EncryptableText][]&gt; |
 | [Response][Response Property] | `($)Response`, with no value | `($)Response` will be set to the type [String][] |
@@ -45,7 +45,7 @@ This example will execute a [Command][Command Property] on the server with the f
 
 Running the [Command][Command Property] results in the variable `($)Response` being updated to the following:
 
-```json
+```csharp
 $@"Windows IP Configuration
 
 Ethernet adapter Ethernet 3:
@@ -90,7 +90,7 @@ The server can be connected to using a valid certificate.
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Command][Command Property] | `($)Command` with value `"ipconfig"` | `($)Command` is a variable of type [EncryptableText][] |
-| [Ssh Session Details][Ssh Session Details Property] | `($)SshSessionDetails` with value `{\"Host\": \"localhost\", \"Port\": 22, \"Credentials\": {\"Domain\": \"domain\", \"Username\": \"username\", \"CertificatePath\": "C\\Certificate.pfx\", \"CertificatePassword\": "encryptedCertificatePassword\"}, \"TerminalPrompt\": \"(.*(~(.*[\r\n]?)\$|>))\"}`<br><br>In this example `($)SshSessionDetails` has been set up using the following [Expression][]:<br><br> `new SshSessionDetails("localhost", 22, new SshCertificateCredentials("domain", "username", @"C\Certificate.pfx", "encryptedCertificatePassword"), "(.*(~(.*[\r\n]?)\$|>))")`  |  `($)SshSessionDetails` is a variable of type [SshSessionDetails][] |
+| [Ssh Session Details][Ssh Session Details Property] | `($)SshSessionDetails` with value `{"Host": "localhost", "Port": 22, "Credentials": {"Domain": "domain", "Username": "username", "CertificatePath": "C:\\Certificate.pfx", "CertificatePassword": "encryptedCertificatePassword"}, "TerminalPrompt": "(.*(~(.*[\\r\\n]?)\\$\|>))"}`<br><br>In this example `($)SshSessionDetails` has been set up using the following [Expression][]:<br><br> `new SshSessionDetails("localhost", 22, new SshCertificateCredentials("domain", "username", @"C\Certificate.pfx", "encryptedCertificatePassword"), @"(.*(~(.*[\r\n]?)\$\|>))")`  |  `($)SshSessionDetails` is a variable of type [SshSessionDetails][] |
 | [Close Session][Close Session Property] | `($)CloseSession` with value `true` | `($)CloseSession` is a variable of type [Boolean][] |
 | [Configuration Settings][Configuration Settings Property] | `($)ConfigurationSettings`, with no value | `($)CloseSession` is a variable of type [Dictionary][]&lt;[String][], [EncryptableText][]&gt; |
 | [Response][Response Property] | `($)Response`, with no value | `($)Response` will be set to the type [String][] |
@@ -100,7 +100,7 @@ The server can be connected to using a valid certificate.
 
 Running the [Command][Command Property] results in the variable `($)Response` being updated to the following:
 
-```json
+```csharp
 $@"Windows IP Configuration
 
 Ethernet adapter Ethernet 3:
@@ -134,7 +134,7 @@ Note that more logs are included in this example, but have been omitted from `($
 
 ### Command
 
-The [Command][Command Property] that will be executed on the host specified in the [Ssh Session Details][Ssh Session Details Property].
+The [Command][Command Property] that will be executed on the [Host][SshSessionDetails Host] specified in the [Ssh Session Details][Ssh Session Details Property].
 
 |||
 |----------|----------|
@@ -146,7 +146,7 @@ The [Command][Command Property] that will be executed on the host specified in t
 
 ### Ssh Session Details
 
-The [Ssh Session Details][Ssh Session Details Property] object that includes all of the information required to connect and maintain a Ssh Session. This property contains all of the information in relation to the server the [Command][Command Property] will be executed on, these are:
+The [Ssh Session Details][Ssh Session Details Property] object that includes all of the information required to open and maintain a SSH session. This property contains all of the information in relation to the server the [Command][Command Property] will be executed on, these are:
 
 - [Host][SshSessionDetails Host]
 - [Port][SshSessionDetails Port]
@@ -163,7 +163,7 @@ The [Ssh Session Details][Ssh Session Details Property] object that includes all
 
 ### Close Session
 
-[Close Session][Close Session Property] can be specified to choose whether the session on the Host is closed or is kept open for use on subsequent Execute PowerShell Script blocks, this defaults to `false` if left blank, please see [Closing Sessions][] for more information.
+[Close Session][Close Session Property] can be specified to choose whether the session on the [Host][SshSessionDetails Host] is closed or is kept open for use on subsequent Execute Ssh Command blocks, this defaults to `false` if left blank, please see [Closing Sessions][] for more information.
 
 |||
 |----------|----------|
@@ -175,7 +175,7 @@ The [Ssh Session Details][Ssh Session Details Property] object that includes all
 
 ### Configuration Settings
 
-The [Configuration Settings][Configuration Settings Property] for the Ssh Connection and execution.
+The [Configuration Settings][Configuration Settings Property] for the SSH connection and execution.
 
 |||
 |----------|----------|
@@ -197,7 +197,7 @@ new Dictionary<string, dynamic> {
 
 ### Response
 
-The Ssh [Response][Response Property] that is returned from the execution of the [Command][Command Property] on the host specified in the [Ssh Session Details][Ssh Session Details Property].
+The SSH [Response][Response Property] that is returned from the execution of the [Command][Command Property] on the [Host][SshSessionDetails Host] specified in the [Ssh Session Details][Ssh Session Details Property].
 
 |||
 |----------|----------|
@@ -230,22 +230,22 @@ The exceptions thrown by the block can be found below:
 |--------------------------------------|-------------|
 | [PropertyNullException][] | Thrown when [Command][Command Property] is `null`. |
 || Thrown when the [Ssh Session Details][Ssh Session Details Property] is `null`. |
-|| Thrown when the host within the [Ssh Session Details][Ssh Session Details Property] is `null`. |
-|| Thrown when the credentials within the sessionDetails is `null`. |
-|| Thrown when using [SshCertificateCredentials][], the certificatePath in the specified credentials within the [Ssh Session Details][Ssh Session Details Property] is `null`. |
-| [PropertyEmptyException][] | Thrown when the specified host within the [Ssh Session Details][Ssh Session Details Property] is empty. |
-|| Thrown when the certificatePath in the specified credentials within the [Ssh Session Details][Ssh Session Details Property] is empty. |
-| [PropertyValueOutOfRangeException][] | Thrown when the specified port within the [Ssh Session Details][Ssh Session Details Property] is below 1 or above 65535. |
-| [SshClientException][] | Thrown when one or more settings in configurationSettings are invalid. (includes a dictionary of SettingName:ExceptionMessage from IPWorksSSHSshclientException) |
-|| Thrown when the specified host within the [Ssh Session Details][Ssh Session Details Property] is invalid. |
-|| Thrown when the specified port within the [Ssh Session Details][Ssh Session Details Property] is invalid. |
+|| Thrown when the [Host][SshSessionDetails Host] within the [Ssh Session Details][Ssh Session Details Property] is `null`. |
+|| Thrown when the [Credentials][SshSessionDetails Credentials] within the [Ssh Session Details][Ssh Session Details Property] is `null`. |
+|| Thrown when using [SshCertificateCredentials][], the CertificatePath in the specified [Credentials][SshSessionDetails Credentials] within the [Ssh Session Details][Ssh Session Details Property] is `null`. |
+| [PropertyEmptyException][] | Thrown when the specified [Host][SshSessionDetails Host] within the [Ssh Session Details][Ssh Session Details Property] is empty. |
+|| Thrown when the CertificatePath in the specified [Credentials][SshSessionDetails Credentials] within the [Ssh Session Details][Ssh Session Details Property] is empty. |
+| [PropertyValueOutOfRangeException][] | Thrown when the specified [Port][SshSessionDetails Port] within the [Ssh Session Details][Ssh Session Details Property] is below 1 or above 65535. |
+| [SshClientException][] | Thrown when one or more settings in [Configuration Settings][Configuration Settings Property] are invalid. (includes a dictionary of SettingName: ExceptionMessage from IPWorksSSHSshClientException) |
+|| Thrown when the specified [Host][SshSessionDetails Host] within the [Ssh Session Details][Ssh Session Details Property] is invalid. |
+|| Thrown when the specified [Port][SshSessionDetails Port] within the [Ssh Session Details][Ssh Session Details Property] is invalid. |
 || Thrown when the server host key has not been accepted. |
-|| Thrown when using [UserCredentials][], the specified domain, username or password within SshCredentials is invalid. |
-|| Thrown when using [SshCertificateCredentials][], the specified domain, username, certificatePath or certificatePassword is invalid. |
-|| Thrown when the host exits without using [Close Session][Close Session Property], returning the response received up to the point the host exited the session. |
-| [SshResponseException][] | Thrown if the specified terminalPrompt does not match the terminal prompt on the host causing the execution to timeout or the timeout was too short to allow for data to be received. |
+|| Thrown when using [UserCredentials][], the specified domain, username or password within [Credentials][SshSessionDetails Credentials] is invalid. |
+|| Thrown when using [SshCertificateCredentials][], the specified Domain, Username, CertificatePath or CertificatePassword is invalid. |
+|| Thrown when the [Host][SshSessionDetails Host] exits without using [Close Session][Close Session Property], returning the response received up to the point the host exited the session. |
+| [SshResponseException][] | Thrown if the specified [TerminalPrompt][SshSessionDetails TerminalPrompt] does not match the terminal prompt on the host causing the execution to timeout or the timeout was too short to allow for data to be received. |
 | [RegexMatchTimeoutException][] | Thrown when the execution time of the regular expression pattern-matching exceeds the time-out interval. |
-| [RegexParsingFailedException][] | Thrown when terminalPrompt within [Ssh Session Details][Ssh Session Details Property] contains invalid regex. |
+| [RegexParsingFailedException][] | Thrown when [TerminalPrompt][SshSessionDetails TerminalPrompt] within [Ssh Session Details][Ssh Session Details Property] contains invalid regex. |
 
 ## Remarks
 
