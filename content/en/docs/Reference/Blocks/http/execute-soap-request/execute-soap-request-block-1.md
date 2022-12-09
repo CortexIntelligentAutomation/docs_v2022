@@ -114,9 +114,9 @@ Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://tes
       "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
       "@xmlns:soap12": "http://www.w3.org/2003/05/soap-envelope",
       "soap12:Body": {
-        "CelsiusToFahrenheitResponse": {
-          "@xmlns": "https://www.w3schools.com/xml/",
-          "CelsiusToFahrenheitResult": "string"
+        "DegreesToKelvinResponse": {
+          "@xmlns": "https://test-converter.com/DegreesToKelvin/schema",
+          "kelvin": "293"
         }
       }
     }
