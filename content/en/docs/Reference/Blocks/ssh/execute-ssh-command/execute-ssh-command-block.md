@@ -181,7 +181,7 @@ The [Configuration Settings][Configuration Settings Property] for the SSH connec
 |----------|----------|
 | Data Type | [IDictionary][]&lt;[String][], [EncryptableText][]&gt; |
 | Property Type | [Input][] |
-| Is [Advanced][] | `false` |
+| Is [Advanced][] | `true` |
 | Default Editor | [Expression][] |
 | Default Value | Value shown below: |
 
@@ -218,7 +218,7 @@ The [Ssh Logs][Ssh Logs Property] that is returned from the execution of the [Co
 |----------|----------|
 | Data Type | [SshLogs][] |
 | Property Type | [Output][] |
-| Is [Advanced][] | `false` |
+| Is [Advanced][] | `true` |
 | Default Editor | [Variable][] |
 | Default Value | `($)SshLogs` with no value |
 
