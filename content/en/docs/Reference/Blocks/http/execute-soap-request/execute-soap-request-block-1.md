@@ -94,13 +94,42 @@ Note that the result of executing a [Soap Request][Soap Request Property] is dep
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Soap Request][Soap Request Property] | `($)SoapRequest`, with value `{"SoapMessage": {"Envelope": "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\"><soap12:Body><DegreesToKelvinResponse xmlns=\"https://test-converter.com/DegreesToKelvin/schema\"><kelvin>293</kelvin></DegreesToKelvinResponse></soap12:Body></soap12:Envelope>", "Version": 12}, "Uri": "https://test-converter.com/xml", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)SoapRequest` has been set up using the following [Expression][]:<br><br>`new SoapRequest(uri: "https://test-converter.com/xml", soapMessage: new Soap12Message("<?xml version=\"1.0\" encoding=\"utf-8\"?><soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\"><soap12:Body><DegreesToKelvinResponse xmlns=\"https://test-converter.com/DegreesToKelvin/schema\"><kelvin>293</kelvin></DegreesToKelvinResponse></soap12:Body></soap12:Envelope>"), headers: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)SoapRequest` is a variable of type [SoapRequest][] |
+| [Soap Request][Soap Request Property] | `($)SoapRequest`, with value `{"SoapMessage": {"Envelope": "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\"><soap12:Body><DegreesToKelvin xmlns=\"https://test-converter.com/DegreesToKelvin/schema\"><degrees>20</degrees></DegreesToKelvin></soap12:Body></soap12:Envelope>", "Version": 12}, "Uri": "https://test-converter.com/xml", "Headers": null, "HttpVersion": "HttpRequestVersion.HTTP11"}`<br><br>In this example `($)SoapRequest` has been set up using the following [Expression][]:<br><br>`new SoapRequest(uri: "https://test-converter.com/xml", soapMessage: new Soap12Message("<?xml version=\"1.0\" encoding=\"utf-8\"?><soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\"><soap12:Body><DegreesToKelvin xmlns=\"https://test-converter.com/DegreesToKelvin/schema\"><degrees>20</degrees></DegreesToKelvin></soap12:Body></soap12:Envelope>"), headers: null, httpVersion: HttpRequestVersion.HTTP11)` | `($)SoapRequest` is a variable of type [SoapRequest][] |
 | [Http Credentials][Http Credentials Property] | `($)HttpCredentials`, with value `null`<br><br>In this example, `($)HttpCredentials` has been set up using the following [Expression][]:<br><br>`null` | `($)HttpCredentials` is a variable with value `null`<br><br>As `($)HttpCredentials` is `null`, no authentication will occur when making the request. |
 | [Soap Response][Soap Response Property] | `($)SoapResponse`, with no value | `($)SoapResponse` will be set to the type [SoapResponse][] |
 
 #### Result
 
-**TODO**
+Executing a [Soap Request][Soap Request Property] with a [Uri][] of `https://test-converter.com/xml` using a [Soap12Message][] results in the variable `($)SoapResponse` being updated to the following:
+
+```json
+{
+  "ResponseEnvelope": {
+    "?xml": {
+      "@version": "1.0",
+      "@encoding": "utf-8"
+    },
+    "soap12:Envelope": {
+      "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+      "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+      "@xmlns:soap12": "http://www.w3.org/2003/05/soap-envelope",
+      "soap12:Body": {
+        "CelsiusToFahrenheitResponse": {
+          "@xmlns": "https://www.w3schools.com/xml/",
+          "CelsiusToFahrenheitResult": "string"
+        }
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "Content-Type": "application/soap+xml; charset=utf-8"
+  },
+  "StatusCode": "HttpStatusCode.OK (200)"
+}
+```
+
+Note that as the [Headers][Headers Response] contains a key of `Content-Type` with a value of `application/soap+xml; charset=utf-8`, the [ResponseEnvelope][] is a [Structure][] containing the data.
 
 ***
 
