@@ -20,7 +20,7 @@ Connects to a host using the [Ssh Session Details][Ssh Session Details Property]
 
 ## Examples
 
-### Execute a Command using User Credentials
+### Execute a Command using UserCredentials
 
 This example will execute a [Command][Command Property] on the server with the following details:
 
