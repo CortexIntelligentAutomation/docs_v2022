@@ -1928,7 +1928,9 @@
         ReverseProxy = "https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-reverseproxy"
 [MSDotNet]
     [MSDotNet.Framework471]
-        MainDoc = "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net471"
+        MainDoc = "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net471"  
+    [MSDotNet.60]
+        MainDoc = "https://dotnet.microsoft.com/en-us/download/dotnet/6.0"
 [MSDownload]
     WebDeploy = "https://www.microsoft.com/en-gb/download/details.aspx?id=43717"
     [MSDownload.CPlusPlusRedistributable]
