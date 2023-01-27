@@ -31,21 +31,7 @@ Ensure that a valid Cortex licence file named `Cortex.lic` exists on the Web App
 
 ## Install Microsoft .NET 6.0.13
 
-Flow Debugger Service requires a minimum of Microsoft .NET 6.0.13.
-
-To find the version of the framework that is installed:
-
-1. On the Start menu, choose `Run`.
-1. In the open box, enter `regedit.exe`. You must have administrative credentials to run regedit.exe.
-1. In the Registry Editor, open the subkey `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\dotnet\Setup\InstalledVersions\x64\sharedfx\Microsoft.NETCore.App`.
-1. If the folder `Microsoft.NETCore.App` is not present, or the subkey name is a version inferior to `6.0.13`, then you do not have the required version or .NET 6.0 installed.
-1. If it is not installed, continue with the following steps to install it.
-
-To install .NET 6.0.13:
-
-1. Download the [NET&nbsp;6.0.13][NET 60] installer.
-1. Double-click on the installer file to run it.
-1. Follow the wizard to complete the installation.
+{{< commonSection "content/en/headless/install-ms-dotnet-6013.md" >}}
 
 ## Install Flow Debugger Service
 
@@ -280,8 +266,6 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
 [Cortex Encrypted]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.EncryptText" >}}
 [Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
 [URL Rewrite]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}
-[NET Framework 471]: {{< url "MSDotNet.Framework471.MainDoc" >}}
-[NET 60]: {{< url "MSDotNet.60.MainDoc" >}}
 [Microsoft Web Deploy]: {{< url "MSDownload.WebDeploy" >}}
 [C++ Redistributable]: {{< url "MSDownload.CPlusPlusRedistributable.2013" >}}
 [Eula]: {{< url "Cortex.Website.Eula.MainDoc" >}}
