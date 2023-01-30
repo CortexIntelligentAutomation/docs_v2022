@@ -31,7 +31,7 @@ Ensure that a valid Cortex licence file named `Cortex.lic` exists on the Web App
 
 ## Install Microsoft .NET 6.0.13
 
-{{< commonSection "content/en/headless/install-ms-dotnet-6013.md" >}}
+{{< commonSection "content/en/headless/microsoft/install-ms-dotnet-6013.md" >}}
 
 ## Install Flow Debugger Service
 

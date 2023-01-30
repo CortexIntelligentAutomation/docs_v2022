@@ -52,7 +52,7 @@ To install .NET Framework 4.7.1:
 
 ### Install Microsoft .NET 6.0.13
 
-{{< commonSection "content/en/headless/install-ms-dotnet-6013.md" >}}
+{{< commonSection "content/en/headless/microsoft/install-ms-dotnet-6013.md" >}}
 
 ### Install Microsoft Web Deploy
 
