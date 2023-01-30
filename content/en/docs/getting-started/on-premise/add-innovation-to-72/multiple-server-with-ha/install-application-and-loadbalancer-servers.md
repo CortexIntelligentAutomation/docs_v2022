@@ -20,6 +20,8 @@ This guide describes how to install the Application Servers and Load Balancer Se
 
 ## Install Microsoft .NET Framework 4.7.1
 
+Microsoft Service Fabric requires a minimum of Microsoft .NET Framework 4.7.1 to be installed on each Application Server.
+
 {{< commonSection "content/en/headless/install-ms-dotnet-471.md" >}}
 
 ## Apply Recommended Security Measures

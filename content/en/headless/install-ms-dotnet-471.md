@@ -1,5 +1,3 @@
-Microsoft Service Fabric requires a minimum of Microsoft .NET Framework 4.7.1 to be installed on the server.
-
 To find the version of the framework that is installed:
 
 1. On the Start menu, choose Run.

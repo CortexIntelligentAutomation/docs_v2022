@@ -20,6 +20,8 @@ This guide describes how to install the Application Server components on the ser
 
 ## Install Microsoft .NET Framework 4.7.1
 
+Microsoft Service Fabric requires a minimum of Microsoft .NET Framework 4.7.1 to be installed on the server.
+
 {{< commonSection "content/en/headless/install-ms-dotnet-471.md" >}}
 
 ## Apply Recommended Security Measures

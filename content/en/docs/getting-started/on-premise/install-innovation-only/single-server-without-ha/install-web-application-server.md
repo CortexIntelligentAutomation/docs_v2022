@@ -34,6 +34,8 @@ Ensure that a valid Cortex licence file named `Cortex.lic` exists on the server,
 
 ### Install Microsoft .NET Framework 4.7.1
 
+Gateway requires a minimum of Microsoft .NET Framework 4.7.1.
+
 {{< commonSection "content/en/headless/install-ms-dotnet-471.md" >}}
 
 ### Install Microsoft .NET 6.0.13
