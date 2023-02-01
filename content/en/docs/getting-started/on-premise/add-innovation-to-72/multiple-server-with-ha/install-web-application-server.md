@@ -29,10 +29,6 @@ The steps to add Innovation functionality to v7.2 are:
 
 Ensure that a valid Cortex licence file named `Cortex.lic` exists on the Web Application server, in the location `%ProgramData%\Cortex\Licences`. If it does not, follow the instructions located at [Licensing Requirements][].
 
-## Install Microsoft .NET 6.0.13
-
-{{< commonSection "content/en/headless/microsoft/install-ms-dotnet-6013.md" >}}
-
 ## Install Flow Debugger Service
 
 ### Get Application Pool User

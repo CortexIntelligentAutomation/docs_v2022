@@ -21,7 +21,7 @@ The prerequisites required for a single server (as described in [Architecture][]
 
 | Server&nbsp;Role | Windows&nbsp;Server[^1] | SQL&nbsp;Server[^2] | .Net | PowerShell[^3] | IIS[^4] | Other Software |
 |------------------|-------------------------|---------------------|------|------------|---------|----------|
-| Single&nbsp;Server<br>*Application Server +<br>Web Application Server*  | [2019&nbsp;(x64)][Microsoft Server 2019]&nbsp;*Recommended*<br>[2016&nbsp;(x64)][Microsoft Server 2016] | [2019][Microsoft SQL Server 2019]<br />[2016][Microsoft SQL Server 2016]<br />[2016&nbsp;Express][Microsoft SQL Express 2016] | [Framework&nbsp;4.7.1][NET Framework 471]<br>[NET&nbsp;6.0.13][NET 60] | 5.1 | 10.0.17763[^5]<br>10.0.14393[^6]<br>[URL&nbsp;Rewrite&nbsp;Module&nbsp;2.1][IIS Url Rewrite] | [Microsoft Web Deploy 3.0 or later][Web Deploy]<br>[Visual C++ Redistributable 2013 (x64)][C++ Redistributable] |
+| Single&nbsp;Server<br>*Application Server +<br>Web Application Server*  | [2019&nbsp;(x64)][Microsoft Server 2019]&nbsp;*Recommended*<br>[2016&nbsp;(x64)][Microsoft Server 2016] | [2019][Microsoft SQL Server 2019]<br />[2016][Microsoft SQL Server 2016]<br />[2016&nbsp;Express][Microsoft SQL Express 2016] | [Framework&nbsp;4.7.1][NET Framework 471] | 5.1 | 10.0.17763[^5]<br>10.0.14393[^6]<br>[URL&nbsp;Rewrite&nbsp;Module&nbsp;2.1][IIS Url Rewrite] | [Microsoft Web Deploy 3.0 or later][Web Deploy]<br>[Visual C++ Redistributable 2013 (x64)][C++ Redistributable] |
 
 [^1]: Windows Server Standard and Datacenter editions are supported. Filesystem **must be NTFS** and networking **must use IPv4**. Linux is not supported, but may be in the future.
 [^2]: SQL Server Express, Standard and Enterprise are supported. Other databases are not supported. Note that [Transparent Data Encryption][] is not supported on SQL Server Express.
@@ -214,7 +214,6 @@ Supported versions of Active Directory are listed below:
 [Microsoft Server 2019]: {{< url "MSEval.WindowsServer.2019" >}}
 [Microsoft Server 2016]: {{< url "MSEval.WindowsServer.2016" >}}
 [NET Framework 471]: {{< url "MSDotNet.Framework471.MainDoc" >}}
-[NET 60]: {{< url "MSDotNet.60.MainDoc" >}}
 [Microsoft SQL Server 2019]: {{< url "MSEval.SQLServer.2019" >}}
 [Microsoft SQL Server 2016]: {{< url "MSEval.SQLServer.2016" >}}
 [Microsoft SQL Express 2016]: {{< url "MSDownload.SqlServerExpress.2016" >}}

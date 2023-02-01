@@ -50,10 +50,6 @@ To install .NET Framework 4.7.1:
 1. Double-click on the installer file to run it.
 1. Follow the wizard to complete the installation.
 
-### Install Microsoft .NET 6.0.13
-
-{{< commonSection "content/en/headless/microsoft/install-ms-dotnet-6013.md" >}}
-
 ### Install Microsoft Web Deploy
 
 1. Check if Web Deploy is already installed by going to `Control Panel` → `Programs` → `Programs and Features`; if Web Deploy is already installed, it will be listed as `Microsoft Web Deploy`.
