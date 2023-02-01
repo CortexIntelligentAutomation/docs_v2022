@@ -38,7 +38,7 @@ Gateway requires a minimum of Microsoft .NET Framework 4.7.1.
 
 To find the version of the framework that is installed:
 
-1. On the Start menu, choose Run.
+1. On the Start menu, choose `Run`.
 1. In the open box, enter `regedit.exe`. You must have administrative credentials to run regedit.exe.
 1. In the Registry Editor, open the subkey `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full`.
 1. If the `Full` subkey is not present, then you do not have the .NET Framework 4.5 or later installed.
