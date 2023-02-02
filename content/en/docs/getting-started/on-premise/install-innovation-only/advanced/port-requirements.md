@@ -55,7 +55,7 @@ Each service has an endpoint which is used to communicate with Service Fabric an
 |Name of Service | Description | Default Port(s) | Protocol(s) | Direction | Program|
 |----------------|-------------|-----------------|-------------|-----------|--------|
 | API Gateway    | The port providing an entry into the API Gateway service. This is used by Cortex Gateway to communicate with the Application Services. **If this is changed then it will be necessary to use the updated value in the** **"****Service Fabric Api Gateway Endpoint****" parameter of SetParameters.xml when configuring Cortex Gateway later in this document.** | 8722 | TCP, UDP | Inbound, Outbound | Any |
-| Flow Execution | The ports providing communication between other services and the stateful Cortex Flow Execution service. These are dynamic ports managed by Service Fabric. | Dynamic – Uses the application ports | N/A | N/A | N/A |
+| Flow Execution | The ports providing communication between other services and the stateful Cortex Execution service. These are dynamic ports managed by Service Fabric. | Dynamic – Uses the application ports | N/A | N/A | N/A |
 
 ## Cortex Load Balancer Rules
 

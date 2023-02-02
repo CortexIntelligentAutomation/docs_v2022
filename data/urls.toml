@@ -260,8 +260,8 @@
                 MainDoc = "/docs/reference/apis/cortex-studio/"
             [Cortex.Reference.Apis.ApiGatewayService]
                 MainDoc = "/docs/reference/apis/cortex-api-gateway-service/"
-            [Cortex.Reference.Apis.FlowExecutionService]
-                MainDoc = "/docs/reference/apis/cortex-flow-execution-service/"
+            [Cortex.Reference.Apis.ExecutionService]
+                MainDoc = "/docs/reference/apis/cortex-execution-service/"
             [Cortex.Reference.Apis.FlowDebuggerService]
                 MainDoc = "/docs/reference/apis/cortex-flow-debugger-service/"
         [Cortex.Reference.Blocks]
