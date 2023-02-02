@@ -23,7 +23,7 @@ The dashboard is then split into 5 main sections:
 
 There are several [filters](#filters) available to filter the data to a more fine-grained level as necessary and are explained in further detail below.
 
-{{< figure src="/images/Platform Health Dashboard.svg" >}}
+{{< figure src="/images/editable/Platform Health Dashboard.png" >}}
 
 ## Time Range
 
