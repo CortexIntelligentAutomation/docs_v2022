@@ -9,23 +9,7 @@ weight: 10
 
 ## Components
 
-| Component                                         | Purpose                                                                             | Required/Optional           | Server Role                                |
-|---------------------------------------------------|-------------------------------------------------------------------------------------|-----------------------------|--------------------------------------------|
-| [Cortex Gateway][Gateway Guide]                   | {{< commonSection "/headless/component-purpose/cortex-gateway.md" >}}               | Required                    | Web Application Server                     |
-| [Cortex Studio][Studio Guide]                     | {{< commonSection "/headless/component-purpose/cortex-studio.md" >}}                | Required                    | Web Application Server                     |
-| Cortex Flow Debugger Service                      | {{< commonSection "/headless/component-purpose/cortex-flow-debugger-service.md" >}} | Required                    | Web Application Server                     |
-| Cortex API Gateway Service                        | {{< commonSection "/headless/component-purpose/cortex-api-gateway-service.md" >}}   | Required                    | Application Server                         |
-| Cortex Execution Service                          | {{< commonSection "/headless/component-purpose/cortex-execution-service.md" >}}     | Required                    | Application Server                         |
-| Cortex Block Packages                             | {{< commonSection "/headless/component-purpose/cortex-block-packages.md" >}}        | Required                    | Web Application Server, Application Server |
-| Cortex Gateway Databases                          | {{< commonSection "/headless/component-purpose/cortex-gateway-databases.md" >}}     | Required<br />(End of life) | Web Application Server                     |
-| [SQL Server Express][] or [SQL Server Standard][] | {{< commonSection "/headless/component-purpose/ms-sql-server.md" >}}                | Required<br />(End of life) | Web Application Server                     |
-| [Microsoft Service Fabric][]                      | {{< commonSection "/headless/component-purpose/ms-service-fabric.md" >}}            | Required                    | Application Server                         |
-| [Microsoft Service Fabric Explorer][]             | {{< commonSection "/headless/component-purpose/ms-service-fabric-explorer.md" >}}   | Required                    | Application Server                         |
-| [Particular NServiceBus][]                        | {{< commonSection "/headless/component-purpose/particular-nservicebus.md" >}}       | Required                    | Application Server                         |
-| [Pivotal RabbitMQ][]                              | {{< commonSection "/headless/component-purpose/pivotal-rabbitmq.md" >}}             | Required                    | Application Server                         |
-| [Erlang OTP][]                                    | {{< commonSection "/headless/component-purpose/erlang-otp.md" >}}                   | Required                    | Application Server                         |
-| [gobetween][]                                     | {{< commonSection "/headless/component-purpose/gobetween.md" >}}                    | Required                    | Load Balancer                              |
-| [NSSM][]                                          | {{< commonSection "/headless/component-purpose/nssm.md" >}}                         | Required                    | Load Balancer                              |
+{{< commonSection "/headless/components/multi-server.md" >}}
 
 {{% alert title="Note" %}}
 Cortex v7.2 component descriptions are not covered in this guide. See separate v7.2 documentation for more information.
@@ -66,20 +50,9 @@ Alternative architectures are possible; any of the Innovation server roles may b
 
 1. [Prerequisites][]
 
-[Gateway Guide]: {{< url "Cortex.Guides.Gateway.MainDoc" >}}
-[Studio Guide]: {{< url "Cortex.Guides.Studio.MainDoc" >}}
 [Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.Prerequisites" >}}
 [Hardware Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.HardwareRequirements" >}}
 [Hardware Requirements for Alternative Architectures]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.HardwareRequirementsAlternativeArchitecture" >}}
-[SQL Server Express]: {{< url "MSDownload.SqlServerExpress.2016" >}}
-[SQL Server Standard]: {{< url "MSEval.SQLServer.2019" >}}
-[Microsoft Service Fabric]: {{< url "MSDocs.ServiceFabric.MainDoc" >}}
-[Microsoft Service Fabric Explorer]: {{< url "MSDocs.ServiceFabric.Explorer" >}}
-[Particular NServiceBus]: {{< url "Particular.NServiceBus.MainDoc" >}}
-[Pivotal RabbitMQ]: {{< url "RabbitMQ.MainDoc" >}}
-[Erlang OTP]: {{< url "ErlangOTP.MainDoc" >}}
-[gobetween]: {{< url "GoBetween.MainDoc" >}}
-[NSSM]: {{< url "NSSM.MainDoc" >}}
 [Recommended]: {{< ref "#recommended-architecture" >}}
 [Minimum]: {{< ref "#minimum-architecture" >}}
 [Alternative]: {{< ref "#alternative-architectures" >}}
