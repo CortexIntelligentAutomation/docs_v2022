@@ -1,5 +1,5 @@
-| Component                                         | Purpose                                                                             | Required/Optional           | Server Role                                |
-|---------------------------------------------------|-------------------------------------------------------------------------------------|-----------------------------|--------------------------------------------|
+| Component                                         | Purpose                                                                                        | Required/Optional           | Server Role                                |
+|---------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|--------------------------------------------|
 | [Cortex Gateway][Gateway Guide]                   | {{< commonSection "/headless/components/component-purpose/cortex-gateway.md" >}}               | Required                    | Web Application Server                     |
 | [Cortex Studio][Studio Guide]                     | {{< commonSection "/headless/components/component-purpose/cortex-studio.md" >}}                | Required                    | Web Application Server                     |
 | Cortex Flow Debugger Service                      | {{< commonSection "/headless/components/component-purpose/cortex-flow-debugger-service.md" >}} | Required                    | Web Application Server                     |
