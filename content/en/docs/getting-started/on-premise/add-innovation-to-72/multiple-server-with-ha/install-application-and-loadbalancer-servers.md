@@ -144,7 +144,7 @@ To avoid answering all of the prompts `-Override 0` can be added to the end of t
     *>&1 | Tee-Object -FilePath "cortex-ha-install-log.txt"
         {{< /tab >}}
         {{< tab header="Self-Signed Certs, Built-in Load Balancer" >}}
-    .\Cortex.Install.ps1 -ConfigFileName Cortex.Innovation.Install.Config.json `
+.\Cortex.Install.ps1 -ConfigFileName Cortex.Innovation.Install.Config.json `
     -AppServicesPath "C:\Install\Cortex Innovation 2022.9 - App Services.zip" `
     -BlockPackagesPath "C:\Install\Cortex Innovation 2022.9 - Block Packages.zip" `
     -ApiGatewayBasicAuthUserName "BasicAuthUser" `
