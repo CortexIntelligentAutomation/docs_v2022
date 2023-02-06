@@ -286,6 +286,8 @@ More advanced configuration (such as changing ports) can be undertaken by modify
 1. Open a web browser.
 1. Navigate to `https://app-server.domain.com:9080/Explorer`, where `app-server.domain.com` is the fully qualified domain name of any Application Server. Replace `9080` with new `httpGatewayEndpointPort` value if it was changed during configuration.
 
+    IMPORTANT      FIX FIGURES
+
     The screen should resemble that in the following figure:
     {{< figure src="/images/Service Fabric Explorer.png" title="Healthy Service Fabric Explorer Cluster" >}}
 
