@@ -63,9 +63,9 @@ Each service has an endpoint which is used to communicate with Service Fabric an
 
 The load balancer server must be able to retrieve traffic via HTTPS. The following firewall ports are opened by the installer (these rules will all appear in Windows Firewall with names starting with `{CustomerName}`):
 
-|Name in Rule        | Name in Config       | Default Port(s) | Protocol(s) | Direction | Program|
-|--------------------|----------------------|-----------------|-------------|-----------|--------|
-| GoBetweenTlsPort   | loadBalancerTlsPort  | 443             | TCP         | Inbound   | Any    |
+|Name in Rule        | Name in Config       | Default Port(s) | Protocol(s) | Direction | Program |
+|--------------------|----------------------|-----------------|-------------|-----------|---------|
+| GoBetweenTlsPort   | loadBalancerTlsPort  | 443             | TCP         | Inbound   | Any     |
 
 [Dynamic Ports]: {{< url "MSSupport.Troubleshooting.DynamicPorts" >}}
 [Service Fabric reverse proxy]: {{< url "MSDocs.ServiceFabric.ReverseProxy" >}}
