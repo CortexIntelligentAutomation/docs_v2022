@@ -9,7 +9,7 @@ weight: 10
 
 ## Components
 
-{{< commonSection "/headless/components/multi-server.md" >}}
+{{< section "/headless/architecture-components/multi-server.md" >}}
 
 ## Recommended Architecture
 

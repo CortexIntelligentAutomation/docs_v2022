@@ -9,7 +9,7 @@ weight: 10
 
 ## Components
 
-{{< commonSection "/headless/components/multi-server.md" >}}
+{{< section "/headless/architecture-components/multi-server.md" >}}
 
 {{% alert title="Note" %}}
 Cortex v7.2 component descriptions are not covered in this guide. See separate v7.2 documentation for more information.
