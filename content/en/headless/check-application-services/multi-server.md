@@ -5,24 +5,22 @@
 1. Open a web browser.
 1. Navigate to `https://app-server.domain.com:9080/Explorer`, where `app-server.domain.com` is the fully qualified domain name of any Application Server. Replace `9080` with new `httpGatewayEndpointPort` value if it was changed during configuration.
 
-    IMPORTANT      FIX FIGURES
-
     The screen should resemble that in the following figure:
-    {{< figure src="/images/Service Fabric Explorer.png" title="Healthy Service Fabric Explorer Cluster" >}}
+    {{< figure src="/images/Service Fabric Explorer.png" >}}
 
     The status circles should be entirely green - this indicates that all nodes, services and instances are healthy. Other status pages can be accessed by expanding items in the leftmost pane. Issues can be tracked down to the failing component by expanding items with warning triangles or error icons on. The next few diagrams show the status pages for a healthy system.
 
     After expanding the application, clicking on any of the services should display a green circle and `Status = Active`:
 
-    {{< figure src="/images/Service Fabric Explorer - Service.png" title="Healthy Service Fabric Explorer Service" >}}
+    {{< figure src="/images/Service Fabric Explorer - Service.png" >}}
 
     After expanding either of the services, clicking on any of the instances/partitions should display a green circle and `Status = Ready`:
 
-    {{< figure src="/images/Service Fabric Explorer - Instance.png" title="Healthy Service Fabric Explorer Instance" >}}
+    {{< figure src="/images/Service Fabric Explorer - Instance.png" >}}
 
     Clicking on any of the nodes at the bottom of the leftmost pane should display a green circle and `Status = Up`:
 
-    {{< figure src="/images/Service Fabric Explorer - Node.png" title="Healthy Service Fabric Explorer Node" >}}
+    {{< figure src="/images/Service Fabric Explorer - Node.png" >}}
 
     If any warning triangles appear, wait for 5 minutes or so as the cluster may still be starting up. If the cluster looks OK, go to the next section.
 
@@ -34,3 +32,6 @@
     * `%ProgramData%/Cortex/Cortex Execution Service`
 
     If no solution can be found, please contact [Cortex Service Portal][] for further assistance.
+
+[Configure Installation Script]:  {{< ref "#configure-installation-script" >}}
+[Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
