@@ -16,12 +16,12 @@ The steps to add Innovation functionality to 7.2 are:
 ## Make Installation Artefacts Available
 
 1. Copy the following artefacts to a folder on the machine (the version numbers may differ):
-   * Cortex Innovation 2022.9 - Block Packages.zip
-   * Cortex Innovation 2022.9 - Gateway.zip
-   * Cortex Innovation 2022.9 - Flow Debugger Service.zip
-   * Cortex Innovation 2022.9 - Web App Server Install Scripts.zip
+   * Cortex Innovation {{< version >}} - Block Packages.zip
+   * Cortex Innovation {{< version >}} - Gateway.zip
+   * Cortex Innovation {{< version >}} - Flow Debugger Service.zip
+   * Cortex Innovation {{< version >}} - Web App Server Install Scripts.zip
 
-1. Extract the `Cortex Innovation 2022.9 - Web App Server Install Scripts.zip` zip file to a folder with the same name.
+1. Extract the `Cortex Innovation {{< version >}} - Web App Server Install Scripts.zip` zip file to a folder with the same name.
 
 ## Install Prerequisites
 
@@ -59,15 +59,15 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
 
 ### Configure Installation Script
 
-1. In the `Cortex Innovation 2022.9 - Web App Server Install Scripts` folder, locate the `Cortex.Innovation.Install.FlowDebuggerService.ps1` script and open it with a text editor.
+1. In the `Cortex Innovation {{< version >}} - Web App Server Install Scripts` folder, locate the `Cortex.Innovation.Install.FlowDebuggerService.ps1` script and open it with a text editor.
 
 1. Choose the tab below that matches the configuration for this installation, then update the script to match, changing the parameters according to the details given below:
 
     {{< tabpane lang="powershell" >}}
-        {{< tab header="CA Certs">}}
+        {{< tab header="CA Certs" >}}
 .\Cortex.Install.FlowDebuggerService.ps1 `
-    -FlowDebuggerServicePath "C:\Install\Cortex Innovation 2022.9 - Flow Debugger Service.zip" `
-    -BlockPackagesPath "C:\Install\Cortex Innovation 2022.9 - Block Packages.zip" `
+    -FlowDebuggerServicePath "C:\Install\Cortex Innovation {{< version >}} - Flow Debugger Service.zip" `
+    -BlockPackagesPath "C:\Install\Cortex Innovation {{< version >}} - Block Packages.zip" `
     -FlowDebuggerBasicAuthUserName "BasicAuthUser" `
     -FlowDebuggerBasicAuthPwd "ADA9883B11BD4CDC908B8131B57944A4" `
     -Credential $AppPoolIdentity `
@@ -76,8 +76,8 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
         {{< /tab >}}
         {{< tab header="Self-Signed Certs" >}}
 .\Cortex.Install.FlowDebuggerService.ps1 `
-    -FlowDebuggerServicePath "C:\Install\Cortex Innovation 2022.9 - Flow Debugger Service.zip" `
-    -BlockPackagesPath "C:\Install\Cortex Innovation 2022.9 - Block Packages.zip" `
+    -FlowDebuggerServicePath "C:\Install\Cortex Innovation {{< version >}} - Flow Debugger Service.zip" `
+    -BlockPackagesPath "C:\Install\Cortex Innovation {{< version >}} - Block Packages.zip" `
     -FlowDebuggerBasicAuthUserName "BasicAuthUser" `
     -FlowDebuggerBasicAuthPwd "ADA9883B11BD4CDC908B8131B57944A4" `
     -UseSelfSignedCertificates `
@@ -103,61 +103,61 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
 ### Run Installation Script
 
 1. Open a Windows PowerShell (x64) window as administrator.
-1. Navigate PowerShell to inside the `Cortex Innovation 2022.9 - Web App Server Install Scripts` folder using the following command, modifying the path as necessary:
+1. Navigate PowerShell to inside the `Cortex Innovation {{< version >}} - Web App Server Install Scripts` folder using the following command, modifying the path as necessary:
 
     ```powershell
-    cd "C:\Install\Cortex Innovation 2022.9 - Web App Server Install Scripts"
+    cd "C:\Install\Cortex Innovation {{< version >}} - Web App Server Install Scripts"
     ```
 
-1. Type the following command into PowerShell:
+2. Type the following command into PowerShell:
 
     ```powershell
     .\Cortex.Innovation.Install.FlowDebuggerService.ps1
     ```
 
-1. Please read the End User Licence Agreement which can be found [here][Eula]. Once you agree to the terms, add the flag `-AcceptEULA` to the command entered above, e.g:
+3. Please read the End User Licence Agreement which can be found [here][Eula]. Once you agree to the terms, add the flag `-AcceptEULA` to the command entered above, e.g:
 
     ```powershell
     .\<CortexInnovationInstallScriptName>.ps1 -AcceptEULA
     ```
 
-1. Run the PowerShell command to install the Flow Debugger Service.
+4. Run the PowerShell command to install the Flow Debugger Service.
 
-1. A credentials prompt will appear. Enter the credentials of the user that should run the `Debugger` application pool in IIS. If using the `NETWORK SERVICE` user, enter any user as the username and leave the password blank; the `NETWORK SERVICE` user will need to be selected in the final step.
-1. Wait for the script to finish running. This should take approximately 2 minutes.
-1. An error may have appeared saying:
+5. A credentials prompt will appear. Enter the credentials of the user that should run the `Debugger` application pool in IIS. If using the `NETWORK SERVICE` user, enter any user as the username and leave the password blank; the `NETWORK SERVICE` user will need to be selected in the final step.
+6. Wait for the script to finish running. This should take approximately 2 minutes.
+7. An error may have appeared saying:
 
     ```
     The Windows Process Activation Service service is not started.
     ```
 
     This can be ignored.
-1. Check that there have been no other errors in the script; these would appear in red in the console.
+8. Check that there have been no other errors in the script; these would appear in red in the console.
 
     If there are any errors, then please follow any instructions given within them to rectify the situation, and retry the installation.
 
     If the errors do not give any instructions on how to rectify, please contact [Cortex Service Portal][] for further assistance.
 
-1. If using `NETWORK SERVICE` for the application pool user:
+9. If using `NETWORK SERVICE` for the application pool user:
 
     1. Open Internet Information Services (IIS) Manager.
-    1. On the left, expand the server node.
-    1. Click `Application Pools`.
-    1. Right-click on the `Debugger` application pool and select `Advanced Settings...`.
-    1. In the `Advanced Settings` dialog, click on `Identity` and then click the ellipses (`...`).
-    1. In the `Application Pool Identity` dialog, select `Built-in account`, then select `NetworkService` from the drop-down, then click `OK`.
-    1. Right-click on the `Debugger` application pool and click `Recycle...`.
+    2. On the left, expand the server node.
+    3. Click `Application Pools`.
+    4. Right-click on the `Debugger` application pool and select `Advanced Settings...`.
+    5. In the `Advanced Settings` dialog, click on `Identity` and then click the ellipses (`...`).
+    6. In the `Application Pool Identity` dialog, select `Built-in account`, then select `NetworkService` from the drop-down, then click `OK`.
+    7. Right-click on the `Debugger` application pool and click `Recycle...`.
 
 ## Upgrade Gateway
 
 ### Configure Installation Script
 
-1. In the `Cortex Innovation 2022.9 - Web App Server Install Scripts` folder, locate the `Cortex.Innovation.Install.Gateway.ps1` script and open it with a text editor.
+1. In the `Cortex Innovation {{< version >}} - Web App Server Install Scripts` folder, locate the `Cortex.Innovation.Install.Gateway.ps1` script and open it with a text editor.
 1. Configure the script according to the details given below:
 
     ```powershell
     .\Cortex.Install.Gateway.ps1 `
-    -GatewayPackagePath "C:\Install\Cortex Innovation 2022.9 - Gateway.zip" `
+    -GatewayPackagePath "C:\Install\Cortex Innovation {{< version >}} - Gateway.zip" `
     -GatewayApplicationIISPath "Cortex\gateway" `
     -FeatureFlags "InnovationId" `
     -ServiceFabricApiGatewayEndpoint "https://server.domain.com:8722/" `
@@ -175,7 +175,7 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
 
     | Name                                           | Description |
     |------------------------------------------------|-------------|
-    |`GatewayPackagePath`                            | Configure this value with the location of the `Cortex Innovation 2022.9 - Gateway.zip` file on the installation server. |
+    |`GatewayPackagePath`                            | Configure this value with the location of the `Cortex Innovation {{< version >}} - Gateway.zip` file on the installation server. |
     |`GatewayApplicationIISPath`                     | Change to the correct `Site Name/Application` if either was modified from the defaults (`Cortex/gateway`) when creating the website or application. |
     |`FeatureFlags`                                  | Replace `InnovationId` with the Cortex Innovation feature identifier, which should have been provided by Cortex when fulfilling the [Licensing Requirements][], if it wasn't it should be requested using [Cortex Service Portal][].</br></br>This will overwrite the `FeatureFlags` value in the Gateway web.config.|
     |`ServiceFabricApiGatewayEndpoint`               | Replace `server.domain.com` with the fully qualified domain name of the server. The port should be specified as `8722` and there must be a trailing slash, e.g. `https://server.domain.com:8722/`.<br /><br />This will overwrite the `ServiceFabricApiGatewayEndpoint` value in the Gateway web.config.|
@@ -195,10 +195,10 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
 ### Test Installation Script
 
 1. Open a Windows PowerShell (x64) window as administrator.
-1. Navigate PowerShell to inside the `Cortex Innovation 2022.9 - Web App Server Install Scripts` folder using the following command, modifying the path as necessary:
+1. Navigate PowerShell to inside the `Cortex Innovation {{< version >}} - Web App Server Install Scripts` folder using the following command, modifying the path as necessary:
 
     ```powershell
-    cd "C:\Install\Cortex Innovation 2022.9 - Web App Server Install Scripts"
+    cd "C:\Install\Cortex Innovation {{< version >}} - Web App Server Install Scripts"
     ```
 
 1. Type the following command into PowerShell:

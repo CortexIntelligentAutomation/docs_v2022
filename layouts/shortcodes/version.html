@@ -1,0 +1,4 @@
+{{- $page := .Site.GetPage "/headless/currentVersion.md" -}}
+{{- with $page -}}
+    {{-  (trim .Plain "\n") -}}
+{{- end -}}
