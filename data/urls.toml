@@ -240,8 +240,12 @@
                 DeletingVariables = "/docs/guides/cortex-studio/south-panel/#deleting-variables"
             [Cortex.Guides.Studio.Debugging]
                 MainDoc = "/docs/guides/cortex-studio/debugging/"
-        [Cortex.Guides.FlowExecutionService]
-            MainDoc = "/docs/guides/cortex-flow-execution-service/"
+        [Cortex.Guides.ExecutionService]
+            MainDoc = "/docs/guides/cortex-execution-service/"
+        [Cortex.Guides.PackageService]
+            MainDoc = "/docs/guides/cortex-package-service/"
+        [Cortex.Guides.ProvisioningService]
+            MainDoc = "/docs/guides/cortex-provisioning-service/"
         [Cortex.Guides.FlowDebuggerService]
             MainDoc = "/docs/guides/cortex-flow-debugger-service/"
         [Cortex.Guides.ApiGatewayService]
