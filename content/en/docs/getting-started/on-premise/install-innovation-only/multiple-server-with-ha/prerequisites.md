@@ -248,17 +248,17 @@ For Gateway, only Windows domains with an Active Directory domain controller run
 
 Supported versions of Active Directory are listed below:
 
-| Version                    | Verified?      | Supported From          | Supported Until  |  
-|----------------------------|----------------|-------------------------|------------------|
-| Windows Server 2003        |      ✓        | Cortex v{{< version >}} | To be evaluated  |
-| Windows Server 2003 R2     |                | Cortex v{{< version >}} | To be evaluated  |
-| Windows Server 2008        |                | Cortex v{{< version >}} | To be evaluated  |
-| Windows Server 2008 R2     |      ✓        | Cortex v{{< version >}} | To be evaluated  |
-| Windows Server 2012        |                | Cortex v{{< version >}} | To be evaluated  |
-| Windows Server 2012 R2     |      ✓        | Cortex v{{< version >}} | To be evaluated  |
-| Windows Server 2016        |      ✓        | Cortex v{{< version >}} | To be evaluated  |
-| Windows Server 2019        |                | Cortex v{{< version >}} | To be evaluated  |
-| Windows Server 2022        |                | Cortex v{{< version >}} | To be evaluated  |
+| Version                    | Verified?      | Supported From | Supported Until  |  
+|----------------------------|----------------|----------------|------------------|
+| Windows Server 2003        |      ✓        | Cortex v2022.9 | To be evaluated  |
+| Windows Server 2003 R2     |                | Cortex v2022.9 | To be evaluated  |
+| Windows Server 2008        |                | Cortex v2022.9 | To be evaluated  |
+| Windows Server 2008 R2     |      ✓        | Cortex v2022.9 | To be evaluated  |
+| Windows Server 2012        |                | Cortex v2022.9 | To be evaluated  |
+| Windows Server 2012 R2     |      ✓        | Cortex v2022.9 | To be evaluated  |
+| Windows Server 2016        |      ✓        | Cortex v2022.9 | To be evaluated  |
+| Windows Server 2019        |                | Cortex v2022.9 | To be evaluated  |
+| Windows Server 2022        |                | Cortex v2022.9 | To be evaluated  |
 
 #### Certificate Requirements
 
