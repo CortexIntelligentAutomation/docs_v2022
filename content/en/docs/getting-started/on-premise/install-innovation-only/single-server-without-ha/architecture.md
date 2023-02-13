@@ -9,7 +9,7 @@ weight: 10
 
 ## Components
 
-{{< section "/headless/architecture-components/single-server.md" >}}
+{{< section "/headless/architecture/components/single-server.md" >}}
 
 ## Single Server Architecture
 
