@@ -109,44 +109,44 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
     cd "C:\Install\Cortex Innovation {{< version >}} - Web App Server Install Scripts"
     ```
 
-2. Type the following command into PowerShell:
+1. Type the following command into PowerShell:
 
     ```powershell
     .\Cortex.Innovation.Install.FlowDebuggerService.ps1
     ```
 
-3. Please read the End User Licence Agreement which can be found [here][Eula]. Once you agree to the terms, add the flag `-AcceptEULA` to the command entered above, e.g:
+1. Please read the End User Licence Agreement which can be found [here][Eula]. Once you agree to the terms, add the flag `-AcceptEULA` to the command entered above, e.g:
 
     ```powershell
     .\<CortexInnovationInstallScriptName>.ps1 -AcceptEULA
     ```
 
-4. Run the PowerShell command to install the Flow Debugger Service.
+1. Run the PowerShell command to install the Flow Debugger Service.
 
-5. A credentials prompt will appear. Enter the credentials of the user that should run the `Debugger` application pool in IIS. If using the `NETWORK SERVICE` user, enter any user as the username and leave the password blank; the `NETWORK SERVICE` user will need to be selected in the final step.
-6. Wait for the script to finish running. This should take approximately 2 minutes.
-7. An error may have appeared saying:
+1. A credentials prompt will appear. Enter the credentials of the user that should run the `Debugger` application pool in IIS. If using the `NETWORK SERVICE` user, enter any user as the username and leave the password blank; the `NETWORK SERVICE` user will need to be selected in the final step.
+1. Wait for the script to finish running. This should take approximately 2 minutes.
+1. An error may have appeared saying:
 
     ```
     The Windows Process Activation Service service is not started.
     ```
 
     This can be ignored.
-8. Check that there have been no other errors in the script; these would appear in red in the console.
+1. Check that there have been no other errors in the script; these would appear in red in the console.
 
     If there are any errors, then please follow any instructions given within them to rectify the situation, and retry the installation.
 
     If the errors do not give any instructions on how to rectify, please contact [Cortex Service Portal][] for further assistance.
 
-9. If using `NETWORK SERVICE` for the application pool user:
+1. If using `NETWORK SERVICE` for the application pool user:
 
     1. Open Internet Information Services (IIS) Manager.
-    2. On the left, expand the server node.
-    3. Click `Application Pools`.
-    4. Right-click on the `Debugger` application pool and select `Advanced Settings...`.
-    5. In the `Advanced Settings` dialog, click on `Identity` and then click the ellipses (`...`).
-    6. In the `Application Pool Identity` dialog, select `Built-in account`, then select `NetworkService` from the drop-down, then click `OK`.
-    7. Right-click on the `Debugger` application pool and click `Recycle...`.
+    1. On the left, expand the server node.
+    1. Click `Application Pools`.
+    1. Right-click on the `Debugger` application pool and select `Advanced Settings...`.
+    1. In the `Advanced Settings` dialog, click on `Identity` and then click the ellipses (`...`).
+    1. In the `Application Pool Identity` dialog, select `Built-in account`, then select `NetworkService` from the drop-down, then click `OK`.
+    1. Right-click on the `Debugger` application pool and click `Recycle...`.
 
 ## Upgrade Gateway
 

@@ -188,8 +188,8 @@ For Gateway, only Windows domains with an Active Directory domain controller run
 
 Supported versions of Active Directory are listed below:
 
-| Version                    | Verified?      | Supported From | Supported Until  |  
-|----------------------------|----------------|----------------|------------------|
+| Version                    | Verified?      | Supported From          | Supported Until  |  
+|----------------------------|----------------|-------------------------|------------------|
 | Windows Server 2003        |      ✓        | Cortex v{{< version >}} | To be evaluated  |
 | Windows Server 2003 R2     |                | Cortex v{{< version >}} | To be evaluated  |
 | Windows Server 2008        |                | Cortex v{{< version >}} | To be evaluated  |
