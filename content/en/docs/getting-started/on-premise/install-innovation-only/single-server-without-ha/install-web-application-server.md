@@ -11,13 +11,13 @@ This guide describes how to install the Web Application Server components on the
 
 ## Make Installation Artefacts Available
 
-1. Copy the following artefacts to a folder on the server (the version numbers may differ):
+1. Copy the following artefacts to a folder on the server:
    * Cortex Innovation {{< version >}} - Block Packages.zip
    * Cortex Innovation {{< version >}} - Gateway.zip
    * Cortex Innovation {{< version >}} - Flow Debugger Service.zip
    * Cortex Innovation {{< version >}} - Web App Server Install Scripts.zip
 
-1. Extract the `Cortex Innovation {{< version >}} - Web App Server Install Scripts.zip` zip file to a folder with the same name.
+2. Extract the `Cortex Innovation {{< version >}} - Web App Server Install Scripts.zip` zip file to a folder with the same name.
 
 ## Install Prerequisites
 
