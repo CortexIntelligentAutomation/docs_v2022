@@ -9,14 +9,14 @@ weight: 50
 
 {{< param description >}}
 
-## Starting flow errors with FlowNotFound
+## Errors when starting published flows
 
-If you make a request to run a flow from the production environment you may encounter an error, see how to fix this with this video.
+When making requests to start published flows, you may encounter errors. The videos below will show you how to fix them.
+
+### FlowNotFound
 
 {{< youtube id="1vXswyCAfn4" >}}
 
-## Starting flow errors with InvalidInputVariables
-
-Take a tour of the different Variable errors that could occur in Cortex and how to resolve them.
+### InvalidInputVariables
 
 {{< youtube id="0KIksXI8NLU" >}}

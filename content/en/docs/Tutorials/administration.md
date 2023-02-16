@@ -45,13 +45,7 @@ This tour will show you the best practice for updating either all your packages 
 
 {{< youtube id="lrJMOKyRnGY" >}}
 
-## Selecting a package version
-
-Package Version Selection allows the user to identify, a specific package or package version that they wish to use when starting the execution of a Cortex flow.
-
-{{< youtube id="8G0N7E9oTvo" >}}
-
-## Setting a default package
+## Setting default packages
 
 Setting defaults allows you to define how cortex behaves if both the package name, or the version are not supplied as parameters in the URL query string.
 
