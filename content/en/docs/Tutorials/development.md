@@ -7,6 +7,8 @@ weight: 30
 
 # {{< param title >}}
 
+{{< param description >}}
+
 ## Signing in and out of Gateway
 {{< youtube id="DlgFfkE2LOY" >}}
 

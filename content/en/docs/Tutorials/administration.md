@@ -7,6 +7,8 @@ weight: 40
 
 # {{< param title >}}
 
+{{< param description >}}
+
 ## Managing role-based access control
 {{< youtube id="v-nll5V4p1Q" >}}
 
