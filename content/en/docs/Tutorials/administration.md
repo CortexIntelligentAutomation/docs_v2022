@@ -10,23 +10,23 @@ weight: 40
 ## Managing role-based access control
 {{< youtube id="v-nll5V4p1Q" >}}
 
-## 18.	Export Flows:
+## Exporting flows
 {{< youtube id="ZpnDmiuTc8o" >}}
 
-## 19.	Import Flows:
+## Importing flows
 {{< youtube id="_A4CuCKZuys" >}}
 
-## 20.	Package Creation:
+## Creating packages
 {{< youtube id="dzcjU0Ca7EY" >}}
 
-## 21.	Package Publication:
+## Publishing packages
 {{< youtube id="iWXMhgPMeHg" >}}
 
-## 22.	Package Version Management:
+## Managing package versions
 {{< youtube id="lrJMOKyRnGY" >}}
 
-## 26.	Package Version Selection:
+## Selecting a package version
 {{< youtube id="8G0N7E9oTvo" >}}
 
-## 23.	Setting Defaults:
+## Setting a default package
 {{< youtube id="th-OPwfQ7Vo" >}}

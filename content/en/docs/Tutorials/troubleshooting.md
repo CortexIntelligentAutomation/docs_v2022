@@ -7,8 +7,8 @@ weight: 50
 
 # {{< param title >}}
 
-## 27.	Flow Error Not Found:
+## Starting flow errors with 404 Not Found
 {{< youtube id="1vXswyCAfn4" >}}
 
-## 28.	Invalid Input Variable Errors:
+## Starting flow errors with invalid input variable
 {{< youtube id="0KIksXI8NLU" >}}
