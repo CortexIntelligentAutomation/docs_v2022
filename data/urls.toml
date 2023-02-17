@@ -1388,6 +1388,8 @@
                     MainDoc = "/docs/reference/data-types/text/stringcomparison"
                 [Cortex.Reference.DataTypes.Text.StringSplitOptions]
                     MainDoc = "/docs/reference/data-types/text/stringsplitoptions"
+                [Cortex.Reference.DataTypes.Text.TextEncodingFormat]
+                    MainDoc = "/docs/reference/data-types/text/textencodingformat"
                 [Cortex.Reference.DataTypes.Text.UnicodeEncoding]
                     MainDoc = "/docs/reference/data-types/text/unicodeencoding"
                 [Cortex.Reference.DataTypes.Text.UTF32Encoding]
