@@ -11,42 +11,42 @@ weight: 40
 
 ## Managing role-based access control
 
-Take a look at how to assign different rights to different active directory groups on the LDAP authorisation page.
+Shows how to manage role-based access control within Gateway, including assigning access and flow permissions.
 
 {{< youtube id="v-nll5V4p1Q" >}}
 
 ## Exporting flows
 
-Using the Studio Export option to select a set of flows and export them as a single file.
+Shows how to export a set of flows as a `.studiopkg` file.
 
 {{< youtube id="ZpnDmiuTc8o" >}}
 
 ## Importing flows
 
-Investigate the Studio Import option that allows users to upload a file created by exporting flows from this or other Cortex environments.
+Shows how to import a set of flows from a `.studiopkg` file.
 
 {{< youtube id="_A4CuCKZuys" >}}
 
 ## Creating packages
 
-Create packages to bundle groups, sub-groups and flows together. This is how the release process from development to live operation is controlled.
+Shows how to create a release package containing all the flows required for your self-contained automation solution.
 
 {{< youtube id="dzcjU0Ca7EY" >}}
 
 ## Publishing packages
 
-This video contains the necessary information to complete package publication.
+Shows how to publish a release package into your runtime environment.
 
 {{< youtube id="iWXMhgPMeHg" >}}
 
 ## Managing package versions
 
-This tour will show you the best practice for updating either all your packages at once, adding new flows to your packages, or excluding existing flows.
+Shows how to create new versions of a release package, including adding flows, updating flow versions, and removing flows.
 
 {{< youtube id="lrJMOKyRnGY" >}}
 
 ## Setting default packages
 
-Setting defaults allows you to define how cortex behaves if both the package name, or the version are not supplied as parameters in the URL query string.
+Shows how to set the default package and the default version of each package.
 
 {{< youtube id="th-OPwfQ7Vo" >}}

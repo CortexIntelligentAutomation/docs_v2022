@@ -87,39 +87,38 @@ Shows how to add and remove breakpoints when debugging a flow.
 
 {{< youtube id="8qJRCdz0CpU" >}}
 
-#####> TODO
-## Editing a flow
+## Editing a flow whilst debugging
 
-learn how to modify your flow.
+Shows how to edit a flow whilst debugging, including fixing a runtime exception.
 
 {{< youtube id="DKrDZxpv9nY" >}}
 
 ## Interacting with version control
 
-Building up a functioning flow over time using version control with your colleagues.
+Shows how to save, commit, get master, and compare versions of a flow.
 
 {{< youtube id="oAfu7DsVgDM" >}}
 
 ## Interacting with version control (multiple flows)
 
-Navigate your way to the Version Control window and see how it allows users to view the flows that they have access to, and the status of their version of each flow.
+Shows how to perform commit or get master of multiple flows.
 
 {{< youtube id="JPdFjeReYQE" >}}
 
 ## Starting a published flow
 
-Starting an execution of a flow using a HTTP request within the default version of the default package published to the production environment.
+Shows how to start a flow, in the default package, via the API Gateway Service using an HTTP request.
 
 {{< youtube id="IXg0lnKg1BM" >}}
 
 ## Starting a published flow (specific package)
 
-Package Version Selection allows the user to identify, a specific package or package version that they wish to use when starting the execution of a Cortex flow.
+Shows how to start a flow, in a specific package, via the API Gateway Service using an HTTP request.
 
 {{< youtube id="8G0N7E9oTvo" >}}
 
 ## Configuring input and output variables
 
-Configuring input and output variables within the Cortex variable tab.
+Shows how to configure the input and output variables of a flow.
 
 {{< youtube id="5YLg6f4HaBo" >}}
