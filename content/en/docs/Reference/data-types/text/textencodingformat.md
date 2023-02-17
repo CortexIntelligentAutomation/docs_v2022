@@ -40,6 +40,21 @@ Base64URL encoding format.
 
 ## Remarks
 
+Created in a literal editor but can be manually created in an expression editor either by using (examples for Base64)
+
+```json
+"TextEncodingFormat.Base64"
+```
+
+where Base64 can be replaced by one of the values shown above
+
+or
+
+```json
+"(TextEncodingFormat)0"
+```
+where 0 can be replaced by any number from 0-5 corresponding to the list of values abov
+
 ## See Also
 
 ### Related Blocks
@@ -48,5 +63,5 @@ Base64URL encoding format.
 
 [Decode Text]
 
-[Encode Text]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.encode-text.encode-text-block" >}}
+[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.DecodeText.MainDoc" >}}
+[Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}

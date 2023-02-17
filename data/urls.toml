@@ -720,6 +720,12 @@
                         MainDoc = "/docs/reference/blocks/text/convert-to/convert-to-title-case-block/"
                     [Cortex.Reference.Blocks.Text.ConvertTo.ConvertToUpperCase]
                         MainDoc = "/docs/reference/blocks/text/convert-to/convert-to-upper-case-block/"
+                [Cortex.Reference.Blocks.Text.EncodeText]
+                    MainDoc = "/docs/reference/blocks/text/encode-text/"
+                    [Cortex.Reference.Blocks.Text.EncodeText.EncodeText]
+                        MainDoc = "/docs/reference/blocks/text/encode-text/encode-text-block"
+                    [Cortex.Reference.Blocks.Text.EncodeText.DecodeText]
+                        MainDoc = "/docs/reference/blocks/text/encode-text/decode-text-block"
                 [Cortex.Reference.Blocks.Text.FormatText]
                     MainDoc = "/docs/reference/blocks/text/format-text/"
                     [Cortex.Reference.Blocks.Text.FormatText.FormatTextWithValues]
