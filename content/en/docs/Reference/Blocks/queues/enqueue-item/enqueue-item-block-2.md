@@ -30,7 +30,7 @@ This example will enqueue `"Some Value"` with a priority of `0` to an empty [Que
 
 #### Result
 
-Adding `"Some Value"` with priority `0` of `{"Items": [], "UserComparer": {}}` results in the variable `($)Queue` being updated to the following:
+Adding `"Some Value"` with priority `0` to `{"Items": [], "UserComparer": {}}` results in the variable `($)Queue` being updated to the following:
 
 ```json
 [{"Items": [
@@ -48,19 +48,19 @@ This example will enqueue `"Some Value"` with a priority of `0` to a [QueueWithP
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{Item: "Element 1", Priority: -1}, {Item: "Element 2", Priority: 1}], "UserComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
+| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{Item: "Element -1", Priority: -1}, {Item: "Element 1", Priority: 1}], "UserComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
 | [Item][Item Property] | `($)Item`, with value `"Some Value"` | `($)Item` is a variable of type [String][] |
 | [Priority][Priority Property] | `($)Priority`, with value `0` | `($)Priority` is a variable of type [Int32][] |
 
 #### Result
 
-Adding `"Some Value"` with priority `0` of `{"Items": [{Item: "Element 1", Priority: -1}, {Item: "Element 2", Priority: 1}], "UserComparer": {}}` results in the variable `($)Queue` being updated to the following:
+Adding `"Some Value"` with priority `0` to `{"Items": [{Item: "Element -1", Priority: -1}, {Item: "Element 1", Priority: 1}], "UserComparer": {}}` results in the variable `($)Queue` being updated to the following:
 
 ```json
 [{"Items": [
-    {Item: "Element 1", Priority: -1}, 
+    {Item: "Element -1", Priority: -1}, 
     {Item: "Some Value", Priority: 0}, 
-    {Item: "Element 2", Priority: 1}
+    {Item: "Element 1", Priority: 1}
 ], "UserComparer": {}}]
 ```
 
@@ -74,21 +74,23 @@ This example will enqueue `"Some Value"` with a priority of `1` to a [QueueWithP
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{Item: "Element 1", Priority: -1}, {Item: "Element 2", Priority: 1}], "UserComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
+| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{Item: "Element -1", Priority: -1}, {Item: "Element 1", Priority: 1}], "UserComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
 | [Item][Item Property] | `($)Item`, with value `"Some Value"` | `($)Item` is a variable of type [String][] |
 | [Priority][Priority Property] | `($)Priority`, with value `1` | `($)Priority` is a variable of type [Int32][] |
 
 #### Result
 
-Adding `"Some Value"` with priority `1` of `{"Items": [{Item: "Element 1", Priority: -1}, {Item: "Element 2", Priority: 1}], "UserComparer": {}}` results in the variable `($)Queue` being updated to the following:
+Adding `"Some Value"` with priority `1` to `{"Items": [{Item: "Element -1", Priority: -1}, {Item: "Element 1", Priority: 1}], "UserComparer": {}}` results in the variable `($)Queue` being updated to the following:
 
 ```json
 [{"Items": [
-    {Item: "Element 1", Priority: -1}, 
-    {Item: "Element 2", Priority: 1},
+    {Item: "Element -1", Priority: -1}, 
+    {Item: "Element 1", Priority: 1},
     {Item: "Some Value", Priority: 1}
 ], "UserComparer": {}}]
 ```
+
+Because `"Some Value"` and `"Element 1"` have the same [Priority][Priority Property], they are put in order that they were added to the [Queue][Queue Property], so `"Some Value"` is placed behind `"Element 1"`.
 
 ***
 
