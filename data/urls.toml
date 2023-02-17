@@ -1396,6 +1396,9 @@
                     MainDoc = "/docs/reference/data-types/text/stringsplitoptions"
                 [Cortex.Reference.DataTypes.Text.TextEncodingFormat]
                     MainDoc = "/docs/reference/data-types/text/textencodingformat"
+                    Base64 = "/docs/reference/data-types/text/textencodingformat/#base64"
+                    Hex = "/docs/reference/data-types/text/textencodingformat/#hex"
+                    Html = "/docs/reference/data-types/text/textencodingformat/#html"
                 [Cortex.Reference.DataTypes.Text.UnicodeEncoding]
                     MainDoc = "/docs/reference/data-types/text/unicodeencoding"
                 [Cortex.Reference.DataTypes.Text.UTF32Encoding]
