@@ -1,7 +1,7 @@
 ---
 title: "Enqueue Item"
 linkTitle: "Enqueue Item"
-description: "Adds the specified Item to the queue at the specified Priority."
+description: "Adds an Item to a Queue at the specified Priority."
 ---
 
 {{< figure src="/blocks/queues-enqueue-block-icon.png" alt="Icon" class="block-icon" >}}
@@ -33,9 +33,15 @@ This example will enqueue `"Some Value"` with a priority of `0` to an empty [Que
 Adding `"Some Value"` with priority `0` to `{"Items": [], "UserComparer": {}}` results in the variable `($)Queue` being updated to the following:
 
 ```json
-[{"Items": [
-    {Item: "Some Value", Priority: 0}
-], "UserComparer": {}}]
+{
+    "Items": [
+        {
+            Item: "Some Value", 
+            Priority: 0
+        }
+    ], 
+    "UserComparer": {}
+}
 ```
 
 ***
@@ -57,11 +63,23 @@ This example will enqueue `"Some Value"` with a priority of `0` to a [QueueWithP
 Adding `"Some Value"` with priority `0` to `{"Items": [{Item: "Element -1", Priority: -1}, {Item: "Element 1", Priority: 1}], "UserComparer": {}}` results in the variable `($)Queue` being updated to the following:
 
 ```json
-[{"Items": [
-    {Item: "Element -1", Priority: -1}, 
-    {Item: "Some Value", Priority: 0}, 
-    {Item: "Element 1", Priority: 1}
-], "UserComparer": {}}]
+{
+    "Items": [
+        {
+            Item: "Element -1", 
+            Priority: -1
+        }, 
+        {
+            Item: "Some Value", 
+            Priority: 0
+        }, 
+        {
+            Item: "Element 1", 
+            Priority: 1
+        }
+    ], 
+    "UserComparer": {}
+}
 ```
 
 ***
@@ -83,11 +101,23 @@ This example will enqueue `"Some Value"` with a priority of `1` to a [QueueWithP
 Adding `"Some Value"` with priority `1` to `{"Items": [{Item: "Element -1", Priority: -1}, {Item: "Element 1", Priority: 1}], "UserComparer": {}}` results in the variable `($)Queue` being updated to the following:
 
 ```json
-[{"Items": [
-    {Item: "Element -1", Priority: -1}, 
-    {Item: "Element 1", Priority: 1},
-    {Item: "Some Value", Priority: 1}
-], "UserComparer": {}}]
+{
+    "Items": [
+        {
+            Item: "Element -1", 
+            Priority: -1
+        }, 
+        {
+            Item: "Element 1", 
+            Priority: 1
+        },
+        {
+            Item: "Some Value", 
+            Priority: 1
+        }
+    ], 
+    "UserComparer": {}
+}
 ```
 
 Because `"Some Value"` and `"Element 1"` have the same [Priority][Priority Property], they are put in order that they were added to the [Queue][Queue Property], so `"Some Value"` is placed behind `"Element 1"`.
@@ -124,7 +154,7 @@ The [Item][Item Property] to be added to the [Queue][Queue Property].
 
 The [Priority][Priority Property] of the [Item][Item Property] being added to the [Queue][Queue Property].  
 
-If an expression editor is used and left blank for [Priority][Priority Property], the default value of [TPriority][] will be used.  
+If an [Expression][] editor is used and left blank for [Priority][Priority Property], the [default][] value of [TPriority][] will be used.  
 
 | | |
 |--------------------|---------------------------|
@@ -132,7 +162,7 @@ If an expression editor is used and left blank for [Priority][Priority Property]
 | Property Type | [Input][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Expression][] |
-| Default Value | No value (defaults to default value of [TPriority][]) |
+| Default Value | No value (defaults to [default][] value of [TPriority][]) |
 
 ## Exceptions
 
@@ -151,7 +181,7 @@ This modifies the specified [Queue][Queue Property]. It does not create a new [Q
 
 ### Default priority values
 
-If an expression editor is used and left blank for [Priority][Priority Property], the [default][] value of [TPriority][] will be used.
+If an [Expression][] editor is used and left blank for [Priority][Priority Property], the [default][] value of [TPriority][] will be used.
 
 [Queue Property]: {{< ref "#queue" >}}
 [Item Property]: {{< ref "#item" >}}

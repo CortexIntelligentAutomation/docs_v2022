@@ -1,7 +1,7 @@
 ---
 title: "QueueWithPriority"
 linkTitle: "QueueWithPriority"
-description: "A data type that operates like a Priority Queue, but preserves FIFO between items of the same priority."
+description: "A data type that operates like a Priority Queue, but preserves first-in-first-out between items of the same priority."
 ---
 
 # {{% param title %}}
@@ -43,15 +43,15 @@ The [IComparer][] used to compare [TPriority][] values.
 
 The following table shows the methods included in `QueueWithPriority<TItem, TPriority>`.
 
-| Method | Example | Result | Notes |
-|-|-|-|-|
-| `void Enqueue(TItem item, TPriority priority)` | `queue.Enqueue("Some Value", 0)` | `{"Items": [{Item: "Some Value", Priority: 0}], "UserComparer": {}}` |  |
-| `TItem Dequeue()` | `queue.Dequeue()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` is removed from the queue. |
-| `TItem Peek()` | `queue.Peek()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` remains in the queue. |
+| Method | Initial Queue | Example | Result | Notes |
+|-|-|-|-|-|
+| `void Enqueue(TItem item, TPriority priority)` | `{"Items": [], "UserComparer": {}}` |`queue.Enqueue("Some Value", 0)` | `{"Items": [{Item: "Some Value", Priority: 0}], "UserComparer": {}}` | `{Item: "Some Value", Priority: 0}` is added to the queue. |
+| `TItem Dequeue()` | `{"Items": [{Item: "Some Value", Priority: 0}], "UserComparer": {}}` | `queue.Dequeue()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` is removed from the queue. |
+| `TItem Peek()` | `{"Items": [{Item: "Some Value", Priority: 0}], "UserComparer": {}}` | `queue.Peek()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` remains in the queue. |
 
 ## Exceptions
 
-The exceptions thrown by the block can be found below:
+The exceptions thrown by the data type can be found below:
 
 | Name     | Description |
 |----------|----------|
@@ -67,7 +67,7 @@ The following table shows some of the ways that a `QueueWithPriority<TItem, TPri
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
 | Use a `QueueWithPriority<TItem, TPriority>` constructor | `new QueueWithPriority<string,int>()`                   | `{"Items": [], "UserComparer": {}}`            | Expression | Priority type must implement [IComparer][] because the [default][] type [Comparer][] is used to sort by priority. |
-|                              | `new QueueWithPriority<string, object>(new ExampleObjectComparer())`                   | `{"Items": [], "UserComparer": Example.ObjectComparer}`            | Expression | A [Comparer][] for the priority type must be included. |
+|                              | `new QueueWithPriority<string, object>(new ExampleObjectComparer())`                   | `{"Items": [], "UserComparer": Example.ObjectComparer}`            | Expression | A [Comparer][] for the [TPriority][] type must be included. |
 
 ### Known Limitations
 
