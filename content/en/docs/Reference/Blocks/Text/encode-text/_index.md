@@ -1,5 +1,5 @@
 ---
 title: "Encode Text"
 linkTitle: "Encode Text"
-description: "Encode text to a specified format (e.g. `\"base64\"`)."
+description: "Encode text to and from a specified format (e.g. `\"Base64\"`)."
 ---
