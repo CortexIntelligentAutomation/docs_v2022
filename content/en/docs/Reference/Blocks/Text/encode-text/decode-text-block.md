@@ -160,6 +160,7 @@ When decoding using the `HTML` [Format][Format Property], any semicolon that is 
 [TextEncodingFormat]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.MainDoc" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
+[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.MainDoc" >}}
 
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 

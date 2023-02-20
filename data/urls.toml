@@ -1524,6 +1524,10 @@
                 MainDoc = "/docs/reference/exceptions/text/regex/"
                     [Cortex.Reference.Exceptions.Text.Regex.RegexParsingFailedException]
                         MainDoc = "/docs/reference/exceptions/text/regex/regexparsingfailedexception/"
+            [Cortex.Reference.Exceptions.Text.Encode]
+                MainDoc = "/docs/reference/exceptions/text/encode/"
+                    [Cortex.Reference.Exceptions.Text.Encode.TextDecodingException]
+                        MainDoc = "/docs/reference/exceptions/text/encode/textdecodingexception/"
             [Cortex.Reference.Exceptions.Ssh]
                 MainDoc = "/docs/reference/exceptions/ssh/"
                 SshClientException = "/docs/reference/exceptions/ssh/sshclientexception/"
