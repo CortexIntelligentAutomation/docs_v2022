@@ -14,6 +14,8 @@ There are currently 6 possible encoding formats for use with the text encode and
 
 ## Values
 
+DECIDE WHICH FORMAT IS BETTER TABLE OR HEADING BASED
+
 |Format|Details|
 |------|-------|
 |Base64|Base64 encoding format.|
