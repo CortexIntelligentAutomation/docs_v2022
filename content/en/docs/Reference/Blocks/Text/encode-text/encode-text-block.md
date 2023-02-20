@@ -12,11 +12,11 @@ description: "Encodes text to a specified format (e.g. `\"Base64\"`)."
 
 ## Description
 
-Converts [Text][Text Property] to a specified format.
+Converts [Text][Text Property] to a specified [Format][Format Property].
 
 ## Examples
 
-### Text Encoded to [Base64][]
+### Text Encoded to Base64
 
 This example will convert `"The quick brown fox jumps over the lazy dog"` to [Base64][].
 
@@ -35,7 +35,7 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to [Base64][] will resu
 "VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="
 ```
 
-### Text Encoded to [Hex][]
+### Text Encoded to Hex
 
 This example will convert `"The quick brown fox jumps over the lazy dog"` to [Hex][].
 
@@ -54,7 +54,7 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to [Hex][] will result 
 "54686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f67"
 ```
 
-### Text Encoded to [HTML][]
+### Text Encoded to HTML
 
 This example will convert `"¡The quick brown fox jumps over the lazy dog!<>"` to [HTML][].
 
@@ -130,7 +130,6 @@ If [Text][Text Property] is `null` or empty (i.e. `""`), no operation is perform
 [HTML]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Html" >}}
 [Base64]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Base64" >}}
 [Hex]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Hex" >}}
-
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
 
