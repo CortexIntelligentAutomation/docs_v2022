@@ -1,7 +1,7 @@
 ---
 title: "Encode Text"
 linkTitle: "Encode Text"
-description: "Encodes text to a specified format (e.g. `\"base64\"`)."
+description: "Encodes text to a specified format (e.g. `\"Base64\"`)."
 ---
 
 {{< figure src="/blocks/text-encode-text-block-icon.png" alt="Icon" class="block-icon" >}}
@@ -16,9 +16,9 @@ Converts [Text][Text Property] to a specified format.
 
 ## Examples
 
-### Text Encoded to Base64
+### Text Encoded to [Base64][]
 
-This example will convert `"The quick brown fox jumps over the lazy dog"` to Base64.
+This example will convert `"The quick brown fox jumps over the lazy dog"` to [Base64][].
 
 #### Properties
 
@@ -29,15 +29,15 @@ This example will convert `"The quick brown fox jumps over the lazy dog"` to Bas
 
 #### Result
 
-Encoding `"The quick brown fox jumps over the lazy dog"` to Base64 will result in the variable `($)Text` being updated to the following:
+Encoding `"The quick brown fox jumps over the lazy dog"` to [Base64][] will result in the variable `($)Text` being updated to the following:
 
 ```json
 "VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="
 ```
 
-### Text Encoded to Hex
+### Text Encoded to [Hex][]
 
-This example will convert `"The quick brown fox jumps over the lazy dog"` to Hex.
+This example will convert `"The quick brown fox jumps over the lazy dog"` to [Hex][].
 
 #### Properties
 
@@ -48,15 +48,15 @@ This example will convert `"The quick brown fox jumps over the lazy dog"` to Hex
 
 #### Result
 
-Encoding `"The quick brown fox jumps over the lazy dog"` to Hex will result in the variable `($)Text` being updated to the following:
+Encoding `"The quick brown fox jumps over the lazy dog"` to [Hex][] will result in the variable `($)Text` being updated to the following:
 
 ```json
 "54686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f67"
 ```
 
-### Text Encoded to HTML
+### Text Encoded to [HTML][]
 
-This example will convert `"¡The quick brown fox jumps over the lazy dog!<>"` to HTML.
+This example will convert `"¡The quick brown fox jumps over the lazy dog!<>"` to [HTML][].
 
 #### Properties
 
@@ -67,7 +67,7 @@ This example will convert `"¡The quick brown fox jumps over the lazy dog!<>"` t
 
 #### Result
 
-Encoding `"The quick brown fox jumps over the lazy dog"` to HTML will result in the variable `($)Text` being updated to the following:
+Encoding `"The quick brown fox jumps over the lazy dog"` to [HTML][] will result in the variable `($)Text` being updated to the following:
 
 ```json
 "&iexcl;The quick brown fox jumps over the lazy dog!&lt;&gt;"
@@ -79,7 +79,7 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to HTML will result in 
 
 ### Text
 
-The [Text][Text Property] to Encode to the specified format.
+The [Text][Text Property] to Encode to the specified [Format][Format Property].
 
 | | |
 |--------------------|---------------------------|
@@ -113,7 +113,7 @@ The exceptions thrown by the block can be found below:
 
 ### Encoding to Base64
 
-When Encoding to base64 a new line character is added every 76 characters
+When Encoding to Base64 a new line character is added every 76 characters.
 
 ### Null or empty Text
 
@@ -127,6 +127,10 @@ If [Text][Text Property] is `null` or empty (i.e. `""`), no operation is perform
 
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 [TextEncodingFormat]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.MainDoc" >}}
+[HTML]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Html" >}}
+[Base64]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Base64" >}}
+[Hex]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Hex" >}}
+
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
 
