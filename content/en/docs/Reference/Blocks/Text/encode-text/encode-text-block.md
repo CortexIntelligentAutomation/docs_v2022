@@ -119,6 +119,10 @@ When Encoding to Base64 a new line character is added every 76 characters.
 
 If [Text][Text Property] is `null` or empty (i.e. `""`), no operation is performed.
 
+### Round-Tripping
+
+It should be possible to pass the text created by a Decode Text block to this block, and then pass the text created by this block back to an Decode Text Block; this is called round-tripping.
+
 [Text Property]: {{< ref "#text" >}}
 [Format Property]: {{< ref "#format" >}}
 
