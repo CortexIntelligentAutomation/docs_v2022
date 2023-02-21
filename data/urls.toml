@@ -1395,7 +1395,7 @@
                 [Cortex.Reference.DataTypes.Text.StringSplitOptions]
                     MainDoc = "/docs/reference/data-types/text/stringsplitoptions"
                 [Cortex.Reference.DataTypes.Text.TextDecodingErrorCode]
-                    MainDoc = "/docs/reference/data-types/text/textencodingformat"
+                    MainDoc = "/docs/reference/data-types/text/textdecodingerrorcode"
                 [Cortex.Reference.DataTypes.Text.TextEncodingFormat]
                     MainDoc = "/docs/reference/data-types/text/textencodingformat"
                     Base64 = "/docs/reference/data-types/text/textencodingformat/#base64"
