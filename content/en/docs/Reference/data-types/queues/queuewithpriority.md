@@ -12,7 +12,7 @@ description: "A data type that operates like a Priority Queue, but preserves fir
 
 A data type that operates like a [PriorityQueue][], but preserves first-in-first-out between items of the same priority.
 
-When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, a priority value can be provided to prioritise some items over others when dequeuing.
+When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority][] can be used to order items within the queue.
 
 | | |
 |-|-|
@@ -20,15 +20,15 @@ When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, a priority 
 | **Name:**              | `QueueWithPriority<TItem, TPriority>`                                           |
 | **Full Name:**         | `DataTypes.Queues.QueueWithPriority<TItem, TPriority>`                          |
 | **Alias:**             | N/A                                                           |
-| **Description:**       | A data type that operates like a [PriorityQueue][], but preserves first-in-first-out between items of the same priority. When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, a priority value can be provided to prioritise some items over others when dequeuing.|
+| **Description:**       | A data type that operates like a [PriorityQueue][], but preserves first-in-first-out between items of the same priority. When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority][] can be used to order items within the queue.|
 | **Size:**              | Varies                                                        |
 | **Default Value:**     | `null`                                                        |
-| **Can be used as:**    | `Object`, `dynamic`                                           |
+| **Can be used as:**    | `QueueWithPriority<TItem, TPriority>`, `Object`, `dynamic`                                           |
 | **Can be cast to:**    | N/A                                                           |
 
 ## Properties
 
-### UserComparer
+### PriorityComparer
 
 The [IComparer][] used to compare [TPriority][] values.
   
@@ -37,7 +37,7 @@ The [IComparer][] used to compare [TPriority][] values.
 | Data Type | [IComparer][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Variable][] |
-| Default Value | `($)UserComparer` with no value. |
+| Default Value | `($)PriorityComparer` with no value. |
 
 ## Methods
 
@@ -45,9 +45,9 @@ The following table shows the methods included in `QueueWithPriority<TItem, TPri
 
 | Method | Initial Queue | Example | Result | Notes |
 |-|-|-|-|-|
-| `void Enqueue(TItem item, TPriority priority)` | `{"Items": [], "UserComparer": {}}` |`queue.Enqueue("Some Value", 0)` | `{"Items": [{Item: "Some Value", Priority: 0}], "UserComparer": {}}` | `{Item: "Some Value", Priority: 0}` is added to the queue. |
-| `TItem Dequeue()` | `{"Items": [{Item: "Some Value", Priority: 0}], "UserComparer": {}}` | `queue.Dequeue()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` is removed from the queue. |
-| `TItem Peek()` | `{"Items": [{Item: "Some Value", Priority: 0}], "UserComparer": {}}` | `queue.Peek()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` remains in the queue. |
+| `void Enqueue(TItem item, TPriority priority)` | `{"Items": [], "PriorityComparer": {}}` |`queue.Enqueue("Some Value", 0)` | `{"Items": [{Item: "Some Value", Priority: 0}], "PriorityComparer": {}}` | `{Item: "Some Value", Priority: 0}` is added to the queue. |
+| `TItem Dequeue()` | `{"Items": [{Item: "Some Value", Priority: 0}], "PriorityComparer": {}}` | `queue.Dequeue()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` is removed from the queue. |
+| `TItem Peek()` | `{"Items": [{Item: "Some Value", Priority: 0}], "PriorityComparer": {}}` | `queue.Peek()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` remains in the queue. |
 
 ## Exceptions
 
@@ -56,7 +56,7 @@ The exceptions thrown by the data type can be found below:
 | Name     | Description |
 |----------|----------|
 | [ArgumentException][] | Thrown when [TPriority][] does not implement [IComparer][]. |
-| [ArgumentNullException][] | Thrown when [UserComparer][UserComparer Property] is `null`. |
+| [ArgumentNullException][] | Thrown when [PriorityComparer][PriorityComparer Property] is `null`. |
 
 ## Remarks
 
@@ -66,8 +66,8 @@ The following table shows some of the ways that a `QueueWithPriority<TItem, TPri
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `QueueWithPriority<TItem, TPriority>` constructor | `new QueueWithPriority<string,int>()`                   | `{"Items": [], "UserComparer": {}}`            | Expression | Priority type must implement [IComparer][] because the [default][] type [Comparer][] is used to sort by priority. |
-|                              | `new QueueWithPriority<string, object>(new ExampleObjectComparer())`                   | `{"Items": [], "UserComparer": Example.ObjectComparer}`            | Expression | A [Comparer][] for the [TPriority][] type must be included. |
+| Use a `QueueWithPriority<TItem, TPriority>` constructor | `new QueueWithPriority<string,int>()`                   | `{"Items": [], "PriorityComparer": {}}`            | Expression | Priority type must implement [IComparer][] because the [default][] type [Comparer][] is used to sort by priority. |
+|                              | `new QueueWithPriority<string, object>(new ExampleObjectComparer())`                   | `{"Items": [], "PriorityComparer": Example.ObjectComparer}`            | Expression | A [Comparer][] for the [TPriority][] type must be included. |
 
 ### Known Limitations
 
@@ -89,7 +89,7 @@ None
 * [IComparer][]
 * [Comparer][]
 
-[UserComparer Property]: {{< ref "#usercomparer" >}}
+[PriorityComparer Property]: {{< ref "#PriorityComparer" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
 [ArgumentNullException]: {{< url "MSDocs.DotNet.Api.System.ArgumentNullException" >}}
