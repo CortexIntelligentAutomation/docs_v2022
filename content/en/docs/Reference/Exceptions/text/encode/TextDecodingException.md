@@ -8,7 +8,7 @@ description: "The exception thrown when an error occur while decoding text."
 
 <p class="namespace">(Cortex.Exceptions.Text.Encode.TextDecodingException)</p>
 
-The exception thrown when a property is provided with an invalid regex value.
+The exception thrown when an error occurs while decoding text.
 
 There are multiple reasons that this exception can be thrown:
 
