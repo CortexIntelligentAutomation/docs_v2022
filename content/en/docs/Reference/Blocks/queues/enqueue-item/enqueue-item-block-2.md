@@ -132,7 +132,7 @@ The [Queue][Queue Property] to add the [Item][Item Property] to.
   
 | | |
 |--------------------|---------------------------|
-| Data Type | [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
+| Data Type | [QueueWithPriority][]&lt;[TItem][], [TPriority][]&gt; |
 | Property Type | [InputOutput][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Variable][] |

@@ -34,7 +34,7 @@ The [IComparer][] used to compare [TPriority][] values.
   
 | | |
 |--------------------|---------------------------|
-| Data Type | [IComparer][] |
+| Data Type | [IComparer][]&lt;[TPriority][]&gt; |
 | Is [Advanced][] | `false` |
 | Default Editor | [Variable][] |
 | Default Value | `($)PriorityComparer` with no value. |
