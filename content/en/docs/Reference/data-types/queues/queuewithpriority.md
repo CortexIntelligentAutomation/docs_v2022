@@ -77,7 +77,7 @@ None
 
 ### Related Data Types
 
-None
+* [IComparer][]
 
 ### Related Concepts
 
