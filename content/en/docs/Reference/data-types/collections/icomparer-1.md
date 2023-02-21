@@ -26,7 +26,7 @@ Any data type representing a comparer that can be used to order two values of [T
 
 ## Remarks
 
-### Most Common IList&lt;TItem&gt; Data Types
+### Most Common IComparer&lt;TPriority&gt; Data Types
 
 Any of the following data types can be used where an `IComparer<TPriority>` is required:
 
@@ -40,8 +40,8 @@ None
 
 ### External Documentation
 
-* [IComparer][]
-* [Comparer][]
+* [System.Collections.Generic.IComparer&lt;T>][IComparer]
+* [System.Collections.Generic.Comparer&lt;T>][Comparer]
 
 [TPriority]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
 

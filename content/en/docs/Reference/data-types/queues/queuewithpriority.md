@@ -85,9 +85,8 @@ None
 
 ### External Documentation
 
-* [PriorityQueue][]
-* [IComparer][]
-* [Comparer][]
+* [System.Collections.Generic.PriorityQueue&lt;TElement,TPriority>][PriorityQueue]
+* [System.Collections.Generic.Comparer&lt;T>][Comparer]
 
 [PriorityComparer Property]: {{< ref "#PriorityComparer" >}}
 
@@ -95,7 +94,7 @@ None
 [ArgumentNullException]: {{< url "MSDocs.DotNet.Api.System.ArgumentNullException" >}}
 
 [PriorityQueue]: {{< url "MSDocs.DotNet.Api.System.PriorityQueue.MainDoc" >}}
-[IComparer]: {{< url "MSDocs.DotNet.Api.System.IComparer.MainDoc" >}}
+[IComparer]: {{< url "Cortex.Reference.DataTypes.Collections.IComparer.MainDoc" >}}
 [Comparer]: {{< url "MSDocs.DotNet.Api.System.Comparer.MainDoc" >}}
 [default]: {{< url "MSDocs.DotNet.Api.System.Comparer.Default" >}}
 

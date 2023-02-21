@@ -1044,6 +1044,8 @@
                 MainDoc = "/docs/reference/data-types/collections"
                 [Cortex.Reference.DataTypes.Collections.Array]
                     MainDoc = "/docs/reference/data-types/collections/array"
+                [Cortex.Reference.DataTypes.Collections.IComparer]
+                    MainDoc = "/docs/reference/data-types/collections/icomparer-1"
                 [Cortex.Reference.DataTypes.Collections.IDictionary]
                     MainDoc = "/docs/reference/data-types/collections/idictionary-2"
                 [Cortex.Reference.DataTypes.Collections.Dictionary]
@@ -1874,7 +1876,7 @@
             InstantiatingAnEnum = "https://learn.microsoft.com/en-us/dotnet/api/system.enum?#instantiating-an-enumeration-type"
             FormattingEnumerationValues = "https://learn.microsoft.com/en-us/dotnet/api/system.enum?#formatting-enumeration-values"
         [MSDocs.DotNet.Api.System.IComparer]
-            MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer"
+            MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1"
         [MSDocs.DotNet.Api.System.Int16]
             MainDoc = "https://learn.microsoft.com/en-us/dotnet/api/system.int16"
             MaxValue = "https://learn.microsoft.com/en-us/dotnet/api/system.int16.maxvalue"
