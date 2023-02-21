@@ -10,13 +10,13 @@ description: "The available types of encoding format available for use with text
 
 ## Summary
 
-The `TextEncodingFormat` data type is used to represent an encoding format that is used in the Text Encode and Decode blocks.
+The `TextEncodingFormat` data type is used to represent an encoding format that is used in the [Encode Text][] and [Decode Text][] blocks.
 
 `TextEncodingFormat` is an [enum][Working with Enums] data type, which means it has a defined set of values, where each value has an associated [String][] name and [Int32][] value.
 
 | | |
 |-|-|
-| **Category:**          | Email                                                  |
+| **Category:**          | Text                                                  |
 | **Name:**              | `TextEncodingFormat`                                |
 | **Full Name:**         | `Cortex.DataTypes.Text.Encode.TextEncodingFormat`         |
 | **Alias:**             | N/A                                                    |
@@ -137,9 +137,8 @@ The following table shows some of the ways that an `TextEncodingFormat` can be c
 
 ### Related Blocks
 
-[Encode Text]
-
-[Decode Text]
+- [Encode Text][]
+- [Decode Text][]
 
 ### Related Data Types
 

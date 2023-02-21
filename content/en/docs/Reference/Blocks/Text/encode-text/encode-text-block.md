@@ -18,7 +18,7 @@ Converts [Text][Text Property] to a specified [Format][Format Property].
 
 ### Text Encoded to Base64
 
-This example will convert `"The quick brown fox jumps over the lazy dog"` to [Base64][].
+This example will encode the [Text][Text Property] `"The quick brown fox jumps over the lazy dog"` to [Base64][].
 
 #### Properties
 
@@ -37,7 +37,7 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to [Base64][] will resu
 
 ### Text Encoded to Hex
 
-This example will convert `"The quick brown fox jumps over the lazy dog"` to [Hex][].
+This example will encode the [Text][Text Property] `"The quick brown fox jumps over the lazy dog"` to [Hex][].
 
 #### Properties
 
@@ -56,7 +56,7 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to [Hex][] will result 
 
 ### Text Encoded to HTML
 
-This example will convert `"¡The quick brown fox jumps over the lazy dog!<>"` to [HTML][].
+This example will encode the [Text][Text Property] `"¡The quick brown fox jumps over the lazy dog!<>"` to [HTML][].
 
 #### Properties
 
@@ -121,10 +121,11 @@ If [Text][Text Property] is `null` or empty (i.e. `""`), no operation is perform
 
 ### Round-Tripping
 
-It should be possible to pass the text created by a Decode Text block to this block, and then pass the text created by this block back to an Decode Text Block; this is called round-tripping.
+It should be possible to pass the text created by a [Decode Text][] block to this block, and then pass the text created by this block back to an [Decode Text][] block; this is called round-tripping.
 
 [Text Property]: {{< ref "#text" >}}
 [Format Property]: {{< ref "#format" >}}
+[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.DecodeText.MainDoc" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
