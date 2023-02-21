@@ -91,7 +91,7 @@ The [Text][Text Property] to Encode to the specified [Format][Format Property].
 
 ### Format
 
-The [Format][Format Property] used to perform the encoding of the [Text][Text Property].
+The [Format][Format Property] with which the given [Text][Text Property] will be encoded using.
 
 | | |
 |--------------------|---------------------------|
