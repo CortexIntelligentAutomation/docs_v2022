@@ -127,8 +127,13 @@ The following table shows some of the ways that an `TextEncodingFormat` can be c
 | Use `Convert.ToInt32`                 | `Convert.ToInt32(TextEncodingFormat.Base64)`   | `0` | Expression | Converts `TextEncodingFormat.Base64` to `0`. See [Convert.ToInt32][] |
 |                                       | `Convert.ToInt32(TextEncodingFormat.Hex)`   | `2` | Expression | Converts `TextEncodingFormat.Hex` to `2`. See [Convert.ToInt32][] |
 
-
 ## See Also
+
+### Property Editor Support
+
+- The Expression Editor is available for [Input][] properties where the data type is `TextEncodingFormat`.
+- The Literal Editor is available for [Input][] properties where the data type is `TextEncodingFormat`.
+- The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `TextEncodingFormat`.
 
 ### Related Blocks
 
@@ -136,8 +141,22 @@ The following table shows some of the ways that an `TextEncodingFormat` can be c
 
 [Decode Text]
 
+### Related Data Types
+
+- [Int32][]
+- [String][]
+
+### Related Concepts
+
+- [Explicit Casting][]
+- [Working with Enums][]
+
 [Decode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.DecodeText.MainDoc" >}}
 [Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}
+
+[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
