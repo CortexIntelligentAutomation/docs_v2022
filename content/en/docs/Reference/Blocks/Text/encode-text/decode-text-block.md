@@ -151,6 +151,14 @@ When decoding using the `HTML` [Format][Format Property], any ampersand that is 
 
 When decoding using the `HTML` [Format][Format Property], any semicolon that is not part of an entity will be treated as a literal value e.g. `Examplesomething;` will decode to `Examplesomething;`
 
+### HTML decoding named entities
+
+When decoding using the `HTML` [Format][Format Property], any HTML5 named entities e.g. `&phi;` will be removed. 
+
+### Round-Tripping
+
+It should be possible to pass the text created by an [Encode Text block][Encode Text] to this block, and then pass the text created by this block back to an [Encode Text block][Encode Text]; this is called round-tripping.
+
 [Text Property]: {{< ref "#text" >}}
 [Format Property]: {{< ref "#format" >}}
 
@@ -176,3 +184,5 @@ When decoding using the `HTML` [Format][Format Property], any semicolon that is 
 [InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.InvalidBase64" >}}
 [InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.InvalidHex" >}}
 [InvalidBase64URL]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.InvalidBase64URL" >}}
+
+[Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}

@@ -29,7 +29,7 @@ Please click the HelpLink for more information on how to fix this."
 
 #### How to fix
 
-Provide a [String][] without invalid characters such as `?`
+Provide a [String][] containing only valid characters e.g. `A–Z` , `a–z` , `0–9` , `+` , `/` and `=`. 
 
 ### Odd number of characters using Hex {#300}
 
@@ -55,7 +55,7 @@ Please click the HelpLink for more information on how to fix this."
 
 #### How to fix
 
-Provide a [String][] without invalid characters such as `?`
+Provide a [String][] containing only valid characters e.g. `A–Z` , `a–z` , `0–9` , `+` , `/` and `=`.
 
 ## Properties
 
