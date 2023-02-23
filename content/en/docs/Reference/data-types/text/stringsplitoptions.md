@@ -8,18 +8,16 @@ description: "Used to specify settings for splitting text (i.e. whether to inclu
 
 <p class="namespace">(System.StringSplitOptions)</p>
 
-<img src="/images/work-in-progress.jpg">
-
 ## Summary
 
 Specifies settings for splitting text to manipulate whitespaces in resulting text.
 
 | | |
 |-|-|
-| **Category:**          | Text                                                  |
-| **Name:**              | `StringSplitOptions`                                |
-| **Full Name:**         | `System.StringSplitOptions`         |
-| **Alias:**             | N/A                                                    |
+| **Category:**          | Text                                                     |
+| **Name:**              | `StringSplitOptions`                                     |
+| **Full Name:**         | `System.StringSplitOptions`                              |
+| **Alias:**             | N/A                                                      |
 | **Description:**       | StringSplitOptions defines the formatting of the resulting list when using string.split. |
 | **Size:**              | `4` bytes                                              |
 | **Default Value:**     | `(StringSplitOptions)0`                             |
@@ -115,23 +113,37 @@ The following table shows some of the ways that an `StringSplitOptions` can be c
 
 ### Property Editor Support
 
+* The Expression Editor is available for [Input][] properties where the data type is `StringSplitOptions`.
+* The Literal Editor is available for [Input][] properties where the data type is `StringSplitOptions`.
+* The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `StringSplitOptions`.
+
 ### Known Limitations
 
 Currently only possible to both trim text and remove empty whitespaces in the expression editor by using `(StringSplitOptions)3`.
 
 ## See Also
 
+### Related Blocks
+
+* [Split Text][]
+
 ### Related Data Types
 
-- [Int32][]
-- [String][]
+* [Int32][]
+* [String][]
 
 ### Related Concepts
 
-- [Explicit Casting][]
-- [Working with Enums][]
+* [Explicit Casting][]
+* [Working with Enums][]
 
 ### External Documentation
+
+[Split Text]: {{< url "Cortex.Reference.Blocks.Text.SplitText.SplitText.MainDoc" >}}
+
+[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
