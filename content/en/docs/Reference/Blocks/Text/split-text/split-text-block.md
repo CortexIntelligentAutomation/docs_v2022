@@ -125,6 +125,7 @@ Currently supported values for the [Split Options][SplitOptions Property] proper
 
 * StringSplitOptions.None (Default) - empty entries are included in [Values][Values Property].
 * StringSplitOptions.RemoveEmptyEntries - empty entries are excluded from [Values][Values Property].
+* StringSplitOptions.TrimEntries - empty entries are included but whitespaces at the beginning or end of a [Seperator][Separator Property] are removed from [Values][Values Property].
   
 | | |
 |--------------------|---------------------------|
