@@ -685,6 +685,12 @@
                     MainDoc = "/docs/reference/blocks/powershell/execute-powershell-script/"
                     [Cortex.Reference.Blocks.PowerShell.ExecutePowerShellScript.ExecutePowerShellScript]
                         MainDoc = "/docs/reference/blocks/powershell/execute-powershell-script/execute-powershell-script-block-1"
+            [Cortex.Reference.Blocks.Queues]
+                MainDoc = "/docs/reference/blocks/queues/"
+                [Cortex.Reference.Blocks.Queues.EnqueueItem]
+                    MainDoc = "/docs/reference/blocks/queues/enqueue-item/"
+                    [Cortex.Reference.Blocks.Queues.EnqueueItem.EnqueueItemBlock]
+                        MainDoc = "/docs/reference/blocks/queues/enqueue-item/enqueue-item-block-2"
             [Cortex.Reference.Blocks.Ssh]
                 MainDoc = "/docs/reference/blocks/ssh/"
                 [Cortex.Reference.Blocks.Ssh.ExecuteSshCommand]

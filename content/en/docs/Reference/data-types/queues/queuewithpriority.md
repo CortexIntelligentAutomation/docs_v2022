@@ -6,22 +6,21 @@ description: "A data type that operates like a Priority Queue, but preserves fir
 
 # {{% param title %}}
 
-<p class="namespace">(DataTypes.Queues.QueueWithPriority`2)</p>
+<p class="namespace">(Cortex.DataTypes.Queues.QueueWithPriority`2)</p>
 
 ## Summary
 
-A data type that operates like a [PriorityQueue][], but preserves first-in-first-out between items of the same priority.
+The `QueueWithPriority<TItem, TPriority>` data type is used to represent a queue which orders items by priority (like a [PriorityQueue][]), but preserves first-in-first-out behaviour for items with the same priority.
 
-When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority][] can be used to order items within the queue.
+When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority][] is used to order items within the queue.
 
 | | |
 |-|-|
 | **Category:**          | Queues                                                        |
 | **Name:**              | `QueueWithPriority<TItem, TPriority>`                                           |
-| **Full Name:**         | `DataTypes.Queues.QueueWithPriority<TItem, TPriority>`                          |
+| **Full Name:**         | `Cortex.DataTypes.Queues.QueueWithPriority<TItem, TPriority>`                          |
 | **Alias:**             | N/A                                                           |
-| **Description:**       | A data type that operates like a [PriorityQueue][], but preserves first-in-first-out between items of the same priority. When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority][] can be used to order items within the queue.|
-| **Size:**              | Varies                                                        |
+| **Description:**       | A queue which orders items by priority (like a [PriorityQueue][]), but preserves first-in-first-out behaviour for items with the same priority. When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority][] is used to order items within the queue.|
 | **Default Value:**     | `null`                                                        |
 | **Can be used as:**    | `QueueWithPriority<TItem, TPriority>`, `Object`, `dynamic`                                           |
 | **Can be cast to:**    | N/A                                                           |
@@ -30,7 +29,7 @@ When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority]
 
 ### PriorityComparer
 
-The [IComparer][] used to compare [TPriority][] values.
+The [IComparer][]&lt;[TPriority][]&gt; used to compare [TPriority][] values.
   
 | | |
 |--------------------|---------------------------|
@@ -39,23 +38,13 @@ The [IComparer][] used to compare [TPriority][] values.
 | Default Editor | [Variable][] |
 | Default Value | `($)PriorityComparer` with no value. |
 
-## Methods
-
-The following table shows the methods included in `QueueWithPriority<TItem, TPriority>`.
-
-| Method | Initial Queue | Example | Result | Notes |
-|-|-|-|-|-|
-| `void Enqueue(TItem item, TPriority priority)` | `{"Items": [], "PriorityComparer": {}}` |`queue.Enqueue("Some Value", 0)` | `{"Items": [{Item: "Some Value", Priority: 0}], "PriorityComparer": {}}` | `{Item: "Some Value", Priority: 0}` is added to the queue. |
-| `TItem Dequeue()` | `{"Items": [{Item: "Some Value", Priority: 0}], "PriorityComparer": {}}` | `queue.Dequeue()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` is removed from the queue. |
-| `TItem Peek()` | `{"Items": [{Item: "Some Value", Priority: 0}], "PriorityComparer": {}}` | `queue.Peek()` | `"Some Value"` | `{Item: "Some Value", Priority: 0}` remains in the queue. |
-
 ## Exceptions
 
 The exceptions thrown by the data type can be found below:
 
 | Name     | Description |
 |----------|----------|
-| [ArgumentException][] | Thrown when [TPriority][] does not implement [IComparer][]. |
+| [ArgumentException][] | Thrown when [TPriority][] does not implement [IComparer][]&lt;[TPriority][]&gt;. |
 | [ArgumentNullException][] | Thrown when [PriorityComparer][PriorityComparer Property] is `null`. |
 
 ## Remarks
@@ -66,8 +55,8 @@ The following table shows some of the ways that a `QueueWithPriority<TItem, TPri
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `QueueWithPriority<TItem, TPriority>` constructor | `new QueueWithPriority<string,int>()`                   | `{"Items": [], "PriorityComparer": {}}`            | Expression | Priority type must implement [IComparer][] because the [default][] type [Comparer][] is used to sort by priority. |
-|                              | `new QueueWithPriority<string, object>(new ExampleObjectComparer())`                   | `{"Items": [], "PriorityComparer": Example.ObjectComparer}`            | Expression | A [Comparer][] for the [TPriority][] type must be included. |
+| Use a `QueueWithPriority<TItem, TPriority>` constructor | `new QueueWithPriority<string,int>()`                   | `{"Items": [], "PriorityComparer": {}}`            | Expression | This constructor will try and use the default comparer defined for [TPriority][], only data types that implement [IComparer][]&lt;[TPriority][]&gt; have a default comparer. <br> <br> If [TPriority][] does not implement [IComparer][]&lt;[TPriority][]&gt; it will not have a default comparer and throw an [ArgumentException][], in this case you must used the constructor in the example below to provide a valid comparer. |
+|                              | `new QueueWithPriority<string, string>(System.StringComparer.Ordinal)`                   | `{"Items": [], "PriorityComparer": {"_ignoreCase": false}}`           | Expression | This constructor will use the specified [IComparer][]&lt;[TPriority][]&gt; to order the items in the queue by priority. |
 
 ### Known Limitations
 
@@ -77,7 +66,7 @@ None
 
 ### Related Data Types
 
-* [IComparer][]
+* [IComparer][]&lt;[TPriority][]&gt;
 
 ### Related Concepts
 
@@ -86,7 +75,6 @@ None
 ### External Documentation
 
 * [System.Collections.Generic.PriorityQueue&lt;TElement,TPriority>][PriorityQueue]
-* [System.Collections.Generic.Comparer&lt;T>][Comparer]
 
 [PriorityComparer Property]: {{< ref "#PriorityComparer" >}}
 

@@ -18,8 +18,7 @@ Any data type representing a comparer that can be used to order two values of [T
 | **Name:**              | `IComparer<TPriority>`                                                |
 | **Full Name:**         | `System.Collections.Generic.IComparer<TPriority>`                     |
 | **Alias:**             | N/A                                                           |
-| **Description:**       | Any data type representing a comparer that can be used to order two values of [TPriority][]].                                                                    |
-| **Size:**              | Varies                                                        |
+| **Description:**       | Any data type representing a comparer that can be used to order two values of [TPriority][].                                                                    |
 | **Default Value:**     | `null`                                                        |
 | **Can be used as:**    | `IComparer<TPriority>`, `IComparer`, `Object`, `dynamic`      |
 | **Can be cast to:**    |  N/A                                                          |
@@ -41,7 +40,6 @@ None
 ### External Documentation
 
 * [System.Collections.Generic.IComparer&lt;T>][IComparer]
-* [System.Collections.Generic.Comparer&lt;T>][Comparer]
 
 [TPriority]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
 
