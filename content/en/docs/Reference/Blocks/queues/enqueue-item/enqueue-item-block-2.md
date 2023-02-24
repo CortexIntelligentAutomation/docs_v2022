@@ -189,7 +189,7 @@ None
 
 [default]: {{< url "MSDocs.DotNet.Api.System.Comparer.Default" >}}
 
-[QueueWithPriority]: {{< url "Cortex.Reference.DataTypes.Queues.QueueWithPriority.MainDoc" >}}
+[QueueWithPriority]: {{< url "Cortex.Reference.DataTypes.Collections.QueueWithPriority.MainDoc" >}}
 
 [CannotModifyReadOnlyListException]: {{< url "Cortex.Reference.Exceptions.Lists.CannotModifyReadOnlyListException.MainDoc" >}}
 [PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}

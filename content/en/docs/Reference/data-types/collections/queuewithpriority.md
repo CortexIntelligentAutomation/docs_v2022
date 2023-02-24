@@ -6,7 +6,7 @@ description: "A data type that operates like a Priority Queue, but preserves fir
 
 # {{% param title %}}
 
-<p class="namespace">(Cortex.DataTypes.Queues.QueueWithPriority`2)</p>
+<p class="namespace">(Cortex.DataTypes.Collections.QueueWithPriority`2)</p>
 
 ## Summary
 
@@ -18,7 +18,7 @@ When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority]
 |-|-|
 | **Category:**          | Queues                                                        |
 | **Name:**              | `QueueWithPriority<TItem, TPriority>`                                           |
-| **Full Name:**         | `Cortex.DataTypes.Queues.QueueWithPriority<TItem, TPriority>`                          |
+| **Full Name:**         | `Cortex.DataTypes.Collections.QueueWithPriority<TItem, TPriority>`                          |
 | **Alias:**             | N/A                                                           |
 | **Description:**       | A queue which orders items by priority (like a [PriorityQueue][]), but preserves first-in-first-out behaviour for items with the same priority. When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority][] is used to order items within the queue.|
 | **Default Value:**     | `null`                                                        |
@@ -64,6 +64,10 @@ None
 
 ## See Also
 
+### Related Blocks
+
+* [Enqueue Item][]
+
 ### Related Data Types
 
 * [IComparer][]&lt;[TPriority][]&gt;
@@ -90,3 +94,5 @@ None
 [TPriority]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
 
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+
+[Enqueue Item]: {{< url "Cortex.Reference.Blocks.Queues.EnqueueItem.EnqueueItemBlock.MainDoc" >}}

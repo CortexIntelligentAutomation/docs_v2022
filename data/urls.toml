@@ -1068,6 +1068,8 @@
                     MainDoc = "/docs/reference/data-types/collections/list-1"
                     CreateNew = "/docs/reference/data-types/collections/list-1#create-a-listlttitemgt"
                     ConvertToText = "/docs/reference/data-types/collections/list-1#convert-listlttitemgt-to-text"
+                [Cortex.Reference.DataTypes.Collections.QueueWithPriority]
+                    MainDoc = "/docs/reference/data-types/collections/queuewithpriority"
                 [Cortex.Reference.DataTypes.Collections.Structure]
                     MainDoc = "/docs/reference/data-types/collections/structure"
                     CreateNew = "/docs/reference/data-types/collections/structure#create-a-structure"
@@ -1346,9 +1348,6 @@
                     MainDoc = "/docs/reference/data-types/powershell/powershellwinrmsessiondetails"
                 [Cortex.Reference.DataTypes.PowerShell.Records]
                     MainDoc = "/docs/reference/data-types/powershell/records"
-            [Cortex.Reference.DataTypes.Queues]
-                [Cortex.Reference.DataTypes.Queues.QueueWithPriority]
-                    MainDoc = "/docs/reference/data-types/queues/queuewithpriority"
             [Cortex.Reference.DataTypes.SessionDetails]
                 MainDoc = "/docs/reference/data-types/session-details/"
                 [Cortex.Reference.DataTypes.SessionDetails.ServerDetails]
