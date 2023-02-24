@@ -118,7 +118,7 @@ Please see [Formatting enumeration values][] for further information.
 
 ### Convert TextEncodingFormat to a Number
 
-The following table shows some of the ways that an `TextEncodingFormat` can be converted to a number.
+The following table shows some of the ways that a `TextEncodingFormat` can be converted to a number.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|

@@ -10,7 +10,7 @@ description: "Used to represent an error code explaining the reason an `TextDeco
 
 ## Summary
 
-The `TextDecodingErrorCode` data type is used to represent an error code explaining the reason an [TextDecodingException][] occurred. For more information on the exception itself, see [TextDecodingException][].
+The `TextDecodingErrorCode` data type is used to represent an error code explaining the reason a [TextDecodingException][] occurred. For more information on the exception itself, see [TextDecodingException][].
 
 `TextDecodingErrorCode` is an [enum][Working with Enums] data type, which means it has a defined set of values, where each value has an associated [String][] name and [Int32][] value.
 
