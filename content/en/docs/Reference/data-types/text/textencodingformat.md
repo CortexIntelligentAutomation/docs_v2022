@@ -150,7 +150,7 @@ The following table shows some of the ways that a `TextEncodingFormat` can be co
 - [Explicit Casting][]
 - [Working with Enums][]
 
-[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.DecodeText.MainDoc" >}}
+[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.DecodeText.DecodeText.MainDoc" >}}
 [Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
