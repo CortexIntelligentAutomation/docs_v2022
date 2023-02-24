@@ -8,7 +8,7 @@ description: "Decodes text from a specified format (e.g. `\"Base64\"`)."
 
 # {{% param title %}}
 
-<p class="namespace">(Cortex.Blocks.Text.EncodeText.DecodeTextBlock)</p>
+<p class="namespace">(Cortex.Blocks.Text.DecodeText.DecodeTextBlock)</p>
 
 ## Description
 
