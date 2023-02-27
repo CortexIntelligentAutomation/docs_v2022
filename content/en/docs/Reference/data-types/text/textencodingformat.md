@@ -21,7 +21,6 @@ The `TextEncodingFormat` data type is used to represent an encoding format that 
 | **Full Name:**         | `Cortex.DataTypes.Text.Encode.TextEncodingFormat`         |
 | **Alias:**             | N/A                                                    |
 | **Description:**       | The encoding format used while encoding/decoding Text. |
-| **Size:**              | `4` bytes                                              |
 | **Default Value:**     | `(TextEncodingFormat)0`                             |
 | **Can be used as:**    | `TextEncodingFormat`, `Object`, `dynamic`           |
 | **Can be cast to:**    | `Int16` (e.g. `(Int16)TextEncodingFormat.Base64` or `(System.Int16)TextEncodingFormat.Base64` or `(short)TextEncodingFormat.Base64`)  |
@@ -134,11 +133,6 @@ The following table shows some of the ways that a `TextEncodingFormat` can be co
 - The Expression Editor is available for [Input][] properties where the data type is `TextEncodingFormat`.
 - The Literal Editor is available for [Input][] properties where the data type is `TextEncodingFormat`.
 - The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `TextEncodingFormat`.
-
-### Related Blocks
-
-- [Encode Text][]
-- [Decode Text][]
 
 ### Related Data Types
 

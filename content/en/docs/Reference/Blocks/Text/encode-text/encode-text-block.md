@@ -12,7 +12,7 @@ description: "Encodes text to a specified format (e.g. `\"Base64\"`)."
 
 ## Description
 
-Converts [Text][Text Property] to a specified [Format][Format Property].
+Encodes [Text][Text Property] to a specified [Format][Format Property].
 
 ## Examples
 
