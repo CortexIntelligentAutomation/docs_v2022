@@ -1,7 +1,7 @@
 ---
 title: "Peek Item"
 linkTitle: "Peek Item"
-description: "Peeks the queue and returns the item with minimal priority."
+description: "Gets the item with the minimal priority from a queue."
 ---
 
 {{< figure src="/blocks/queues-enqueue-block-icon.png" alt="Icon" class="block-icon" >}}
@@ -12,7 +12,7 @@ description: "Peeks the queue and returns the item with minimal priority."
 
 ## Description
 
-Gets the [Item][Item Property] with the lowest priority.
+Gets the [Item][Item Property] with the minimal priority from the queue.
 
 ## Examples
 
