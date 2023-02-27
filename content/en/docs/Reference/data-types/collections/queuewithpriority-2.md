@@ -1,12 +1,12 @@
 ---
-title: "QueueWithPriority"
-linkTitle: "QueueWithPriority"
-description: "A data type that operates like a Priority Queue, but preserves first-in-first-out between items of the same priority."
+title: "QueueWithPriority<TItem, TPriority>"
+linkTitle: "QueueWithPriority<TItem, TPriority>"
+description: "Used to represent a queue which orders items by priority and preserves first-in-first-out behaviour for items with the same priority."
 ---
 
 # {{% param title %}}
 
-<p class="namespace">(Cortex.DataTypes.Collections.QueueWithPriority`2)</p>
+<p class="namespace">(Cortex.DataTypes.Queues.QueueWithPriority&lt;TItem, TPriority&gt;)</p>
 
 ## Summary
 
@@ -16,9 +16,9 @@ When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority]
 
 | | |
 |-|-|
-| **Category:**          | Queues                                                        |
+| **Category:**          | Collections                                                        |
 | **Name:**              | `QueueWithPriority<TItem, TPriority>`                                           |
-| **Full Name:**         | `Cortex.DataTypes.Collections.QueueWithPriority<TItem, TPriority>`                          |
+| **Full Name:**         | `Cortex.DataTypes.Queues.QueueWithPriority<TItem, TPriority>`                          |
 | **Alias:**             | N/A                                                           |
 | **Description:**       | A queue which orders items by priority (like a [PriorityQueue][]), but preserves first-in-first-out behaviour for items with the same priority. When enqueuing items into the `QueueWithPriority<TItem, TPriority>`, [TPriority][] is used to order items within the queue.|
 | **Default Value:**     | `null`                                                        |
@@ -49,14 +49,28 @@ The exceptions thrown by the data type can be found below:
 
 ## Remarks
 
-### Create a QueueWithPriority
+### Create a QueueWithPriority&lt;TItem, TPriority&gt;
 
 The following table shows some of the ways that a `QueueWithPriority<TItem, TPriority>` can be created.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use a `QueueWithPriority<TItem, TPriority>` constructor | `new QueueWithPriority<string,int>()`                   | `{"Items": [], "PriorityComparer": {}}`            | Expression | This constructor will try and use the default comparer defined for [TPriority][], only data types that implement [IComparer][]&lt;[TPriority][]&gt; have a default comparer. <br> <br> If [TPriority][] does not implement [IComparer][]&lt;[TPriority][]&gt; it will not have a default comparer and throw an [ArgumentException][], in this case you must used the constructor in the example below to provide a valid comparer. |
+| Use a `QueueWithPriority<TItem, TPriority>` constructor | `new QueueWithPriority<string,int>()`                   | `{"Items": [], "PriorityComparer": {}}`            | Expression | This constructor will try and use the default comparer defined for [TPriority][]; only data types that implement [IComparer][]&lt;[TPriority][]&gt; have a default comparer. <br> <br> If [TPriority][] does not implement [IComparer][]&lt;[TPriority][]&gt; it will not have a default comparer and throw an [ArgumentException][], in this case you must use the constructor in the example below to provide a valid comparer. |
 |                              | `new QueueWithPriority<string, string>(System.StringComparer.Ordinal)`                   | `{"Items": [], "PriorityComparer": {"_ignoreCase": false}}`           | Expression | This constructor will use the specified [IComparer][]&lt;[TPriority][]&gt; to order the items in the queue by priority. |
+
+### Convert QueueWithPriority&lt;TItem, TPriority&gt; to Text
+
+The following table shows some of the ways that a `QueueWithPriority<TItem, TPriority>` can be converted to text.
+
+| Method | Example | Result | Editor&nbsp;Support | Notes |
+|-|-|-|-|-|
+| Use `Convert Object To Json` block    | where `Object` property has a `QueueWithPriority<string, int>` value of `{"Items": [{"Item": "Something","Priority": 1}],"PriorityComparer": {}}` | `"{\r\n  \"Items\": [\r\n    {\r\n      \"Item\": \"Something\",\r\n      \"Priority\": 1\r\n    }\r\n  ],\r\n  \"PriorityComparer\": {}\r\n}"` | N/A | See [Convert Object To Json][] |
+
+### Property Editor Support
+
+* The Expression Editor is available for [Input][] properties where the data type is `QueueWithPriority<TItem, TPriority>`.
+* The Literal Editor is not available for [Input][] properties where the data type is `QueueWithPriority<TItem, TPriority>`.
+* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `QueueWithPriority<TItem, TPriority>`.
 
 ### Known Limitations
 
@@ -64,13 +78,9 @@ None
 
 ## See Also
 
-### Related Blocks
-
-* [Enqueue Item][]
-
 ### Related Data Types
 
-* [IComparer][]&lt;[TPriority][]&gt;
+* [IComparer&lt;TPriority&gt;][IComparer]
 
 ### Related Concepts
 
@@ -87,12 +97,14 @@ None
 
 [PriorityQueue]: {{< url "MSDocs.DotNet.Api.System.PriorityQueue.MainDoc" >}}
 [IComparer]: {{< url "Cortex.Reference.DataTypes.Collections.IComparer.MainDoc" >}}
-[Comparer]: {{< url "MSDocs.DotNet.Api.System.Comparer.MainDoc" >}}
-[default]: {{< url "MSDocs.DotNet.Api.System.Comparer.Default" >}}
 
 [Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
 [TPriority]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
 
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 
-[Enqueue Item]: {{< url "Cortex.Reference.Blocks.Queues.EnqueueItem.EnqueueItemBlock.MainDoc" >}}
+[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+
+[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}

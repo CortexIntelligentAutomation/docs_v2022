@@ -18,7 +18,7 @@ Adds an [Item][Item Property] to a [Queue][Queue Property] at the specified [Pri
 
 ### Enqueue an Item to an empty Queue
 
-This example will enqueue `"Some Value"` with a priority of `0` to an empty [QueueWithPriority][].
+This example will enqueue `"Some Value"` with a priority of `0` to an empty [QueueWithPriority][]&lt;[String][], [Int32][]&gt;.
 
 #### Properties
 
@@ -48,7 +48,7 @@ Adding `"Some Value"` with priority `0` to `{"Items": [], "PriorityComparer": {}
 
 ### Enqueue an Item to Queue already containing Items
 
-This example will enqueue `"Some Value"` with a priority of `0` to a [QueueWithPriority][] that contains `"Element -1"` with a priority of `-1` and `"Element 1"` with a priority of `1`.
+This example will enqueue `"Some Value"` with a priority of `0` to a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Element -1"` with a priority of `-1` and `"Element 1"` with a priority of `1`.
 
 #### Properties
 
@@ -86,7 +86,7 @@ Adding `"Some Value"` with priority `0` to `{"Items": [{"Item": "Element -1", "P
 
 ### Enqueue an Item to Queue with the same Priority as an existing Item
 
-This example will enqueue `"Some Value"` with a priority of `1` to a [QueueWithPriority][] that contains `"Element -1"` with a priority of `-1` and `"Element 1"` with a priority of `1`.
+This example will enqueue `"Some Value"` with a priority of `1` to a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Element -1"` with a priority of `-1` and `"Element 1"` with a priority of `1`.
 
 #### Properties
 
