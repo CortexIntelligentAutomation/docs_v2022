@@ -684,7 +684,7 @@
     <lastmod>2022-09-21T18:17:10+01:00</lastmod>
   </url><url>
     <loc>/blog/2022/10/27/2022.9/</loc>
-    <lastmod>2023-02-22T16:29:48+00:00</lastmod>
+    <lastmod>2023-02-22T16:33:34+00:00</lastmod>
   </url><url>
     <loc>/blog/releases/2022.x/</loc>
     <lastmod>2022-10-12T14:55:47+01:00</lastmod>
@@ -761,11 +761,11 @@
     <loc>/docs/reference/data-types/conditional-logic/boolean/</loc>
     <lastmod>2022-09-12T10:26:10+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/dictionaries/cannotmodifyreadonlydictionaryexception/</loc>
-    <lastmod>2022-09-12T16:57:43+01:00</lastmod>
+    <loc>/docs/reference/exceptions/dictionaries/cannot-modify-read-only-dictionary-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/lists/cannotmodifyreadonlylistexception/</loc>
-    <lastmod>2022-09-12T16:57:43+01:00</lastmod>
+    <loc>/docs/reference/exceptions/lists/cannot-modify-read-only-list-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/concepts/working-with/text/casing/</loc>
     <lastmod>2023-01-11T09:55:24+00:00</lastmod>
@@ -791,8 +791,8 @@
     <loc>/docs/reference/data-types/data/command/</loc>
     <lastmod>2022-09-12T10:26:10+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/data/commandexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/data/command-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/data-types/data/commands/</loc>
     <lastmod>2022-09-12T10:26:10+01:00</lastmod>
@@ -873,7 +873,7 @@
     <lastmod>2022-09-16T10:30:55+01:00</lastmod>
   </url><url>
     <loc>/docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/</loc>
-    <lastmod>2022-09-16T10:30:55+01:00</lastmod>
+    <lastmod>2023-02-27T17:06:52+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/blocks/date-and-time/convert-date-time/convert-text-to-date-time-block/</loc>
     <lastmod>2022-09-16T10:30:55+01:00</lastmod>
@@ -1067,8 +1067,8 @@
     <loc>/docs/reference/blocks/files-and-folders/copy-folder/duplicate-folder-block/</loc>
     <lastmod>2022-09-16T10:30:55+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/lists/duplicatevalueexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/lists/duplicate-value-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/data-types/all/dynamic/</loc>
     <lastmod>2022-09-12T10:26:10+01:00</lastmod>
@@ -1211,8 +1211,8 @@
     <loc>/docs/reference/blocks/text/find-and-replace-text/find-and-replace-text-block/</loc>
     <lastmod>2022-09-16T10:30:55+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/flowexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/flow-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/data-types/flows/flowreference/</loc>
     <lastmod>2022-09-07T11:14:16+01:00</lastmod>
@@ -1505,17 +1505,17 @@
     <loc>/docs/reference/exceptions/flows/blocks/invalid-block-timeout-exception/</loc>
     <lastmod>2022-09-15T16:04:00+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/data/invalidconnectionstringexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/data/invalid-connection-string-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/files-and-folders/invalidfoldernameexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/files-and-folders/invalid-folder-name-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/flows/execution/invalidinputvariablesexception/</loc>
-    <lastmod>2022-09-07T11:14:16+01:00</lastmod>
+    <loc>/docs/reference/exceptions/flows/execution/invalid-input-variables-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/files-and-folders/invalidpathexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/files-and-folders/invalid-path-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/exceptions/flows/blocks/invalid-property-value-exception/</loc>
     <lastmod>2022-09-15T16:04:00+01:00</lastmod>
@@ -1574,17 +1574,17 @@
     <loc>/docs/reference/data-types/json/jsonserializersettings/</loc>
     <lastmod>2022-08-23T16:26:42+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/dictionaries/keynotpresentexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/dictionaries/key-not-present-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/dictionaries/keypresentexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/dictionaries/key-present-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/concepts/working-with/collections/keys/</loc>
     <lastmod>2022-09-12T15:57:36+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/dictionaries/keysnotpresentexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/dictionaries/keys-not-present-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/guides/cortex-gateway/settings/ldap-authorisation/</loc>
     <lastmod>2022-05-06T10:12:26+01:00</lastmod>
@@ -1667,8 +1667,8 @@
     <loc>/docs/reference/concepts/working-with/objects/</loc>
     <lastmod>2022-09-12T16:57:43+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/dictionaries/occurrencenotpresentexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/concepts/working-with/collections/occurrences/</loc>
     <lastmod>2022-09-12T15:57:36+01:00</lastmod>
@@ -1679,8 +1679,8 @@
     <loc>/docs/reference/data-types/data/odbcconnectiondetails/</loc>
     <lastmod>2022-09-12T10:26:10+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/files-and-folders/operationfailedexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/files-and-folders/operation-failed-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/blocks/microsoft365/outlook/</loc>
     <lastmod>2022-09-12T09:10:20+01:00</lastmod>
@@ -1724,8 +1724,8 @@
     <loc>/docs/reference/exceptions/common/property/property-item-count-exception/</loc>
     <lastmod>2022-09-21T14:02:48+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/decisions/propertynotnullableexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/decisions/property-not-nullable-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/exceptions/common/property/property-null-exception/</loc>
     <lastmod>2022-10-28T13:13:10+01:00</lastmod>
@@ -1733,11 +1733,11 @@
     <loc>/docs/reference/exceptions/common/property/property-value-out-of-range-exception/</loc>
     <lastmod>2022-09-21T13:43:46+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/powershell/psexception/</loc>
-    <lastmod>2022-12-07T17:00:46+00:00</lastmod>
+    <loc>/docs/reference/exceptions/powershell/ps-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/powershell/psremotingexception/</loc>
-    <lastmod>2022-12-07T17:00:46+00:00</lastmod>
+    <loc>/docs/reference/exceptions/powershell/ps-remoting-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/data-types/data/querycommand/</loc>
     <lastmod>2022-09-12T11:52:44+01:00</lastmod>
@@ -1760,8 +1760,8 @@
     <loc>/docs/reference/concepts/working-with/text/regex-syntax/</loc>
     <lastmod>2023-01-11T09:55:24+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/text/regex/regexparsingfailedexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/text/regex/regex-parsing-failed-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/guides/cortex-gateway/help/cortex-release-notes/</loc>
     <lastmod>2022-05-06T10:12:26+01:00</lastmod>
@@ -1997,11 +1997,11 @@
     <loc>/docs/reference/exceptions/ssh/</loc>
     <lastmod>2022-12-09T16:08:25+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/ssh/sshclientexception/</loc>
-    <lastmod>2022-12-09T16:08:25+00:00</lastmod>
+    <loc>/docs/reference/exceptions/ssh/ssh-client-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/ssh/sshresponseexception/</loc>
-    <lastmod>2022-12-09T16:08:25+00:00</lastmod>
+    <loc>/docs/reference/exceptions/ssh/ssh-response-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/data-types/ssh/sshsessiondetails/</loc>
     <lastmod>2022-12-09T16:08:25+00:00</lastmod>
@@ -2078,8 +2078,8 @@
     <loc>/docs/reference/data-types/date-and-time/timespan/</loc>
     <lastmod>2022-08-23T16:26:42+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/common/unencryptedtextexception/</loc>
-    <lastmod>2022-10-28T13:13:10+01:00</lastmod>
+    <loc>/docs/reference/exceptions/common/unencrypted-text-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/data-types/text/unicodeencoding/</loc>
     <lastmod>2022-08-23T16:26:42+01:00</lastmod>
@@ -2129,7 +2129,7 @@
     <loc>/docs/reference/exceptions/xml/</loc>
     <lastmod>2022-01-21T10:31:35+00:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/xml/xmlserializationexception/</loc>
-    <lastmod>2022-08-23T16:26:42+01:00</lastmod>
+    <loc>/docs/reference/exceptions/xml/xml-serialization-exception/</loc>
+    <lastmod>2023-02-27T16:49:07+00:00</lastmod>
   </url>
 </urlset>
