@@ -8,6 +8,8 @@ description: "The exception thrown when an error occur while decoding text."
 
 <p class="namespace">(Cortex.Exceptions.Text.Encode.TextDecodingException)</p>
 
+## Description
+
 The exception thrown when an error occurs while decoding text.
 
 There are multiple reasons that this exception can be thrown:
@@ -103,6 +105,39 @@ For `TextEncodingException` there are the following error codes:
 |-----------|---------------------------|
 | Data Type | [TextDecodingErrorCode][] |
 
+### Help Link
+
+The URL for the relevant section of this exception's help page.
+
+| | |
+|-----------|------------|
+| Data Type | [String][] |
+
+## Remarks
+
+### Known Limitations
+
+None
+
+## See Also
+
+### Related Data Types
+
+* [String][]
+
+### Related Concepts
+
+* [Exceptions][]
+
+### Related Blocks
+
+* [Decode Text][]
+
+### External Documentation
+
+None
+
+[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.DecodeText.DecodeText.MainDoc" >}}
 [InvalidBase64Character]: {{< ref "#100">}}
 [OddHexCharacters]: {{< ref "#300">}}
 [InvalidBase64URLCharacter]: {{< ref "#600">}}
@@ -110,3 +145,5 @@ For `TextEncodingException` there are the following error codes:
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 
 [TextDecodingErrorCode]: {{< url "Cortex.Reference.DataTypes.Text.TextDecodingErrorCode.MainDoc" >}}
+
+[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}

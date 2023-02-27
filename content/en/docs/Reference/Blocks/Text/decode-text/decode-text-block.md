@@ -168,7 +168,7 @@ It should be possible to pass the text created by an [Encode Text block][Encode 
 [TextEncodingFormat]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.MainDoc" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
-[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.MainDoc" >}}
+[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.MainDoc" >}}
 
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 [HTML]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Html" >}}
