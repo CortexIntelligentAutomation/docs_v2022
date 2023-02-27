@@ -1069,7 +1069,7 @@
                     CreateNew = "/docs/reference/data-types/collections/list-1#create-a-listlttitemgt"
                     ConvertToText = "/docs/reference/data-types/collections/list-1#convert-listlttitemgt-to-text"
                 [Cortex.Reference.DataTypes.Collections.QueueWithPriority]
-                    MainDoc = "/docs/reference/data-types/collections/queuewithpriority"
+                    MainDoc = "/docs/reference/data-types/collections/queuewithpriority-2"
                 [Cortex.Reference.DataTypes.Collections.Structure]
                     MainDoc = "/docs/reference/data-types/collections/structure"
                     CreateNew = "/docs/reference/data-types/collections/structure#create-a-structure"
@@ -1394,6 +1394,10 @@
                 [Cortex.Reference.DataTypes.Text.String]
                     MainDoc = "/docs/reference/data-types/text/string"
                     CreateNew = "/docs/reference/data-types/text/string#create-a-string"
+                [Cortex.Reference.DataTypes.Text.StringComparer]
+                    MainDoc = "/docs/reference/data-types/text/stringcomparer"
+                    CreateNew = "/docs/reference/data-types/text/stringcomparer/#create-a-stringcomparer"
+                    ConvertToText = "/docs/reference/data-types/text/stringcomparer/#convert-stringcomparer-to-text"
                 [Cortex.Reference.DataTypes.Text.StringComparison]
                     MainDoc = "/docs/reference/data-types/text/stringcomparison"
                 [Cortex.Reference.DataTypes.Text.StringSplitOptions]

@@ -12,6 +12,10 @@ description: "Any data type representing a comparer that can be used to order tw
 
 Any data type representing a comparer that can be used to order two values of [TPriority][].
 
+`TPriority` indicates the data type of the priorities that are being compared.
+
+`StringComparer` is the most common example.
+
 | | |
 |-|-|
 | **Category:**          | Collections                                                   |
@@ -20,7 +24,7 @@ Any data type representing a comparer that can be used to order two values of [T
 | **Alias:**             | N/A                                                           |
 | **Description:**       | Any data type representing a comparer that can be used to order two values of [TPriority][].                                                                    |
 | **Default Value:**     | `null`                                                        |
-| **Can be used as:**    | `IComparer<TPriority>`, `IComparer`, `Object`, `dynamic`      |
+| **Can be used as:**    | `IComparer<TPriority>`, `Object`, `dynamic`      |
 | **Can be cast to:**    |  N/A                                                          |
 
 ## Remarks
@@ -29,7 +33,25 @@ Any data type representing a comparer that can be used to order two values of [T
 
 Any of the following data types can be used where an `IComparer<TPriority>` is required:
 
-* TBA
+* [StringComparer][]
+
+### Create an IComparer&lt;TPriority&gt;
+
+For some of the ways that an `IComparer<TPriority>` can be created, please see each of the `IComparer<TPriority>` data types:
+
+* [StringComparer][StringComparerCreateNew]
+
+### Convert IComparer&lt;TPriority&gt; to Text
+
+For some of the ways that an `IComparer<TPriority>` can be converted to text, please see each of the `IComparer<TPriority>` data types:
+
+* [StringComparer][StringComparerConvertToText]
+
+### Property Editor Support
+
+* The Expression Editor is available for [Input][] properties where the data type is `IComparer<TPriority>`.
+* The Literal Editor is not available for [Input][] properties where the data type is `IComparer<TPriority>`.
+* The Variable Editor is available for [InputOutput][] and [Output][] properties where the data type is `IComparer<TPriority>`.
 
 ### Known Limitations
 
@@ -37,9 +59,18 @@ None
 
 ## See Also
 
+### Related Data Types
+
+* [StringComparer][]
+* [QueueWithPriority<TItem, TPriority>][]
+
+### Related Concepts
+
+None
+
 ### External Documentation
 
-* [System.Collections.Generic.IComparer&lt;T>][IComparer]
+* [System.Collections.Generic.IComparer&lt;TItem&gt;][IComparer]
 
 [TPriority]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
 
@@ -47,9 +78,10 @@ None
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[System.Collections.Generic.IList&lt;TItem&gt;]: {{< url "MSDocs.DotNet.Api.System.Collections.Generic.IList" >}}
-
 [IComparer]: {{< url "MSDocs.DotNet.Api.System.IComparer.MainDoc" >}}
-[Comparer]: {{< url "MSDocs.DotNet.Api.System.Comparer.MainDoc" >}}
 
-[Working with Collections]: {{< url "Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}
+[QueueWithPriority<TItem, TPriority>]: {{< url "Cortex.Reference.DataTypes.Collections.QueueWithPriority.MainDoc" >}}
+
+[StringComparer]: {{< url "Cortex.Reference.DataTypes.Text.StringComparer.MainDoc">}}
+[StringComparerConvertToText]: {{< url "Cortex.Reference.DataTypes.Text.StringComparer.ConvertToText">}}
+[StringComparerCreateNew]: {{< url "Cortex.Reference.DataTypes.Text.StringComparer.CreateNew">}}
