@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.57a319a5298297f948d3665c65e89c52.json"
+  data-offline-search-index-json-src="/offline-search-index.6bf768e838aa1e04f2a9875d9af87481.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -428,7 +428,7 @@ This the multi-page printable view of this section.
 </table>
 <h3 id="overwrite">Overwrite</h3>
 <p>Option to <a href="#overwrite">Overwrite</a> the file in the <a href="#destination-path">Destination Path</a> if it already exists.</p>
-<p>If the file exists, <a href="#overwrite">Overwrite</a> must be set to <code>true</code>, otherwise an <a href="/docs/reference/exceptions/files-and-folders/operationfailedexception">OperationFailedException</a> will be thrown. By default, this is set to <code>false</code> to avoid implicit and accidental overwriting of existing files.</p>
+<p>If the file exists, <a href="#overwrite">Overwrite</a> must be set to <code>true</code>, otherwise an <a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception">OperationFailedException</a> will be thrown. By default, this is set to <code>false</code> to avoid implicit and accidental overwriting of existing files.</p>
 <table>
 <thead>
 <tr>
@@ -470,7 +470,7 @@ This the multi-page printable view of this section.
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/reference/exceptions/files-and-folders/invalidpathexception">InvalidPathException</a></td>
+<td><a href="/docs/reference/exceptions/files-and-folders/invalid-path-exception">InvalidPathException</a></td>
 <td>The <a href="#destination-path">Destination Path</a> contains leading spaces.</td>
 </tr>
 <tr>
@@ -482,7 +482,7 @@ This the multi-page printable view of this section.
 <td>The <a href="#destination-path">Destination Path</a> (if it points to a file), or the <a href="#destination-path">Destination Path</a> (if it points to a folder) plus the file name, exceeds the system-defined maximum length (typically 32,767 characters).</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/files-and-folders/operationfailedexception">OperationFailedException</a></td>
+<td><a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception">OperationFailedException</a></td>
 <td>The <a href="#file-path">File Path</a> does not exist.</td>
 </tr>
 <tr>
@@ -720,7 +720,7 @@ This the multi-page printable view of this section.
 <h3 id="destination-path">Destination Path</h3>
 <p>The <a href="#destination-path">Destination Path</a> to copy the files to.</p>
 <p>The <a href="#destination-path">Destination Path</a> is case-insensitive, cannot contain any wildcard characters, and any trailing spaces will be automatically removed.</p>
-<p>The <a href="#destination-path">Destination Path</a> must point to a folder, otherwise an <a href="/docs/reference/exceptions/files-and-folders/invalidpathexception">InvalidPathException</a> will be thrown.</p>
+<p>The <a href="#destination-path">Destination Path</a> must point to a folder, otherwise an <a href="/docs/reference/exceptions/files-and-folders/invalid-path-exception">InvalidPathException</a> will be thrown.</p>
 <p>The copied files will have the names specified in the <a href="#file-paths">File Paths</a>.</p>
 <p>Any non-existing folders within the <a href="#destination-path">Destination Path</a> will be automatically created.</p>
 <p>For information about the supported file and folder path formats (i.e. absolute, relative, UNC etc.) and examples of each, including how it is determined if a path points to a folder or a file, please see <a href="/docs/reference/concepts/working-with/files-and-folders/paths/">File &amp; Folder Paths</a>.</p>
@@ -756,7 +756,7 @@ This the multi-page printable view of this section.
 </table>
 <h3 id="overwrite">Overwrite</h3>
 <p>Option to <a href="#overwrite">Overwrite</a> the files in the <a href="#destination-path">Destination Path</a> if they already exist.</p>
-<p>If any file exists, <a href="#overwrite">Overwrite</a> must be set to <code>true</code>, otherwise an <a href="/docs/reference/exceptions/files-and-folders/operationfailedexception">OperationFailedException</a> will be thrown. By default, this is set to <code>false</code> to avoid implicit and accidental overwriting of existing files.</p>
+<p>If any file exists, <a href="#overwrite">Overwrite</a> must be set to <code>true</code>, otherwise an <a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception">OperationFailedException</a> will be thrown. By default, this is set to <code>false</code> to avoid implicit and accidental overwriting of existing files.</p>
 <table>
 <thead>
 <tr>
@@ -798,7 +798,7 @@ This the multi-page printable view of this section.
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/reference/exceptions/files-and-folders/invalidpathexception">InvalidPathException</a></td>
+<td><a href="/docs/reference/exceptions/files-and-folders/invalid-path-exception">InvalidPathException</a></td>
 <td>The <a href="#destination-path">Destination Path</a> does not point to a folder.</td>
 </tr>
 <tr>
@@ -814,12 +814,12 @@ This the multi-page printable view of this section.
 <td>The <a href="#destination-path">Destination Path</a> (if it points to a file), or the <a href="#destination-path">Destination Path</a> (if it points to a folder) plus the file name, exceeds the system-defined maximum length (typically 32,767 characters).</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/files-and-folders/operationfailedexception">OperationFailedException</a></td>
-<td>Any file path in <a href="#file-paths">File Paths</a> is <code>null</code> or empty (i.e. <code>&quot;&quot;</code>). For more information, see <a href="/docs/reference/exceptions/files-and-folders/operationfailedexception/#indexes-of-null-or-empty-paths">Null or Empty File Paths</a></td>
+<td><a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception">OperationFailedException</a></td>
+<td>Any file path in <a href="#file-paths">File Paths</a> is <code>null</code> or empty (i.e. <code>&quot;&quot;</code>). For more information, see <a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception/#indexes-of-null-or-empty-paths">Null or Empty File Paths</a></td>
 </tr>
 <tr>
 <td></td>
-<td>Any file path in <a href="#file-paths">File Paths</a> is duplicated. For more information, see <a href="/docs/reference/exceptions/files-and-folders/operationfailedexception/#indexes-of-duplicate-paths">Duplicate File Paths</a></td>
+<td>Any file path in <a href="#file-paths">File Paths</a> is duplicated. For more information, see <a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception/#indexes-of-duplicate-paths">Duplicate File Paths</a></td>
 </tr>
 <tr>
 <td></td>
@@ -890,7 +890,7 @@ file path (e.g. <code>@&quot;C:\Source\OriginalFile.txt&quot;</code>) and <a hre
 <p>When copying a file in the <a href="#file-paths">File Paths</a> to the new <a href="#destination-path">Destination Path</a>, all of the file&rsquo;s attributes will also be copied.</p>
 <p>For information about the file attributes (i.e. ReadOnly, Hidden, Archive etc.), please see <a href="/docs/reference/concepts/working-with/files-and-folders/attributes/">File &amp; Folder Attributes</a>.</p>
 <h3 id="handling-of-exceptions">Handling of Exceptions</h3>
-<p>If an exception occurs when trying to copy a file in the <a href="#file-paths">File Paths</a>, it will be recorded and the block will continue processing the remaining files. Once all files are processed, recorded exceptions will be thrown within an <a href="/docs/reference/exceptions/files-and-folders/operationfailedexception">OperationFailedException</a>.</p>
+<p>If an exception occurs when trying to copy a file in the <a href="#file-paths">File Paths</a>, it will be recorded and the block will continue processing the remaining files. Once all files are processed, recorded exceptions will be thrown within an <a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception">OperationFailedException</a>.</p>
 
 </div>
 

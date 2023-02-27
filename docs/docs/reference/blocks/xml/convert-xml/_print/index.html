@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.57a319a5298297f948d3665c65e89c52.json"
+  data-offline-search-index-json-src="/offline-search-index.6bf768e838aa1e04f2a9875d9af87481.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -445,7 +445,7 @@ This the multi-page printable view of this section.
 <td>Thrown when <a href="#structure">Structure</a> does not contain any items.</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/xml/xmlserializationexception/">XmlSerializationException</a></td>
+<td><a href="/docs/reference/exceptions/xml/xml-serialization-exception/">XmlSerializationException</a></td>
 <td>Thrown when <a href="#structure">Structure</a> has a key that is an empty string.</td>
 </tr>
 <tr>
@@ -454,15 +454,15 @@ This the multi-page printable view of this section.
 </tr>
 <tr>
 <td></td>
-<td>Thrown when the <a href="#structure">Structure</a> includes an xml declaration key (e.g. <code>&quot;?xml&quot;</code>) with an attribute that has an invalid <a href="/docs/reference/concepts/fundamentals/primitive-types/">Primitive Value</a>. (e.g. <code>Key: &quot;@version&quot;, Value: false</code>, where <code>&quot;@version&quot;</code> must be a numeric value).</td>
+<td>Thrown when the <a href="#structure">Structure</a> includes an xml declaration key (e.g. <code>&quot;?xml&quot;</code>) with an attribute that has an invalid <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#basic-data-types">Basic Data Type</a>. (e.g. <code>Key: &quot;@version&quot;, Value: false</code>, where <code>&quot;@version&quot;</code> must be a numeric value).</td>
 </tr>
 <tr>
 <td></td>
-<td>Thrown when the <a href="#structure">Structure</a> includes a document type definition key (e.g. <code>&quot;!DOCTYPE&quot;</code>) that has an attribute with an invalid <a href="/docs/reference/concepts/fundamentals/primitive-types/">Primitive Value</a>. (e.g. <code>Key: &quot;@name&quot;, Value: 22</code>, where <code>&quot;@name&quot;</code> must be a text value).</td>
+<td>Thrown when the <a href="#structure">Structure</a> includes a document type definition key (e.g. <code>&quot;!DOCTYPE&quot;</code>) that has an attribute with an invalid <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#basic-data-types">Basic Data Type</a>. (e.g. <code>Key: &quot;@name&quot;, Value: 22</code>, where <code>&quot;@name&quot;</code> must be a text value).</td>
 </tr>
 <tr>
 <td></td>
-<td>Thrown when the <a href="#structure">Structure</a> includes an attribute key with a <a href="/docs/reference/concepts/fundamentals/complex-types/">Complex Type</a> as a value. (e.g. <code>Key: &quot;@name&quot;, Value: new UserCredentials{...}</code>).</td>
+<td>Thrown when the <a href="#structure">Structure</a> includes an attribute key with a <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#complex-data-types">Complex Data Type</a> as a value. (e.g. <code>Key: &quot;@name&quot;, Value: new UserCredentials{...}</code>).</td>
 </tr>
 </tbody>
 </table>
@@ -479,12 +479,12 @@ This the multi-page printable view of this section.
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>@&#34;<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">attribute=</span><span style="color:#4e9a06">&#34;Attribute Value&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;innerNode&gt;</span>Inner Node Value<span style="color:#204a87;font-weight:bold">&lt;/innerNode&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;/node&gt;</span>&#34;
-</span></span></code></pre></div><h3 id="primitive-values-within-attribute-keys">Primitive Values within Attribute Keys</h3>
-<p>Attribute keys may only have <a href="/docs/reference/concepts/fundamentals/primitive-types/">Primitive Values</a> as shown in the example below. An <a href="/docs/reference/exceptions/xml/xmlserializationexception/">XmlSerializationException</a> will be thrown if a <a href="/docs/reference/concepts/fundamentals/complex-types/">Complex Value</a> is used as an attribute key.</p>
+</span></span></code></pre></div><h3 id="basic-data-types-within-attribute-keys">Basic Data Types within Attribute Keys</h3>
+<p>Attribute keys may only have <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#basic-data-types">Basic Data Types</a> as shown in the example below. An <a href="/docs/reference/exceptions/xml/xml-serialization-exception/">XmlSerializationException</a> will be thrown if <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#complex-data-types">Complex Data Type</a> is used as an attribute key.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;node&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;@validAttribute&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Attribute Value&#34;</span><span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;@invalidAttribute&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">new</span> <span style="color:#a40000">ComplexValue(</span><span style="color:#4e9a06">&#34;Invalid&#34;</span><span style="color:#a40000">)</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;@invalidAttribute&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">new</span> <span style="color:#a40000">ComplexDataType(</span><span style="color:#4e9a06">&#34;Invalid&#34;</span><span style="color:#a40000">)</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h3 id="key-restrictions">Key Restrictions</h3>
@@ -792,7 +792,7 @@ This example will only occur when a <a href="#structure">Structure</a> is Conver
 <td>Thrown when <a href="#xml">Xml</a> is empty (i.e. <code>&quot;&quot;</code>).</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/xml/xmlserializationexception/">XmlSerializationException</a></td>
+<td><a href="/docs/reference/exceptions/xml/xml-serialization-exception/">XmlSerializationException</a></td>
 <td>Thrown when the <a href="#xml">Xml</a> is not valid (i.e the Xml contains an ampersand symbol or is missing a root node).</td>
 </tr>
 </tbody>

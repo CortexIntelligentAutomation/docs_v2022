@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.57a319a5298297f948d3665c65e89c52.json"
+  data-offline-search-index-json-src="/offline-search-index.6bf768e838aa1e04f2a9875d9af87481.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -924,7 +924,7 @@ This the multi-page printable view of this section.
 <li>If the <a href="/docs/reference/data-types/session-details/serverdetails/#port">Port</a> being connected to is <code>25</code> or <code>587</code> then <a href="/docs/reference/data-types/session-details/serverdetails/#usessl">UseSsl</a> should be set to <code>false</code></li>
 </ul>
 <h3 id="setting-credentials">Setting Credentials</h3>
-<p>The <a href="/docs/reference/data-types/credentials/usercredentials">UserCredentials</a> within the <a href="#basic-email-session-details">Basic Email Session Details</a> specifies what user to connect as on the <a href="/docs/reference/glossary/p-t/#smtp">SMTP</a> server. The value of the <a href="/docs/reference/data-types/credentials/usercredentials/#username">Username</a> property may optionally be encrypted, however the <a href="/docs/reference/data-types/credentials/usercredentials/#password">Password</a> must be encrypted otherwise an <a href="/docs/reference/exceptions/common/unencryptedtextexception/">UnencryptedTextException</a> will be thrown when the object is created. For more information on how to encrypt the password, see <a href="/docs/reference/data-types/text/encryptedtext">EncryptedText</a>.</p>
+<p>The <a href="/docs/reference/data-types/credentials/usercredentials">UserCredentials</a> within the <a href="#basic-email-session-details">Basic Email Session Details</a> specifies what user to connect as on the <a href="/docs/reference/glossary/p-t/#smtp">SMTP</a> server. The value of the <a href="/docs/reference/data-types/credentials/usercredentials/#username">Username</a> property may optionally be encrypted, however the <a href="/docs/reference/data-types/credentials/usercredentials/#password">Password</a> must be encrypted otherwise an <a href="/docs/reference/exceptions/common/unencrypted-text-exception/">UnencryptedTextException</a> will be thrown when the object is created. For more information on how to encrypt the password, see <a href="/docs/reference/data-types/text/encryptedtext">EncryptedText</a>.</p>
 <p>Note that the <a href="/docs/reference/data-types/credentials/usercredentials">UserCredentials</a> object also contains a <a href="/docs/reference/data-types/credentials/usercredentials/#domain">Domain</a> property which is ignored by this block.</p>
 <h3 id="opening-sessions">Opening Sessions</h3>
 <p>The Send Email Using SMTP Server block automatically handles creating and opening sessions for the specified <a href="#basic-email-session-details">Basic Email Session Details</a> using the following rules:</p>

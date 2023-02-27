@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.57a319a5298297f948d3665c65e89c52.json"
+  data-offline-search-index-json-src="/offline-search-index.6bf768e838aa1e04f2a9875d9af87481.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -288,7 +288,7 @@ This the multi-page printable view of this section.
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/reference/exceptions/files-and-folders/operationfailedexception">OperationFailedException</a></td>
+<td><a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception">OperationFailedException</a></td>
 <td>The <a href="#file-path">File Path</a> points to a folder.</td>
 </tr>
 <tr>
@@ -443,12 +443,12 @@ This the multi-page printable view of this section.
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/reference/exceptions/files-and-folders/operationfailedexception">OperationFailedException</a></td>
-<td>Any file path in <a href="#file-paths">File Paths</a> is <code>null</code> or empty (i.e. <code>&quot;&quot;</code>). For more information, see <a href="/docs/reference/exceptions/files-and-folders/operationfailedexception/#indexes-of-null-or-empty-paths">Null or Empty File Paths</a>.</td>
+<td><a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception">OperationFailedException</a></td>
+<td>Any file path in <a href="#file-paths">File Paths</a> is <code>null</code> or empty (i.e. <code>&quot;&quot;</code>). For more information, see <a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception/#indexes-of-null-or-empty-paths">Null or Empty File Paths</a>.</td>
 </tr>
 <tr>
 <td></td>
-<td>Any file path in <a href="#file-paths">File Paths</a> is duplicated. For more information, see <a href="/docs/reference/exceptions/files-and-folders/operationfailedexception/#indexes-of-duplicate-paths">Duplicate File Paths</a>.</td>
+<td>Any file path in <a href="#file-paths">File Paths</a> is duplicated. For more information, see <a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception/#indexes-of-duplicate-paths">Duplicate File Paths</a>.</td>
 </tr>
 <tr>
 <td></td>
@@ -510,7 +510,7 @@ file path (e.g. <code>@&quot;C:\Source\File.txt&quot;</code>).</li>
 <h3 id="file-path-does-not-exist">File Path does not exist</h3>
 <p>If a file path in <a href="#file-paths">File Paths</a> does not exist no exception is recorded for that file path.</p>
 <h3 id="handling-of-exceptions">Handling of Exceptions</h3>
-<p>If an exception occurs when trying to delete a file in the <a href="#file-paths">File Paths</a>, it will be recorded and the block will continue processing the remaining files. Once all files are processed, recorded exceptions will be thrown within an <a href="/docs/reference/exceptions/files-and-folders/operationfailedexception">OperationFailedException</a>.</p>
+<p>If an exception occurs when trying to delete a file in the <a href="#file-paths">File Paths</a>, it will be recorded and the block will continue processing the remaining files. Once all files are processed, recorded exceptions will be thrown within an <a href="/docs/reference/exceptions/files-and-folders/operation-failed-exception">OperationFailedException</a>.</p>
 
 </div>
 

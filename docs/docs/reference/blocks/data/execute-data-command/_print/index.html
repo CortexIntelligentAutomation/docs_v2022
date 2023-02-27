@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.57a319a5298297f948d3665c65e89c52.json"
+  data-offline-search-index-json-src="/offline-search-index.6bf768e838aa1e04f2a9875d9af87481.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -1146,7 +1146,7 @@ This the multi-page printable view of this section.
 <td>Thrown when the connectionString within the <a href="#connection-details">Connection Details</a> is empty.</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/data/invalidconnectionstringexception/">InvalidConnectionStringException</a></td>
+<td><a href="/docs/reference/exceptions/data/invalid-connection-string-exception/">InvalidConnectionStringException</a></td>
 <td>Thrown when an invalid connection string has been supplied (e.g. The connection string contains an invalid argument <code>&quot;NotAnArgument = False&quot;</code>).</td>
 </tr>
 <tr>
@@ -1154,7 +1154,7 @@ This the multi-page printable view of this section.
 <td>Thrown when a required connection string argument has not been supplied (e.g. The server requires encryption and the connection string contains <code>&quot;Encrypt=False&quot;</code>).</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/data/commandexception/">CommandException</a></td>
+<td><a href="/docs/reference/exceptions/data/command-exception/">CommandException</a></td>
 <td>Thrown when the data source was not found or was not accessible.</td>
 </tr>
 <tr>
@@ -1238,7 +1238,7 @@ This the multi-page printable view of this section.
 </tr>
 </tbody>
 </table>
-<p>If multiple statements are provided in <a href="/docs/reference/data-types/data/command/#command-text">CommandText</a>, the block will throw a <a href="/docs/reference/exceptions/data/commandexception/">CommandException</a> as this type can only run single statements.</p>
+<p>If multiple statements are provided in <a href="/docs/reference/data-types/data/command/#command-text">CommandText</a>, the block will throw a <a href="/docs/reference/exceptions/data/command-exception/">CommandException</a> as this type can only run single statements.</p>
 <p>If performance is a key consideration it is recommended to use a <a href="#querycommand">QueryCommand</a> or <a href="#nonquerycommand">NonQueryCommand</a> instead of <a href="/docs/reference/data-types/data/command/">Command</a> as they do not parse the <a href="/docs/reference/data-types/data/command/#command-text">commandText</a>.</p>
 <h4 id="commands">Commands</h4>
 <p>A <a href="/docs/reference/data-types/data/commands">Commands</a> parses single or multiple statements provided in the <a href="/docs/reference/data-types/data/commands/#command-text">commandText</a>, determining how each statement should be executed against the data source. If a <a href="#query-statements">Query Statement</a> is executed rows retrieved from the data source are added as an entry of the result, If a <a href="#non-query-statements">Non Query Statement</a> is executed the number of rows affected is added as an entry of the result.</p>
@@ -1384,7 +1384,7 @@ This the multi-page printable view of this section.
 <li><a href="#executing-multiple-commands-safe">Executing Multiple Commands (Safe)</a></li>
 <li><a href="#executing-multiple-commands-unsafe">Executing Multiple Commands (Unsafe)</a></li>
 </ul>
-<p>A Query Statement can use any object as a parameter. Objects that derive from <a href="/docs/reference/data-types/collections/array">Array</a> or <a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a> can only be used for clauses that accept list values (e.g. <code>IN</code>, <code>ANY</code>, <code>ALL</code>), if they are used in other clauses the block will throw a <a href="/docs/reference/exceptions/data/commandexception/">CommandException</a>.</p>
+<p>A Query Statement can use any object as a parameter. Objects that derive from <a href="/docs/reference/data-types/collections/array">Array</a> or <a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a> can only be used for clauses that accept list values (e.g. <code>IN</code>, <code>ANY</code>, <code>ALL</code>), if they are used in other clauses the block will throw a <a href="/docs/reference/exceptions/data/command-exception/">CommandException</a>.</p>
 <h4 id="non-query-statements">Non Query Statements</h4>
 <p>Non Query Statements are used to manipulate the data within a data source, for example deleting all rows from a table in a database, Non Query Statements return the number of rows affected by the Statement as an <a href="/docs/reference/data-types/numbers/int32">Int32</a> value when used in an <a href="#command-1">Command</a>, an <a href="#commands">Commands</a>, or a <a href="#nonquerycommand">NonQueryCommand</a>. If a Non Query Statement is used in a <a href="#querycommand">QueryCommand</a> <code>null</code> will be returned as Non Query Statements do not return data.</p>
 <p>Examples of Non Query Statements can be found here:</p>
@@ -1399,7 +1399,7 @@ This the multi-page printable view of this section.
 <h3 id="parameterised-commands">Parameterised Commands</h3>
 <p>It is recommended to always use parameterised commands as they prevent <a href="https://www.w3schools.com/sql/sql_injection.asp">SQL Injection</a> attacks by ensuring the parameters are sanitised before the <a href="#command">Command</a> is executed.</p>
 <p>The <code>@</code> symbol denotes a parameter within the <a href="/docs/reference/data-types/data/datacommand/#command-text">CommandText</a> (e.g. <code>&quot;SELECT * FROM Table WHERE Name = @Parameter&quot;</code>). An example of using parameters can be found in <a href="#executing-multiple-commands-safe">Executing Multiple Commands (Safe)</a>, whereas, an example of inserting variables into a statement without parameters can be found in <a href="#executing-multiple-commands-unsafe">Executing Multiple Commands (Unsafe)</a></p>
-<p><a href="#query-statements">Query Statements</a> can use any object as a parameter. Objects that derive from <a href="/docs/reference/data-types/collections/array">Array</a> or <a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a> can only be used for clauses that accept list values (e.g. <code>IN</code>, <code>ANY</code>, <code>ALL</code>), if they are used in other clauses the block will throw a <a href="/docs/reference/exceptions/data/commandexception/">CommandException</a>.</p>
+<p><a href="#query-statements">Query Statements</a> can use any object as a parameter. Objects that derive from <a href="/docs/reference/data-types/collections/array">Array</a> or <a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a> can only be used for clauses that accept list values (e.g. <code>IN</code>, <code>ANY</code>, <code>ALL</code>), if they are used in other clauses the block will throw a <a href="/docs/reference/exceptions/data/command-exception/">CommandException</a>.</p>
 <p><a href="#non-query-statements">Non Query Statements</a> can use any object as a parameter. If an object that derives from <a href="/docs/reference/data-types/collections/array">Array</a> or <a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a> is used, the Non Query Statement will be executed for each item in the <a href="/docs/reference/data-types/collections/array">Array</a> or <a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a> and the sum of all the results will be returned.</p>
 <p>For both <a href="#query-statements">Query Statements</a> and <a href="#non-query-statements">Non Query Statements</a>, an SqlException is thrown if a parameter is missing from the <a href="#command">Command</a> and the <a href="/docs/reference/data-types/data/datacommand/#command-text">CommandText</a> contains a parameter  (e.g. <code>{&quot;CommandText&quot;: &quot;SELECT * FROM Table WHERE Name = @Parameter&quot;, &quot;Parameters&quot;: {&quot;IncorrectParameter&quot;: 0}}</code>).</p>
 <h3 id="complex-commands">Complex Commands</h3>
