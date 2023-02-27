@@ -230,7 +230,7 @@ The [Xml][Xml Property] example above would be converted to the following [Struc
 
 ### Basic Data Types within Attribute Keys
 
-Attribute keys may only have [Basic Data Types][] as shown in the example below. An [XmlSerializationException][] will be thrown if [Complex Data Type][Complex Data Types] is used as an attribute key.
+Attribute keys may only have [Basic Data Types][] as shown in the example below. An [XmlSerializationException][] will be thrown if a [Complex Data Type][Complex Data Types] is used as an attribute key.
 
 ``` json
 {
