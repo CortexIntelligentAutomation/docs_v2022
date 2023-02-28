@@ -8,8 +8,6 @@ description: "Used to compare two pieces of text against each other."
 
 <p class="namespace">(System.StringComparer)</p>
 
-<img src="/images/work-in-progress.jpg">
-
 ## Summary
 
 The `StringComparer` data type is used to represent a string comparer.
@@ -34,6 +32,7 @@ The `StringComparer` data type is used to represent a string comparer.
 | **Name:**    | CurrentCulture                                         |
 | **Value:**   | `StringComparer.CurrentCulture`                       |
 | **Notes:**   | Gets a StringComparer object that performs a case-sensitive string comparison using the word comparison rules of the current culture. |
+
 ### CurrentCultureIgnoreCase
 
 | | |
@@ -54,8 +53,8 @@ The `StringComparer` data type is used to represent a string comparer.
 
 | | |
 |-|-|
-| **Name:**    | InvariantCultureIgnoreCase                                         |
-| **Value:**   | `StringComparer.InvariantCultureIgnoreCase`                       |
+| **Name:**    | InvariantCultureIgnoreCase                    |
+| **Value:**   | `StringComparer.InvariantCultureIgnoreCase`   |
 | **Notes:**   | Gets a StringComparer object that performs a case-insensitive string comparison using the word comparison rules of the invariant culture. |
 
 ### Ordinal
@@ -95,16 +94,22 @@ The following table shows some of the ways that a `StringComparer` can be conver
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use `ToString`   |  `StringComparer.Ordinal.ToString()`      | `"System.OrdinalCaseSensitiveComparer"` | Expression | Converts `StringComparer.Ordinal` to `"System.OrdinalCaseSensitiveComparer"`.  |
-||  `StringComparer.OrdinalIgnoreCase.ToString()`      | `"System.OrdinalIgnoreCaseComparer"` | Expression | Converts `StringComparer.Ordinal` to `"System.OrdinalIgnoreCaseComparer"`.  |
-||  `StringComparer.CurrentCulture.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.Ordinal` to `"System.CultureAwareComparer"`.  |
-||  `StringComparer.CurrentCultureIgnoreCase.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.CurrentCulture` to `"System.CultureAwareComparer"`.  |
+| Use `ToString`   |  `StringComparer.CurrentCulture.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.CurrentCulture` to `"System.CultureAwareComparer"`(the result may be different depending on the  culture of your machine).|
+||  `StringComparer.CurrentCultureIgnoreCase.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.CurrentCulture` to `"System.CultureAwareComparer"` (the result may be different depending on the  culture of your machine).  |
 ||  `StringComparer.InvariantCulture.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.InvariantCulture` to `"System.CultureAwareComparer"`.  |
 ||  `StringComparer.InvariantCultureIgnoreCase.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.InvariantCultureIgnoreCase` to `"System.CultureAwareComparer"`.  |
+||  `StringComparer.Ordinal.ToString()`      | `"System.OrdinalCaseSensitiveComparer"` | Expression | Converts `StringComparer.Ordinal` to `"System.OrdinalCaseSensitiveComparer"`.  |
+||  `StringComparer.OrdinalIgnoreCase.ToString()`      | `"System.OrdinalIgnoreCaseComparer"` | Expression | Converts `StringComparer.Ordinal` to `"System.OrdinalIgnoreCaseComparer"`.  |
 
 ### Property Editor Support
 
+- The Expression Editor is available for [Input][] properties where the data type is `StringComparer`.
+- The Literal Editor is available for [Input][] properties where the data type is `StringComparer`.
+- The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `StringComparer`.
+
 ### Known Limitations
+
+None
 
 ## See Also
 
@@ -113,3 +118,7 @@ The following table shows some of the ways that a `StringComparer` can be conver
 ### Related Concepts
 
 ### External Documentation
+
+[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
