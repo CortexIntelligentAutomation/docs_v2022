@@ -1422,6 +1422,7 @@
                     Hex = "/docs/reference/data-types/text/textencodingformat/#hex"
                     Html = "/docs/reference/data-types/text/textencodingformat/#html"
                     Base64URL = "/docs/reference/data-types/text/textencodingformat/#base64url"
+                    URL = "/docs/reference/data-types/text/textencodingformat/#url"
                 [Cortex.Reference.DataTypes.Text.UnicodeEncoding]
                     MainDoc = "/docs/reference/data-types/text/unicodeencoding"
                 [Cortex.Reference.DataTypes.Text.UTF32Encoding]
@@ -1550,10 +1551,10 @@
             [Cortex.Reference.Exceptions.Text.Decode]
                 MainDoc = "/docs/reference/exceptions/text/decode/"
                     [Cortex.Reference.Exceptions.Text.Decode.TextDecodingException]
-                        MainDoc = "/docs/reference/exceptions/text/decode/textdecodingexception/"
-                        InvalidBase64 = "/docs/reference/exceptions/text/decode/textdecodingexception/#100"
-                        InvalidHex = "/docs/reference/exceptions/text/decode/textdecodingexception/#300"
-                        InvalidBase64URL = "/docs/reference/exceptions/text/decode/textdecodingexception/#600"
+                        MainDoc = "/docs/reference/exceptions/text/decode/text-decoding-exception/"
+                        InvalidBase64 = "/docs/reference/exceptions/text/decode/text-decoding-exception/#100"
+                        InvalidHex = "/docs/reference/exceptions/text/decode/text-decoding-exception/#300"
+                        InvalidBase64URL = "/docs/reference/exceptions/text/decode/text-decoding-exception/#600"
             [Cortex.Reference.Exceptions.Ssh]
                 MainDoc = "/docs/reference/exceptions/ssh/"
                 SshClientException = "/docs/reference/exceptions/ssh/sshclientexception/"

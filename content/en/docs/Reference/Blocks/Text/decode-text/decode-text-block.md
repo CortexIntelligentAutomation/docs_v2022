@@ -12,7 +12,7 @@ description: "Decodes text from a specified format (e.g. `\"Base64\"`)."
 
 ## Description
 
-Converts [Text][Text Property] from the specified [Format][Format Property].
+Decodes [Text][Text Property] from the specified [Format][Format Property].
 
 ## Examples
 
@@ -29,7 +29,7 @@ This example will decode the [Base64][] encoded text `"VGhlIHF1aWNrIGJyb3duIGZve
 
 #### Result
 
-Decoding `"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="` with the [Format][Format Property] [Base64] results in the variable `($)Text` being updated to the following:
+Decoding `"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="` with the [Format][Format Property] [Base64] will result in the variable `($)Text` being updated to the following:
 
 ```json
 "The quick brown fox jumps over the lazy dog"
@@ -37,7 +37,7 @@ Decoding `"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="` with t
 
 ***
 
-### Text Decoding from Hex
+### Text decoded from Hex
 
 This example will decode the [Hex][] encoded text `"54686520717569636B2062726F776E20666F78206A756D7073206F76657220746865206C617A7920646F67"` to `"The quick brown fox jumps over the lazy dog"`.
 
@@ -50,7 +50,7 @@ This example will decode the [Hex][] encoded text `"54686520717569636B2062726F77
 
 #### Result
 
-Decoding `"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="` with the [Format][Format Property] [Hex] results in the variable `($)Text` being updated to the following:
+Decoding `"54686520717569636B2062726F776E20666F78206A756D7073206F76657220746865206C617A7920646F67"` with the [Format][Format Property] [Hex] will result in the variable `($)Text` being updated to the following:
 
 ```json
 "The quick brown fox jumps over the lazy dog"
@@ -58,23 +58,23 @@ Decoding `"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="` with t
 
 ***
 
-### Text Decoding From HTML
+### Text decoded from HTML
 
-This example will decode the [HTML][] encoded text `"&#161;The quick brown fox jumps over the lazy dog!&lt;&gt;"` to `"¡The quick brown fox jumps over the lazy dog!<>"`.
+This example will decode the [HTML][] encoded text `"&lt;p&gt;The quick brown fox jumps over the lazy dog!&lt;/p&gt;"` to `"<p>The quick brown fox jumps over the lazy dog!</p>"`.
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Text][Text Property] | `($)Text`, with value `"&#161;The quick brown fox jumps over the lazy dog!&lt;&gt;"` | `($)Text` is a variable of type [String][] |
+| [Text][Text Property] | `($)Text`, with value `"&lt;p&gt;The quick brown fox jumps over the lazy dog!&lt;/p&gt;"` | `($)Text` is a variable of type [String][] |
 | [Format][Format Property] | `($)Format`, with value `"TextEncodingFormat.HTML"` | `($)Format` is a variable of type [TextEncodingFormat][]
 
 #### Result
 
-Decoding `"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="` with the [Format][Format Property] [HTML] results in the variable `($)Text` being updated to the following:
+Decoding `"&lt;p&gt;The quick brown fox jumps over the lazy dog!&lt;/p&gt;"` with the [Format][Format Property] [HTML] will result in the variable `($)Text` being updated to the following:
 
 ```json
-"¡The quick brown fox jumps over the lazy dog!<>"
+"<p>The quick brown fox jumps over the lazy dog!</p>"
 ```
 
 ***
@@ -95,7 +95,7 @@ The [Text][Text Property] to decode from the specified [Format][Format Property]
 
 ### Format
 
-The [Format][Format Property] with which the given [Text][Text Property] will be decoded using.
+The [Format][Format Property] used to decode the given [Text][Text Property].
 
 [Format][Format Property] can be any of the predefined values:
 
@@ -120,10 +120,10 @@ The exceptions thrown by the block can be found below:
 
 | Name     | Description |
 |----------|----------|
-| [ArgumentException][] | Thrown when the [Format][Format Property] is not one of the specified [TextEncodingFormat][] types (e.g. `(TextEncodingFormat)10`). |
-| [TextDecodingException][] | Thrown when provided [Text][Text Property] contains an invalid character for [Base64] decoding. For more information, see [Invalid Base64 Character][InvalidBase64] |
-||Thrown when provided [Text][Text Property] contains an odd number of characters for [Hex] decoding. For more information see [Odd number of characters using Hex][InvalidHex] |
-|| Thrown when provided [Text][Text Property] contains an invalid character for [Base64URL] decoding. For more information see [Invalid Base64URL Character][InvalidBase64URL] |
+| [ArgumentException][] | Thrown when [Format][Format Property] is not one of the specified [TextEncodingFormat][] types (e.g. `(TextEncodingFormat)10`). |
+| [TextDecodingException][] | Thrown when [Text][Text Property] contains an invalid character for [Base64] decoding. For more information, see [Invalid Base64 Character][InvalidBase64]. |
+||Thrown when [Text][Text Property] contains an odd number of characters for [Hex] decoding. For more information, see [Odd number of characters using Hex][InvalidHex]. |
+|| Thrown when [Text][Text Property] contains an invalid character for [Base64URL] decoding. For more information, see [Invalid Base64URL Character][InvalidBase64URL]. |
 
 ## Remarks
 
@@ -131,33 +131,43 @@ The exceptions thrown by the block can be found below:
 
 If [Text][Text Property] is `null` or empty (i.e. `""`) there is nothing to decode, so no operation is performed.
 
-### Decoding invalid hex values
+### Decoding invalid Hex values
 
-Decoding using the `Hex` [Format][Format Property] will run even if invalid characters are present but will decode incorrectly e.g. `"ZZ"` will decode to `"3"`
+When decoding using the [Hex] [Format][Format Property], characters not in the valid set (i.e. `0-9` and `A-F`) will overflow (e.g. `G` overflows to `0`), further examples are shown below:
+| Encoded Text | Overflows To | Decoded Text |
+|--------------|--------------|--------------|
+| 4G           | 40           | @            |
+| 4H           | 41           | A            |
+| 4I           | 42           | B            |
+| J1           | 31           | 1            |
+| K1           | 41           | A            |
+| L1           | 51           | Q            |
 
-### Out of range URL character
+### Decoding out of range URL characters
 
-When decoding using the `URL` [Format][Format Property], characters in the range `%00` to `%ff` will be treated as encoded characters but anything outside this range will be treated as a literal e.g. `"%zzExample%21"` will decide to `%zzExample!`
+When decoding using the [URL][] [Format][Format Property], characters not in the valid range (i.e.`%00` to `%ff`) will be treated as literal characters (e.g. `"%zzExample%21"` will decode to `"%zzExample!"`).
 
-### Invalid HTML entity
+### Decoding invalid HTML entities
 
-When decoding using the `HTML` [Format][Format Property], invalid entities will be remove during decoding e.g. `"Example&something;"` will decode to `Example`
+When decoding using the [HTML] [Format][Format Property], invalid entities will be removed (e.g. `"Example&InvalidEntity;"` will decode to `"Example"`).
 
-### HTML decoding ampersand
+### Decoding HTML ampersand
 
-When decoding using the `HTML` [Format][Format Property], any ampersand that is not part of an entity will be removed during decoding e.g. `Example&something` will decode to `Examplesomething`
+When decoding using the [HTML] [Format][Format Property], any ampersand that is not part of an entity will be removed (e.g. `"Example&Something"` will decode to `"ExampleSomething"`).
 
-### HTML decoding semicolon
+### Decoding HTML semicolon
 
-When decoding using the `HTML` [Format][Format Property], any semicolon that is not part of an entity will be treated as a literal value e.g. `Examplesomething;` will decode to `Examplesomething;`
-
-### HTML decoding named entities
-
-When decoding using the `HTML` [Format][Format Property], any HTML5 named entities e.g. `&phi;` will be removed. 
+When decoding using the [HTML] [Format][Format Property], any semicolon that is not part of an entity will be treated as a literal character (e.g. `"ExampleSomething;"` will decode to `"ExampleSomething;"`).
 
 ### Round-Tripping
 
 It should be possible to pass the text created by an [Encode Text block][Encode Text] to this block, and then pass the text created by this block back to an [Encode Text block][Encode Text]; this is called round-tripping.
+
+### Known Limitations
+
+When decoding using the [HTML] [Format][Format Property], any HTML5 named entities (e.g. `"&phi;"`) will be removed.
+
+This limitation may be removed in the future.
 
 [Text Property]: {{< ref "#text" >}}
 [Format Property]: {{< ref "#format" >}}
@@ -175,6 +185,7 @@ It should be possible to pass the text created by an [Encode Text block][Encode 
 [Base64]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Base64" >}}
 [Hex]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Hex" >}}
 [Base64URL]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Base64URL" >}}
+[URL]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.URL" >}}
 
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
 [Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
