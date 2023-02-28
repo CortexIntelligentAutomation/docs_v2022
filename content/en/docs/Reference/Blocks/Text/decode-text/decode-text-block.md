@@ -181,8 +181,8 @@ It should be possible to pass the text created by an [Encode Text block][Encode 
 
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 
-[InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.InvalidBase64" >}}
-[InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.InvalidHex" >}}
-[InvalidBase64URL]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.InvalidBase64URL" >}}
+[InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidBase64" >}}
+[InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidHex" >}}
+[InvalidBase64URL]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidBase64URL" >}}
 
 [Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}

@@ -40,10 +40,10 @@ The `TextDecodingErrorCode` data type is used to represent an error code explain
 | **Value:**   | [Int32][] with value `600`                      |
 | **Notes:**   | Used when an [TextDecodingException][] occured due to provided text containing an invalid character. See [Invalid Base64URL Character][InvalidBase64URL]. |
 
-[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.MainDoc" >}}
-[InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.InvalidBase64" >}}
-[InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.InvalidHex" >}}
-[InvalidBase64URL]: {{< url "Cortex.Reference.Exceptions.Text.Encode.TextDecodingException.InvalidBase64URL" >}}
+[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.MainDoc" >}}
+[InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidBase64" >}}
+[InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidHex" >}}
+[InvalidBase64URL]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidBase64URL" >}}
 
 [Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}

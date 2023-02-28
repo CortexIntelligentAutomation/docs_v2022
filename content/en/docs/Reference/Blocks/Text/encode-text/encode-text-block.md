@@ -125,7 +125,7 @@ It should be possible to pass the text created by a [Decode Text][] block to thi
 
 [Text Property]: {{< ref "#text" >}}
 [Format Property]: {{< ref "#format" >}}
-[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.DecodeText.MainDoc" >}}
+[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.DecodeText.DecodeText.MainDoc" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
