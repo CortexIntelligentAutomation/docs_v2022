@@ -28,18 +28,51 @@ The `StringComparer` data type is used to represent a string comparer.
 ## Properties
 
 ### CurrentCulture
-|Name  |Notes |
+
+| | |
 |-|-|
-|CurrentCulture| Gets a StringComparer object that performs a case-sensitive string comarisong using the word comparison rules of the current culture|
+| **Name:**    | CurrentCulture                                         |
+| **Value:**   | `StringComparer.CurrentCulture`                       |
+| **Notes:**   | Gets a StringComparer object that performs a case-sensitive string comarison using the word comparison rules of the current culture. |
 ### CurrentCultureIgnoreCase
+
+| | |
+|-|-|
+| **Name:**    | CurrentCultureIgnoreCase                                         |
+| **Value:**   | `StringComparer.CurrentCultureIgnoreCase`                       |
+| **Notes:**   | Gets a StringComparer object that performs a case-insensitive string comarison using the word comparison rules of the current culture. |
 
 ### InvariantCulture
 
+| | |
+|-|-|
+| **Name:**    | InvariantCulture                                         |
+| **Value:**   | `StringComparer.InvariantCulture`                       |
+| **Notes:**   | Gets a StringComparer object that performs a case-sensitive string comarison using the word comparison rules of the invariant culture. |
+
 ### InvariantCultureIgnoreCase
+
+| | |
+|-|-|
+| **Name:**    | InvariantCultureIgnoreCase                                         |
+| **Value:**   | `StringComparer.InvariantCultureIgnoreCase`                       |
+| **Notes:**   | Gets a StringComparer object that performs a case-insensitive string comarison using the word comparison rules of the invariant culture. |
 
 ### Ordinal
 
+| | |
+|-|-|
+| **Name:**    | Ordinal                                         |
+| **Value:**   | `StringComparer.Ordinal`                       |
+| **Notes:**   | Gets a StringComparer object that performs a case-sensitive ordinal string comarison. |
+
 ### OrdinalIgnoreCase
+
+| | |
+|-|-|
+| **Name:**    | Ordinal                                         |
+| **Value:**   | `StringComparer.Ordinal`                       |
+| **Notes:**   | Gets a StringComparer object that performs a case-insensitive ordinal string comarison. |
 
 ## Remarks
 
