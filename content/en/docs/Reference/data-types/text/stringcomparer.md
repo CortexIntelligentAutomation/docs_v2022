@@ -12,6 +12,35 @@ description: "Used to compare two pieces of text against each other."
 
 ## Summary
 
+The `StringComparer` data type is used to represent a string comparer.
+
+| | |
+|-|-|
+| **Category:**          | Text                                                          |
+| **Name:**              | `StringComparer`                                                      |
+| **Full Name:**         | `System.StringStringComparer`                                               |
+| **Alias:**             | N/A                                                    |
+| **Description:**       | Used to represent a string comparer. |
+| **Default Value:**     | `null`                                                           |
+| **Can be used as:**    | `Object`                                                         |
+| **Can be cast to:**    | `IComparer`, `IComparer<T>`, `IEqualityComparer`, `IEqualityComparer<T>`                                                             |
+
+## Properties
+
+### CurrentCulture
+|Name  |Notes |
+|-|-|
+|CurrentCulture| Gets a StringComparer object that performs a case-sensitive string comarisong using the word comparison rules of the current culture|
+### CurrentCultureIgnoreCase
+
+### InvariantCulture
+
+### InvariantCultureIgnoreCase
+
+### Ordinal
+
+### OrdinalIgnoreCase
+
 ## Remarks
 
 ### Create a StringComparer
