@@ -170,15 +170,15 @@ When decoding using the [Hex] [Format][Format Property], characters not in the v
 
 ### Decoding invalid HTML entities
 
-When decoding using the [HTML] [Format][Format Property], invalid [entities][HTMLEntity] will be removed (e.g. `"Example&InvalidEntity;"` will decode to `"Example"`).
+When decoding using the [HTML] [Format][Format Property], invalid [HTML Entities][HTMLEntity] will be removed (e.g. `"Example&InvalidEntity;"` will decode to `"Example"`).
 
 ### Decoding HTML ampersand
 
-When decoding using the [HTML] [Format][Format Property], any ampersand that is not part of an [entity][HTMLEntity] will be removed (e.g. `"Example&Something"` will decode to `"ExampleSomething"`).
+When decoding using the [HTML] [Format][Format Property], any ampersand that is not part of an [HTML Entity][HTMLEntity] will be removed (e.g. `"Example&Something"` will decode to `"ExampleSomething"`).
 
 ### Decoding HTML semicolon
 
-When decoding using the [HTML] [Format][Format Property], any semicolon that is not part of an [entity][HTMLEntity] will be treated as a literal character (e.g. `"ExampleSomething;"` will decode to `"ExampleSomething;"`).
+When decoding using the [HTML] [Format][Format Property], any semicolon that is not part of an [HTML Entity][HTMLEntity] will be treated as a literal character (e.g. `"ExampleSomething;"` will decode to `"ExampleSomething;"`).
 
 ### Round-Tripping
 
