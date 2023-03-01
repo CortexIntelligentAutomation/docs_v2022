@@ -170,15 +170,15 @@ When decoding using the [Hex] [Format][Format Property], characters not in the v
 
 ### Decoding invalid HTML entities
 
-When decoding using the [HTML] [Format][Format Property], invalid entities will be removed (e.g. `"Example&InvalidEntity;"` will decode to `"Example"`).
+When decoding using the [HTML] [Format][Format Property], invalid [entities][HTMLEntity] will be removed (e.g. `"Example&InvalidEntity;"` will decode to `"Example"`).
 
 ### Decoding HTML ampersand
 
-When decoding using the [HTML] [Format][Format Property], any ampersand that is not part of an entity will be removed (e.g. `"Example&Something"` will decode to `"ExampleSomething"`).
+When decoding using the [HTML] [Format][Format Property], any ampersand that is not part of an [entity][HTMLEntity] will be removed (e.g. `"Example&Something"` will decode to `"ExampleSomething"`).
 
 ### Decoding HTML semicolon
 
-When decoding using the [HTML] [Format][Format Property], any semicolon that is not part of an entity will be treated as a literal character (e.g. `"ExampleSomething;"` will decode to `"ExampleSomething;"`).
+When decoding using the [HTML] [Format][Format Property], any semicolon that is not part of an [entity][HTMLEntity] will be treated as a literal character (e.g. `"ExampleSomething;"` will decode to `"ExampleSomething;"`).
 
 ### Round-Tripping
 
@@ -192,7 +192,7 @@ To overcome this, this block creates a new [String][] which has the [Text][Text 
 
 ### Known Limitations
 
-When decoding using the [HTML] [Format][Format Property], any HTML5 named entities (e.g. `"&phi;"`) will be removed.
+When decoding using the [HTML] [Format][Format Property], any HTML5 [named entities][HTMLEntity] (e.g. `"&phi;"`) will be removed.
 
 This limitation may be removed in the future.
 
@@ -224,3 +224,4 @@ This limitation may be removed in the future.
 [InvalidBase64URL]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidBase64URL" >}}
 
 [Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}
+[HTMLEntity]: {{< url "Cortex.Reference.Glossary.F-J.HTMLEntity" >}}

@@ -1632,6 +1632,7 @@
                 Gmail = "/docs/reference/glossary/f-j/#gmail"
                 Heterogenous = "/docs/reference/glossary/f-j/#heterogenous"
                 Homogenous = "/docs/reference/glossary/f-j/#homogenous"
+                HTMLEntity = "/docs/reference/glossary/f-j/#html-entity"
                 Initialised = "/docs/reference/glossary/f-j/#initialised"
                 IMAP = "/docs/reference/glossary/f-j/#imap"
                 Integer = "/docs/reference/glossary/f-j/#integer"
@@ -2021,6 +2022,8 @@
     [VisualStudio.Code]
         MainDoc = "https://code.visualstudio.com/"
         Intellisense = "https://code.visualstudio.com/docs/editor/intellisense"
+[WHATWG]
+    EntityList = "https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references"
 [Wikipedia]
     Bit = "https://en.wikipedia.org/wiki/Bit"
     Byte = "https://en.wikipedia.org/wiki/Byte"
