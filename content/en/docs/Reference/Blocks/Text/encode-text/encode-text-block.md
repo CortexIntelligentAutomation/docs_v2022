@@ -81,7 +81,7 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to the [Format][Format 
 
 ### Text encoded to HTML
 
-This example will encode the [Text][Text Property] `"¡The quick brown fox jumps over the lazy dog!<>"` to [HTML][].
+This example will encode the [Text][Text Property] `"<p>The quick brown fox jumps over the lazy dog!</p>"` to [HTML][].
 
 #### Properties
 
@@ -92,10 +92,10 @@ This example will encode the [Text][Text Property] `"¡The quick brown fox jumps
 
 #### Result
 
-Encoding `"The quick brown fox jumps over the lazy dog"` to the [Format][Format Property] [HTML][] will result in the variable `($)Text` being updated to the following:
+Encoding `"<p>The quick brown fox jumps over the lazy dog!</p>"` to the [Format][Format Property] [HTML][] will result in the variable `($)Text` being updated to the following:
 
 ```json
-"&iexcl;The quick brown fox jumps over the lazy dog!&lt;&gt;"
+"&lt;p&gt;The quick brown fox jumps over the lazy dog!&lt;/p&gt;"
 ```
 
 ***
