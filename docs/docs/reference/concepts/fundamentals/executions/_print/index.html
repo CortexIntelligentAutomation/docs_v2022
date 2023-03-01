@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -217,10 +217,10 @@ This the multi-page printable view of this section.
     <div class="lead">Information regarding the anatomy of an execution.</div>
 	<h1 id="what-is-an-execution">What is an Execution?</h1>
 <h2 id="summary">Summary</h2>
-<p>An execution represents a running instance of a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>, the execution moves through the flow sequentially executing each <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> saving any outputs to <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a>. A flow can have one or more executions running at any time, each with their own variables.</p>
+<p>An execution represents a running instance of a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>, the execution moves through the flow sequentially executing each <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> saving any outputs to <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a>. A flow can have one or more executions running at any time, each with their own variables.</p>
 <ul>
-<li>See <a href="/docs/reference/concepts/fundamentals/executions/executions-in-development">Executions in Development</a> for more information regarding working with executions in <a href="/docs/guides/cortex-studio/">Cortex Studio</a>.</li>
-<li>See <a href="/docs/reference/concepts/fundamentals/executions/executions-in-production">Executions in Production</a> for more information regarding running executions in the <a href="/docs/reference/apis/cortex-flow-execution-service/">Cortex Flow Execution Service</a>.</li>
+<li>See <a href=" /docs/reference/concepts/fundamentals/executions/executions-in-development">Executions in Development</a> for more information regarding working with executions in <a href=" /docs/guides/cortex-studio/">Cortex Studio</a>.</li>
+<li>See <a href=" /docs/reference/concepts/fundamentals/executions/executions-in-production">Executions in Production</a> for more information regarding running executions in the <a href=" /docs/reference/apis/cortex-flow-execution-service/">Cortex Flow Execution Service</a>.</li>
 </ul>
 <h2 id="anatomy-of-an-execution">Anatomy of an Execution</h2>
 <p><img src="/images/execution-in-grid.PNG" alt="Example Execution in Executions Grid"></p>
@@ -275,7 +275,7 @@ This the multi-page printable view of this section.
 </tr>
 </tbody>
 </table>
-<p>When a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> starts the execution of a child flow using the <a href="/docs/reference/blocks/flows/run-flow/run-flow-block">Run Flow</a> block, any child executions will be shown within a tree in the <a href="/docs/guides/cortex-studio/south-panel/#executions-grid">Executions Grid</a>, for example:</p>
+<p>When a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> starts the execution of a child flow using the <a href=" /docs/reference/blocks/flows/run-flow/run-flow-block">Run Flow</a> block, any child executions will be shown within a tree in the <a href=" /docs/guides/cortex-studio/south-panel/#executions-grid">Executions Grid</a>, for example:</p>
 <p><img src="/images/child-execution-in-grid.PNG" alt="Example Child Execution in Executions Grid"></p>
 <h3 id="execution-status">Execution Status</h3>
 <table>
@@ -334,17 +334,17 @@ This the multi-page printable view of this section.
 <h2 id="see-also">See Also</h2>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/flows">Flows</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/variables/">Variables</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/flows">Flows</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/variables/">Variables</a></li>
 </ul>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/data-types/">All Data Types</a></li>
+<li><a href=" /docs/reference/data-types/">All Data Types</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
-<li><a href="/docs/reference/blocks/">All Blocks</a></li>
+<li><a href=" /docs/reference/blocks/">All Blocks</a></li>
 </ul>
 <h3 id="external-documentation">External Documentation</h3>
 <p>None</p>
@@ -367,42 +367,42 @@ This the multi-page printable view of this section.
     <div class="lead">Information regarding working with executions in development (i.e. Cortex Studio).</div>
 	<h1 id="executions-in-development">Executions in Development</h1>
 <h2 id="summary">Summary</h2>
-<p>Whilst debugging a flow, each execution is represented by a <a href="/docs/guides/cortex-studio/main-display-area/#executions">token</a> that moves through the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>, showing which <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> is currently being executed.</p>
-<p>A <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> can be debugged in <a href="/docs/guides/cortex-studio/">Cortex Studio</a> by clicking the <a href="/docs/guides/cortex-studio/main-display-area/#start-an-execution">Start an execution</a> button or by making an <a href="/docs/reference/apis/cortex-studio/">API call</a> to <a href="/docs/guides/cortex-studio/">Cortex Studio</a>, <a href="#providing-input-variables">providing input variables</a> to the flow, if required; this will <a href="#validating-a-flow">validate the flow</a> a   nd then begin an execution.</p>
+<p>Whilst debugging a flow, each execution is represented by a <a href=" /docs/guides/cortex-studio/main-display-area/#executions">token</a> that moves through the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>, showing which <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> is currently being executed.</p>
+<p>A <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> can be debugged in <a href=" /docs/guides/cortex-studio/">Cortex Studio</a> by clicking the <a href=" /docs/guides/cortex-studio/main-display-area/#start-an-execution">Start an execution</a> button or by making an <a href=" /docs/reference/apis/cortex-studio/">API call</a> to <a href=" /docs/guides/cortex-studio/">Cortex Studio</a>, <a href="#providing-input-variables">providing input variables</a> to the flow, if required; this will <a href="#validating-a-flow">validate the flow</a> a   nd then begin an execution.</p>
 <p>The following parameters can be specified:</p>
 <ul>
-<li>Show execution on workspace - when this is <code>true</code>, the token will be shown at every step throughout the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>, otherwise the token will only be shown when the execution <a href="/docs/guides/cortex-studio/south-panel/#pausing-an-execution">pauses</a>, hits a <a href="/docs/guides/cortex-studio/main-display-area/#breakpoints">breakpoint</a>, or an exception occurs when <code>Break on exception</code> is <code>true</code></li>
-<li>Break on exception - when this is <code>true</code> the execution will <a href="/docs/guides/cortex-studio/south-panel/#pausing-an-execution">pause</a> when an exception occurs</li>
+<li>Show execution on workspace - when this is <code>true</code>, the token will be shown at every step throughout the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>, otherwise the token will only be shown when the execution <a href=" /docs/guides/cortex-studio/south-panel/#pausing-an-execution">pauses</a>, hits a <a href=" /docs/guides/cortex-studio/main-display-area/#breakpoints">breakpoint</a>, or an exception occurs when <code>Break on exception</code> is <code>true</code></li>
+<li>Break on exception - when this is <code>true</code> the execution will <a href=" /docs/guides/cortex-studio/south-panel/#pausing-an-execution">pause</a> when an exception occurs</li>
 </ul>
 <h2 id="providing-input-variables">Providing Input Variables</h2>
-<p>Any flow that has <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> defined requires them to be provided when debugging, these may be provided to a flow in the following ways:</p>
+<p>Any flow that has <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> defined requires them to be provided when debugging, these may be provided to a flow in the following ways:</p>
 <ul>
-<li>From <a href="/docs/guides/cortex-studio/">Cortex Studio</a> using the <a href="/docs/guides/cortex-studio/east-panel/#inputs-property">Inputs Property</a> in the <a href="/docs/guides/cortex-studio/east-panel/#settings-editor">Settings Editor</a></li>
-<li>From an <a href="/docs/reference/apis/cortex-studio/">HTTP request</a> using the inputVariables in the body of the request</li>
+<li>From <a href=" /docs/guides/cortex-studio/">Cortex Studio</a> using the <a href=" /docs/guides/cortex-studio/east-panel/#inputs-property">Inputs Property</a> in the <a href=" /docs/guides/cortex-studio/east-panel/#settings-editor">Settings Editor</a></li>
+<li>From an <a href=" /docs/reference/apis/cortex-studio/">HTTP request</a> using the inputVariables in the body of the request</li>
 </ul>
 <h2 id="retrieving-output-variables">Retrieving Output Variables</h2>
-<p>Any flow that has <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> defined can have those variables retrieved after the execution has completed by using the outputVariables in the body of the <a href="/docs/reference/apis/cortex-studio/">HTTP response</a>.</p>
+<p>Any flow that has <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> defined can have those variables retrieved after the execution has completed by using the outputVariables in the body of the <a href=" /docs/reference/apis/cortex-studio/">HTTP response</a>.</p>
 <h2 id="validating-a-flow">Validating a Flow</h2>
-<p>The <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is validated before it&rsquo;s debugged, if this is successful an execution will begin.</p>
-<p>If there are any issues with the flow then the execution will not start and details of what needs to be resolved will be returned. If the flow was debugged by clicking the <a href="/docs/guides/cortex-studio/main-display-area/#start-an-execution">Start an execution</a> button, then entries will be displayed in the <a href="/docs/guides/cortex-studio/south-panel/#messages-grid">Messages Grid</a>; if it was debugged by making an <a href="/docs/reference/apis/cortex-studio/">HTTP request</a> to <a href="/docs/guides/cortex-studio/">Cortex Studio</a>, then a 400 Bad Request is returned.</p>
-<p>For a complete list see <a href="/docs/reference/messages/validation/">Validation</a> messages.</p>
+<p>The <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is validated before it&rsquo;s debugged, if this is successful an execution will begin.</p>
+<p>If there are any issues with the flow then the execution will not start and details of what needs to be resolved will be returned. If the flow was debugged by clicking the <a href=" /docs/guides/cortex-studio/main-display-area/#start-an-execution">Start an execution</a> button, then entries will be displayed in the <a href=" /docs/guides/cortex-studio/south-panel/#messages-grid">Messages Grid</a>; if it was debugged by making an <a href=" /docs/reference/apis/cortex-studio/">HTTP request</a> to <a href=" /docs/guides/cortex-studio/">Cortex Studio</a>, then a 400 Bad Request is returned.</p>
+<p>For a complete list see <a href=" /docs/reference/messages/validation/">Validation</a> messages.</p>
 <h2 id="selecting-an-execution">Selecting an Execution</h2>
-<p>One or more executions can be selected within <a href="/docs/guides/cortex-studio/">Cortex Studio</a> by clicking on their <a href="/docs/guides/cortex-studio/main-display-area/#executions">token</a>, or selecting them using the <a href="/docs/guides/cortex-studio/south-panel/#executions-grid">Executions Grid</a>. This allows:</p>
+<p>One or more executions can be selected within <a href=" /docs/guides/cortex-studio/">Cortex Studio</a> by clicking on their <a href=" /docs/guides/cortex-studio/main-display-area/#executions">token</a>, or selecting them using the <a href=" /docs/guides/cortex-studio/south-panel/#executions-grid">Executions Grid</a>. This allows:</p>
 <ul>
 <li><a href="#interacting-with-an-execution">Interacting with an Execution</a></li>
 <li><a href="#viewing-an-executions-variables">Viewing an Execution&rsquo;s Variables</a></li>
 <li><a href="#viewing-an-executions-exceptions">Viewing an Execution&rsquo;s Exceptions</a></li>
 </ul>
 <h2 id="interacting-with-an-execution">Interacting with an Execution</h2>
-<p>Once executions are <a href="#selecting-an-execution">selected</a> in <a href="/docs/guides/cortex-studio/">Cortex Studio</a> they can be interacted with in the following ways:</p>
+<p>Once executions are <a href="#selecting-an-execution">selected</a> in <a href=" /docs/guides/cortex-studio/">Cortex Studio</a> they can be interacted with in the following ways:</p>
 <ul>
-<li><a href="/docs/guides/cortex-studio/south-panel/#pausing-an-execution">Paused</a></li>
-<li><a href="/docs/guides/cortex-studio/south-panel/#stepping-an-execution">Stepped</a></li>
-<li><a href="/docs/guides/cortex-studio/south-panel/#continuing-an-execution">Continued</a></li>
-<li><a href="/docs/guides/cortex-studio/south-panel/#stopping-an-execution">Stopped</a></li>
+<li><a href=" /docs/guides/cortex-studio/south-panel/#pausing-an-execution">Paused</a></li>
+<li><a href=" /docs/guides/cortex-studio/south-panel/#stepping-an-execution">Stepped</a></li>
+<li><a href=" /docs/guides/cortex-studio/south-panel/#continuing-an-execution">Continued</a></li>
+<li><a href=" /docs/guides/cortex-studio/south-panel/#stopping-an-execution">Stopped</a></li>
 </ul>
 <h3 id="set-next-block-to-execute">Set Next Block to Execute</h3>
-<p><a href="/docs/guides/cortex-studio/main-display-area/#set-next-block-to-execute">Set Next Block to Execute</a> allows a developer to choose which <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> will be executed next for the selected execution, even if this block is not connected to the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>.</p>
+<p><a href=" /docs/guides/cortex-studio/main-display-area/#set-next-block-to-execute">Set Next Block to Execute</a> allows a developer to choose which <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> will be executed next for the selected execution, even if this block is not connected to the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>.</p>
 <p>Examples of what this can be used to do whilst debugging include:</p>
 <ul>
 <li>Retrying a block due to a transient exception such as network connectivity</li>
@@ -413,64 +413,64 @@ This the multi-page printable view of this section.
 </ul>
 <p>Currently, Set Next Block to Execute is not available when <a href="#set-next-block-to-execute-not-available-when-multiple-executions-are-selected">multiple executions are selected</a>, or the <a href="#set-next-block-to-execute-not-available-when-the-block-and-execution-are-on-different-workspaces">block and execution are on different workspaces</a>.</p>
 <h3 id="edit-and-continue-an-execution">Edit and Continue an Execution</h3>
-<p><a href="/docs/guides/cortex-studio/main-display-area/#edit-and-continue-an-execution">Edit and Continue</a> allows a developer to pause all executions, and make changes to the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> before continuing debugging.</p>
+<p><a href=" /docs/guides/cortex-studio/main-display-area/#edit-and-continue-an-execution">Edit and Continue</a> allows a developer to pause all executions, and make changes to the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> before continuing debugging.</p>
 <p>Examples of what this can be used to do whilst debugging include:</p>
 <ul>
-<li>Making changes such as adding, updating and removing: <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">blocks</a>, <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/#block-connections">connections</a>, <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a></li>
+<li>Making changes such as adding, updating and removing: <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">blocks</a>, <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/#block-connections">connections</a>, <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a></li>
 <li>Fixing an incorrectly configured block</li>
 </ul>
 <p>Currently when using Edit and Continue, it is not possible to <a href="#updating-a-variables-value-is-not-possible-without-using-a-block">directly change the value of a variable without using a block</a>.</p>
 <h2 id="viewing-an-executions-variables">Viewing an Execution&rsquo;s Variables</h2>
-<p>When debugging a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> in <a href="/docs/guides/cortex-studio/">Cortex Studio</a>, <a href="#selecting-an-execution">selecting an execution</a> will display all initialised <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> that are in <a href="/docs/reference/concepts/fundamentals/variables/variable-scopes/">scope</a> in the <a href="/docs/guides/cortex-studio/east-panel/#variables-viewer">Variables Viewer</a>.</p>
-<p>To see the data in a variable, select the variable in the <a href="/docs/guides/cortex-studio/east-panel/#variables-viewer">Variables Viewer</a> and the data will be presented in the <a href="/docs/guides/cortex-studio/east-panel/#variable-details-viewer">Variable Details Viewer</a>. If the data is large enough to negatively affect the performance of <a href="/docs/guides/cortex-studio/">Cortex Studio</a> it will not be displayed unless the <a href="/docs/guides/cortex-studio/east-panel/#load-value-button">Load Value Button</a> is clicked.</p>
+<p>When debugging a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> in <a href=" /docs/guides/cortex-studio/">Cortex Studio</a>, <a href="#selecting-an-execution">selecting an execution</a> will display all initialised <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> that are in <a href=" /docs/reference/concepts/fundamentals/variables/variable-scopes/">scope</a> in the <a href=" /docs/guides/cortex-studio/east-panel/#variables-viewer">Variables Viewer</a>.</p>
+<p>To see the data in a variable, select the variable in the <a href=" /docs/guides/cortex-studio/east-panel/#variables-viewer">Variables Viewer</a> and the data will be presented in the <a href=" /docs/guides/cortex-studio/east-panel/#variable-details-viewer">Variable Details Viewer</a>. If the data is large enough to negatively affect the performance of <a href=" /docs/guides/cortex-studio/">Cortex Studio</a> it will not be displayed unless the <a href=" /docs/guides/cortex-studio/east-panel/#load-value-button">Load Value Button</a> is clicked.</p>
 <h2 id="viewing-an-executions-exceptions">Viewing an Execution&rsquo;s Exceptions</h2>
-<p>When debugging a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> in <a href="/docs/guides/cortex-studio/">Cortex Studio</a>, <a href="#selecting-an-execution">selecting an execution</a> will display all <a href="/docs/reference/concepts/fundamentals/exceptions/what-is-an-exception">exceptions</a> that have been thrown for that execution in the <a href="/docs/guides/cortex-studio/east-panel/#exceptions-viewer">Exceptions Viewer</a>.</p>
+<p>When debugging a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> in <a href=" /docs/guides/cortex-studio/">Cortex Studio</a>, <a href="#selecting-an-execution">selecting an execution</a> will display all <a href=" /docs/reference/concepts/fundamentals/exceptions/what-is-an-exception">exceptions</a> that have been thrown for that execution in the <a href=" /docs/guides/cortex-studio/east-panel/#exceptions-viewer">Exceptions Viewer</a>.</p>
 <p>In future, it will be possible to navigate to the block that caused the exception.</p>
 <h2 id="handling-an-executions-exceptions">Handling an Execution&rsquo;s Exceptions</h2>
 <p>Exceptions thrown by an execution can be handled at any level within a flow.</p>
 <p>Exceptions can be handled:</p>
 <ul>
-<li>At the <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> level; for further information, see <a href="/docs/reference/concepts/fundamentals/blocks/handling-exceptions-within-a-block/">Handling Exceptions within a Block</a></li>
-<li>At the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> level; for further information, see <a href="/docs/reference/concepts/fundamentals/workspaces/handling-exceptions-within-a-workspace">Handling Exceptions within a Workspace</a></li>
-<li>At the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> level; for further information, see <a href="/docs/reference/concepts/fundamentals/flows/handling-exceptions-within-a-flow">Handling Exceptions within a Flow</a></li>
+<li>At the <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> level; for further information, see <a href=" /docs/reference/concepts/fundamentals/blocks/handling-exceptions-within-a-block/">Handling Exceptions within a Block</a></li>
+<li>At the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> level; for further information, see <a href=" /docs/reference/concepts/fundamentals/workspaces/handling-exceptions-within-a-workspace">Handling Exceptions within a Workspace</a></li>
+<li>At the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> level; for further information, see <a href=" /docs/reference/concepts/fundamentals/flows/handling-exceptions-within-a-flow">Handling Exceptions within a Flow</a></li>
 </ul>
-<p>If an exception occurs within the workspace of the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the execution will end with a status of Error.</p>
+<p>If an exception occurs within the workspace of the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the execution will end with a status of Error.</p>
 <p><img src="/images/flow-error-status.png" alt="Handling an Execution&amp;rsquo;s Exceptions"></p>
 <h2 id="logs-generated">Logs Generated</h2>
-<p>There are two ways that logs are generated while debugging a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>, they are:</p>
+<p>There are two ways that logs are generated while debugging a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>, they are:</p>
 <ul>
-<li>Automatically generated by the <a href="/docs/reference/logs/cortex-flow-debugger-service/">Cortex Flow Debugger Service</a></li>
-<li>Developer generated by using the <a href="/docs/reference/blocks/logs/log-event/log-event-block">Log Event</a> block</li>
+<li>Automatically generated by the <a href=" /docs/reference/logs/cortex-flow-debugger-service/">Cortex Flow Debugger Service</a></li>
+<li>Developer generated by using the <a href=" /docs/reference/blocks/logs/log-event/log-event-block">Log Event</a> block</li>
 </ul>
 <h2 id="remarks">Remarks</h2>
 <h3 id="known-limitations">Known Limitations</h3>
 <h4 id="updating-a-variables-value-is-not-possible-without-using-a-block">Updating a Variable&rsquo;s value is not possible without using a Block</h4>
-<p>When using <a href="/docs/guides/cortex-studio/main-display-area/#edit-and-continue-an-execution">Edit and Continue</a>, it is not possible to directly change the value of a <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a> without using a <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a>.</p>
+<p>When using <a href=" /docs/guides/cortex-studio/main-display-area/#edit-and-continue-an-execution">Edit and Continue</a>, it is not possible to directly change the value of a <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a> without using a <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a>.</p>
 <p>In future this limitation may be removed.</p>
 <h4 id="set-next-block-to-execute-not-available-when-multiple-executions-are-selected">Set Next Block to Execute not available when multiple Executions are selected</h4>
-<p>It is not possible to use <a href="/docs/guides/cortex-studio/main-display-area/#set-next-block-to-execute">Set Next Block to Execute</a> when there are multiple executions selected on the same <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a>.</p>
+<p>It is not possible to use <a href=" /docs/guides/cortex-studio/main-display-area/#set-next-block-to-execute">Set Next Block to Execute</a> when there are multiple executions selected on the same <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a>.</p>
 <p>In future this limitation may be removed.</p>
 <h4 id="set-next-block-to-execute-not-available-when-the-block-and-execution-are-on-different-workspaces">Set Next Block to Execute not available when the Block and Execution are on different Workspaces</h4>
-<p>It is not possible to use <a href="/docs/guides/cortex-studio/main-display-area/#set-next-block-to-execute">Set Next Block to Execute</a> when the selected execution is not on the same <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> as the <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> being set next to execute.</p>
+<p>It is not possible to use <a href=" /docs/guides/cortex-studio/main-display-area/#set-next-block-to-execute">Set Next Block to Execute</a> when the selected execution is not on the same <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> as the <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> being set next to execute.</p>
 <p>In future this limitation may be removed.</p>
 <h2 id="see-also">See Also</h2>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/flows">Flows</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/variables/">Variables</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/messages/">Messages</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/flows">Flows</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/variables/">Variables</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/messages/">Messages</a></li>
 </ul>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/data-types/">All Data Types</a></li>
+<li><a href=" /docs/reference/data-types/">All Data Types</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
-<li><a href="/docs/reference/blocks/">All Blocks</a></li>
+<li><a href=" /docs/reference/blocks/">All Blocks</a></li>
 </ul>
 <h3 id="external-documentation">External Documentation</h3>
 <p>None</p>
@@ -493,29 +493,29 @@ This the multi-page printable view of this section.
     <div class="lead">Information regarding working with executions in production (i.e. Cortex API Gateway Service).</div>
 	<h1 id="executions-in-production">Executions in Production</h1>
 <h2 id="summary">Summary</h2>
-<p>A <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> can be started in Production by making an <a href="/docs/reference/apis/cortex-api-gateway-service/">API call</a> to the <a href="/docs/reference/apis/cortex-api-gateway-service/">Cortex API Gateway Service</a>, <a href="#providing-input-variables">providing input variables</a> to the flow, if required; this will <a href="#validating-a-flow">validate the flow</a> and then begin an execution.</p>
+<p>A <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> can be started in Production by making an <a href=" /docs/reference/apis/cortex-api-gateway-service/">API call</a> to the <a href=" /docs/reference/apis/cortex-api-gateway-service/">Cortex API Gateway Service</a>, <a href="#providing-input-variables">providing input variables</a> to the flow, if required; this will <a href="#validating-a-flow">validate the flow</a> and then begin an execution.</p>
 <h2 id="providing-input-variables">Providing Input Variables</h2>
-<p>Any flow that has <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> defined can have those variables provided by using the inputVariables in the body of the <a href="/docs/reference/apis/cortex-api-gateway-service/">HTTP request</a>.</p>
+<p>Any flow that has <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> defined can have those variables provided by using the inputVariables in the body of the <a href=" /docs/reference/apis/cortex-api-gateway-service/">HTTP request</a>.</p>
 <h2 id="retrieving-output-variables">Retrieving Output Variables</h2>
-<p>Any flow that has <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> defined can have those variables retrieved after the execution has completed by using the outputVariables in the body of the <a href="/docs/reference/apis/cortex-api-gateway-service/">HTTP response</a></p>
+<p>Any flow that has <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> defined can have those variables retrieved after the execution has completed by using the outputVariables in the body of the <a href=" /docs/reference/apis/cortex-api-gateway-service/">HTTP response</a></p>
 <h2 id="validating-a-flow">Validating a Flow</h2>
-<p>The <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is validated before it&rsquo;s started, if this is successful an execution will begin.</p>
-<p>If there are any issues with the flow then the execution will not start and details of what needs to be resolved will be returned. If the flow was started by making an <a href="/docs/reference/apis/cortex-api-gateway-service/">HTTP request</a> to the <a href="/docs/reference/apis/cortex-api-gateway-service/">Cortex API Gateway Service</a>, then a 400 Bad Request is returned.</p>
-<p>For a complete list see <a href="/docs/reference/messages/validation/">Validation</a> messages.</p>
+<p>The <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is validated before it&rsquo;s started, if this is successful an execution will begin.</p>
+<p>If there are any issues with the flow then the execution will not start and details of what needs to be resolved will be returned. If the flow was started by making an <a href=" /docs/reference/apis/cortex-api-gateway-service/">HTTP request</a> to the <a href=" /docs/reference/apis/cortex-api-gateway-service/">Cortex API Gateway Service</a>, then a 400 Bad Request is returned.</p>
+<p>For a complete list see <a href=" /docs/reference/messages/validation/">Validation</a> messages.</p>
 <h2 id="handling-an-executions-exceptions">Handling an Execution&rsquo;s Exceptions</h2>
 <p>Exceptions thrown by an execution can be handled at any level within a flow.</p>
 <p>Exceptions can be handled:</p>
 <ul>
-<li>At the <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> level; for further information, see <a href="/docs/reference/concepts/fundamentals/blocks/handling-exceptions-within-a-block/">Handling Exceptions within a Block</a></li>
-<li>At the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> level; for further information, see <a href="/docs/reference/concepts/fundamentals/workspaces/handling-exceptions-within-a-workspace">Handling Exceptions within a Workspace</a></li>
-<li>At the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> level; for further information, see <a href="/docs/reference/concepts/fundamentals/flows/handling-exceptions-within-a-flow">Handling Exceptions within a Flow</a></li>
+<li>At the <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> level; for further information, see <a href=" /docs/reference/concepts/fundamentals/blocks/handling-exceptions-within-a-block/">Handling Exceptions within a Block</a></li>
+<li>At the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> level; for further information, see <a href=" /docs/reference/concepts/fundamentals/workspaces/handling-exceptions-within-a-workspace">Handling Exceptions within a Workspace</a></li>
+<li>At the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> level; for further information, see <a href=" /docs/reference/concepts/fundamentals/flows/handling-exceptions-within-a-flow">Handling Exceptions within a Flow</a></li>
 </ul>
-<p>If an exception occurs within the workspace of the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the execution will end and then a 500 Internal Server Error is returned.</p>
+<p>If an exception occurs within the workspace of the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the execution will end and then a 500 Internal Server Error is returned.</p>
 <h2 id="logs-generated">Logs Generated</h2>
-<p>There are two ways that logs are generated while executing a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> in Production, they are:</p>
+<p>There are two ways that logs are generated while executing a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> in Production, they are:</p>
 <ul>
-<li>Automatically generated by the <a href="/docs/reference/logs/cortex-api-gateway-service/">Cortex API Gateway Service</a></li>
-<li>Developer generated by using the <a href="/docs/reference/blocks/logs/log-event/log-event-block">Log Event</a> block</li>
+<li>Automatically generated by the <a href=" /docs/reference/logs/cortex-api-gateway-service/">Cortex API Gateway Service</a></li>
+<li>Developer generated by using the <a href=" /docs/reference/blocks/logs/log-event/log-event-block">Log Event</a> block</li>
 </ul>
 <h2 id="remarks">Remarks</h2>
 <h3 id="known-limitations">Known Limitations</h3>
@@ -523,21 +523,21 @@ This the multi-page printable view of this section.
 <h2 id="see-also">See Also</h2>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/flows">Flows</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/variables/">Variables</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/messages/">Messages</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/flows">Flows</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/variables/">Variables</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/messages/">Messages</a></li>
 </ul>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/data-types/">All Data Types</a></li>
+<li><a href=" /docs/reference/data-types/">All Data Types</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
-<li><a href="/docs/reference/blocks/">All Blocks</a></li>
+<li><a href=" /docs/reference/blocks/">All Blocks</a></li>
 </ul>
 <h3 id="external-documentation">External Documentation</h3>
 <p>None</p>

@@ -119,7 +119,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -151,7 +151,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -8629,6 +8629,39 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/exceptions/collections/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Collections</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreferenceexceptionscollections">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionscollectionsoccurrence-not-present-exception" href="/docs/reference/exceptions/collections/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/reference/exceptions/common/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Common</a>
   </li>
   <ul>
@@ -8840,14 +8873,6 @@
         
       
       
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsdictionariesoccurrence-not-present-exception" href="/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
-        
-      
-      
     </li>
   </ul>
 </ul>
@@ -8934,14 +8959,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflow-exception" href="/docs/reference/exceptions/flow-exception/">FlowException</a>
         
       
       
@@ -9042,6 +9059,14 @@
   </ul>
 </ul>
 
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflowsflow-exception" href="/docs/reference/exceptions/flows/flow-exception/">FlowException</a>
         
       
       
@@ -10014,84 +10039,84 @@
 </ul>
 <h2 id="handling-exceptions-at-the-block-level">Handling Exceptions at the Block level</h2>
 <p><img src="/images/block-exception.gif" alt="Example Message in Messages Grid"></p>
-<p>Exceptions thrown within the <a href="/docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> of a <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> can be handled by connecting a <a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception block</a>  to the red exception output port. These blocks allow for specific <a href="#matching-exceptions">match criteria</a> to be provided; if an exception matches the criteria it will be handled by the block and can be <a href="#saving-the-block-exception">saved to a variable</a>, otherwise, it will be passed to the next <a href="#chaining-block-exception-handling-blocks">chained</a> exception handling block. This process repeats until the exception is either handled or there are no more blocks in the chain; if the exception is not handled at this level it is passed up to the <a href="#handling-exceptions-at-the-workspace-level">workspace level</a>.</p>
+<p>Exceptions thrown within the <a href=" /docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> of a <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> can be handled by connecting a <a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception block</a>  to the red exception output port. These blocks allow for specific <a href="#matching-exceptions">match criteria</a> to be provided; if an exception matches the criteria it will be handled by the block and can be <a href="#saving-the-block-exception">saved to a variable</a>, otherwise, it will be passed to the next <a href="#chaining-block-exception-handling-blocks">chained</a> exception handling block. This process repeats until the exception is either handled or there are no more blocks in the chain; if the exception is not handled at this level it is passed up to the <a href="#handling-exceptions-at-the-workspace-level">workspace level</a>.</p>
 <h3 id="matching-exceptions">Matching Exceptions</h3>
-<p><a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> can be configured to handle exceptions that match specific criteria (e.g. The Exception Type or Message contains matching text). If an exception matches the criteria, the exception is handled, <a href="#saving-the-block-exception">saved to a variable</a> if provided, and the <a href="/docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> moves to the block connected to the output port; if the exception does not match the criteria the execution moves to the next <a href="#chaining-block-exception-handling-blocks">chained</a> exception handling block.</p>
+<p><a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> can be configured to handle exceptions that match specific criteria (e.g. The Exception Type or Message contains matching text). If an exception matches the criteria, the exception is handled, <a href="#saving-the-block-exception">saved to a variable</a> if provided, and the <a href=" /docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> moves to the block connected to the output port; if the exception does not match the criteria the execution moves to the next <a href="#chaining-block-exception-handling-blocks">chained</a> exception handling block.</p>
 <h3 id="chaining-block-exception-handling-blocks">Chaining Block Exception Handling Blocks</h3>
 <p><img src="/images/chained-exception.gif" alt="Chaining Block Exception Handling Blocks"></p>
-<p><a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> can be chained together by connecting the red exception output port of one <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> to the red exception input port of another. When an exception is not handled, it will be passed to the next chained exception handling block. This process repeats until the exception is either handled or there are no more blocks in the chain; if the exception is not handled at this level it is passed up to the <a href="#handling-exceptions-at-the-workspace-level">workspace level</a>.</p>
-<p>The <a href="/docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-block">Handle Block Exception</a> block can be used to handle all exceptions. This block does not have an exception output port and therefore ends the chain.</p>
+<p><a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> can be chained together by connecting the red exception output port of one <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> to the red exception input port of another. When an exception is not handled, it will be passed to the next chained exception handling block. This process repeats until the exception is either handled or there are no more blocks in the chain; if the exception is not handled at this level it is passed up to the <a href="#handling-exceptions-at-the-workspace-level">workspace level</a>.</p>
+<p>The <a href=" /docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-block">Handle Block Exception</a> block can be used to handle all exceptions. This block does not have an exception output port and therefore ends the chain.</p>
 <h3 id="saving-the-block-exception">Saving the Block Exception</h3>
-<p><a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> can be used to save the handled exception to a <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a>. If it is not necessary to save the exception to a variable, it may be <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">discarded</a> by setting the block&rsquo;s Exception <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> to use the built-in discard variable <code>($)_</code>.</p>
+<p><a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> can be used to save the handled exception to a <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a>. If it is not necessary to save the exception to a variable, it may be <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">discarded</a> by setting the block&rsquo;s Exception <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> to use the built-in discard variable <code>($)_</code>.</p>
 <h2 id="handling-exceptions-at-the-workspace-level">Handling Exceptions at the Workspace level</h2>
 <p><img src="/images/workspace-exception.gif" alt="Example Message in Messages Grid"></p>
 <p>Exceptions not handled at the <a href="#handling-exceptions-at-the-block-level">block level</a> are passed up to the workspace level.</p>
-<p>If an unhandled exception occurs in a <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#nested-workspaces">Nested Workspace</a> where a <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block exists:</p>
+<p>If an unhandled exception occurs in a <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#nested-workspaces">Nested Workspace</a> where a <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block exists:</p>
 <ul>
-<li>The exception will be passed to the <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block</li>
+<li>The exception will be passed to the <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block</li>
 <li>The exception will be handled and can be <a href="#saving-the-workspace-exception">saved to a variable</a></li>
-<li>The <a href="/docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> will move to the <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> connected to the output port of the <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block</li>
+<li>The <a href=" /docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> will move to the <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> connected to the output port of the <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block</li>
 </ul>
-<p>If an unhandled exception occurs in a <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#nested-workspaces">Nested Workspace</a> where a <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block does not exist:</p>
+<p>If an unhandled exception occurs in a <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#nested-workspaces">Nested Workspace</a> where a <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block does not exist:</p>
 <ul>
-<li>The exception will be rethrown by the <a href="/docs/reference/blocks/workspaces/workspace/workspace-block">Workspace block</a> the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> belongs to</li>
-<li>This process repeats until the exception is handled at the <a href="#handling-exceptions-at-the-block-level">block level</a> or workspace level, or reaches the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a></li>
+<li>The exception will be rethrown by the <a href=" /docs/reference/blocks/workspaces/workspace/workspace-block">Workspace block</a> the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> belongs to</li>
+<li>This process repeats until the exception is handled at the <a href="#handling-exceptions-at-the-block-level">block level</a> or workspace level, or reaches the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a></li>
 </ul>
-<p>If an unhandled exception occurs in or reaches the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a>, and is not handled by any <a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> or the <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block, it will be passed up to the <a href="#handling-exceptions-at-the-flow-level">flow level</a>.</p>
-<p>Please note that there are a number of <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block/#block-restrictions">restrictions</a> when using the <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block.</p>
+<p>If an unhandled exception occurs in or reaches the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a>, and is not handled by any <a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> or the <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block, it will be passed up to the <a href="#handling-exceptions-at-the-flow-level">flow level</a>.</p>
+<p>Please note that there are a number of <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block/#block-restrictions">restrictions</a> when using the <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block.</p>
 <h3 id="saving-the-workspace-exception">Saving the Workspace Exception</h3>
-<p>The <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block can be used to save the handled exception to a <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a>. If it is not necessary to save the exception to a variable, it may be <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">discarded</a> by setting the block&rsquo;s Exception <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> to use the built-in discard variable <code>($)_</code>.</p>
+<p>The <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block can be used to save the handled exception to a <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a>. If it is not necessary to save the exception to a variable, it may be <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">discarded</a> by setting the block&rsquo;s Exception <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> to use the built-in discard variable <code>($)_</code>.</p>
 <h2 id="handling-exceptions-at-the-flow-level">Handling Exceptions at the Flow level</h2>
 <p><img src="/images/flow-exception.gif" alt="Example Message in Messages Grid"></p>
-<p>If an unhandled exception occurs in or reaches the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a>, and is not handled at the <a href="#handling-exceptions-at-the-block-level">block level</a> or <a href="#handling-exceptions-at-the-workspace-level">workspace level</a>, it will be passed up to the flow level, where:</p>
+<p>If an unhandled exception occurs in or reaches the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a>, and is not handled at the <a href="#handling-exceptions-at-the-block-level">block level</a> or <a href="#handling-exceptions-at-the-workspace-level">workspace level</a>, it will be passed up to the flow level, where:</p>
 <ul>
-<li>The exception will be passed to the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block</li>
-<li>The exception will be handled and can be saved to a <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a></li>
-<li>The <a href="/docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> will enter the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block&rsquo;s <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a></li>
-<li>The <a href="/docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> will end after the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block&rsquo;s <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> has completed</li>
+<li>The exception will be passed to the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block</li>
+<li>The exception will be handled and can be saved to a <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a></li>
+<li>The <a href=" /docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> will enter the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block&rsquo;s <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a></li>
+<li>The <a href=" /docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> will end after the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block&rsquo;s <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> has completed</li>
 </ul>
-<p>The <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block is automatically added to the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a> when a new <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is created, there are <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block/#block-restrictions">restrictions</a> that apply to this block.</p>
-<p>The <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block it has its own <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a>, which can access its own <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> and those defined at the <a href="/docs/reference/concepts/fundamentals/variables/variable-scopes/">scope</a> of the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a>.</p>
-<p>The logic contained within the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> workspace must end the execution using an <a href="/docs/reference/blocks/flows/end-flow/end-flow-block">End Flow</a> block. By default, this workspace contains a <a href="/docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a> block connected to an <a href="/docs/reference/blocks/flows/end-flow/end-flow-block">End Flow</a> block, which will cause the flow to end without error.</p>
+<p>The <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block is automatically added to the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a> when a new <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is created, there are <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block/#block-restrictions">restrictions</a> that apply to this block.</p>
+<p>The <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block it has its own <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a>, which can access its own <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> and those defined at the <a href=" /docs/reference/concepts/fundamentals/variables/variable-scopes/">scope</a> of the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a>.</p>
+<p>The logic contained within the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> workspace must end the execution using an <a href=" /docs/reference/blocks/flows/end-flow/end-flow-block">End Flow</a> block. By default, this workspace contains a <a href=" /docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a> block connected to an <a href=" /docs/reference/blocks/flows/end-flow/end-flow-block">End Flow</a> block, which will cause the flow to end without error.</p>
 <h3 id="handling-exceptions-in-the-handle-flow-exception-block">Handling Exceptions in the Handle Flow Exception block</h3>
-<p>Exceptions that occur within the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> of the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block can be handled at the <a href="#handling-exceptions-at-the-block-level">block level</a> and <a href="#handling-exceptions-at-the-workspace-level">workspace level</a>. If an exception is not handled, the <a href="/docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> will end with a status of Error.</p>
+<p>Exceptions that occur within the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> of the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block can be handled at the <a href="#handling-exceptions-at-the-block-level">block level</a> and <a href="#handling-exceptions-at-the-workspace-level">workspace level</a>. If an exception is not handled, the <a href=" /docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> will end with a status of Error.</p>
 <p><img src="/images/flow-error-status.png" alt="Handling Exceptions in the Handle Flow Exception block"></p>
 <h3 id="saving-the-flow-exception">Saving the Flow Exception</h3>
-<p>The <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block can be used to save the handled exception to a <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a>. If it is not necessary to save the exception to a variable, it may be <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">discarded</a> by setting the block&rsquo;s Exception <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> to use the built-in discard variable <code>($)_</code>.</p>
+<p>The <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block can be used to save the handled exception to a <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable</a>. If it is not necessary to save the exception to a variable, it may be <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">discarded</a> by setting the block&rsquo;s Exception <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> to use the built-in discard variable <code>($)_</code>.</p>
 <h2 id="remarks">Remarks</h2>
 <h3 id="known-limitations">Known Limitations</h3>
 <h4 id="the-top-level-workspace-cannot-contain-a-handle-workspace-exception-block">The Top-Level Workspace cannot contain a Handle Workspace Exception block</h4>
-<p>The <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a> cannot contain a <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block; if one is added, it will be reported when trying to validate the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>. For more information see <a href="/docs/reference/concepts/fundamentals/executions/executions-in-development/#validating-a-flow">Validating a Flow in Development</a> and <a href="/docs/reference/concepts/fundamentals/executions/executions-in-production/#validating-a-flow">Validating a Flow in Production</a>.</p>
-<p>Any unhandled exceptions thrown on the Top-Level Workspace will be handled by the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block.</p>
+<p>The <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#top-level-workspace">Top-Level Workspace</a> cannot contain a <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block; if one is added, it will be reported when trying to validate the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>. For more information see <a href=" /docs/reference/concepts/fundamentals/executions/executions-in-development/#validating-a-flow">Validating a Flow in Development</a> and <a href=" /docs/reference/concepts/fundamentals/executions/executions-in-production/#validating-a-flow">Validating a Flow in Production</a>.</p>
+<p>Any unhandled exceptions thrown on the Top-Level Workspace will be handled by the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block.</p>
 <p>In the future this may change.</p>
 <h4 id="a-nested-workspace-cannot-contain-more-than-one-handle-workspace-exception-block">A Nested Workspace cannot contain more than one Handle Workspace Exception block</h4>
-<p>A <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#nested-workspaces">Nested Workspace</a> cannot contain more than one <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block; if more than one is added, it will be reported when trying to validate the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>. For more information see <a href="/docs/reference/concepts/fundamentals/executions/executions-in-development/#validating-a-flow">Validating a Flow in Development</a> and <a href="/docs/reference/concepts/fundamentals/executions/executions-in-production/#validating-a-flow">Validating a Flow in Production</a>.</p>
+<p>A <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/#nested-workspaces">Nested Workspace</a> cannot contain more than one <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block; if more than one is added, it will be reported when trying to validate the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>. For more information see <a href=" /docs/reference/concepts/fundamentals/executions/executions-in-development/#validating-a-flow">Validating a Flow in Development</a> and <a href=" /docs/reference/concepts/fundamentals/executions/executions-in-production/#validating-a-flow">Validating a Flow in Production</a>.</p>
 <p>In the future this may change.</p>
 <h4 id="enforced-restrictions-to-prevent-infinite-recursion">Enforced restrictions to prevent infinite recursion</h4>
-<p>For each <a href="/docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> of a <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a>, the <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block will only handle the first unhandled exception within its workspace, this is to prevent infinite recursion within the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>.</p>
+<p>For each <a href=" /docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> of a <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a>, the <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block will only handle the first unhandled exception within its workspace, this is to prevent infinite recursion within the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>.</p>
 <p>For more information see <a href="#handling-exceptions-at-the-workspace-level">Handling Exceptions at the Workspace level</a>.</p>
 <p>In the future this may change.</p>
 <h2 id="see-also">See Also</h2>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/flows">Flows</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/variables/">Variables</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/executions/">Executions</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/flows">Flows</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/variables/">Variables</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/executions/">Executions</a></li>
 </ul>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/exceptions/">All Exceptions</a></li>
+<li><a href=" /docs/reference/exceptions/">All Exceptions</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
-<li><a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a></li>
-<li><a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a></li>
-<li><a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a></li>
-<li><a href="/docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a></li>
-<li><a href="/docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a></li>
-<li><a href="/docs/reference/blocks/flows/end-flow/end-flow-block">End Flow</a></li>
+<li><a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a></li>
+<li><a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a></li>
+<li><a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a></li>
+<li><a href=" /docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a></li>
+<li><a href=" /docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a></li>
+<li><a href=" /docs/reference/blocks/flows/end-flow/end-flow-block">End Flow</a></li>
 </ul>
 <h3 id="external-documentation">External Documentation</h3>
 <p>None</p>

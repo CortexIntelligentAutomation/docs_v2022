@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -363,7 +363,7 @@ This the multi-page printable view of this section.
     <div class="lead">Information regarding using the Expression Editor to create literal values, expressions, or use variables.</div>
 	<h1 id="expression-editor">Expression Editor</h1>
 <h2 id="summary">Summary</h2>
-<p>The <a href="/docs/guides/cortex-studio/expression-editor/">Expression Editor</a> is the most powerful <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/">property editor</a> and can accept <a href="#literal-values">literal values</a>, <a href="#expressions">expressions</a>, and <a href="#variables">variables</a>.</p>
+<p>The <a href=" /docs/guides/cortex-studio/expression-editor/">Expression Editor</a> is the most powerful <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/">property editor</a> and can accept <a href="#literal-values">literal values</a>, <a href="#expressions">expressions</a>, and <a href="#variables">variables</a>.</p>
 <p><img src="/images/set-variable/set-variable-expression-empty.PNG" alt="Empty Expression"></p>
 <h2 id="literal-values">Literal Values</h2>
 <p>A literal is an explicit value that is not calculated during the execution of the flow. A literal can be any of the following data types:</p>
@@ -382,22 +382,22 @@ This the multi-page printable view of this section.
 </ul>
 <h3 id="string-literal">String literal</h3>
 <p><img src="/images/set-variable/set-variable-expression-string.PNG" alt="String literal"></p>
-<p><a href="/docs/reference/data-types/text/string">String</a> literals are surrounded by double quotes. For example:</p>
+<p><a href=" /docs/reference/data-types/text/string">String</a> literals are surrounded by double quotes. For example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;Example String&#34;</span>
 </span></span></code></pre></div><p>The example above becomes:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Example String
-</span></span></code></pre></div><p>Double quotes that form part of the <a href="/docs/reference/data-types/text/string">string</a>, along with the back-slash character and any unicode character codes or hexadecimal character codes, must be escaped by a back-slash character. For example:</p>
+</span></span></code></pre></div><p>Double quotes that form part of the <a href=" /docs/reference/data-types/text/string">string</a>, along with the back-slash character and any unicode character codes or hexadecimal character codes, must be escaped by a back-slash character. For example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;He said \&#34;Come here\x0021\&#34;&#34;</span>
 </span></span></code></pre></div><p>The example above becomes:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>He said &#34;Come here!&#34;
-</span></span></code></pre></div><p>For verbatim <a href="/docs/reference/data-types/text/string">string</a> literals, double quotes that form part of the <a href="/docs/reference/data-types/text/string">string</a> literal must be duplicated to give a single double quote character. For example:</p>
+</span></span></code></pre></div><p>For verbatim <a href=" /docs/reference/data-types/text/string">string</a> literals, double quotes that form part of the <a href=" /docs/reference/data-types/text/string">string</a> literal must be duplicated to give a single double quote character. For example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#4e9a06">@&#34;He said &#34;&#34;Come here!&#34;&#34;&#34;</span>
 </span></span></code></pre></div><p>The example above becomes:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>He said &#34;Come here!&#34;
-</span></span></code></pre></div><p>For interpolated <a href="/docs/reference/data-types/text/string">strings</a>, <a href="#variables">variables</a> or <a href="#expressions">expressions</a> are surrounded by single curly braces. For example:</p>
+</span></span></code></pre></div><p>For interpolated <a href=" /docs/reference/data-types/text/string">strings</a>, <a href="#variables">variables</a> or <a href="#expressions">expressions</a> are surrounded by single curly braces. For example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#4e9a06">$&#34;He said \&#34;</span><span style="color:#000">Come</span> <span style="color:#000">here</span> <span style="color:#000;font-weight:bold">{(</span><span style="color:#a40000">$</span><span style="color:#000;font-weight:bold">)</span><span style="color:#000">Name</span><span style="color:#000;font-weight:bold">}!</span><span style="color:#a40000">\</span><span style="color:#4e9a06">&#34;&#34;</span>
 </span></span></code></pre></div><p>For further information on interpolated strings using  <a href="#variables">variables</a> or <a href="#expressions">expressions</a> see <a href="#string-expressions">String expressions</a></p>
-<p>In the case of interpolated verbatim <a href="/docs/reference/data-types/text/string">string</a> literals, double curly braces are not interpreted literally; they produce a single curly brace character. For example:</p>
+<p>In the case of interpolated verbatim <a href=" /docs/reference/data-types/text/string">string</a> literals, double curly braces are not interpreted literally; they produce a single curly brace character. For example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#4e9a06">$@&#34;This is a single square brace &#34;&#34;[&#34;&#34;, and this is a single curly brace &#34;&#34;{{&#34;&#34;&#34;</span>
 </span></span></code></pre></div><p>The example above becomes:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>This is a single square brace &#34;[&#34;, and this is a single curly brace &#34;{&#34;
@@ -413,43 +413,43 @@ This the multi-page printable view of this section.
 </span></span></code></pre></div><p>For further information, <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char#literals">Char Literals</a></p>
 <h3 id="int32-literal">Int32 literal</h3>
 <p><img src="/images/set-variable/set-variable-expression-int.PNG" alt="Int32 literal"></p>
-<p>If an integer literal value is greater than or equal to <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.minvalue">Int32.MinValue</a> or less than or equal to <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.maxvalue">Int32.MaxValue</a>, then it will be of type <a href="/docs/reference/data-types/numbers/int32">Int32</a></p>
+<p>If an integer literal value is greater than or equal to <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.minvalue">Int32.MinValue</a> or less than or equal to <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.maxvalue">Int32.MaxValue</a>, then it will be of type <a href=" /docs/reference/data-types/numbers/int32">Int32</a></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">1234</span>
-</span></span></code></pre></div><p>If an integer literal value is less than <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.minvalue">Int32.MinValue</a> or greater than <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.maxvalue">Int32.MaxValue</a>, then it will be of type <a href="/docs/reference/data-types/numbers/int64">Int64</a>.</p>
+</span></span></code></pre></div><p>If an integer literal value is less than <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.minvalue">Int32.MinValue</a> or greater than <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.maxvalue">Int32.MaxValue</a>, then it will be of type <a href=" /docs/reference/data-types/numbers/int64">Int64</a>.</p>
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#integer-literals">Integer Literals</a>.</p>
 <h3 id="int64-literal">Int64 literal</h3>
 <p><img src="/images/set-variable/set-variable-expression-int64.PNG" alt="Int64 literal"></p>
-<p>If an integer literal value is less than <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.minvalue">Int32.MinValue</a> or greater than <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.maxvalue">Int32.MaxValue</a>, then it will be of type <a href="/docs/reference/data-types/numbers/int64">Int64</a>.</p>
+<p>If an integer literal value is less than <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.minvalue">Int32.MinValue</a> or greater than <a href="https://learn.microsoft.com/en-us/dotnet/api/system.int32.maxvalue">Int32.MaxValue</a>, then it will be of type <a href=" /docs/reference/data-types/numbers/int64">Int64</a>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">2147483648</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">1234l</span>
 </span></span><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">1234L</span>
 </span></span></code></pre></div><p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#integer-literals">Integer Literals</a>.</p>
 <h3 id="double-literal">Double literal</h3>
 <p><img src="/images/set-variable/set-variable-expression-double.PNG" alt="Double literal"></p>
-<p>By default, floating point literals are of type <a href="/docs/reference/data-types/numbers/double">Double</a>.</p>
+<p>By default, floating point literals are of type <a href=" /docs/reference/data-types/numbers/double">Double</a>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">1234.456</span>
-</span></span></code></pre></div><p>The suffix <code>d</code> or <code>D</code> can used to create a floating point literal of type <a href="/docs/reference/data-types/numbers/double">Double</a>, but is unnecessary.</p>
+</span></span></code></pre></div><p>The suffix <code>d</code> or <code>D</code> can used to create a floating point literal of type <a href=" /docs/reference/data-types/numbers/double">Double</a>, but is unnecessary.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">1234.456d</span>
 </span></span><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">1234.456D</span>
 </span></span></code></pre></div><p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types#real-literals">Real Literals</a>.</p>
 <h3 id="single-literal">Single literal</h3>
 <p><img src="/images/set-variable/set-variable-expression-single.PNG" alt="Single literal"></p>
-<p>If it is necessary to create an floating point literal of type <a href="/docs/reference/data-types/numbers/single">Single</a> with a value greater than or equal to <a href="https://learn.microsoft.com/en-us/dotnet/api/system.single.minvalue">Single.MinValue</a> or less than or equal to <a href="https://learn.microsoft.com/en-us/dotnet/api/system.single.maxvalue">Single.MaxValue</a>, then the floating point literal must be suffixed by the character <code>f</code> or <code>F</code>. For example:</p>
+<p>If it is necessary to create an floating point literal of type <a href=" /docs/reference/data-types/numbers/single">Single</a> with a value greater than or equal to <a href="https://learn.microsoft.com/en-us/dotnet/api/system.single.minvalue">Single.MinValue</a> or less than or equal to <a href="https://learn.microsoft.com/en-us/dotnet/api/system.single.maxvalue">Single.MaxValue</a>, then the floating point literal must be suffixed by the character <code>f</code> or <code>F</code>. For example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">1234.456f</span>
 </span></span><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">1234.456F</span>
 </span></span></code></pre></div><p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types#real-literals">Real Literals</a>.</p>
 <h3 id="boolean-literal">Boolean literal</h3>
 <p><img src="/images/set-variable/set-variable-expression-boolean.PNG" alt="Boolean literal"></p>
-<p>A <a href="/docs/reference/data-types/conditional-logic/boolean">Boolean</a> literal represents a truth-value of either <code>true</code> or <code>false</code>.</p>
+<p>A <a href=" /docs/reference/data-types/conditional-logic/boolean">Boolean</a> literal represents a truth-value of either <code>true</code> or <code>false</code>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">true</span> <span style="color:#a40000">or</span> <span style="color:#204a87;font-weight:bold">false</span>
 </span></span></code></pre></div><p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/bool#literals">Boolean Literals</a>.</p>
 <h3 id="object-literal">Object literal</h3>
 <p>Currently, creating an object using literal syntax is not supported.</p>
 <h3 id="dictionary-literal">Dictionary literal</h3>
-<p>Currently, creating a dictionary using literal syntax is not supported; any attempt to make a dictionary using literal syntax will create a <a href="/docs/reference/data-types/collections/structure">Structure</a> instead.</p>
+<p>Currently, creating a dictionary using literal syntax is not supported; any attempt to make a dictionary using literal syntax will create a <a href=" /docs/reference/data-types/collections/structure">Structure</a> instead.</p>
 <h3 id="structure-literal">Structure literal</h3>
 <p><img src="/images/set-variable/set-variable-expression-structure.PNG" alt="Structure literal"></p>
-<p><a href="/docs/reference/data-types/collections/structure">Structures</a> are a special type of <a href="/docs/reference/data-types/collections/dictionary-2">Dictionary</a> that always have <a href="/docs/reference/data-types/text/string">string</a> keys.</p>
+<p><a href=" /docs/reference/data-types/collections/structure">Structures</a> are a special type of <a href=" /docs/reference/data-types/collections/dictionary-2">Dictionary</a> that always have <a href=" /docs/reference/data-types/text/string">string</a> keys.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">&#34;Name1&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">&#34;Name2&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span>
@@ -458,14 +458,14 @@ This the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">&#34;Name5&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[],</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">&#34;Name6&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">null</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><p>They differ from a <a href="/docs/reference/data-types/collections/dictionary-2">Dictionary</a> in the syntax used for accessing the item:</p>
+</span></span></code></pre></div><p>They differ from a <a href=" /docs/reference/data-types/collections/dictionary-2">Dictionary</a> in the syntax used for accessing the item:</p>
 <ul>
-<li><a href="/docs/reference/data-types/collections/dictionary-2">Dictionary</a> items can be accessed using <a href="#index-expressions">Index expressions</a></li>
-<li><a href="/docs/reference/data-types/collections/structure">Structure</a> items can be accessed using <a href="#property-expressions">Property expressions</a> or <a href="#index-expressions">Index expressions</a></li>
+<li><a href=" /docs/reference/data-types/collections/dictionary-2">Dictionary</a> items can be accessed using <a href="#index-expressions">Index expressions</a></li>
+<li><a href=" /docs/reference/data-types/collections/structure">Structure</a> items can be accessed using <a href="#property-expressions">Property expressions</a> or <a href="#index-expressions">Index expressions</a></li>
 </ul>
 <h3 id="list-literal">List literal</h3>
 <p><img src="/images/set-variable/set-variable-expression-list.PNG" alt="List literal"></p>
-<p>A <a href="/docs/reference/data-types/collections/list-1">List</a> is an object that consists of a number of ordered items that can be of any <a href="/docs/reference/concepts/fundamentals/data-types/">data type</a>.</p>
+<p>A <a href=" /docs/reference/data-types/collections/list-1">List</a> is an object that consists of a number of ordered items that can be of any <a href=" /docs/reference/concepts/fundamentals/data-types/">data type</a>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#4e9a06">&#34;Example String&#34;</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span>
@@ -474,14 +474,14 @@ This the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">[],</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">null</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">]</span>
-</span></span></code></pre></div><p><a href="/docs/reference/data-types/collections/list-1">Lists</a> may be heterogeneous, where the items may be of different <a href="/docs/reference/concepts/fundamentals/data-types/">data types</a>, or homogeneous, when the items are all of the same <a href="/docs/reference/concepts/fundamentals/data-types/">data type</a>.</p>
+</span></span></code></pre></div><p><a href=" /docs/reference/data-types/collections/list-1">Lists</a> may be heterogeneous, where the items may be of different <a href=" /docs/reference/concepts/fundamentals/data-types/">data types</a>, or homogeneous, when the items are all of the same <a href=" /docs/reference/concepts/fundamentals/data-types/">data type</a>.</p>
 <h2 id="variables">Variables</h2>
 <p><img src="/images/set-variable/set-variable-expression-variable.PNG" alt="Variables"></p>
-<p><a href="/docs/reference/concepts/fundamentals/variables/">Variables</a> are named containers for storing values of any <a href="/docs/reference/concepts/fundamentals/data-types/">data type</a>; a <a href="/docs/reference/concepts/fundamentals/variables/">variable&rsquo;s</a> value can be read, updated, replaced, or removed using variable syntax; where the variable name is prefixed with <code>($)</code> (e.g. <code>($)VariableName</code>).</p>
+<p><a href=" /docs/reference/concepts/fundamentals/variables/">Variables</a> are named containers for storing values of any <a href=" /docs/reference/concepts/fundamentals/data-types/">data type</a>; a <a href=" /docs/reference/concepts/fundamentals/variables/">variable&rsquo;s</a> value can be read, updated, replaced, or removed using variable syntax; where the variable name is prefixed with <code>($)</code> (e.g. <code>($)VariableName</code>).</p>
 <p>Variables can be used within <a href="#expressions">expressions</a>.</p>
 <h2 id="expressions">Expressions</h2>
-<p>An expression is a combination of <a href="/docs/reference/glossary/k-o/#operand">operands</a> (i.e. <a href="#variables">variables</a>, <a href="#literal-values">literals</a>, calls to <a href="/docs/reference/glossary/k-o/#method">methods</a> and <a href="/docs/reference/glossary/p-t/#c-property">properties</a> exposed on <a href="/docs/reference/concepts/fundamentals/data-types/">data types</a>) and <a href="/docs/reference/glossary/k-o/#operator">operators</a> (i.e. =, +, -, *, /) that will be evaluated when the flow execution reaches the block.</p>
-<p>Expressions use the syntax of the <a href="/docs/reference/glossary/a-e/#c-1">C#</a> <a href="/docs/reference/glossary/p-t/#programming-language">programming language</a>.</p>
+<p>An expression is a combination of <a href=" /docs/reference/glossary/k-o/#operand">operands</a> (i.e. <a href="#variables">variables</a>, <a href="#literal-values">literals</a>, calls to <a href=" /docs/reference/glossary/k-o/#method">methods</a> and <a href=" /docs/reference/glossary/p-t/#c-property">properties</a> exposed on <a href=" /docs/reference/concepts/fundamentals/data-types/">data types</a>) and <a href=" /docs/reference/glossary/k-o/#operator">operators</a> (i.e. =, +, -, *, /) that will be evaluated when the flow execution reaches the block.</p>
+<p>Expressions use the syntax of the <a href=" /docs/reference/glossary/a-e/#c-1">C#</a> <a href=" /docs/reference/glossary/p-t/#programming-language">programming language</a>.</p>
 <p>Types of expressions:</p>
 <ul>
 <li><a href="#arithmetic-expressions">Arithmetic</a></li>
@@ -500,7 +500,7 @@ This the multi-page printable view of this section.
 </ul>
 <h3 id="arithmetic-expressions">Arithmetic expressions</h3>
 <p><img src="/images/set-variable/set-variable-expression-arithmetic.PNG" alt="Arithmetic expressions"></p>
-<p>The following <a href="/docs/reference/glossary/k-o/#operator">operators</a> perform arithmetic operations with <a href="/docs/reference/glossary/k-o/#operand">operands</a> that have numeric values.</p>
+<p>The following <a href=" /docs/reference/glossary/k-o/#operator">operators</a> perform arithmetic operations with <a href=" /docs/reference/glossary/k-o/#operand">operands</a> that have numeric values.</p>
 <p>In the examples below assume:</p>
 <ul>
 <li><code>($)Int1</code> has been set to <code>6</code></li>
@@ -545,7 +545,7 @@ This the multi-page printable view of this section.
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators">Arithmetic Operators</a>.</p>
 <h3 id="boolean-expressions">Boolean expressions</h3>
 <p><img src="/images/set-variable/set-variable-expression-boolean-and.PNG" alt="Boolean expressions"></p>
-<p>The following <a href="/docs/reference/glossary/k-o/#operator">operators</a> perform logical operations with <a href="/docs/reference/glossary/k-o/#operand">operands</a> that have boolean values.</p>
+<p>The following <a href=" /docs/reference/glossary/k-o/#operator">operators</a> perform logical operations with <a href=" /docs/reference/glossary/k-o/#operand">operands</a> that have boolean values.</p>
 <p>In the examples below assume:</p>
 <ul>
 <li><code>($)Bool1</code> has been set to <code>false</code></li>
@@ -585,7 +585,7 @@ This the multi-page printable view of this section.
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators">Boolean Logical Operators</a>.</p>
 <h3 id="comparison-expressions">Comparison expressions</h3>
 <p><img src="/images/set-variable/set-variable-expression-comparison.PNG" alt="Comparison expressions"></p>
-<p>The following <a href="/docs/reference/glossary/k-o/#operator">operators</a> perform comparison operations with <a href="/docs/reference/glossary/k-o/#operand">operands</a>.</p>
+<p>The following <a href=" /docs/reference/glossary/k-o/#operator">operators</a> perform comparison operations with <a href=" /docs/reference/glossary/k-o/#operand">operands</a>.</p>
 <p>In the examples below assume:</p>
 <ul>
 <li><code>($)Int1</code> has been set to <code>1</code></li>
@@ -632,7 +632,7 @@ This the multi-page printable view of this section.
 </tr>
 </tbody>
 </table>
-<p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/equality-operators">Equality Operators</a>, <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators">Comparison Operators</a>, and <a href="/docs/reference/concepts/working-with/objects/object-equality/">Object Equality</a>.</p>
+<p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/equality-operators">Equality Operators</a>, <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators">Comparison Operators</a>, and <a href=" /docs/reference/concepts/working-with/objects/object-equality/">Object Equality</a>.</p>
 <h3 id="string-expressions">String expressions</h3>
 <p>There are three types of string expressions:</p>
 <ul>
@@ -640,7 +640,7 @@ This the multi-page printable view of this section.
 <li><a href="#interpolated-strings">Interpolated Strings</a></li>
 <li><a href="#verbatim-strings">Verbatim Strings</a></li>
 </ul>
-<p>If a data type is used in a string expression that is not a <a href="/docs/reference/data-types/text/string">String</a>, then it will be <a href="/docs/reference/concepts/working-with/objects/object-casting/#implicit-cast">implicitly cast</a> to a <a href="/docs/reference/data-types/text/string">String</a> as part of the expression.</p>
+<p>If a data type is used in a string expression that is not a <a href=" /docs/reference/data-types/text/string">String</a>, then it will be <a href=" /docs/reference/concepts/working-with/objects/object-casting/#implicit-cast">implicitly cast</a> to a <a href=" /docs/reference/data-types/text/string">String</a> as part of the expression.</p>
 <p>In all of the examples below assume:</p>
 <ul>
 <li><code>($)String1</code> has been set to <code>&quot;hello&quot;</code></li>
@@ -649,7 +649,7 @@ This the multi-page printable view of this section.
 </ul>
 <h4 id="concatenated-strings">Concatenated Strings</h4>
 <p><img src="/images/set-variable/set-variable-expression-concatenated-string.PNG" alt="Concatenated Strings"></p>
-<p>Concatenation is the process of appending one <a href="/docs/reference/data-types/text/string">String</a> to the end of another <a href="/docs/reference/data-types/text/string">String</a>. You concatenate strings by using the <code>+</code> <a href="/docs/reference/glossary/k-o/#operator">operator</a>.</p>
+<p>Concatenation is the process of appending one <a href=" /docs/reference/data-types/text/string">String</a> to the end of another <a href=" /docs/reference/data-types/text/string">String</a>. You concatenate strings by using the <code>+</code> <a href=" /docs/reference/glossary/k-o/#operator">operator</a>.</p>
 <table>
 <thead>
 <tr>
@@ -667,14 +667,14 @@ This the multi-page printable view of this section.
 <tr>
 <td><code>($)String1 + &quot; &quot; + ($)Int</code></td>
 <td><code>&quot;hello 1234&quot;</code></td>
-<td>The variable <code>($)Int</code> is <a href="/docs/reference/concepts/working-with/objects/object-casting/#implicit-cast">implicitly cast</a> to a <a href="/docs/reference/data-types/text/string">String</a> as part of the expression</td>
+<td>The variable <code>($)Int</code> is <a href=" /docs/reference/concepts/working-with/objects/object-casting/#implicit-cast">implicitly cast</a> to a <a href=" /docs/reference/data-types/text/string">String</a> as part of the expression</td>
 </tr>
 </tbody>
 </table>
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/how-to/concatenate-multiple-strings">String concatenation</a>.</p>
 <h4 id="interpolated-strings">Interpolated Strings</h4>
 <p><img src="/images/set-variable/set-variable-expression-interpolated-string.PNG" alt="Interpolated Strings"></p>
-<p>Interpolation is the process of inserting expressions and variables into a <a href="/docs/reference/data-types/text/string">String</a>. An interpolated string is declared by prefixing the string with the <code>$</code> character.</p>
+<p>Interpolation is the process of inserting expressions and variables into a <a href=" /docs/reference/data-types/text/string">String</a>. An interpolated string is declared by prefixing the string with the <code>$</code> character.</p>
 <table>
 <thead>
 <tr>
@@ -692,12 +692,12 @@ This the multi-page printable view of this section.
 <tr>
 <td><code>$&quot;{($)String1} {($)Int}&quot;</code></td>
 <td><code>&quot;hello 1234&quot;</code></td>
-<td>The variable <code>($)Int</code> is <a href="/docs/reference/concepts/working-with/objects/object-casting/#implicit-cast">implicitly cast</a> to a <a href="/docs/reference/data-types/text/string">String</a> as part of the expression</td>
+<td>The variable <code>($)Int</code> is <a href=" /docs/reference/concepts/working-with/objects/object-casting/#implicit-cast">implicitly cast</a> to a <a href=" /docs/reference/data-types/text/string">String</a> as part of the expression</td>
 </tr>
 <tr>
 <td><code>$&quot;{($)String1} {($)Int + 1}&quot;</code></td>
 <td><code>&quot;hello 1235&quot;</code></td>
-<td>The expression <code>($)Int + 1</code> is evaluated and the result is <a href="/docs/reference/concepts/working-with/objects/object-casting/#implicit-cast">implicitly cast</a> to a <a href="/docs/reference/data-types/text/string">String</a> as part of the expression</td>
+<td>The expression <code>($)Int + 1</code> is evaluated and the result is <a href=" /docs/reference/concepts/working-with/objects/object-casting/#implicit-cast">implicitly cast</a> to a <a href=" /docs/reference/data-types/text/string">String</a> as part of the expression</td>
 </tr>
 </tbody>
 </table>
@@ -742,19 +742,19 @@ This the multi-page printable view of this section.
 </table>
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#verbatim-string-literals">Verbatim string literals</a> and <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#verbatim-string-interpolation">Verbatim String Interpolation</a>.</p>
 <h3 id="dictionary-expressions">Dictionary expressions</h3>
-<p><a href="/docs/reference/data-types/collections/dictionary-2">Dictionaries</a> can be created using <a href="#constructor-expressions">Constructor expressions</a> and their items can be accessed using <a href="#index-expressions">Index expressions</a>.</p>
-<p>For examples of creating Dictionaries using constructor expressions, see <a href="/docs/reference/data-types/collections/dictionary-2#create-a-dictionarylttkey-titemgt">Create a Dictionary&lt;TKey, TItem&gt;</a>.</p>
+<p><a href=" /docs/reference/data-types/collections/dictionary-2">Dictionaries</a> can be created using <a href="#constructor-expressions">Constructor expressions</a> and their items can be accessed using <a href="#index-expressions">Index expressions</a>.</p>
+<p>For examples of creating Dictionaries using constructor expressions, see <a href=" /docs/reference/data-types/collections/dictionary-2#create-a-dictionarylttkey-titemgt">Create a Dictionary&lt;TKey, TItem&gt;</a>.</p>
 <h3 id="structure-expressions">Structure expressions</h3>
-<p><a href="/docs/reference/data-types/collections/structure">Structures</a> can be created using <a href="#constructor-expressions">Constructor expressions</a> and their items can be accessed using <a href="#property-expressions">Property expressions</a> (keys must follow <a href="https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names">C# identifier naming rules</a>) or <a href="#index-expressions">Index expressions</a> (keys do not need to follow <a href="https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names">C# identifier naming rules</a>).</p>
-<p>For examples of creating Structures using constructor expressions, see <a href="/docs/reference/data-types/collections/structure#create-a-structure">Create a Structure</a>.</p>
+<p><a href=" /docs/reference/data-types/collections/structure">Structures</a> can be created using <a href="#constructor-expressions">Constructor expressions</a> and their items can be accessed using <a href="#property-expressions">Property expressions</a> (keys must follow <a href="https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names">C# identifier naming rules</a>) or <a href="#index-expressions">Index expressions</a> (keys do not need to follow <a href="https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names">C# identifier naming rules</a>).</p>
+<p>For examples of creating Structures using constructor expressions, see <a href=" /docs/reference/data-types/collections/structure#create-a-structure">Create a Structure</a>.</p>
 <h3 id="list-expressions">List expressions</h3>
-<p><a href="/docs/reference/data-types/collections/list-1">Lists</a> can be created using <a href="#constructor-expressions">Constructor expressions</a> and their items can be accessed using <a href="#index-expressions">Index expressions</a>.</p>
-<p>For examples of creating Lists using constructor expressions, see <a href="/docs/reference/data-types/collections/list-1#create-a-listlttitemgt">Create a List&lt;TItem&gt;</a>.</p>
+<p><a href=" /docs/reference/data-types/collections/list-1">Lists</a> can be created using <a href="#constructor-expressions">Constructor expressions</a> and their items can be accessed using <a href="#index-expressions">Index expressions</a>.</p>
+<p>For examples of creating Lists using constructor expressions, see <a href=" /docs/reference/data-types/collections/list-1#create-a-listlttitemgt">Create a List&lt;TItem&gt;</a>.</p>
 <h3 id="constructor-expressions">Constructor expressions</h3>
 <p><img src="/images/set-variable/set-variable-expression-constructor.PNG" alt="Constructor expressions"></p>
-<p>Constructors can be used to create a new instance of a <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a>. A <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a> can have multiple constructors, each with different parameters that are used to create the new instance.</p>
-<p>Methods on how to create a new instance of a <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a> can be found in the relevant documentation for that <a href="/docs/reference/data-types/">Data Type</a>; information regarding how to create a new <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a> using a constructor can be found in the &ldquo;Remarks&rdquo; section under &ldquo;Create a/an &lt;DataType&gt;&rdquo; (where &lt;DataType&gt; is replaced by the type&rsquo;s name).</p>
-<p>The following examples show two ways a <a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> can be created using a constructor:</p>
+<p>Constructors can be used to create a new instance of a <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a>. A <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a> can have multiple constructors, each with different parameters that are used to create the new instance.</p>
+<p>Methods on how to create a new instance of a <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a> can be found in the relevant documentation for that <a href=" /docs/reference/data-types/">Data Type</a>; information regarding how to create a new <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a> using a constructor can be found in the &ldquo;Remarks&rdquo; section under &ldquo;Create a/an &lt;DataType&gt;&rdquo; (where &lt;DataType&gt; is replaced by the type&rsquo;s name).</p>
+<p>The following examples show two ways a <a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> can be created using a constructor:</p>
 <p>In the examples below assume the variable <code>($)Year</code> has been set to <code>2022</code>.</p>
 <table>
 <thead>
@@ -777,7 +777,7 @@ This the multi-page printable view of this section.
 </tr>
 </tbody>
 </table>
-<p>Note that some <a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a> should be created via <a href="#literal-values">literal values</a> instead of their constructors, these include:</p>
+<p>Note that some <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a> should be created via <a href="#literal-values">literal values</a> instead of their constructors, these include:</p>
 <ul>
 <li><a href="#string-literal">String</a></li>
 <li><a href="#char-literal">Char</a></li>
@@ -790,7 +790,7 @@ This the multi-page printable view of this section.
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors">Constructors</a>.</p>
 <h3 id="method-expressions">Method expressions</h3>
 <p><img src="/images/set-variable/set-variable-expression-method.PNG" alt="Method expressions"></p>
-<p>Methods can be used to execute specific functionality. The methods accessible are defined by the <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a>, and information regarding methods can be found in the relevant documentation for that <a href="/docs/reference/data-types/">Data Type</a>.</p>
+<p>Methods can be used to execute specific functionality. The methods accessible are defined by the <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a>, and information regarding methods can be found in the relevant documentation for that <a href=" /docs/reference/data-types/">Data Type</a>.</p>
 <p>Methods can have parameters passed into them that are then used to execute the functionality, not all methods have parameters. The same method can be defined multiple times, each with different sets of parameters.</p>
 <p>In the examples below assume the variable <code>($)Int</code> has been set to <code>1</code>.</p>
 <table>
@@ -822,9 +822,9 @@ This the multi-page printable view of this section.
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods">Methods</a>.</p>
 <h3 id="property-expressions">Property expressions</h3>
 <p><img src="/images/set-variable/set-variable-expression-properties.PNG" alt="Property expressions"></p>
-<p>Properties can be used to read data from and/or write data to a <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a>. The properties accessible are defined by the <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a>, and information regarding properties can be found in the relevant documentation for that <a href="/docs/reference/data-types/">Data Type</a>.</p>
-<p>Properties can be read-write, read-only, or write-only (extremely rare) depending on the access specified by the <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a>.</p>
-<p>Whilst <a href="/docs/reference/data-types/collections/structure">Structures</a> are <a href="/docs/reference/data-types/collections">Collections</a>, they also allow for their keys to be accessed as properties.</p>
+<p>Properties can be used to read data from and/or write data to a <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a>. The properties accessible are defined by the <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a>, and information regarding properties can be found in the relevant documentation for that <a href=" /docs/reference/data-types/">Data Type</a>.</p>
+<p>Properties can be read-write, read-only, or write-only (extremely rare) depending on the access specified by the <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a>.</p>
+<p>Whilst <a href=" /docs/reference/data-types/collections/structure">Structures</a> are <a href=" /docs/reference/data-types/collections">Collections</a>, they also allow for their keys to be accessed as properties.</p>
 <p>In the examples below assume:</p>
 <ul>
 <li><code>($)TimePeriod</code> has been set to <code>{&quot;Years&quot;: 1, &quot;Months&quot;: 0, &quot;Days&quot;: 0, &quot;Hours&quot;: 0, &quot;Minutes&quot;: 0, &quot;Seconds&quot;: 0, &quot;Milliseconds&quot;: 0}</code></li>
@@ -842,25 +842,25 @@ This the multi-page printable view of this section.
 <tr>
 <td><code>DateTimeOffset.UtcNow</code></td>
 <td><code>2022-07-01T13:00:00.0000000+00:00</code></td>
-<td>Read-only property, this only works in <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input Properties</a></td>
+<td>Read-only property, this only works in <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input Properties</a></td>
 </tr>
 <tr>
 <td><code>($)TimePeriod.Years</code></td>
 <td><code>1</code></td>
-<td>Read-write property, this can be used in <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a>, <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a>, and <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput Properties</a>. The result column shows reading the property; writing to the property can be achieved by using any <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output Property</a>.</td>
+<td>Read-write property, this can be used in <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a>, <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a>, and <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput Properties</a>. The result column shows reading the property; writing to the property can be achieved by using any <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output Property</a>.</td>
 </tr>
 <tr>
 <td><code>($)Structure.FirstKey</code></td>
 <td><code>1</code></td>
-<td>Read-write property, this can be used in <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a>, <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a>, and <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput Properties</a>. The result column shows reading the property; writing to the property can be achieved by using any <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output Property</a>.</td>
+<td>Read-write property, this can be used in <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a>, <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a>, and <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput Properties</a>. The result column shows reading the property; writing to the property can be achieved by using any <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output Property</a>.</td>
 </tr>
 </tbody>
 </table>
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties">Properties</a>.</p>
 <h3 id="enum-expressions">Enum expressions</h3>
 <p><img src="/images/set-variable/set-variable-expression-enum.PNG" alt="Enum expressions"></p>
-<p><a href="/docs/reference/concepts/working-with/enums/">Enum</a> data types have a defined set of values, where each value has an associated <a href="/docs/reference/data-types/text/string">String</a> name and <a href="/docs/reference/data-types/numbers/int32">Int32</a> value. Information regarding values can be found in the relevant documentation for that <a href="/docs/reference/data-types/">Data Type</a>.</p>
-<p>Values within an <a href="/docs/reference/concepts/working-with/enums/">Enum</a> can be accessed in the same way as properties or can they can be <a href="#casting-expressions">cast</a> from an <a href="/docs/reference/data-types/numbers/int32">Int32</a> value.</p>
+<p><a href=" /docs/reference/concepts/working-with/enums/">Enum</a> data types have a defined set of values, where each value has an associated <a href=" /docs/reference/data-types/text/string">String</a> name and <a href=" /docs/reference/data-types/numbers/int32">Int32</a> value. Information regarding values can be found in the relevant documentation for that <a href=" /docs/reference/data-types/">Data Type</a>.</p>
+<p>Values within an <a href=" /docs/reference/concepts/working-with/enums/">Enum</a> can be accessed in the same way as properties or can they can be <a href="#casting-expressions">cast</a> from an <a href=" /docs/reference/data-types/numbers/int32">Int32</a> value.</p>
 <p>In the examples below assume the variable <code>($)Int</code> has been set to <code>6</code>.</p>
 <table>
 <thead>
@@ -879,15 +879,15 @@ This the multi-page printable view of this section.
 <tr>
 <td><code>(DayOfWeek)($)Int</code></td>
 <td><code>DayOfWeek.Saturday</code></td>
-<td><a href="/docs/reference/data-types/numbers/int32">Int32</a> cast to an <a href="/docs/reference/concepts/working-with/enums/">Enum</a>. Where the name is <code>&quot;Saturday&quot;</code> and the value is <code>6</code></td>
+<td><a href=" /docs/reference/data-types/numbers/int32">Int32</a> cast to an <a href=" /docs/reference/concepts/working-with/enums/">Enum</a>. Where the name is <code>&quot;Saturday&quot;</code> and the value is <code>6</code></td>
 </tr>
 </tbody>
 </table>
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum">Enumeration types</a>.</p>
 <h3 id="casting-expressions">Casting expressions</h3>
 <p><img src="/images/set-variable/set-variable-expression-casting.PNG" alt="Casting expressions"></p>
-<p><a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a> can be cast to other <a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a> through the use of explicit casting, this can sometimes result in the loss of information when converting to a type that does not store the same amount of information. Information regarding which types a <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a> can cast to can be found in the &ldquo;Summary&rdquo; section under &ldquo;Can be cast to&rdquo; in the relevant documentation for that <a href="/docs/reference/data-types/">Data Type</a>.</p>
-<p><a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a> can be used as other <a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a> through the use of implicit casting, this is an automatic process that requires no expression syntax. Information regarding which types a <a href="/docs/reference/concepts/fundamentals/data-types/">Data Type</a> can be used as can be found in the &ldquo;Summary&rdquo; section under &ldquo;Can be used as&rdquo; in the relevant documentation for that <a href="/docs/reference/data-types/">Data Type</a>.</p>
+<p><a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a> can be cast to other <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a> through the use of explicit casting, this can sometimes result in the loss of information when converting to a type that does not store the same amount of information. Information regarding which types a <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a> can cast to can be found in the &ldquo;Summary&rdquo; section under &ldquo;Can be cast to&rdquo; in the relevant documentation for that <a href=" /docs/reference/data-types/">Data Type</a>.</p>
+<p><a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a> can be used as other <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a> through the use of implicit casting, this is an automatic process that requires no expression syntax. Information regarding which types a <a href=" /docs/reference/concepts/fundamentals/data-types/">Data Type</a> can be used as can be found in the &ldquo;Summary&rdquo; section under &ldquo;Can be used as&rdquo; in the relevant documentation for that <a href=" /docs/reference/data-types/">Data Type</a>.</p>
 <p>In the examples below assume the variable <code>($)Int</code> has been set to <code>6</code>.</p>
 <table>
 <thead>
@@ -901,29 +901,29 @@ This the multi-page printable view of this section.
 <tr>
 <td><code>(DayOfWeek)($)Int</code></td>
 <td><code>DayOfWeek.Saturday</code></td>
-<td><a href="/docs/reference/data-types/numbers/int32">Int32</a> cast to an <a href="/docs/reference/concepts/working-with/enums/">Enum</a>. Where the name is <code>&quot;Saturday&quot;</code> and the value is <code>6</code></td>
+<td><a href=" /docs/reference/data-types/numbers/int32">Int32</a> cast to an <a href=" /docs/reference/concepts/working-with/enums/">Enum</a>. Where the name is <code>&quot;Saturday&quot;</code> and the value is <code>6</code></td>
 </tr>
 <tr>
 <td><code>(Int16)($)Int</code></td>
 <td><code>6</code></td>
-<td>An <a href="/docs/reference/data-types/numbers/int32">Int32</a> can be cast to an <a href="/docs/reference/data-types/numbers/int16">Int16</a> as long as value is from <code>-32,768</code> through <code>32,767</code></td>
+<td>An <a href=" /docs/reference/data-types/numbers/int32">Int32</a> can be cast to an <a href=" /docs/reference/data-types/numbers/int16">Int16</a> as long as value is from <code>-32,768</code> through <code>32,767</code></td>
 </tr>
 <tr>
 <td><code>(Int32)1.9</code></td>
 <td><code>1</code></td>
-<td>Casting a <a href="/docs/reference/data-types/numbers/double">Double</a> to an <a href="/docs/reference/data-types/numbers/int32">Int32</a> will cause any decimal places to be lost</td>
+<td>Casting a <a href=" /docs/reference/data-types/numbers/double">Double</a> to an <a href=" /docs/reference/data-types/numbers/int32">Int32</a> will cause any decimal places to be lost</td>
 </tr>
 <tr>
 <td><code>($)Int</code></td>
 <td><code>6.0</code></td>
-<td>When using a block property of type <a href="/docs/reference/data-types/numbers/double">Double</a> an <a href="/docs/reference/data-types/numbers/int32">Int32</a> is implicitly cast to <a href="/docs/reference/data-types/numbers/double">Double</a> without any expression syntax</td>
+<td>When using a block property of type <a href=" /docs/reference/data-types/numbers/double">Double</a> an <a href=" /docs/reference/data-types/numbers/int32">Int32</a> is implicitly cast to <a href=" /docs/reference/data-types/numbers/double">Double</a> without any expression syntax</td>
 </tr>
 </tbody>
 </table>
 <p>For further information, see <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions#explicit-conversions">Explicit Conversions</a> and <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions#implicit-conversions">Implicit Conversions</a>.</p>
 <h3 id="index-expressions">Index expressions</h3>
 <p><img src="/images/set-variable/set-variable-expression-index.PNG" alt="Index expressions"></p>
-<p><a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a> that are <a href="/docs/reference/data-types/collections">Collections</a> or <a href="/docs/reference/data-types/text/string">String</a> can have their items accessed using index notation:</p>
+<p><a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a> that are <a href=" /docs/reference/data-types/collections">Collections</a> or <a href=" /docs/reference/data-types/text/string">String</a> can have their items accessed using index notation:</p>
 <ul>
 <li><code>[0]</code> gets the first item</li>
 <li><code>[1]</code> gets the second item</li>
@@ -1023,10 +1023,10 @@ This the multi-page printable view of this section.
 <p>Currently, creating an object using literal syntax is not supported.</p>
 <p>Objects can be created using expressions, for more information see <a href="#constructor-expressions">Constructor expressions</a>.</p>
 <h4 id="cannot-create-dictionaries-using-literal-syntax">Cannot Create Dictionaries using Literal Syntax</h4>
-<p>Currently, creating a dictionary using literal syntax is not supported; any attempt to make a dictionary using literal syntax will create a <a href="/docs/reference/data-types/collections/structure">Structure</a> instead.</p>
+<p>Currently, creating a dictionary using literal syntax is not supported; any attempt to make a dictionary using literal syntax will create a <a href=" /docs/reference/data-types/collections/structure">Structure</a> instead.</p>
 <p>Dictionaries can be created using expressions, for more information see <a href="#dictionary-expressions">Dictionary expressions</a>.</p>
 <h4 id="when-using-variables-of-the-same-name-the-closest-scoped-is-used">When using variables of the same name the closest scoped is used</h4>
-<p>It is possible to create multiple <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> with the same name in the <a href="/docs/guides/cortex-studio/south-panel/#variables-grid">Variables Grid</a>. When using the same name in different <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspaces</a>, the variable with the closest scope will be used.</p>
+<p>It is possible to create multiple <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> with the same name in the <a href=" /docs/guides/cortex-studio/south-panel/#variables-grid">Variables Grid</a>. When using the same name in different <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspaces</a>, the variable with the closest scope will be used.</p>
 <p>For example:</p>
 <ul>
 <li><code>Top-Level</code> workspace has the variable <code>($)Variable</code></li>
@@ -1037,20 +1037,20 @@ This the multi-page printable view of this section.
 <h2 id="see-also">See Also</h2>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable Editor</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/variables/">Variables</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a></li>
-<li><a href="/docs/reference/concepts/working-with/objects/object-casting/">Object Casting</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable Editor</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/variables/">Variables</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a></li>
+<li><a href=" /docs/reference/concepts/working-with/objects/object-casting/">Object Casting</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
-<li><a href="/docs/reference/blocks/">All Blocks</a></li>
+<li><a href=" /docs/reference/blocks/">All Blocks</a></li>
 </ul>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/data-types/">All Data Types</a></li>
+<li><a href=" /docs/reference/data-types/">All Data Types</a></li>
 </ul>
 <h3 id="external-documentation">External Documentation</h3>
 <ul>

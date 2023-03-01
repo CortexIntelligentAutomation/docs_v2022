@@ -119,7 +119,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -151,7 +151,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -8629,6 +8629,39 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/exceptions/collections/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Collections</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreferenceexceptionscollections">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionscollectionsoccurrence-not-present-exception" href="/docs/reference/exceptions/collections/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/reference/exceptions/common/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Common</a>
   </li>
   <ul>
@@ -8840,14 +8873,6 @@
         
       
       
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsdictionariesoccurrence-not-present-exception" href="/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
-        
-      
-      
     </li>
   </ul>
 </ul>
@@ -8934,14 +8959,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflow-exception" href="/docs/reference/exceptions/flow-exception/">FlowException</a>
         
       
       
@@ -9042,6 +9059,14 @@
   </ul>
 </ul>
 
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflowsflow-exception" href="/docs/reference/exceptions/flows/flow-exception/">FlowException</a>
         
       
       
@@ -9992,9 +10017,9 @@
 <h1 id="workspace">Workspace</h1>
 <p class="namespace">(Cortex.Blocks.Workspaces.Workspace.WorkspaceBlock)</p>
 <h2 id="description">Description</h2>
-<p>This block represents a new workspace; when a flow execution reaches this block it will move to the <a href="/docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a> block within this block&rsquo;s workspace; each workspace has its own <a href="#workspace-scope">scope</a>.</p>
-<p>The <a href="/docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block can be used to organise block logic into smaller steps with distinct functions. When a new <a href="/docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block is placed on a flow, it will contain a <a href="/docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a> and <a href="/docs/reference/blocks/workspaces/end-workspace/end-workspace-block">End Workspace</a> block within its workspace.</p>
-<p>If a <a href="/docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block is copied and pasted its workspace is also copied, along with all blocks and variables within its <a href="#workspace-scope">scope</a>.</p>
+<p>This block represents a new workspace; when a flow execution reaches this block it will move to the <a href=" /docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a> block within this block&rsquo;s workspace; each workspace has its own <a href="#workspace-scope">scope</a>.</p>
+<p>The <a href=" /docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block can be used to organise block logic into smaller steps with distinct functions. When a new <a href=" /docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block is placed on a flow, it will contain a <a href=" /docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a> and <a href=" /docs/reference/blocks/workspaces/end-workspace/end-workspace-block">End Workspace</a> block within its workspace.</p>
+<p>If a <a href=" /docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block is copied and pasted its workspace is also copied, along with all blocks and variables within its <a href="#workspace-scope">scope</a>.</p>
 <p>The block has no block specific properties, but it does have the <code>Description</code> property that is common to all blocks. This allows users to give each block a description; typically this will be left blank for this block. Any description given will become the name for this block&rsquo;s <a href="#workspace-scope">scope</a></p>
 <p>A breakpoint can be added to this block when debugging.</p>
 <h2 id="examples">Examples</h2>
@@ -10005,22 +10030,22 @@
 <p>No exceptions are thrown by the block.</p>
 <h2 id="remarks">Remarks</h2>
 <h3 id="block-restrictions">Block Restrictions</h3>
-<p>A workspace can contain any number of blocks. The only restrictions within a workspace are that there can only be one <a href="/docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a> block and one <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block within a workspace.</p>
-<p>Starting a flow that contains more than one of the restricted blocks within a workspace will cause a <a href="/docs/reference/messages/validation/errors/">Validation Error</a> to occur.</p>
+<p>A workspace can contain any number of blocks. The only restrictions within a workspace are that there can only be one <a href=" /docs/reference/blocks/workspaces/start-workspace/start-workspace-block">Start Workspace</a> block and one <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block within a workspace.</p>
+<p>Starting a flow that contains more than one of the restricted blocks within a workspace will cause a <a href=" /docs/reference/messages/validation/errors/">Validation Error</a> to occur.</p>
 <h3 id="unhandled-exceptions">Unhandled Exceptions</h3>
-<p>If an exception thrown by a block is not handled by any connected <a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a>, it will be passed to the <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block on the same workspace.</p>
-<p>If the workspace does not contain a <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block it will be rethrown by the <a href="/docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block the workspace belongs to.</p>
+<p>If an exception thrown by a block is not handled by any connected <a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a>, it will be passed to the <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block on the same workspace.</p>
+<p>If the workspace does not contain a <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block it will be rethrown by the <a href=" /docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block the workspace belongs to.</p>
 <p>This process repeats until:</p>
 <ul>
 <li>The exception is handled, or</li>
-<li>The exception reaches the flow&rsquo;s top-level workspace, is not handled by any <a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> and the top-level workspace does not contain a <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. At this stage, the exception is handled by the flow&rsquo;s <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block.</li>
+<li>The exception reaches the flow&rsquo;s top-level workspace, is not handled by any <a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> and the top-level workspace does not contain a <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. At this stage, the exception is handled by the flow&rsquo;s <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block.</li>
 </ul>
-<p>If an exception occurs within the workspace of the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the flow will end with a status of Error.</p>
+<p>If an exception occurs within the workspace of the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the flow will end with a status of Error.</p>
 <p><img src="/images/flow-error-status.png" alt="Icon"></p>
-<p>For more information about chaining of exception handling blocks and passing of exceptions, please see <a href="/docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Exception Handling</a>.</p>
+<p>For more information about chaining of exception handling blocks and passing of exceptions, please see <a href=" /docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Exception Handling</a>.</p>
 <h3 id="workspace-scope">Workspace Scope</h3>
 <p>Each workspace has its own scope; as a result, variables can be defined that only exist and are accessible in this workspace and any of its sub-workspaces. On exiting a workspace any variables defined for the workspace&rsquo;s scope are deleted.</p>
-<p>For information about variables and scope, please see <a href="/docs/reference/concepts/fundamentals/variables/">Variables</a>.</p>
+<p>For information about variables and scope, please see <a href=" /docs/reference/concepts/fundamentals/variables/">Variables</a>.</p>
 
 	
 	

@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -202,29 +202,29 @@ This the multi-page printable view of this section.
 	<h1 id="invalidinputvariablesexception">InvalidInputVariablesException</h1>
 <p class="namespace">(Cortex.Exceptions.Flows.Execution.InvalidInputVariablesException)</p>
 <h2 id="description">Description</h2>
-<p>The exception thrown when trying to run a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> with invalid <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a>.</p>
+<p>The exception thrown when trying to run a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> with invalid <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a>.</p>
 <h2 id="reasons">Reasons</h2>
 <h3 id="missing-input-variables">Missing Input Variables</h3>
-<p>This exception is thrown when a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is run and there are missing <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a>; any missing variables will be shown in the <a href="#invalidvariableerrors">InvalidVariableErrors</a> property.</p>
+<p>This exception is thrown when a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is run and there are missing <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a>; any missing variables will be shown in the <a href="#invalidvariableerrors">InvalidVariableErrors</a> property.</p>
 <h4 id="message-format">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;Couldn&#39;t initialize variable store because of invalid input variables.&#34;</span>
 </span></span></code></pre></div><h4 id="how-to-fix">How to fix</h4>
 <p>Add the variables referenced in <a href="#invalidvariableerrors">InvalidVariableErrors</a>.</p>
 <h3 id="extra-input-variables">Extra Input Variables</h3>
-<p>This exception is thrown when a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is run and extra <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> have been provided; any extra variables will be shown in the <a href="#invalidvariableerrors">InvalidVariableErrors</a> property.</p>
+<p>This exception is thrown when a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is run and extra <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> have been provided; any extra variables will be shown in the <a href="#invalidvariableerrors">InvalidVariableErrors</a> property.</p>
 <h4 id="message-format-1">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;Couldn&#39;t initialize variable store because of invalid input variables.&#34;</span>
 </span></span></code></pre></div><h4 id="how-to-fix-1">How to fix</h4>
 <p>Remove the variables referenced in <a href="#invalidvariableerrors">InvalidVariableErrors</a>.</p>
 <h3 id="input-variables-of-an-invalid-type">Input Variables of an Invalid Type</h3>
-<p>This exception is thrown when a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is run and there are <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> that are of an invalid type; any variables with an invalid type will be shown in the <a href="#invalidvariableerrors">InvalidVariableErrors</a> property.</p>
+<p>This exception is thrown when a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is run and there are <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> that are of an invalid type; any variables with an invalid type will be shown in the <a href="#invalidvariableerrors">InvalidVariableErrors</a> property.</p>
 <h4 id="message-format-2">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;Couldn&#39;t initialize variable store because of invalid input variables.&#34;</span>
 </span></span></code></pre></div><h4 id="how-to-fix-2">How to fix</h4>
-<p>Ensure the value provided for the variables referenced in <a href="#invalidvariableerrors">InvalidVariableErrors</a> is either the same type as, or can be implicitly cast to the type defined in the default value for that <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a>.</p>
+<p>Ensure the value provided for the variables referenced in <a href="#invalidvariableerrors">InvalidVariableErrors</a> is either the same type as, or can be implicitly cast to the type defined in the default value for that <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a>.</p>
 <h2 id="properties">Properties</h2>
 <h3 id="exception-type">Exception Type</h3>
 <p>The type of the exception (i.e. <code>InvalidInputVariablesException</code>).</p>
@@ -238,7 +238,7 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
@@ -254,12 +254,12 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
 <h3 id="invalidvariableerrors">InvalidVariableErrors</h3>
-<p>A <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;InputVariableError&gt; containing each invalid variable passed into the flow.</p>
+<p>A <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;InputVariableError&gt; containing each invalid variable passed into the flow.</p>
 <table>
 <thead>
 <tr>
@@ -270,7 +270,7 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/collections/list-1">List</a>&lt;InputVariableError&gt;</td>
+<td><a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;InputVariableError&gt;</td>
 </tr>
 </tbody>
 </table>
@@ -286,7 +286,7 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
@@ -298,15 +298,15 @@ This the multi-page printable view of this section.
 <p>None</p>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/flows">Flows</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/variables/">Variables</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/flows">Flows</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/variables/">Variables</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
 <li>Flows
 <ul>
-<li><a href="/docs/reference/blocks/flows/run-flow/run-flow-block">Run Flow</a></li>
+<li><a href=" /docs/reference/blocks/flows/run-flow/run-flow-block">Run Flow</a></li>
 </ul>
 </li>
 </ul>

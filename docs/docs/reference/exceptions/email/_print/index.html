@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -215,7 +215,7 @@ This the multi-page printable view of this section.
 </ul>
 <h2 id="reasons">Reasons</h2>
 <h3 id="100">Invalid Port</h3>
-<p>A <a href="#category">Category</a> of <code>Socket</code> and an <a href="#error-code">Error Code</a> of <code>100</code> indicates that the <a href="/docs/reference/data-types/session-details/serverdetails/#port">Port</a> provided in the <a href="/docs/reference/data-types/session-details/serverdetails">ServerDetails</a> is invalid.</p>
+<p>A <a href="#category">Category</a> of <code>Socket</code> and an <a href="#error-code">Error Code</a> of <code>100</code> indicates that the <a href=" /docs/reference/data-types/session-details/serverdetails/#port">Port</a> provided in the <a href=" /docs/reference/data-types/session-details/serverdetails">ServerDetails</a> is invalid.</p>
 <h4 id="message-format">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The connection attempt to &#39;Host&#39; (&#39;&lt;host&gt;&#39;) on &#39;Port&#39; (&lt;port&gt;) failed. The &#39;Server Details&#39; in &#39;Email Session Details&#39; has been provided a port that does not exist or the connection timed out.
@@ -226,10 +226,10 @@ This the multi-page printable view of this section.
 <li><code>&lt;port&gt;</code> is the port on the mail server that a session is being opened with</li>
 </ul>
 <h4 id="how-to-fix">How to Fix</h4>
-<p>Provide a valid <a href="/docs/reference/data-types/session-details/serverdetails/#port">Port</a> between the <a href="/docs/reference/data-types/numbers/int32">Int32</a> values 1 and 65535 in the <a href="/docs/reference/data-types/session-details/serverdetails">ServerDetails</a> and ensure that the mail server is up and running without issues.</p>
+<p>Provide a valid <a href=" /docs/reference/data-types/session-details/serverdetails/#port">Port</a> between the <a href=" /docs/reference/data-types/numbers/int32">Int32</a> values 1 and 65535 in the <a href=" /docs/reference/data-types/session-details/serverdetails">ServerDetails</a> and ensure that the mail server is up and running without issues.</p>
 <hr>
 <h3 id="101">Invalid Host</h3>
-<p>A <a href="#category">Category</a> of <code>Socket</code> and an <a href="#error-code">Error Code</a> of <code>101</code> indicates that the <a href="/docs/reference/data-types/session-details/serverdetails/#host">Host</a> provided in the <a href="/docs/reference/data-types/session-details/serverdetails">ServerDetails</a> is invalid.</p>
+<p>A <a href="#category">Category</a> of <code>Socket</code> and an <a href="#error-code">Error Code</a> of <code>101</code> indicates that the <a href=" /docs/reference/data-types/session-details/serverdetails/#host">Host</a> provided in the <a href=" /docs/reference/data-types/session-details/serverdetails">ServerDetails</a> is invalid.</p>
 <h4 id="message-format-1">Message Format</h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;Invalid &#39;Host&#39; (&#39;&lt;host&gt;&#39;) provided. The &#39;Server Details&#39; in &#39;Email Session Details&#39; has been provided a host that does not exist.
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
@@ -238,10 +238,10 @@ This the multi-page printable view of this section.
 <li><code>&lt;host&gt;</code> is the address of the mail server that a session is being opened with</li>
 </ul>
 <h4 id="how-to-fix-1">How to Fix</h4>
-<p>Provide a valid <a href="/docs/reference/data-types/session-details/serverdetails/#host">Host</a> in the <a href="/docs/reference/data-types/session-details/serverdetails">ServerDetails</a>.</p>
+<p>Provide a valid <a href=" /docs/reference/data-types/session-details/serverdetails/#host">Host</a> in the <a href=" /docs/reference/data-types/session-details/serverdetails">ServerDetails</a>.</p>
 <hr>
 <h3 id="200">SSL Required</h3>
-<p>A <a href="#category">Category</a> of <code>SSL</code> and an <a href="#error-code">Error Code</a> of <code>200</code> indicates that <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> is required. More specifically, the mail server is expecting that <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> is used as soon as the connection is established.</p>
+<p>A <a href="#category">Category</a> of <code>SSL</code> and an <a href="#error-code">Error Code</a> of <code>200</code> indicates that <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> is required. More specifically, the mail server is expecting that <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> is used as soon as the connection is established.</p>
 <h4 id="message-format-2">Message Format</h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The connection could not be established or disconnected unexpectedly. Check if the &#39;Port&#39; (&lt;port&gt;) provided requires that &#39;Use SSL&#39; be set to true.
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
@@ -250,15 +250,15 @@ This the multi-page printable view of this section.
 <li><code>&lt;port&gt;</code> is the port on the mail server that a session is being opened with</li>
 </ul>
 <h4 id="how-to-fix-2">How to Fix</h4>
-<p>Change <a href="/docs/reference/data-types/session-details/serverdetails/#usessl">UseSsl</a> in the <a href="/docs/reference/data-types/session-details/serverdetails">ServerDetails</a> to <code>true</code>, or make a connection on a <a href="/docs/reference/data-types/session-details/serverdetails/#port">Port</a> which does not require <a href="/docs/reference/glossary/p-t/#ssl">SSL</a>.</p>
+<p>Change <a href=" /docs/reference/data-types/session-details/serverdetails/#usessl">UseSsl</a> in the <a href=" /docs/reference/data-types/session-details/serverdetails">ServerDetails</a> to <code>true</code>, or make a connection on a <a href=" /docs/reference/data-types/session-details/serverdetails/#port">Port</a> which does not require <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a>.</p>
 <hr>
 <h3 id="201">SSL Unsupported</h3>
 <p>A <a href="#category">Category</a> of <code>SSL</code> and an <a href="#error-code">Error Code</a> of <code>201</code> indicates that one of the following issues occurred:</p>
 <ul>
-<li>An <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> connection is not supported. More specifically, the mail server either does not support <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> connections or only supports <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> connections via the STARTTLS command.</li>
-<li>Certificate on the <a href="/docs/reference/data-types/session-details/serverdetails/#host">Host</a> is expired, untrusted or invalid</li>
+<li>An <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> connection is not supported. More specifically, the mail server either does not support <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> connections or only supports <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> connections via the STARTTLS command.</li>
+<li>Certificate on the <a href=" /docs/reference/data-types/session-details/serverdetails/#host">Host</a> is expired, untrusted or invalid</li>
 <li>Certificate replaced by anti-virus software in order to scan web traffic resulting in failed certificate validation</li>
-<li><a href="/docs/reference/glossary/a-e/#crl">CRL</a> server is down</li>
+<li><a href=" /docs/reference/glossary/a-e/#crl">CRL</a> server is down</li>
 </ul>
 <h4 id="message-format-3">Message Format</h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The connection could not be established or disconnected unexpectedly. Check if the &#39;Port&#39; (&lt;port&gt;) provided requires that &#39;Use SSL&#39; be set to false. If this is not the case, check the inner exception.
@@ -268,43 +268,43 @@ This the multi-page printable view of this section.
 <li><code>&lt;port&gt;</code> is the port on the mail server that a session is being opened with</li>
 </ul>
 <h4 id="how-to-fix-3">How to Fix</h4>
-<p>Change <a href="/docs/reference/data-types/session-details/serverdetails/#usessl">UseSsl</a> in the <a href="/docs/reference/data-types/session-details/serverdetails">ServerDetails</a> to <code>false</code>, or make a connection on a port which supports <a href="/docs/reference/glossary/p-t/#ssl">SSL</a>.</p>
-<p>If the above suggestion does not fix the problem, check if the anti-virus software on the server executing the flow is replacing the <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> certificate in order to scan the web traffic, and change the settings appropriately if needed.</p>
+<p>Change <a href=" /docs/reference/data-types/session-details/serverdetails/#usessl">UseSsl</a> in the <a href=" /docs/reference/data-types/session-details/serverdetails">ServerDetails</a> to <code>false</code>, or make a connection on a port which supports <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a>.</p>
+<p>If the above suggestion does not fix the problem, check if the anti-virus software on the server executing the flow is replacing the <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> certificate in order to scan the web traffic, and change the settings appropriately if needed.</p>
 <p>If the issue persists, please check the inner exception as instructed by the <a href="#message">Message</a>.</p>
 <hr>
 <h3 id="300">Invalid User Credentials</h3>
-<p>A <a href="#category">Category</a> of <code>UserCredentials</code> and an <a href="#error-code">Error Code</a> of <code>300</code> indicates that the <a href="/docs/reference/data-types/credentials/usercredentials/#username">Username</a> and <a href="/docs/reference/data-types/credentials/usercredentials/#password">Password</a> combination provided in the <a href="/docs/reference/data-types/credentials/usercredentials">UserCredentials</a> is invalid.</p>
+<p>A <a href="#category">Category</a> of <code>UserCredentials</code> and an <a href="#error-code">Error Code</a> of <code>300</code> indicates that the <a href=" /docs/reference/data-types/credentials/usercredentials/#username">Username</a> and <a href=" /docs/reference/data-types/credentials/usercredentials/#password">Password</a> combination provided in the <a href=" /docs/reference/data-types/credentials/usercredentials">UserCredentials</a> is invalid.</p>
 <h4 id="message-format-4">Message Format</h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The provided &#39;Username&#39; and &#39;Password&#39; is incorrect. The &#39;User Credentials&#39; in &#39;Email Session Details&#39; has been provided an incorrect username and password combination.
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><h4 id="how-to-fix-4">How to Fix</h4>
-<p>Provide a valid <a href="/docs/reference/data-types/credentials/usercredentials/#username">Username</a> and <a href="/docs/reference/data-types/credentials/usercredentials/#password">Password</a> combination in the <a href="/docs/reference/data-types/credentials/usercredentials">UserCredentials</a>.</p>
+<p>Provide a valid <a href=" /docs/reference/data-types/credentials/usercredentials/#username">Username</a> and <a href=" /docs/reference/data-types/credentials/usercredentials/#password">Password</a> combination in the <a href=" /docs/reference/data-types/credentials/usercredentials">UserCredentials</a>.</p>
 <hr>
 <h3 id="400">Invalid SSL Certificate</h3>
 <p>A <a href="#category">Category</a> of <code>OAuthCredentials</code> and an <a href="#error-code">Error Code</a> of <code>400</code> indicates that one of the following issues occurred:</p>
 <ul>
-<li>An invalid <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> and <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepassword">CertificatePassword</a> combination has been provided in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a></li>
-<li>The <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> points to an invalid <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> certificate</li>
-<li>The <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> points to a non-existant file</li>
-<li>The <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> points to a folder</li>
-<li>The <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> is longer than the system defined maximum length (typically 32,767)</li>
-<li>The <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> contains only whitespace (i.e. <code>&quot; &quot;</code>) or contains the NUL character (i.e. <code>\0</code>)</li>
-<li>The <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> contains leading spaces</li>
-<li>The <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> contains invalid characters (i.e. <code>&quot;</code>, <code>*</code>, <code>?</code>, <code>\|</code>, <code>&lt;</code>, <code>&gt;</code>, <code>:</code>, <code>\</code>, <code>/</code>)</li>
-<li>Access is denied to the file at the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a></li>
+<li>An invalid <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> and <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepassword">CertificatePassword</a> combination has been provided in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a></li>
+<li>The <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> points to an invalid <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> certificate</li>
+<li>The <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> points to a non-existant file</li>
+<li>The <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> points to a folder</li>
+<li>The <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> is longer than the system defined maximum length (typically 32,767)</li>
+<li>The <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> contains only whitespace (i.e. <code>&quot; &quot;</code>) or contains the NUL character (i.e. <code>\0</code>)</li>
+<li>The <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> contains leading spaces</li>
+<li>The <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> contains invalid characters (i.e. <code>&quot;</code>, <code>*</code>, <code>?</code>, <code>\|</code>, <code>&lt;</code>, <code>&gt;</code>, <code>:</code>, <code>\</code>, <code>/</code>)</li>
+<li>Access is denied to the file at the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a></li>
 </ul>
 <h4 id="message-format-5">Message Format</h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The &#39;Certificate Path&#39; (&#39;&lt;certificate-path&gt;&#39;) or &#39;Certificate Password&#39; is invalid. The &#39;Gmail OAuth Certificate Credentials&#39; in &#39;Email Session Details&#39; has been provided an incorrect certificate path or certificate password.
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><p>where:</p>
 <ul>
-<li><code>&lt;certificate-path&gt;</code> is the path pointing to the <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> certificate</li>
+<li><code>&lt;certificate-path&gt;</code> is the path pointing to the <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> certificate</li>
 </ul>
 <h4 id="how-to-fix-5">How to Fix</h4>
-<p>Provide a <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> which is a valid file path pointing to a valid <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> certificate and ensure that the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepassword">CertificatePassword</a> is correct in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a>.</p>
+<p>Provide a <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> which is a valid file path pointing to a valid <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> certificate and ensure that the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepassword">CertificatePassword</a> is correct in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a>.</p>
 <hr>
 <h3 id="401">Invalid Gmail Client Credentials</h3>
-<p>A <a href="#category">Category</a> of <code>OAuthCredentials</code> and an <a href="#error-code">Error Code</a> of <code>401</code> indicates that an invalid <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#fromaddress">FromAddress</a> and <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#clientid">ClientId</a> combination has been provided in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a>.</p>
+<p>A <a href="#category">Category</a> of <code>OAuthCredentials</code> and an <a href="#error-code">Error Code</a> of <code>401</code> indicates that an invalid <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#fromaddress">FromAddress</a> and <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#clientid">ClientId</a> combination has been provided in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a>.</p>
 <h4 id="message-format-6">Message Format</h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The &#39;From Address&#39; (&#39;&lt;from-address&gt;}&#39;) or &#39;Client Id&#39; (&#39;&lt;client-id&gt;&#39;) is invalid. The &#39;Gmail OAuth Certificate Credentials&#39; in &#39;Email Session Details&#39; has been provided an incorrect email address or Client ID.
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
@@ -314,7 +314,7 @@ This the multi-page printable view of this section.
 <li><code>&lt;client-id&gt;</code> is the client ID for the client application</li>
 </ul>
 <h4 id="how-to-fix-6">How to Fix</h4>
-<p>Provide a valid <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#fromaddress">FromAddress</a> and ensure that the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#clientid">ClientId</a> is correct in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a>.</p>
+<p>Provide a valid <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#fromaddress">FromAddress</a> and ensure that the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#clientid">ClientId</a> is correct in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a>.</p>
 <hr>
 <h2 id="properties">Properties</h2>
 <h3 id="exception-type">Exception Type</h3>
@@ -329,7 +329,7 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
@@ -345,7 +345,7 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
@@ -368,7 +368,7 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
@@ -376,13 +376,13 @@ This the multi-page printable view of this section.
 <p>The error code for the exception, which is used to indicate the reason that the exception occurred, if there are multiple reasons that the exception can occur.</p>
 <p>For <code>EmailSessionException</code> there are the following error codes:</p>
 <ul>
-<li><a href="#100">100</a> - indicates that the <a href="/docs/reference/data-types/session-details/serverdetails/#port">Port</a> provided in the <a href="/docs/reference/data-types/session-details/serverdetails">ServerDetails</a> is invalid</li>
-<li><a href="#101">101</a> - indicates that the <a href="/docs/reference/data-types/session-details/serverdetails/#host">Host</a> provided in the <a href="/docs/reference/data-types/session-details/serverdetails">ServerDetails</a> is invalid</li>
-<li><a href="#200">200</a> - indicates that <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> is required</li>
-<li><a href="#201">201</a> - indicates that an <a href="/docs/reference/glossary/p-t/#ssl">SSL</a> connection is not supported</li>
-<li><a href="#300">300</a> - indicates that the <a href="/docs/reference/data-types/credentials/usercredentials/#username">Username</a> and <a href="/docs/reference/data-types/credentials/usercredentials/#password">Password</a> combination provided in in the <a href="/docs/reference/data-types/credentials/usercredentials">UserCredentials</a> is invalid</li>
-<li><a href="#400">400</a> - indicates that the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> or <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepassword">CertificatePassword</a> provided in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> is invalid</li>
-<li><a href="#401">401</a> - indicates that the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#fromaddress">FromAddress</a> or <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#clientid">ClientId</a> provided in the <a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> is invalid</li>
+<li><a href="#100">100</a> - indicates that the <a href=" /docs/reference/data-types/session-details/serverdetails/#port">Port</a> provided in the <a href=" /docs/reference/data-types/session-details/serverdetails">ServerDetails</a> is invalid</li>
+<li><a href="#101">101</a> - indicates that the <a href=" /docs/reference/data-types/session-details/serverdetails/#host">Host</a> provided in the <a href=" /docs/reference/data-types/session-details/serverdetails">ServerDetails</a> is invalid</li>
+<li><a href="#200">200</a> - indicates that <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> is required</li>
+<li><a href="#201">201</a> - indicates that an <a href=" /docs/reference/glossary/p-t/#ssl">SSL</a> connection is not supported</li>
+<li><a href="#300">300</a> - indicates that the <a href=" /docs/reference/data-types/credentials/usercredentials/#username">Username</a> and <a href=" /docs/reference/data-types/credentials/usercredentials/#password">Password</a> combination provided in in the <a href=" /docs/reference/data-types/credentials/usercredentials">UserCredentials</a> is invalid</li>
+<li><a href="#400">400</a> - indicates that the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepath">CertificatePath</a> or <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#certificatepassword">CertificatePassword</a> provided in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> is invalid</li>
+<li><a href="#401">401</a> - indicates that the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#fromaddress">FromAddress</a> or <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials/#clientid">ClientId</a> provided in the <a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a> is invalid</li>
 </ul>
 <table>
 <thead>
@@ -394,7 +394,7 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/email/emailsessionerrorcode">EmailSessionErrorCode</a></td>
+<td><a href=" /docs/reference/data-types/email/emailsessionerrorcode">EmailSessionErrorCode</a></td>
 </tr>
 </tbody>
 </table>
@@ -410,7 +410,7 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
@@ -420,25 +420,25 @@ This the multi-page printable view of this section.
 <h2 id="see-also">See Also</h2>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/data-types/email/basicemailsessiondetails">BasicEmailSessionDetails</a></li>
-<li><a href="/docs/reference/data-types/email/emailsessionerrorcode">EmailSessionErrorCode</a></li>
-<li><a href="/docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a></li>
-<li><a href="/docs/reference/data-types/google-workspace/gmail/gmailsessiondetails">GmailSessionDetails</a></li>
-<li><a href="/docs/reference/data-types/numbers/int32">Int32</a></li>
-<li><a href="/docs/reference/data-types/session-details/serverdetails">ServerDetails</a></li>
-<li><a href="/docs/reference/data-types/text/string">String</a></li>
-<li><a href="/docs/reference/data-types/credentials/usercredentials">UserCredentials</a></li>
+<li><a href=" /docs/reference/data-types/email/basicemailsessiondetails">BasicEmailSessionDetails</a></li>
+<li><a href=" /docs/reference/data-types/email/emailsessionerrorcode">EmailSessionErrorCode</a></li>
+<li><a href=" /docs/reference/data-types/google-workspace/gmail/authentication/oauth/gmailoauthcertificatecredentials">GmailOAuthCertificateCredentials</a></li>
+<li><a href=" /docs/reference/data-types/google-workspace/gmail/gmailsessiondetails">GmailSessionDetails</a></li>
+<li><a href=" /docs/reference/data-types/numbers/int32">Int32</a></li>
+<li><a href=" /docs/reference/data-types/session-details/serverdetails">ServerDetails</a></li>
+<li><a href=" /docs/reference/data-types/text/string">String</a></li>
+<li><a href=" /docs/reference/data-types/credentials/usercredentials">UserCredentials</a></li>
 </ul>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
-<li><a href="/docs/reference/concepts/working-with/email/">Working with Email</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
+<li><a href=" /docs/reference/concepts/working-with/email/">Working with Email</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
-<li><a href="/docs/reference/blocks/email/send-email/send-email-using-smtp-server-block">Send Email Using SMTP Server Block</a></li>
-<li><a href="/docs/reference/blocks/google-workspace/gmail/send-email/send-email-using-gmail-block">Send Email Using Gmail Block</a></li>
-<li><a href="/docs/reference/blocks/microsoft365/outlook/send-email/send-email-using-microsoft365-block">Send Email Using Microsoft 365 Block</a></li>
+<li><a href=" /docs/reference/blocks/email/send-email/send-email-using-smtp-server-block">Send Email Using SMTP Server Block</a></li>
+<li><a href=" /docs/reference/blocks/google-workspace/gmail/send-email/send-email-using-gmail-block">Send Email Using Gmail Block</a></li>
+<li><a href=" /docs/reference/blocks/microsoft365/outlook/send-email/send-email-using-microsoft365-block">Send Email Using Microsoft 365 Block</a></li>
 </ul>
 <h3 id="external-documentation">External Documentation</h3>
 <p>None</p>

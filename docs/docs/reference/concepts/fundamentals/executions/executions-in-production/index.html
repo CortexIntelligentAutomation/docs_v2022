@@ -119,7 +119,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -151,7 +151,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -8629,6 +8629,39 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/exceptions/collections/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Collections</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreferenceexceptionscollections">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionscollectionsoccurrence-not-present-exception" href="/docs/reference/exceptions/collections/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/reference/exceptions/common/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Common</a>
   </li>
   <ul>
@@ -8840,14 +8873,6 @@
         
       
       
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsdictionariesoccurrence-not-present-exception" href="/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
-        
-      
-      
     </li>
   </ul>
 </ul>
@@ -8934,14 +8959,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflow-exception" href="/docs/reference/exceptions/flow-exception/">FlowException</a>
         
       
       
@@ -9042,6 +9059,14 @@
   </ul>
 </ul>
 
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflowsflow-exception" href="/docs/reference/exceptions/flows/flow-exception/">FlowException</a>
         
       
       
@@ -9993,29 +10018,29 @@
            
 	<h1 id="executions-in-production">Executions in Production</h1>
 <h2 id="summary">Summary</h2>
-<p>A <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> can be started in Production by making an <a href="/docs/reference/apis/cortex-api-gateway-service/">API call</a> to the <a href="/docs/reference/apis/cortex-api-gateway-service/">Cortex API Gateway Service</a>, <a href="#providing-input-variables">providing input variables</a> to the flow, if required; this will <a href="#validating-a-flow">validate the flow</a> and then begin an execution.</p>
+<p>A <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> can be started in Production by making an <a href=" /docs/reference/apis/cortex-api-gateway-service/">API call</a> to the <a href=" /docs/reference/apis/cortex-api-gateway-service/">Cortex API Gateway Service</a>, <a href="#providing-input-variables">providing input variables</a> to the flow, if required; this will <a href="#validating-a-flow">validate the flow</a> and then begin an execution.</p>
 <h2 id="providing-input-variables">Providing Input Variables</h2>
-<p>Any flow that has <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> defined can have those variables provided by using the inputVariables in the body of the <a href="/docs/reference/apis/cortex-api-gateway-service/">HTTP request</a>.</p>
+<p>Any flow that has <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> defined can have those variables provided by using the inputVariables in the body of the <a href=" /docs/reference/apis/cortex-api-gateway-service/">HTTP request</a>.</p>
 <h2 id="retrieving-output-variables">Retrieving Output Variables</h2>
-<p>Any flow that has <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> defined can have those variables retrieved after the execution has completed by using the outputVariables in the body of the <a href="/docs/reference/apis/cortex-api-gateway-service/">HTTP response</a></p>
+<p>Any flow that has <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> defined can have those variables retrieved after the execution has completed by using the outputVariables in the body of the <a href=" /docs/reference/apis/cortex-api-gateway-service/">HTTP response</a></p>
 <h2 id="validating-a-flow">Validating a Flow</h2>
-<p>The <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is validated before it&rsquo;s started, if this is successful an execution will begin.</p>
-<p>If there are any issues with the flow then the execution will not start and details of what needs to be resolved will be returned. If the flow was started by making an <a href="/docs/reference/apis/cortex-api-gateway-service/">HTTP request</a> to the <a href="/docs/reference/apis/cortex-api-gateway-service/">Cortex API Gateway Service</a>, then a 400 Bad Request is returned.</p>
-<p>For a complete list see <a href="/docs/reference/messages/validation/">Validation</a> messages.</p>
+<p>The <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> is validated before it&rsquo;s started, if this is successful an execution will begin.</p>
+<p>If there are any issues with the flow then the execution will not start and details of what needs to be resolved will be returned. If the flow was started by making an <a href=" /docs/reference/apis/cortex-api-gateway-service/">HTTP request</a> to the <a href=" /docs/reference/apis/cortex-api-gateway-service/">Cortex API Gateway Service</a>, then a 400 Bad Request is returned.</p>
+<p>For a complete list see <a href=" /docs/reference/messages/validation/">Validation</a> messages.</p>
 <h2 id="handling-an-executions-exceptions">Handling an Execution&rsquo;s Exceptions</h2>
 <p>Exceptions thrown by an execution can be handled at any level within a flow.</p>
 <p>Exceptions can be handled:</p>
 <ul>
-<li>At the <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> level; for further information, see <a href="/docs/reference/concepts/fundamentals/blocks/handling-exceptions-within-a-block/">Handling Exceptions within a Block</a></li>
-<li>At the <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> level; for further information, see <a href="/docs/reference/concepts/fundamentals/workspaces/handling-exceptions-within-a-workspace">Handling Exceptions within a Workspace</a></li>
-<li>At the <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> level; for further information, see <a href="/docs/reference/concepts/fundamentals/flows/handling-exceptions-within-a-flow">Handling Exceptions within a Flow</a></li>
+<li>At the <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a> level; for further information, see <a href=" /docs/reference/concepts/fundamentals/blocks/handling-exceptions-within-a-block/">Handling Exceptions within a Block</a></li>
+<li>At the <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> level; for further information, see <a href=" /docs/reference/concepts/fundamentals/workspaces/handling-exceptions-within-a-workspace">Handling Exceptions within a Workspace</a></li>
+<li>At the <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> level; for further information, see <a href=" /docs/reference/concepts/fundamentals/flows/handling-exceptions-within-a-flow">Handling Exceptions within a Flow</a></li>
 </ul>
-<p>If an exception occurs within the workspace of the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the execution will end and then a 500 Internal Server Error is returned.</p>
+<p>If an exception occurs within the workspace of the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the execution will end and then a 500 Internal Server Error is returned.</p>
 <h2 id="logs-generated">Logs Generated</h2>
-<p>There are two ways that logs are generated while executing a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> in Production, they are:</p>
+<p>There are two ways that logs are generated while executing a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> in Production, they are:</p>
 <ul>
-<li>Automatically generated by the <a href="/docs/reference/logs/cortex-api-gateway-service/">Cortex API Gateway Service</a></li>
-<li>Developer generated by using the <a href="/docs/reference/blocks/logs/log-event/log-event-block">Log Event</a> block</li>
+<li>Automatically generated by the <a href=" /docs/reference/logs/cortex-api-gateway-service/">Cortex API Gateway Service</a></li>
+<li>Developer generated by using the <a href=" /docs/reference/blocks/logs/log-event/log-event-block">Log Event</a> block</li>
 </ul>
 <h2 id="remarks">Remarks</h2>
 <h3 id="known-limitations">Known Limitations</h3>
@@ -10023,21 +10048,21 @@
 <h2 id="see-also">See Also</h2>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/flows">Flows</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/variables/">Variables</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/data-types/">Data Types</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/messages/">Messages</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/flows">Flows</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/variables/">Variables</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/data-types/">Data Types</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/messages/">Messages</a></li>
 </ul>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/data-types/">All Data Types</a></li>
+<li><a href=" /docs/reference/data-types/">All Data Types</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
-<li><a href="/docs/reference/blocks/">All Blocks</a></li>
+<li><a href=" /docs/reference/blocks/">All Blocks</a></li>
 </ul>
 <h3 id="external-documentation">External Documentation</h3>
 <p>None</p>

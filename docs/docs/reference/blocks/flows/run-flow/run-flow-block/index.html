@@ -119,7 +119,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -151,7 +151,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -8629,6 +8629,39 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/exceptions/collections/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Collections</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreferenceexceptionscollections">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionscollectionsoccurrence-not-present-exception" href="/docs/reference/exceptions/collections/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/reference/exceptions/common/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Common</a>
   </li>
   <ul>
@@ -8840,14 +8873,6 @@
         
       
       
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsdictionariesoccurrence-not-present-exception" href="/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
-        
-      
-      
     </li>
   </ul>
 </ul>
@@ -8934,14 +8959,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflow-exception" href="/docs/reference/exceptions/flow-exception/">FlowException</a>
         
       
       
@@ -9042,6 +9059,14 @@
   </ul>
 </ul>
 
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflowsflow-exception" href="/docs/reference/exceptions/flows/flow-exception/">FlowException</a>
         
       
       
@@ -10006,11 +10031,11 @@
 <h1 id="run-flow">Run Flow</h1>
 <p class="namespace">(Cortex.Blocks.Flows.RunFlow.RunFlowBlock)</p>
 <h2 id="description">Description</h2>
-<p>Runs a chosen <a href="#flow">Flow</a> using the <a href="#inputs">Inputs</a> provided, returning any <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> from the <a href="#flow">Flow</a> in the <a href="#outputs">Outputs</a> variable.</p>
+<p>Runs a chosen <a href="#flow">Flow</a> using the <a href="#inputs">Inputs</a> provided, returning any <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> from the <a href="#flow">Flow</a> in the <a href="#outputs">Outputs</a> variable.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="running-a-flow">Running a Flow</h3>
 <p>This example will run the <a href="#flow">Flow</a> <code>square-number-flow</code> saving the output variables to <code>($)Outputs</code>.</p>
-<p>The <a href="#flow">Flow</a> <code>square-number-flow</code> takes an <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code>, which is then multiplied by itself and saved to the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. If no value is given for <code>($)NumberToSquare</code> the default value <code>10</code> is used. The flow contains a block that checks that the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> is larger than <code>0</code>, an exception is thrown by <code>square-number-flow</code> if <code>($)NumberToSquare</code> is not larger than <code>0</code>.</p>
+<p>The <a href="#flow">Flow</a> <code>square-number-flow</code> takes an <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code>, which is then multiplied by itself and saved to the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. If no value is given for <code>($)NumberToSquare</code> the default value <code>10</code> is used. The flow contains a block that checks that the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> is larger than <code>0</code>, an exception is thrown by <code>square-number-flow</code> if <code>($)NumberToSquare</code> is not larger than <code>0</code>.</p>
 <h4 id="properties">Properties</h4>
 <table>
 <thead>
@@ -10024,34 +10049,34 @@
 <tr>
 <td><a href="#flow">Flow</a></td>
 <td><a href="#flow">Flow</a>, with value <code>square-number-flow</code></td>
-<td><a href="#flow">Flow</a> is of type <a href="/docs/reference/data-types/flows/flowreference">FlowReference</a></td>
+<td><a href="#flow">Flow</a> is of type <a href=" /docs/reference/data-types/flows/flowreference">FlowReference</a></td>
 </tr>
 <tr>
 <td><a href="#inputs">Inputs</a></td>
 <td></td>
-<td><a href="#inputs">Inputs</a> is of type <a href="/docs/reference/data-types/flows/inputvariables">InputVariables</a></td>
+<td><a href="#inputs">Inputs</a> is of type <a href=" /docs/reference/data-types/flows/inputvariables">InputVariables</a></td>
 </tr>
 <tr>
 <td>    &gt; NumberToSquare</td>
 <td><code>($)NumberToSquare</code>, with value <code>5</code></td>
-<td><code>($)NumberToSquare</code> is of type <a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><code>($)NumberToSquare</code> is of type <a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td><a href="#outputs">Outputs</a></td>
 <td><code>($)Outputs</code>, with no value</td>
-<td><code>($)Outputs</code> is a variable of type <a href="/docs/reference/data-types/collections/structure">Structure</a></td>
+<td><code>($)Outputs</code> is a variable of type <a href=" /docs/reference/data-types/collections/structure">Structure</a></td>
 </tr>
 </tbody>
 </table>
 <h4 id="result">Result</h4>
-<p><code>5</code> is passed into the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> for the <a href="#flow">Flow</a> <code>square-number-flow</code>, which results in <code>25</code> being saved to the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. This results in the variable <code>($)Outputs</code> being updated to the following:</p>
+<p><code>5</code> is passed into the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> for the <a href="#flow">Flow</a> <code>square-number-flow</code>, which results in <code>25</code> being saved to the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. This results in the variable <code>($)Outputs</code> being updated to the following:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;SquaredNumber&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">25</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><hr>
 <h3 id="running-a-flow-with-default-input-variables">Running a Flow with Default Input Variables</h3>
 <p>This example will run the <a href="#flow">Flow</a> <code>square-number-flow</code> saving the output variables to <code>($)Outputs</code>.</p>
-<p>The <a href="#flow">Flow</a> <code>square-number-flow</code> takes an <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code>, which is then multiplied by itself and saved to the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. If no value is given for <code>($)NumberToSquare</code> the default value <code>10</code> is used. The flow contains a block that checks that the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> is larger than <code>0</code>, an exception is thrown by <code>square-number-flow</code> if <code>($)NumberToSquare</code> is not larger than <code>0</code>.</p>
+<p>The <a href="#flow">Flow</a> <code>square-number-flow</code> takes an <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code>, which is then multiplied by itself and saved to the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. If no value is given for <code>($)NumberToSquare</code> the default value <code>10</code> is used. The flow contains a block that checks that the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> is larger than <code>0</code>, an exception is thrown by <code>square-number-flow</code> if <code>($)NumberToSquare</code> is not larger than <code>0</code>.</p>
 <h4 id="properties-1">Properties</h4>
 <table>
 <thead>
@@ -10065,27 +10090,27 @@
 <tr>
 <td><a href="#flow">Flow</a></td>
 <td><a href="#flow">Flow</a>, with value <code>square-number-flow</code></td>
-<td><a href="#flow">Flow</a> is of type <a href="/docs/reference/data-types/flows/flowreference">FlowReference</a></td>
+<td><a href="#flow">Flow</a> is of type <a href=" /docs/reference/data-types/flows/flowreference">FlowReference</a></td>
 </tr>
 <tr>
 <td><a href="#inputs">Inputs</a></td>
 <td></td>
-<td><a href="#inputs">Inputs</a> is of type <a href="/docs/reference/data-types/flows/inputvariables">InputVariables</a></td>
+<td><a href="#inputs">Inputs</a> is of type <a href=" /docs/reference/data-types/flows/inputvariables">InputVariables</a></td>
 </tr>
 <tr>
 <td>    &gt; NumberToSquare</td>
 <td>No value (defaults to <code>10</code>)</td>
-<td><code>NumberToSquare</code> is of type <a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><code>NumberToSquare</code> is of type <a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td><a href="#outputs">Outputs</a></td>
 <td><code>($)Outputs</code>, with no value</td>
-<td><code>($)Outputs</code> is a variable of type <a href="/docs/reference/data-types/collections/structure">Structure</a></td>
+<td><code>($)Outputs</code> is a variable of type <a href=" /docs/reference/data-types/collections/structure">Structure</a></td>
 </tr>
 </tbody>
 </table>
 <h4 id="result-1">Result</h4>
-<p>As no value is passed into the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> for the <a href="#flow">Flow</a> <code>square-number-flow</code> the default of <code>10</code> is used, which results in <code>100</code> being saved to the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. This results in the variable <code>($)Outputs</code> being updated to the following:</p>
+<p>As no value is passed into the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> for the <a href="#flow">Flow</a> <code>square-number-flow</code> the default of <code>10</code> is used, which results in <code>100</code> being saved to the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. This results in the variable <code>($)Outputs</code> being updated to the following:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;SquaredNumber&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">100</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
@@ -10093,7 +10118,7 @@
 <hr>
 <h3 id="running-a-flow-that-throws-an-exception">Running a Flow that Throws an Exception</h3>
 <p>This example will run the <a href="#flow">Flow</a> <code>square-number-flow</code> saving the output variables to <code>($)Outputs</code>.</p>
-<p>The <a href="#flow">Flow</a> <code>square-number-flow</code> takes an <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code>, which is then multiplied by itself and saved to the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. If no value is given for <code>($)NumberToSquare</code> the default value <code>10</code> is used. The flow contains a block that checks that the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> is larger than <code>0</code>, an exception is thrown by <code>square-number-flow</code> if <code>($)NumberToSquare</code> is not larger than <code>0</code>.</p>
+<p>The <a href="#flow">Flow</a> <code>square-number-flow</code> takes an <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code>, which is then multiplied by itself and saved to the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variable</a> <code>($)SquaredNumber</code>. If no value is given for <code>($)NumberToSquare</code> the default value <code>10</code> is used. The flow contains a block that checks that the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> is larger than <code>0</code>, an exception is thrown by <code>square-number-flow</code> if <code>($)NumberToSquare</code> is not larger than <code>0</code>.</p>
 <h4 id="properties-2">Properties</h4>
 <table>
 <thead>
@@ -10107,33 +10132,33 @@
 <tr>
 <td><a href="#flow">Flow</a></td>
 <td><a href="#flow">Flow</a>, with value <code>square-number-flow</code></td>
-<td><a href="#flow">Flow</a> is of type <a href="/docs/reference/data-types/flows/flowreference">FlowReference</a></td>
+<td><a href="#flow">Flow</a> is of type <a href=" /docs/reference/data-types/flows/flowreference">FlowReference</a></td>
 </tr>
 <tr>
 <td><a href="#inputs">Inputs</a></td>
 <td></td>
-<td><a href="#inputs">Inputs</a> is of type <a href="/docs/reference/data-types/flows/inputvariables">InputVariables</a></td>
+<td><a href="#inputs">Inputs</a> is of type <a href=" /docs/reference/data-types/flows/inputvariables">InputVariables</a></td>
 </tr>
 <tr>
 <td>    &gt; NumberToSquare</td>
 <td><code>($)NumberToSquare</code>, with value <code>-1</code></td>
-<td><code>($)NumberToSquare</code> is of type <a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><code>($)NumberToSquare</code> is of type <a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td><a href="#outputs">Outputs</a></td>
 <td><code>($)Outputs</code>, with no value</td>
-<td><code>($)Outputs</code> is a variable of type <a href="/docs/reference/data-types/collections/structure">Structure</a></td>
+<td><code>($)Outputs</code> is a variable of type <a href=" /docs/reference/data-types/collections/structure">Structure</a></td>
 </tr>
 </tbody>
 </table>
 <h4 id="result-2">Result</h4>
-<p>The <a href="#flow">Flow</a> <code>square-number-flow</code> contains a block that checks that the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> is larger than <code>0</code>; if this is not the case an exception is thrown.</p>
-<p>In this example, as <code>-1</code> is passed into the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> and is not greater than <code>0</code>, <code>($)Outputs</code> is not updated and an exception is thrown. For more information on how the exception is thrown and how to handle the exception see <a href="#exceptions-thrown-by-a-child-flow">Exceptions Thrown by a Child Flow</a>.</p>
+<p>The <a href="#flow">Flow</a> <code>square-number-flow</code> contains a block that checks that the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> is larger than <code>0</code>; if this is not the case an exception is thrown.</p>
+<p>In this example, as <code>-1</code> is passed into the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> <code>($)NumberToSquare</code> and is not greater than <code>0</code>, <code>($)Outputs</code> is not updated and an exception is thrown. For more information on how the exception is thrown and how to handle the exception see <a href="#exceptions-thrown-by-a-child-flow">Exceptions Thrown by a Child Flow</a>.</p>
 <hr>
 <h2 id="properties-3">Properties</h2>
 <h3 id="flow">Flow</h3>
 <p>The <a href="#flow">Flow</a> that will be run.</p>
-<p>The <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a> is the only editor available for this property, and it provides the developer a list of all available flows to choose from.</p>
+<p>The <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a> is the only editor available for this property, and it provides the developer a list of all available flows to choose from.</p>
 <table>
 <thead>
 <tr>
@@ -10144,19 +10169,19 @@
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/flows/flowreference">FlowReference</a></td>
+<td><a href=" /docs/reference/data-types/flows/flowreference">FlowReference</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -10165,8 +10190,8 @@
 </tbody>
 </table>
 <h3 id="inputs">Inputs</h3>
-<p>The <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> that are passed to the <a href="#flow">Flow</a> that will be run.</p>
-<p>It is recommended to use the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a> for this property as it detects and warns of changes to the Flow Contract, allowing users to <a href="#syncing-the-inputs-property-with-the-flow-contract">Sync the Editor</a>.</p>
+<p>The <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> that are passed to the <a href="#flow">Flow</a> that will be run.</p>
+<p>It is recommended to use the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a> for this property as it detects and warns of changes to the Flow Contract, allowing users to <a href="#syncing-the-inputs-property-with-the-flow-contract">Sync the Editor</a>.</p>
 <table>
 <thead>
 <tr>
@@ -10177,19 +10202,19 @@
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/flows/inputvariables">InputVariables</a></td>
+<td><a href=" /docs/reference/data-types/flows/inputvariables">InputVariables</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -10198,8 +10223,8 @@
 </tbody>
 </table>
 <h3 id="outputs">Outputs</h3>
-<p>The <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> from the <a href="#flow">Flow</a>.</p>
-<p>Each of the <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> will be saved to a <a href="/docs/reference/data-types/collections/structure">Structure</a>, where the key is the name of the variable and the item is the value of the variable.</p>
+<p>The <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> from the <a href="#flow">Flow</a>.</p>
+<p>Each of the <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#output-variables-structure">Output Variables</a> will be saved to a <a href=" /docs/reference/data-types/collections/structure">Structure</a>, where the key is the name of the variable and the item is the value of the variable.</p>
 <table>
 <thead>
 <tr>
@@ -10210,19 +10235,19 @@
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/collections/structure">Structure</a></td>
+<td><a href=" /docs/reference/data-types/collections/structure">Structure</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -10241,54 +10266,54 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/reference/exceptions/flows/execution/invalid-input-variables-exception/">InvalidInputVariablesException</a></td>
-<td>Thrown when <a href="#inputs">Inputs</a> is missing any <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> from the chosen <a href="#flow">Flow</a>. See <a href="/docs/reference/exceptions/flows/execution/invalid-input-variables-exception/#missing-input-variables">Missing Input Variables</a>.</td>
+<td><a href=" /docs/reference/exceptions/flows/execution/invalid-input-variables-exception/">InvalidInputVariablesException</a></td>
+<td>Thrown when <a href="#inputs">Inputs</a> is missing any <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> from the chosen <a href="#flow">Flow</a>. See <a href=" /docs/reference/exceptions/flows/execution/invalid-input-variables-exception/#missing-input-variables">Missing Input Variables</a>.</td>
 </tr>
 <tr>
 <td></td>
-<td>Thrown when <a href="#inputs">Inputs</a> has any extra <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> that are not in the chosen <a href="#flow">Flow</a>. See <a href="/docs/reference/exceptions/flows/execution/invalid-input-variables-exception/#extra-input-variables">Extra Input Variables</a>.</td>
+<td>Thrown when <a href="#inputs">Inputs</a> has any extra <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> that are not in the chosen <a href="#flow">Flow</a>. See <a href=" /docs/reference/exceptions/flows/execution/invalid-input-variables-exception/#extra-input-variables">Extra Input Variables</a>.</td>
 </tr>
 <tr>
 <td></td>
-<td>Thrown when <a href="#inputs">Inputs</a> has any <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> that are not a valid type for <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a>. See <a href="/docs/reference/exceptions/flows/execution/invalid-input-variables-exception/#input-variables-of-an-invalid-type">Input Variables of an Invalid Type</a>.</td>
+<td>Thrown when <a href="#inputs">Inputs</a> has any <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> that are not a valid type for <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a>. See <a href=" /docs/reference/exceptions/flows/execution/invalid-input-variables-exception/#input-variables-of-an-invalid-type">Input Variables of an Invalid Type</a>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="remarks">Remarks</h2>
 <h3 id="selecting-a-flow">Selecting a Flow</h3>
 <p><img src="/images/run-flow-selecting-a-flow.gif" alt="Selecting a Flow Example"></p>
-<p>A flow can be selected using the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a> on the <a href="#flow">Flow Property</a>, a list of all available flows will be presented to the developer and can be searched by the Name or Id of a flow.</p>
+<p>A flow can be selected using the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a> on the <a href="#flow">Flow Property</a>, a list of all available flows will be presented to the developer and can be searched by the Name or Id of a flow.</p>
 <p>When a <a href="#flow">Flow</a> is selected the <a href="#inputs">Inputs Property</a> will be <a href="#syncing-the-inputs-property-with-the-flow-contract">Synced with the Flow Contract</a>.</p>
 <h3 id="default-values">Default Values</h3>
-<p>If an <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> has a default value, then this default value will be used when running the <a href="#flow">Flow</a> if the corresponding value in the <a href="#inputs">Inputs Property</a> is left empty. See <a href="#running-a-flow-with-default-input-variables">Running a Flow with Default Input Variables</a> for an example.</p>
-<p>Also, if an <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> has a default value, and the corresponding value in the <a href="#inputs">Inputs Property</a> is not of the same type, a <a href="/docs/reference/concepts/fundamentals/messages/">Validation Error</a> will be raised when the flow is validated.</p>
-<p>For more information see <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a>.</p>
+<p>If an <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> has a default value, then this default value will be used when running the <a href="#flow">Flow</a> if the corresponding value in the <a href="#inputs">Inputs Property</a> is left empty. See <a href="#running-a-flow-with-default-input-variables">Running a Flow with Default Input Variables</a> for an example.</p>
+<p>Also, if an <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variable</a> has a default value, and the corresponding value in the <a href="#inputs">Inputs Property</a> is not of the same type, a <a href=" /docs/reference/concepts/fundamentals/messages/">Validation Error</a> will be raised when the flow is validated.</p>
+<p>For more information see <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a>.</p>
 <h3 id="exceptions-thrown-by-a-child-flow">Exceptions Thrown by a Child Flow</h3>
-<p>If the <a href="#flow">Flow</a> run by the Run Flow block throws an exception that is unhandled then it is rethrown by the Run Flow block. This can then be handled by any connected <a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a>. See <a href="#running-a-flow-that-throws-an-exception">Running a Flow that Throws an Exception</a> for an example.</p>
-<p>If an exception thrown by a block is not handled by any connected <a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a>, it will be passed to the <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block on the same workspace.</p>
+<p>If the <a href="#flow">Flow</a> run by the Run Flow block throws an exception that is unhandled then it is rethrown by the Run Flow block. This can then be handled by any connected <a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a>. See <a href="#running-a-flow-that-throws-an-exception">Running a Flow that Throws an Exception</a> for an example.</p>
+<p>If an exception thrown by a block is not handled by any connected <a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a>, it will be passed to the <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block on the same workspace.</p>
 <p>This process repeats until:</p>
 <ul>
 <li>The exception is handled, or</li>
-<li>The exception reaches the flow&rsquo;s top-level workspace, is not handled by any <a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> and the top-level workspace does not contain a <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. At this stage, the exception is handled by the flow&rsquo;s <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block.</li>
+<li>The exception reaches the flow&rsquo;s top-level workspace, is not handled by any <a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> and the top-level workspace does not contain a <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. At this stage, the exception is handled by the flow&rsquo;s <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block.</li>
 </ul>
-<p>For more information see <a href="/docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Handling Exceptions</a>.</p>
+<p>For more information see <a href=" /docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Handling Exceptions</a>.</p>
 <h3 id="syncing-the-inputs-property-with-the-flow-contract">Syncing the Inputs Property with the Flow Contract</h3>
 <p><img src="/images/run-flow-contract-change.gif" alt="Updating the Flow Contract Example"></p>
 <p>When a flow is first selected the <a href="#inputs">Inputs Property</a> will be synced with the Flow Contract.</p>
-<p>When the contract of the flow changes (e.g. <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> of a called <a href="#flow">Flow</a> are updated), a prompt will appear when the block is selected, allowing the user to sync the editor.</p>
+<p>When the contract of the flow changes (e.g. <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> of a called <a href="#flow">Flow</a> are updated), a prompt will appear when the block is selected, allowing the user to sync the editor.</p>
 <p>This will cause:</p>
 <ul>
-<li>Any missing <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> not present in the <a href="#inputs">Inputs Property</a> to be added</li>
-<li>Any extra <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> present in the <a href="#inputs">Inputs Property</a> to be removed</li>
-<li>Any <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> already present in the <a href="#inputs">Inputs Property</a> to be retained</li>
+<li>Any missing <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> not present in the <a href="#inputs">Inputs Property</a> to be added</li>
+<li>Any extra <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> present in the <a href="#inputs">Inputs Property</a> to be removed</li>
+<li>Any <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a> already present in the <a href="#inputs">Inputs Property</a> to be retained</li>
 </ul>
-<p><a href="/docs/guides/cortex-studio/main-display-area/#undo">Undoing</a> this action will cause the <a href="#inputs">Inputs Property</a> to return to its previous state, from before it was synced, allowing any data to be retrieved from any extra <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a>.</p>
+<p><a href=" /docs/guides/cortex-studio/main-display-area/#undo">Undoing</a> this action will cause the <a href="#inputs">Inputs Property</a> to return to its previous state, from before it was synced, allowing any data to be retrieved from any extra <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/#flow-input-variable">Input Variables</a>.</p>
 <h3 id="known-limitations">Known Limitations</h3>
 <h4 id="the-flow-property-can-only-use-the-literal-editor">The Flow Property can only use the Literal Editor</h4>
 <p>The Literal Editor is the only editor available for the <a href="#flow">Flow Property</a></p>
 <p>In future this limitation may be removed.</p>
 <h4 id="syncing-the-inputs-property-with-the-flow-contract-is-not-available-when-using-editors-other-than-the-literal-editor">Syncing the Inputs Property with the Flow Contract is not available when using editors other than the Literal Editor</h4>
-<p><a href="#syncing-the-inputs-property-with-the-flow-contract">Syncing the Inputs Property with the Flow Contract</a> is only available when the <a href="#inputs">Inputs Property</a> uses the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a>. If any other editor is used, the prompt to sync will not be displayed and any changes will need to be resolved manually.</p>
+<p><a href="#syncing-the-inputs-property-with-the-flow-contract">Syncing the Inputs Property with the Flow Contract</a> is only available when the <a href="#inputs">Inputs Property</a> uses the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal Editor</a>. If any other editor is used, the prompt to sync will not be displayed and any changes will need to be resolved manually.</p>
 
 	
 	

@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -241,7 +241,7 @@ This the multi-page printable view of this section.
 <li><code>C</code> - indicates to include the currency symbol for the specified culture (i.e. <code>$</code>).</li>
 <li><code>2</code> - indicates to format the value to two decimal places.</li>
 </ul>
-<p>For information about format templates and parameters, please see <a href="/docs/reference/concepts/working-with/text/formatting/">Text Formatting</a>.</p>
+<p>For information about format templates and parameters, please see <a href=" /docs/reference/concepts/working-with/text/formatting/">Text Formatting</a>.</p>
 <h4 id="properties">Properties</h4>
 <table>
 <thead>
@@ -255,22 +255,22 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#object">Object</a></td>
 <td><code>($)Object</code>, with value <code>{&quot;LastPaymentAmount&quot;:99.99, &quot;PercentagePaidOff&quot;:0.8000, &quot;PercentageRemaining&quot;:0.2000, &quot;TotalPaidOff&quot;:350.99, &quot;TotalRemaining&quot;:40}</code></td>
-<td><code>($)Object</code> is a variable of type <a href="/docs/reference/data-types/collections/structure">Structure</a></td>
+<td><code>($)Object</code> is a variable of type <a href=" /docs/reference/data-types/collections/structure">Structure</a></td>
 </tr>
 <tr>
 <td><a href="#format-template">Format Template</a></td>
 <td><code>($)FormatTemplate</code>, with value <code>&quot;Your latest payment of {LastPaymentAmount:C2} has been received. You have paid {PercentagePaidOff:P0} of your total and have {TotalRemaining:C2} outstanding.&quot;</code></td>
-<td><code>($)FormatTemplate</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)FormatTemplate</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#format-provider">Format Provider</a></td>
 <td><code>($)FormatProvider</code>, with value <code>new CultureInfo(&quot;en-US&quot;)</code></td>
-<td><code>($)FormatProvider</code> is a variable of type <a href="/docs/reference/data-types/text/iformatprovider">IFormatProvider</a></td>
+<td><code>($)FormatProvider</code> is a variable of type <a href=" /docs/reference/data-types/text/iformatprovider">IFormatProvider</a></td>
 </tr>
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with no value</td>
-<td><code>($)Text</code> is a variable that will be set to a <a href="/docs/reference/data-types/text/string">String</a> value</td>
+<td><code>($)Text</code> is a variable that will be set to a <a href=" /docs/reference/data-types/text/string">String</a> value</td>
 </tr>
 </tbody>
 </table>
@@ -293,7 +293,7 @@ This the multi-page printable view of this section.
 <p>The <a href="#object">Object</a> to convert to <a href="#text">Text</a>.</p>
 <p>All <code>{Property}</code> format parameters which match a property name in the <a href="#object">Object</a> will be replaced by that property&rsquo;s value.</p>
 <p>The values of matching properties do not have to be text, they can be any data type. Any non-text value will be converted to its text representation when it is replaced.</p>
-<p>For information about how types are converted to their text representation please see <a href="/docs/reference/concepts/working-with/text/converting-objects-to-text">Converting Objects To Text</a>.</p>
+<p>For information about how types are converted to their text representation please see <a href=" /docs/reference/concepts/working-with/text/converting-objects-to-text">Converting Objects To Text</a>.</p>
 <table>
 <thead>
 <tr>
@@ -304,19 +304,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/data-types/generics/">TObject</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/data-types/generics/">TObject</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -330,7 +330,7 @@ This the multi-page printable view of this section.
 <p><code>{Property}</code> format parameters are case-sensitive, so must exactly match the property name in the <a href="#object">Object</a>; those that do not will not be replaced.</p>
 <p>If <a href="#format-template">Format Template</a> is specified but does not contain any <code>{Property}</code> format parameters, nothing is replaced; <a href="#text">Text</a> will be set to the value of <a href="#format-template">Format Template</a>.</p>
 <p>If <a href="#format-template">Format Template</a> is not specified, <code>null</code> or empty (i.e. <code>&quot;&quot;</code>), <a href="#text">Text</a> will be set to the value of <a href="https://learn.microsoft.com/en-us/dotnet/api/system.convert.tostring?#system-convert-tostring(system-object-system-iformatprovider)">Convert.ToString(Object, Format Provider)</a>.</p>
-<p>For information about format templates and parameters, please see <a href="/docs/reference/concepts/working-with/text/formatting/">Text Formatting</a>.</p>
+<p>For information about format templates and parameters, please see <a href=" /docs/reference/concepts/working-with/text/formatting/">Text Formatting</a>.</p>
 <table>
 <thead>
 <tr>
@@ -341,19 +341,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -363,7 +363,7 @@ This the multi-page printable view of this section.
 </table>
 <h3 id="format-provider">Format Provider</h3>
 <p><a href="#format-provider">Format Provider</a> can be specified to define the cultural rules used to control the formatting (e.g. <code>new CultureInfo(&quot;en-US&quot;)</code> will apply American English rules to the formatting.).</p>
-<p>If <a href="#format-provider">Format Provider</a> is not specified or <code>null</code>, <code>CultureInfo.InvariantCulture</code> will be used; <code>CultureInfo.InvariantCulture</code> is associated with the English language but not with any country/region. For more information, please see <a href="/docs/reference/concepts/working-with/culture/invariant-culture">Invariant Culture rules</a>.</p>
+<p>If <a href="#format-provider">Format Provider</a> is not specified or <code>null</code>, <code>CultureInfo.InvariantCulture</code> will be used; <code>CultureInfo.InvariantCulture</code> is associated with the English language but not with any country/region. For more information, please see <a href=" /docs/reference/concepts/working-with/culture/invariant-culture">Invariant Culture rules</a>.</p>
 <table>
 <thead>
 <tr>
@@ -374,19 +374,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/iformatprovider">IFormatProvider</a></td>
+<td><a href=" /docs/reference/data-types/text/iformatprovider">IFormatProvider</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>true</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -406,19 +406,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -438,10 +438,10 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.formatexception">FormatException</a></td>
-<td>Thrown when <a href="#format-template">Format Template</a> contains a format parameter that is invalid or not well-formed (e.g. <code>&quot;Cost is {TotalCost:Q2}</code>, as <code>&quot;Q&quot;</code> is not a <a href="/docs/reference/concepts/working-with/text/formatting/#format-parameters">valid format parameter</a>).</td>
+<td>Thrown when <a href="#format-template">Format Template</a> contains a format parameter that is invalid or not well-formed (e.g. <code>&quot;Cost is {TotalCost:Q2}</code>, as <code>&quot;Q&quot;</code> is not a <a href=" /docs/reference/concepts/working-with/text/formatting/#format-parameters">valid format parameter</a>).</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
 <td>Thrown when <a href="#object">Object</a> is <code>null</code>.</td>
 </tr>
 </tbody>
@@ -449,12 +449,12 @@ This the multi-page printable view of this section.
 <h2 id="remarks">Remarks</h2>
 <h3 id="text-formatting">Text Formatting</h3>
 <p>Please note that changes to operating system settings, could result in some of the examples above displaying different results.</p>
-<p>For information about format templates and parameters, please see <a href="/docs/reference/concepts/working-with/text/formatting/">Text Formatting</a>.</p>
+<p>For information about format templates and parameters, please see <a href=" /docs/reference/concepts/working-with/text/formatting/">Text Formatting</a>.</p>
 <h3 id="null-or-empty-format-template">Null or Empty Format Template</h3>
 <p>If <a href="#format-template">Format Template</a> is specified but does not contain any <code>{Property}</code> format parameters, nothing is replaced; <a href="#text">Text</a> will be set to the value of <a href="#format-template">Format Template</a>.</p>
 <p>If <a href="#format-template">Format Template</a> is not specified, <code>null</code> or empty (i.e. <code>&quot;&quot;</code>), <a href="#text">Text</a> will be set to the value of <a href="https://learn.microsoft.com/en-us/dotnet/api/system.convert.tostring?#system-convert-tostring(system-object-system-iformatprovider)">Convert.ToString(Object, Format Provider)</a>.</p>
 <h3 id="null-format-provider">Null Format Provider</h3>
-<p>If <a href="#format-provider">Format Provider</a> is not specified or <code>null</code>, <code>CultureInfo.InvariantCulture</code> will be used; <code>CultureInfo.InvariantCulture</code> is associated with the English language but not with any country/region. For more information, please see <a href="/docs/reference/concepts/working-with/culture/invariant-culture">Invariant Culture rules</a>.</p>
+<p>If <a href="#format-provider">Format Provider</a> is not specified or <code>null</code>, <code>CultureInfo.InvariantCulture</code> will be used; <code>CultureInfo.InvariantCulture</code> is associated with the English language but not with any country/region. For more information, please see <a href=" /docs/reference/concepts/working-with/culture/invariant-culture">Invariant Culture rules</a>.</p>
 <h3 id="nested-properties">Nested Properties</h3>
 <p>Format parameters support nested properties, which means given an object like the following:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>

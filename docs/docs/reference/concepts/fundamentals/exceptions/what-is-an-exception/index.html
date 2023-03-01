@@ -22,10 +22,10 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/reference/concepts/fundamentals/exceptions/what-is-an-exception/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2022-08-31T08:32:22+01:00" /><meta property="og:site_name" content="Cortex" />
+<meta property="article:modified_time" content="2023-03-01T16:27:54+00:00" /><meta property="og:site_name" content="Cortex" />
 <meta itemprop="name" content="What is an Exception?">
 <meta itemprop="description" content="Information regarding the anatomy of an exception, and properties accessible on an exception.">
-<meta itemprop="dateModified" content="2022-08-31T08:32:22+01:00" />
+<meta itemprop="dateModified" content="2023-03-01T16:27:54+00:00" />
 <meta itemprop="wordCount" content="615">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="What is an Exception?"/>
@@ -119,7 +119,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -151,7 +151,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -8629,6 +8629,39 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/exceptions/collections/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Collections</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreferenceexceptionscollections">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionscollectionsoccurrence-not-present-exception" href="/docs/reference/exceptions/collections/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/reference/exceptions/common/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Common</a>
   </li>
   <ul>
@@ -8840,14 +8873,6 @@
         
       
       
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsdictionariesoccurrence-not-present-exception" href="/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
-        
-      
-      
     </li>
   </ul>
 </ul>
@@ -8934,14 +8959,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflow-exception" href="/docs/reference/exceptions/flow-exception/">FlowException</a>
         
       
       
@@ -9042,6 +9059,14 @@
   </ul>
 </ul>
 
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflowsflow-exception" href="/docs/reference/exceptions/flows/flow-exception/">FlowException</a>
         
       
       
@@ -9989,17 +10014,17 @@
            
 	<h1 id="what-is-an-exception">What is an Exception?</h1>
 <h2 id="summary">Summary</h2>
-<p>An exception is thrown during an <a href="/docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> when an issue is encountered whilst executing a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>. Exceptions can occur for a number of reasons, such as:</p>
+<p>An exception is thrown during an <a href=" /docs/reference/concepts/fundamentals/executions/what-is-an-execution">execution</a> when an issue is encountered whilst executing a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a>. Exceptions can occur for a number of reasons, such as:</p>
 <ul>
-<li>Exceptions thrown by a <a href="/docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a>, these can be found in the relevant documentation for that <a href="/docs/reference/blocks/">block</a> (e.g. A duplicate key is added to a <a href="/docs/reference/data-types/collections/dictionary-2">Dictionary</a> using the <a href="/docs/reference/blocks/dictionaries/add-item/add-item-with-key-block-3">Add Item With Key</a> block)</li>
-<li>Developer thrown <a href="/docs/reference/concepts/fundamentals/exceptions/throwing-exceptions">exceptions</a> (e.g. A developer enriches an exception that has already been thrown to provide a more detailed message)</li>
+<li>Exceptions thrown by a <a href=" /docs/reference/concepts/fundamentals/blocks/what-is-a-block/">block</a>, these can be found in the relevant documentation for that <a href=" /docs/reference/blocks/">block</a> (e.g. A duplicate key is added to a <a href=" /docs/reference/data-types/collections/dictionary-2">Dictionary</a> using the <a href=" /docs/reference/blocks/dictionaries/add-item/add-item-with-key-block-3">Add Item With Key</a> block)</li>
+<li>Developer thrown <a href=" /docs/reference/concepts/fundamentals/exceptions/throwing-exceptions">exceptions</a> (e.g. A developer enriches an exception that has already been thrown to provide a more detailed message)</li>
 <li>Issues with third-party systems (e.g. A third-party system experiences an error)</li>
 <li>Issues with network connectivity (e.g. A target machine is inaccessible)</li>
 <li>Issues with permissions (e.g. The execution does not have permission to read a file)</li>
 <li>Issues with the environment (e.g. The software installed on a target machine is incorrect)</li>
 </ul>
 <p>An exception contains details of what caused the issue, for more information see <a href="#anatomy-of-an-exception">Anatomy of an Exception</a>.</p>
-<p>An exception can be handled in different ways depending on where the exception occurred. For more information see <a href="/docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Handling Exceptions</a>.</p>
+<p>An exception can be handled in different ways depending on where the exception occurred. For more information see <a href=" /docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Handling Exceptions</a>.</p>
 <h2 id="anatomy-of-an-exception">Anatomy of an Exception</h2>
 <p><img src="/images/exception-in-viewer.PNG" alt="Example Exception in Exception Viewer"></p>
 <p>Data within an exception can be accessed using properties.</p>
@@ -10020,12 +10045,12 @@
 </tr>
 <tr>
 <td>Message</td>
-<td>The exception message, providing information about the exception that occurred. This typically includes the cause of the exception, possible resolutions, and any related information. What is included in an exception&rsquo;s message can be found in the relevant documentation for that <a href="/docs/reference/exceptions/">exception</a></td>
+<td>The exception message, providing information about the exception that occurred. This typically includes the cause of the exception, possible resolutions, and any related information. What is included in an exception&rsquo;s message can be found in the relevant documentation for that <a href=" /docs/reference/exceptions/">exception</a></td>
 <td><code>'List' is null; it must be provided with a non-null value.\r\nPlease click the HelpLink for more information on how to fix this.</code></td>
 </tr>
 <tr>
 <td>HelpLink</td>
-<td>Help link to aid with troubleshooting and resolution for the exception. There are three types of help links:</br></br><ul><li>Cortex - Help links direct to material within the Cortex Product Portal. This documentation is written and maintained by Cortex and contains information directly related to the Cortex product.</li><li>External - Help links direct to externally hosted material about the exception. This documentation is not written or maintained by Cortex.</li><li>Custom - Help links are generated by flow developers during the design and development of flows. These help links are configured in the <a href="/docs/reference/blocks/exceptions/throw-exception/throw-new-flow-exception-block">Throw New Exception</a> block, and can link to any resource applicable to the exception.</li></ul></td>
+<td>Help link to aid with troubleshooting and resolution for the exception. There are three types of help links:</br></br><ul><li>Cortex - Help links direct to material within the Cortex Product Portal. This documentation is written and maintained by Cortex and contains information directly related to the Cortex product.</li><li>External - Help links direct to externally hosted material about the exception. This documentation is not written or maintained by Cortex.</li><li>Custom - Help links are generated by flow developers during the design and development of flows. These help links are configured in the <a href=" /docs/reference/blocks/exceptions/throw-exception/throw-new-flow-exception-block">Throw New Exception</a> block, and can link to any resource applicable to the exception.</li></ul></td>
 <td><code>https://v2022.docs.cortex-ia.com/docs/reference/exceptions/common/property/property-null-exception/</code></td>
 </tr>
 </tbody>
@@ -10043,50 +10068,50 @@
 <tr>
 <td>Category</td>
 <td>The category of the exception, which is used to categorise an exception if there are multiple reasons that the exception can occur.</td>
-<td><a href="/docs/reference/exceptions/loops/infinite-loop-exception/#category">InfiniteLoopException</a> has one category, <code>&quot;Increment&quot;</code></td>
+<td><a href=" /docs/reference/exceptions/loops/infinite-loop-exception/#category">InfiniteLoopException</a> has one category, <code>&quot;Increment&quot;</code></td>
 </tr>
 <tr>
 <td>Error Code</td>
 <td>The error code for the exception, which is used to indicate the reason that the exception occurred, if there are multiple reasons that the exception can occur.</td>
-<td><a href="/docs/reference/exceptions/loops/infinite-loop-exception/#error-code">InfiniteLoopException</a> has three error codes, <code>InfiniteLoopErrorCode.IncrementIsZero (100)</code>, <code>InfiniteLoopErrorCode.IncrementIsNegative (101)</code>, and <code>InfiniteLoopErrorCode.IncrementIsPositive (102)</code></td>
+<td><a href=" /docs/reference/exceptions/loops/infinite-loop-exception/#error-code">InfiniteLoopException</a> has three error codes, <code>InfiniteLoopErrorCode.IncrementIsZero (100)</code>, <code>InfiniteLoopErrorCode.IncrementIsNegative (101)</code>, and <code>InfiniteLoopErrorCode.IncrementIsPositive (102)</code></td>
 </tr>
 <tr>
 <td>Inner Exception</td>
-<td>Contains the exception that caused this exception, if any. This property is always accessible but will only be visible in the <a href="/docs/guides/cortex-studio/east-panel/#exceptions-viewer">Exceptions Viewer</a> when it contains data.</td>
+<td>Contains the exception that caused this exception, if any. This property is always accessible but will only be visible in the <a href=" /docs/guides/cortex-studio/east-panel/#exceptions-viewer">Exceptions Viewer</a> when it contains data.</td>
 <td><code>{&quot;ExceptionType&quot;: &quot;PropertyNullException&quot;, &quot;Message&quot;: &quot;'List' is null; it must be provided with a non-null value.\r\nPlease click the HelpLink for more information on how to fix this.&quot;, &quot;HelpLink&quot;: &quot;https://v2022.docs.cortex-ia.com/docs/reference/exceptions/common/property/property-null-exception/&quot;}</code></td>
 </tr>
 </tbody>
 </table>
-<p>For more information regarding what properties are accessible on an exception, see the relevant documentation for that <a href="/docs/reference/exceptions/">exception</a>.</p>
+<p>For more information regarding what properties are accessible on an exception, see the relevant documentation for that <a href=" /docs/reference/exceptions/">exception</a>.</p>
 <h2 id="remarks">Remarks</h2>
 <h3 id="known-limitations">Known Limitations</h3>
 <h4 id="carriage-return-and-line-feed-characters">Carriage Return and Line Feed Characters</h4>
 <p>Carriage Return and Line Feed characters within an exception are supported but will be displayed or written as <code>\r</code>, <code>\n</code>, or <code>\r\n</code>.</p>
 <p>In future this limitation may be removed.</p>
 <h4 id="copying-exception-text">Copying Exception Text</h4>
-<p>The <a href="/docs/guides/cortex-studio/east-panel/#exceptions-viewer">Exceptions Viewer</a> currently does not support traditional copy functionality. A workaround is to highlight the text, then click and drag into another text editor.</p>
+<p>The <a href=" /docs/guides/cortex-studio/east-panel/#exceptions-viewer">Exceptions Viewer</a> currently does not support traditional copy functionality. A workaround is to highlight the text, then click and drag into another text editor.</p>
 <p>In future this limitation may be removed.</p>
 <h2 id="see-also">See Also</h2>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/flows">Flows</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/executions/">Executions</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/flows">Flows</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/executions/">Executions</a></li>
 </ul>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/exceptions/">All Exceptions</a></li>
+<li><a href=" /docs/reference/exceptions/">All Exceptions</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
-<li><a href="/docs/reference/blocks/">All Blocks</a></li>
+<li><a href=" /docs/reference/blocks/">All Blocks</a></li>
 </ul>
 <h3 id="external-documentation">External Documentation</h3>
 <p>None</p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified August 31, 2022: <a  href="https://github.com/CortexIntelligentAutomation/docs_v2022/commit/6881beacb421d0f5e7f0fae168ca0b4752de12be">execution todos (6881beacb)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified March 1, 2023: <a  href="https://github.com/CortexIntelligentAutomation/docs_v2022/commit/21724f252707b59d35f6fffe4b1da072c11d3e94">Fix broken links (21724f252)</a>
 </div>
 </div>
 

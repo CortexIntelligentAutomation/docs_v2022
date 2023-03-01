@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -226,7 +226,7 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#exception">Exception</a></td>
 <td><code>($)Exception</code>, with no value</td>
-<td><code>($)Exception</code> is a variable that will be set to a <a href="/docs/reference/data-types/all/dynamic">dynamic</a> value</td>
+<td><code>($)Exception</code> is a variable that will be set to a <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> value</td>
 </tr>
 </tbody>
 </table>
@@ -254,14 +254,14 @@ This the multi-page printable view of this section.
 </table>
 <h4 id="result-1">Result</h4>
 <p>The block will handle any unhandled exception within the block&rsquo;s workspace, but will not save the exception as the <code>($)_</code> variable indicates it is not needed and can be discarded.</p>
-<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
+<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
 <hr>
 <h2 id="properties-2">Properties</h2>
 <h3 id="exception">Exception</h3>
 <p>The <a href="#exception">Exception</a> that is handled.</p>
-<p><a href="#exception">Exception</a> can be any <a href="/docs/reference/data-types/exceptions/exception">Exception data type</a>.</p>
+<p><a href="#exception">Exception</a> can be any <a href=" /docs/reference/data-types/exceptions/exception">Exception data type</a>.</p>
 <p>If the flow execution does not need the exception, it can be discarded by assigning the built-in <code>($)_</code> variable.</p>
-<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
+<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
 <table>
 <thead>
 <tr>
@@ -272,19 +272,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/all/dynamic">dynamic</a></td>
+<td><a href=" /docs/reference/data-types/all/dynamic">dynamic</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -298,28 +298,28 @@ This the multi-page printable view of this section.
 <h3 id="block-restrictions">Block Restrictions</h3>
 <p>The following restrictions apply to this block:</p>
 <ul>
-<li>A workspace cannot contain more than one <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. If more than one is added, it will be reported as a message when trying to debug the flow.</li>
-<li>The <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block will only handle the first unhandled exception within its workspace. This is to prevent infinite recursion within the flow. Subsequent unhandled exceptions are passed to the next relevant exception handling block. For more information about chaining of exception handling blocks and passing of exceptions, please see <a href="/docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Exception Handling</a>.</li>
-<li>A flow&rsquo;s Top-Level Workspace cannot contain a <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. If one is added, it will be reported as a message when trying to debug the flow.</li>
+<li>A workspace cannot contain more than one <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. If more than one is added, it will be reported as a message when trying to debug the flow.</li>
+<li>The <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block will only handle the first unhandled exception within its workspace. This is to prevent infinite recursion within the flow. Subsequent unhandled exceptions are passed to the next relevant exception handling block. For more information about chaining of exception handling blocks and passing of exceptions, please see <a href=" /docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Exception Handling</a>.</li>
+<li>A flow&rsquo;s Top-Level Workspace cannot contain a <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. If one is added, it will be reported as a message when trying to debug the flow.</li>
 </ul>
 <h3 id="unhandled-exceptions">Unhandled Exceptions</h3>
-<p>If an exception thrown by a block is not handled by any connected <a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a>, it will be passed to the <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block on the same workspace.</p>
-<p>If the workspace does not contain a <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block it will be rethrown by the <a href="/docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block the workspace belongs to.</p>
+<p>If an exception thrown by a block is not handled by any connected <a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a>, it will be passed to the <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block on the same workspace.</p>
+<p>If the workspace does not contain a <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block it will be rethrown by the <a href=" /docs/reference/blocks/workspaces/workspace/workspace-block">Workspace</a> block the workspace belongs to.</p>
 <p>This process repeats until:</p>
 <ul>
 <li>The exception is handled, or</li>
-<li>The exception reaches the flow&rsquo;s top-level workspace, is not handled by any <a href="/docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> and the top-level workspace does not contain a <a href="/docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. At this stage, the exception is handled by the flow&rsquo;s <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block.</li>
+<li>The exception reaches the flow&rsquo;s top-level workspace, is not handled by any <a href=" /docs/reference/blocks/exceptions/handle-block-exception">Handle Block Exception blocks</a> and the top-level workspace does not contain a <a href=" /docs/reference/blocks/exceptions/handle-workspace-exception/handle-workspace-exception-block">Handle Workspace Exception</a> block. At this stage, the exception is handled by the flow&rsquo;s <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block.</li>
 </ul>
-<p>If an exception occurs within the workspace of the <a href="/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the flow will end with a status of Error.</p>
+<p>If an exception occurs within the workspace of the <a href=" /docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block">Handle Flow Exception</a> block and is not handled, the flow will end with a status of Error.</p>
 <p><img src="/images/flow-error-status.png" alt="Icon"></p>
-<p>For more information about chaining of exception handling blocks and passing of exceptions, please see <a href="/docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Exception Handling</a>.</p>
+<p>For more information about chaining of exception handling blocks and passing of exceptions, please see <a href=" /docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Exception Handling</a>.</p>
 <h3 id="why-does-the-exception-property-return-a-dynamic-data-type">Why does the Exception property return a dynamic data type?</h3>
-<p>The decision for the <a href="#exception">Exception</a> to return a <a href="/docs/reference/data-types/all/dynamic">dynamic data type</a> rather than an <a href="/docs/reference/data-types/exceptions/exception">Exception data type</a>, was to avoid users having to <a href="/docs/reference/concepts/working-with/objects/object-casting/">cast</a> the exception to its correct type to be able to use all of its properties.</p>
-<p>As a result, any issues with using the <a href="/docs/reference/data-types/exceptions/exception">Exception data type</a> (i.e. trying to access a property it does not have) will not be reported as messages when trying to debug the flow; they will only be discovered when the flow execution reaches the part of the flow with the issue.</p>
-<p>If it is desirable to have any issues reported as messages when trying to debug the flow, the user can <a href="/docs/reference/concepts/working-with/objects/object-casting/">cast</a> the exception to its correct type.</p>
+<p>The decision for the <a href="#exception">Exception</a> to return a <a href=" /docs/reference/data-types/all/dynamic">dynamic data type</a> rather than an <a href=" /docs/reference/data-types/exceptions/exception">Exception data type</a>, was to avoid users having to <a href=" /docs/reference/concepts/working-with/objects/object-casting/">cast</a> the exception to its correct type to be able to use all of its properties.</p>
+<p>As a result, any issues with using the <a href=" /docs/reference/data-types/exceptions/exception">Exception data type</a> (i.e. trying to access a property it does not have) will not be reported as messages when trying to debug the flow; they will only be discovered when the flow execution reaches the part of the flow with the issue.</p>
+<p>If it is desirable to have any issues reported as messages when trying to debug the flow, the user can <a href=" /docs/reference/concepts/working-with/objects/object-casting/">cast</a> the exception to its correct type.</p>
 <h3 id="using-the-built-in-_-variable-to-discard-the-exception-from-being-saved">Using the built-in ($)_ variable to discard the Exception from being saved</h3>
 <p>Sometimes when an exception occurs the flow execution wants to use the exception to make decisions or take further action. However, there are occasions when the exception is not needed, and being forced to create another variable to save the exception is extra work for no benefit. In these circumstances it is possible to use the built-in <code>($)_</code> variable to indicate the exception does not need to be saved.</p>
-<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
+<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
 
 </div>
 

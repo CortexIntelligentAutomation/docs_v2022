@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -208,7 +208,7 @@ This the multi-page printable view of this section.
 	<h1 id="pg-c930e8ae31f7467530e15e5df661d168">1 - Install Promtail</h1>
     <div class="lead">Information about installing Promtail on the Application Server(s).</div>
 	<h1 id="install-promtail">Install Promtail</h1>
-<p>This guide describes how to install Promtail on the Application Server(s). Please ensure that the <a href="/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites">Prerequisites</a> have been completed before starting this installation.</p>
+<p>This guide describes how to install Promtail on the Application Server(s). Please ensure that the <a href=" /docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites">Prerequisites</a> have been completed before starting this installation.</p>
 <h2 id="install-promtail-1">Install Promtail</h2>
 <ol>
 <li>Download <a href="https://github.com/grafana/loki/releases/download/v2.5.0/promtail-windows-amd64.exe.zip">Promtail 2.5.0</a> archive.</li>
@@ -221,7 +221,7 @@ This archive contains the <code>promtail-local-config.yaml</code> configuration 
 </ol>
 <h2 id="next-steps">Next Steps?</h2>
 <ol>
-<li><a href="/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-promtail/configure-promtail">Configure Promtail</a></li>
+<li><a href=" /docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-promtail/configure-promtail">Configure Promtail</a></li>
 </ol>
 
 </div>
@@ -252,10 +252,10 @@ This archive contains the <code>promtail-local-config.yaml</code> configuration 
 </div>
 
 <h2 id="install-certificate">Install Certificate</h2>
-<p>If a self-signed certificate was obtained in the <a href="/docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites#certificate-requirements">prerequisites</a>, the CA certificate used to create this certificate must be imported on each Application Server. Otherwise, Promtail will not be able to establish communication with Grafana Loki.</p>
+<p>If a self-signed certificate was obtained in the <a href=" /docs/getting-started/on-premise/add-observability-to-innovation/grafana/prerequisites#certificate-requirements">prerequisites</a>, the CA certificate used to create this certificate must be imported on each Application Server. Otherwise, Promtail will not be able to establish communication with Grafana Loki.</p>
 <p>To import the CA certificate:</p>
 <ol>
-<li>Copy the <code>cortexCA.pfx</code> CA certificate created during the <a href="/docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/self-signed-certificates/#generate-the-root-ca-certificate">root CA certificate generation</a> steps into a suitable location on the Application Server.</li>
+<li>Copy the <code>cortexCA.pfx</code> CA certificate created during the <a href=" /docs/getting-started/on-premise/add-observability-to-innovation/grafana/advanced/self-signed-certificates/#generate-the-root-ca-certificate">root CA certificate generation</a> steps into a suitable location on the Application Server.</li>
 <li>Double click on the <code>cortexCA.pfx</code> file to import the certificate into the Windows Certificate Store.</li>
 <li>Select <code>Local Machine</code> then click <code>Next</code>.</li>
 <li>Click <code>Next</code>.</li>
@@ -285,19 +285,19 @@ This archive contains the <code>promtail-local-config.yaml</code> configuration 
 <tbody>
 <tr>
 <td>username</td>
-<td>The username of the user created during <a href="/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#create-loki-user">Create Loki User</a> steps.</td>
+<td>The username of the user created during <a href=" /docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#create-loki-user">Create Loki User</a> steps.</td>
 </tr>
 <tr>
 <td>password</td>
-<td>The password which was set for the user  during <a href="/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#create-loki-user">Create Loki User</a> steps.</td>
+<td>The password which was set for the user  during <a href=" /docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#create-loki-user">Create Loki User</a> steps.</td>
 </tr>
 <tr>
 <td>loki host address</td>
-<td>The host address of the machine where the Grafana Loki reverse proxy was configured during <a href="/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#add-a-new-website">Add a New Website</a> steps . This must match the configured host name.</td>
+<td>The host address of the machine where the Grafana Loki reverse proxy was configured during <a href=" /docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#add-a-new-website">Add a New Website</a> steps . This must match the configured host name.</td>
 </tr>
 <tr>
 <td>loki reverse proxy port</td>
-<td>The port of the Grafana Loki reverse proxy configured during <a href="/docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#add-a-new-website">Add a New Website</a> steps. Usually 2100.</td>
+<td>The port of the Grafana Loki reverse proxy configured during <a href=" /docs/getting-started/on-premise/add-observability-to-innovation/grafana/install-loki/configure-loki/#add-a-new-website">Add a New Website</a> steps. Usually 2100.</td>
 </tr>
 </tbody>
 </table>
@@ -337,7 +337,7 @@ This archive contains the <code>promtail-local-config.yaml</code> configuration 
 </ol>
 <h2 id="next-steps">Next Steps?</h2>
 <ol>
-<li><a href="/docs/getting-started/on-premise/add-observability-to-innovation/grafana/setup-grafana">Setup Grafana</a></li>
+<li><a href=" /docs/getting-started/on-premise/add-observability-to-innovation/grafana/setup-grafana">Setup Grafana</a></li>
 </ol>
 
 </div>

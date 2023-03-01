@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -262,13 +262,13 @@ This the multi-page printable view of this section.
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/guides/cortex-gateway/">Cortex Gateway</a></td>
+<td><a href=" /docs/guides/cortex-gateway/">Cortex Gateway</a></td>
 <td>Web portal that hosts applications for creating automation solutions and managing their full life-cycle, including design, development, testing, deployment, monitoring, maintenance and ultimately end-of-life.</td>
 <td>Required</td>
 <td>Web Application Server</td>
 </tr>
 <tr>
-<td><a href="/docs/guides/cortex-studio/">Cortex Studio</a></td>
+<td><a href=" /docs/guides/cortex-studio/">Cortex Studio</a></td>
 <td>Application hosted in Cortex Gateway that provides the graphical, low-code environment for developing, testing, versioning, publishing and managing the full life-cycle of automation solutions.</td>
 <td>Required</td>
 <td>Web Application Server</td>
@@ -361,7 +361,7 @@ This the multi-page printable view of this section.
 
 <h2 id="next-steps">Next Steps?</h2>
 <ol>
-<li><a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites">Prerequisites</a></li>
+<li><a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites">Prerequisites</a></li>
 </ol>
 
 </div>
@@ -381,7 +381,7 @@ This the multi-page printable view of this section.
 	<h1 id="pg-a220cffc402902792d86025978223271">2 - Prerequisites</h1>
     <div class="lead">Information about the prerequisites required on each server type for installation.</div>
 	<h1 id="prerequisites">Prerequisites</h1>
-<p>The prerequisites required for a single server (as described in <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/architecture">Architecture</a>) are laid out in this guide. These must be considered before undertaking installation.</p>
+<p>The prerequisites required for a single server (as described in <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/architecture">Architecture</a>) are laid out in this guide. These must be considered before undertaking installation.</p>
 <h2 id="hardware-requirements">Hardware Requirements</h2>
 
 
@@ -471,7 +471,7 @@ This the multi-page printable view of this section.
 <p>Request a licence and feature identifier by raising a case in the <a href="https://support.cortex.co.uk/">Cortex Service Portal</a>, including the contents of the text file containing all of the fingerprint and machine information in the body of the case.</p>
 </li>
 <li>
-<p>When the licence and feature identifier have arrived, copy the file <code>Cortex.lic</code> to <code>%ProgramData%\Cortex\Licences</code> on the Web Application Server, creating the <code>Cortex</code> and <code>Licences</code> folders if they don&rsquo;t exist. Save the feature identifier for use when <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">Installing Gateway</a>.</p>
+<p>When the licence and feature identifier have arrived, copy the file <code>Cortex.lic</code> to <code>%ProgramData%\Cortex\Licences</code> on the Web Application Server, creating the <code>Cortex</code> and <code>Licences</code> folders if they don&rsquo;t exist. Save the feature identifier for use when <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">Installing Gateway</a>.</p>
 </li>
 </ol>
 <h2 id="web-browser-requirements">Web Browser Requirements</h2>
@@ -531,7 +531,7 @@ This the multi-page printable view of this section.
 <li>TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</li>
 <li>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</li>
 </ul>
-<p>See <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/ssl-best-practices">SSL Best Practices</a> for a full list of the security changes which will be applied. The <code>Cortex.Innovation.Install.SSLBestPractices.ps1</code> script is provided during installation to apply these security changes to the server.</p>
+<p>See <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/ssl-best-practices">SSL Best Practices</a> for a full list of the security changes which will be applied. The <code>Cortex.Innovation.Install.SSLBestPractices.ps1</code> script is provided during installation to apply these security changes to the server.</p>
 <h2 id="additional-application-server-requirements">Additional Application Server Requirements</h2>
 <h3 id="filesystem-requirements">Filesystem Requirements</h3>
 <p>The server must use an NTFS filesystem.</p>
@@ -571,8 +571,8 @@ This the multi-page printable view of this section.
 <p>A script is provided during installation to add these exclusions for Windows Defender. If any other antivirus software is running, these will need to be added manually.</p>
 <p>If adding the exclusions manually, the Process Exclusions should be done before installation occurs, as the processes will be used during installation of the application and antivirus software can cause the installation to fail or timeout. Folder Exclusions may need to be added after installation has occurred as some antivirus software needs the folders to exist.</p>
 <h4 id="port-requirements">Port Requirements</h4>
-<p>Cortex Innovation and Microsoft Service Fabric require a range of <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/port-requirements">firewall ports to be opened</a> between the server and specific services.</p>
-<p>If you are using Windows Firewall, some ports are opened during installation and others are opened dynamically as needed. If any other firewall is used, it will be necessary to add the rules described in <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/port-requirements">Port Requirements</a> to open the correct ports.</p>
+<p>Cortex Innovation and Microsoft Service Fabric require a range of <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/port-requirements">firewall ports to be opened</a> between the server and specific services.</p>
+<p>If you are using Windows Firewall, some ports are opened during installation and others are opened dynamically as needed. If any other firewall is used, it will be necessary to add the rules described in <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/port-requirements">Port Requirements</a> to open the correct ports.</p>
 <p>The <code>Cortex.Innovation.Test.PortUsage.ps1</code> script is provided during installation to test the ports on the server and make sure they do not overlap with any other programs; most ports may be altered if this is the case, the description will say if this is not possible.</p>
 <h2 id="additional-web-application-server-requirements">Additional Web Application Server Requirements</h2>
 <h3 id="security-requirements-1">Security Requirements</h3>
@@ -650,7 +650,7 @@ This the multi-page printable view of this section.
 </table>
 <h2 id="next-steps">Next Steps?</h2>
 <ol>
-<li><a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server">Install Application Server</a></li>
+<li><a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server">Install Application Server</a></li>
 </ol>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -693,7 +693,7 @@ This the multi-page printable view of this section.
 	<h1 id="pg-fe52b3f1214f7ec1fdfdbcc8afa49c34">3 - Install Application Server</h1>
     <div class="lead">Information about installing the Application Server.</div>
 	<h1 id="install-application-server">Install Application Server</h1>
-<p>This guide describes how to install the Application Server components on the server. Please ensure that the <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites">Prerequisites</a> have been read before starting this installation.</p>
+<p>This guide describes how to install the Application Server components on the server. Please ensure that the <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites">Prerequisites</a> have been read before starting this installation.</p>
 <h2 id="make-installation-artefacts-available">Make Installation Artefacts Available</h2>
 <ol>
 <li>
@@ -728,7 +728,7 @@ This the multi-page printable view of this section.
 <p>These are non-compulsory security measures, recommended to be applied to the server, in order to prevent potential attacks that exploit known industry security vulnerabilities.</p>
 <p>Applying these measures may impact other applications running on your server. Therefore, it is your responsibility to ensure that other applications and their clients will not be affected by the changes.</p>
 <h3 id="only-use-recommended-encryption-algorithms-and-tls-protocols">Only Use Recommended Encryption Algorithms and TLS Protocols</h3>
-<p>A collection of registry settings need to be applied to guarantee your server is only using the recommended encryption algorithms and TLS protocols. Information about these settings can be found at <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/ssl-best-practices">SSL Best Practices</a>.</p>
+<p>A collection of registry settings need to be applied to guarantee your server is only using the recommended encryption algorithms and TLS protocols. Information about these settings can be found at <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/ssl-best-practices">SSL Best Practices</a>.</p>
 
 
 <div class="alert alert-primary" role="alert">
@@ -771,7 +771,7 @@ This the multi-page printable view of this section.
 </ol>
 <h2 id="add-antivirus-exclusions">Add Antivirus Exclusions</h2>
 <ol>
-<li>If Windows Defender is not running on the server, ensure that the <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#antivirus-exclusions">Antivirus Exclusions</a> have been added to the running antivirus software on the server and continue to the next section, otherwise follow these steps:
+<li>If Windows Defender is not running on the server, ensure that the <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#antivirus-exclusions">Antivirus Exclusions</a> have been added to the running antivirus software on the server and continue to the next section, otherwise follow these steps:
 <ol>
 <li>
 <p>Open a Windows PowerShell (x64) window as administrator.</p>
@@ -924,11 +924,11 @@ This the multi-page printable view of this section.
 </tr>
 <tr>
 <td><code>ApiGatewayBasicAuthUserName</code></td>
-<td>Configure this value with the username that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows). <br /><br />Currently only Basic Authentication using a single user is supported, OAuth2 will be supported in a future release.<br /><br />This value will be needed <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
+<td>Configure this value with the username that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows). <br /><br />Currently only Basic Authentication using a single user is supported, OAuth2 will be supported in a future release.<br /><br />This value will be needed <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
 </tr>
 <tr>
 <td><code>ApiGatewayBasicAuthPwd</code></td>
-<td>Configure this value with the password that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows). This should be <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>. <br /><br />This value will be needed <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
+<td>Configure this value with the password that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows). This should be <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>. <br /><br />This value will be needed <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
 </tr>
 <tr>
 <td><code>CustomerName</code></td>
@@ -940,7 +940,7 @@ This the multi-page printable view of this section.
 </tr>
 <tr>
 <td><code>ServerCertificatePath</code></td>
-<td>The local path of a .PFX certificate file on the server. Environment variables cannot be used. <br /><br />This is only needed if installing with CA Certificates (Recommended). The certificate should meet the <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#certificate-requirements">Certificate Requirements</a>. <br /><br />This certificate will be used for: <ul><li>Securing communication between the Application Services.</li><li>Allowing Application Services to identify themselves to clients such as Gateway.</li><li>Preventing unauthorised nodes from joining the single node cluster.</li><li>Connecting to Service Fabric Explorer from each of the Application Servers.</li></ul>
+<td>The local path of a .PFX certificate file on the server. Environment variables cannot be used. <br /><br />This is only needed if installing with CA Certificates (Recommended). The certificate should meet the <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#certificate-requirements">Certificate Requirements</a>. <br /><br />This certificate will be used for: <ul><li>Securing communication between the Application Services.</li><li>Allowing Application Services to identify themselves to clients such as Gateway.</li><li>Preventing unauthorised nodes from joining the single node cluster.</li><li>Connecting to Service Fabric Explorer from each of the Application Servers.</li></ul>
 
 <div class="alert alert-primary" role="alert">
 <h4 class="alert-heading">Warning</h4>
@@ -976,7 +976,7 @@ This the multi-page printable view of this section.
 </tr>
 </tbody>
 </table>
-<p>The <code>ApiGatewayBasicAuthUserName</code> and <code>ApiGatewayBasicAuthPwd</code> will be needed <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</p>
+<p>The <code>ApiGatewayBasicAuthUserName</code> and <code>ApiGatewayBasicAuthPwd</code> will be needed <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</p>
 
 
 <div class="alert alert-primary" role="alert">
@@ -1053,7 +1053,7 @@ This the multi-page printable view of this section.
 <p>If there are any errors, then please follow any instructions given within them to rectify the situation, check your configuration files, and retry the installation.</p>
 <p>In some circumstances, retrying may error due to components being installed already. In this case please run the following command, followed by the original installation command:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">.\</span><span style="color:#000">Cortex</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Innovation</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Uninstall</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">ps1</span> <span style="color:#000">-SkipLoadBalancer</span>
-</span></span></code></pre></div><p>If the errors do not give any instructions on how to rectify, see <a href="/docs/reference/troubleshooting/installation#ts-during-installation">Troubleshooting During Installation</a> for further information; if this does not help then please contact <a href="https://support.cortex.co.uk/">Cortex Service Portal</a> for assistance.</p>
+</span></span></code></pre></div><p>If the errors do not give any instructions on how to rectify, see <a href=" /docs/reference/troubleshooting/installation#ts-during-installation">Troubleshooting During Installation</a> for further information; if this does not help then please contact <a href="https://support.cortex.co.uk/">Cortex Service Portal</a> for assistance.</p>
 </li>
 </ol>
 <h2 id="check-application-services">Check Application Services</h2>
@@ -1117,7 +1117,7 @@ This the multi-page printable view of this section.
 <p>Ensure that the installation files are backed up or kept on the server, especially the scripts and config files that have been modified. This will make it easier to perform further actions in future, such as troubleshooting, certificate rollover, uninstallation, reinstallation and updates.</p>
 <h2 id="next-steps">Next Steps?</h2>
 <ol>
-<li><a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server">Install Web Application Server</a></li>
+<li><a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server">Install Web Application Server</a></li>
 </ol>
 
 </div>
@@ -1137,7 +1137,7 @@ This the multi-page printable view of this section.
 	<h1 id="pg-cc1f5d1c0bcd59056e5d3f3ea7fe1e58">4 - Install the Web Application Server</h1>
     <div class="lead">Information about installing the Web Application Server.</div>
 	<h1 id="install-the-web-application-server">Install the Web Application Server</h1>
-<p>This guide describes how to install the Web Application Server components on the server. Please ensure that <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server">Install Application Server</a> has been completed before starting this installation.</p>
+<p>This guide describes how to install the Web Application Server components on the server. Please ensure that <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server">Install Application Server</a> has been completed before starting this installation.</p>
 <h2 id="make-installation-artefacts-available">Make Installation Artefacts Available</h2>
 <ol>
 <li>
@@ -1155,7 +1155,7 @@ This the multi-page printable view of this section.
 </ol>
 <h2 id="install-prerequisites">Install Prerequisites</h2>
 <h3 id="licensing">Licensing</h3>
-<p>Ensure that a valid Cortex licence file named <code>Cortex.lic</code> exists on the server, in the location <code>%ProgramData%\Cortex\Licences</code>. If it does not, follow the instructions located at <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#licensing-requirements">Licensing Requirements</a>.</p>
+<p>Ensure that a valid Cortex licence file named <code>Cortex.lic</code> exists on the server, in the location <code>%ProgramData%\Cortex\Licences</code>. If it does not, follow the instructions located at <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#licensing-requirements">Licensing Requirements</a>.</p>
 <h3 id="install-sql-server-or-sql-express">Install SQL Server or SQL Express</h3>
 <ol>
 <li>Use one of the following installation guides to install SQL Server or SQL Server Express:
@@ -1281,7 +1281,7 @@ This the multi-page printable view of this section.
 </li>
 </ol>
 <h3 id="add-https-firewall-rule">Add HTTPS Firewall Rule</h3>
-<p>If any firewall is running on the server, it must be configured to allow communication inbound via TCP on the port configured for HTTPS (usually 443). See <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/configure-firewalls">Configure Firewalls</a> for information about adding rules to Windows Firewall.</p>
+<p>If any firewall is running on the server, it must be configured to allow communication inbound via TCP on the port configured for HTTPS (usually 443). See <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/configure-firewalls">Configure Firewalls</a> for information about adding rules to Windows Firewall.</p>
 <h2 id="create-web-site">Create Web Site</h2>
 <p>Gateway and Flow Debugger Service can either be installed to an existing web site or a newly created web site. If you are installing into an existing web site skip to <a href="#configure-web-site">Configure Web Site</a>.</p>
 <p>The steps to create a new web site are:</p>
@@ -1323,7 +1323,7 @@ This the multi-page printable view of this section.
 
 </div>
 </li>
-<li>Select the SSL certificate that was used when <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server#configure-installation-script">installing the Application Server</a>. If self-signed certificates were used, this will have the subject <code>CN=CortexServerCertificate</code>.</li>
+<li>Select the SSL certificate that was used when <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server#configure-installation-script">installing the Application Server</a>. If self-signed certificates were used, this will have the subject <code>CN=CortexServerCertificate</code>.</li>
 <li>Click <code>OK</code>. If an existing site is already using the specified SSL port, a warning will be displayed. Either click <code>No</code> and change the <code>Port</code> in the <code>Add Site Binding</code> dialog, or click <code>Yes</code> and stop the other website.</li>
 <li>It is recommended to remove the <code>http</code> site binding.</li>
 </ol>
@@ -1459,11 +1459,11 @@ This the multi-page printable view of this section.
 </tr>
 <tr>
 <td><code>FlowDebuggerBasicAuthUserName</code></td>
-<td>Configure this value with the username that will be used for Basic Authentication when Gateway makes HTTPS requests to the Flow Debugger Service. <br /><br />For security reasons it is recommended that the default value <code>BasicAuthUser</code> should be changed.<br /><br />Currently only Basic Authentication using a single user is supported, OAuth2 will be supported in a future release.<br /><br />This value will be needed <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
+<td>Configure this value with the username that will be used for Basic Authentication when Gateway makes HTTPS requests to the Flow Debugger Service. <br /><br />For security reasons it is recommended that the default value <code>BasicAuthUser</code> should be changed.<br /><br />Currently only Basic Authentication using a single user is supported, OAuth2 will be supported in a future release.<br /><br />This value will be needed <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
 </tr>
 <tr>
 <td><code>FlowDebuggerBasicAuthPwd</code></td>
-<td>Configure this value with the password that will be used for Basic Authentication when Gateway makes HTTPS requests to the Flow Debugger Service. <br /><br />This password should be <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>. For security reasons it is recommended that the default value <code>ADA9883B11BD4CDC908B8131B57944A4</code> should be changed.<br /><br />This value will be needed <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
+<td>Configure this value with the password that will be used for Basic Authentication when Gateway makes HTTPS requests to the Flow Debugger Service. <br /><br />This password should be <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>. For security reasons it is recommended that the default value <code>ADA9883B11BD4CDC908B8131B57944A4</code> should be changed.<br /><br />This value will be needed <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
 </tr>
 <tr>
 <td><code>UseSelfSignedCertificates</code></td>
@@ -1687,7 +1687,7 @@ below.</p>
 </tr>
 <tr>
 <td><code>FeatureFlags</code></td>
-<td>Replace <code>InnovationId</code> with the Cortex Innovation feature identifier, which should have been provided by Cortex when fulfilling the <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#licensing-requirements">Licensing Requirements</a>, if it wasn&rsquo;t it should be requested using <a href="https://support.cortex.co.uk/">Cortex Service Portal</a>.<br /><br />This will set the <code>FeatureFlags</code> value in the Gateway web.config.</td>
+<td>Replace <code>InnovationId</code> with the Cortex Innovation feature identifier, which should have been provided by Cortex when fulfilling the <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#licensing-requirements">Licensing Requirements</a>, if it wasn&rsquo;t it should be requested using <a href="https://support.cortex.co.uk/">Cortex Service Portal</a>.<br /><br />This will set the <code>FeatureFlags</code> value in the Gateway web.config.</td>
 </tr>
 <tr>
 <td><code>ServiceFabricApiGatewayEndpoint</code></td>
@@ -1695,15 +1695,15 @@ below.</p>
 </tr>
 <tr>
 <td><code>ServiceFabricUsingSelfSignedCertificates</code></td>
-<td>Configure the value as <code>$false</code> if you used valid CA certificates when <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server#configure-installation-script">installing the Application Server</a>, <code>$true</code> if you used self-signed certificates.<br /><br />This will set the <code>ServiceFabricUsingSelfSignedCertificates</code> value in the Gateway web.config.</td>
+<td>Configure the value as <code>$false</code> if you used valid CA certificates when <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server#configure-installation-script">installing the Application Server</a>, <code>$true</code> if you used self-signed certificates.<br /><br />This will set the <code>ServiceFabricUsingSelfSignedCertificates</code> value in the Gateway web.config.</td>
 </tr>
 <tr>
 <td><code>ServiceFabricApiGatewayBasicAuthUsername</code></td>
-<td>This must be changed if you used a non-default <code>ApiGatewayBasicAuthUserName</code> when <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server#configure-installation-script">installing the Application Server</a>; if so, this value must be configured to the one used.<br /><br />This will set the <code>ServiceFabricApiGatewayBasicAuthUsername</code> value in the Gateway web.config.</td>
+<td>This must be changed if you used a non-default <code>ApiGatewayBasicAuthUserName</code> when <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server#configure-installation-script">installing the Application Server</a>; if so, this value must be configured to the one used.<br /><br />This will set the <code>ServiceFabricApiGatewayBasicAuthUsername</code> value in the Gateway web.config.</td>
 </tr>
 <tr>
 <td><code>ServiceFabricApiGatewayBasicAuthPassword</code></td>
-<td>This must be changed if you used a non-default <code>ApiGatewayBasicAuthPassword</code> when <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server#configure-installation-script">installing the Application Server</a>; if so, this value must be configured to the one used. It can be <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>.<br /><br />This will set the <code>ServiceFabricApiGatewayBasicAuthPassword</code> value in the Gateway web.config.</td>
+<td>This must be changed if you used a non-default <code>ApiGatewayBasicAuthPassword</code> when <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-application-server#configure-installation-script">installing the Application Server</a>; if so, this value must be configured to the one used. It can be <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>.<br /><br />This will set the <code>ServiceFabricApiGatewayBasicAuthPassword</code> value in the Gateway web.config.</td>
 </tr>
 <tr>
 <td><code>DotNetFlowDebuggerEndpoint</code></td>
@@ -1715,7 +1715,7 @@ below.</p>
 </tr>
 <tr>
 <td><code>DotNetFlowDebuggerBasicAuthPassword</code></td>
-<td>This must be changed if you used a non-default <code>FlowDebuggerBasicAuthPassword</code> when <a href="#configure-installation-script">installing the Flow Debugger Service</a>; if so, this value must be configured to the one used. It can be <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>.<br /><br />This will set the <code>DotNetFlowDebuggerBasicAuthPassword</code> value in the Gateway web.config.</td>
+<td>This must be changed if you used a non-default <code>FlowDebuggerBasicAuthPassword</code> when <a href="#configure-installation-script">installing the Flow Debugger Service</a>; if so, this value must be configured to the one used. It can be <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>.<br /><br />This will set the <code>DotNetFlowDebuggerBasicAuthPassword</code> value in the Gateway web.config.</td>
 </tr>
 <tr>
 <td><code>DotNetFlowDebuggerUsingSelfSignedCertificates</code></td>
@@ -1838,7 +1838,7 @@ In the event of any errors, there will be an error message displayed at the end 
 <p>Ensure that the installation files are backed up or kept on the server, especially the scripts and config files that have been modified. This will make it easier to perform further actions in future, such as troubleshooting, certificate rollover, uninstallation, reinstallation and updates.</p>
 <h2 id="next-steps">Next Steps?</h2>
 <ol>
-<li><a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/setup-gateway">Setup Gateway</a></li>
+<li><a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/setup-gateway">Setup Gateway</a></li>
 </ol>
 
 </div>
@@ -1858,12 +1858,12 @@ In the event of any errors, there will be an error message displayed at the end 
 	<h1 id="pg-94866b9144c7c00ad81be52bc6e7996f">5 - Setup Gateway</h1>
     <div class="lead">Information about setting up Cortex Gateway for first-time use.</div>
 	<h1 id="setup-gateway">Setup Gateway</h1>
-<p>This guide describes how to setup Gateway. Please ensure that <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server">Install Web Application Server</a> has been completed before taking these steps.</p>
+<p>This guide describes how to setup Gateway. Please ensure that <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/install-web-application-server">Install Web Application Server</a> has been completed before taking these steps.</p>
 <h2 id="gateway-initial-setup">Gateway Initial Setup</h2>
 <p>Log on to Gateway and run through the setup wizard:</p>
 <ol>
 <li>
-<p>Open a <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#web-browser-requirements">supported web browser</a> and navigate to <code>&lt;protocol&gt;://&lt;host&gt;:&lt;port&gt;/&lt;webapplicationname&gt;</code>, e.g. <code>https://localhost/gateway</code>.</p>
+<p>Open a <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/prerequisites#web-browser-requirements">supported web browser</a> and navigate to <code>&lt;protocol&gt;://&lt;host&gt;:&lt;port&gt;/&lt;webapplicationname&gt;</code>, e.g. <code>https://localhost/gateway</code>.</p>
 <p>If an error message is displayed in the browser, wait a few minutes and refresh the page as it is possible that the website was still starting.</p>
 </li>
 <li>
@@ -1978,10 +1978,10 @@ Gateway currently supports four roles, but only two are relevant for Cortex Inno
 
 </div>
 
-<p>Once Gateway has been configured, if you wish to encrypt the databases using <a href="https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver15">Transparent Data Encryption</a> for improved security, this should now be performed by following the steps in <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/tde">Configuring TDE</a>.</p>
+<p>Once Gateway has been configured, if you wish to encrypt the databases using <a href="https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver15">Transparent Data Encryption</a> for improved security, this should now be performed by following the steps in <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/tde">Configuring TDE</a>.</p>
 <h2 id="next-steps">Next Steps?</h2>
 <ol>
-<li><a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/try-it-out">Try it out</a></li>
+<li><a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/try-it-out">Try it out</a></li>
 </ol>
 
 </div>
@@ -2001,14 +2001,14 @@ Gateway currently supports four roles, but only two are relevant for Cortex Inno
 	<h1 id="pg-933fcb8cde93f65d148be379416ec5de">6 - Try it out</h1>
     <div class="lead">Information about trying out Cortex Innovation for the first time.</div>
 	<h1 id="try-it-out">Try it out</h1>
-<p>This guide describes how to try out a new Innovation installation to make sure it is working. Please ensure that <a href="/docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/setup-gateway">Setup Gateway</a> has been completed before taking these steps.</p>
+<p>This guide describes how to try out a new Innovation installation to make sure it is working. Please ensure that <a href=" /docs/getting-started/on-premise/install-innovation-only/single-server-without-ha/setup-gateway">Setup Gateway</a> has been completed before taking these steps.</p>
 <h2 id="test-debugging-flows">Test Debugging Flows</h2>
 <p>Test the platform by creating a new flow and executing it using the following steps:</p>
 <ol>
 <li>Click on the <code>Flows</code> charm, then the <code>+</code> button and click <code>Group</code> to open a dialog.</li>
 <li>Enter a name for the group, configure the <code>Permission Groups</code> and click <code>OK</code> to create the group.</li>
 <li>Click on the group to open it (refresh the page if it does not appear).</li>
-<li>Inside the group, click the <code>+</code> button again and click on <code>Flow</code> to open a dialog. If the menu item is not present, it means that the <code>FeatureFlags</code> in the <code>CortexGateway.SetParameters.xml</code> file was not set properly when installing Gateway. See <a href="/docs/reference/troubleshooting/installation#ts-no-innovation">Troubleshooting</a> for more information.</li>
+<li>Inside the group, click the <code>+</code> button again and click on <code>Flow</code> to open a dialog. If the menu item is not present, it means that the <code>FeatureFlags</code> in the <code>CortexGateway.SetParameters.xml</code> file was not set properly when installing Gateway. See <a href=" /docs/reference/troubleshooting/installation#ts-no-innovation">Troubleshooting</a> for more information.</li>
 <li>Enter a name for the flow, configure the <code>Permission Groups</code> and click <code>OK</code> to create the flow.</li>
 <li>The flow should be displayed with a start flow block and end flow block. A list of block palettes should be displayed down the left hand side:
 
@@ -2018,7 +2018,7 @@ Gateway currently supports four roles, but only two are relevant for Cortex Inno
             </figcaption>
     </figure>
 
-If the blocks in the flow do not display or the palettes are not visible, see <a href="/docs/reference/troubleshooting/installation#ts-no-blocks">Troubleshooting</a> for more information.</li>
+If the blocks in the flow do not display or the palettes are not visible, see <a href=" /docs/reference/troubleshooting/installation#ts-no-blocks">Troubleshooting</a> for more information.</li>
 <li>Add a <code>Set Variable</code> block and connect it between the start and end blocks.</li>
 <li>Click the <code>Set Variable</code> block to open the Property Editor.</li>
 <li>Set the <code>Value</code> property to the expression <code>DateTimeOffset.Now</code>.</li>
@@ -2033,7 +2033,7 @@ If the blocks in the flow do not display or the palettes are not visible, see <a
 <li>Log in to Gateway with a user that has the <code>Admin</code> role.</li>
 <li>Click on the <code>Settings</code> charm, then <code>Packages</code>.</li>
 <li>Click <code>Add Package Definition</code>. Enter a package name and select the new flow to add to the package. Click <code>Save</code> to save the new package.</li>
-<li>Click <code>Publish</code>. A success message should appear. If it doesn&rsquo;t it means that either one or more of the parameters prefixed with <code>Service Fabric</code> in the <code>CortexGateway.SetParameters.xml</code> file was not set properly when installing Gateway, or the Application Services aren&rsquo;t healthy. See <a href="/docs/reference/troubleshooting/installation#ts-no-publish">Troubleshooting</a> for more information.</li>
+<li>Click <code>Publish</code>. A success message should appear. If it doesn&rsquo;t it means that either one or more of the parameters prefixed with <code>Service Fabric</code> in the <code>CortexGateway.SetParameters.xml</code> file was not set properly when installing Gateway, or the Application Services aren&rsquo;t healthy. See <a href=" /docs/reference/troubleshooting/installation#ts-no-publish">Troubleshooting</a> for more information.</li>
 </ol>
 <h2 id="test-executing-production-flows">Test Executing Production Flows</h2>
 <ol>
