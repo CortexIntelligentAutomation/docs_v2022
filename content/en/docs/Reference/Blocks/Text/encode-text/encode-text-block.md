@@ -148,7 +148,11 @@ If [Text][Text Property] is `null` or empty (i.e. `""`), no operation is perform
 
 It should be possible to pass the text created by a [Decode Text][] block to this block, and then pass the text created by this block back to an [Decode Text][] block; this is called round-tripping.
 
-To overcome this, this block creates a new [String][] which has the [Text][Text Property] encodes to [Format][Format Property] and re-assigns it to the variable specified in the [Text][Text Property] property.
+### Immutable String data type
+
+The [String][] data type used to represent [Text][Text Property] is immutable, which means it is read-only and cannot be changed once created.
+
+To overcome this, this block creates a new [String][] which has the [Text][Text Property], encodes to [Format][Format Property] and re-assigns it to the variable specified in the [Text][Text Property] property.
 
 [Text Property]: {{< ref "#text" >}}
 [Format Property]: {{< ref "#format" >}}
