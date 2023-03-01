@@ -46,7 +46,7 @@ Adding `"Some Value"` with priority `0` to `{"Items": [], "PriorityComparer": {}
 
 ***
 
-### Enqueue an Item to Queue already containing Items
+### Enqueue an Item to a Queue already containing Items
 
 This example will enqueue `"Some Value"` with a priority of `0` to a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Element -1"` with a priority of `-1` and `"Element 1"` with a priority of `1`.
 
@@ -84,7 +84,7 @@ Adding `"Some Value"` with priority `0` to `{"Items": [{"Item": "Element -1", "P
 
 ***
 
-### Enqueue an Item to Queue with the same Priority as an existing Item
+### Enqueue an Item to a Queue with the same Priority as an existing Item
 
 This example will enqueue `"Some Value"` with a priority of `1` to a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Element -1"` with a priority of `-1` and `"Element 1"` with a priority of `1`.
 
@@ -120,7 +120,7 @@ Adding `"Some Value"` with priority `1` to `{"Items": [{"Item": "Element -1", "P
 }
 ```
 
-Because `"Some Value"` and `"Element 1"` have the same [Priority][Priority Property], they are put in order that they were added to the [Queue][Queue Property], so `"Some Value"` is placed behind `"Element 1"`.
+As `"Some Value"` and `"Element 1"` have the same [Priority][Priority Property], they are put in the order that they were added to the [Queue][Queue Property], so `"Some Value"` is placed behind `"Element 1"`.
 
 ***
 

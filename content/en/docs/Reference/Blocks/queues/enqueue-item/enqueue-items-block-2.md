@@ -14,6 +14,10 @@ description: "Adds Items to a Queue at the specified Priority."
 
 Adds [Items][Items Property] to a [Queue][Queue Property] at the specified [Priority][Priority Property].
 
+Each item is added to the [Queue][Queue Property] in the same order as they are in [Items][Items Property].
+
+**TODO should this be here or in remarks**
+
 ## Examples
 
 ### Enqueue multiple Items to an empty Queue
@@ -54,7 +58,7 @@ Adding `"a"`, `"b"` and `"c"` with priority `0` to `{"Items": [], "PriorityCompa
 
 ***
 
-### Enqueue multiple Items to Queue already containing Items
+### Enqueue multiple Items to a Queue already containing Items
 
 This example will enqueue `"a"`, `"b"` and `"c"` with a priority of `0` to a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Element -1"` with a priority of `-1` and `"Element 1"` with a priority of `1`.
 
@@ -100,7 +104,7 @@ Adding `"a"`, `"b"` and `"c"` with priority `0` to `{"Items": [{"Item": "Element
 
 ***
 
-### Enqueue multiple Items to Queue with the same Priority as an existing Item
+### Enqueue multiple Items to a Queue with the same Priority as an existing Item
 
 This example will enqueue `"a"`, `"b"` and `"c"` with a priority of `1` to a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Element -1"` with a priority of `-1` and `"Element 1"` with a priority of `1`.
 
@@ -144,7 +148,7 @@ Adding `"a"`, `"b"` and `"c"` with priority `1` to `{"Items": [{"Item": "Element
 }
 ```
 
-Because added values and `"Element 1"` have the same [Priority][Priority Property], they are put in order that they were added to the [Queue][Queue Property], so `"a"`, `"b"` and `"c"` are placed behind `"Element 1"`.
+As the added values and `"Element 1"` have the same [Priority][Priority Property], they are put in the order that they were added to the [Queue][Queue Property], so `"a"`, `"b"` and `"c"` are placed behind `"Element 1"`.
 
 ***
 
@@ -193,7 +197,6 @@ The exceptions thrown by the block can be found below:
 | Name     | Description |
 |----------|----------|
 | [PropertyNullException][] | Thrown when [Queue][Queue Property] or [Items][Items Property] is `null`. |
-| [InvalidPropertyValueException][] | Thrown when [Item][Item Property] is `null` and [Queue][Queue Property] only accepts non-nullable value types. See [Value Is Invalid][]. |
 
 ## Remarks
 
