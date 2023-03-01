@@ -16,8 +16,6 @@ Adds [Items][Items Property] to a [Queue][Queue Property] at the specified [Prio
 
 Each item is added to the [Queue][Queue Property] in the same order as they are in [Items][Items Property].
 
-**TODO should this be here or in remarks**
-
 ## Examples
 
 ### Enqueue multiple Items to an empty Queue
