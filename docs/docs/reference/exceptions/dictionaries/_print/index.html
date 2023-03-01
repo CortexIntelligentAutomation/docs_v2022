@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -195,14 +195,6 @@ This the multi-page printable view of this section.
 
     
   
-    
-    
-	
-<li>5: <a href="#pg-a48c717c3ac957d68b62448bb8bf5ebf">OccurrenceNotPresentException</a></li>
-
-
-    
-  
 
     </ul>
 
@@ -235,13 +227,13 @@ This the multi-page printable view of this section.
 <p class="namespace">(Cortex.Exceptions.Dictionaries.CannotModifyReadOnlyDictionaryException)</p>
 <p>The exception thrown when trying to modify a read-only dictionary.</p>
 <blockquote>
-<p>Dictionaries implementing <a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a href="/docs/reference/concepts/fundamentals/data-types/generics/">TKey</a>, <a href="/docs/reference/concepts/fundamentals/data-types/generics/">TItem</a>&gt; have the option to be read-only.</p>
+<p>Dictionaries implementing <a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a href=" /docs/reference/concepts/fundamentals/data-types/generics/">TKey</a>, <a href=" /docs/reference/concepts/fundamentals/data-types/generics/">TItem</a>&gt; have the option to be read-only.</p>
 </blockquote>
 <p>The format of the exception message is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;&#39;&lt;property-display-name&gt;&#39; cannot be because it&#39;s read-only.
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><h2 id="how-to-fix">How to fix</h2>
-<p>If the dictionary was written directly into the block property using an <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/#expressions">expression</a>, use a dictionary type that is not read-only, such as <a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a href="/docs/reference/concepts/fundamentals/data-types/generics/">TKey</a>, <a href="/docs/reference/concepts/fundamentals/data-types/generics/">TItem</a>&gt;.</p>
+<p>If the dictionary was written directly into the block property using an <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/#expressions">expression</a>, use a dictionary type that is not read-only, such as <a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a href=" /docs/reference/concepts/fundamentals/data-types/generics/">TKey</a>, <a href=" /docs/reference/concepts/fundamentals/data-types/generics/">TItem</a>&gt;.</p>
 <p>When using a variable, convert the read-only dictionary to a dictionary that can be written to by using the <code>.ToDictionary(item =&gt; item.Key, item =&gt; item.Value)</code> expression like follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-CSharp" data-lang="CSharp"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">(</span><span style="color:#a40000">$</span><span style="color:#000;font-weight:bold">)</span><span style="color:#000">Dictionary</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">ToDictionary</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">item</span> <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000">item</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Key</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">item</span> <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000">item</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Value</span><span style="color:#000;font-weight:bold">);</span>
 </span></span></code></pre></div><p>TODO: Confirm if this is all correct</p>
@@ -315,31 +307,6 @@ This the multi-page printable view of this section.
 	<h1 id="keysnotpresentexception">KeysNotPresentException</h1>
 <p class="namespace">(Cortex.Exceptions.Dictionaries.KeysNotPresentException)</p>
 <p>The exception thrown when trying to get items from a dictionary, or set items in a dictionary, and one of the keys used to find the items is not present.</p>
-<p>The format of the exception message is as follows:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;TODO.
-</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
-</span></span></code></pre></div><h2 id="how-to-fix">How to fix</h2>
-<p>TODO:</p>
-
-</div>
-
-
-
-    
-	
-  
-    
-    
-	
-    
-
-<div class="td-content" style="page-break-before: always">
-    
-	<h1 id="pg-a48c717c3ac957d68b62448bb8bf5ebf">5 - OccurrenceNotPresentException</h1>
-    <div class="lead">The exception thrown when trying to get a specified occurrence of an item from a dictionary, or set a specified occurrence of an item in a dictionary.</div>
-	<h1 id="occurrencenotpresentexception">OccurrenceNotPresentException</h1>
-<p class="namespace">(Cortex.Exceptions.Dictionaries.OccurrenceNotPresentException)</p>
-<p>The exception thrown when trying to get a specified occurrence of an item from a dictionary, or set a specified occurrence of an item in a dictionary.</p>
 <p>The format of the exception message is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;TODO.
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>

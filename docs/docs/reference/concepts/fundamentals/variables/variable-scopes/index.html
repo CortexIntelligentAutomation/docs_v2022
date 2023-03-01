@@ -119,7 +119,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -151,7 +151,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -8629,6 +8629,39 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/exceptions/collections/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Collections</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreferenceexceptionscollections">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionscollectionsoccurrence-not-present-exception" href="/docs/reference/exceptions/collections/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/reference/exceptions/common/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Common</a>
   </li>
   <ul>
@@ -8840,14 +8873,6 @@
         
       
       
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsdictionariesoccurrence-not-present-exception" href="/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
-        
-      
-      
     </li>
   </ul>
 </ul>
@@ -8934,14 +8959,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflow-exception" href="/docs/reference/exceptions/flow-exception/">FlowException</a>
         
       
       
@@ -9042,6 +9059,14 @@
   </ul>
 </ul>
 
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflowsflow-exception" href="/docs/reference/exceptions/flows/flow-exception/">FlowException</a>
         
       
       
@@ -9990,9 +10015,9 @@
            
 	<h1 id="variable-scopes">Variable Scopes</h1>
 <h2 id="summary">Summary</h2>
-<p>Each <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> in a <a href="/docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> has a scope. A scope is where <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> are defined and controls where they can be used.</p>
-<p>Variables can only be used in the workspace of the scope they are defined in and any descendant workspaces. Only variables in scope will be available in the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable Editor</a>, or the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression Editor</a> using <a href="/docs/reference/glossary/p-t/#snippets">snippets</a>. For an example see <a href="#accessing-variables-from-other-scopes">Accessing Variables from Other Scopes</a>.</p>
-<p>When the <a href="/docs/reference/concepts/fundamentals/executions/what-is-an-execution">flow execution</a> exits a workspace, any local-scope variables that have been declared in that workspace are deleted and their values, if any, are lost.</p>
+<p>Each <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a> in a <a href=" /docs/reference/concepts/fundamentals/flows/what-is-a-flow">flow</a> has a scope. A scope is where <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> are defined and controls where they can be used.</p>
+<p>Variables can only be used in the workspace of the scope they are defined in and any descendant workspaces. Only variables in scope will be available in the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable Editor</a>, or the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression Editor</a> using <a href=" /docs/reference/glossary/p-t/#snippets">snippets</a>. For an example see <a href="#accessing-variables-from-other-scopes">Accessing Variables from Other Scopes</a>.</p>
+<p>When the <a href=" /docs/reference/concepts/fundamentals/executions/what-is-an-execution">flow execution</a> exits a workspace, any local-scope variables that have been declared in that workspace are deleted and their values, if any, are lost.</p>
 <h2 id="accessing-variables-from-other-scopes">Accessing Variables from Other Scopes</h2>
 <p>For example, the table below shows a hierarchy of workspaces and which variables are available to each workspace due to their scope:</p>
 <table>
@@ -10038,13 +10063,13 @@
 </tbody>
 </table>
 <h2 id="creating-variables-at-a-specific-scope">Creating Variables at a Specific Scope</h2>
-<p><a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">Variables</a> can be created by using the <a href="/docs/guides/cortex-studio/south-panel/#creating-variables">Variables Grid</a>, or through the use of the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/#creating-variables">Variable Editor</a>. When a new variable is created, it is created in the scope of the currently selected <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a>. It is possible to <a href="#changing-a-variables-scope">Change a Variable&rsquo;s Scope</a></p>
+<p><a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">Variables</a> can be created by using the <a href=" /docs/guides/cortex-studio/south-panel/#creating-variables">Variables Grid</a>, or through the use of the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/#creating-variables">Variable Editor</a>. When a new variable is created, it is created in the scope of the currently selected <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspace</a>. It is possible to <a href="#changing-a-variables-scope">Change a Variable&rsquo;s Scope</a></p>
 <h2 id="changing-a-variables-scope">Changing a Variable&rsquo;s Scope</h2>
-<p>A <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable&rsquo;s</a> scope can be changed by using the <a href="/docs/guides/cortex-studio/south-panel/#changing-a-variables-scope">Variables Grid</a>.</p>
+<p>A <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variable&rsquo;s</a> scope can be changed by using the <a href=" /docs/guides/cortex-studio/south-panel/#changing-a-variables-scope">Variables Grid</a>.</p>
 <h2 id="remarks">Remarks</h2>
 <h3 id="known-limitations">Known Limitations</h3>
 <h4 id="when-using-variables-of-the-same-name-the-closest-scoped-is-used">When using variables of the same name the closest scoped is used</h4>
-<p>It is possible to create multiple <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> with the same name in the <a href="/docs/guides/cortex-studio/south-panel/#variables-grid">Variables Grid</a>. When using the same name in different <a href="/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspaces</a>, the variable with the closest scope will be used.</p>
+<p>It is possible to create multiple <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">variables</a> with the same name in the <a href=" /docs/guides/cortex-studio/south-panel/#variables-grid">Variables Grid</a>. When using the same name in different <a href=" /docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace">workspaces</a>, the variable with the closest scope will be used.</p>
 <p>For example:</p>
 <ul>
 <li><code>Top-Level</code> workspace has the variable <code>($)Variable</code></li>
@@ -10055,15 +10080,15 @@
 <h2 id="see-also">See Also</h2>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/flows">Flows</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/">Block Properties</a></li>
-<li><a href="/docs/reference/concepts/fundamentals/executions/">Executions</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/flows">Flows</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/workspaces">Workspaces</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks">Blocks</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/">Block Properties</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/executions/">Executions</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
-<li><a href="/docs/reference/blocks/">All Blocks</a></li>
+<li><a href=" /docs/reference/blocks/">All Blocks</a></li>
 </ul>
 <h3 id="external-documentation">External Documentation</h3>
 <p>None</p>

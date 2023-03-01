@@ -119,7 +119,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -151,7 +151,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -8629,6 +8629,39 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/exceptions/collections/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Collections</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreferenceexceptionscollections">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionscollectionsoccurrence-not-present-exception" href="/docs/reference/exceptions/collections/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/reference/exceptions/common/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Common</a>
   </li>
   <ul>
@@ -8840,14 +8873,6 @@
         
       
       
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsdictionariesoccurrence-not-present-exception" href="/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
-        
-      
-      
     </li>
   </ul>
 </ul>
@@ -8934,14 +8959,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflow-exception" href="/docs/reference/exceptions/flow-exception/">FlowException</a>
         
       
       
@@ -9042,6 +9059,14 @@
   </ul>
 </ul>
 
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflowsflow-exception" href="/docs/reference/exceptions/flows/flow-exception/">FlowException</a>
         
       
       
@@ -10009,7 +10034,7 @@
 <h2 id="examples">Examples</h2>
 <h3 id="handle-exception-matching-any-of-the-type-names-and-save-the-exception">Handle Exception matching any of the Type Names and save the Exception</h3>
 <p>This example will handle any exception thrown by the block it is connected to that contains any of the type names in <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code> in its fully qualified <code>TypeName</code>; saving the exception to a variable, so the flow execution can use it to make decisions or take further action.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of messages.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of messages.</p>
 <h4 id="properties">Properties</h4>
 <table>
 <thead>
@@ -10023,29 +10048,29 @@
 <tr>
 <td><a href="#type-names">Type Names</a></td>
 <td><code>($)TypeNames</code>, with value <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code></td>
-<td><code>($)TypeNames</code> is a variable of type <a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a>&lt;<a href="/docs/reference/data-types/text/string">String</a>&gt;</td>
+<td><code>($)TypeNames</code> is a variable of type <a href=" /docs/reference/data-types/collections/ienumerable-1">IEnumerable</a>&lt;<a href=" /docs/reference/data-types/text/string">String</a>&gt;</td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#exception">Exception</a></td>
 <td><code>($)Exception</code>, with no value</td>
-<td><code>($)Exception</code> is a variable that will be set to a <a href="/docs/reference/data-types/all/dynamic">dynamic</a> value</td>
+<td><code>($)Exception</code> is a variable that will be set to a <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> value</td>
 </tr>
 </tbody>
 </table>
 <h4 id="result">Result</h4>
 <p>The block will handle any exception containing any of the type names in <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code> in its fully qualified <code>TypeName</code> and save the exception to the <code>($)Exception</code> variable for use later in the flow execution.</p>
 <p>E.g.</p>
-<p>If the List property of the Add Item At Beginning list block was set to null, it would throw a <a href="/docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a> when executed.</p>
+<p>If the List property of the Add Item At Beginning list block was set to null, it would throw a <a href=" /docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a> when executed.</p>
 <p>This exception&rsquo;s fully qualified <code>TypeName</code> is <code>&quot;Cortex.Exceptions.Common.Property.PropertyNullException&quot;</code>; therefore as we are checking for exceptions containing any of <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code> in their <code>TypeName</code>, this exception would be handled and saved to the <code>($)Exception</code> variable.</p>
 <hr>
 <h3 id="handle-exception-containing-any-of-the-type-names-and-discard-the-exception">Handle Exception containing any of the Type Names and discard the Exception</h3>
 <p>This example is the same as the example above, except it does not save the exception to a variable, as the flow execution does not need it to make decisions or take further action.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of messages.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of messages.</p>
 <h4 id="properties-1">Properties</h4>
 <table>
 <thead>
@@ -10059,12 +10084,12 @@
 <tr>
 <td><a href="#type-names">Type Names</a></td>
 <td><code>($)TypeNames</code>, with value <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code></td>
-<td><code>($)TypeNames</code> is a variable of type <a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a>&lt;<a href="/docs/reference/data-types/text/string">String</a>&gt;</td>
+<td><code>($)TypeNames</code> is a variable of type <a href=" /docs/reference/data-types/collections/ienumerable-1">IEnumerable</a>&lt;<a href=" /docs/reference/data-types/text/string">String</a>&gt;</td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#exception">Exception</a></td>
@@ -10076,13 +10101,13 @@
 <h4 id="result-1">Result</h4>
 <p>The block will handle any exception containing any of the type names in <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code> in its fully qualified <code>TypeName</code>, but will not save the exception as the <code>($)_</code> variable indicates it is not needed and can be discarded.</p>
 <p>E.g.</p>
-<p>If the List property of the Add Item At Beginning list block was set to null, it would throw a <a href="/docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a> when executed.</p>
+<p>If the List property of the Add Item At Beginning list block was set to null, it would throw a <a href=" /docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a> when executed.</p>
 <p>This exception&rsquo;s fully qualified <code>TypeName</code> is <code>&quot;Cortex.Exceptions.Common.Property.PropertyNullException&quot;</code>; therefore as we are checking for exceptions containing any of <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code> in their <code>TypeName</code>, this exception would be handled, but because the <code>($)_</code> variable is used it will not be saved to the <code>($)Exception</code> variable.</p>
-<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
+<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
 <hr>
 <h3 id="exception-does-not-contain-any-of-the-type-names">Exception does not contain any of the Type Names</h3>
 <p>This example will not handle an exception thrown by the block it is connected to that does not contain any of <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code> in its fully qualified <code>TypeName</code>; the exception will be passed to the next exception handling block.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of messages.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of messages.</p>
 <h4 id="properties-2">Properties</h4>
 <table>
 <thead>
@@ -10096,12 +10121,12 @@
 <tr>
 <td><a href="#type-names">Type Names</a></td>
 <td><code>($)TypeNames</code>, with value <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code></td>
-<td><code>($)TypeNames</code> is a variable of type <a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a>&lt;<a href="/docs/reference/data-types/text/string">String</a>&gt;</td>
+<td><code>($)TypeNames</code> is a variable of type <a href=" /docs/reference/data-types/collections/ienumerable-1">IEnumerable</a>&lt;<a href=" /docs/reference/data-types/text/string">String</a>&gt;</td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#exception">Exception</a></td>
@@ -10113,7 +10138,7 @@
 <h4 id="result-2">Result</h4>
 <p>The block will not handle any exception that does not contain any of <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code> in its fully qualified <code>TypeName</code>; instead the exception will be passed to the next exception handling block.</p>
 <p>E.g.</p>
-<p>If the List property of the Add Item At Beginning list block was set to a read-only List, it would throw a <a href="/docs/reference/exceptions/lists/cannot-modify-read-only-list-exception/">CannotModifyReadOnlyListException</a> when executed.</p>
+<p>If the List property of the Add Item At Beginning list block was set to a read-only List, it would throw a <a href=" /docs/reference/exceptions/lists/cannot-modify-read-only-list-exception/">CannotModifyReadOnlyListException</a> when executed.</p>
 <p>This exception&rsquo;s fully qualified <code>TypeName</code> is <code>&quot;Cortex.Exceptions.Lists.CannotModifyReadOnlyListException&quot;</code>; therefore as we are checking for exceptions containing any of <code>[&quot;PropertyNull&quot;, &quot;PropertyEmpty&quot;]</code> in their <code>TypeName</code>, this exception would not be handled.</p>
 <hr>
 <h2 id="properties-3">Properties</h2>
@@ -10129,19 +10154,19 @@
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/collections/ienumerable-1">IEnumerable</a>&lt;<a href="/docs/reference/data-types/text/string">String</a>&gt;</td>
+<td><a href=" /docs/reference/data-types/collections/ienumerable-1">IEnumerable</a>&lt;<a href=" /docs/reference/data-types/text/string">String</a>&gt;</td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -10151,7 +10176,7 @@
 </table>
 <h3 id="comparison-type">Comparison Type</h3>
 <p>The <a href="#comparison-type">Comparison Type</a> specifying the rules used to determine whether any of the <a href="#type-names">Type Names</a> are contained in the <a href="#exception">Exception&rsquo;s</a> fully qualified <code>TypeName</code>.</p>
-<p>For information about the <a href="/docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href="/docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
+<p>For information about the <a href=" /docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href=" /docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
 <table>
 <thead>
 <tr>
@@ -10162,19 +10187,19 @@
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>true</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -10184,9 +10209,9 @@
 </table>
 <h3 id="exception">Exception</h3>
 <p>The <a href="#exception">Exception</a> if it is handled by the block.</p>
-<p><a href="#exception">Exception</a> can be any <a href="/docs/reference/data-types/exceptions/exception">Exception data type</a>.</p>
+<p><a href="#exception">Exception</a> can be any <a href=" /docs/reference/data-types/exceptions/exception">Exception data type</a>.</p>
 <p>If the flow execution does not need the exception, it can be discarded by assigning the built-in <code>($)_</code> variable.</p>
-<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
+<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
 <table>
 <thead>
 <tr>
@@ -10197,19 +10222,19 @@
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/all/dynamic">dynamic</a></td>
+<td><a href=" /docs/reference/data-types/all/dynamic">dynamic</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -10229,45 +10254,45 @@
 <tbody>
 <tr>
 <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.argumentexception">ArgumentException</a></td>
-<td>Thrown when <a href="#comparison-type">Comparison Type</a> is not one of the specified <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a> types (e.g. <code>(StringComparison)10</code>).</td>
+<td>Thrown when <a href="#comparison-type">Comparison Type</a> is not one of the specified <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a> types (e.g. <code>(StringComparison)10</code>).</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-contains-null-or-empty-item-exception/">PropertyContainsNullOrEmptyItemException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-contains-null-or-empty-item-exception/">PropertyContainsNullOrEmptyItemException</a></td>
 <td>Thrown when any Type Name in <a href="#type-names">Type Names</a> is <code>null</code> or empty (i.e. <code>&quot;&quot;</code>).</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-empty-exception/">PropertyEmptyException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-empty-exception/">PropertyEmptyException</a></td>
 <td>Thrown when <a href="#type-names">Type Names</a> contains no items.</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
 <td>Thrown when <a href="#type-names">Type Names</a> is <code>null</code>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="remarks">Remarks</h2>
 <h3 id="comparison-types">Comparison Types</h3>
-<p>For information about the <a href="/docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href="/docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
+<p>For information about the <a href=" /docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href=" /docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
 <h3 id="chaining-exception-handling-blocks">Chaining Exception handling blocks</h3>
 <p>Blocks that handle block exceptions can be chained together so different exceptions can be handled separately. The blocks are listed below:</p>
 <ul>
-<li><a href="/docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-matching-message-block">Handle Block Exception Matching Message</a></li>
-<li><a href="/docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-matching-messages-block">Handle Block Exception Matching Messages</a></li>
-<li><a href="/docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-matching-type-name-block">Handle Block Exception Matching Type Name</a></li>
-<li><a href="/docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-matching-type-names-block">Handle Block Exception Matching Type Names</a></li>
-<li><a href="/docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-block">Handle Block Exception</a></li>
+<li><a href=" /docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-matching-message-block">Handle Block Exception Matching Message</a></li>
+<li><a href=" /docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-matching-messages-block">Handle Block Exception Matching Messages</a></li>
+<li><a href=" /docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-matching-type-name-block">Handle Block Exception Matching Type Name</a></li>
+<li><a href=" /docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-matching-type-names-block">Handle Block Exception Matching Type Names</a></li>
+<li><a href=" /docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-block">Handle Block Exception</a></li>
 </ul>
 <p><img src="/images/chaining-handle-block-exception-blocks.png" alt="Icon"></p>
-<p>Each block has an input port on its left-hand side and, with the exception of the <a href="/docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-block">Handle Block Exception</a> block, also have an output port on their right-hand side; this is so they can pass any exception they do not handle to the next block.</p>
-<p>As the <a href="/docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-block">Handle Block Exception</a> block handles any exception, it does not require the output port.</p>
-<p>For more information about chaining of exception handling blocks and passing of exceptions, please see <a href="/docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Exception Handling</a>.</p>
+<p>Each block has an input port on its left-hand side and, with the exception of the <a href=" /docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-block">Handle Block Exception</a> block, also have an output port on their right-hand side; this is so they can pass any exception they do not handle to the next block.</p>
+<p>As the <a href=" /docs/reference/blocks/exceptions/handle-block-exception/handle-block-exception-block">Handle Block Exception</a> block handles any exception, it does not require the output port.</p>
+<p>For more information about chaining of exception handling blocks and passing of exceptions, please see <a href=" /docs/reference/concepts/fundamentals/exceptions/handling-exceptions">Exception Handling</a>.</p>
 <h3 id="why-does-the-exception-property-return-a-dynamic-data-type">Why does the Exception property return a dynamic data type?</h3>
-<p>The decision for the <a href="#exception">Exception</a> to return a <a href="/docs/reference/data-types/all/dynamic">dynamic data type</a> rather than an <a href="/docs/reference/data-types/exceptions/exception">Exception data type</a>, was to avoid users having to <a href="/docs/reference/concepts/working-with/objects/object-casting/">cast</a> the exception to its correct type to be able to use all of its properties.</p>
-<p>As a result, any issues with using the <a href="/docs/reference/data-types/exceptions/exception">Exception data type</a> (i.e. trying to access a property it does not have) will not be reported as messages when trying to debug the flow; they will only be discovered when the flow execution reaches the part of the flow with the issue.</p>
-<p>If it is desirable to have any issues reported as messages when trying to debug the flow, the user can <a href="/docs/reference/concepts/working-with/objects/object-casting/">cast</a> the exception to its correct type.</p>
+<p>The decision for the <a href="#exception">Exception</a> to return a <a href=" /docs/reference/data-types/all/dynamic">dynamic data type</a> rather than an <a href=" /docs/reference/data-types/exceptions/exception">Exception data type</a>, was to avoid users having to <a href=" /docs/reference/concepts/working-with/objects/object-casting/">cast</a> the exception to its correct type to be able to use all of its properties.</p>
+<p>As a result, any issues with using the <a href=" /docs/reference/data-types/exceptions/exception">Exception data type</a> (i.e. trying to access a property it does not have) will not be reported as messages when trying to debug the flow; they will only be discovered when the flow execution reaches the part of the flow with the issue.</p>
+<p>If it is desirable to have any issues reported as messages when trying to debug the flow, the user can <a href=" /docs/reference/concepts/working-with/objects/object-casting/">cast</a> the exception to its correct type.</p>
 <h3 id="using-the-built-in-_-variable-to-discard-the-exception-from-being-saved">Using the built-in ($)_ variable to discard the Exception from being saved</h3>
 <p>Sometimes when an exception occurs the flow execution wants to use the exception to make decisions or take further action. However, there are occasions when the exception is not needed, and being forced to create another variable to save the exception is extra work for no benefit. In these circumstances it is possible to use the built-in <code>($)_</code> variable to indicate the exception does not need to be saved.</p>
-<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
+<p>For more infomation about using the built-in <code>($)_</code> variable, please see <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#discarding-outputs">Discarding Output Properties</a>.</p>
 
 	
 	

@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -210,7 +210,7 @@ This the multi-page printable view of this section.
 	<h1 id="dynamic">dynamic</h1>
 <h2 id="summary">Summary</h2>
 <p>Any data type can be used where a <code>dynamic</code> data type is required.</p>
-<p><code>dynamic</code> data type is identical to the <a href="/docs/reference/data-types/all/object">Object</a> data type, except for one difference; <code>dynamic</code> data types do not need to be explicitly cast to other data types to be used, whereas <a href="/docs/reference/data-types/all/object">Object</a> data types do.</p>
+<p><code>dynamic</code> data type is identical to the <a href=" /docs/reference/data-types/all/object">Object</a> data type, except for one difference; <code>dynamic</code> data types do not need to be explicitly cast to other data types to be used, whereas <a href=" /docs/reference/data-types/all/object">Object</a> data types do.</p>
 <table>
 <thead>
 <tr>
@@ -237,7 +237,7 @@ This the multi-page printable view of this section.
 </tr>
 <tr>
 <td><strong>Description:</strong></td>
-<td>Any data type can be used where a <code>dynamic</code> data type is required. <code>dynamic</code> data type is identical to the <a href="/docs/reference/data-types/all/object">Object</a> data type, except for one difference; <code>dynamic</code> data types do not need to be explicitly cast to other data types to be used, whereas <a href="/docs/reference/data-types/all/object">Object</a> data types do.</td>
+<td>Any data type can be used where a <code>dynamic</code> data type is required. <code>dynamic</code> data type is identical to the <a href=" /docs/reference/data-types/all/object">Object</a> data type, except for one difference; <code>dynamic</code> data types do not need to be explicitly cast to other data types to be used, whereas <a href=" /docs/reference/data-types/all/object">Object</a> data types do.</td>
 </tr>
 <tr>
 <td><strong>Size:</strong></td>
@@ -261,28 +261,28 @@ This the multi-page printable view of this section.
 <h3 id="when-is-the-dynamic-data-type-used">When is the dynamic Data Type Used?</h3>
 <p>The <code>dynamic</code> data type is only likely to be encountered in the following circumstances:</p>
 <ul>
-<li>An <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> or <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput</a> property of a Block can accept any data type</li>
-<li>An <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a> property of a Block can return any data type</li>
-<li>A <a href="/docs/reference/data-types/collections">Collection</a> that contains different data types (e.g. <code>[1, &quot;Text&quot;, true]</code>) is saved to a <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">Variable</a></li>
+<li>An <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> or <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput</a> property of a Block can accept any data type</li>
+<li>An <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a> property of a Block can return any data type</li>
+<li>A <a href=" /docs/reference/data-types/collections">Collection</a> that contains different data types (e.g. <code>[1, &quot;Text&quot;, true]</code>) is saved to a <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">Variable</a></li>
 </ul>
-<p>Also note, in these circumstances it is more likely to encounter the <code>dynamic</code> data type, rather than <a href="/docs/reference/data-types/all/object">Object</a>. See <a href="#object-vs-dynamic">Object vs dynamic</a> for more information.</p>
+<p>Also note, in these circumstances it is more likely to encounter the <code>dynamic</code> data type, rather than <a href=" /docs/reference/data-types/all/object">Object</a>. See <a href="#object-vs-dynamic">Object vs dynamic</a> for more information.</p>
 <h3 id="object-vs-dynamic">Object vs dynamic</h3>
-<p><a href="/docs/reference/data-types/all/object">Object</a> and <code>dynamic</code> data types are identical, except for one difference:</p>
+<p><a href=" /docs/reference/data-types/all/object">Object</a> and <code>dynamic</code> data types are identical, except for one difference:</p>
 <ul>
-<li>Once a variable contains an <a href="/docs/reference/data-types/all/object">Object</a> data type, if it needs to be used as its original data type it must be cast back to that data type (e.g. <code>(Int32)($)ObjectVariableContainingAnInteger</code>); a <code>dynamic</code> data type does not.</li>
+<li>Once a variable contains an <a href=" /docs/reference/data-types/all/object">Object</a> data type, if it needs to be used as its original data type it must be cast back to that data type (e.g. <code>(Int32)($)ObjectVariableContainingAnInteger</code>); a <code>dynamic</code> data type does not.</li>
 </ul>
 <h3 id="property-editor-support">Property Editor Support</h3>
 <ul>
-<li>The Expression Editor is available for <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> properties where the data type is <code>dynamic</code>.</li>
-<li>The Literal Editor is not available for <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> properties where the data type is <code>dynamic</code>.</li>
-<li>The Variable Editor is available for <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput</a> and <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a> properties where the data type is <code>dynamic</code>.</li>
+<li>The Expression Editor is available for <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> properties where the data type is <code>dynamic</code>.</li>
+<li>The Literal Editor is not available for <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> properties where the data type is <code>dynamic</code>.</li>
+<li>The Variable Editor is available for <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput</a> and <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a> properties where the data type is <code>dynamic</code>.</li>
 </ul>
 <h3 id="known-limitations">Known Limitations</h3>
 <p>None</p>
 <h2 id="see-also">See Also</h2>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/data-types/all/object">Object</a></li>
+<li><a href=" /docs/reference/data-types/all/object">Object</a></li>
 </ul>
 <h3 id="related-concepts">Related Concepts</h3>
 <p>None</p>
@@ -311,7 +311,7 @@ This the multi-page printable view of this section.
 <p class="namespace">(System.Object)</p>
 <h2 id="summary">Summary</h2>
 <p>Any data type can be used where an <code>Object</code> data type is required, as all data types derive from <code>Object</code>.</p>
-<p><code>Object</code> data type is identical to the <a href="/docs/reference/data-types/all/dynamic">dynamic</a> data type, except for one difference; <a href="/docs/reference/data-types/all/dynamic">dynamic</a> data types do not need to be explicitly cast to other data types to be used, whereas <code>Object</code> data types do.</p>
+<p><code>Object</code> data type is identical to the <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> data type, except for one difference; <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> data types do not need to be explicitly cast to other data types to be used, whereas <code>Object</code> data types do.</p>
 <table>
 <thead>
 <tr>
@@ -338,7 +338,7 @@ This the multi-page printable view of this section.
 </tr>
 <tr>
 <td><strong>Description:</strong></td>
-<td>Any data type can be used where an <code>Object</code> data type is required, as all data types derive from <code>Object</code>. <code>Object</code> data type is identical to the <a href="/docs/reference/data-types/all/dynamic">dynamic</a> data type, except for one difference; <a href="/docs/reference/data-types/all/dynamic">dynamic</a> data types do not need to be explicitly cast to other data types to be used, whereas <code>Object</code> data types do.</td>
+<td>Any data type can be used where an <code>Object</code> data type is required, as all data types derive from <code>Object</code>. <code>Object</code> data type is identical to the <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> data type, except for one difference; <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> data types do not need to be explicitly cast to other data types to be used, whereas <code>Object</code> data types do.</td>
 </tr>
 <tr>
 <td><strong>Size:</strong></td>
@@ -362,30 +362,30 @@ This the multi-page printable view of this section.
 <h3 id="when-is-the-object-data-type-used">When is the Object Data Type Used?</h3>
 <p>The <code>Object</code> data type is only likely to be encountered in the following circumstances:</p>
 <ul>
-<li>An <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> or <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput</a> property of a Block can accept any data type</li>
-<li>An <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a> property of a Block can return any data type</li>
-<li>A <a href="/docs/reference/data-types/collections">Collection</a> that contains different data types (e.g. <code>[1, &quot;Text&quot;, true]</code>) is saved to a <a href="/docs/reference/concepts/fundamentals/variables/what-is-a-variable/">Variable</a></li>
+<li>An <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> or <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput</a> property of a Block can accept any data type</li>
+<li>An <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a> property of a Block can return any data type</li>
+<li>A <a href=" /docs/reference/data-types/collections">Collection</a> that contains different data types (e.g. <code>[1, &quot;Text&quot;, true]</code>) is saved to a <a href=" /docs/reference/concepts/fundamentals/variables/what-is-a-variable/">Variable</a></li>
 </ul>
-<p>Also note, in these circumstances it is more likely to encounter the <a href="/docs/reference/data-types/all/dynamic">dynamic</a> data type, rather than <code>Object</code>. See <a href="#object-vs-dynamic">Object vs dynamic</a> for more information.</p>
-<p>It is also highly unlikely that you will need to create an <code>Object</code>; typically you will create and work with other data types such as <a href="/docs/reference/data-types/text/string">String</a> or <a href="/docs/reference/data-types/numbers/int32">Int32</a> that derive from <code>Object</code>. However, if ever required you can create a new object using the following expression:</p>
+<p>Also note, in these circumstances it is more likely to encounter the <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> data type, rather than <code>Object</code>. See <a href="#object-vs-dynamic">Object vs dynamic</a> for more information.</p>
+<p>It is also highly unlikely that you will need to create an <code>Object</code>; typically you will create and work with other data types such as <a href=" /docs/reference/data-types/text/string">String</a> or <a href=" /docs/reference/data-types/numbers/int32">Int32</a> that derive from <code>Object</code>. However, if ever required you can create a new object using the following expression:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Object</span><span style="color:#000;font-weight:bold">()</span>
 </span></span></code></pre></div><h3 id="object-vs-dynamic">Object vs dynamic</h3>
-<p><code>Object</code> and <a href="/docs/reference/data-types/all/dynamic">dynamic</a> data types are identical, except for one difference:</p>
+<p><code>Object</code> and <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> data types are identical, except for one difference:</p>
 <ul>
-<li>Once a variable contains an <code>Object</code> data type, if it needs to be used as its original data type it must be cast back to that data type (e.g. <code>(Int32)($)ObjectVariableContainingAnInteger</code>); a <a href="/docs/reference/data-types/all/dynamic">dynamic</a> data type does not.</li>
+<li>Once a variable contains an <code>Object</code> data type, if it needs to be used as its original data type it must be cast back to that data type (e.g. <code>(Int32)($)ObjectVariableContainingAnInteger</code>); a <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> data type does not.</li>
 </ul>
 <h3 id="property-editor-support">Property Editor Support</h3>
 <ul>
-<li>The Expression Editor is available for <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> properties where the data type is <code>Object</code>.</li>
-<li>The Literal Editor is not available for <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> properties where the data type is <code>Object</code>.</li>
-<li>The Variable Editor is available for <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput</a> and <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a> properties where the data type is <code>Object</code>.</li>
+<li>The Expression Editor is available for <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> properties where the data type is <code>Object</code>.</li>
+<li>The Literal Editor is not available for <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a> properties where the data type is <code>Object</code>.</li>
+<li>The Variable Editor is available for <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#inputoutput-properties">InputOutput</a> and <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a> properties where the data type is <code>Object</code>.</li>
 </ul>
 <h3 id="known-limitations">Known Limitations</h3>
 <p>None</p>
 <h2 id="see-also">See Also</h2>
 <h3 id="related-data-types">Related Data Types</h3>
 <ul>
-<li><a href="/docs/reference/data-types/all/dynamic">dynamic</a></li>
+<li><a href=" /docs/reference/data-types/all/dynamic">dynamic</a></li>
 </ul>
 <h3 id="related-concepts">Related Concepts</h3>
 <p>None</p>

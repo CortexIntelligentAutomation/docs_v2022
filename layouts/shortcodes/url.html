@@ -9,13 +9,15 @@
 {{- $indexFilePath := printf "%s%s" (replaceRE "/$" "" (printf "%s%s" $url.Host $url.Path)) "/_index.md" }}
 {{- $page := .Site.GetPage $mdFilePath }}
 {{- $pageIndex := .Site.GetPage $indexFilePath }}
-{{- if hasPrefix $url "https://docs.microsoft.com/en-us/dotnet/api/" }}
+{{- if eq $link (printf "%s://" $url.Scheme) }} <!-- Check if the URL does not exist -->
+    {{- errorf "No Url found in urls.toml matching with %q" $tomlPath }}
+{{- else if hasPrefix $url "https://docs.microsoft.com/en-us/dotnet/api/" }} <!-- Check if it is an external URL --> 
     {{- $link = (printf "%s?view=%s" $link .Site.Params.dotNetVersion) }}
     {{- if ne $url.Fragment "" }}
         {{- $link = (printf "%s#%s" $link $url.Fragment) }}
     {{- end }}
     {{- $link }}
-{{- else if hasPrefix $mdFilePath "/docs/" }}
+{{- else if hasPrefix $mdFilePath "/docs/" }} <!-- Check if it is an internal docs URL -->
     {{- with (or ($page) ($pageIndex)) -}} 
         {{- $url }}
     {{- else -}}

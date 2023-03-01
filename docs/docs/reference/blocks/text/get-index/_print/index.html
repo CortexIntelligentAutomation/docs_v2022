@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -221,7 +221,7 @@ This the multi-page printable view of this section.
 <h2 id="examples">Examples</h2>
 <h3 id="get-the-index-of-the-first-occurrence-of-text-to-find-ordinal">Get the Index of the first Occurrence of Text To Find (Ordinal)</h3>
 <p>This example will get the index of the first occurrence of <code>&quot;The&quot;</code> in <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties">Properties</h4>
 <table>
 <thead>
@@ -235,44 +235,44 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;The&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#occurrence">Occurrence</a></td>
 <td><code>($)Occurrence</code>, with value <code>1</code></td>
-<td><code>($)Occurrence</code> is a variable of type <a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><code>($)Occurrence</code> is a variable of type <a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.ContainsText</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#index">Index</a></td>
 <td><code>($)Index</code>, with no value</td>
-<td><code>($)Index</code> is a variable that will be set to an <a href="/docs/reference/data-types/numbers/int32">Int32</a> value</td>
+<td><code>($)Index</code> is a variable that will be set to an <a href=" /docs/reference/data-types/numbers/int32">Int32</a> value</td>
 </tr>
 </tbody>
 </table>
 <h4 id="result">Result</h4>
 <p>An <a href="#occurrence">Occurrence</a> of <code>1</code> means get the index of the first occurrence; <code>2</code> means second etc.</p>
-<p>As this example is performing a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text, <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code> only contains the text <code>&quot;The&quot;</code> once; <code>&quot;the&quot;</code> has a different case so does not match. Therefore, the variable <code>($)Index</code> will be updated to the following:</p>
+<p>As this example is performing a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text, <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code> only contains the text <code>&quot;The&quot;</code> once; <code>&quot;the&quot;</code> has a different case so does not match. Therefore, the variable <code>($)Index</code> will be updated to the following:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">0</span>
 </span></span></code></pre></div><p>where <code>0</code> indicates the index of the first character of the first and only occurrence matching <code>&quot;The&quot;</code>.</p>
 <hr>
 <h3 id="get-the-index-of-the-last-occurrence-of-text-to-find-ordinal-ignore-case">Get the Index of the last Occurrence of Text To Find (Ordinal Ignore Case)</h3>
 <p>This example will get the index of the last occurrence of <code>&quot;The&quot;</code> in <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal-ignore-case">case-insensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal-ignore-case">case-insensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties-1">Properties</h4>
 <table>
 <thead>
@@ -286,44 +286,44 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;The&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#occurrence">Occurrence</a></td>
 <td><code>($)Occurrence</code>, with value <code>-1</code></td>
-<td><code>($)Occurrence</code> is a variable of type <a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><code>($)Occurrence</code> is a variable of type <a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.ContainsText</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.OrdinalIgnoreCase</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#index">Index</a></td>
 <td><code>($)Index</code>, with no value</td>
-<td><code>($)Index</code> is a variable that will be set to an <a href="/docs/reference/data-types/numbers/int32">Int32</a> value</td>
+<td><code>($)Index</code> is a variable that will be set to an <a href=" /docs/reference/data-types/numbers/int32">Int32</a> value</td>
 </tr>
 </tbody>
 </table>
 <h4 id="result-1">Result</h4>
 <p>An <a href="#occurrence">Occurrence</a> of <code>-1</code> means get the index of the last occurrence; <code>2</code> means second last etc.</p>
-<p>As this example is performing a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal-ignore-case">case-insensitive, culture-insensitive</a> comparison of text, <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code> contains the text <code>&quot;The&quot;</code> twice; the first occurrence is <code>&quot;The&quot;</code> and the second and last occurrence is <code>&quot;the&quot;</code>. Therefore, the variable <code>($)Index</code> will be updated to the following:</p>
+<p>As this example is performing a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal-ignore-case">case-insensitive, culture-insensitive</a> comparison of text, <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code> contains the text <code>&quot;The&quot;</code> twice; the first occurrence is <code>&quot;The&quot;</code> and the second and last occurrence is <code>&quot;the&quot;</code>. Therefore, the variable <code>($)Index</code> will be updated to the following:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">31</span>
 </span></span></code></pre></div><p>where <code>31</code> indicates the index of the first character of the last matching occurrence, <code>&quot;the&quot;</code>.</p>
 <hr>
 <h3 id="text-does-not-contain-text-to-find">Text does not contain Text To Find</h3>
 <p>This example will attempt to get the index of the first occurrence of <code>&quot;slow&quot;</code> in <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties-2">Properties</h4>
 <table>
 <thead>
@@ -337,32 +337,32 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;slow&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#occurrence">Occurrence</a></td>
 <td><code>($)Occurrence</code>, with value <code>1</code></td>
-<td><code>($)Occurrence</code> is a variable of type <a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><code>($)Occurrence</code> is a variable of type <a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.ContainsText</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#index">Index</a></td>
 <td><code>($)Index</code>, with no value</td>
-<td><code>($)Index</code> is a variable that will be set to an <a href="/docs/reference/data-types/numbers/int32">Int32</a> value</td>
+<td><code>($)Index</code> is a variable that will be set to an <a href=" /docs/reference/data-types/numbers/int32">Int32</a> value</td>
 </tr>
 </tbody>
 </table>
@@ -373,7 +373,7 @@ This the multi-page printable view of this section.
 <hr>
 <h3 id="get-the-index-of-the-first-occurrence-matching-the-pattern-in-text-to-find">Get the Index of the first Occurrence matching the pattern in Text To Find</h3>
 <p>This example will get the index of the first occurrence of text matching the pattern <code>&quot;?he&quot;</code> from <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties-3">Properties</h4>
 <table>
 <thead>
@@ -387,32 +387,32 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;?he&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#occurrence">Occurrence</a></td>
 <td><code>($)Occurrence</code>, with value <code>1</code></td>
-<td><code>($)Occurrence</code> is a variable of type <a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><code>($)Occurrence</code> is a variable of type <a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.PatternMatching</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#index">Index</a></td>
 <td><code>($)Index</code>, with no value</td>
-<td><code>($)Index</code> is a variable that will be set to an <a href="/docs/reference/data-types/numbers/int32">Int32</a> value</td>
+<td><code>($)Index</code> is a variable that will be set to an <a href=" /docs/reference/data-types/numbers/int32">Int32</a> value</td>
 </tr>
 </tbody>
 </table>
@@ -424,7 +424,7 @@ This the multi-page printable view of this section.
 <hr>
 <h3 id="get-the-index-of-the-last-occurrence-matching-the-regex-in-text-to-remove">Get the Index of the last Occurrence matching the regex in Text To Remove</h3>
 <p>This example will get the index of the last occurrence of text matching the regex <code>&quot;(fox|dog)&quot;</code> from <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties-4">Properties</h4>
 <table>
 <thead>
@@ -438,32 +438,32 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;(fox|dog)&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#occurrence">Occurrence</a></td>
 <td><code>($)Occurrence</code>, with value <code>-1</code></td>
-<td><code>($)Occurrence</code> is a variable of type <a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><code>($)Occurrence</code> is a variable of type <a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.Regex</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#index">Index</a></td>
 <td><code>($)Index</code>, with no value</td>
-<td><code>($)Index</code> is a variable that will be set to an <a href="/docs/reference/data-types/numbers/int32">Int32</a> value</td>
+<td><code>($)Index</code> is a variable that will be set to an <a href=" /docs/reference/data-types/numbers/int32">Int32</a> value</td>
 </tr>
 </tbody>
 </table>
@@ -486,19 +486,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -518,19 +518,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -540,7 +540,7 @@ This the multi-page printable view of this section.
 </table>
 <h3 id="occurrence">Occurrence</h3>
 <p>The specified <a href="#occurrence">Occurrence</a> of <a href="#text-to-find">Text To Find</a> in <a href="#text">Text</a>.</p>
-<p>For information about <a href="/docs/reference/concepts/working-with/collections/occurrences/">supported values</a> for the <a href="#occurrence">Occurrence</a> property and examples of how it can be used, please see <a href="/docs/reference/concepts/working-with/collections/occurrences/">Occurrences</a>.</p>
+<p>For information about <a href=" /docs/reference/concepts/working-with/collections/occurrences/">supported values</a> for the <a href="#occurrence">Occurrence</a> property and examples of how it can be used, please see <a href=" /docs/reference/concepts/working-with/collections/occurrences/">Occurrences</a>.</p>
 <table>
 <thead>
 <tr>
@@ -551,19 +551,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -575,14 +575,14 @@ This the multi-page printable view of this section.
 <p><a href="#search-options">Search Options</a> can be specified to choose whether <a href="#text-to-find">Text To Find</a> should be interpreted as a ContainsText, PatternMatching or Regex search:</p>
 <ul>
 <li><code>SearchOptions.ContainsText</code> matches text exactly; as long as the <a href="#text">Text</a> contains the text specified in <a href="#text-to-find">Text To Find</a> it will be considered a match.</li>
-<li><code>SearchOptions.PatternMatching</code> allows wildcard text matching using <a href="/docs/reference/concepts/working-with/text/pattern-matching-syntax/">Pattern Matching Syntax</a>:
+<li><code>SearchOptions.PatternMatching</code> allows wildcard text matching using <a href=" /docs/reference/concepts/working-with/text/pattern-matching-syntax/">Pattern Matching Syntax</a>:
 <ul>
 <li><code>*</code> wildcard character can be used to match <code>0</code> or more characters.</li>
 <li><code>?</code> wildcard character can be used to match <code>0</code> or <code>1</code> character.</li>
 <li>All other characters are treated as a literal character.</li>
 </ul>
 </li>
-<li><code>SearchOptions.Regex</code> allows regex text matching using <a href="/docs/reference/concepts/working-with/text/regex-syntax/">.Net Regex Syntax</a>.</li>
+<li><code>SearchOptions.Regex</code> allows regex text matching using <a href=" /docs/reference/concepts/working-with/text/regex-syntax/">.Net Regex Syntax</a>.</li>
 </ul>
 <p>Please note that with <code>SearchOptions.ContainsText</code> overlapping matches are detected (e.g. searching for <code>&quot;aa&quot;</code> in <code>&quot;aaa&quot;</code> matches <code>&quot;aa&quot;</code>  at index <code>0</code> and <code>&quot;aa&quot;</code> at index <code>1</code>). With <code>SearchOptions.Regex</code> only <code>&quot;aa&quot;</code> at index <code>0</code> will be matched.</p>
 <table>
@@ -595,19 +595,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>true</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -617,7 +617,7 @@ This the multi-page printable view of this section.
 </table>
 <h3 id="comparison-type">Comparison Type</h3>
 <p>The <a href="#comparison-type">Comparison Type</a> specifying the rules used to match <a href="#text-to-find">Text To Find</a> in <a href="#text">Text</a>.</p>
-<p>For information about the <a href="/docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href="/docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
+<p>For information about the <a href=" /docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href=" /docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
 <table>
 <thead>
 <tr>
@@ -628,19 +628,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>true</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -649,9 +649,9 @@ This the multi-page printable view of this section.
 </tbody>
 </table>
 <h3 id="index">Index</h3>
-<p><a href="/docs/reference/data-types/numbers/int32">Int32</a> indicating the <a href="#index">Index</a> of the first character of the specified <a href="#occurrence">Occurrence</a> of <a href="#text-to-find">Text To Find</a> in <a href="#text">Text</a>.</p>
+<p><a href=" /docs/reference/data-types/numbers/int32">Int32</a> indicating the <a href="#index">Index</a> of the first character of the specified <a href="#occurrence">Occurrence</a> of <a href="#text-to-find">Text To Find</a> in <a href="#text">Text</a>.</p>
 <p>If there is no specified <a href="#occurrence">Occurrence</a> of <a href="#text-to-find">Text To Find</a> in <a href="#text">Text</a>, the specified variable will be set to <code>-1</code>.</p>
-<p>For information about what an index is, please see <a href="/docs/reference/concepts/working-with/collections/indexes/">Indexes</a>.</p>
+<p>For information about what an index is, please see <a href=" /docs/reference/concepts/working-with/collections/indexes/">Indexes</a>.</p>
 <table>
 <thead>
 <tr>
@@ -662,19 +662,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/numbers/int32">Int32</a></td>
+<td><a href=" /docs/reference/data-types/numbers/int32">Int32</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -694,25 +694,25 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.argumentexception">ArgumentException</a></td>
-<td>Thrown when <a href="#comparison-type">Comparison Type</a> is not one of the specified <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a> types (e.g. <code>(StringComparison)10</code>).</td>
+<td>Thrown when <a href="#comparison-type">Comparison Type</a> is not one of the specified <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a> types (e.g. <code>(StringComparison)10</code>).</td>
 </tr>
 <tr>
 <td></td>
-<td>Thrown when <a href="#search-options">Search Options</a> is not one of the specified <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a> types (e.g. <code>(SearchOptions)10</code>).</td>
+<td>Thrown when <a href="#search-options">Search Options</a> is not one of the specified <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a> types (e.g. <code>(SearchOptions)10</code>).</td>
 </tr>
 <tr>
 <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexmatchtimeoutexception">RegexMatchTimeoutException</a></td>
 <td>Thrown when <a href="#search-options">Search Options</a> is either <code>SearchOptions.Regex</code> or <code>SearchOptions.PatternMatching</code> and the execution time of the search exceeds <code>30</code> seconds.</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/text/regex/regex-parsing-failed-exception/">RegexParsingFailedException</a></td>
+<td><a href=" /docs/reference/exceptions/text/regex/regex-parsing-failed-exception/">RegexParsingFailedException</a></td>
 <td>Thrown when <a href="#search-options">Search Options</a> is <code>SearchOptions.Regex</code> and <a href="#text-to-find">Text To Find</a> is not a valid regex (e.g. <code>(</code>).</td>
 </tr>
 </tbody>
 </table>
 <h2 id="remarks">Remarks</h2>
 <h3 id="comparison-types">Comparison Types</h3>
-<p>For information about the <a href="/docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href="/docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
+<p>For information about the <a href=" /docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href=" /docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
 <h3 id="null-or-empty-text">Null or empty Text</h3>
 <p>If <a href="#text">Text</a> is <code>null</code> or empty (i.e. <code>&quot;&quot;</code>), the variable specified in the <a href="#index">Index</a> property is set to <code>-1</code>.</p>
 <h3 id="null-or-empty-text-to-find">Null or empty Text To Find</h3>
@@ -754,7 +754,7 @@ This the multi-page printable view of this section.
 <h2 id="examples">Examples</h2>
 <h3 id="get-indexes-of-all-occurrences-of-text-to-find-ordinal">Get Indexes of all occurrences of Text To Find (Ordinal)</h3>
 <p>This example will get the indexes of all occurrences of <code>&quot;The&quot;</code> in <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties">Properties</h4>
 <table>
 <thead>
@@ -768,38 +768,38 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;The&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.ContainsText</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#indexes">Indexes</a></td>
 <td><code>($)Indexes</code>, with no value</td>
-<td><code>($)Indexes</code> is a variable that will be set to an <a href="/docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
+<td><code>($)Indexes</code> is a variable that will be set to an <a href=" /docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
 </tr>
 </tbody>
 </table>
 <h4 id="result">Result</h4>
-<p>As this example is performing a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text, <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code> only contains the text <code>&quot;The&quot;</code> once; <code>&quot;the&quot;</code> has a different case so does not match. Therefore, the variable <code>($)Indexes</code> will be updated to the following:</p>
+<p>As this example is performing a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text, <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code> only contains the text <code>&quot;The&quot;</code> once; <code>&quot;the&quot;</code> has a different case so does not match. Therefore, the variable <code>($)Indexes</code> will be updated to the following:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]</span>
 </span></span></code></pre></div><p>where <code>0</code> indicates the index of the first character of the matching <code>&quot;The&quot;</code> occurrence.</p>
 <hr>
 <h3 id="get-indexes-of-all-occurrences-of-text-to-find-ordinal-ignore-case">Get Indexes of all occurrences of Text To Find (Ordinal Ignore Case)</h3>
 <p>This example will get the indexes of all occurrences of <code>&quot;The&quot;</code> in <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal-ignore-case">case-insensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal-ignore-case">case-insensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties-1">Properties</h4>
 <table>
 <thead>
@@ -813,38 +813,38 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;The&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.ContainsText</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.OrdinalIgnoreCase</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#indexes">Indexes</a></td>
 <td><code>($)Indexes</code>, with no value</td>
-<td><code>($)Indexes</code> is a variable that will be set to an <a href="/docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
+<td><code>($)Indexes</code> is a variable that will be set to an <a href=" /docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
 </tr>
 </tbody>
 </table>
 <h4 id="result-1">Result</h4>
-<p>As this example is performing a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal-ignore-case">case-insensitive, culture-insensitive</a> comparison of text, <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code> contains the text <code>&quot;The&quot;</code> twice; the first occurrence is <code>&quot;The&quot;</code> and the second occurrence is <code>&quot;the&quot;</code>. Therefore, the variable <code>($)Indexes</code> will be updated to the following:</p>
+<p>As this example is performing a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal-ignore-case">case-insensitive, culture-insensitive</a> comparison of text, <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code> contains the text <code>&quot;The&quot;</code> twice; the first occurrence is <code>&quot;The&quot;</code> and the second occurrence is <code>&quot;the&quot;</code>. Therefore, the variable <code>($)Indexes</code> will be updated to the following:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">31</span><span style="color:#000;font-weight:bold">]</span>
 </span></span></code></pre></div><p>where <code>0</code> indicates the index of the first character of the matching <code>&quot;The&quot;</code> occurrence, and <code>31</code> indicates the index of the first character of the matching <code>&quot;the&quot;</code> occurrence.</p>
 <hr>
 <h3 id="text-does-not-contain-text-to-find">Text does not contain Text To Find</h3>
 <p>This example will attempt to get the indexes of all occurrences of <code>&quot;slow&quot;</code> in <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties-2">Properties</h4>
 <table>
 <thead>
@@ -858,27 +858,27 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;slow&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.ContainsText</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#indexes">Indexes</a></td>
 <td><code>($)Indexes</code>, with no value</td>
-<td><code>($)Indexes</code> is a variable that will be set to an <a href="/docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
+<td><code>($)Indexes</code> is a variable that will be set to an <a href=" /docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
 </tr>
 </tbody>
 </table>
@@ -889,7 +889,7 @@ This the multi-page printable view of this section.
 <hr>
 <h3 id="get-indexes-of-all-occurrences-matching-the-pattern-in-text-to-find">Get Indexes of all occurrences matching the pattern in Text To Find</h3>
 <p>This example will get the indexes of all occurrences of text matching the pattern <code>&quot;?he&quot;</code> from <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties-3">Properties</h4>
 <table>
 <thead>
@@ -903,27 +903,27 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;?he&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.PatternMatching</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#indexes">Indexes</a></td>
 <td><code>($)Indexes</code>, with no value</td>
-<td><code>($)Indexes</code> is a variable that will be set to an <a href="/docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
+<td><code>($)Indexes</code> is a variable that will be set to an <a href=" /docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
 </tr>
 </tbody>
 </table>
@@ -934,7 +934,7 @@ This the multi-page printable view of this section.
 <hr>
 <h3 id="get-indexes-of-all-occurrences-matching-the-regex-in-text-to-remove">Get Indexes of all occurrences matching the regex in Text To Remove</h3>
 <p>This example will get the indexes of all occurrences of text matching the regex <code>&quot;(fox|dog)&quot;</code> from <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code>.</p>
-<p>It performs a <a href="/docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
+<p>It performs a <a href=" /docs/reference/concepts/working-with/text/equality/#ordinal">case-sensitive, culture-insensitive</a> comparison of text.</p>
 <h4 id="properties-4">Properties</h4>
 <table>
 <thead>
@@ -948,27 +948,27 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#text">Text</a></td>
 <td><code>($)Text</code>, with value <code>&quot;The quick brown fox jumps over the lazy dog&quot;</code></td>
-<td><code>($)Text</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Text</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#text-to-find">Text To Find</a></td>
 <td><code>($)TextToFind</code>, with value <code>&quot;(fox|dog)&quot;</code></td>
-<td><code>($)TextToFind</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)TextToFind</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#search-options">Search Options</a></td>
 <td><code>($)SearchOptions</code>, with value <code>SearchOptions.Regex</code></td>
-<td><code>($)SearchOptions</code> is a variable of type <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><code>($)SearchOptions</code> is a variable of type <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td><a href="#comparison-type">Comparison Type</a></td>
 <td><code>($)ComparisonType</code>, with value <code>StringComparison.Ordinal</code></td>
-<td><code>($)ComparisonType</code> is a variable of type <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><code>($)ComparisonType</code> is a variable of type <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td><a href="#indexes">Indexes</a></td>
 <td><code>($)Indexes</code>, with no value</td>
-<td><code>($)Indexes</code> is a variable that will be set to an <a href="/docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
+<td><code>($)Indexes</code> is a variable that will be set to an <a href=" /docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt; value</td>
 </tr>
 </tbody>
 </table>
@@ -990,19 +990,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -1022,19 +1022,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -1046,14 +1046,14 @@ This the multi-page printable view of this section.
 <p><a href="#search-options">Search Options</a> can be specified to choose whether <a href="#text-to-find">Text To Find</a> should be interpreted as a ContainsText, PatternMatching or Regex search:</p>
 <ul>
 <li><code>SearchOptions.ContainsText</code> matches text exactly; as long as the <a href="#text">Text</a> contains the text specified in <a href="#text-to-find">Text To Find</a> it will be considered a match.</li>
-<li><code>SearchOptions.PatternMatching</code> allows wildcard text matching using <a href="/docs/reference/concepts/working-with/text/pattern-matching-syntax/">Pattern Matching Syntax</a>:
+<li><code>SearchOptions.PatternMatching</code> allows wildcard text matching using <a href=" /docs/reference/concepts/working-with/text/pattern-matching-syntax/">Pattern Matching Syntax</a>:
 <ul>
 <li><code>*</code> wildcard character can be used to match <code>0</code> or more characters.</li>
 <li><code>?</code> wildcard character can be used to match <code>0</code> or <code>1</code> character.</li>
 <li>All other characters are treated as a literal character.</li>
 </ul>
 </li>
-<li><code>SearchOptions.Regex</code> allows regex text matching using <a href="/docs/reference/concepts/working-with/text/regex-syntax/">.Net Regex Syntax</a>.</li>
+<li><code>SearchOptions.Regex</code> allows regex text matching using <a href=" /docs/reference/concepts/working-with/text/regex-syntax/">.Net Regex Syntax</a>.</li>
 </ul>
 <p>Please note that with <code>SearchOptions.ContainsText</code> overlapping matches are detected (e.g. searching for <code>&quot;aa&quot;</code> in <code>&quot;aaa&quot;</code> matches <code>&quot;aa&quot;</code>  at index <code>0</code> and <code>&quot;aa&quot;</code> at index <code>1</code>). With <code>SearchOptions.Regex</code> only <code>&quot;aa&quot;</code> at index <code>0</code> will be matched.</p>
 <table>
@@ -1066,19 +1066,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
+<td><a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>true</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -1088,7 +1088,7 @@ This the multi-page printable view of this section.
 </table>
 <h3 id="comparison-type">Comparison Type</h3>
 <p>The <a href="#comparison-type">Comparison Type</a> specifying the rules used to match <a href="#text-to-find">Text To Find</a> in <a href="#text">Text</a>.</p>
-<p>For information about the <a href="/docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href="/docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
+<p>For information about the <a href=" /docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href=" /docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
 <table>
 <thead>
 <tr>
@@ -1099,19 +1099,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
+<td><a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>true</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/literal-editor/">Literal</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -1120,9 +1120,9 @@ This the multi-page printable view of this section.
 </tbody>
 </table>
 <h3 id="indexes">Indexes</h3>
-<p><a href="/docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt; containing the <a href="#indexes">Indexes</a> of the first character of each occurrence of <a href="#text-to-find">Text To Find</a> in <a href="#text">Text</a>.</p>
+<p><a href=" /docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt; containing the <a href="#indexes">Indexes</a> of the first character of each occurrence of <a href="#text-to-find">Text To Find</a> in <a href="#text">Text</a>.</p>
 <p>If there are no occurrences of <a href="#text-to-find">Text To Find</a> in <a href="#text">Text</a>, the specified variable will be set to <code>[-1]</code>.</p>
-<p>For information about what an index is, please see <a href="/docs/reference/concepts/working-with/collections/indexes/">Indexes</a>.</p>
+<p>For information about what an index is, please see <a href=" /docs/reference/concepts/working-with/collections/indexes/">Indexes</a>.</p>
 <table>
 <thead>
 <tr>
@@ -1133,19 +1133,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt;</td>
+<td><a href=" /docs/reference/data-types/collections/ilist-1">IList</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt;</td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -1165,25 +1165,25 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.argumentexception">ArgumentException</a></td>
-<td>Thrown when <a href="#comparison-type">Comparison Type</a> is not one of the specified <a href="/docs/reference/data-types/text/stringcomparison">StringComparison</a> types (e.g. <code>(StringComparison)10</code>).</td>
+<td>Thrown when <a href="#comparison-type">Comparison Type</a> is not one of the specified <a href=" /docs/reference/data-types/text/stringcomparison">StringComparison</a> types (e.g. <code>(StringComparison)10</code>).</td>
 </tr>
 <tr>
 <td></td>
-<td>Thrown when <a href="#search-options">Search Options</a> is not one of the specified <a href="/docs/reference/data-types/text/searchoptions">SearchOptions</a> types (e.g. <code>(SearchOptions)10</code>).</td>
+<td>Thrown when <a href="#search-options">Search Options</a> is not one of the specified <a href=" /docs/reference/data-types/text/searchoptions">SearchOptions</a> types (e.g. <code>(SearchOptions)10</code>).</td>
 </tr>
 <tr>
 <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexmatchtimeoutexception">RegexMatchTimeoutException</a></td>
 <td>Thrown when <a href="#search-options">Search Options</a> is either <code>SearchOptions.Regex</code> or <code>SearchOptions.PatternMatching</code> and the execution time of the search exceeds <code>30</code> seconds.</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/text/regex/regex-parsing-failed-exception/">RegexParsingFailedException</a></td>
+<td><a href=" /docs/reference/exceptions/text/regex/regex-parsing-failed-exception/">RegexParsingFailedException</a></td>
 <td>Thrown when <a href="#search-options">Search Options</a> is <code>SearchOptions.Regex</code> and <a href="#text-to-find">Text To Find</a> is not a valid regex (e.g. <code>(</code>).</td>
 </tr>
 </tbody>
 </table>
 <h2 id="remarks">Remarks</h2>
 <h3 id="comparison-types">Comparison Types</h3>
-<p>For information about the <a href="/docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href="/docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
+<p>For information about the <a href=" /docs/reference/concepts/working-with/text/equality/#comparison-types">supported values</a> for the <a href="#comparison-type">Comparison Type</a> property and examples of how it is determined whether two pieces of text match, please see <a href=" /docs/reference/concepts/working-with/text/equality/">Equality</a>.</p>
 <h3 id="null-or-empty-text">Null or empty Text</h3>
 <p>If <a href="#text">Text</a> is <code>null</code> or empty (i.e. <code>&quot;&quot;</code>), the variable specified in the <a href="#indexes">Indexes</a> property is set to <code>[-1]</code>.</p>
 <h3 id="null-or-empty-text-to-find">Null or empty Text To Find</h3>

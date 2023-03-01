@@ -270,7 +270,7 @@
     <lastmod>2023-01-11T09:55:24+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/concepts/fundamentals/variables/what-is-a-variable/</loc>
-    <lastmod>2022-09-12T16:57:43+01:00</lastmod>
+    <lastmod>2023-03-01T16:27:54+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/concepts/fundamentals/workspaces/what-is-a-workspace/</loc>
     <lastmod>2022-08-31T08:08:52+01:00</lastmod>
@@ -279,7 +279,7 @@
     <lastmod>2023-01-11T09:55:24+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/concepts/fundamentals/exceptions/what-is-an-exception/</loc>
-    <lastmod>2022-08-31T08:32:22+01:00</lastmod>
+    <lastmod>2023-03-01T16:27:54+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/concepts/fundamentals/executions/what-is-an-execution/</loc>
     <lastmod>2022-09-09T09:18:50+01:00</lastmod>
@@ -471,7 +471,7 @@
     <lastmod>2023-02-07T10:26:48+00:00</lastmod>
   </url><url>
     <loc>/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/install-application-and-loadbalancer-servers/</loc>
-    <lastmod>2023-02-07T10:26:48+00:00</lastmod>
+    <lastmod>2023-03-01T16:43:52+00:00</lastmod>
   </url><url>
     <loc>/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-application-and-loadbalancer-servers/</loc>
     <lastmod>2023-02-07T10:26:48+00:00</lastmod>
@@ -788,6 +788,9 @@
     <loc>/docs/reference/concepts/working-with/collections/</loc>
     <lastmod>2022-09-12T15:57:36+01:00</lastmod>
   </url><url>
+    <loc>/docs/reference/exceptions/collections/</loc>
+    <lastmod>2023-03-01T16:27:54+00:00</lastmod>
+  </url><url>
     <loc>/docs/reference/data-types/data/command/</loc>
     <lastmod>2022-09-12T10:26:10+01:00</lastmod>
   </url><url>
@@ -1014,7 +1017,7 @@
     <lastmod>2022-09-14T10:28:26+01:00</lastmod>
   </url><url>
     <loc>/docs/reference/concepts/working-with/date-and-time/date-and-time-formatting/</loc>
-    <lastmod>2023-01-11T09:55:24+00:00</lastmod>
+    <lastmod>2023-03-01T16:27:54+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/data-types/date-and-time/datetime/</loc>
     <lastmod>2022-09-12T16:57:43+01:00</lastmod>
@@ -1211,8 +1214,8 @@
     <loc>/docs/reference/blocks/text/find-and-replace-text/find-and-replace-text-block/</loc>
     <lastmod>2022-09-16T10:30:55+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/flow-exception/</loc>
-    <lastmod>2023-02-27T17:08:48+00:00</lastmod>
+    <loc>/docs/reference/exceptions/flows/flow-exception/</loc>
+    <lastmod>2023-03-01T16:27:54+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/data-types/flows/flowreference/</loc>
     <lastmod>2022-09-07T11:14:16+01:00</lastmod>
@@ -1335,7 +1338,7 @@
     <lastmod>2022-09-16T10:30:55+01:00</lastmod>
   </url><url>
     <loc>/docs/reference/blocks/dictionaries/get-item/get-item-with-key-block-3/</loc>
-    <lastmod>2022-09-16T10:30:55+01:00</lastmod>
+    <lastmod>2023-03-01T16:27:54+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/blocks/dictionaries/get-item/</loc>
     <lastmod>2021-09-28T14:26:44+01:00</lastmod>
@@ -1667,8 +1670,8 @@
     <loc>/docs/reference/concepts/working-with/objects/</loc>
     <lastmod>2022-09-12T16:57:43+01:00</lastmod>
   </url><url>
-    <loc>/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/</loc>
-    <lastmod>2023-02-27T17:08:48+00:00</lastmod>
+    <loc>/docs/reference/exceptions/collections/occurrence-not-present-exception/</loc>
+    <lastmod>2023-03-01T16:27:54+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/concepts/working-with/collections/occurrences/</loc>
     <lastmod>2022-09-12T15:57:36+01:00</lastmod>
@@ -1923,7 +1926,7 @@
     <lastmod>2022-09-16T10:30:55+01:00</lastmod>
   </url><url>
     <loc>/docs/reference/blocks/dictionaries/set-item/set-item-with-key-block-3/</loc>
-    <lastmod>2022-09-16T10:30:55+01:00</lastmod>
+    <lastmod>2023-03-01T16:27:54+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/blocks/dictionaries/set-item/set-item-with-value-block-3/</loc>
     <lastmod>2022-09-16T10:30:55+01:00</lastmod>
@@ -2070,7 +2073,7 @@
     <lastmod>2021-11-22T12:44:17+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/blocks/exceptions/throw-exception/throw-new-flow-exception-block/</loc>
-    <lastmod>2022-09-16T10:30:55+01:00</lastmod>
+    <lastmod>2023-03-01T16:27:54+00:00</lastmod>
   </url><url>
     <loc>/docs/reference/data-types/date-and-time/timeperiod/</loc>
     <lastmod>2022-08-23T16:26:42+01:00</lastmod>

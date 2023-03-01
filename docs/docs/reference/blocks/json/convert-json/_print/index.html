@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -225,10 +225,10 @@ This the multi-page printable view of this section.
 <li>Text escaping</li>
 <li>Type information</li>
 </ul>
-<p>For information about the default <a href="#settings">Settings</a> used if none are specified, as well as all other options that can be configured, please see <a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a>.</p>
+<p>For information about the default <a href="#settings">Settings</a> used if none are specified, as well as all other options that can be configured, please see <a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a>.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="convert-json-to-a-list-without-type-information">Convert Json to a List (without Type information)</h3>
-<p>This example will convert <code>&quot;[[1, 2, 3], [4, 5, 6]]&quot;</code> into a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/all/object">Object</a>&gt;.</p>
+<p>This example will convert <code>&quot;[[1, 2, 3], [4, 5, 6]]&quot;</code> into a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/all/object">Object</a>&gt;.</p>
 <h4 id="properties">Properties</h4>
 <table>
 <thead>
@@ -242,17 +242,17 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#json">Json</a></td>
 <td><code>($)Json</code>, with value <code>&quot;[[1, 2, 3], [4, 5, 6]]&quot;</code></td>
-<td><code>($)Json</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Json</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#settings">Settings</a></td>
 <td><code>($)Settings</code>, with value <code>null</code></td>
-<td><code>($)Settings</code> is a variable of type <a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
+<td><code>($)Settings</code> is a variable of type <a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
 </tr>
 <tr>
 <td><a href="#object">Object</a></td>
 <td><code>($)Object</code>, with no value</td>
-<td><code>($)Object</code> is a variable that will be set to a <a href="/docs/reference/data-types/all/dynamic">dynamic</a> value (i.e. in this example to a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/all/object">Object</a>&gt;).</td>
+<td><code>($)Object</code> is a variable that will be set to a <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> value (i.e. in this example to a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/all/object">Object</a>&gt;).</td>
 </tr>
 </tbody>
 </table>
@@ -270,11 +270,11 @@ This the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span>        <span style="color:#0000cf;font-weight:bold">6</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">]</span>
-</span></span></code></pre></div><p>As the Json does not include any type information, <code>($)Object</code> will be a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/all/object">Object</a>&gt;, rather than a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;. This is because when performing the conversion there is no type information to tell the converter that the items in the list are <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt; data types.</p>
+</span></span></code></pre></div><p>As the Json does not include any type information, <code>($)Object</code> will be a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/all/object">Object</a>&gt;, rather than a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;. This is because when performing the conversion there is no type information to tell the converter that the items in the list are <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt; data types.</p>
 <p>See <a href="#convert-json-to-a-list-with-type-information">Convert Json to a List (with Type information)</a> for an example on how to include type information in the Json.</p>
 <hr>
 <h3 id="convert-json-to-a-list-with-type-information">Convert Json to a List (with Type information)</h3>
-<p>This example will convert <code>&quot;[[1, 2, 3], [4, 5, 6]]&quot;</code> into a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;, rather than a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/all/object">Object</a>&gt; as above.</p>
+<p>This example will convert <code>&quot;[[1, 2, 3], [4, 5, 6]]&quot;</code> into a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;, rather than a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/all/object">Object</a>&gt; as above.</p>
 <p>For this to work, type information needs to be included in the Json representation. This can be seen below:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;$type&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib&#34;</span><span style="color:#000;font-weight:bold">,</span>
@@ -289,7 +289,7 @@ This the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><p>Realistically, this example is only useful if you have already produced Json including type information by using the <a href="/docs/reference/blocks/json/convert-json/convert-object-to-json-block">Convert Object To Json</a> block. If this is the case, you can then convert it back with the correct data types.</p>
+</span></span></code></pre></div><p>Realistically, this example is only useful if you have already produced Json including type information by using the <a href=" /docs/reference/blocks/json/convert-json/convert-object-to-json-block">Convert Object To Json</a> block. If this is the case, you can then convert it back with the correct data types.</p>
 <h4 id="properties-1">Properties</h4>
 <table>
 <thead>
@@ -303,17 +303,17 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#json">Json</a></td>
 <td><code>($)Json</code>, with complex value as shown above</td>
-<td><code>($)Json</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Json</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#settings">Settings</a></td>
 <td><code>($)Settings</code>, with value <code>new JsonSerializerSettings{TypeNameHandling = TypeNameHandling.All}</code></td>
-<td><code>($)Settings</code> is a variable of type <a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
+<td><code>($)Settings</code> is a variable of type <a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
 </tr>
 <tr>
 <td><a href="#object">Object</a></td>
 <td><code>($)Object</code>, with no value</td>
-<td><code>($)Object</code> is a variable that will be set to a <a href="/docs/reference/data-types/all/dynamic">dynamic</a> value (i.e. in this example to a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;).</td>
+<td><code>($)Object</code> is a variable that will be set to a <a href=" /docs/reference/data-types/all/dynamic">dynamic</a> value (i.e. in this example to a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;).</td>
 </tr>
 </tbody>
 </table>
@@ -345,12 +345,12 @@ This the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span>        <span style="color:#0000cf;font-weight:bold">6</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">]</span>
-</span></span></code></pre></div><p>As the Json does include type information, <code>($)Object</code> will be a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;, rather than a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/all/object">Object</a>&gt;.</p>
+</span></span></code></pre></div><p>As the Json does include type information, <code>($)Object</code> will be a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;, rather than a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/all/object">Object</a>&gt;.</p>
 <hr>
 <h2 id="properties-2">Properties</h2>
 <h3 id="json">Json</h3>
 <p>The <a href="#json">Json</a> to convert into an <a href="#object">Object</a>.</p>
-<p>During the conversion it will be attempted to convert the <a href="#json">Json</a> to the correct data type where possible. If the correct data type cannot be determined, then collection data types will be converted to a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/all/dynamic">dynamic</a>&gt;, and other objects will be converted to a <a href="/docs/reference/data-types/collections/structure">Structure</a>.</p>
+<p>During the conversion it will be attempted to convert the <a href="#json">Json</a> to the correct data type where possible. If the correct data type cannot be determined, then collection data types will be converted to a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/all/dynamic">dynamic</a>&gt;, and other objects will be converted to a <a href=" /docs/reference/data-types/collections/structure">Structure</a>.</p>
 <table>
 <thead>
 <tr>
@@ -361,19 +361,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -389,7 +389,7 @@ This the multi-page printable view of this section.
 <li>Number formats</li>
 <li>Text escaping</li>
 </ul>
-<p>For information about the default <a href="#settings">Settings</a> used if none are specified, as well as all other options that can be configured, please see <a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a>.</p>
+<p>For information about the default <a href="#settings">Settings</a> used if none are specified, as well as all other options that can be configured, please see <a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a>.</p>
 <table>
 <thead>
 <tr>
@@ -400,19 +400,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
+<td><a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>true</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -432,19 +432,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/all/dynamic">dynamic</a></td>
+<td><a href=" /docs/reference/data-types/all/dynamic">dynamic</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -471,26 +471,26 @@ This the multi-page printable view of this section.
 <td>Thrown when an error occurs converting the <a href="#json">Json</a> to an <a href="#object">Object</a>.</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-empty-exception/">PropertyEmptyException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-empty-exception/">PropertyEmptyException</a></td>
 <td>Thrown when <a href="#json">Json</a> is empty (i.e. <code>&quot;&quot;</code>).</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
 <td>Thrown when <a href="#json">Json</a> is <code>null</code>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="remarks">Remarks</h2>
 <h3 id="-json">&ldquo;{}&rdquo; Json</h3>
-<p>If <a href="#json">Json</a> is set to the text <code>&quot;{}&quot;</code>, <a href="#object">Object</a> will be set to an empty <a href="/docs/reference/data-types/collections/structure">Structure</a>.</p>
+<p>If <a href="#json">Json</a> is set to the text <code>&quot;{}&quot;</code>, <a href="#object">Object</a> will be set to an empty <a href=" /docs/reference/data-types/collections/structure">Structure</a>.</p>
 <h3 id="-json-1">&ldquo;[]&rdquo; Json</h3>
-<p>If <a href="#json">Json</a> is set to the text <code>&quot;[]&quot;</code>, <a href="#object">Object</a> will be set to an empty <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/all/dynamic">dynamic</a>&gt;.</p>
+<p>If <a href="#json">Json</a> is set to the text <code>&quot;[]&quot;</code>, <a href="#object">Object</a> will be set to an empty <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/all/dynamic">dynamic</a>&gt;.</p>
 <h3 id="null-json">&ldquo;null&rdquo; Json</h3>
 <p>If <a href="#json">Json</a> is set to the text <code>&quot;null&quot;</code>, <a href="#object">Object</a> will be set to <code>null</code>.</p>
 <h3 id="round-tripping">Round-tripping</h3>
-<p>For most data types it should be possible to pass the Json created by a <a href="/docs/reference/blocks/json/convert-json/convert-object-to-json-block">Convert Object To Json</a> block to this block, and then pass the <a href="#object">Object</a> created by this block back to a <a href="/docs/reference/blocks/json/convert-json/convert-object-to-json-block">Convert Object To Json</a> block; this is called round-tripping.</p>
+<p>For most data types it should be possible to pass the Json created by a <a href=" /docs/reference/blocks/json/convert-json/convert-object-to-json-block">Convert Object To Json</a> block to this block, and then pass the <a href="#object">Object</a> created by this block back to a <a href=" /docs/reference/blocks/json/convert-json/convert-object-to-json-block">Convert Object To Json</a> block; this is called round-tripping.</p>
 <p>It should be noted however, that not all data types will be able to be round-tripped.</p>
-<p>An example of a data type that is not able to be round-tripped is <a href="/docs/reference/data-types/most-common/#httprequestheaders">HttpRequestHeaders</a>. As it does not contain a public constructor it will not be able to be converted from its Json representation back into an <a href="/docs/reference/data-types/most-common/#httprequestheaders">HttpRequestHeaders</a>; instead a <a href="https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializationException.htm">JsonSerializationException</a> will be thrown with a message like: <code>&quot;Cannot create and populate list type System.Net.Http.Headers.HttpRequestHeaders&quot;</code>.</p>
+<p>An example of a data type that is not able to be round-tripped is <a href=" /docs/reference/data-types/most-common/#httprequestheaders">HttpRequestHeaders</a>. As it does not contain a public constructor it will not be able to be converted from its Json representation back into an <a href=" /docs/reference/data-types/most-common/#httprequestheaders">HttpRequestHeaders</a>; instead a <a href="https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializationException.htm">JsonSerializationException</a> will be thrown with a message like: <code>&quot;Cannot create and populate list type System.Net.Http.Headers.HttpRequestHeaders&quot;</code>.</p>
 
 </div>
 
@@ -526,7 +526,7 @@ This the multi-page printable view of this section.
 <li>Text escaping</li>
 <li>Type information</li>
 </ul>
-<p>For information about the default <a href="#settings">Settings</a> used if none are specified, as well as all other options that can be configured, please see <a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a>.</p>
+<p>For information about the default <a href="#settings">Settings</a> used if none are specified, as well as all other options that can be configured, please see <a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a>.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="convert-a-list-to-json-without-type-information">Convert a List to Json (without Type information)</h3>
 <p>This example will convert <code>[[1, 2, 3], [4, 5, 6]]</code> to its Json representation, without including type information.</p>
@@ -543,24 +543,24 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#object">Object</a></td>
 <td><code>($)Object</code>, with value <code>[[1, 2, 3], [4, 5, 6]]</code></td>
-<td><code>($)Object</code> is a variable of type <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;</td>
+<td><code>($)Object</code> is a variable of type <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;</td>
 </tr>
 <tr>
 <td><a href="#settings">Settings</a></td>
 <td><code>($)Settings</code>, with value <code>null</code></td>
-<td><code>($)Settings</code> is a variable of type <a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
+<td><code>($)Settings</code> is a variable of type <a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
 </tr>
 <tr>
 <td><a href="#json">Json</a></td>
 <td><code>($)Json</code>, with no value</td>
-<td><code>($)Json</code> is a variable that will be set to a <a href="/docs/reference/data-types/text/string">String</a> value.</td>
+<td><code>($)Json</code> is a variable that will be set to a <a href=" /docs/reference/data-types/text/string">String</a> value.</td>
 </tr>
 </tbody>
 </table>
 <h4 id="result">Result</h4>
 <p>Converting <code>[[1, 2, 3], [4, 5, 6]]</code> to Json results in the variable <code>($)Json</code> being updated to the following:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;[[1, 2, 3],[4, 5, 6]]&#34;</span>
-</span></span></code></pre></div><p>As the resultant Json does not include any type information, if this Json was then used as input to the <a href="/docs/reference/blocks/json/convert-json/convert-json-to-object-block">Convert Json To Object</a> block, the resultant object would be a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/all/object">Object</a>&gt;, rather than a <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;.</p>
+</span></span></code></pre></div><p>As the resultant Json does not include any type information, if this Json was then used as input to the <a href=" /docs/reference/blocks/json/convert-json/convert-json-to-object-block">Convert Json To Object</a> block, the resultant object would be a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/all/object">Object</a>&gt;, rather than a <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;.</p>
 <p>See <a href="#convert-a-list-to-json-with-type-information">Convert a List To Json (with Type information)</a> for an example on how to include type information in the Json.</p>
 <hr>
 <h3 id="convert-a-list-to-json-with-type-information">Convert a List to Json (with Type information)</h3>
@@ -578,17 +578,17 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#object">Object</a></td>
 <td><code>($)Object</code>, with value <code>[[1, 2, 3], [4, 5, 6]]</code></td>
-<td><code>($)Object</code> is a variable of type <a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/collections/list-1">List</a>&lt;<a href="/docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;</td>
+<td><code>($)Object</code> is a variable of type <a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/collections/list-1">List</a>&lt;<a href=" /docs/reference/data-types/numbers/int32">Int32</a>&gt;&gt;</td>
 </tr>
 <tr>
 <td><a href="#settings">Settings</a></td>
 <td><code>($)Settings</code>, with value <code>new JsonSerializerSettings{TypeNameHandling = TypeNameHandling.All}</code></td>
-<td><code>($)Settings</code> is a variable of type <a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
+<td><code>($)Settings</code> is a variable of type <a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
 </tr>
 <tr>
 <td><a href="#json">Json</a></td>
 <td><code>($)Json</code>, with no value</td>
-<td><code>($)Json</code> is a variable that will be set to a <a href="/docs/reference/data-types/text/string">String</a> value.</td>
+<td><code>($)Json</code> is a variable that will be set to a <a href=" /docs/reference/data-types/text/string">String</a> value.</td>
 </tr>
 </tbody>
 </table>
@@ -622,19 +622,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/all/dynamic">dynamic</a></td>
+<td><a href=" /docs/reference/data-types/all/dynamic">dynamic</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -650,7 +650,7 @@ This the multi-page printable view of this section.
 <li>Number formats</li>
 <li>Text escaping</li>
 </ul>
-<p>For information about the default <a href="#settings">Settings</a> used if none are specified, as well as all other options that can be configured, please see <a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a>.</p>
+<p>For information about the default <a href="#settings">Settings</a> used if none are specified, as well as all other options that can be configured, please see <a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a>.</p>
 <table>
 <thead>
 <tr>
@@ -661,19 +661,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
+<td><a href=" /docs/reference/data-types/json/jsonserializersettings">JsonSerializerSettings</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>true</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/expression-editor/">Expression</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -693,19 +693,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -731,15 +731,15 @@ This the multi-page printable view of this section.
 </table>
 <h2 id="remarks">Remarks</h2>
 <h3 id="object-is-empty-structure-or-object">Object is empty Structure or Object</h3>
-<p>If <a href="#object">Object</a> is set to an empty <a href="/docs/reference/data-types/collections/structure">Structure</a> or <a href="/docs/reference/data-types/all/object">Object</a>, <a href="#json">Json</a> is set to the text <code>&quot;{}&quot;</code>.</p>
+<p>If <a href="#object">Object</a> is set to an empty <a href=" /docs/reference/data-types/collections/structure">Structure</a> or <a href=" /docs/reference/data-types/all/object">Object</a>, <a href="#json">Json</a> is set to the text <code>&quot;{}&quot;</code>.</p>
 <h3 id="object-is-empty-list">Object is empty List</h3>
-<p>If <a href="#object">Object</a> is set to an empty <a href="/docs/reference/data-types/collections/list-1">List</a>, <a href="#json">Json</a> is set to the text <code>&quot;[]&quot;</code>.</p>
+<p>If <a href="#object">Object</a> is set to an empty <a href=" /docs/reference/data-types/collections/list-1">List</a>, <a href="#json">Json</a> is set to the text <code>&quot;[]&quot;</code>.</p>
 <h3 id="null-object">Null Object</h3>
 <p>If <a href="#object">Object</a> is set to <code>null</code>,  <a href="#json">Json</a> will be set to the text <code>&quot;null&quot;</code>.</p>
 <h3 id="round-tripping">Round-tripping</h3>
-<p>For most data types it should be possible to pass the Json created by this block to the <a href="/docs/reference/blocks/json/convert-json/convert-json-to-object-block">Convert Json To Object</a> block, and then pass the <a href="#object">Object</a> created by the <a href="/docs/reference/blocks/json/convert-json/convert-json-to-object-block">Convert Json To Object</a> block back to this block; this is called round-tripping.</p>
+<p>For most data types it should be possible to pass the Json created by this block to the <a href=" /docs/reference/blocks/json/convert-json/convert-json-to-object-block">Convert Json To Object</a> block, and then pass the <a href="#object">Object</a> created by the <a href=" /docs/reference/blocks/json/convert-json/convert-json-to-object-block">Convert Json To Object</a> block back to this block; this is called round-tripping.</p>
 <p>It should be noted however, that not all data types will be able to be round-tripped.</p>
-<p>An example of a data type that is not able to be round-tripped is <a href="/docs/reference/data-types/most-common/#httprequestheaders">HttpRequestHeaders</a>. As it does not contain a public constructor it will not be able to be converted from its Json representation back into an <a href="/docs/reference/data-types/most-common/#httprequestheaders">HttpRequestHeaders</a>; instead a <a href="https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializationException.htm">JsonSerializationException</a> will be thrown with a message like: <code>&quot;Cannot create and populate list type System.Net.Http.Headers.HttpRequestHeaders&quot;</code>.</p>
+<p>An example of a data type that is not able to be round-tripped is <a href=" /docs/reference/data-types/most-common/#httprequestheaders">HttpRequestHeaders</a>. As it does not contain a public constructor it will not be able to be converted from its Json representation back into an <a href=" /docs/reference/data-types/most-common/#httprequestheaders">HttpRequestHeaders</a>; instead a <a href="https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializationException.htm">JsonSerializationException</a> will be thrown with a message like: <code>&quot;Cannot create and populate list type System.Net.Http.Headers.HttpRequestHeaders&quot;</code>.</p>
 
 </div>
 

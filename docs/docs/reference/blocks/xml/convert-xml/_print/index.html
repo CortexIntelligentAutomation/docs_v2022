@@ -115,7 +115,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -217,10 +217,10 @@ This the multi-page printable view of this section.
 <p class="namespace">(Cortex.Blocks.Xml.ConvertXml.ConvertStructureToXmlBlock)</p>
 <h2 id="description">Description</h2>
 <p>Converts a <a href="#structure">Structure</a> to <a href="#xml">Xml</a>.</p>
-<p>Each top-level <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> will be converted using the following rules:</p>
+<p>Each top-level <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> will be converted using the following rules:</p>
 <ul>
-<li><a href="/docs/reference/concepts/working-with/collections/keys/">Keys</a> become <a href="https://www.w3schools.com/XML/dom_nodes.asp">Nodes</a></li>
-<li><a href="/docs/reference/concepts/working-with/collections/items/">Items</a> become the values of the corresponding node.</li>
+<li><a href=" /docs/reference/concepts/working-with/collections/keys/">Keys</a> become <a href="https://www.w3schools.com/XML/dom_nodes.asp">Nodes</a></li>
+<li><a href=" /docs/reference/concepts/working-with/collections/items/">Items</a> become the values of the corresponding node.</li>
 </ul>
 <p>Each inner key will be converted using the following rules:</p>
 <ul>
@@ -256,12 +256,12 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#structure">Structure</a></td>
 <td><code>($)Structure</code>, with value <code>{{ &quot;node1&quot; : &quot;1&quot;}, {&quot;node2&quot; : &quot;2&quot;}, {&quot;node3&quot; : &quot;3&quot;}}</code></td>
-<td><code>($)Structure</code> is a variable of type <a href="/docs/reference/data-types/collections/structure">Structure</a></td>
+<td><code>($)Structure</code> is a variable of type <a href=" /docs/reference/data-types/collections/structure">Structure</a></td>
 </tr>
 <tr>
 <td><a href="#xml">Xml</a></td>
 <td><code>($)Xml</code>, with no value</td>
-<td><code>($)Xml</code> is a variable that will be set to a <a href="/docs/reference/data-types/text/string">String</a> value.</td>
+<td><code>($)Xml</code> is a variable that will be set to a <a href=" /docs/reference/data-types/text/string">String</a> value.</td>
 </tr>
 </tbody>
 </table>
@@ -280,9 +280,9 @@ This the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;/Cortex_DataTypes_Dictionaries_Structure&gt;</span>&#34;
 </span></span></code></pre></div><ul>
 <li>The <code>&quot;Cortex_DataTypes_Dictionaries_Structure&quot;</code> root node is added as there is no single top-level key.</li>
-<li>The <code>&quot;node1&quot;</code> <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> is converted into a child node of <code>&quot;Cortex_DataTypes_Dictionaries_Structure&quot;</code> with its corresponding <a href="/docs/reference/concepts/working-with/collections/items/">Item</a> as the value.</li>
-<li>The <code>&quot;node2&quot;</code> <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> is converted into a child node of <code>&quot;Cortex_DataTypes_Dictionaries_Structure&quot;</code> with its corresponding <a href="/docs/reference/concepts/working-with/collections/items/">Item</a> as the value.</li>
-<li>The <code>&quot;node3&quot;</code> <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> is converted into a child node of <code>&quot;Cortex_DataTypes_Dictionaries_Structure&quot;</code> with its corresponding <a href="/docs/reference/concepts/working-with/collections/items/">Item</a> as the value.</li>
+<li>The <code>&quot;node1&quot;</code> <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> is converted into a child node of <code>&quot;Cortex_DataTypes_Dictionaries_Structure&quot;</code> with its corresponding <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a> as the value.</li>
+<li>The <code>&quot;node2&quot;</code> <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> is converted into a child node of <code>&quot;Cortex_DataTypes_Dictionaries_Structure&quot;</code> with its corresponding <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a> as the value.</li>
+<li>The <code>&quot;node3&quot;</code> <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> is converted into a child node of <code>&quot;Cortex_DataTypes_Dictionaries_Structure&quot;</code> with its corresponding <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a> as the value.</li>
 </ul>
 <hr>
 <h3 id="convert-a-complex-structure-to-xml">Convert a Complex Structure to Xml</h3>
@@ -315,12 +315,12 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#structure">Structure</a></td>
 <td><code>($)Structure</code>, with value<code>&quot;{&quot;topLevelNode&quot;: {&quot;@topLevelAttribute&quot; : &quot;exampleAttribute&quot;, &quot;innerNode&quot; : { &quot;@innerNodeAttribute&quot; : &quot;exampleInnerNodeAttribute&quot;, &quot;nestedNode&quot;: &quot;nested node text&quot;, &quot;#text&quot;: &quot;inner node text&quot; }, &quot;id&quot;: [ 1,  2,  3 ], } }&quot;</code></td>
-<td><code>($)Structure</code> is a variable of type <a href="/docs/reference/data-types/collections/structure">Structure</a></td>
+<td><code>($)Structure</code> is a variable of type <a href=" /docs/reference/data-types/collections/structure">Structure</a></td>
 </tr>
 <tr>
 <td><a href="#xml">Xml</a></td>
 <td><code>($)Xml</code>, with no value</td>
-<td><code>($)Xml</code> is a variable that will be set to a <a href="/docs/reference/data-types/text/string">String</a> value.</td>
+<td><code>($)Xml</code> is a variable that will be set to a <a href=" /docs/reference/data-types/text/string">String</a> value.</td>
 </tr>
 </tbody>
 </table>
@@ -374,19 +374,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/collections/structure">Structure</a></td>
+<td><a href=" /docs/reference/data-types/collections/structure">Structure</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -406,19 +406,19 @@ This the multi-page printable view of this section.
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -437,15 +437,15 @@ This the multi-page printable view of this section.
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
 <td>Thrown when <a href="#structure">Structure</a> is <code>null</code>.</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-empty-exception/">PropertyEmptyException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-empty-exception/">PropertyEmptyException</a></td>
 <td>Thrown when <a href="#structure">Structure</a> does not contain any items.</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/xml/xml-serialization-exception/">XmlSerializationException</a></td>
+<td><a href=" /docs/reference/exceptions/xml/xml-serialization-exception/">XmlSerializationException</a></td>
 <td>Thrown when <a href="#structure">Structure</a> has a key that is an empty string.</td>
 </tr>
 <tr>
@@ -454,21 +454,21 @@ This the multi-page printable view of this section.
 </tr>
 <tr>
 <td></td>
-<td>Thrown when the <a href="#structure">Structure</a> includes an xml declaration key (e.g. <code>&quot;?xml&quot;</code>) with an attribute that has an invalid <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#basic-data-types">Basic Data Type</a>. (e.g. <code>Key: &quot;@version&quot;, Value: false</code>, where <code>&quot;@version&quot;</code> must be a numeric value).</td>
+<td>Thrown when the <a href="#structure">Structure</a> includes an xml declaration key (e.g. <code>&quot;?xml&quot;</code>) with an attribute that has an invalid <a href=" /docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#basic-data-types">Basic Data Type</a>. (e.g. <code>Key: &quot;@version&quot;, Value: false</code>, where <code>&quot;@version&quot;</code> must be a numeric value).</td>
 </tr>
 <tr>
 <td></td>
-<td>Thrown when the <a href="#structure">Structure</a> includes a document type definition key (e.g. <code>&quot;!DOCTYPE&quot;</code>) that has an attribute with an invalid <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#basic-data-types">Basic Data Type</a>. (e.g. <code>Key: &quot;@name&quot;, Value: 22</code>, where <code>&quot;@name&quot;</code> must be a text value).</td>
+<td>Thrown when the <a href="#structure">Structure</a> includes a document type definition key (e.g. <code>&quot;!DOCTYPE&quot;</code>) that has an attribute with an invalid <a href=" /docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#basic-data-types">Basic Data Type</a>. (e.g. <code>Key: &quot;@name&quot;, Value: 22</code>, where <code>&quot;@name&quot;</code> must be a text value).</td>
 </tr>
 <tr>
 <td></td>
-<td>Thrown when the <a href="#structure">Structure</a> includes an attribute key with a <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#complex-data-types">Complex Data Type</a> as a value. (e.g. <code>Key: &quot;@name&quot;, Value: new UserCredentials{...}</code>).</td>
+<td>Thrown when the <a href="#structure">Structure</a> includes an attribute key with a <a href=" /docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#complex-data-types">Complex Data Type</a> as a value. (e.g. <code>Key: &quot;@name&quot;, Value: new UserCredentials{...}</code>).</td>
 </tr>
 </tbody>
 </table>
 <h2 id="remarks">Remarks</h2>
 <h3 id="attributes">Attributes</h3>
-<p>If a <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> requires an attribute, the attribute is defined by a <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> where the key is the attribute name with an <code>&quot;@&quot;</code> before it and the <a href="/docs/reference/concepts/working-with/collections/items/">Item</a> is the attribute data, for example:</p>
+<p>If a <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> requires an attribute, the attribute is defined by a <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> where the key is the attribute name with an <code>&quot;@&quot;</code> before it and the <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a> is the attribute data, for example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;node&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;@attribute&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Attribute Value&#34;</span><span style="color:#000;font-weight:bold">,</span>
@@ -480,7 +480,7 @@ This the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;innerNode&gt;</span>Inner Node Value<span style="color:#204a87;font-weight:bold">&lt;/innerNode&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;/node&gt;</span>&#34;
 </span></span></code></pre></div><h3 id="basic-data-types-within-attribute-keys">Basic Data Types within Attribute Keys</h3>
-<p>Attribute keys may only have <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#basic-data-types">Basic Data Types</a> as shown in the example below. An <a href="/docs/reference/exceptions/xml/xml-serialization-exception/">XmlSerializationException</a> will be thrown if a <a href="/docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#complex-data-types">Complex Data Type</a> is used as an attribute key.</p>
+<p>Attribute keys may only have <a href=" /docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#basic-data-types">Basic Data Types</a> as shown in the example below. An <a href=" /docs/reference/exceptions/xml/xml-serialization-exception/">XmlSerializationException</a> will be thrown if a <a href=" /docs/reference/concepts/fundamentals/data-types/what-is-a-data-type/#complex-data-types">Complex Data Type</a> is used as an attribute key.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;node&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;@validAttribute&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Attribute Value&#34;</span><span style="color:#000;font-weight:bold">,</span>
@@ -510,7 +510,7 @@ This the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span>    Node Value
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;/node&gt;</span>&#34;
 </span></span></code></pre></div><h3 id="duplicate-nodes-at-the-same-level">Duplicate Nodes at the Same Level</h3>
-<p>If there are multiple duplicate nodes at the same level, they are defined using a <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> where the key is the duplicated node name and the <a href="/docs/reference/concepts/working-with/collections/items/">Item</a> is a list of each of the corresponding duplicate node&rsquo;s values, for example:</p>
+<p>If there are multiple duplicate nodes at the same level, they are defined using a <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> where the key is the duplicated node name and the <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a> is a list of each of the corresponding duplicate node&rsquo;s values, for example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;node&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;duplicateNode&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;First Duplicate Node&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;Second Duplicate Node&#34;</span><span style="color:#000;font-weight:bold">],</span>
@@ -530,10 +530,10 @@ This the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;/distinctNode&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;/node&gt;</span>&#34;
 </span></span></code></pre></div><h3 id="using-non-alphanumeric-symbols-within-node-names">Using Non-Alphanumeric Symbols within Node Names</h3>
-<p>Any non-alphanumeric symbol (i.e. symbols that are not <code>&quot;0&quot;</code> to <code>&quot;9&quot;</code>, <code>&quot;a&quot;</code> to <code>&quot;z&quot;</code>, or <code>&quot;A&quot;</code> to <code>&quot;Z&quot;</code>) will be converted to their respective Unicode values when used within a <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a>. For example, <code>&quot;!&quot;</code> and <code>&quot;&amp;&quot;</code> are both non-alphanumeric symbols and would be converted to <code>&quot;x0021&quot;</code> and <code>&quot;x0026&quot;</code> respectively.</p>
+<p>Any non-alphanumeric symbol (i.e. symbols that are not <code>&quot;0&quot;</code> to <code>&quot;9&quot;</code>, <code>&quot;a&quot;</code> to <code>&quot;z&quot;</code>, or <code>&quot;A&quot;</code> to <code>&quot;Z&quot;</code>) will be converted to their respective Unicode values when used within a <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a>. For example, <code>&quot;!&quot;</code> and <code>&quot;&amp;&quot;</code> are both non-alphanumeric symbols and would be converted to <code>&quot;x0021&quot;</code> and <code>&quot;x0026&quot;</code> respectively.</p>
 <p>For more information on characters and their Unicode values please see <a href="https://www.w3.org/Style/XSL/TestSuite/results/4/XEP/charsets.pdf">Character Sets</a></p>
 <h3 id="round-tripping">Round-tripping</h3>
-<p>It should be possible to pass the <a href="#xml">Xml</a>  created by this block to the <a href="/docs/reference/blocks/xml/convert-xml/convert-xml-to-structure-block/">Convert Xml To Structure</a> block, and then pass the <a href="#structure">Structure</a> created by the <a href="/docs/reference/blocks/xml/convert-xml/convert-xml-to-structure-block/">Convert Xml To Structure</a> block back to this block, as long all values within the <a href="#xml">Xml</a> are <a href="/docs/reference/data-types/text/string">Strings</a>; this is called round-tripping.</p>
+<p>It should be possible to pass the <a href="#xml">Xml</a>  created by this block to the <a href=" /docs/reference/blocks/xml/convert-xml/convert-xml-to-structure-block/">Convert Xml To Structure</a> block, and then pass the <a href="#structure">Structure</a> created by the <a href=" /docs/reference/blocks/xml/convert-xml/convert-xml-to-structure-block/">Convert Xml To Structure</a> block back to this block, as long all values within the <a href="#xml">Xml</a> are <a href=" /docs/reference/data-types/text/string">Strings</a>; this is called round-tripping.</p>
 <h3 id="cortex_datatypes_dictionaries_structure-node">&lt;Cortex_DataTypes_Dictionaries_Structure&gt; Node</h3>
 <p><code>&quot;&lt;Cortex_DataTypes_Dictionaries_Structure&gt;&quot;</code> is added as a root node when the <a href="#structure">Structure</a> has more than one top-level key to ensure that valid <a href="#xml">Xml</a> is produced.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
@@ -576,13 +576,13 @@ This the multi-page printable view of this section.
 <p>Converts <a href="#xml">Xml</a> to a <a href="#structure">Structure</a>.</p>
 <p>Each top-level <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> will be converted using the following rules:</p>
 <ul>
-<li>Node names become <a href="/docs/reference/concepts/working-with/collections/keys/">Keys</a></li>
-<li>Node values become <a href="/docs/reference/concepts/working-with/collections/items/">Items</a></li>
+<li>Node names become <a href=" /docs/reference/concepts/working-with/collections/keys/">Keys</a></li>
+<li>Node values become <a href=" /docs/reference/concepts/working-with/collections/items/">Items</a></li>
 </ul>
 <p>Each inner <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> will be converted using the following rules:</p>
 <ul>
-<li>Inner node names become <a href="/docs/reference/concepts/working-with/collections/keys/">Keys</a> within the top-level node&rsquo;s <a href="/docs/reference/concepts/working-with/collections/items/">Item</a></li>
-<li>Inner node values become the corresponding <a href="/docs/reference/concepts/working-with/collections/items/">Item</a> for their <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a></li>
+<li>Inner node names become <a href=" /docs/reference/concepts/working-with/collections/keys/">Keys</a> within the top-level node&rsquo;s <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a></li>
+<li>Inner node values become the corresponding <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a> for their <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a></li>
 </ul>
 <p>For example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>@&#34;<span style="color:#204a87;font-weight:bold">&lt;topLevelNode&gt;</span>
@@ -617,12 +617,12 @@ This the multi-page printable view of this section.
 <tr>
 <td><a href="#xml">Xml</a></td>
 <td><code>($)Xml</code>, with value <code>&quot;&lt;topLevelNode topLevelAttribute=&quot;&quot;exampleAttribute&quot;&quot;&gt;&lt;innerNode innerNodeAttribute=&quot;&quot;exampleInnerNodeAttribute&quot;&quot;&gt;&lt;nestedNode&gt;nested node text&lt;/nestedNode&gt;inner node text&lt;/innerNode&gt;&lt;id&gt;1&lt;/id&gt;&lt;id&gt;2&lt;/id&gt;&lt;id&gt;3&lt;/id&gt;&lt;/topLevelNode&gt;&quot;</code></td>
-<td><code>($)Xml</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Xml</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#structure">Structure</a></td>
 <td><code>($)Structure</code>, with no value</td>
-<td><code>($)Structure</code> is a variable that will be set to a <a href="/docs/reference/data-types/collections/structure">Structure</a> value</td>
+<td><code>($)Structure</code> is a variable that will be set to a <a href=" /docs/reference/data-types/collections/structure">Structure</a> value</td>
 </tr>
 </tbody>
 </table>
@@ -665,7 +665,7 @@ This the multi-page printable view of this section.
 <hr>
 <h3 id="convert-round-tripped-xml-to-a-structure">Convert Round-tripped Xml to a Structure</h3>
 <p>This example will convert the <a href="#xml">Xml</a> below to its <a href="#structure">Structure</a> representation.
-This example will only occur when a <a href="#structure">Structure</a> is Converted to <a href="#xml">Xml</a> using the <a href="/docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/">Convert Structure To Xml</a> block and is then converted again using this block. This is called <a href="#round-tripping">Round-Tripping</a>.</p>
+This example will only occur when a <a href="#structure">Structure</a> is Converted to <a href="#xml">Xml</a> using the <a href=" /docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/">Convert Structure To Xml</a> block and is then converted again using this block. This is called <a href="#round-tripping">Round-Tripping</a>.</p>
 <h4 id="properties-1">Properties</h4>
 <table>
 <thead>
@@ -679,12 +679,12 @@ This example will only occur when a <a href="#structure">Structure</a> is Conver
 <tr>
 <td><a href="#xml">Xml</a></td>
 <td><code>($)Xml</code>, with value <code>&quot;&lt;Cortex_DataTypes_Dictionaries_Structure&gt;&lt;node1&gt;1&lt;/node1&gt;&lt;node2&gt;2&lt;/node2&gt;&lt;node3&gt;3&lt;/node3&gt;&lt;/Cortex_DataTypes_Dictionaries_Structure&gt;&quot;</code></td>
-<td><code>($)Xml</code> is a variable of type <a href="/docs/reference/data-types/text/string">String</a></td>
+<td><code>($)Xml</code> is a variable of type <a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td><a href="#structure">Structure</a></td>
 <td><code>($)Structure</code>, with no value</td>
-<td><code>($)Structure</code> is a variable that will be set to a <a href="/docs/reference/data-types/collections/structure">Structure</a> value</td>
+<td><code>($)Structure</code> is a variable that will be set to a <a href=" /docs/reference/data-types/collections/structure">Structure</a> value</td>
 </tr>
 </tbody>
 </table>
@@ -703,9 +703,9 @@ This example will only occur when a <a href="#structure">Structure</a> is Conver
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><ul>
 <li>The <code>&quot;Cortex_DataTypes_Dictionaries_Structure&quot;</code> root node is removed and the child nodes are all at the root level.</li>
-<li>The <code>&quot;node1&quot;</code> <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> is converted into a <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> of <code>&quot;node1&quot;</code> with its corresponding value as the <a href="/docs/reference/concepts/working-with/collections/items/">Item</a>.</li>
-<li>The <code>&quot;node2&quot;</code> <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> is converted into a <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> of <code>&quot;node2&quot;</code> with its corresponding value as the <a href="/docs/reference/concepts/working-with/collections/items/">Item</a>.</li>
-<li>The <code>&quot;node3&quot;</code> <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> is converted into a <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> of <code>&quot;node3&quot;</code> with its corresponding value as the <a href="/docs/reference/concepts/working-with/collections/items/">Item</a>.</li>
+<li>The <code>&quot;node1&quot;</code> <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> is converted into a <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> of <code>&quot;node1&quot;</code> with its corresponding value as the <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a>.</li>
+<li>The <code>&quot;node2&quot;</code> <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> is converted into a <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> of <code>&quot;node2&quot;</code> with its corresponding value as the <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a>.</li>
+<li>The <code>&quot;node3&quot;</code> <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> is converted into a <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> of <code>&quot;node3&quot;</code> with its corresponding value as the <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a>.</li>
 </ul>
 <hr>
 <h2 id="properties-2">Properties</h2>
@@ -721,19 +721,19 @@ This example will only occur when a <a href="#structure">Structure</a> is Conver
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#input-properties">Input</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -753,19 +753,19 @@ This example will only occur when a <a href="#structure">Structure</a> is Conver
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/collections/structure">Structure</a></td>
+<td><a href=" /docs/reference/data-types/collections/structure">Structure</a></td>
 </tr>
 <tr>
 <td>Property Type</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/#output-properties">Output</a></td>
 </tr>
 <tr>
-<td>Is <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
+<td>Is <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/advanced-properties/">Advanced</a></td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td>Default Editor</td>
-<td><a href="/docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
+<td><a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/property-editors/variable-editor/">Variable</a></td>
 </tr>
 <tr>
 <td>Default Value</td>
@@ -784,22 +784,22 @@ This example will only occur when a <a href="#structure">Structure</a> is Conver
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-null-exception/">PropertyNullException</a></td>
 <td>Thrown when <a href="#xml">Xml</a> is <code>null</code>.</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/common/property/property-empty-exception/">PropertyEmptyException</a></td>
+<td><a href=" /docs/reference/exceptions/common/property/property-empty-exception/">PropertyEmptyException</a></td>
 <td>Thrown when <a href="#xml">Xml</a> is empty (i.e. <code>&quot;&quot;</code>).</td>
 </tr>
 <tr>
-<td><a href="/docs/reference/exceptions/xml/xml-serialization-exception/">XmlSerializationException</a></td>
+<td><a href=" /docs/reference/exceptions/xml/xml-serialization-exception/">XmlSerializationException</a></td>
 <td>Thrown when the <a href="#xml">Xml</a> is not valid (i.e the Xml contains an ampersand symbol or is missing a root node).</td>
 </tr>
 </tbody>
 </table>
 <h2 id="remarks">Remarks</h2>
 <h3 id="attributes">Attributes</h3>
-<p>If a <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> has an attribute, the attribute is converted to a <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> where the key is the attribute name with an <code>&quot;@&quot;</code> before it and the value is the attribute data, for example:</p>
+<p>If a <a href="https://www.w3schools.com/XML/dom_nodes.asp">Node</a> has an attribute, the attribute is converted to a <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> where the key is the attribute name with an <code>&quot;@&quot;</code> before it and the value is the attribute data, for example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>@&#34;<span style="color:#204a87;font-weight:bold">&lt;node</span> <span style="color:#c4a000">attribute=</span><span style="color:#4e9a06">&#34;Attribute Value&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;innerNode&gt;</span>Inner Node Value<span style="color:#204a87;font-weight:bold">&lt;/innerNode&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&lt;/node&gt;</span>&#34;
@@ -811,7 +811,7 @@ This example will only occur when a <a href="#structure">Structure</a> is Conver
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h3 id="text-nodes">Text Nodes</h3>
-<p>If a node contains a value and inner nodes or attributes, the inner nodes and attributes are converted into <a href="/docs/reference/concepts/working-with/collections/keys/">Keys</a> with their corresponding values as the <a href="/docs/reference/concepts/working-with/collections/items/">Items</a>. The value of the node is converted into the <code>&quot;#text&quot;</code> key with its value as the item.</p>
+<p>If a node contains a value and inner nodes or attributes, the inner nodes and attributes are converted into <a href=" /docs/reference/concepts/working-with/collections/keys/">Keys</a> with their corresponding values as the <a href=" /docs/reference/concepts/working-with/collections/items/">Items</a>. The value of the node is converted into the <code>&quot;#text&quot;</code> key with its value as the item.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>@&#34;<span style="color:#204a87;font-weight:bold">&lt;node&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;innerNode</span> <span style="color:#c4a000">attribute=</span><span style="color:#4e9a06">&#34;attributeValue&#34;</span><span style="color:#204a87;font-weight:bold">&gt;</span>
 </span></span><span style="display:flex;"><span>        Inner Node Value
@@ -829,7 +829,7 @@ This example will only occur when a <a href="#structure">Structure</a> is Conver
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h3 id="duplicate-nodes-at-the-same-level">Duplicate Nodes at the Same Level</h3>
-<p>If a node contains duplicate nodes at the same level, they are converted into a <a href="/docs/reference/concepts/working-with/collections/keys/">Key</a> where the key is the duplicated node name and the <a href="/docs/reference/concepts/working-with/collections/items/">Item</a> is a list of each of the corresponding duplicate node&rsquo;s values, for example:</p>
+<p>If a node contains duplicate nodes at the same level, they are converted into a <a href=" /docs/reference/concepts/working-with/collections/keys/">Key</a> where the key is the duplicated node name and the <a href=" /docs/reference/concepts/working-with/collections/items/">Item</a> is a list of each of the corresponding duplicate node&rsquo;s values, for example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>@&#34;<span style="color:#204a87;font-weight:bold">&lt;node&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;duplicateNode&gt;</span>
 </span></span><span style="display:flex;"><span>        First Duplicate Node
@@ -852,9 +852,9 @@ This example will only occur when a <a href="#structure">Structure</a> is Conver
 <p>Any non-alphanumeric symbol (i.e. symbols that are not <code>&quot;0&quot;</code> to <code>&quot;9&quot;</code>, <code>&quot;a&quot;</code> to <code>&quot;z&quot;</code>, or <code>&quot;A&quot;</code> to <code>&quot;Z&quot;</code>) will be converted to their respective Unicode values when used within a node name. For example, <code>&quot;!&quot;</code> and <code>&quot;&amp;&quot;</code> are both non-alphanumeric symbols and would be converted to <code>&quot;x0021&quot;</code> and <code>&quot;x0026&quot;</code> respectively.</p>
 <p>For more information on characters and their Unicode values please see <a href="https://www.w3.org/Style/XSL/TestSuite/results/4/XEP/charsets.pdf">Character Sets</a></p>
 <h3 id="round-tripping">Round-tripping</h3>
-<p>It should be possible to pass the <a href="#structure">Structure</a> created by this block to the <a href="/docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/">Convert Structure To Xml</a> block, and then pass the <a href="#xml">Xml</a> created by the <a href="/docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/">Convert Structure To Xml</a> block back to this block, as long all values within the <a href="#xml">Xml</a> are <a href="/docs/reference/data-types/text/string">Strings</a>; this is called round-tripping.</p>
+<p>It should be possible to pass the <a href="#structure">Structure</a> created by this block to the <a href=" /docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/">Convert Structure To Xml</a> block, and then pass the <a href="#xml">Xml</a> created by the <a href=" /docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/">Convert Structure To Xml</a> block back to this block, as long all values within the <a href="#xml">Xml</a> are <a href=" /docs/reference/data-types/text/string">Strings</a>; this is called round-tripping.</p>
 <h3 id="cortex_datatypes_dictionaries_structure-node">&lt;Cortex_DataTypes_Dictionaries_Structure&gt; Node</h3>
-<p>The <a href="/docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/">Convert Structure To Xml</a> adds <code>&quot;&lt;Cortex_DataTypes_Dictionaries_Structure&gt;&quot;</code> as a root node when the structure has more than one top-level key to ensure that valid <a href="#xml">Xml</a> is produced.</p>
+<p>The <a href=" /docs/reference/blocks/xml/convert-xml/convert-structure-to-xml-block/">Convert Structure To Xml</a> adds <code>&quot;&lt;Cortex_DataTypes_Dictionaries_Structure&gt;&quot;</code> as a root node when the structure has more than one top-level key to ensure that valid <a href="#xml">Xml</a> is produced.</p>
 <p>When the <code>&quot;&lt;Cortex_DataTypes_Dictionaries_Structure&gt;&quot;</code> root node is converted from <a href="#xml">Xml</a> to a <a href="#structure">Structure</a> the root node is removed and any inner nodes become the top-level keys.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>@&#34;<span style="color:#204a87;font-weight:bold">&lt;Cortex_DataTypes_Dictionaries_Structure&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&lt;node1&gt;</span>1<span style="color:#204a87;font-weight:bold">&lt;/node1&gt;</span>

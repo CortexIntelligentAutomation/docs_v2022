@@ -119,7 +119,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -151,7 +151,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -8629,6 +8629,39 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/exceptions/collections/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Collections</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreferenceexceptionscollections">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionscollectionsoccurrence-not-present-exception" href="/docs/reference/exceptions/collections/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/reference/exceptions/common/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Common</a>
   </li>
   <ul>
@@ -8840,14 +8873,6 @@
         
       
       
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsdictionariesoccurrence-not-present-exception" href="/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
-        
-      
-      
     </li>
   </ul>
 </ul>
@@ -8934,14 +8959,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflow-exception" href="/docs/reference/exceptions/flow-exception/">FlowException</a>
         
       
       
@@ -9042,6 +9059,14 @@
   </ul>
 </ul>
 
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflowsflow-exception" href="/docs/reference/exceptions/flows/flow-exception/">FlowException</a>
         
       
       
@@ -9988,7 +10013,7 @@
         <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 15 minute read</p>
            
 	<h1 id="install-application-servers-and-load-balancer">Install Application Servers and Load Balancer</h1>
-<p>This guide describes how to install the Application Servers and Load Balancer Server. Please ensure that the <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites">Prerequisites for installing Innovation</a> have been read before starting this installation.</p>
+<p>This guide describes how to install the Application Servers and Load Balancer Server. Please ensure that the <a href=" /docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites">Prerequisites for installing Innovation</a> have been read before starting this installation.</p>
 <h2 id="make-installation-artefacts-available">Make Installation Artefacts Available</h2>
 <ol>
 <li>
@@ -10023,7 +10048,7 @@
 <p>These are non-compulsory security measures, recommended to be applied to Application Servers and the Load Balancer Server, in order to prevent potential attacks that exploit known industry security vulnerabilities.</p>
 <p>Applying these measures may impact other applications running on your servers. Therefore, it is your responsibility to ensure that other applications and their clients will not be affected by the changes.</p>
 <h3 id="only-use-recommended-encryption-algorithms-and-tls-protocols">Only Use Recommended Encryption Algorithms and TLS Protocols</h3>
-<p>A collection of registry settings need to be applied to guarantee your server is only using the recommended encryption algorithms and TLS protocols. Information about these settings can be found at <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/ssl-best-practices">SSL Best Practices</a>.</p>
+<p>A collection of registry settings need to be applied to guarantee your server is only using the recommended encryption algorithms and TLS protocols. Information about these settings can be found at <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/ssl-best-practices">SSL Best Practices</a>.</p>
 
 
 <div class="alert alert-primary" role="alert">
@@ -10043,7 +10068,7 @@
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#204a87">cd </span><span style="color:#4e9a06">&#34;C:\Install\Cortex Innovation 2022.9 - App Server Install Scripts&#34;</span>
 </span></span></code></pre></div></li>
 <li>
-<p>Run the <code>Cortex.Innovation.Install.Multiple.SSLBestPractices.ps1</code> script using the following command, modifying the <code>ApplicationServers</code> value to contain the NETBIOS names or fully qualified domain names of the Application Servers and the <code>LoadBalancerServer</code> value to contain the NETBIOS names or fully qualified domain name of the Load Balancer Server (remove the <code>LoadBalancerServer</code> parameter if using an <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites#alternative-load-balancer-requirements">alternative load balancer</a>):</p>
+<p>Run the <code>Cortex.Innovation.Install.Multiple.SSLBestPractices.ps1</code> script using the following command, modifying the <code>ApplicationServers</code> value to contain the NETBIOS names or fully qualified domain names of the Application Servers and the <code>LoadBalancerServer</code> value to contain the NETBIOS names or fully qualified domain name of the Load Balancer Server (remove the <code>LoadBalancerServer</code> parameter if using an <a href=" /docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites#alternative-load-balancer-requirements">alternative load balancer</a>):</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">.\</span><span style="color:#000">Cortex</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Innovation</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Install</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Multiple</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">SSLBestPractices</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">ps1</span> <span style="color:#000">-ApplicationServers</span> <span style="color:#000">@</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;app-server1&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;app-server2&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;app-server3&#34;</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000">-LoadBalancerServer</span> <span style="color:#4e9a06">&#34;lb-server&#34;</span>
 </span></span></code></pre></div>
 
@@ -10069,7 +10094,7 @@
 </ol>
 <h2 id="add-antivirus-exclusions">Add Antivirus Exclusions</h2>
 <ol>
-<li>If Windows Defender is not running on the Application Servers, ensure that the <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites#antivirus-exclusions">Antivirus Exclusions</a> have been added to the running antivirus software on each of the Application Servers and continue to the next section, otherwise follow these steps:
+<li>If Windows Defender is not running on the Application Servers, ensure that the <a href=" /docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites#antivirus-exclusions">Antivirus Exclusions</a> have been added to the running antivirus software on each of the Application Servers and continue to the next section, otherwise follow these steps:
 <ol>
 <li>
 <p>Open a Windows PowerShell (x64) window as administrator.</p>
@@ -10299,11 +10324,11 @@
 </tr>
 <tr>
 <td><code>ApiGatewayBasicAuthUserName</code></td>
-<td>Configure this value with the username that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows).<br /><br />For security reasons it is recommended that the default value <code>BasicAuthUser</code> should be changed.<br /><br />Currently only Basic Authentication using a single user is supported, OAuth2 will be supported in a future release.<br /><br />This value will be needed <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
+<td>Configure this value with the username that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows).<br /><br />For security reasons it is recommended that the default value <code>BasicAuthUser</code> should be changed.<br /><br />Currently only Basic Authentication using a single user is supported, OAuth2 will be supported in a future release.<br /><br />This value will be needed <a href=" /docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
 </tr>
 <tr>
 <td><code>ApiGatewayBasicAuthPwd</code></td>
-<td>Configure this value with the password that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows). <br /><br />This password should be <a href="/docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>. For security reasons it is recommended that the default value <code>ADA9883B11BD4CDC908B8131B57944A4</code> should be changed. <br /><br />This value will be needed <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
+<td>Configure this value with the password that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows). <br /><br />This password should be <a href=" /docs/getting-started/on-premise/install-innovation-only/advanced/encrypt-text">Cortex Encrypted</a>. For security reasons it is recommended that the default value <code>ADA9883B11BD4CDC908B8131B57944A4</code> should be changed. <br /><br />This value will be needed <a href=" /docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
 </tr>
 <tr>
 <td><code>CustomerName</code></td>
@@ -10319,7 +10344,7 @@
 </tr>
 <tr>
 <td><code>ServerCertificatePath</code></td>
-<td>The local path of a .PFX certificate file on the first Application Server in the <code>ApplicationServerIPv4Addresses</code> list. Environment variables cannot be used. <br /><br />This is only needed if installing with CA Certificates (Recommended). The certificate should meet the <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites#certificate-requirements">Certificate Requirements</a>. <br /><br />This certificate will be used for: <ul><li>Securing communication between the Application Services.</li><li>Allowing Application Services to identify themselves to clients such as Gateway.</li><li>Preventing unauthorised nodes from joining the HA cluster.</li><li>Connecting to Service Fabric Explorer from each of the Application Servers.</li></ul>
+<td>The local path of a .PFX certificate file on the first Application Server in the <code>ApplicationServerIPv4Addresses</code> list. Environment variables cannot be used. <br /><br />This is only needed if installing with CA Certificates (Recommended). The certificate should meet the <a href=" /docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites#certificate-requirements">Certificate Requirements</a>. <br /><br />This certificate will be used for: <ul><li>Securing communication between the Application Services.</li><li>Allowing Application Services to identify themselves to clients such as Gateway.</li><li>Preventing unauthorised nodes from joining the HA cluster.</li><li>Connecting to Service Fabric Explorer from each of the Application Servers.</li></ul>
 
 <div class="alert alert-primary" role="alert">
 <h4 class="alert-heading">Warning</h4>
@@ -10335,7 +10360,7 @@
 </tr>
 <tr>
 <td><code>ClientCertificatePath</code></td>
-<td>The local path of a .PFX certificate file on the first Application Server in the <code>ApplicationServerIPv4Addresses</code> list. This can be the same certificate as the <code>ServerCertificatePath</code>. Environment variables cannot be used. <br /><br />This is only needed if installing with CA Certificates (Recommended) and using the Built-In Load Balancer. The certificate should meet the <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites#certificate-requirements">Certificate Requirements</a>.<br /><br />This certificate will be used for: <ul><li>Securing communication between the load balancer and the nodes on the Application Servers.</li></ul>
+<td>The local path of a .PFX certificate file on the first Application Server in the <code>ApplicationServerIPv4Addresses</code> list. This can be the same certificate as the <code>ServerCertificatePath</code>. Environment variables cannot be used. <br /><br />This is only needed if installing with CA Certificates (Recommended) and using the Built-In Load Balancer. The certificate should meet the <a href=" /docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/prerequisites#certificate-requirements">Certificate Requirements</a>.<br /><br />This certificate will be used for: <ul><li>Securing communication between the load balancer and the nodes on the Application Servers.</li></ul>
 
 <div class="alert alert-primary" role="alert">
 <h4 class="alert-heading">Warning</h4>
@@ -10371,7 +10396,7 @@
 </tr>
 </tbody>
 </table>
-<p>The <code>ApiGatewayBasicAuthUserName</code> and <code>ApiGatewayBasicAuthPwd</code> will be needed <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</p>
+<p>The <code>ApiGatewayBasicAuthUserName</code> and <code>ApiGatewayBasicAuthPwd</code> will be needed <a href=" /docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</p>
 
 
 <div class="alert alert-primary" role="alert">
@@ -10448,7 +10473,7 @@
 <p>If there are any errors, then please follow any instructions given within them to rectify the situation, check your configuration files, and retry the installation.</p>
 <p>In some circumstances, retrying may error due to components being installed already. In this case please run the following command, followed by the original installation command:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">.\</span><span style="color:#000">Cortex</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Innovation</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Uninstall</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">ps1</span>
-</span></span></code></pre></div><p>If the errors do not give any instructions on how to rectify, see <a href="/docs/reference/troubleshooting/installation#ts-during-installation">Troubleshooting During Installation</a> for further information; if this does not help then please contact <a href="https://support.cortex.co.uk/">Cortex Service Portal</a> for assistance.</p>
+</span></span></code></pre></div><p>If the errors do not give any instructions on how to rectify, see <a href=" /docs/reference/troubleshooting/installation#ts-during-installation">Troubleshooting During Installation</a> for further information; if this does not help then please contact <a href="https://support.cortex.co.uk/">Cortex Service Portal</a> for assistance.</p>
 </li>
 </ol>
 <h2 id="check-application-services">Check Application Services</h2>
@@ -10512,7 +10537,7 @@
 <p>Ensure that the installation files are backed up or kept on the server, especially the scripts and config files that have been modified. This will make it easier to perform further actions in future, such as troubleshooting, certificate rollover, uninstallation, reinstallation and updates.</p>
 <h2 id="next-steps">Next Steps?</h2>
 <ol>
-<li><a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server">Install Web Application Server</a></li>
+<li><a href=" /docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server">Install Web Application Server</a></li>
 </ol>
 
 	

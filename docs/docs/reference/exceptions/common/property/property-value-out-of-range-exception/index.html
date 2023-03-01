@@ -119,7 +119,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -151,7 +151,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce72d94bbc396dd85f2bd752edee2d9b.json"
+  data-offline-search-index-json-src="/offline-search-index.e66501a726b5d807e9ddc1ba110441ee.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="50"
 >
@@ -8629,6 +8629,39 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/exceptions/collections/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Collections</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreferenceexceptionscollections">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionscollectionsoccurrence-not-present-exception" href="/docs/reference/exceptions/collections/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/reference/exceptions/common/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Common</a>
   </li>
   <ul>
@@ -8840,14 +8873,6 @@
         
       
       
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsdictionariesoccurrence-not-present-exception" href="/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/">OccurrenceNotPresentException</a>
-        
-      
-      
     </li>
   </ul>
 </ul>
@@ -8934,14 +8959,6 @@
   </ul>
 </ul>
 
-        
-      
-      
-      
-        
-          
-          
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflow-exception" href="/docs/reference/exceptions/flow-exception/">FlowException</a>
         
       
       
@@ -9042,6 +9059,14 @@
   </ul>
 </ul>
 
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceexceptionsflowsflow-exception" href="/docs/reference/exceptions/flows/flow-exception/">FlowException</a>
         
       
       
@@ -10006,7 +10031,7 @@
 	<h1 id="hahahugoshortcode-s0-hbhb">PropertyValueOutOfRangeException</h1>
 <p class="namespace">(Cortex.Exceptions.Common.Property.PropertyValueOutOfRangeException)</p>
 <h2 id="description">Description</h2>
-<p>The exception thrown when a <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> is provided with a value that falls outside its accepted range.</p>
+<p>The exception thrown when a <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> is provided with a value that falls outside its accepted range.</p>
 <p>There are multiple reasons that this exception can be thrown:</p>
 <ul>
 <li><a href="#property-is-empty">Property Is Empty</a></li>
@@ -10018,7 +10043,7 @@
 </ul>
 <h2 id="reasons">Reasons</h2>
 <h3 id="property-is-empty">Property Is Empty</h3>
-<p>An operation such as getting, setting or removing one or more items from an empty collection <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> was performed.</p>
+<p>An operation such as getting, setting or removing one or more items from an empty collection <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> was performed.</p>
 <h4 id="message-format">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;Invalid &#39;&lt;property-name&gt;&#39; provided.
@@ -10027,13 +10052,13 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><p>where:</p>
 <ul>
-<li><code>&lt;collection-property-name&gt;</code> is the name of the empty collection <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>.</li>
-<li><code>&lt;property-name&gt;</code> is the name of another <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> used to perform the get, set or remove operation (e.g. <code>index</code>, <code>indexes</code>, <code>count</code> etc.).</li>
+<li><code>&lt;collection-property-name&gt;</code> is the name of the empty collection <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>.</li>
+<li><code>&lt;property-name&gt;</code> is the name of another <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> used to perform the get, set or remove operation (e.g. <code>index</code>, <code>indexes</code>, <code>count</code> etc.).</li>
 </ul>
 <h4 id="how-to-fix">How to fix</h4>
-<p>Provide a non-empty collection <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>.</p>
+<p>Provide a non-empty collection <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>.</p>
 <h3 id="property-is-empty-or-null">Property Is Empty Or <code>null</code></h3>
-<p>An operation such as adding, getting or removing text from a <code>null</code> or empty (i.e. <code>&quot;&quot;</code>) text <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> was performed.</p>
+<p>An operation such as adding, getting or removing text from a <code>null</code> or empty (i.e. <code>&quot;&quot;</code>) text <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> was performed.</p>
 <h4 id="message-format-1">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;Invalid &#39;&lt;property-name&gt;&#39; provided.
@@ -10041,12 +10066,12 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><p>where:</p>
 <ul>
-<li><code>&lt;property-name&gt;</code> is the name of the <code>null</code> or empty (i.e. <code>&quot;&quot;</code>) text <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>.</li>
+<li><code>&lt;property-name&gt;</code> is the name of the <code>null</code> or empty (i.e. <code>&quot;&quot;</code>) text <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>.</li>
 </ul>
 <h4 id="how-to-fix-1">How to fix</h4>
-<p>Provide a non-<code>null</code> or non-empty text <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>.</p>
+<p>Provide a non-<code>null</code> or non-empty text <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>.</p>
 <h3 id="property-is-invalid">Property Is Invalid</h3>
-<p>A <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> was set to an invalid value.</p>
+<p>A <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> was set to an invalid value.</p>
 <h4 id="message-format-2">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> can be one of the following:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;&#39;&lt;property-name&gt;&#39; given was &lt;invalid-value&gt;; it must be a value between &lt;minimum-allowed-value&gt; and &lt;maximum-allowed-value&gt;.
@@ -10065,73 +10090,73 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><p>where:</p>
 <ul>
-<li><code>&lt;property-name&gt;</code> is the name of the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> with the invalid value (e.g. <code>Length</code>, <code>Count</code>, <code>Index</code>).</li>
-<li><code>&lt;invalid-value&gt;</code> is the invalid value of the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> (e.g. <code>100</code> for non-collection values or <code>100, 200</code> for collection values).</li>
+<li><code>&lt;property-name&gt;</code> is the name of the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> with the invalid value (e.g. <code>Length</code>, <code>Count</code>, <code>Index</code>).</li>
+<li><code>&lt;invalid-value&gt;</code> is the invalid value of the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> (e.g. <code>100</code> for non-collection values or <code>100, 200</code> for collection values).</li>
 <li><code>&lt;minimum-allowed-value&gt;</code> is the minimum value allowed (e.g. <code>0</code>).</li>
 <li><code>&lt;maximum-allowed-value&gt;</code> is the maximum value allowed (e.g. <code>9</code>).</li>
 <li><code>&lt;calculation-of-maximum-allowed-value&gt;</code> is how the maximum allowed value is calculated (e.g. <code>'Text.Length' - 1</code>).</li>
-<li><code>&lt;related-property-name&gt;</code> is the name of a related <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> relevant to the exception (e.g. <code>Index</code>).</li>
-<li><code>&lt;related-property-value&gt;</code> is the value of a related <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> relevant to the exception (e.g. <code>1</code>).</li>
+<li><code>&lt;related-property-name&gt;</code> is the name of a related <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> relevant to the exception (e.g. <code>Index</code>).</li>
+<li><code>&lt;related-property-value&gt;</code> is the value of a related <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> relevant to the exception (e.g. <code>1</code>).</li>
 </ul>
 <h4 id="how-to-fix-2">How to fix</h4>
-<p>Provide a valid value for the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> as instructed by the <a href="#message">Message</a>.</p>
+<p>Provide a valid value for the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> as instructed by the <a href="#message">Message</a>.</p>
 <h3 id="property-is-negative">Property Is Negative</h3>
-<p>A <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> was set to a negative <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> when a positive <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was required.</p>
+<p>A <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> was set to a negative <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> when a positive <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was required.</p>
 <h4 id="message-format-3">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The provided &#39;TimePeriod&#39; (&lt;time-period-value-as-text&gt;) equates to &lt;time-period-value-as-milliseconds&gt; milliseconds which is invalid; it must be a non-negative value.
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><p>where:</p>
 <ul>
-<li><code>&lt;time-period-value-as-text&gt;</code> is the <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value in its text representation (e.g. <code>0.0.0.0:0:0:-10</code>).</li>
-<li><code>&lt;time-period-value-as-milliseconds&gt;</code> is the <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value represented as total milliseconds (e.g. <code>-10</code>).</li>
+<li><code>&lt;time-period-value-as-text&gt;</code> is the <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value in its text representation (e.g. <code>0.0.0.0:0:0:-10</code>).</li>
+<li><code>&lt;time-period-value-as-milliseconds&gt;</code> is the <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value represented as total milliseconds (e.g. <code>-10</code>).</li>
 </ul>
 <h4 id="how-to-fix-3">How to fix</h4>
-<p>Provide a valid non-negative <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value for the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> as instructed by the <a href="#message">Message</a>.</p>
+<p>Provide a valid non-negative <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value for the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> as instructed by the <a href="#message">Message</a>.</p>
 <h3 id="property-greater-than-maximum-value">Property Greater Than Maximum Value</h3>
-<p>A positive <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was added to the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> or a negative <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was subtracted from the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>, and the result is greater than the allowed maximum value of the <a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> data type.</p>
+<p>A positive <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was added to the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> or a negative <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was subtracted from the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>, and the result is greater than the allowed maximum value of the <a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> data type.</p>
 <h4 id="message-format-4">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> can be one of the following:</p>
 <ul>
-<li>If a positive <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was added</li>
+<li>If a positive <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was added</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The provided &#39;DateTimeOffset&#39; (&lt;value-of-date-time-offset-property&gt;) with the addition of the given &#39;TimePeriod&#39; (&lt;value-of-time-period-property&gt;) is greater than the maximum of a DateTimeOffset (&lt;maximum-value-of-date-time-offset&gt;).
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><ul>
-<li>If a negative <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value was subtracted</li>
+<li>If a negative <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value was subtracted</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The provided &#39;DateTimeOffset&#39; (&lt;value-of-date-time-offset-property&gt;) with the subtraction of the given &#39;TimePeriod&#39; (&lt;value-of-time-period-property&gt;) is greater than the maximum of a DateTimeOffset (&lt;maximum-value-of-date-time-offset&gt;).
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><p>where:</p>
 <ul>
-<li><code>&lt;value-of-date-time-property&gt;</code> is the value of the <a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> in <a href="/docs/reference/concepts/working-with/date-and-time/date-and-time-formatting/#iso-8601-standard">ISO 8601 format</a> (i.e. <code>2022-07-01T14:00:00.0000000+01:00</code>).</li>
-<li><code>&lt;value-of-time-period-property&gt;</code> is the value of the <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> in text format (i.e. <code>9999.0.0.0:0:0:0</code>).</li>
-<li><code>&lt;maximum-value-of-date-time-offset&gt;</code> is the maximum value of a <a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> (i.e. <code>9999-12-31T23:59:59.9999999+00:00</code>).</li>
+<li><code>&lt;value-of-date-time-property&gt;</code> is the value of the <a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> in <a href=" /docs/reference/concepts/working-with/date-and-time/date-and-time-formatting/#iso-8601-standard">ISO 8601 format</a> (i.e. <code>2022-07-01T14:00:00.0000000+01:00</code>).</li>
+<li><code>&lt;value-of-time-period-property&gt;</code> is the value of the <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> in text format (i.e. <code>9999.0.0.0:0:0:0</code>).</li>
+<li><code>&lt;maximum-value-of-date-time-offset&gt;</code> is the maximum value of a <a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> (i.e. <code>9999-12-31T23:59:59.9999999+00:00</code>).</li>
 </ul>
 <h4 id="how-to-fix-4">How to fix</h4>
-<p>Provide a <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value that when added to or subtracted from the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> results in the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> being less than the allowed maximum value of the <a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> data type.</p>
+<p>Provide a <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value that when added to or subtracted from the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> results in the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> being less than the allowed maximum value of the <a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> data type.</p>
 <h3 id="property-less-than-minimum-value">Property Less Than Minimum Value</h3>
-<p>A positive <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was subtracted from the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> or a negative <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was added to the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>, and the result was less than the allowed minimum value of the <a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> data type.</p>
+<p>A positive <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was subtracted from the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> or a negative <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was added to the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a>, and the result was less than the allowed minimum value of the <a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> data type.</p>
 <h4 id="message-format-5">Message Format</h4>
 <p>The format of the <a href="#message">Message</a> can be one of the following:</p>
 <ul>
-<li>If a positive <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was subtracted</li>
+<li>If a positive <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> was subtracted</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The provided &#39;DateTimeOffset&#39; (&lt;value-of-date-time-offset-property&gt;) with the subtraction of the given &#39;TimePeriod&#39; (&lt;value-of-time-period-property&gt;) is less than the minimum of a DateTimeOffset (&lt;minimum-value-of-date-time-offset&gt;).
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><ul>
-<li>If a negative <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value was added</li>
+<li>If a negative <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value was added</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;The provided &#39;DateTimeOffset&#39; (&lt;value-of-date-time-offset-property&gt;) with the addition of the given &#39;TimePeriod&#39; (&lt;value-of-time-period-property&gt;) is less than the minimum of a DateTimeOffset (&lt;minimum-value-of-date-time-offset&gt;).
 </span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">Please click the HelpLink for more information on how to fix this.&#34;</span>
 </span></span></code></pre></div><p>where:</p>
 <ul>
-<li><code>&lt;value-of-date-time-property&gt;</code> is the value of the <a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> in <a href="/docs/reference/concepts/working-with/date-and-time/date-and-time-formatting/#iso-8601-standard">ISO 8601 format</a> (i.e. <code>2022-07-01T14:00:00.0000000+01:00</code>).</li>
-<li><code>&lt;value-of-time-period-property&gt;</code> is the value of the <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> in text format (i.e. <code>-9999.0.0.0:0:0:0</code>).</li>
-<li><code>&lt;minimum-value-of-date-time-offset&gt;</code> is the minimum value of a <a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> (i.e. <code>0001-01-01T00:00:00.0000000+00:00</code>).</li>
+<li><code>&lt;value-of-date-time-property&gt;</code> is the value of the <a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> in <a href=" /docs/reference/concepts/working-with/date-and-time/date-and-time-formatting/#iso-8601-standard">ISO 8601 format</a> (i.e. <code>2022-07-01T14:00:00.0000000+01:00</code>).</li>
+<li><code>&lt;value-of-time-period-property&gt;</code> is the value of the <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> in text format (i.e. <code>-9999.0.0.0:0:0:0</code>).</li>
+<li><code>&lt;minimum-value-of-date-time-offset&gt;</code> is the minimum value of a <a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> (i.e. <code>0001-01-01T00:00:00.0000000+00:00</code>).</li>
 </ul>
 <h4 id="how-to-fix-5">How to fix</h4>
-<p>Provide a <a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value that when added to or subtracted from the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> results in the <a href="/docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> being greater than the allowed minimum value of the <a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> data type.</p>
+<p>Provide a <a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a> value that when added to or subtracted from the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> results in the <a href=" /docs/reference/concepts/fundamentals/blocks/block-properties/what-is-a-block-property/">property</a> being greater than the allowed minimum value of the <a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a> data type.</p>
 <h2 id="properties">Properties</h2>
 <h3 id="exception-type">Exception Type</h3>
 <p>The type of the exception (i.e. <code>PropertyValueOutOfRangeException</code>).</p>
@@ -10145,7 +10170,7 @@
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
@@ -10161,7 +10186,7 @@
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
@@ -10177,7 +10202,7 @@
 <tbody>
 <tr>
 <td>Data Type</td>
-<td><a href="/docs/reference/data-types/text/string">String</a></td>
+<td><a href=" /docs/reference/data-types/text/string">String</a></td>
 </tr>
 </tbody>
 </table>
@@ -10189,69 +10214,69 @@
 <ul>
 <li>Date &amp; Time
 <ul>
-<li><a href="/docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a></li>
-<li><a href="/docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a></li>
+<li><a href=" /docs/reference/data-types/date-and-time/datetimeoffset">DateTimeOffset</a></li>
+<li><a href=" /docs/reference/data-types/date-and-time/timeperiod">TimePeriod</a></li>
 </ul>
 </li>
 <li>Text
 <ul>
-<li><a href="/docs/reference/data-types/text/string">String</a></li>
+<li><a href=" /docs/reference/data-types/text/string">String</a></li>
 </ul>
 </li>
 </ul>
 <h3 id="related-concepts">Related Concepts</h3>
 <ul>
-<li><a href="/docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
-<li><a href="/docs/reference/concepts/working-with/collections/">Working with Collections</a></li>
-<li><a href="/docs/reference/concepts/working-with/date-and-time/">Working with Date and Time</a></li>
-<li><a href="/docs/reference/concepts/working-with/text/">Working with Text</a></li>
+<li><a href=" /docs/reference/concepts/fundamentals/exceptions/">Exceptions</a></li>
+<li><a href=" /docs/reference/concepts/working-with/collections/">Working with Collections</a></li>
+<li><a href=" /docs/reference/concepts/working-with/date-and-time/">Working with Date and Time</a></li>
+<li><a href=" /docs/reference/concepts/working-with/text/">Working with Text</a></li>
 </ul>
 <h3 id="related-blocks">Related Blocks</h3>
 <ul>
 <li>Date &amp; Time
 <ul>
-<li><a href="/docs/reference/blocks/date-and-time/add-time-period/add-time-period-block">Add Time Period</a></li>
-<li><a href="/docs/reference/blocks/date-and-time/subtract-time-period/subtract-time-period-block">Subtract Time Period</a></li>
+<li><a href=" /docs/reference/blocks/date-and-time/add-time-period/add-time-period-block">Add Time Period</a></li>
+<li><a href=" /docs/reference/blocks/date-and-time/subtract-time-period/subtract-time-period-block">Subtract Time Period</a></li>
 </ul>
 </li>
 <li>Lists
 <ul>
-<li><a href="/docs/reference/blocks/lists/add-item/add-item-at-index-block-2">Add Item At Index</a></li>
-<li><a href="/docs/reference/blocks/lists/add-item/add-items-at-index-block-2">Add Items At Index</a></li>
-<li><a href="/docs/reference/blocks/lists/get-item/get-item-at-index-block-2">Get Item At Index</a></li>
-<li><a href="/docs/reference/blocks/lists/get-item/get-items-at-beginning-block-2">Get Items At Beginning</a></li>
-<li><a href="/docs/reference/blocks/lists/get-item/get-items-at-end-block-2">Get Items At End</a></li>
-<li><a href="/docs/reference/blocks/lists/get-item/get-items-at-index-block-2">Get Items At Index</a></li>
-<li><a href="/docs/reference/blocks/lists/get-item/get-items-at-indexes-block-2">Get Items At Indexes</a></li>
-<li><a href="/docs/reference/blocks/lists/remove-item/remove-item-at-index-block-2">Remove Item At Index</a></li>
-<li><a href="/docs/reference/blocks/lists/remove-item/remove-items-at-beginning-block-2">Remove Items At Beginning</a></li>
-<li><a href="/docs/reference/blocks/lists/remove-item/remove-items-at-end-block-2">Remove Items At End</a></li>
-<li><a href="/docs/reference/blocks/lists/remove-item/remove-items-at-index-block-2">Remove Items At Index</a></li>
-<li><a href="/docs/reference/blocks/lists/remove-item/remove-items-at-indexes-block-2">Remove Items At Indexes</a></li>
-<li><a href="/docs/reference/blocks/lists/set-item/set-item-at-index-block-2">Set Item At Index</a></li>
-<li><a href="/docs/reference/blocks/lists/set-item/set-items-at-index-block-2">Set Items At Index</a></li>
-<li><a href="/docs/reference/blocks/lists/set-item/set-items-at-indexes-block-2">Set Items At Indexes</a></li>
+<li><a href=" /docs/reference/blocks/lists/add-item/add-item-at-index-block-2">Add Item At Index</a></li>
+<li><a href=" /docs/reference/blocks/lists/add-item/add-items-at-index-block-2">Add Items At Index</a></li>
+<li><a href=" /docs/reference/blocks/lists/get-item/get-item-at-index-block-2">Get Item At Index</a></li>
+<li><a href=" /docs/reference/blocks/lists/get-item/get-items-at-beginning-block-2">Get Items At Beginning</a></li>
+<li><a href=" /docs/reference/blocks/lists/get-item/get-items-at-end-block-2">Get Items At End</a></li>
+<li><a href=" /docs/reference/blocks/lists/get-item/get-items-at-index-block-2">Get Items At Index</a></li>
+<li><a href=" /docs/reference/blocks/lists/get-item/get-items-at-indexes-block-2">Get Items At Indexes</a></li>
+<li><a href=" /docs/reference/blocks/lists/remove-item/remove-item-at-index-block-2">Remove Item At Index</a></li>
+<li><a href=" /docs/reference/blocks/lists/remove-item/remove-items-at-beginning-block-2">Remove Items At Beginning</a></li>
+<li><a href=" /docs/reference/blocks/lists/remove-item/remove-items-at-end-block-2">Remove Items At End</a></li>
+<li><a href=" /docs/reference/blocks/lists/remove-item/remove-items-at-index-block-2">Remove Items At Index</a></li>
+<li><a href=" /docs/reference/blocks/lists/remove-item/remove-items-at-indexes-block-2">Remove Items At Indexes</a></li>
+<li><a href=" /docs/reference/blocks/lists/set-item/set-item-at-index-block-2">Set Item At Index</a></li>
+<li><a href=" /docs/reference/blocks/lists/set-item/set-items-at-index-block-2">Set Items At Index</a></li>
+<li><a href=" /docs/reference/blocks/lists/set-item/set-items-at-indexes-block-2">Set Items At Indexes</a></li>
 </ul>
 </li>
 <li>Schedules
 <ul>
-<li><a href="/docs/reference/blocks/schedules/wait-for/wait-for-duration-block/">Wait For Duration</a></li>
+<li><a href=" /docs/reference/blocks/schedules/wait-for/wait-for-duration-block/">Wait For Duration</a></li>
 </ul>
 </li>
 <li>Text
 <ul>
-<li><a href="/docs/reference/blocks/text/add-text/add-text-after-index-block/">Add Text After Index</a></li>
-<li><a href="/docs/reference/blocks/text/add-text/add-text-before-index-block/">Add Text Before Index</a></li>
-<li><a href="/docs/reference/blocks/text/get-text/get-text-at-beginning-block/">Get Text At Beginning</a></li>
-<li><a href="/docs/reference/blocks/text/get-text/get-text-at-end-block/">Get Text At End</a></li>
-<li><a href="/docs/reference/blocks/text/get-text/get-text-at-index-block/">Get Text At Index</a></li>
-<li><a href="/docs/reference/blocks/text/get-text/get-text-before-index-block/">Get Text Before Index</a></li>
-<li><a href="/docs/reference/blocks/text/get-text/get-text-between-indexes-block/">Get Text Between Indexes</a></li>
-<li><a href="/docs/reference/blocks/text/remove-text/remove-text-at-beginning-block/">Remove Text At Beginning</a></li>
-<li><a href="/docs/reference/blocks/text/remove-text/remove-text-at-end-block/">Remove Text At End</a></li>
-<li><a href="/docs/reference/blocks/text/remove-text/remove-text-at-index-block/">Remove Text At Index</a></li>
-<li><a href="/docs/reference/blocks/text/remove-text/remove-text-before-index-block/">Remove Text Before Index</a></li>
-<li><a href="/docs/reference/blocks/text/remove-text/remove-text-between-indexes-block/">Remove Text Between Indexes</a></li>
+<li><a href=" /docs/reference/blocks/text/add-text/add-text-after-index-block/">Add Text After Index</a></li>
+<li><a href=" /docs/reference/blocks/text/add-text/add-text-before-index-block/">Add Text Before Index</a></li>
+<li><a href=" /docs/reference/blocks/text/get-text/get-text-at-beginning-block/">Get Text At Beginning</a></li>
+<li><a href=" /docs/reference/blocks/text/get-text/get-text-at-end-block/">Get Text At End</a></li>
+<li><a href=" /docs/reference/blocks/text/get-text/get-text-at-index-block/">Get Text At Index</a></li>
+<li><a href=" /docs/reference/blocks/text/get-text/get-text-before-index-block/">Get Text Before Index</a></li>
+<li><a href=" /docs/reference/blocks/text/get-text/get-text-between-indexes-block/">Get Text Between Indexes</a></li>
+<li><a href=" /docs/reference/blocks/text/remove-text/remove-text-at-beginning-block/">Remove Text At Beginning</a></li>
+<li><a href=" /docs/reference/blocks/text/remove-text/remove-text-at-end-block/">Remove Text At End</a></li>
+<li><a href=" /docs/reference/blocks/text/remove-text/remove-text-at-index-block/">Remove Text At Index</a></li>
+<li><a href=" /docs/reference/blocks/text/remove-text/remove-text-before-index-block/">Remove Text Before Index</a></li>
+<li><a href=" /docs/reference/blocks/text/remove-text/remove-text-between-indexes-block/">Remove Text Between Indexes</a></li>
 </ul>
 </li>
 </ul>
