@@ -192,7 +192,7 @@ To overcome this, this block creates a new [String][] which has the [Text][Text 
 
 ### Known Limitations
 
-When decoding using the [HTML] [Format][Format Property], any HTML5 [named entities][HTMLEntity] (e.g. `"&phi;"`) will be removed.
+When decoding using the [HTML] [Format][Format Property], any HTML5 named [entities][HTMLEntity] (e.g. `"&phi;"`) will be removed.
 
 This limitation may be removed in the future.
 
