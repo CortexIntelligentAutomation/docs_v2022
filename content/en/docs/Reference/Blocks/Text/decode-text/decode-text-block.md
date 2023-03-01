@@ -37,6 +37,27 @@ Decoding `"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="` with t
 
 ***
 
+### Text decoded from URL
+
+This example will decode the [URL][] encoded text `"The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog%21"` to `"The quick brown fox jumps over the lazy dog!"`.
+
+#### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Text][Text Property] | `($)Text`, with value `"The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog%21"` | `($)Text` is a variable of type [String][] |
+| [Format][Format Property] | `($)Format`, with value `"TextEncodingFormat.URL"` | `($)Format` is a variable of type [TextEncodingFormat][]
+
+#### Result
+
+Decoding `"The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog%21"` with the [Format][Format Property] [URL] will result in the variable `($)Text` being updated to the following:
+
+```json
+"The quick brown fox jumps over the lazy dog!"
+```
+
+***
+
 ### Text decoded from Hex
 
 This example will decode the [Hex][] encoded text `"54686520717569636B2062726F776E20666F78206A756D7073206F76657220746865206C617A7920646F67"` to `"The quick brown fox jumps over the lazy dog"`.
@@ -131,6 +152,10 @@ The exceptions thrown by the block can be found below:
 
 If [Text][Text Property] is `null` or empty (i.e. `""`) there is nothing to decode, so no operation is performed.
 
+### Decoding out of range URL characters
+
+When decoding using the [URL][] [Format][Format Property], characters not in the valid range (i.e.`%00` to `%ff`) will be treated as literal characters (e.g. `"%zzExample%21"` will decode to `"%zzExample!"`).
+
 ### Decoding invalid Hex values
 
 When decoding using the [Hex] [Format][Format Property], characters not in the valid set (i.e. `0-9` and `A-F`) will overflow (e.g. `G` overflows to `0`), further examples are shown below:
@@ -142,10 +167,6 @@ When decoding using the [Hex] [Format][Format Property], characters not in the v
 | J1           | 31           | 1            |
 | K1           | 41           | A            |
 | L1           | 51           | Q            |
-
-### Decoding out of range URL characters
-
-When decoding using the [URL][] [Format][Format Property], characters not in the valid range (i.e.`%00` to `%ff`) will be treated as literal characters (e.g. `"%zzExample%21"` will decode to `"%zzExample!"`).
 
 ### Decoding invalid HTML entities
 
@@ -162,6 +183,12 @@ When decoding using the [HTML] [Format][Format Property], any semicolon that is 
 ### Round-Tripping
 
 It should be possible to pass the text created by an [Encode Text block][Encode Text] to this block, and then pass the text created by this block back to an [Encode Text block][Encode Text]; this is called round-tripping.
+
+### Immutable String data type
+
+The [String][] data type used to represent [Text][Text Property] is immutable, which means it is read-only and cannot be changed once created.
+
+To overcome this, this block creates a new [String][] which has the [Text][Text Property] converted to camel case and re-assigns it to the variable specified in the [Text][Text Property] property.
 
 ### Known Limitations
 

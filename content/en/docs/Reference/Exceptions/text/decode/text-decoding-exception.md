@@ -6,7 +6,7 @@ description: "The exception thrown when an error occur while decoding text."
 
 # {{% param title %}}
 
-<p class="namespace">(Cortex.Exceptions.Text.Encode.TextDecodingException)</p>
+<p class="namespace">(Cortex.Exceptions.Text.Decode.TextDecodingException)</p>
 
 ## Description
 
@@ -31,7 +31,7 @@ Please click the HelpLink for more information on how to fix this."
 
 #### How to fix
 
-Provide a [String][] containing only valid characters e.g. `A–Z` , `a–z` , `0–9` , `+` , `/` and `=`. 
+Provide a [String][] containing only valid characters (e.g. `A–Z`, `a–z`, `0–9`, `+`, `/` and `=`). 
 
 ### Odd number of characters using Hex {#300}
 
@@ -57,7 +57,7 @@ Please click the HelpLink for more information on how to fix this."
 
 #### How to fix
 
-Provide a [String][] containing only valid characters e.g. `A–Z` , `a–z` , `0–9` , `+` , `/` and `=`.
+Provide a [String][] containing only valid characters (e.g. `A–Z`, `a–z`, `0–9`, `+`, `/` and `=`).
 
 ## Properties
 
