@@ -37,7 +37,7 @@ The `TextDecodingErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | Base64InvalidCharacter                                     |
 | **Value:**   | [Int32][] with value `100`                      |
-| **Notes:**   | Used when a [TextDecodingException][] occured due to the provided text containing one or more invalid characters. See [Invalid Base64 character][InvalidBase64]. |
+| **Notes:**   | Used when a [TextDecodingException][] occurred due to the provided text containing one or more invalid characters. See [Invalid Base64 character][InvalidBase64]. |
 
 ### HexOddNumberOfCharacters
 
@@ -45,7 +45,7 @@ The `TextDecodingErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | HexOddNumberOfCharacters                                     |
 | **Value:**   | [Int32][] with value `300`                      |
-| **Notes:**   | Used when a [TextDecodingException][] occured due to the provided text containing an odd number of characters. See [Odd number of characters using Hex][InvalidHex]. |
+| **Notes:**   | Used when a [TextDecodingException][] occurred due to the provided text containing an odd number of characters. See [Odd number of characters using Hex][InvalidHex]. |
 
 ### Base64URLInvalidCharacter
 
@@ -53,7 +53,7 @@ The `TextDecodingErrorCode` data type is used to represent an error code explain
 |-|-|
 | **Name:**    | Base64URLInvalidCharacter                                    |
 | **Value:**   | [Int32][] with value `600`                      |
-| **Notes:**   | Used when a [TextDecodingException][] occured due to the provided text containing one or more invalid characters. See [Invalid Base64URL character][InvalidBase64URL]. |
+| **Notes:**   | Used when a [TextDecodingException][] occurred due to the provided text containing one or more invalid characters. See [Invalid Base64URL character][InvalidBase64URL]. |
 
 ## Remarks
 
@@ -63,12 +63,12 @@ The following table shows some of the ways that `TextDecodingErrorCode` can be c
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use an `TextDecodingErrorCode` expression | `TextDecodingErrorCode.Base64InvalidCharacter` | `TextDecodingErrorCode.Base64InvalidCharacter`| Expression | Indicates a [TextDecodingException][] occured due to the provided text containing one or more invalid characters for [Base64][] decoding. |
-| | `TextDecodingErrorCode.HexOddNumberOfCharacters` | `TextDecodingErrorCode.HexOddNumberOfCharacters`| Expression | Indicates a [TextDecodingException][] occured due to the provided text containing an odd number of for [Hex][] decoding. |
-| | `TextDecodingErrorCode.Base64URLInvalidCharacter` | `TextDecodingErrorCode.Base64URLInvalidCharacter`| Expression | Indicates a [TextDecodingException][] occured due to the provided text containing one or more invalid characters for [Base64URL][] decoding. |
-| Use [Explicit Casting][] | `(TextDecodingErrorCode)100` | `TextDecodingErrorCode.Base64InvalidCharacter`| Expression | Indicates a [TextDecodingException][] occured due to the provided text containing one or more invalid characters for [Base64][] decoding. |
-| | `(TextDecodingErrorCode)300` | `TextDecodingErrorCode.HexOddNumberOfCharacters`| Expression | Indicates a [TextDecodingException][] occured due to the provided text containing an odd number of for [Hex][] decoding. |
-| | `(TextDecodingErrorCode)600` | `TextDecodingErrorCode.Base64URLInvalidCharacter`| Expression | Indicates a [TextDecodingException][] occured due to the provided text containing one or more invalid characters for [Base64URL][] decoding. |
+| Use a `TextDecodingErrorCode` expression | `TextDecodingErrorCode.Base64InvalidCharacter` | `TextDecodingErrorCode.Base64InvalidCharacter`| Expression | Indicates a [TextDecodingException][] occurred due to the text provided containing one or more characters that are invalid in [Base64][] encoded text. |
+| | `TextDecodingErrorCode.HexOddNumberOfCharacters` | `TextDecodingErrorCode.HexOddNumberOfCharacters`| Expression | Indicates a [TextDecodingException][] occurred due to the text provided containing an odd number of characters which is invalid for [Hex][] encoded text. |
+| | `TextDecodingErrorCode.Base64URLInvalidCharacter` | `TextDecodingErrorCode.Base64URLInvalidCharacter`| Expression | Indicates a [TextDecodingException][] occurred due to the text provided containing one or more characters that are invalid in [Base64URL][] encoded text. |
+| Use [Explicit Casting][] | `(TextDecodingErrorCode)100` | `TextDecodingErrorCode.Base64InvalidCharacter`| Expression | Indicates a [TextDecodingException][] occurred due to the text provided containing one or more characters that are invalid in [Base64][] encoded text. |
+| | `(TextDecodingErrorCode)300` | `TextDecodingErrorCode.HexOddNumberOfCharacters`| Expression | Indicates a [TextDecodingException][] occurred due to the text provided containing an odd number of characters which is invalid for [Hex][] encoded text. |
+| | `(TextDecodingErrorCode)600` | `TextDecodingErrorCode.Base64URLInvalidCharacter`| Expression | Indicates a [TextDecodingException][] occurred due to the text provided containing one or more characters that are invalid in [Base64URL][] encoded text. |
 | Use `Enum.Parse` | `(TextDecodingErrorCode)Enum.Parse(typeof(TextDecodingErrorCode), "Base64InvalidCharacter")` | `TextDecodingErrorCode.Base64InvalidCharacter`| Expression | Parses `"Base64InvalidCharacter"` and converts it to `TextDecodingErrorCode.Base64InvalidCharacter`. See [Enum.Parse][] |
 | | `(TextDecodingErrorCode)Enum.Parse(typeof(TextDecodingErrorCode), "HexOddNumberOfCharacters")` | `TextDecodingErrorCode.HexOddNumberOfCharacters`| Expression | Parses `"HexOddNumberOfCharacters"` and converts it to `TextDecodingErrorCode.HexOddNumberOfCharacters`. See [Enum.Parse][] |
 | | `(TextDecodingErrorCode)Enum.Parse(typeof(TextDecodingErrorCode), "Base64URLInvalidCharacter)` | `TextDecodingErrorCode.Base64URLInvalidCharacter`| Expression | Parses `"Base64URLInvalidCharacter"` and converts it to `TextDecodingErrorCode.Base64URLInvalidCharacer`. See [Enum.Parse][] |
@@ -80,7 +80,7 @@ Please see [Instantiating an enumeration type][] for further information.
 
 ### Convert TextDecodingErrorCode to Text
 
-The following table shows some of the ways that an `TextDecodingErrorCode` can be converted to text.
+The following table shows some of the ways that a `TextDecodingErrorCode` can be converted to text.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|

@@ -87,7 +87,7 @@ This example will encode the [Text][Text Property] `"<p>The quick brown fox jump
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Text][Text Property] | `($)Text`, with value `"The quick brown fox jumps over the lazy dog"` | `($)Text` is a variable of type [String][] |
+| [Text][Text Property] | `($)Text`, with value `"<p>The quick brown fox jumps over the lazy dog!</p>"` | `($)Text` is a variable of type [String][] |
 | [Format][Format Property] | `($)Format`, with value `HTML` | `($)Format` is a variable of type [TextEncodingFormat][] |
 
 #### Result

@@ -83,11 +83,11 @@ The `TextEncodingFormat` data type is used to represent an encoding format that 
 
 ### Creating a TextEncodingFormat
 
-The following table shows some of the ways that `TextEncodingFormat` can be created using the expression editor (examples are for Base64 and Hex but can be applied to any of the values above by replacing the relevant values).
+The following table shows some of the ways that `TextEncodingFormat` can be created.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use an `TextEncodingFormat` expression    | `TextEncodingFormat.Base64` | `TextEncodingFormat.Base64`| Expression | Used when encoding to Base64.|
+| Use a `TextEncodingFormat` expression    | `TextEncodingFormat.Base64` | `TextEncodingFormat.Base64`| Expression | Used when encoding to Base64.|
 |                                           | `TextEncodingFormat.URL` | `TextEncodingFormat.URL`| Expression | Used when encoding to URL. |
 |                                           | `TextEncodingFormat.Hex` | `TextEncodingFormat.Hex`| Expression | Used when encoding to Hex. |
 |                                           | `TextEncodingFormat.HTML` | `TextEncodingFormat.HTML`| Expression | Used when encoding to HTML. |
@@ -166,13 +166,17 @@ The following table shows some of the ways that a `TextEncodingFormat` can be co
 |                           | `Convert.ToInt32(TextEncodingFormat.UTF8)`   | `4` | Expression | Converts `TextEncodingFormat.UTF8` to `4`. See [Convert.ToInt32][] |
 |                           | `Convert.ToInt32(TextEncodingFormat.Base64URL)`   | `5` | Expression | Converts `TextEncodingFormat.Base64URL` to `5`. See [Convert.ToInt32][] |
 
-## See Also
-
 ### Property Editor Support
 
 - The Expression Editor is available for [Input][] properties where the data type is `TextEncodingFormat`.
 - The Literal Editor is available for [Input][] properties where the data type is `TextEncodingFormat`.
 - The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `TextEncodingFormat`.
+
+### Known Limitations
+
+None
+
+## See Also
 
 ### Related Data Types
 
@@ -184,6 +188,10 @@ The following table shows some of the ways that a `TextEncodingFormat` can be co
 - [Explicit Casting][]
 - [Working with Enums][]
 
+### External Documentation
+
+- [System.Enum][]
+
 [Decode Text]: {{< url "Cortex.Reference.Blocks.Text.DecodeText.DecodeText.MainDoc" >}}
 [Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}
 
@@ -191,6 +199,7 @@ The following table shows some of the ways that a `TextEncodingFormat` can be co
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
+[System.Enum]: {{< url "MSDocs.DotNet.Api.System.Enum.MainDoc" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
 [Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
