@@ -86,22 +86,22 @@ The following table shows some of the ways that a `TextDecodingErrorCode` can be
 |-|-|-|-|-|
 | Use `ToString` | `TextDecodingErrorCode.Base64InvalidCharacter.ToString()` | `"Base64InvalidCharacter"` | Expression | Converts `TextDecodingErrorCode.Base64InvalidCharacter` to `"Base64InvalidCharacter"`. See [Enum.ToString][] |
 | | `TextDecodingErrorCode.HexOddNumberOfCharacters.ToString()` | `"HexOddNumberOfCharacters"` | Expression | Converts `TextDecodingErrorCode.HexOddNumberOfCharacters` to `"HexOddNumberOfCharacters"`. See [Enum.ToString][] |
-| | `TextDecodingErrorCode.InvalidBase64URLCharacter.ToString()` | `"InvalidBase64URLCharacter"` | Expression | Converts `TextDecodingErrorCode.InvalidBase64URLCharacter` to `"InvalidBase64URLCharacter"`. See [Enum.ToString][] |
+| | `TextDecodingErrorCode.Base64URLInvalidCharacter.ToString()` | `"Base64URLInvalidCharacter"` | Expression | Converts `TextDecodingErrorCode.Base64URLInvalidCharacter` to `"Base64URLInvalidCharacter"`. See [Enum.ToString][] |
 | Use `Convert.ToString` | `Convert.ToString(TextDecodingErrorCode.Base64InvalidCharacter)` | `"Base64InvalidCharacter"` | Expression | Converts `TextDecodingErrorCode.Base64InvalidCharacter` to `"Base64InvalidCharacter"`. See [Convert.ToString][] |
 | | `Convert.ToString(TextDecodingErrorCode.HexOddNumberOfCharacters)` | `"HexOddNumberOfCharacters"` | Expression | Converts `TextDecodingErrorCode.HexOddNumberOfCharacters` to `"HexOddNumberOfCharacters"`. See [Convert.ToString][] |
-| | `Convert.ToString(TextDecodingErrorCode.InvalidBase64URLCharacter)` | `"InvalidBase64URLCharacter"` | Expression | Converts `TextDecodingErrorCode.InvalidBase64URLCharacter` to `"InvalidBase64URLCharacter"`. See [Convert.ToString][] |
+| | `Convert.ToString(TextDecodingErrorCode.Base64URLInvalidCharacter)` | `"Base64URLInvalidCharacter"` | Expression | Converts `TextDecodingErrorCode.Base64URLInvalidCharacter` to `"Base64URLInvalidCharacter"`. See [Convert.ToString][] |
 | Use `Convert Object To Text` block | where `Object` property has a value of `TextDecodingErrorCode.Base64InvalidCharacter` | `"Base64InvalidCharacter"` | N/A  | Converts `TextDecodingErrorCode.Base64InvalidCharacter` to `"Base64InvalidCharacter"`. See [Convert Object To Text][] |
 | | where `Object` property has a value of `TextDecodingErrorCode.HexOddNumberOfCharacters` | `"HexOddNumberOfCharacters"` | N/A  | Converts `TextDecodingErrorCode.HexOddNumberOfCharacters` to `"HexOddNumberOfCharacters"`. See [Convert Object To Text][] |
-| | where `Object` property has a value of `TextDecodingErrorCode.InvalidBase64URLCharacter` | `"InvalidBase64URLCharacter"` | N/A  | Converts `TextDecodingErrorCode.InvalidBase64URLCharacter` to `"InvalidBase64URLCharacter"`. See [Convert Object To Text][] |
+| | where `Object` property has a value of `TextDecodingErrorCode.Base64URLInvalidCharacter` | `"Base64URLInvalidCharacter"` | N/A  | Converts `TextDecodingErrorCode.Base64URLInvalidCharacter` to `"Base64URLInvalidCharacter"`. See [Convert Object To Text][] |
 | Use `Convert Object To Json` block | where `Object` property has a value of `TextDecodingErrorCode.Base64InvalidCharacter` | `"100"` | N/A  | Converts `TextDecodingErrorCode.Base64InvalidCharacter` to `"100"`. See [Convert Object To Json][] |
 | | where `Object` property has a value of `TextDecodingErrorCode.HexOddNumberOfCharacters` | `"300"` | N/A  | Converts `TextDecodingErrorCode.HexOddNumberOfCharacters` to `"300"`. See [Convert Object To Json][] |
-| | where `Object` property has a value of `TextDecodingErrorCode.InvalidBase64URLCharacter` | `"600"` | N/A  | Converts `TextDecodingErrorCode.InvalidBase64URLCharacter` to `"600"`. See [Convert Object To Json][] |
+| | where `Object` property has a value of `TextDecodingErrorCode.Base64URLInvalidCharacter` | `"600"` | N/A  | Converts `TextDecodingErrorCode.Base64URLInvalidCharacter` to `"600"`. See [Convert Object To Json][] |
 
 Please see [Formatting enumeration values][] for further information.
 
 ### Convert TextDecodingErrorCode to a Number
 
-The following table shows some of the ways that an `TextDecodingErrorCode` can be converted to a number.
+The following table shows some of the ways that a `TextDecodingErrorCode` can be converted to a number.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
