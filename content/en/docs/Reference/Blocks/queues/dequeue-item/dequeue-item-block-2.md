@@ -18,24 +18,24 @@ Dequeues the [Item][Item Property] with the minimal priority from the queue.
 
 ### Dequeue from a Queue which contains items
 
-This example will dequeue from [QueueWithPriority][]&lt;[String][], [Int32][]&gt; which contains `"Element -1"` with a priority of `-1` and `"Element 1"` with a priority of `1` and returns the element with the lowest priority.
+This example will dequeue the item with minimal priority from a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; containing the items `[{"Item": "Element -1", "Priority": -1}, {"Item": "Element 1", "Priority": 1}]`.
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": "Element -1", "Priority": -1}, {"Item": "Element 1", "Priority": 1}], "PriorityComparer": {}}` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
+| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": "Element -1", "Priority": -1}, {"Item": "Element 1", "Priority": 1}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
 | [Item][Item Property] | `($)Item`, with no value | `($)Item` is a variable that will be set to type string |
 
 #### Result
 
-Dequeueing from the [Queue][Queue Property] results in the variable `($)Item` being updated to:
+Dequeueing from the [Queue][Queue Property] results in the variable `($)Item` being updated to the following:
 
 ```json
 "Element -1"
 ```
 
-and `($)Queue` is updated to the value:
+and the variable `($)Queue` being updated to the following:
 
 ```json
 {
@@ -55,19 +55,19 @@ and `($)Queue` is updated to the value:
 
 ### Queue
 
-The [Queue][Queue Property] to peek from.
+The [Queue][Queue Property] to dequeue from.
   
 | | |
 |--------------------|---------------------------|
 | Data Type | [QueueWithPriority][]&lt;[TItem][], [TPriority][]&gt; |
-| Property Type | [Input][] |
+| Property Type | [InputOutput][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Variable][] |
 | Default Value | `($)Queue` with no value |
 
 ### Item
 
-The [Item][Item Property] with minimal priority value.
+The next [Item][Item Property] with minimal priority.
 
 | | |
 |--------------------|---------------------------|
@@ -93,7 +93,7 @@ None
 [Queue Property]: {{< ref "#queue" >}}
 [Item Property]: {{< ref "#item" >}}
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
 [TItem]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
