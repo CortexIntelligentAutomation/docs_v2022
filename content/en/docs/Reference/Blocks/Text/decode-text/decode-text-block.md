@@ -188,7 +188,7 @@ It should be possible to pass the text created by an [Encode Text block][Encode 
 
 The [String][] data type used to represent [Text][Text Property] is immutable, which means it is read-only and cannot be changed once created.
 
-To overcome this, this block creates a new [String][] which has the [Text][Text Property] converted to camel case and re-assigns it to the variable specified in the [Text][Text Property] property.
+To overcome this, this block creates a new [String][] which has the [Text][Text Property] decoded from the specified format and reassigns it to the specified [Text][Text Property] property.
 
 ### Known Limitations
 

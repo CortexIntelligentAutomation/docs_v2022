@@ -1,7 +1,7 @@
 ---
 title: "TextDecodingException"
 linkTitle: "TextDecodingException"
-description: "The exception thrown when an error occur while decoding text."
+description: "The exception thrown when an error occurs while decoding text."
 ---
 
 # {{% param title %}}
@@ -20,7 +20,9 @@ There are multiple reasons that this exception can be thrown:
 
 ## Reasons
 
-### Invalid Base64 Character {#100}
+### Invalid Base64 character {#100}
+
+A [Category][] of `Base64` and an [Error Code][] of `100` indicates that the text provided contains one or more characters that are invalid in [Base64][] encoded text.
 
 #### Message Format
 
@@ -31,9 +33,11 @@ Please click the HelpLink for more information on how to fix this."
 
 #### How to fix
 
-Provide a [String][] containing only valid characters (e.g. `A–Z`, `a–z`, `0–9`, `+`, `/` and `=`). 
+Provide a [String][] containing only valid characters (e.g. `A–Z`, `a–z`, `0–9`, `+`, `/` and `=`).
 
 ### Odd number of characters using Hex {#300}
+
+A [Category][] of `Hex` and an [Error Code][] of `300` indicates that the provided text contains an odd number of characters, which is invalid for [Hex][] encoded text.
 
 #### Message Format
 
@@ -46,7 +50,9 @@ Please click the HelpLink for more information on how to fix this."
 
 Provide a [String][] containing an even number of characters.
 
-### Invalid Base64URL Character {#600}
+### Invalid Base64URL character {#600}
+
+A [Category][] of `Base64URL` and an [Error Code][] of `600` indicates that the text provided contains one or more characters that are invalid in [Base64URL][] encoded text.
 
 #### Message Format
 
@@ -97,9 +103,9 @@ The error code for the exception, which is used to indicate the reason that the 
 
 For `TextEncodingException` there are the following error codes:
 
-- [100][InvalidBase64Character] - Indicates that the provided [String][] to decode contains an invalid character
-- [300][OddHexCharacters] - Indicates that the provided [String][] to decode contains an odd number of characters meaning it is not valid
-- [600][InvalidBase64URLCharacter] - Indicates that the provided [String][] to decode contains an invalid character
+- [100][InvalidBase64Character] - indicates that the Base64 encoded text provided contains one or more invalid characters
+- [300][OddHexCharacters] - indicates that the Hex encoded text provided contains an odd number of characters, which is invalid
+- [600][InvalidBase64URLCharacter] - indicates that the Base64URL encoded text provided contains one or more invalid characters
 
 | | |
 |-----------|---------------------------|
@@ -124,10 +130,12 @@ None
 ### Related Data Types
 
 * [String][]
+* [TextDecodingErrorCode][]
 
 ### Related Concepts
 
 * [Exceptions][]
+* [Working with Text][WorkingWithText]
 
 ### Related Blocks
 
@@ -141,6 +149,16 @@ None
 [InvalidBase64Character]: {{< ref "#100">}}
 [OddHexCharacters]: {{< ref "#300">}}
 [InvalidBase64URLCharacter]: {{< ref "#600">}}
+[Category]: {{< ref "#category">}}
+[Error Code]: {{< ref "#error-code">}}
+
+[HTML]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Html" >}}
+[Base64]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Base64" >}}
+[Hex]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Hex" >}}
+[Base64URL]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.Base64URL" >}}
+[URL]: {{< url "Cortex.Reference.DataTypes.Text.TextEncodingFormat.URL" >}}
+
+[WorkingWithText]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
 
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 
