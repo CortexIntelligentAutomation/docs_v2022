@@ -97,7 +97,9 @@
                     RecommendedArchitecture = "/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/architecture#recommended-architecture"
                     MinimumArchitecture = "/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/architecture#minimum-architecture"
                     AlternativeArchitectures = "/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/architecture#alternative-architectures"
+                    AltLoadBalancer = "/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/prerequisites#alternative-load-balancer-requirements"
                     InstallApplicationAndLoadBalancerServers = "/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/install-application-and-loadbalancer-servers"
+                    InstallWebApplicationServer = "/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/install-web-application-server"
                     ConfigureInstallationScript = "/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/install-application-and-loadbalancer-servers#configure-installation-script"
                     RunInstallationScript = "/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/install-application-and-loadbalancer-servers#run-installation-script"
                     AddInnovationTo72WebApplicationServer = "/docs/getting-started/on-premise/add-innovation-to-72/multiple-server-with-ha/install-web-application-server"
@@ -1406,6 +1408,10 @@
                     MainDoc = "/docs/reference/data-types/text/utf8encoding"
         [Cortex.Reference.Exceptions]
             MainDoc = "/docs/reference/exceptions/"
+            [Cortex.Reference.Exceptions.Collections]
+                MainDoc = "/docs/reference/exceptions/collections/"
+                [Cortex.Reference.Exceptions.Collections.OccurrenceNotPresentException]
+                    MainDoc = "/docs/reference/exceptions/collections/occurrence-not-present-exception/"
             [Cortex.Reference.Exceptions.Common]
                 MainDoc = "/docs/reference/exceptions/common/"
                 [Cortex.Reference.Exceptions.Common.Property]
@@ -1446,8 +1452,6 @@
                         MainDoc = "/docs/reference/exceptions/dictionaries/keys-not-present-exception/"
                     [Cortex.Reference.Exceptions.Dictionaries.KeyPresentException]
                         MainDoc = "/docs/reference/exceptions/dictionaries/key-present-exception/"
-                    [Cortex.Reference.Exceptions.Dictionaries.OccurrenceNotPresentException]
-                        MainDoc = "/docs/reference/exceptions/dictionaries/occurrence-not-present-exception/"
             [Cortex.Reference.Exceptions.Email]
                 MainDoc = "/docs/reference/exceptions/email/"
                     [Cortex.Reference.Exceptions.Email.EmailSessionException]
@@ -1488,8 +1492,8 @@
                         MissingInputVariables = "/docs/reference/exceptions/flows/execution/invalid-input-variables-exception/#missing-input-variables"
                         ExtraInputVariables = "/docs/reference/exceptions/flows/execution/invalid-input-variables-exception/#extra-input-variables"
                         InputVariablesOfAnInvalidType = "/docs/reference/exceptions/flows/execution/invalid-input-variables-exception/#input-variables-of-an-invalid-type"
-            [Cortex.Reference.Exceptions.FlowException]
-                MainDoc = "/docs/reference/exceptions/flow-exception/"
+                [Cortex.Reference.Exceptions.Flows.FlowException]
+                    MainDoc = "/docs/reference/exceptions/flows/flow-exception/"
             [Cortex.Reference.Exceptions.Http]
                 MainDoc = "/docs/reference/exceptions/http/"
                 [Cortex.Reference.Exceptions.Http.HttpAuthorisationException]
@@ -1852,7 +1856,7 @@
             ShortTimeFormat = "https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime"
             LongDateFormat = "https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#LongDate"
             LongTimeFormat = "https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#LongTime"
-            FullDateShortTime = "https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#FullDateShortTime"
+            FullDateShortTimeFormat = "https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#FullDateShortTime"
             FullDateLongTimeFormat = "https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#FullDateLongTime"
             GeneralDateShortTimeFormat = "https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#GeneralDateShortTime"
             GeneralDateLongTimeFormat = "https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#GeneralDateLongTime"
