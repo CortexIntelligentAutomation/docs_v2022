@@ -65,11 +65,7 @@ The Password is used to define the password of the user to authenticate as. This
 
 ## Exceptions
 
-The exceptions thrown by the data type can be found below:
-
-| Name                                 | Description |
-|--------------------------------------|-------------|
-| [UnencryptedTextException][]         |Thrown when the [Password][Password Property] is not encrypted. |
+No exceptions are thrown by this data type.
 
 ## Remarks
 
@@ -161,7 +157,5 @@ None
 
 [EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 [EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
-
-[UnencryptedTextException]: {{< url "Cortex.Reference.Exceptions.Common.UnencryptedTextException.MainDoc" >}}
 
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
