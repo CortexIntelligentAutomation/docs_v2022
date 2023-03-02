@@ -542,7 +542,7 @@ Once the account has been set up to work with OAuth, a [GmailOAuthCertificateCre
 - [FromAddress][] - The address of the account used to set up the client application
 - [ClientId][] - The Client ID of the client application
 
-Note that the values of the [CertificatePath][] and [ClientId][] properties may optionally be encrypted, however the [UnencryptedTextException][] should be encrypted.
+Note that the values of the [CertificatePath][] and [ClientId][] properties may optionally be encrypted, however the [CertificatePassword][] should be encrypted.
 
 For more detailed information on each of these properties, see [GmailOAuthCertificateCredentials][].
 
