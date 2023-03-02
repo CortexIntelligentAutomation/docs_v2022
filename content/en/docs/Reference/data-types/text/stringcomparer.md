@@ -69,8 +69,8 @@ The `StringComparer` data type is used to represent a string comparer.
 
 | | |
 |-|-|
-| **Name:**    | Ordinal                                         |
-| **Value:**   | `StringComparer.Ordinal`                       |
+| **Name:**    | OrdinalIgnoreCase                                         |
+| **Value:**   | `StringComparer.OrdinalIgnoreCase`                       |
 | **Notes:**   | Gets a StringComparer object that performs a case-insensitive ordinal string comparison. |
 
 ## Remarks
@@ -85,7 +85,7 @@ The following table shows some of the ways that `StringComparer` can be created 
 ||  `StringComparer.CurrentCultureIgnoreCase`      | `StringComparer.CurrentCultureIgnoreCase` | Expression | Gets a StringComparer object that performs a case-insensitive string comparison using the current culture.  |
 ||  `StringComparer.InvariantCulture`      | `StringComparer.InvariantCulture` | Expression | Gets a StringComparer object that performs a case-sensitive string comparison using the invariant culture.  |
 ||  `StringComparer.InvariantCultureIgnoreCase`      | `StringComparer.InvariantCultureIgnoreCase` | Expression | Gets a StringComparer object that performs a case-insensitive string comparison using the invariant culture.  |
-||  `StringComparer.Ordinal`      | `StringComparer.Ordinal` | Expression | Gets a StringComparer object that performs a case-sensitive string comparison using the current culture.  |
+||  `StringComparer.Ordinal`      | `StringComparer.Ordinal` | Expression | Gets a StringComparer object that performs a case-sensitive string comparison.  |
 ||  `StringComparer.OrdinalIgnoreCase`      | `StringComparer.OrdinalIgnoreCase` | Expression | Gets a StringComparer object that performs a case-insensitive ordinal string comparison.  |
 
 ### Convert StringComparer to Text
@@ -115,10 +115,18 @@ None
 
 ### Related Data Types
 
+- [IComparer&lt;TPriority&gt;][IComparer]
+
 ### Related Concepts
 
+None
+
 ### External Documentation
+
+- [StringComparer][]
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[IComparer]: {{< url "Cortex.Reference.DataTypes.Collections.IComparer.MainDoc" >}}
+[StringComparer]: {{< url "MSDocs.DotNet.Api.System.StringComparer" >}}

@@ -1801,6 +1801,7 @@
         Array = "https://learn.microsoft.com/en-us/dotnet/api/system.array"
         FormatException = "https://learn.microsoft.com/en-us/dotnet/api/system.formatexception"
         OutOfMemoryException = "https://learn.microsoft.com/en-us/dotnet/api/system.outofmemoryexception"
+        StringComparer = "https://learn.microsoft.com/en-us/dotnet/api/system.stringcomparer"
         StringComparison = "https://learn.microsoft.com/en-us/dotnet/api/system.stringcomparison"
         StringSplitOptions = "https://learn.microsoft.com/en-us/dotnet/api/system.stringsplitoptions"
         UnauthorizedAccessException = "https://learn.microsoft.com/en-us/dotnet/api/system.unauthorizedaccessexception"
