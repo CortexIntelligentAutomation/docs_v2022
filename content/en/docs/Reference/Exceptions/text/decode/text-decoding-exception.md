@@ -27,7 +27,7 @@ A [Category][] of `Base64` and an [Error Code][] of `100` indicates that the tex
 #### Message Format
 
 ```json
-"An error occured during decoding due to an invalid character being present.
+"An error occured during decoding due to one or more invalid characters being present.
 Please click the HelpLink for more information on how to fix this."
 ```
 
@@ -57,7 +57,7 @@ A [Category][] of `Base64URL` and an [Error Code][] of `600` indicates that the 
 #### Message Format
 
 ```json
-"An error occured during decoding due to an invalid character being present.
+"An error occured during decoding due to one or more invalid characters being present.
 Please click the HelpLink for more information on how to fix this."
 ```
 
