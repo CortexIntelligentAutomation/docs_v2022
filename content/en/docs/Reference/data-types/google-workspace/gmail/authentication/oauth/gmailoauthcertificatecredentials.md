@@ -70,10 +70,6 @@ The ClientId is used to define client ID of the client application created to al
 | Default Editor | [Expression][] |
 | Default Value | [EncryptableText][] with value `""` |
 
-## Exceptions
-
-No exceptions are thrown by this data type.
-
 ## Remarks
 
 ### Create a GmailOAuthCertificateCredentials

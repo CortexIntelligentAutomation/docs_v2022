@@ -63,10 +63,6 @@ The Password is used to define the password of the user to authenticate as. This
 | Default Editor | [Expression][] |
 | Default Value | [EncryptedText][] with value `""` |
 
-## Exceptions
-
-No exceptions are thrown by this data type.
-
 ## Remarks
 
 ### Create a UserCredentials

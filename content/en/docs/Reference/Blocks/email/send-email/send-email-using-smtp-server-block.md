@@ -449,7 +449,7 @@ The above two points correspond to the [UseSsl][] property being set to `true` a
 
 ### Setting Credentials
 
-The [UserCredentials][] within the [Basic Email Session Details][Basic Email Session Details Property] specifies what user to connect as on the [SMTP][] server. The value of the [Username][] and [Password][] properties may optionally be encrypted. For more information on how to encrypt the password, see [EncryptedText][].
+The [UserCredentials][] within the [Basic Email Session Details][Basic Email Session Details Property] specifies what user to connect as on the [SMTP][] server. The value of the [Username][] property may optionally be encrypted, however the [Password][] should be encrypted. For more information on how to encrypt the password, see [EncryptedText][].
 
 Note that the [UserCredentials][] object also contains a [Domain][] property which is ignored by this block.
 

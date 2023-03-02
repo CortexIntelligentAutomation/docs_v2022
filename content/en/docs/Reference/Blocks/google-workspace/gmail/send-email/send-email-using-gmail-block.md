@@ -521,7 +521,7 @@ As such, the recommended approach for using a [UserCredentials][] as the [Creden
 
 Note the following:
 
-- The value of the [Username][] and [Password][] properties may optionally be encrypted.
+- The value of the [Username][] property may optionally be encrypted, however the [Password][] should be encrypted.
 - Note that the [UserCredentials][] also contains a [Domain][] property which is ignored by this block.
 
 #### Setting Credentials to GmailOAuthCertificateCredentials
@@ -542,7 +542,7 @@ Once the account has been set up to work with OAuth, a [GmailOAuthCertificateCre
 - [FromAddress][] - The address of the account used to set up the client application
 - [ClientId][] - The Client ID of the client application
 
-Note that the values of the [CertificatePath][], [ClientId][] and [CertificatePassword][] properties may optionally be encrypted.
+Note that the values of the [CertificatePath][] and [ClientId][] properties may optionally be encrypted, however the [UnencryptedTextException][] should be encrypted.
 
 For more detailed information on each of these properties, see [GmailOAuthCertificateCredentials][].
 
