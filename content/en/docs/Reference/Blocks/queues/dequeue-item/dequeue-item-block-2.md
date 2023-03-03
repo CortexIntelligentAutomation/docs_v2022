@@ -25,11 +25,11 @@ This example will dequeue the item with minimal priority from a [QueueWithPriori
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": "Element -1", "Priority": -1}, {"Item": "Element 0", "Priority": 0}, {"Item": "Element 1", "Priority": 1}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
-| [Item][Item Property] | `($)Item`, with no value | `($)Item` is a variable that will be set to type string |
+| [Item][Item Property] | `($)Item`, with no value | `($)Item` is a variable that will be set to the type of the item (i.e. [String][]) |
 
 #### Result
 
-Dequeueing from the next item with minimal priority from `{"Items": [{"Item": "Element -1", "Priority": -1}, {"Item": "Element 0", "Priority": 0}, {"Item": "Element 1", "Priority": 1}], "PriorityComparer": {}}` results in the variable `($)Item` being updated to the following:
+Dequeueing the next item with minimal priority from `{"Items": [{"Item": "Element -1", "Priority": -1}, {"Item": "Element 0", "Priority": 0}, {"Item": "Element 1", "Priority": 1}], "PriorityComparer": {}}` results in the variable `($)Item` being updated to the following:
 
 ```json
 "Element -1"
@@ -57,21 +57,21 @@ and the variable `($)Queue` being updated to the following:
 
 ### Dequeue from a Queue which contains Items with the same priority
 
-This example will dequeue the next item with minimal priority from a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Element 1"` with a priority of `1`, `"Element 2"` with a priority of `1` and `"Element 3"` with a priority of `1`.
+This example will dequeue the next item with minimal priority from a [QueueWithPriority][]&lt;[Int32][], [Int32][]&gt; that contains `1` with a priority of `0`, `2` with a priority of `0` and `3` with a priority of `0`.
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": "Element 1", "Priority": 1}, {"Item": "Element 2", "Priority": 1}, {"Item": "Element 3", "Priority": 1}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
-| [Item][Item Property] | `($)Item`, with no value | `($)Item` is a variable that will be set to type string |
+| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": 1, "Priority": 0}, {"Item": 2, "Priority": 0}, {"Item": 3, "Priority": 0}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[Int32][], [Int32][]&gt; |
+| [Item][Item Property] | `($)Item`, with no value | `($)Item` is a variable that will be set to the type of the item (i.e. [Int32]) |
 
 #### Result
 
-Dequeueing from the next item with minimal priority from `{"Items": [{"Item": "Element 1", "Priority": 1}, {"Item": "Element 2", "Priority": 1}, {"Item": "Element 3", "Priority": 1}], "PriorityComparer": {}}` results in the variable `($)Item` being updated to the following:
+Dequeueing the next item with minimal priority from `{"Items": [{"Item": 1, "Priority": 0}, {"Item": 2, "Priority": 0}, {"Item": 3, "Priority": 0}], "PriorityComparer": {}}` results in the variable `($)Item` being updated to the following:
 
 ```json
-"Element 1"
+1
 ```
 
 and the variable `($)Queue` being updated to the following:
@@ -80,12 +80,12 @@ and the variable `($)Queue` being updated to the following:
 {
     "Items": [
         {
-            "Item": "Element 2", 
-            "Priority": 1
+            "Item": 2, 
+            "Priority": 0
         },
         {
-            "Item": "Element 3",
-            "Priority": 1
+            "Item": 3,
+            "Priority": 0
         }
     ], 
     "PriorityComparer": {}
