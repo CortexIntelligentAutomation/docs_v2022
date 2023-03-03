@@ -16,20 +16,20 @@ Dequeues the [Item][Item Property] with the minimal priority from the queue.
 
 ## Examples
 
-### Dequeue from a Queue which contains items
+### Dequeue from a Queue which contains Items with different priorities
 
-This example will dequeue the item with minimal priority from a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; containing the items `[{"Item": "Element -1", "Priority": -1}, {"Item": "Element 1", "Priority": 1}]`.
+This example will dequeue the item with minimal priority from a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Element -1"` with a priority of `-1`,   `"Element 0"` with a priority of `0` and `"Element 1"` with a priority of `1`.
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
-| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": "Element -1", "Priority": -1}, {"Item": "Element 1", "Priority": 1}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
+| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": "Element -1", "Priority": -1}, {"Item": "Element 0", "Priority": 0}, {"Item": "Element 1", "Priority": 1}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
 | [Item][Item Property] | `($)Item`, with no value | `($)Item` is a variable that will be set to type string |
 
 #### Result
 
-Dequeueing from the [Queue][Queue Property] results in the variable `($)Item` being updated to the following:
+Dequeueing from the next item with minimal priority from `{"Items": [{"Item": "Element -1", "Priority": -1}, {"Item": "Element 0", "Priority": 0}, {"Item": "Element 1", "Priority": 1}], "PriorityComparer": {}}` results in the variable `($)Item` being updated to the following:
 
 ```json
 "Element -1"
@@ -41,7 +41,50 @@ and the variable `($)Queue` being updated to the following:
 {
     "Items": [
         {
-            "Item": "Element 1", 
+            "Item": "Element 0", 
+            "Priority": 0
+        },
+        {
+            "Item": "Element 1",
+            "Priority": 1
+        }
+    ], 
+    "PriorityComparer": {}
+}
+```
+
+***
+
+### Dequeue from a Queue which contains Items with the same priority
+
+This example will dequeue the next item with minimal priority from a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Element 1"` with a priority of `1`, `"Element 2"` with a priority of `1` and `"Element 3"` with a priority of `1`.
+
+#### Properties
+
+| Property           | Value                     | Notes                                    |
+|--------------------|---------------------------|------------------------------------------|
+| [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": "Element 1", "Priority": 1}, {"Item": "Element 2", "Priority": 1}, {"Item": "Element 3", "Priority": 1}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
+| [Item][Item Property] | `($)Item`, with no value | `($)Item` is a variable that will be set to type string |
+
+#### Result
+
+Dequeueing from the next item with minimal priority from `{"Items": [{"Item": "Element 1", "Priority": 1}, {"Item": "Element 2", "Priority": 1}, {"Item": "Element 3", "Priority": 1}], "PriorityComparer": {}}` results in the variable `($)Item` being updated to the following:
+
+```json
+"Element 1"
+```
+
+and the variable `($)Queue` being updated to the following:
+
+```json
+{
+    "Items": [
+        {
+            "Item": "Element 2", 
+            "Priority": 1
+        },
+        {
+            "Item": "Element 3",
             "Priority": 1
         }
     ], 
