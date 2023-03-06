@@ -10,17 +10,17 @@ description: "Used to compare two pieces of text against each other."
 
 ## Summary
 
-The `StringComparer` data type is used to represent a string comparer.
+The `StringComparer` data type is used to compare two pieces of text against each other.
 
 | | |
 |-|-|
 | **Category:**          | Text                                                          |
 | **Name:**              | `StringComparer`                                                      |
-| **Full Name:**         | `System.StringStringComparer`                                               |
+| **Full Name:**         | `System.StringComparer`                                               |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | Used to represent a string comparer. |
+| **Description:**       | Used to compare two pieces of text against each other. |
 | **Default Value:**     | `null`                                                           |
-| **Can be used as:**    | `Object`                                                         |
+| **Can be used as:**    | `Object`, `dynamic`                                                         |
 | **Can be cast to:**    | `IComparer`, `IComparer<T>`, `IEqualityComparer`, `IEqualityComparer<T>`                                                             |
 
 ## Properties
@@ -31,7 +31,7 @@ The `StringComparer` data type is used to represent a string comparer.
 |-|-|
 | **Name:**    | CurrentCulture                                         |
 | **Value:**   | `StringComparer.CurrentCulture`                       |
-| **Notes:**   | Gets a StringComparer object that performs a case-sensitive string comparison using the word comparison rules of the current culture. |
+| **Notes:**   | Gets a `StringComparer` that performs a case-sensitive text comparison using [Current Culture][CurrentCulture] rules. |
 
 ### CurrentCultureIgnoreCase
 
@@ -39,7 +39,7 @@ The `StringComparer` data type is used to represent a string comparer.
 |-|-|
 | **Name:**    | CurrentCultureIgnoreCase                                         |
 | **Value:**   | `StringComparer.CurrentCultureIgnoreCase`                       |
-| **Notes:**   | Gets a StringComparer object that performs a case-insensitive string comparison using the word comparison rules of the current culture. |
+| **Notes:**   | Gets a `StringComparer` that performs a case-insensitive text comparison using [Current Culture Ignore Case][CurrentCultureIgnoreCase] rules. |
 
 ### InvariantCulture
 
@@ -47,7 +47,7 @@ The `StringComparer` data type is used to represent a string comparer.
 |-|-|
 | **Name:**    | InvariantCulture                                         |
 | **Value:**   | `StringComparer.InvariantCulture`                       |
-| **Notes:**   | Gets a StringComparer object that performs a case-sensitive string comparison using the word comparison rules of the invariant culture. |
+| **Notes:**   | Gets a `StringComparer` that performs a case-sensitive text comparison using [Invariant Culture][InvariantCulture] rules. |
 
 ### InvariantCultureIgnoreCase
 
@@ -55,7 +55,7 @@ The `StringComparer` data type is used to represent a string comparer.
 |-|-|
 | **Name:**    | InvariantCultureIgnoreCase                    |
 | **Value:**   | `StringComparer.InvariantCultureIgnoreCase`   |
-| **Notes:**   | Gets a StringComparer object that performs a case-insensitive string comparison using the word comparison rules of the invariant culture. |
+| **Notes:**   | Gets a `StringComparer` that performs a case-insensitive text comparison using [Invariant Culture Ignore Case][InvariantCultureIgnoreCase] rules. |
 
 ### Ordinal
 
@@ -63,7 +63,7 @@ The `StringComparer` data type is used to represent a string comparer.
 |-|-|
 | **Name:**    | Ordinal                                         |
 | **Value:**   | `StringComparer.Ordinal`                       |
-| **Notes:**   | Gets a StringComparer object that performs a case-sensitive ordinal string comparison. |
+| **Notes:**   | Gets a `StringComparer` that performs a case-sensitive text comparison using [Ordinal][] rules. |
 
 ### OrdinalIgnoreCase
 
@@ -71,7 +71,7 @@ The `StringComparer` data type is used to represent a string comparer.
 |-|-|
 | **Name:**    | OrdinalIgnoreCase                                         |
 | **Value:**   | `StringComparer.OrdinalIgnoreCase`                       |
-| **Notes:**   | Gets a StringComparer object that performs a case-insensitive ordinal string comparison. |
+| **Notes:**   | Gets a `StringComparer` that performs a case-insensitive text comparison using [Ordinal Ignore Case][OrdinalIgnoreCase] rules. |
 
 ## Remarks
 
@@ -81,12 +81,12 @@ The following table shows some of the ways that `StringComparer` can be created 
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Declare a `StringComparer` literal  |  `StringComparer.CurrentCulture`      | `StringComparer.CurrentCulture` | Expression | Gets a StringComparer object that performs a case-sensitive string comparison using the current culture.  |
-||  `StringComparer.CurrentCultureIgnoreCase`      | `StringComparer.CurrentCultureIgnoreCase` | Expression | Gets a StringComparer object that performs a case-insensitive string comparison using the current culture.  |
-||  `StringComparer.InvariantCulture`      | `StringComparer.InvariantCulture` | Expression | Gets a StringComparer object that performs a case-sensitive string comparison using the invariant culture.  |
-||  `StringComparer.InvariantCultureIgnoreCase`      | `StringComparer.InvariantCultureIgnoreCase` | Expression | Gets a StringComparer object that performs a case-insensitive string comparison using the invariant culture.  |
-||  `StringComparer.Ordinal`      | `StringComparer.Ordinal` | Expression | Gets a StringComparer object that performs a case-sensitive string comparison.  |
-||  `StringComparer.OrdinalIgnoreCase`      | `StringComparer.OrdinalIgnoreCase` | Expression | Gets a StringComparer object that performs a case-insensitive ordinal string comparison.  |
+| Declare a `StringComparer` literal  |  `StringComparer.CurrentCulture`      | `StringComparer.CurrentCulture` | Expression | Gets a `StringComparer` that performs a case-sensitive text comparison using [Current Culture][CurrentCulture] rules.  |
+||  `StringComparer.CurrentCultureIgnoreCase`      | `StringComparer.CurrentCultureIgnoreCase` | Expression | Gets a `StringComparer` that performs a case-insensitive text comparison using [Current Culture Ignore Case][CurrentCultureIgnoreCase] rules.  |
+||  `StringComparer.InvariantCulture`      | `StringComparer.InvariantCulture` | Expression | Gets a `StringComparer` that performs a case-sensitive text comparison using [Invariant Culture][InvariantCulture] rules.  |
+||  `StringComparer.InvariantCultureIgnoreCase`      | `StringComparer.InvariantCultureIgnoreCase` | Expression | Gets a `StringComparer` that performs a case-insensitive text comparison using [Invariant Culture Ignore Case][InvariantCultureIgnoreCase] rules.  |
+||  `StringComparer.Ordinal`      | `StringComparer.Ordinal` | Expression | Gets a `StringComparer` that performs a case-sensitive text comparison using [Ordinal][] rules.  |
+||  `StringComparer.OrdinalIgnoreCase`      | `StringComparer.OrdinalIgnoreCase` | Expression | Gets a `StringComparer` that performs a case-insensitive text comparison using [Ordinal Ignore Case][OrdinalIgnoreCase] rules.  |
 
 ### Convert StringComparer to Text
 
@@ -94,17 +94,23 @@ The following table shows some of the ways that a `StringComparer` can be conver
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
-| Use `ToString`   |  `StringComparer.CurrentCulture.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.CurrentCulture` to `"System.CultureAwareComparer"`(the result may be different depending on the  culture of your machine).|
-||  `StringComparer.CurrentCultureIgnoreCase.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.CurrentCulture` to `"System.CultureAwareComparer"` (the result may be different depending on the  culture of your machine).  |
-||  `StringComparer.InvariantCulture.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.InvariantCulture` to `"System.CultureAwareComparer"`.  |
-||  `StringComparer.InvariantCultureIgnoreCase.ToString()`      | `"System.CultureAwareComparer"` | Expression | Converts `StringComparer.InvariantCultureIgnoreCase` to `"System.CultureAwareComparer"`.  |
-||  `StringComparer.Ordinal.ToString()`      | `"System.OrdinalCaseSensitiveComparer"` | Expression | Converts `StringComparer.Ordinal` to `"System.OrdinalCaseSensitiveComparer"`.  |
-||  `StringComparer.OrdinalIgnoreCase.ToString()`      | `"System.OrdinalIgnoreCaseComparer"` | Expression | Converts `StringComparer.Ordinal` to `"System.OrdinalIgnoreCaseComparer"`.  |
+| Use `ToString`   |  `StringComparer.CurrentCulture.ToString()`      | `"System.CultureAwareComparer"` | Expression | See [Object.ToString][] |
+||  `StringComparer.CurrentCultureIgnoreCase.ToString()`      | `"System.CultureAwareComparer"` | Expression | See [Object.ToString][] |
+||  `StringComparer.InvariantCulture.ToString()`      | `"System.CultureAwareComparer"` | Expression | See [Object.ToString][] |
+||  `StringComparer.InvariantCultureIgnoreCase.ToString()`      | `"System.CultureAwareComparer"` | Expression | See [Object.ToString][] |
+||  `StringComparer.Ordinal.ToString()`      | `"System.OrdinalCaseSensitiveComparer"` | Expression | See [Object.ToString][] |
+||  `StringComparer.OrdinalIgnoreCase.ToString()`      | `"System.OrdinalIgnoreCaseComparer"` | Expression | See [Object.ToString][] |
+| Use `Convert Object To Text` block   |  where `Object` property has a value of `StringComparer.CurrentCulture`      | `"System.CultureAwareComparer"` | Expression | See [Convert Object To Text][] |
+||  where `Object` property has a value of `StringComparer.CurrentCultureIgnoreCase`      | `"System.CultureAwareComparer"` | Expression | See [Convert Object To Text][] |
+||  where `Object` property has a value of `StringComparer.InvariantCulture`      | `"System.CultureAwareComparer"` | Expression | See [Convert Object To Text][] |
+||  where `Object` property has a value of `StringComparer.InvariantCultureIgnoreCase`      | `"System.CultureAwareComparer"` | Expression | See [Convert Object To Text][] |
+||  where `Object` property has a value of `StringComparer.Ordinal`      | `"System.OrdinalCaseSensitiveComparer"` | Expression | See [Convert Object To Text][] |
+||  where `Object` property has a value of `StringComparer.OrdinalIgnoreCase`      | `"System.OrdinalIgnoreCaseComparer"` | Expression | See [Convert Object To Text][] |
 
 ### Property Editor Support
 
 - The Expression Editor is available for [Input][] properties where the data type is `StringComparer`.
-- The Literal Editor is available for [Input][] properties where the data type is `StringComparer`.
+- The Literal Editor is not available for [Input][] properties where the data type is `StringComparer`.
 - The Variable Editor is available for [Input][], [InputOutput][] and [Output][] properties where the data type is `StringComparer`.
 
 ### Known Limitations
@@ -119,7 +125,7 @@ None
 
 ### Related Concepts
 
-None
+- [Working With Text][Working With Text]
 
 ### External Documentation
 
@@ -130,3 +136,15 @@ None
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 [IComparer]: {{< url "Cortex.Reference.DataTypes.Collections.IComparer.MainDoc" >}}
 [StringComparer]: {{< url "MSDocs.DotNet.Api.System.StringComparer" >}}
+
+[Working With Text]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
+
+[CurrentCulture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.CurrentCulture" >}}
+[CurrentCultureIgnoreCase]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.CurrentCultureIgnoreCase" >}}
+[InvariantCulture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.InvariantCulture" >}}
+[InvariantCultureIgnoreCase]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.InvariantCultureIgnoreCase" >}}
+[Ordinal]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.Ordinal">}}
+[OrdinalIgnoreCase]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.OrdinalIgnoreCase">}}
+
+[Object.ToString]: {{< url "MSDocs.DotNet.Api.System.Object.ToString" >}}
+[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
