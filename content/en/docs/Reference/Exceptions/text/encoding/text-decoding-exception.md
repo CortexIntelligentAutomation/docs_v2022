@@ -6,7 +6,7 @@ description: "The exception thrown when an error occurs while decoding text."
 
 # {{% param title %}}
 
-<p class="namespace">(Cortex.Exceptions.Text.Decode.TextDecodingException)</p>
+<p class="namespace">(Cortex.Exceptions.Text.Encoding.TextDecodingException)</p>
 
 ## Description
 
