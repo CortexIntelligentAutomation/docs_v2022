@@ -143,10 +143,10 @@ None
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.MainDoc" >}}
-[InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidBase64" >}}
-[InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidHex" >}}
-[InvalidBase64Url]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidBase64Url" >}}
+[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.MainDoc" >}}
+[InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidBase64" >}}
+[InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidHex" >}}
+[InvalidBase64Url]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidBase64Url" >}}
 [Instantiating an enumeration type]: {{< url "MSDocs.DotNet.Api.System.Enum.InstantiatingAnEnum" >}}
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

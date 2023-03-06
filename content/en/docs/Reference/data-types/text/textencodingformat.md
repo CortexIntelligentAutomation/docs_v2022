@@ -152,8 +152,6 @@ Please see [Formatting enumeration values][] for further information.
 The following table shows some of the ways that a `TextEncodingFormat` can be converted to a number.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
-
-
 |-|-|-|-|-|
 | Use [Explicit Casting][]  | `(Int32)TextEncodingFormat.Base64`   | `0` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.Base64` to `0` |
 |                           | `(Int32)TextEncodingFormat.Url`   | `1` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.Url` to `1` |

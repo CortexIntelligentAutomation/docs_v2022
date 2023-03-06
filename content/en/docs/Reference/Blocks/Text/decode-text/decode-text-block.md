@@ -205,23 +205,23 @@ This limitation may be removed in the future.
 [TextEncodingFormat]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.MainDoc" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
-[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.MainDoc" >}}
+[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.MainDoc" >}}
 
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 [HTML]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Html" >}}
 [Base64]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64" >}}
 [Hex]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Hex" >}}
-[Base64URL]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64URL" >}}
-[URL]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.URL" >}}
+[Base64Url]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64Url" >}}
+[Url]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Url" >}}
 
 [Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
 [Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
 
 [Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 
-[InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidBase64" >}}
-[InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidHex" >}}
-[InvalidBase64URL]: {{< url "Cortex.Reference.Exceptions.Text.Decode.TextDecodingException.InvalidBase64URL" >}}
+[InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidBase64" >}}
+[InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidHex" >}}
+[InvalidBase64URL]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidBase64Url" >}}
 
 [Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}
 [HTMLEntity]: {{< url "Cortex.Reference.Glossary.F-J.HTMLEntity" >}}

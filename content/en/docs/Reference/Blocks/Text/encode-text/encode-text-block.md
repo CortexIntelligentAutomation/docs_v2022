@@ -163,11 +163,11 @@ To overcome this, this block creates a new [String][] which has the [Text][Text 
 
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 [TextEncodingFormat]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.MainDoc" >}}
-[HTML]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Html" >}}
+[Html]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Html" >}}
 [Base64]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64" >}}
 [Hex]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Hex" >}}
-[Base64URL]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64URL" >}}
-[URL]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.URL" >}}
+[Base64Url]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64Url" >}}
+[Url]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Url" >}}
 
 [ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
 
