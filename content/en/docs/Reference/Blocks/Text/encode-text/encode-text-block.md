@@ -37,20 +37,20 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to the [Format][Format 
 
 ***
 
-### Text encoded from URL
+### Text encoded from Url
 
-This example will encode the [Text][Text Property] `"The quick brown fox jumps over the lazy dog!"` to [URL][]. to `"The quick brown fox jumps over the lazy dog!"`.
+This example will encode the [Text][Text Property] `"The quick brown fox jumps over the lazy dog!"` to [Url][]. to `"The quick brown fox jumps over the lazy dog!"`.
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Text][Text Property] | `($)Text`, with value `"The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog%21"` | `($)Text` is a variable of type [String][] |
-| [Format][Format Property] | `($)Format`, with value `"TextEncodingFormat.URL"` | `($)Format` is a variable of type [TextEncodingFormat][]
+| [Format][Format Property] | `($)Format`, with value `"TextEncodingFormat.Url"` | `($)Format` is a variable of type [TextEncodingFormat][]
 
 #### Result
 
-Encoding `"The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog%21"` to the [Format][Format Property] [URL] will result in the variable `($)Text` being updated to the following:
+Encoding `"The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog%21"` to the [Format][Format Property] [Url] will result in the variable `($)Text` being updated to the following:
 
 ```json
 "The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog%21"
@@ -79,20 +79,20 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to the [Format][Format 
 
 ***
 
-### Text encoded to HTML
+### Text encoded to Html
 
-This example will encode the [Text][Text Property] `"<p>The quick brown fox jumps over the lazy dog!</p>"` to [HTML][].
+This example will encode the [Text][Text Property] `"<p>The quick brown fox jumps over the lazy dog!</p>"` to [Html][].
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Text][Text Property] | `($)Text`, with value `"<p>The quick brown fox jumps over the lazy dog!</p>"` | `($)Text` is a variable of type [String][] |
-| [Format][Format Property] | `($)Format`, with value `HTML` | `($)Format` is a variable of type [TextEncodingFormat][] |
+| [Format][Format Property] | `($)Format`, with value `Html` | `($)Format` is a variable of type [TextEncodingFormat][] |
 
 #### Result
 
-Encoding `"<p>The quick brown fox jumps over the lazy dog!</p>"` to the [Format][Format Property] [HTML][] will result in the variable `($)Text` being updated to the following:
+Encoding `"<p>The quick brown fox jumps over the lazy dog!</p>"` to the [Format][Format Property] [Html][] will result in the variable `($)Text` being updated to the following:
 
 ```json
 "&lt;p&gt;The quick brown fox jumps over the lazy dog!&lt;/p&gt;"
