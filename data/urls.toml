@@ -1542,10 +1542,10 @@
                 MainDoc = "/docs/reference/exceptions/text/regex/"
                     [Cortex.Reference.Exceptions.Text.Regex.RegexParsingFailedException]
                         MainDoc = "/docs/reference/exceptions/text/regex/regex-parsing-failed-exception/"
-            [Cortex.Reference.Exceptions.Text.Decode]
-                MainDoc = "/docs/reference/exceptions/text/decode/"
-                    [Cortex.Reference.Exceptions.Text.Decode.TextDecodingException]
-                        MainDoc = "/docs/reference/exceptions/text/decode/text-decoding-exception/"
+            [Cortex.Reference.Exceptions.Text.Encoding]
+                MainDoc = "/docs/reference/exceptions/text/encoding/"
+                    [Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException]
+                        MainDoc = "/docs/reference/exceptions/text/encoding/text-decoding-exception/"
                         InvalidBase64 = "/docs/reference/exceptions/text/encoding/text-decoding-exception/#100"
                         InvalidHex = "/docs/reference/exceptions/text/encoding/text-decoding-exception/#300"
                         InvalidBase64Url = "/docs/reference/exceptions/text/encoding/text-decoding-exception/#600"
