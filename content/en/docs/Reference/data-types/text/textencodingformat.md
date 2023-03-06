@@ -6,7 +6,7 @@ description: "The available types of encoding format available for use with text
 
 # {{% param title %}}
 
-<p class="namespace">(Cortex.DataTypes.Text.TextEncodingFormat)</p>
+<p class="namespace">(Cortex.DataTypes.Text.Encoding.TextEncodingFormat)</p>
 
 ## Summary
 
@@ -18,7 +18,7 @@ The `TextEncodingFormat` data type is used to represent an encoding format that 
 |-|-|
 | **Category:**          | Text                                                  |
 | **Name:**              | `TextEncodingFormat`                                |
-| **Full Name:**         | `Cortex.DataTypes.Text.Encode.TextEncodingFormat`         |
+| **Full Name:**         | `Cortex.DataTypes.Text.Encoding.TextEncodingFormat`         |
 | **Alias:**             | N/A                                                    |
 | **Description:**       | The encoding format used while encoding/decoding Text. |
 | **Default Value:**     | `(TextEncodingFormat)0`                             |
@@ -39,13 +39,13 @@ The `TextEncodingFormat` data type is used to represent an encoding format that 
 | **Value:**   | [Int32][] with value `0`                       |
 | **Notes:**   | Base64 encoding format. |
 
-### URL
+### Url
 
 | | |
 |-|-|
-| **Name:**    | URL                                                |
+| **Name:**    | Url                                                |
 | **Value:**   | [Int32][] with value `1`                           |
-| **Notes:**   | URL encoding format. |
+| **Notes:**   | Url encoding format. |
 
 ### Hex
 
@@ -55,29 +55,29 @@ The `TextEncodingFormat` data type is used to represent an encoding format that 
 | **Value:**   | [Int32][] with value `2`                        |
 | **Notes:**   | Hex (Hexadecimal) encoding format. |
 
-### HTML
+### Html
 
 | | |
 |-|-|
-| **Name:**    | HTML                                           |
+| **Name:**    | Html                                           |
 | **Value:**   | [Int32][] with value `3`                       |
-| **Notes:**   | HTML encoding format. |
+| **Notes:**   | Html encoding format. |
 
-### UTF8
+### Utf8
 
 | | |
 |-|-|
-| **Name:**    | UTF8                                           |
+| **Name:**    | Utf8                                           |
 | **Value:**   | [Int32][] with value `4`                       |
-| **Notes:**   | UTF8 encoding format. |
+| **Notes:**   | Utf8 encoding format. |
 
-### Base64URL
+### Base64Url
 
 | | |
 |-|-|
-| **Name:**    | Base64URL                                      |
+| **Name:**    | Base64Url                                      |
 | **Value:**   | [Int32][] with value `5`                       |
-| **Notes:**   | Base64URL encoding format.|
+| **Notes:**   | Base64Url encoding format.|
 
 ## Remarks
 
@@ -88,29 +88,29 @@ The following table shows some of the ways that `TextEncodingFormat` can be crea
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
 | Use a `TextEncodingFormat` expression    | `TextEncodingFormat.Base64` | `TextEncodingFormat.Base64`| Expression | Used when encoding to Base64.|
-|                                           | `TextEncodingFormat.URL` | `TextEncodingFormat.URL`| Expression | Used when encoding to URL. |
+|                                           | `TextEncodingFormat.Url` | `TextEncodingFormat.Url`| Expression | Used when encoding to Url. |
 |                                           | `TextEncodingFormat.Hex` | `TextEncodingFormat.Hex`| Expression | Used when encoding to Hex. |
-|                                           | `TextEncodingFormat.HTML` | `TextEncodingFormat.HTML`| Expression | Used when encoding to HTML. |
-|                                           | `TextEncodingFormat.UTF8` | `TextEncodingFormat.UTF8`| Expression | Used when encoding to UTF8. |
-|                                           | `TextEncodingFormat.Base64URL` | `TextEncodingFormat.Base64URL`| Expression | Used when encoding to Base64URL. |
+|                                           | `TextEncodingFormat.Html` | `TextEncodingFormat.Html`| Expression | Used when encoding to Html. |
+|                                           | `TextEncodingFormat.Utf8` | `TextEncodingFormat.Utf8`| Expression | Used when encoding to Utf8. |
+|                                           | `TextEncodingFormat.Base64Url` | `TextEncodingFormat.Base64Url`| Expression | Used when encoding to Base64Url. |
 | Use [Explicit Casting][]  | `(TextEncodingFormat)0` | `TextEncodingFormat.Base64`| Expression | Used when encoding to Base64. |
-|                           | `(TextEncodingFormat)1` | `TextEncodingFormat.URL`| Expression | Used when encoding to URL. |
+|                           | `(TextEncodingFormat)1` | `TextEncodingFormat.Url`| Expression | Used when encoding to Url. |
 |                           | `(TextEncodingFormat)2` | `TextEncodingFormat.Hex`| Expression | Used when encoding to Hex. |
-|                           | `(TextEncodingFormat)3` | `TextEncodingFormat.HTML`| Expression | Used when encoding to HTML. |
-|                           | `(TextEncodingFormat)4` | `TextEncodingFormat.UTF8`| Expression | Used when encoding to UTF8. |
-|                           | `(TextEncodingFormat)5` | `TextEncodingFormat.Base64URL`| Expression | Used when encoding to Base64URL. |
+|                           | `(TextEncodingFormat)3` | `TextEncodingFormat.Html`| Expression | Used when encoding to Html. |
+|                           | `(TextEncodingFormat)4` | `TextEncodingFormat.Utf8`| Expression | Used when encoding to Utf8. |
+|                           | `(TextEncodingFormat)5` | `TextEncodingFormat.Base64Url`| Expression | Used when encoding to Base64Url. |
 | Use `Enum.Parse`  | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "Base64")` | `TextEncodingFormat.Base64`| Expression | Parses `"Base64"` and converts it to `TextEncodingFormat.Base64`. See [Enum.Parse][] |
-|                   | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "URL")` | `TextEncodingFormat.URL`| Expression | Parses `"URL"` and converts it to `TextEncodingFormat.URL`. See [Enum.Parse][] |
+|                   | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "Url")` | `TextEncodingFormat.Url`| Expression | Parses `"Url"` and converts it to `TextEncodingFormat.Url`. See [Enum.Parse][] |
 |                   | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "Hex")` | `TextEncodingFormat.Hex`| Expression | Parses `"Hex"` and converts it to `TextEncodingFormat.Hex`. See [Enum.Parse][] |
-|                   | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "HTML")` | `TextEncodingFormat.HTML`| Expression | Parses `"HTML"` and converts it to `TextEncodingFormat.HTML`. See [Enum.Parse][] |
-|                   | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "UTF8")` | `TextEncodingFormat.UTF8`| Expression | Parses `"UTF8"` and converts it to `TextEncodingFormat.UTF8`. See [Enum.Parse][] |
-|                   | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "Base64URL")` | `TextEncodingFormat.Base64URL`| Expression | Parses `"Base64URL"` and converts it to `TextEncodingFormat.Base64URL`. See [Enum.Parse][] |
+|                   | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "Html")` | `TextEncodingFormat.Html`| Expression | Parses `"Html"` and converts it to `TextEncodingFormat.Html`. See [Enum.Parse][] |
+|                   | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "Utf8")` | `TextEncodingFormat.Utf8`| Expression | Parses `"Utf8"` and converts it to `TextEncodingFormat.Utf8`. See [Enum.Parse][] |
+|                   | `(TextEncodingFormat)Enum.Parse(typeof(TextEncodingFormat), "Base64Url")` | `TextEncodingFormat.Base64Url`| Expression | Parses `"Base64Url"` and converts it to `TextEncodingFormat.Base64Url`. See [Enum.Parse][] |
 | Use `Enum.ToObject`   | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 0)` | `TextEncodingFormat.Base64`| Expression | Converts `0` to `TextEncodingFormat.Base64` value. See [Enum.ToObject][] |
-|                       | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 1)` | `TextEncodingFormat.URL`| Expression | Converts `1` to `TextEncodingFormat.URL` value. See [Enum.ToObject][] |
+|                       | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 1)` | `TextEncodingFormat.Url`| Expression | Converts `1` to `TextEncodingFormat.Url` value. See [Enum.ToObject][] |
 |                       | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 2)` | `TextEncodingFormat.Hex`| Expression | Converts `2` to `TextEncodingFormat.Hex` value. See [Enum.ToObject][] |
-|                       | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 3)` | `TextEncodingFormat.HTML`| Expression | Converts `3` to `TextEncodingFormat.HTML` value. See [Enum.ToObject][] |
-|                       | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 4)` | `TextEncodingFormat.UTF8`| Expression | Converts `4` to `TextEncodingFormat.UTF8` value. See [Enum.ToObject][] |
-|                       | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 5)` | `TextEncodingFormat.Base64URL`| Expression | Converts `5` to `TextEncodingFormat.Base64URL` value. See [Enum.ToObject][] |
+|                       | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 3)` | `TextEncodingFormat.Html`| Expression | Converts `3` to `TextEncodingFormat.Html` value. See [Enum.ToObject][] |
+|                       | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 4)` | `TextEncodingFormat.Utf8`| Expression | Converts `4` to `TextEncodingFormat.Utf8` value. See [Enum.ToObject][] |
+|                       | `(TextEncodingFormat)Enum.ToObject(typeof(TextEncodingFormat), 5)` | `TextEncodingFormat.Base64Url`| Expression | Converts `5` to `TextEncodingFormat.Base64Url` value. See [Enum.ToObject][] |
 
 Please see [Instantiating an enumeration type][] for further information.
 
@@ -121,29 +121,29 @@ The following table shows some of the ways that a `TextEncodingFormat` can be co
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
 | Use `ToString`    | `TextEncodingFormat.Base64.ToString()` | `"Base64"` | Expression | Converts `TextEncodingFormat.Base64` to `"Base64"`. See [Enum.ToString][] |
-|                   | `TextEncodingFormat.URL.ToString()` | `"URL"` | Expression | Converts `TextEncodingFormat.URL` to `"URL"`. See [Enum.ToString][] |
+|                   | `TextEncodingFormat.Url.ToString()` | `"Url"` | Expression | Converts `TextEncodingFormat.Url` to `"Url"`. See [Enum.ToString][] |
 |                   | `TextEncodingFormat.Hex.ToString()` | `"Hex"` | Expression | Converts `TextEncodingFormat.Hex` to `"Hex"`. See [Enum.ToString][] |
-|                   | `TextEncodingFormat.HTML.ToString()` | `"HTML"` | Expression | Converts `TextEncodingFormat.HTML` to `"HTML"`. See [Enum.ToString][] |
-|                   | `TextEncodingFormat.UTF8.ToString()` | `"UTF8"` | Expression | Converts `TextEncodingFormat.UTF8` to `"UTF8"`. See [Enum.ToString][] |
-|                   | `TextEncodingFormat.Base64URL.ToString()` | `"Base64URL"` | Expression | Converts `TextEncodingFormat.Base64URL` to `"Base64URL"`. See [Enum.ToString][] |
+|                   | `TextEncodingFormat.Html.ToString()` | `"Html"` | Expression | Converts `TextEncodingFormat.Html` to `"Html"`. See [Enum.ToString][] |
+|                   | `TextEncodingFormat.Utf8.ToString()` | `"Utf8"` | Expression | Converts `TextEncodingFormat.Utf8` to `"Utf8"`. See [Enum.ToString][] |
+|                   | `TextEncodingFormat.Base64Url.ToString()` | `"Base64Url"` | Expression | Converts `TextEncodingFormat.Base64Url` to `"Base64Url"`. See [Enum.ToString][] |
 | Use `Convert.ToString`    | `Convert.ToString(TextEncodingFormat.Base64)` | `"Base64"` | Expression | Converts `TextEncodingFormat.Base64` to `"Base64"`. See [Convert.ToString][] |
-|                           | `Convert.ToString(TextEncodingFormat.URL)` | `"URL"` | Expression | Converts `TextEncodingFormat.URL` to `"URL"`. See [Convert.ToString][] |
+|                           | `Convert.ToString(TextEncodingFormat.Url)` | `"Url"` | Expression | Converts `TextEncodingFormat.Url` to `"Url"`. See [Convert.ToString][] |
 |                           | `Convert.ToString(TextEncodingFormat.Hex)` | `"Hex"` | Expression | Converts `TextEncodingFormat.Hex` to `"Hex"`. See [Convert.ToString][] |
-|                           | `Convert.ToString(TextEncodingFormat.HTML)` | `"HTML"` | Expression | Converts `TextEncodingFormat.HTML` to `"HTML"`. See [Convert.ToString][] |
-|                           | `Convert.ToString(TextEncodingFormat.UTF8)` | `"UTF8"` | Expression | Converts `TextEncodingFormat.UTF8` to `"UTF8"`. See [Convert.ToString][] |
-|                           | `Convert.ToString(TextEncodingFormat.Base64URL)` | `"Base64URL"` | Expression | Converts `TextEncodingFormat.Base64URL` to `"Base64URL"`. See [Convert.ToString][] |
+|                           | `Convert.ToString(TextEncodingFormat.Html)` | `"Html"` | Expression | Converts `TextEncodingFormat.Html` to `"Html"`. See [Convert.ToString][] |
+|                           | `Convert.ToString(TextEncodingFormat.Utf8)` | `"Utf8"` | Expression | Converts `TextEncodingFormat.Utf8` to `"Utf8"`. See [Convert.ToString][] |
+|                           | `Convert.ToString(TextEncodingFormat.Base64Url)` | `"Base64Url"` | Expression | Converts `TextEncodingFormat.Base64Url` to `"Base64Url"`. See [Convert.ToString][] |
 | Use `Convert Object To Text` block    | Where `Object` property has a value of `TextEncodingFormat.Base64` | `"Base64"` | N/A  | Converts `TextEncodingFormat.Base64` to `"Base64"`. See [Convert Object To Text][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.URL` | `"URL"` | N/A  | Converts `TextEncodingFormat.URL` to `"URL"`. See [Convert Object To Text][] |
+|                                       | Where `Object` property has a value of `TextEncodingFormat.Url` | `"Url"` | N/A  | Converts `TextEncodingFormat.Url` to `"Url"`. See [Convert Object To Text][] |
 |                                       | Where `Object` property has a value of `TextEncodingFormat.Hex` | `"Hex"` | N/A  | Converts `TextEncodingFormat.Hex` to `"Hex"`. See [Convert Object To Text][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.HTML` | `"HTML"` | N/A  | Converts `TextEncodingFormat.HTML` to `"HTML"`. See [Convert Object To Text][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.UTF8` | `"UTF8"` | N/A  | Converts `TextEncodingFormat.UTF8` to `"UTF8"`. See [Convert Object To Text][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Base64URL` | `"Base64URL"` | N/A  | Converts `TextEncodingFormat.Base64URL` to `"Base64URL"`. See [Convert Object To Text][] |
+|                                       | Where `Object` property has a value of `TextEncodingFormat.Html` | `"Html"` | N/A  | Converts `TextEncodingFormat.Html` to `"Html"`. See [Convert Object To Text][] |
+|                                       | Where `Object` property has a value of `TextEncodingFormat.Utf8` | `"Utf8"` | N/A  | Converts `TextEncodingFormat.Utf8` to `"Utf8"`. See [Convert Object To Text][] |
+|                                       | Where `Object` property has a value of `TextEncodingFormat.Base64Url` | `"Base64Url"` | N/A  | Converts `TextEncodingFormat.Base64Url` to `"Base64Url"`. See [Convert Object To Text][] |
 | Use `Convert Object To Json` block    | Where `Object` property has a value of `TextEncodingFormat.Base64` | `"0"` | N/A  | Converts `TextEncodingFormat.Base64` to `"0"`. See [Convert Object To Json][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.URL` | `"1"` | N/A  | Converts `TextEncodingFormat.URL` to `"1"`. See [Convert Object To Json][] |
+|                                       | Where `Object` property has a value of `TextEncodingFormat.Url` | `"1"` | N/A  | Converts `TextEncodingFormat.Url` to `"1"`. See [Convert Object To Json][] |
 |                                       | Where `Object` property has a value of `TextEncodingFormat.Hex` | `"2"` | N/A  | Converts `TextEncodingFormat.Hex` to `"2"`. See [Convert Object To Json][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.HTML` | `"3"` | N/A  | Converts `TextEncodingFormat.HTML` to `"3"`. See [Convert Object To Json][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.UTF8` | `"4"` | N/A  | Converts `TextEncodingFormat.UTF8` to `"4"`. See [Convert Object To Json][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Base64URL` | `"5"` | N/A  | Converts `TextEncodingFormat.Base64URL` to `"5"`. See [Convert Object To Json][] |
+|                                       | Where `Object` property has a value of `TextEncodingFormat.Html` | `"3"` | N/A  | Converts `TextEncodingFormat.Html` to `"3"`. See [Convert Object To Json][] |
+|                                       | Where `Object` property has a value of `TextEncodingFormat.Utf8` | `"4"` | N/A  | Converts `TextEncodingFormat.Utf8` to `"4"`. See [Convert Object To Json][] |
+|                                       | Where `Object` property has a value of `TextEncodingFormat.Base64Url` | `"5"` | N/A  | Converts `TextEncodingFormat.Base64Url` to `"5"`. See [Convert Object To Json][] |
 
 Please see [Formatting enumeration values][] for further information.
 
@@ -152,19 +152,21 @@ Please see [Formatting enumeration values][] for further information.
 The following table shows some of the ways that a `TextEncodingFormat` can be converted to a number.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
+
+
 |-|-|-|-|-|
 | Use [Explicit Casting][]  | `(Int32)TextEncodingFormat.Base64`   | `0` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.Base64` to `0` |
-|                           | `(Int32)TextEncodingFormat.URL`   | `1` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.URL` to `1` |
+|                           | `(Int32)TextEncodingFormat.Url`   | `1` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.Url` to `1` |
 |                           | `(Int32)TextEncodingFormat.Hex`   | `2` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.Hex` to `2` |
-|                           | `(Int32)TextEncodingFormat.HTML`   | `3` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.HTML` to `3` |
-|                           | `(Int32)TextEncodingFormat.UTF8`   | `4` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.UTF8` to `4` |
-|                           | `(Int32)TextEncodingFormat.Base64URL`   | `5` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.Base64URL` to `5` |
+|                           | `(Int32)TextEncodingFormat.Html`   | `3` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.Html` to `3` |
+|                           | `(Int32)TextEncodingFormat.Utf8`   | `4` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.Utf8` to `4` |
+|                           | `(Int32)TextEncodingFormat.Base64Url`   | `5` | Expression | [Casts][Explicit Casting] `TextEncodingFormat.Base64Url` to `5` |
 | Use `Convert.ToInt32`     | `Convert.ToInt32(TextEncodingFormat.Base64)`   | `0` | Expression | Converts `TextEncodingFormat.Base64` to `0`. See [Convert.ToInt32][] |
-|                           | `Convert.ToInt32(TextEncodingFormat.URL)`   | `1` | Expression | Converts `TextEncodingFormat.URL` to `1`. See [Convert.ToInt32][] |
+|                           | `Convert.ToInt32(TextEncodingFormat.Url)`   | `1` | Expression | Converts `TextEncodingFormat.Url` to `1`. See [Convert.ToInt32][] |
 |                           | `Convert.ToInt32(TextEncodingFormat.Hex)`   | `2` | Expression | Converts `TextEncodingFormat.Hex` to `2`. See [Convert.ToInt32][] |
-|                           | `Convert.ToInt32(TextEncodingFormat.HTML)`   | `3` | Expression | Converts `TextEncodingFormat.HTML` to `3`. See [Convert.ToInt32][] |
-|                           | `Convert.ToInt32(TextEncodingFormat.UTF8)`   | `4` | Expression | Converts `TextEncodingFormat.UTF8` to `4`. See [Convert.ToInt32][] |
-|                           | `Convert.ToInt32(TextEncodingFormat.Base64URL)`   | `5` | Expression | Converts `TextEncodingFormat.Base64URL` to `5`. See [Convert.ToInt32][] |
+|                           | `Convert.ToInt32(TextEncodingFormat.Html)`   | `3` | Expression | Converts `TextEncodingFormat.Html` to `3`. See [Convert.ToInt32][] |
+|                           | `Convert.ToInt32(TextEncodingFormat.Utf8)`   | `4` | Expression | Converts `TextEncodingFormat.Utf8` to `4`. See [Convert.ToInt32][] |
+|                           | `Convert.ToInt32(TextEncodingFormat.Base64Url)`   | `5` | Expression | Converts `TextEncodingFormat.Base64Url` to `5`. See [Convert.ToInt32][] |
 
 ### Property Editor Support
 
