@@ -152,7 +152,7 @@ The exceptions thrown by the block can be found below:
 
 If [Text][Text Property] is `null` or empty (i.e. `""`) there is nothing to decode, so no operation is performed.
 
-### Decoding out of range Url characters
+### Decoding out of range URL characters
 
 When decoding using the [Url][] [Format][Format Property], characters not in the valid range (i.e.`%00` to `%ff`) will be treated as literal characters (e.g. `"%zzExample%21"` will decode to `"%zzExample!"`).
 
