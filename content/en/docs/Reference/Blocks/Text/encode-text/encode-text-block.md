@@ -18,14 +18,14 @@ Encodes [Text][Text Property] to a specified [Format][Format Property].
 
 ### Text encoded to Base64
 
-This example will encode the [Text][Text Property] `"The quick brown fox jumps over the lazy dog"` to [Base64][].
+This example will encode the text `"The quick brown fox jumps over the lazy dog"` to `"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw=="`.
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Text][Text Property] | `($)Text`, with value `"The quick brown fox jumps over the lazy dog"` | `($)Text` is a variable of type [String][] |
-| [Format][Format Property] | `($)Format`, with value `Base64` | `($)Format` is a variable of type [TextEncodingFormat][] |
+| [Format][Format Property] | `($)Format`, with value `"TextEncodingFormat.Base64"` | `($)Format` is a variable of type [TextEncodingFormat][] |
 
 #### Result
 
@@ -37,9 +37,9 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to the [Format][Format 
 
 ***
 
-### Text encoded from Url
+### Text encoded to Url
 
-This example will encode the [Text][Text Property] `"The quick brown fox jumps over the lazy dog!"` to [Url][]. to `"The quick brown fox jumps over the lazy dog!"`.
+This example will encode the text `"The quick brown fox jumps over the lazy dog!"` to `"The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog%21"`.
 
 #### Properties
 
@@ -60,14 +60,14 @@ Encoding `"The%20quick%20brown%20fox%20jumps%20over%20the%20lazy%20dog%21"` to t
 
 ### Text encoded to Hex
 
-This example will encode the [Text][Text Property] `"The quick brown fox jumps over the lazy dog"` to [Hex][].
+This example will encode the text `"The quick brown fox jumps over the lazy dog"` to `"54686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f67"`.
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Text][Text Property] | `($)Text`, with value `"The quick brown fox jumps over the lazy dog"` | `($)Text` is a variable of type [String][] |
-| [Format][Format Property] | `($)Format`, with value `Hex` | `($)Format` is a variable of type [TextEncodingFormat][] |
+| [Format][Format Property] | `($)Format`, with value `"TextEncodingFormat.Hex"` | `($)Format` is a variable of type [TextEncodingFormat][] |
 
 #### Result
 
@@ -81,14 +81,14 @@ Encoding `"The quick brown fox jumps over the lazy dog"` to the [Format][Format 
 
 ### Text encoded to Html
 
-This example will encode the [Text][Text Property] `"<p>The quick brown fox jumps over the lazy dog!</p>"` to [Html][].
+This example will encode the text `"<p>The quick brown fox jumps over the lazy dog!</p>"` to `"&lt;p&gt;The quick brown fox jumps over the lazy dog!&lt;/p&gt;"`.
 
 #### Properties
 
 | Property           | Value                     | Notes                                    |
 |--------------------|---------------------------|------------------------------------------|
 | [Text][Text Property] | `($)Text`, with value `"<p>The quick brown fox jumps over the lazy dog!</p>"` | `($)Text` is a variable of type [String][] |
-| [Format][Format Property] | `($)Format`, with value `Html` | `($)Format` is a variable of type [TextEncodingFormat][] |
+| [Format][Format Property] | `($)Format`, with value `"TextEncodingFormat.Html"` | `($)Format` is a variable of type [TextEncodingFormat][] |
 
 #### Result
 
@@ -104,7 +104,7 @@ Encoding `"<p>The quick brown fox jumps over the lazy dog!</p>"` to the [Format]
 
 ### Text
 
-The [Text][Text Property] to Encode to the specified [Format][Format Property].
+The [Text][Text Property] to encode to the specified [Format][Format Property].
 
 | | |
 |--------------------|---------------------------|
@@ -138,7 +138,7 @@ The exceptions thrown by the block can be found below:
 
 ### Encoding to Base64
 
-When Encoding to [Base64][] a new line character is added every 76 characters.
+When encoding to [Base64][] a new line character is added every 76 characters.
 
 ### Null or empty Text
 

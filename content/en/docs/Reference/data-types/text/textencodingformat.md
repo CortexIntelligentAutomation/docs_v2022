@@ -1,7 +1,7 @@
 ---
 title: "TextEncodingFormat"
 linkTitle: "TextEncodingFormat"
-description: "The available types of encoding format available for use with text encode and decode blocks."
+description: "Used to represent formats available for encoding and decoding text."
 ---
 
 # {{% param title %}}
@@ -10,7 +10,7 @@ description: "The available types of encoding format available for use with text
 
 ## Summary
 
-The `TextEncodingFormat` data type is used to represent an encoding format that is used in the [Encode Text][] and [Decode Text][] blocks.
+The `TextEncodingFormat` data type is used to represent formats available for encoding and decoding text.
 
 `TextEncodingFormat` is an [enum][Working with Enums] data type, which means it has a defined set of values, where each value has an associated [String][] name and [Int32][] value.
 
@@ -20,7 +20,7 @@ The `TextEncodingFormat` data type is used to represent an encoding format that 
 | **Name:**              | `TextEncodingFormat`                                |
 | **Full Name:**         | `Cortex.DataTypes.Text.Encoding.TextEncodingFormat`         |
 | **Alias:**             | N/A                                                    |
-| **Description:**       | The encoding format used while encoding/decoding Text. |
+| **Description:**       | The encoding format used while encoding/decoding text. |
 | **Default Value:**     | `(TextEncodingFormat)0`                             |
 | **Can be used as:**    | `TextEncodingFormat`, `Object`, `dynamic`           |
 | **Can be cast to:**    | `Int16` (e.g. `(Int16)TextEncodingFormat.Base64` or `(System.Int16)TextEncodingFormat.Base64` or `(short)TextEncodingFormat.Base64`)  |
@@ -87,6 +87,12 @@ The following table shows some of the ways that `TextEncodingFormat` can be crea
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
+| Declare a `TextEncodingFormat` literal | `Base64` | `TextEncodingFormat.Text`| Literal | Used when encoding to Base64. |
+| | `Url` | `TextEncodingFormat.Url`| Literal | Used when encoding to Url. |
+| | `Hex` | `TextEncodingFormat.Hex`| Literal | Used when encoding to Hex. |
+| | `Html` | `TextEncodingFormat.Html`| Literal | Used when encoding to Html. |
+| | `Utf8` | `TextEncodingFormat.Utf8`| Literal | Used when encoding to Utf8. |
+| | `Base64Url` | `TextEncodingFormat.Base64Url`| Literal | Used when encoding to Base64Url. |
 | Use a `TextEncodingFormat` expression    | `TextEncodingFormat.Base64` | `TextEncodingFormat.Base64`| Expression | Used when encoding to Base64.|
 |                                           | `TextEncodingFormat.Url` | `TextEncodingFormat.Url`| Expression | Used when encoding to Url. |
 |                                           | `TextEncodingFormat.Hex` | `TextEncodingFormat.Hex`| Expression | Used when encoding to Hex. |
@@ -132,18 +138,18 @@ The following table shows some of the ways that a `TextEncodingFormat` can be co
 |                           | `Convert.ToString(TextEncodingFormat.Html)` | `"Html"` | Expression | Converts `TextEncodingFormat.Html` to `"Html"`. See [Convert.ToString][] |
 |                           | `Convert.ToString(TextEncodingFormat.Utf8)` | `"Utf8"` | Expression | Converts `TextEncodingFormat.Utf8` to `"Utf8"`. See [Convert.ToString][] |
 |                           | `Convert.ToString(TextEncodingFormat.Base64Url)` | `"Base64Url"` | Expression | Converts `TextEncodingFormat.Base64Url` to `"Base64Url"`. See [Convert.ToString][] |
-| Use `Convert Object To Text` block    | Where `Object` property has a value of `TextEncodingFormat.Base64` | `"Base64"` | N/A  | Converts `TextEncodingFormat.Base64` to `"Base64"`. See [Convert Object To Text][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Url` | `"Url"` | N/A  | Converts `TextEncodingFormat.Url` to `"Url"`. See [Convert Object To Text][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Hex` | `"Hex"` | N/A  | Converts `TextEncodingFormat.Hex` to `"Hex"`. See [Convert Object To Text][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Html` | `"Html"` | N/A  | Converts `TextEncodingFormat.Html` to `"Html"`. See [Convert Object To Text][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Utf8` | `"Utf8"` | N/A  | Converts `TextEncodingFormat.Utf8` to `"Utf8"`. See [Convert Object To Text][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Base64Url` | `"Base64Url"` | N/A  | Converts `TextEncodingFormat.Base64Url` to `"Base64Url"`. See [Convert Object To Text][] |
-| Use `Convert Object To Json` block    | Where `Object` property has a value of `TextEncodingFormat.Base64` | `"0"` | N/A  | Converts `TextEncodingFormat.Base64` to `"0"`. See [Convert Object To Json][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Url` | `"1"` | N/A  | Converts `TextEncodingFormat.Url` to `"1"`. See [Convert Object To Json][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Hex` | `"2"` | N/A  | Converts `TextEncodingFormat.Hex` to `"2"`. See [Convert Object To Json][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Html` | `"3"` | N/A  | Converts `TextEncodingFormat.Html` to `"3"`. See [Convert Object To Json][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Utf8` | `"4"` | N/A  | Converts `TextEncodingFormat.Utf8` to `"4"`. See [Convert Object To Json][] |
-|                                       | Where `Object` property has a value of `TextEncodingFormat.Base64Url` | `"5"` | N/A  | Converts `TextEncodingFormat.Base64Url` to `"5"`. See [Convert Object To Json][] |
+| Use `Convert Object To Text` block    | where `Object` property has a value of `TextEncodingFormat.Base64` | `"Base64"` | N/A  | Converts `TextEncodingFormat.Base64` to `"Base64"`. See [Convert Object To Text][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Url` | `"Url"` | N/A  | Converts `TextEncodingFormat.Url` to `"Url"`. See [Convert Object To Text][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Hex` | `"Hex"` | N/A  | Converts `TextEncodingFormat.Hex` to `"Hex"`. See [Convert Object To Text][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Html` | `"Html"` | N/A  | Converts `TextEncodingFormat.Html` to `"Html"`. See [Convert Object To Text][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Utf8` | `"Utf8"` | N/A  | Converts `TextEncodingFormat.Utf8` to `"Utf8"`. See [Convert Object To Text][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Base64Url` | `"Base64Url"` | N/A  | Converts `TextEncodingFormat.Base64Url` to `"Base64Url"`. See [Convert Object To Text][] |
+| Use `Convert Object To Json` block    | where `Object` property has a value of `TextEncodingFormat.Base64` | `"0"` | N/A  | Converts `TextEncodingFormat.Base64` to `"0"`. See [Convert Object To Json][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Url` | `"1"` | N/A  | Converts `TextEncodingFormat.Url` to `"1"`. See [Convert Object To Json][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Hex` | `"2"` | N/A  | Converts `TextEncodingFormat.Hex` to `"2"`. See [Convert Object To Json][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Html` | `"3"` | N/A  | Converts `TextEncodingFormat.Html` to `"3"`. See [Convert Object To Json][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Utf8` | `"4"` | N/A  | Converts `TextEncodingFormat.Utf8` to `"4"`. See [Convert Object To Json][] |
+|                                       | where `Object` property has a value of `TextEncodingFormat.Base64Url` | `"5"` | N/A  | Converts `TextEncodingFormat.Base64Url` to `"5"`. See [Convert Object To Json][] |
 
 Please see [Formatting enumeration values][] for further information.
 
@@ -187,13 +193,11 @@ None
 
 - [Explicit Casting][]
 - [Working with Enums][]
+- [Working with Text][]
 
 ### External Documentation
 
 - [System.Enum][]
-
-[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.DecodeText.DecodeText.MainDoc" >}}
-[Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
@@ -203,6 +207,7 @@ None
 [Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 [Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
 [Working with Enums]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
+[working with Text]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
 [Explicit Casting]: {{< url "Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ExplicitCast" >}}
 [Enum.Parse]: {{< url "MSDocs.DotNet.Api.System.Enum.Parse" >}}
 [Enum.ToObject]: {{< url "MSDocs.DotNet.Api.System.Enum.ToObject" >}}

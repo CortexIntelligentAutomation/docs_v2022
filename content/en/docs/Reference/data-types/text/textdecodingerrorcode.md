@@ -16,7 +16,7 @@ The `TextDecodingErrorCode` data type is used to represent an error code explain
 
 | | |
 |-|-|
-| **Category:**          | Encoding                                                |
+| **Category:**          | Text                                               |
 | **Name:**              | `TextDecodingErrorCode`                                |
 | **Full Name:**         | `Cortex.DataTypes.Text.Encoding.TextDecodingErrorCode`         |
 | **Alias:**             | N/A                                                    |
