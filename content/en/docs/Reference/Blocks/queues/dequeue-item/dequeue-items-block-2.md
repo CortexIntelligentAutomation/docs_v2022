@@ -138,6 +138,12 @@ The exceptions thrown by the block can be found below:
 | [PropertyNullException][] | Thrown when [Queue][Queue Property] is `null`. |
 | [PropertyValueOutOfRangeException][] | Thrown when [Count][Count Property] is greater than the count of items in [Queue][Queue Property]. |
 
+## Remarks
+
+### Negative Count
+
+If [Count][Count Property] is negative, all items are dequeued from [Queue][Queue Property] to [Items][Items Property].
+
 [Queue Property]: {{< ref "#queue" >}}
 [Count Property]: {{< ref "#count" >}}
 [Items Property]: {{< ref "#item" >}}
