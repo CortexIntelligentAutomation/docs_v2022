@@ -283,6 +283,8 @@ None
   * [Set Item At Index][]
   * [Set Items At Index][]
   * [Set Items At Indexes][]
+* Queues
+  * [Dequeue Items][]
 * Schedules
   * [Wait For Duration][]
 * Text
@@ -359,5 +361,7 @@ None
 
 [DateTimeOffset]: {{< url "Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
 [TimePeriod]: {{< url "Cortex.Reference.DataTypes.DateAndTime.TimePeriod.MainDoc" >}}
+
+[Dequeue Items]: {{< url "Cortex.Reference.Blocks.Queues.DequeueItem.DequeueItems.MainDoc" >}}
 
 [String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
