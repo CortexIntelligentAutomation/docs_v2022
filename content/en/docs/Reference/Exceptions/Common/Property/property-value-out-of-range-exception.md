@@ -92,6 +92,13 @@ Please click the HelpLink for more information on how to fix this."
 or
 
 ```json
+"`<property-name>` given was `<invalid-value>`; it must be less than or equal to `<maximum-allowed-value>`.
+Please click the HelpLink for more information on how to fix this."
+```
+
+or
+
+```json
 "'<related-property-name>' given was <related-property-value> and '<property-name>' given was <invalid-value>.
 The '<property-name>' must be less than or equal to <maximum-allowed-value> (<calculation-of-maximum-allowed-value>).
 Please click the HelpLink for more information on how to fix this."
