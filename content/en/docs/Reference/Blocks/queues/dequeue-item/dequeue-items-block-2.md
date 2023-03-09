@@ -144,6 +144,10 @@ The exceptions thrown by the block can be found below:
 
 If [Count][Count Property] is negative, all items are dequeued from [Queue][Queue Property] to [Items][Items Property].
 
+### Zero Count
+
+If [Count][Count Property] is `0`, no items are dequeued and [Items][Items Property] is set to an empty list (i.e. `[]`).
+
 [Queue Property]: {{< ref "#queue" >}}
 [Count Property]: {{< ref "#count" >}}
 [Items Property]: {{< ref "#item" >}}
