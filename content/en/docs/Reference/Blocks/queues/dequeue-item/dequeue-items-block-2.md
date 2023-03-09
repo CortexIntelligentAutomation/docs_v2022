@@ -28,7 +28,7 @@ This example will dequeue `2` items from a [QueueWithPriority][]&lt;[String][], 
 |--------------------|---------------------------|------------------------------------------|
 | [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": "Item -1", "Priority": -1}, {"Item": "Item 0", "Priority": 0}, {"Item": "Item 1", "Priority": 1}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
 | [Count][Count Property] | `($)Count`, with value `2` | `($)Count` is a variable of type [Int32][] |
-| [Items][Items Property] | `($)Item`, with no value | `($)Items` is a variable that will be set to a [List][]&lt;[string][]&gt; value |
+| [Items][Items Property] | `($)Item`, with no value | `($)Items` is a variable that will be set to a [List][]&lt;[String][]&gt; value |
 
 #### Result
 
@@ -64,11 +64,11 @@ This example will dequeue `3` items from a [QueueWithPriority][]&lt;[Int32][], [
 |--------------------|---------------------------|------------------------------------------|
 | [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": 1, "Priority": 0}, {"Item": 2, "Priority": 0}, {"Item": 3, "Priority": 0}, {"Item": 4, "Priority": 0}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[Int32][], [Int32][]&gt; |
 | [Count][Count Property] | `($)Count`, with value `3` | `($)Count` is a variable of type [Int32][] |
-| [Items][Items Property] | `($)Item`, with no value | `($)Items` is a variable that will be set to a [List][]&lt;[int32][]&gt; value |
+| [Items][Items Property] | `($)Item`, with no value | `($)Items` is a variable that will be set to a [List][]&lt;[Int32][]&gt; value |
 
 #### Result
 
-Dequeueing `3` items from `{"Items": [{"Item": 1, "Priority": 0}, {"Item": 2, "Priority": 0}, {"Item": 3, "Priority": 0}], "PriorityComparer": {}}` results in the variable `($)Items` being updated to the following:
+Dequeueing `3` items from `{"Items": [{"Item": 1, "Priority": 0}, {"Item": 2, "Priority": 0}, {"Item": 3, "Priority": 0}, {"Item" : 4, "Priority": 0}], "PriorityComparer": {}}` results in the variable `($)Items` being updated to the following:
 
 ```json
 [1, 2, 3]
