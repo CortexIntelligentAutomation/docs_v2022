@@ -1,10 +1,10 @@
 ---
 title: "Remove All Items"
 linkTitle: "Remove All Items"
-description: "Remove all items from the queue."
+description: "Removes all items from a queue."
 ---
 
-{{< figure src="/blocks/queues-peek-block-icon.png" alt="Icon" class="block-icon" >}}
+{{< figure src="/blocks/queues-remove-all-items-block-icon.png" alt="Icon" class="block-icon" >}}
 
 # {{% param title %}}
 
@@ -12,13 +12,13 @@ description: "Remove all items from the queue."
 
 ## Description
 
-Remove all items from the [Queue][queue property]. 
+Removes all items from a [Queue][queue property].
 
 ## Examples
 
-### Remove all items from the queue
+### Remove all items from the Queue
 
-This example will remove all items from [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Item -1"` with a priority of `-1` and `"Item 1"` with a priority of `1` and returns an empty queue.
+This example will remove all items from [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Item -1"` with a priority of `-1` and `"Item 1"` with a priority of `1`.
 
 #### Properties
 
@@ -28,7 +28,7 @@ This example will remove all items from [QueueWithPriority][]&lt;[String][], [In
 
 #### Result
 
-Removing all items from `{"Items": [{"Item": "Item -1", "Priority": -1}, {"Item": "Item 1", "Priority": 1}], "PriorityComparer": {}}` results in the  `($)Queue` being updated to:
+Removing all items from `{"Items": [{"Item": "Item -1", "Priority": -1}, {"Item": "Item 1", "Priority": 1}], "PriorityComparer": {}}` results in `($)Queue` being updated to:
 
 ```json
 {
@@ -43,7 +43,7 @@ Removing all items from `{"Items": [{"Item": "Item -1", "Priority": -1}, {"Item"
 
 ### Queue
 
-The [Queue][Queue Property] to peek from.
+The [Queue][Queue Property] to remove all items from.
   
 | | |
 |--------------------|---------------------------|
