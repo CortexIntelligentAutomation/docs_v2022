@@ -1,12 +1,21 @@
+{{/*  
+	The version selector dropdown.
+	It is only used when in /docs/ 
+*/}}
+{{- $currentVer := index (findRE `^\/docs\/[^\/]*\/` .Page.RelPermalink 1) 0 }}
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	{{ .Site.Params.version_menu }}
+	{{- range where .Site.Params.versions "url" $currentVer -}}
+		 {{ .version }}
+    {{- else -}}
+		Versions
+	{{- end -}}
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	{{ $path := "" }}
 	{{ if .Site.Params.version_menu_pagelinks }}
-		{{ $path = .Page.RelPermalink }}
+		{{ $path = replace .Page.RelPermalink $currentVer "" }}
 	{{ end }}
 	{{ range .Site.Params.versions }}
-	<a class="dropdown-item" href="{{ .url }}{{ $path }}">{{ .version }}</a>
+		<a class="dropdown-item" href="{{ .url }}{{ $path }}">{{ .version }}</a>
 	{{ end }}
 </div>
