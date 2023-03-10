@@ -10,7 +10,9 @@ description: "Used to specify settings for splitting text (i.e. whether to inclu
 
 ## Summary
 
-Specifies settings for splitting text to manipulate whitespaces in resulting text.
+The `StringSplitOptions` is used to specify settings for splitting text (i.e. whether to include or remove empty entries from results).
+
+`StringSplitOptions` is an [enum][Working with Enums] data type, which means it has a defined set of values, where each value has an associated [String][] name and [Int32][] value.
 
 | | |
 |-|-|
@@ -18,8 +20,7 @@ Specifies settings for splitting text to manipulate whitespaces in resulting tex
 | **Name:**              | `StringSplitOptions`                                     |
 | **Full Name:**         | `System.StringSplitOptions`                              |
 | **Alias:**             | N/A                                                      |
-| **Description:**       | StringSplitOptions defines the formatting of the resulting list when using string.split. |
-| **Size:**              | `4` bytes                                              |
+| **Description:**       | Specifies settings for splitting text (i.e. whether to include or remove empty entries from results). |
 | **Default Value:**     | `(StringSplitOptions)0`                             |
 | **Can be used as:**    | `StringSplitOptions`, `Object`, `dynamic`           |
 | **Can be cast to:**    | `Int16` (e.g. `(Int16)StringSplitOptions.None` or `(System.Int16)StringSplitOptions.None` or `(short)StringSplitOptions.None`)  |
@@ -46,13 +47,13 @@ Specifies settings for splitting text to manipulate whitespaces in resulting tex
 | **Value:**   | [Int32][] with value `1`                                   |
 | **Notes:**   | Empty entries are removed.                                 |
 
-### Trim Entries
+### TrimEntries
 
 | | |
 |-|-|
 | **Name:**    | TrimEntries                                                                                |
 | **Value:**   | [Int32][] with value `2`                                                                   |
-| **Notes:**   | Empty entries are not removed but trailing or leading whitespaces (at the end or start of a string) are removed.  |
+| **Notes:**   | Empty entries are not removed but trailing or leading whitespaces (at the end or start of text) are removed.  |
 
 ## Remarks
 
@@ -62,18 +63,25 @@ The following table shows some of the ways that `StringSplitOptions` can be crea
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
+| Declare a `StringSplitOptions` literal | `None` | `StringSplitOptions.None` | Literal | Empty entries are not removed. |
+| | `RemoveEmptyEntries` | `StringSplitOptions.RemoveEmptyEntries` | Literal | Empty entries are removed. |
+| | `TrimEntries` | `StringSplitOptions.TrimEntries` | Literal | Empty entries are not removed but trailing and leading whitespaces are removed. |
 | Use a `StringSplitOptions` expression | `StringSplitOptions.None` | `StringSplitOptions.None`| Expression | Empty entries are not removed.|
-| | `StringSplitOptions.RemoveEmptyEntries` | `StringSplitOptions.RemoveEmptyEntries`| Expression | Empty Entries are removed. |
-| | `StringSplitOptions.TrimEntries` | `StringSplitOptions.TrimEntries`| Expression | Empty Entries are not removed but trailing and leading whitespace are removed. |
+| | `StringSplitOptions.RemoveEmptyEntries` | `StringSplitOptions.RemoveEmptyEntries`| Expression | Empty entries are removed. |
+| | `StringSplitOptions.TrimEntries` | `StringSplitOptions.TrimEntries`| Expression | Empty entries are not removed but trailing and leading whitespaces are removed. |
+| | `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` | `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` | Expression | Empty entries are removed and trailing and leading whitespaces are removed. |
 | Use [Explicit Casting][] | `(StringSplitOptions)0` | `StringSplitOptions.None`| Expression | Empty entries are not removed. |
 | | `(StringSplitOptions)1` | `StringSplitOptions.RemoveEmptyEntries`| Expression | Empty entries are removed. |
-| | `(StringSplitOptions)2` | `StringSplitOptions.TrimEntries`| Expression | Empty Entries are not removed but trailing and leading whitespace are removed. |
+| | `(StringSplitOptions)2` | `StringSplitOptions.TrimEntries`| Expression | Empty entries are not removed but trailing and leading whitespaces are removed. |
+| | `(StringSplitOptions)3` | `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries`| Expression | Empty entries are removed and trailing and leading whitespaces are removed. |
 | Use `Enum.Parse` | `(StringSplitOptions)Enum.Parse(typeof(StringSplitOptions), "None")` | `StringSplitOptions.None`| Expression | Parses `"None"` and converts it to `StringSplitOptions.None`. See [Enum.Parse][] |
 | | `(StringSplitOptions)Enum.Parse(typeof(StringSplitOptions), "RemoveEmptyEntries")` | `StringSplitOptions.RemoveEmptyEntries`| Expression | Parses `"RemoveEmptyEntries"` and converts it to `StringSplitOptions.RemoveEmptyEntries`. See [Enum.Parse][] |
 | | `(StringSplitOptions)Enum.Parse(typeof(StringSplitOptions), "TrimEntries")` | `StringSplitOptions.TrimEntries`| Expression | Parses `"TrimEntries"` and converts it to `StringSplitOptions.TrimEntries`. See [Enum.Parse][] |
 | Use `Enum.ToObject` | `(StringSplitOptions)Enum.ToObject(typeof(StringSplitOptions), 0)` | `StringSplitOptions.None`| Expression | Converts `0` to `StringSplitOptions.None` value. See [Enum.ToObject][] |
 | | `(StringSplitOptions)Enum.ToObject(typeof(StringSplitOptions), 1)` | `StringSplitOptions.RemoveEmptyEntries`| Expression | Converts `1` to `StringSplitOptions.RemoveEmptyEntries` value. See [Enum.ToObject][] |
 | | `(StringSplitOptions)Enum.ToObject(typeof(StringSplitOptions), 2)` | `StringSplitOptions.TrimEntries`| Expression | Converts `2` to `StringSplitOptions.TrimEntries` value. See [Enum.ToObject][] |
+| | `(StringSplitOptions)Enum.ToObject(typeof(StringSplitOptions), 3)` | `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` | Expression | Converts `3` to `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` value. See [Enum.ToObject][] |
+
 
 Please see [Instantiating an enumeration type][] for further information.
 
@@ -86,30 +94,36 @@ The following table shows some of the ways that a `StringSplitOptions` can be co
 | Use `ToString` | `StringSplitOptions.None.ToString()` | `"None"` | Expression | Converts `StringSplitOptions.None` to `"None"`. See [Enum.ToString][] |
 | | `StringSplitOptions.RemoveEmptyEntries.ToString()` | `"RemoveEmptyEntries"` | Expression | Converts `StringSplitOptions.RemoveEmptyEntries` to `"RemoveEmptyEntries"`. See [Enum.ToString][] |
 | | `StringSplitOptions.TrimEntries.ToString()` | `"TrimEntries"` | Expression | Converts `StringSplitOptions.TrimEntries` to `"TrimEntries"`. See [Enum.ToString][] |
+| | `(StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries).ToString()` | `"RemoveEmptyEntries, TrimEntries"` | Expression | Converts `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` to `"RemoveEmptyEntries, TrimEntries"`. See [Enum.ToString][] |
 | Use `Convert.ToString` | `Convert.ToString(StringSplitOptions.None)` | `"None"` | Expression | Converts `StringSplitOptions.None` to `"None"`. See [Convert.ToString][] |
 | | `Convert.ToString(StringSplitOptions.RemoveEmptyEntries)` | `"RemoveEmptyEntries"` | Expression | Converts `StringSplitOptions.RemoveEmptyEntries` to `"RemoveEmptyEntries"`. See [Convert.ToString][] |
 | | `Convert.ToString(StringSplitOptions.TrimEntries)` | `"TrimEntries"` | Expression | Converts `StringSplitOptions.TrimEntries` to `"TrimEntries"`. See [Convert.ToString][] |
+| | `Convert.ToString(StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries)` | `"RemoveEmptyEntries, TrimEntries"` | Expression | Converts `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` to `"RemoveEmptyEntries, TrimEntries"`. See [Convert.ToString][] |
 | Use `Convert Object To Text` block | where `Object` property has a value of `StringSplitOptions.None` | `"None"` | N/A  | Converts `StringSplitOptions.None` to `"None"`. See [Convert Object To Text][] |
-| | where `Object` property has a value of `StringSplitOptions.RemoveEmptyEntries` | `"RemoveEmptyEntries"` | N/A  | Converts `StringSplitOptions.RemoveEmptyEntries` to `"RemoveEmptyEntries"`. See [Convert Object To Text][] |
+| | where `Object` property has a value of `StringSplitOptions.RemoveEmptyEntries` | `"RemoveEmptyEntries"` | N/A  | Converts `StringSplitOptions.RemoveEmptyEntries` to `"RemoveEmptyEntries"`. See [Convert Object To Text][] || | where `Object` property has a value of `StringSplitOptions.RemoveEmptyEntries` | `"RemoveEmptyEntries"` | N/A  | |Converts `StringSplitOptions.RemoveEmptyEntries` to `"RemoveEmptyEntries"`. See [Convert Object To Text][] |
 | | where `Object` property has a value of `StringSplitOptions.TrimEntries` | `"TrimEntries"` | N/A  | Converts `StringSplitOptions.TrimEntries` to `"TrimEntries"`. See [Convert Object To Text][] |
+| | where `Object` property has a value of `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` | `"RemoveEmptyEntries, TrimEntries"` | N/A  | Converts `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` to `"RemoveEmptyEntries, TrimEntries"`. See [Convert Object To Text][] |
 | Use `Convert Object To Json` block | where `Object` property has a value of `StringSplitOptions.None` | `"0"` | N/A  | Converts `StringSplitOptions.None` to `"0"`. See [Convert Object To Json][] |
 | | where `Object` property has a value of `StringSplitOptions.RemoveEmptyEntries` | `"1"` | N/A  | Converts `StringSplitOptions.RemoveEmptyEntries` to `"1"`. See [Convert Object To Json][] |
 | | where `Object` property has a value of `StringSplitOptions.TrimEntries` | `"2"` | N/A  | Converts `StringSplitOptions.TrimEntries` to `"2"`. See [Convert Object To Json][] |
+| | where `Object` property has a value of `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` | `"3"` | N/A  | Converts `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` to `"3"`. See [Convert Object To Json][] |
 
 Please see [Formatting enumeration values][] for further information.
 
 ### Convert StringSplitOptions to a Number
 
-The following table shows some of the ways that an `StringSplitOptions` can be converted to a number.
+The following table shows some of the ways that a `StringSplitOptions` can be converted to a number.
 
 | Method | Example | Result | Editor&nbsp;Support | Notes |
 |-|-|-|-|-|
 | Use [Explicit Casting][]              | `(Int32)StringSplitOptions.None`   | `0` | Expression | [Casts][Explicit Casting] `StringSplitOptions.None` to `0` |
 |                                       | `(Int32)StringSplitOptions.RemoveEmptyEntries`   | `1` | Expression | [Casts][Explicit Casting] `StringSplitOptions.RemoveEmptyEntries` to `1` |
 |                                       | `(Int32)StringSplitOptions.TrimEntries`   | `2` | Expression | [Casts][Explicit Casting] `StringSplitOptions.TrimEntries` to `2` |
+|                                       | `(Int32)(StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries)`   | `3` | Expression | [Casts][Explicit Casting] `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` to `3` |
 | Use `Convert.ToInt32`                 | `Convert.ToInt32(StringSplitOptions.None)`   | `0` | Expression | Converts `StringSplitOptions.None` to `0`. See [Convert.ToInt32][] |
 |                                       | `Convert.ToInt32(StringSplitOptions.RemoveEmptyEntries)`   | `1` | Expression | Converts `StringSplitOptions.RemoveEmptyEntries` to `1`. See [Convert.ToInt32][] |
 |                                       | `Convert.ToInt32(StringSplitOptions.TrimEntries)`   | `2` | Expression | Converts `StringSplitOptions.TrimEntries` to `2`. See [Convert.ToInt32][] |
+|                                       | `Convert.ToInt32(StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries)`   | `3` | Expression | Converts `StringSplitOptions.RemoveEmptyEntries \| StringSplitOptions.TrimEntries` to `3`. See [Convert.ToInt32][] |
 
 ### Property Editor Support
 
@@ -119,7 +133,7 @@ The following table shows some of the ways that an `StringSplitOptions` can be c
 
 ### Known Limitations
 
-Currently only possible to both trim text and remove empty whitespaces in the expression editor by using `(StringSplitOptions)3`.
+Currently it's not possible to specify settings to both trim text and remove empty whitespaces using the Literal Editor. This can be done using the Expression Editor; see the last example in "Use a `StringSplitOptions` expression" in the [Create StringSplitOptions][StringSplitOptions Property] table.
 
 ## See Also
 
@@ -130,12 +144,18 @@ Currently only possible to both trim text and remove empty whitespaces in the ex
 
 ### Related Concepts
 
-* [Explicit Casting][]
 * [Working with Enums][]
+* [Explicit Casting][]
 
 ### External Documentation
 
+* [StringSplitOptions][]
+
 [Split Text]: {{< url "Cortex.Reference.Blocks.Text.SplitText.SplitText.MainDoc" >}}
+
+[StringSplitOptions Property]: {{< ref "#create-stringsplitoptions" >}}
+
+[StringSplitOptions]: {{< url "MSDocs.DotNet.Api.System.StringSplitOptions" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
@@ -155,3 +175,4 @@ Currently only possible to both trim text and remove empty whitespaces in the ex
 
 [Instantiating an enumeration type]: {{< url "MSDocs.DotNet.Api.System.Enum.InstantiatingAnEnum" >}}
 [Formatting enumeration values]: {{< url "MSDocs.DotNet.Api.System.Enum.FormattingEnumerationValues" >}}
+
