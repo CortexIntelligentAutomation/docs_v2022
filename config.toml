@@ -234,7 +234,7 @@ weight = 30
 
 [[params.versions]]
   version = "2022.9"
-  url = "/docs/v2022.9/"
+  url = "/docs/2022.9/"
   dotNetVersion = "netcore-3.1"
 
 [[params.versions]]

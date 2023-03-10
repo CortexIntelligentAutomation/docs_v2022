@@ -5,7 +5,11 @@
 {{- $currentVer := index (findRE `^\/docs\/[^\/]*\/` .Page.RelPermalink 1) 0 }}
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	{{- range where .Site.Params.versions "url" $currentVer -}}
-		 {{ .version }}
+        {{ $versionName := .version }}
+        {{ if .latest }}
+            {{ $versionName = printf "%s (%s)" .version "Latest" }}
+        {{ end }}
+		 {{ $versionName }}
     {{- else -}}
 		Versions
 	{{- end -}}
@@ -16,6 +20,10 @@
 		{{ $path = replace .Page.RelPermalink $currentVer "" }}
 	{{ end }}
 	{{ range .Site.Params.versions }}
-		<a class="dropdown-item" href="{{ .url }}{{ $path }}">{{ .version }}</a>
+        {{ $versionName := .version }}
+        {{ if .latest }}
+            {{ $versionName = printf "%s (%s)" .version "Latest" }}
+        {{ end }}
+		<a class="dropdown-item" href="{{ .url }}{{ $path }}">{{ $versionName }}</a>
 	{{ end }}
 </div>
