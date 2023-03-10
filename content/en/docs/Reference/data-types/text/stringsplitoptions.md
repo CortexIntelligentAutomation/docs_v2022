@@ -37,7 +37,7 @@ The `StringSplitOptions` is used to specify settings for splitting text (i.e. wh
 |-|-|
 | **Name:**    | None                                           |
 | **Value:**   | [Int32][] with value `0`                       |
-| **Notes:**   | Empty entries are not removed.                 |
+| **Notes:**   | Empty entries and trailing or leading whitespaces (at the start or end of text) are not removed.                 |
 
 ### RemoveEmptyEntries
 
@@ -45,7 +45,7 @@ The `StringSplitOptions` is used to specify settings for splitting text (i.e. wh
 |-|-|
 | **Name:**    | RemoveEmptyEntries                                         |
 | **Value:**   | [Int32][] with value `1`                                   |
-| **Notes:**   | Empty entries are removed.                                 |
+| **Notes:**   | Empty entries are removed but trailing or leading whitespaces (at the start or end of text) are not removed.                                 |
 
 ### TrimEntries
 
@@ -53,7 +53,7 @@ The `StringSplitOptions` is used to specify settings for splitting text (i.e. wh
 |-|-|
 | **Name:**    | TrimEntries                                                                                |
 | **Value:**   | [Int32][] with value `2`                                                                   |
-| **Notes:**   | Empty entries are not removed but trailing or leading whitespaces (at the end or start of text) are removed.  |
+| **Notes:**   | Empty entries are not removed but trailing or leading whitespaces (at the start or end of text) are removed.  |
 
 ## Remarks
 
