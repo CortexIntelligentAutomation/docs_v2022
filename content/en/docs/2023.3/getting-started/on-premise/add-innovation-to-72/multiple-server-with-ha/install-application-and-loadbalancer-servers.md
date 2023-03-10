@@ -279,7 +279,7 @@ More advanced configuration (such as changing ports) can be undertaken by modify
 
 ## Check Application Services
 
-{{< section "/headless/install-application-server/check-application-services/multi-server.md">}}
+{{< section "/install-application-server/check-application-services/multi-server.md">}}
 
 ## Preserve installation files
 

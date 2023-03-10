@@ -54,8 +54,8 @@ Each service has an endpoint which is used to communicate with Service Fabric an
 
 | Name of Service | Description                                                                    | Default Port(s)                      | Protocol(s) | Direction         | Program |
 |-----------------|--------------------------------------------------------------------------------|--------------------------------------|-------------|-------------------|---------|
-| API Gateway     | {{< section "/headless/port-requirements/description/api-gateway.md" >}} | 8722                                 | TCP, UDP    | Inbound, Outbound | Any     |
-| Execution       | {{< section "/headless/port-requirements/description/execution.md" >}}   | Dynamic – Uses the application ports | N/A         | N/A               | N/A     |
+| API Gateway     | {{< section "/port-requirements/description/api-gateway.md" >}} | 8722                                 | TCP, UDP    | Inbound, Outbound | Any     |
+| Execution       | {{< section "/port-requirements/description/execution.md" >}}   | Dynamic – Uses the application ports | N/A         | N/A               | N/A     |
 
 ## Cortex Load Balancer Rules
 
