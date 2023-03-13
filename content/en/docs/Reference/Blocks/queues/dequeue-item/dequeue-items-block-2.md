@@ -8,7 +8,7 @@ description: "Removes and returns Items at the beginning of a Queue."
 
 # {{% param title %}}
 
-<p class="namespace">(Cortex.Blocks.Queues.DequeueItem.DequeueItemsBlock)</p>
+<p class="namespace">(Cortex.Blocks.Queues.DequeueItem.DequeueItemsBlock`2)</p>
 
 ## Description
 
@@ -18,7 +18,7 @@ Each item is removed and returned to [Items][Items Property] in the same order a
 
 ## Examples
 
-### Dequeue Count of Items from a Queue containing Items with different priorities
+### Dequeue Count of Items from a Queue containing items with different priorities
 
 This example will dequeue `2` items from a [QueueWithPriority][]&lt;[String][], [Int32][]&gt; that contains `"Item -1"` with a priority of `-1`,   `"Item 0"` with a priority of `0` and `"Item 1"` with a priority of `1`.
 
@@ -28,7 +28,7 @@ This example will dequeue `2` items from a [QueueWithPriority][]&lt;[String][], 
 |--------------------|---------------------------|------------------------------------------|
 | [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": "Item -1", "Priority": -1}, {"Item": "Item 0", "Priority": 0}, {"Item": "Item 1", "Priority": 1}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[String][], [Int32][]&gt; |
 | [Count][Count Property] | `($)Count`, with value `2` | `($)Count` is a variable of type [Int32][] |
-| [Items][Items Property] | `($)Item`, with no value | `($)Items` is a variable that will be set to a [List][]&lt;[String][]&gt; value |
+| [Items][Items Property] | `($)Items`, with no value | `($)Items` is a variable that will be set to a [List][]&lt;[String][]&gt; value |
 
 #### Result
 
@@ -44,7 +44,7 @@ and the variable `($)Queue` being updated to the following:
 {
     "Items": [
         {
-            "Item": 1,
+            "Item": "Item 1",
             "Priority": 1
         }
     ], 
@@ -54,7 +54,7 @@ and the variable `($)Queue` being updated to the following:
 
 ***
 
-### Dequeue Count of Items from a Queue containing Items with the same priority
+### Dequeue Count of Items from a Queue containing items with the same priority
 
 This example will dequeue `3` items from a [QueueWithPriority][]&lt;[Int32][], [Int32][]&gt; that contains `1` with a priority of `0`, `2` with a priority of `0`, `3` with a priority of `0` and `4` with a priority of `0`.
 
@@ -64,7 +64,7 @@ This example will dequeue `3` items from a [QueueWithPriority][]&lt;[Int32][], [
 |--------------------|---------------------------|------------------------------------------|
 | [Queue][Queue Property] | `($)Queue`, with value `{"Items": [{"Item": 1, "Priority": 0}, {"Item": 2, "Priority": 0}, {"Item": 3, "Priority": 0}, {"Item": 4, "Priority": 0}], "PriorityComparer": {}}` | `($)Queue` is a variable of type [QueueWithPriority][]&lt;[Int32][], [Int32][]&gt; |
 | [Count][Count Property] | `($)Count`, with value `3` | `($)Count` is a variable of type [Int32][] |
-| [Items][Items Property] | `($)Item`, with no value | `($)Items` is a variable that will be set to a [List][]&lt;[Int32][]&gt; value |
+| [Items][Items Property] | `($)Items`, with no value | `($)Items` is a variable that will be set to a [List][]&lt;[Int32][]&gt; value |
 
 #### Result
 
@@ -122,11 +122,11 @@ The [Items][Items Property] at the beginning of the [Queue][Queue Property].
 
 | | |
 |--------------------|---------------------------|
-| Data Type | [TItem][] |
+| Data Type | [IList][]&lt;[TItem][]&gt; |
 | Property Type | [Output][] |
 | Is [Advanced][] | `false` |
 | Default Editor | [Variable][] |
-| Default Value | `($)Item` with no value |
+| Default Value | `($)Items` with no value |
 
 ## Exceptions
 
@@ -150,7 +150,7 @@ If [Count][Count Property] is `0`, no items are dequeued and [Items][Items Prope
 
 [Queue Property]: {{< ref "#queue" >}}
 [Count Property]: {{< ref "#count" >}}
-[Items Property]: {{< ref "#item" >}}
+[Items Property]: {{< ref "#items" >}}
 
 [Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 [InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
@@ -159,6 +159,7 @@ If [Count][Count Property] is `0`, no items are dequeued and [Items][Items Prope
 [TItem]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
 [TPriority]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
 [List]: {{< url "Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
+[IList]: {{< url "Cortex.Reference.DataTypes.Collections.IList.MainDoc" >}}
 
 [PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
 [PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}

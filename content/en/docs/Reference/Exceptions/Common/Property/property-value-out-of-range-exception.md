@@ -92,7 +92,7 @@ Please click the HelpLink for more information on how to fix this."
 or
 
 ```json
-"`<property-name>` given was `<invalid-value>`; it must be less than or equal to `<maximum-allowed-value>`.
+"`<property-name>` given was <invalid-value>; it must be less than or equal to <maximum-allowed-value>.
 Please click the HelpLink for more information on how to fix this."
 ```
 
