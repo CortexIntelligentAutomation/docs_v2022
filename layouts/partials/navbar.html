@@ -47,7 +47,7 @@
       </li>
       {{ end -}}
       {{ if (and .Site.Params.versions (hasPrefix .Page.RelPermalink $docsUrl )) -}}
-      <li class="nav-item dropdown mr-4 d-none d-lg-block" id="nav-version">
+      <li class="nav-item dropdown mr-4 d-lg-block" id="nav-version">
           {{ partial "navbar-version-selector.html" . -}}
       </li>
       {{ end -}}
