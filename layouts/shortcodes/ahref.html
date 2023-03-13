@@ -1,25 +1,25 @@
-{{/*
+{{- /*
     Creates a hyperlink element with the provided link.
 */}}
 {{- $url := urls.Parse (index .Site.Data.urls (split (.Get 0) ".")) }}
 {{- $link := (printf "%s://%s%s" $url.Scheme $url.Host $url.Path) }}
 {{- $currentVer := index (findRE `^\/docs\/[^\/]*\/` .Page.RelPermalink 1) 0 }}
 {{- if  $currentVer }}
-    {{/*  All GOOD  */}}
+    {{- /*  All GOOD  */}}
 {{- else }}
-    {{/*  use latest doc as not in a versioned page  */}}
-    {{ range where .Site.Params.versions "version" "Latest" }}
+    {{- /*  use latest doc as not in a versioned page  */}}
+    {{- range where .Site.Params.versions "version" "Latest" }}
         {{- $currentVer = .url }}
-    {{ end }}
+    {{- end }}
 {{- end }}
 {{- if hasPrefix $url "https://learn.microsoft.com/en-us/dotnet/api/" }}
-    {{ range where .Site.Params.versions "url" $currentVer }}
+    {{- range where .Site.Params.versions "url" $currentVer }}
         {{- $link = (printf "%s?view=%s" $link .dotNetVersion) }}
         {{- if ne $url.Fragment "" }}
             {{- $link = (printf "%s#%s" $link $url.Fragment) }}
         {{- end }}
-        <a href="{{ $link }}">{{ .Get 1 }}</a>
-    {{ end }}
+        <a href="{{- $link }}">{{ .Get 1 }}</a>
+    {{- end }}
 {{- else }}
-    <a href="{{ $url }}">{{ .Get 1 }}</a>
+    <a href="{{- $url }}">{{ .Get 1 }}</a>
 {{- end }}
