@@ -72,28 +72,28 @@ None
 [Accessing Variables from Other Scopes]: {{< ref "#accessing-variables-from-other-scopes" >}}
 [Changing a Variable's Scope]: {{< ref "#changing-a-variables-scope" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[Block Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
-[Expression Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
-[Variable Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
-[Editor: Creating Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.CreatingVariables" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[Block Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
+[Expression Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Variable Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
+[Editor: Creating Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.CreatingVariables" >}}
 
-[Executions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
-[execution]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.WhatIsAnExecution.MainDoc" >}}
+[Executions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
+[execution]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.WhatIsAnExecution.MainDoc" >}}
 
-[Flows]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
-[flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
+[Flows]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
+[flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
 
-[Workspaces]: {{< url "Cortex.Reference.Concepts.Fundamentals.Workspaces.MainDoc" >}}
-[workspace]: {{< url "Cortex.Reference.Concepts.Fundamentals.Workspaces.WhatIsAWorkspace.MainDoc" >}}
+[Workspaces]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Workspaces.MainDoc" >}}
+[workspace]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Workspaces.WhatIsAWorkspace.MainDoc" >}}
 
-[Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
-[variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
+[Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
+[variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
 
-[Variables Grid]: {{< url "Cortex.Guides.Studio.SouthPanel.VariablesGrid" >}}
-[Grid: Creating Variables]: {{< url "Cortex.Guides.Studio.SouthPanel.CreatingVariables" >}}
-[Grid: Changing a Variable's Scope]: {{< url "Cortex.Guides.Studio.SouthPanel.ChangingAVariablesScope" >}}
+[Variables Grid]: {{< url path="Cortex.Guides.Studio.SouthPanel.VariablesGrid" >}}
+[Grid: Creating Variables]: {{< url path="Cortex.Guides.Studio.SouthPanel.CreatingVariables" >}}
+[Grid: Changing a Variable's Scope]: {{< url path="Cortex.Guides.Studio.SouthPanel.ChangingAVariablesScope" >}}
 
-[All Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
+[All Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
 
-[snippets]: {{< url "Cortex.Reference.Glossary.P-T.Snippets" >}}
+[snippets]: {{< url path="Cortex.Reference.Glossary.P-T.Snippets" >}}

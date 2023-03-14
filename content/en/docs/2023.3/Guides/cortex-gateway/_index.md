@@ -5,4 +5,4 @@ description: "The centralised web-based portal for accessing all user applicatio
 weight: 1
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

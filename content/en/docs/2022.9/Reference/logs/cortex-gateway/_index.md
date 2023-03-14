@@ -5,4 +5,4 @@ description: "This section includes all reference documentation for the logs gen
 weight: 1
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

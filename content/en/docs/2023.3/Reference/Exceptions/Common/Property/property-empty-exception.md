@@ -144,63 +144,63 @@ None
 
 [Message]: {{< ref "#message" >}}
 
-[Execute Data Command]: {{< url "Cortex.Reference.Blocks.Data.ExecuteDataCommand.ExecuteDataCommand.MainDoc" >}}
+[Execute Data Command]: {{< url path="Cortex.Reference.Blocks.Data.ExecuteDataCommand.ExecuteDataCommand.MainDoc" >}}
 
-[Convert Text To Date Time]: {{< url "Cortex.Reference.Blocks.DateAndTime.ConvertDateTime.ConvertTextToDateTime.MainDoc" >}}
+[Convert Text To Date Time]: {{< url path="Cortex.Reference.Blocks.DateAndTime.ConvertDateTime.ConvertTextToDateTime.MainDoc" >}}
 
-[Send Email Using SMTP Server]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.MainDoc" >}}
+[Send Email Using SMTP Server]: {{< url path="Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.MainDoc" >}}
 
-[Handle Block Exception Matching Messages]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingMessages.MainDoc" >}}
-[Handle Block Exception Matching Type Name]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeName.MainDoc" >}}
-[Handle Block Exception Matching Type Names]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeNames.MainDoc" >}}
+[Handle Block Exception Matching Messages]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingMessages.MainDoc" >}}
+[Handle Block Exception Matching Type Name]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeName.MainDoc" >}}
+[Handle Block Exception Matching Type Names]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeNames.MainDoc" >}}
 
-[Copy File]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFile.MainDoc" >}}
-[Copy Files]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFiles.MainDoc" >}}
-[Copy Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.CopyFolder.MainDoc" >}}
-[Copy Folders]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.CopyFolders.MainDoc" >}}
-[Create Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CreateFolder.CreateFolder.MainDoc" >}}
-[Create Folders]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CreateFolder.CreateFolders.MainDoc" >}}
-[Delete File]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.DeleteFile.DeleteFile.MainDoc" >}}
-[Delete Files]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.DeleteFile.DeleteFiles.MainDoc" >}}
-[Delete Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.DeleteFolder.DeleteFolder.MainDoc" >}}
-[Delete Folders]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.DeleteFolder.DeleteFolders.MainDoc" >}}
-[Duplicate Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.DuplicateFolder.MainDoc" >}}
-[Get File Information]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.GetFileInformation.GetFileInformation.MainDoc" >}}
-[Get Folder Content]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.GetFolderContent.GetFolderContent.MainDoc" >}}
-[Get Folder Information]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.GetFolderInformation.GetFolderInformation.MainDoc" >}}
-[Move File]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.MoveFile.MoveFile.MainDoc" >}}
-[Move Files]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.MoveFile.MoveFiles.MainDoc" >}}
-[Move Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.MoveFolder.MoveFolder.MainDoc" >}}
-[Move Folders]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.MoveFolder.MoveFolders.MainDoc" >}}
-[Read All Lines]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.ReadFile.ReadAllLines.MainDoc" >}}
-[Read All Text]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.ReadFile.ReadAllText.MainDoc" >}}
-[Rename Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.RenameFolder.RenameFolder.MainDoc" >}}
-[Search File]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.SearchFile.SearchFile.MainDoc" >}}
-[Search Files]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.SearchFile.SearchFiles.MainDoc" >}}
-[Write All Lines]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.WriteFile.WriteAllLines.MainDoc" >}}
-[Write All Text]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.WriteFile.WriteAllText.MainDoc" >}}
+[Copy File]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFile.MainDoc" >}}
+[Copy Files]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFiles.MainDoc" >}}
+[Copy Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.CopyFolder.MainDoc" >}}
+[Copy Folders]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.CopyFolders.MainDoc" >}}
+[Create Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CreateFolder.CreateFolder.MainDoc" >}}
+[Create Folders]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CreateFolder.CreateFolders.MainDoc" >}}
+[Delete File]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.DeleteFile.DeleteFile.MainDoc" >}}
+[Delete Files]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.DeleteFile.DeleteFiles.MainDoc" >}}
+[Delete Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.DeleteFolder.DeleteFolder.MainDoc" >}}
+[Delete Folders]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.DeleteFolder.DeleteFolders.MainDoc" >}}
+[Duplicate Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.DuplicateFolder.MainDoc" >}}
+[Get File Information]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.GetFileInformation.GetFileInformation.MainDoc" >}}
+[Get Folder Content]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.GetFolderContent.GetFolderContent.MainDoc" >}}
+[Get Folder Information]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.GetFolderInformation.GetFolderInformation.MainDoc" >}}
+[Move File]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.MoveFile.MoveFile.MainDoc" >}}
+[Move Files]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.MoveFile.MoveFiles.MainDoc" >}}
+[Move Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.MoveFolder.MoveFolder.MainDoc" >}}
+[Move Folders]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.MoveFolder.MoveFolders.MainDoc" >}}
+[Read All Lines]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.ReadFile.ReadAllLines.MainDoc" >}}
+[Read All Text]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.ReadFile.ReadAllText.MainDoc" >}}
+[Rename Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.RenameFolder.RenameFolder.MainDoc" >}}
+[Search File]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.SearchFile.SearchFile.MainDoc" >}}
+[Search Files]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.SearchFile.SearchFiles.MainDoc" >}}
+[Write All Lines]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.WriteFile.WriteAllLines.MainDoc" >}}
+[Write All Text]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.WriteFile.WriteAllText.MainDoc" >}}
 
-[Convert Json To Object]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertJsonToObject.MainDoc" >}}
+[Convert Json To Object]: {{< url path="Cortex.Reference.Blocks.Json.ConvertJson.ConvertJsonToObject.MainDoc" >}}
 
-[Get Item At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemAtBeginning.MainDoc" >}}
-[Get Item At End]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemAtEnd.MainDoc" >}}
-[Set Item At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemAtBeginning.MainDoc" >}}
-[Set Item At End]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemAtEnd.MainDoc" >}}
-[Set Items At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtBeginning.MainDoc" >}}
-[Set Items At End]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtEnd.MainDoc" >}}
-[Set Items At Index]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndex.MainDoc" >}}
+[Get Item At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemAtBeginning.MainDoc" >}}
+[Get Item At End]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemAtEnd.MainDoc" >}}
+[Set Item At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemAtBeginning.MainDoc" >}}
+[Set Item At End]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemAtEnd.MainDoc" >}}
+[Set Items At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtBeginning.MainDoc" >}}
+[Set Items At End]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtEnd.MainDoc" >}}
+[Set Items At Index]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndex.MainDoc" >}}
 
-[Peek Item]: {{< url "Cortex.Reference.Blocks.Queues.PeekItem.PeekItemBlock.MainDoc" >}}
+[Peek Item]: {{< url path="Cortex.Reference.Blocks.Queues.PeekItem.PeekItemBlock.MainDoc" >}}
 
-[Convert Structure To Xml]: {{< url "Cortex.Reference.Blocks.Xml.ConvertXml.ConvertStructureToXml.MainDoc" >}}
-[Convert Xml To Structure]: {{< url "Cortex.Reference.Blocks.Xml.ConvertXml.ConvertXmlToStructure.MainDoc" >}}
+[Convert Structure To Xml]: {{< url path="Cortex.Reference.Blocks.Xml.ConvertXml.ConvertStructureToXml.MainDoc" >}}
+[Convert Xml To Structure]: {{< url path="Cortex.Reference.Blocks.Xml.ConvertXml.ConvertXmlToStructure.MainDoc" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
-[Block Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
-[property]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
-[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
+[Block Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
+[property]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
 
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 
-[empty]: {{< url "Cortex.Reference.Glossary.A-E.Empty" >}}
+[empty]: {{< url path="Cortex.Reference.Glossary.A-E.Empty" >}}

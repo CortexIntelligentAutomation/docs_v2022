@@ -118,27 +118,27 @@ None
 [InputOutput Properties]: {{< ref "#inputoutput-properties" >}}
 [Discarding Outputs]: {{< ref "#discarding-outputs" >}}
 
-[All Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
-[Handle Exception blocks]: {{< url "Cortex.Reference.Blocks.Exceptions.MainDoc" >}}
-[Execute SSH Command]: {{< url "Cortex.Reference.Blocks.Ssh.ExecuteSshCommand.ExecuteSshCommand.MainDoc" >}}
+[All Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
+[Handle Exception blocks]: {{< url path="Cortex.Reference.Blocks.Exceptions.MainDoc" >}}
+[Execute SSH Command]: {{< url path="Cortex.Reference.Blocks.Ssh.ExecuteSshCommand.ExecuteSshCommand.MainDoc" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
-[Property Editors]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.MainDoc" >}}
-[Literal Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Variable Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
-[Expression Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
+[Property Editors]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.MainDoc" >}}
+[Literal Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Variable Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
+[Expression Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 
-[Fundamentals Data Types]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
+[Fundamentals Data Types]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
 
-[Data Types]: {{< url "Cortex.Reference.DataTypes.MainDoc" >}}
-[Collections]: {{< url "Cortex.Reference.DataTypes.Collections.MainDoc" >}}
+[Data Types]: {{< url path="Cortex.Reference.DataTypes.MainDoc" >}}
+[Collections]: {{< url path="Cortex.Reference.DataTypes.Collections.MainDoc" >}}
 
-[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
 
-[Executions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
+[Executions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
 
-[Flows]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
-[flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
+[Flows]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
+[flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
 
-[Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
+[Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}

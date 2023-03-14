@@ -72,18 +72,18 @@ In future, additional ways to propagate exceptions between flows may be added.
 
 [Exception Property]: {{< ref "#exception" >}}
 
-[Rethrow Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.RethrowException.RethrowException.MainDoc" >}}
-[Handle Flow Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleFlow.HandleFlowException.MainDoc" >}}
-[Add Item At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.AddItem.AddItemAtBeginning.MainDoc" >}}
+[Rethrow Exception]: {{< url path="Cortex.Reference.Blocks.Exceptions.RethrowException.RethrowException.MainDoc" >}}
+[Handle Flow Exception]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleFlow.HandleFlowException.MainDoc" >}}
+[Add Item At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.AddItem.AddItemAtBeginning.MainDoc" >}}
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 
-[Exception]: {{< url "Cortex.Reference.DataTypes.Exceptions.Exception.MainDoc" >}}
+[Exception]: {{< url path="Cortex.Reference.DataTypes.Exceptions.Exception.MainDoc" >}}
 
-[PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
+[PropertyNullException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
 
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
+[Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
 
-[Exceptions Viewer]: {{< url "Cortex.Guides.Studio.EastPanel.ExceptionsViewer">}}
+[Exceptions Viewer]: {{< url path="Cortex.Guides.Studio.EastPanel.ExceptionsViewer">}}
 
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}

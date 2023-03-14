@@ -152,19 +152,19 @@ A domain user which is a member of the Local Administrators group on all Applica
 
 1. [Install Grafana][]
 
-[2016 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2016" >}}
-[2019 (x64)]: {{< url "Microsoft.Downloads.Windows.Server2019" >}}
-[Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Architecture" >}}
-[configuring Grafana to use HTTPS]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.ConfigureHTTPS" >}}
-[Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.CreateSelfSignedCertificates" >}}
-[Make Installation Artefacts Available]:  {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.MakeInstallationArtefactsAvailable" >}}
-[Grafana 8.5.4]: {{< url "Grafana.SelfManaged.Downloads.GrafanaWebApp.Windows" >}}
-[Grafana Loki 2.5.0]: {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.GrafanaLokiInstallZip" >}}
-[Install Grafana]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
-[Install IIS Basic Authentication]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.InstallIISBasicAuthentication" >}}
-[installation]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.InstallCertificate" >}}
-[Let’s Encrypt]: {{< url "LetsEncrypt.MainDoc" >}}
-[Promtail 2.5.0]:  {{< url "Grafana.SelfManaged.Downloads.Promtail.PromtailInstallZip" >}}
-[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}
-[URL Rewrite module 2.1]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}
-[Port Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.PortRequirements" >}}
+[2016 (x64)]: {{< url path="Microsoft.Downloads.Windows.Server2016" >}}
+[2019 (x64)]: {{< url path="Microsoft.Downloads.Windows.Server2019" >}}
+[Architecture]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Architecture" >}}
+[configuring Grafana to use HTTPS]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.ConfigureHTTPS" >}}
+[Create Self-Signed Certificates]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.CreateSelfSignedCertificates" >}}
+[Make Installation Artefacts Available]:  {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.MakeInstallationArtefactsAvailable" >}}
+[Grafana 8.5.4]: {{< url path="Grafana.SelfManaged.Downloads.GrafanaWebApp.Windows" >}}
+[Grafana Loki 2.5.0]: {{< url path="Grafana.SelfManaged.Downloads.GrafanaLoki.GrafanaLokiInstallZip" >}}
+[Install Grafana]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallGrafana.MainDoc" >}}
+[Install IIS Basic Authentication]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.InstallIISBasicAuthentication" >}}
+[installation]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.InstallCertificate" >}}
+[Let’s Encrypt]: {{< url path="LetsEncrypt.MainDoc" >}}
+[Promtail 2.5.0]:  {{< url path="Grafana.SelfManaged.Downloads.Promtail.PromtailInstallZip" >}}
+[SSL Best Practices]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.SSLBestPractices" >}}
+[URL Rewrite module 2.1]: {{< url path="IIS.Downloads.UrlRewrite-2_1" >}}
+[Port Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Advanced.PortRequirements" >}}

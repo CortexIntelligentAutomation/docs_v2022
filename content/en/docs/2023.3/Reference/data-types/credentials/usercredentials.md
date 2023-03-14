@@ -127,31 +127,31 @@ None
 [Username Property]: {{< ref "#username" >}}
 [Password Property]: {{< ref "#password" >}}
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Expression]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 
-[BasicEmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
-[IEmailCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.IEmailCredentials.MainDoc" >}}
-[EmailCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.EmailCredentials.MainDoc" >}}
-[EmailUserCredentials]: {{< url "Cortex.Reference.DataTypes.Email.Authentication.EmailUserCredentials.MainDoc" >}}
-[IHttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.IHttpCredentials.MainDoc" >}}
-[HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
-[HttpUserCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpUserCredentials.MainDoc" >}}
-[ISshCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.ISshCredentials.MainDoc" >}}
-[SshCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.SshCredentials.MainDoc" >}}
-[SshUserCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.SshUserCredentials.MainDoc" >}}
+[BasicEmailSessionDetails]: {{< url path="Cortex.Reference.DataTypes.Email.BasicEmailSessionDetails.MainDoc" >}}
+[IEmailCredentials]: {{< url path="Cortex.Reference.DataTypes.Email.Authentication.IEmailCredentials.MainDoc" >}}
+[EmailCredentials]: {{< url path="Cortex.Reference.DataTypes.Email.Authentication.EmailCredentials.MainDoc" >}}
+[EmailUserCredentials]: {{< url path="Cortex.Reference.DataTypes.Email.Authentication.EmailUserCredentials.MainDoc" >}}
+[IHttpCredentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.IHttpCredentials.MainDoc" >}}
+[HttpCredentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
+[HttpUserCredentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.HttpUserCredentials.MainDoc" >}}
+[ISshCredentials]: {{< url path="Cortex.Reference.DataTypes.Ssh.Authentication.ISshCredentials.MainDoc" >}}
+[SshCredentials]: {{< url path="Cortex.Reference.DataTypes.Ssh.Authentication.SshCredentials.MainDoc" >}}
+[SshUserCredentials]: {{< url path="Cortex.Reference.DataTypes.Ssh.Authentication.SshUserCredentials.MainDoc" >}}
 
-[NetworkCredential]: {{< url "MSDocs.DotNet.Api.System.Net.NetworkCredential" >}}
+[NetworkCredential]: {{< url path="MSDocs.DotNet.Api.System.Net.NetworkCredential" >}}
 
-[Send Email Using SMTP Server Block Setting Credentials]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.SettingCredentials" >}}
-[Send Email Using Gmail Block Setting Credentials]: {{< url "Cortex.Reference.Blocks.GoogleWorkspace.Gmail.SendEmail.SendEmailUsingGmail.SettingCredentials" >}}
+[Send Email Using SMTP Server Block Setting Credentials]: {{< url path="Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.SettingCredentials" >}}
+[Send Email Using Gmail Block Setting Credentials]: {{< url path="Cortex.Reference.Blocks.GoogleWorkspace.Gmail.SendEmail.SendEmailUsingGmail.SettingCredentials" >}}
 
-[Working with Email]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
+[Working with Email]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Email.MainDoc" >}}
 
-[EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
-[EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
+[EncryptableText]: {{< url path="Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
+[EncryptedText]: {{< url path="Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
 
-[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+[Convert Object To Json]: {{< url path="Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

@@ -6,7 +6,7 @@ description: "Information related to working with Indexes."
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 
@@ -46,5 +46,5 @@ TODO
 
 TODO
 
-[Expression Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
-[Indexes]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.IndexExpressions" >}}
+[Expression Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Indexes]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.IndexExpressions" >}}

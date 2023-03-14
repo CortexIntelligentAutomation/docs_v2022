@@ -89,27 +89,27 @@ None
 
 * [System.Int32][]
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[Convert.ToInt32]: {{< url "MSDocs.DotNet.Api.System.Convert.ToInt32" >}}
-[Convert.ToString]: {{< url "MSDocs.DotNet.Api.System.Convert.ToString" >}}
+[Convert.ToInt32]: {{< url path="MSDocs.DotNet.Api.System.Convert.ToInt32" >}}
+[Convert.ToString]: {{< url path="MSDocs.DotNet.Api.System.Convert.ToString" >}}
 
-[System.Int32]: {{< url "MSDocs.DotNet.Api.System.Int32.MainDoc" >}}
-[Int32.MaxValue]: {{< url "MSDocs.DotNet.Api.System.Int32.MaxValue" >}}
-[Int32.MinValue]: {{< url "MSDocs.DotNet.Api.System.Int32.MinValue" >}}
-[Int32.Parse]: {{< url "MSDocs.DotNet.Api.System.Int32.Parse" >}}
-[Int32.ToString]: {{< url "MSDocs.DotNet.Api.System.Int32.ToString" >}}
-[Instantiating an Int32 Value]: {{< url "MSDocs.DotNet.Api.System.Int32.InstantiatingAnInt32" >}}
-[Representing an Int32 as a String]: {{< url "MSDocs.DotNet.Api.System.Int32.RepresentingAnInt32AsAString" >}}
+[System.Int32]: {{< url path="MSDocs.DotNet.Api.System.Int32.MainDoc" >}}
+[Int32.MaxValue]: {{< url path="MSDocs.DotNet.Api.System.Int32.MaxValue" >}}
+[Int32.MinValue]: {{< url path="MSDocs.DotNet.Api.System.Int32.MinValue" >}}
+[Int32.Parse]: {{< url path="MSDocs.DotNet.Api.System.Int32.Parse" >}}
+[Int32.ToString]: {{< url path="MSDocs.DotNet.Api.System.Int32.ToString" >}}
+[Instantiating an Int32 Value]: {{< url path="MSDocs.DotNet.Api.System.Int32.InstantiatingAnInt32" >}}
+[Representing an Int32 as a String]: {{< url path="MSDocs.DotNet.Api.System.Int32.RepresentingAnInt32AsAString" >}}
 
-[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
-[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+[Convert Object To Text]: {{< url path="Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url path="Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
 
-[Int16]: {{< url "Cortex.Reference.DataTypes.Numbers.Int16.MainDoc" >}}
-[Int64]: {{< url "Cortex.Reference.DataTypes.Numbers.Int64.MainDoc" >}}
-[Single]: {{< url "Cortex.Reference.DataTypes.Numbers.Single.MainDoc" >}}
-[Double]: {{< url "Cortex.Reference.DataTypes.Numbers.Double.MainDoc" >}}
+[Int16]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int16.MainDoc" >}}
+[Int64]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int64.MainDoc" >}}
+[Single]: {{< url path="Cortex.Reference.DataTypes.Numbers.Single.MainDoc" >}}
+[Double]: {{< url path="Cortex.Reference.DataTypes.Numbers.Double.MainDoc" >}}
 
-[Working with Numbers]: {{< url "Cortex.Reference.Concepts.WorkingWith.Numbers.MainDoc" >}}
+[Working with Numbers]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Numbers.MainDoc" >}}

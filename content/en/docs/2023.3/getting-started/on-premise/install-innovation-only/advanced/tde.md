@@ -36,4 +36,4 @@ To enable TDE on the suite of Gateway Databases you should complete the followin
 1. Click `Execute` to run the script. It may take several minutes to execute depending on the size of the databases.
 1. Once the script has completed successfully, you should move the backed-up certificate and master key to a secure location and the password specified should also be stored securely.
 
-[Gateway Setup]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.SetupGateway" >}}
+[Gateway Setup]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.SetupGateway" >}}

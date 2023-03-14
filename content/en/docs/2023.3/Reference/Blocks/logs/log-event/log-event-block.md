@@ -367,27 +367,27 @@ If [Ended At][EndedAt Property] is left blank or set to `null`, a value of `null
 [Configuring Logging]: {{< ref "#configuring-logging" >}}
 [Anatomy of a Log]: {{< ref "#anatomy-of-a-log" >}}
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
 
-[ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
-[PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
+[ArgumentException]: {{< url path="MSDocs.DotNet.Api.System.ArgumentException" >}}
+[PropertyNullException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
 
-[ISO 8601 Standard]: {{< url "Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.ISO8601Standard" >}}
-[Working with Date and Time]: {{< url "Cortex.Reference.Concepts.WorkingWith.DateAndTime.MainDoc" >}}
+[ISO 8601 Standard]: {{< url path="Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.ISO8601Standard" >}}
+[Working with Date and Time]: {{< url path="Cortex.Reference.Concepts.WorkingWith.DateAndTime.MainDoc" >}}
 
-[Grafana]: {{< url "Grafana.MainDoc" >}}
-[ElasticSearch]: {{< url "ElasticSearch.MainDoc" >}}
-[Splunk]: {{< url "Splunk.MainDoc" >}}
+[Grafana]: {{< url path="Grafana.MainDoc" >}}
+[ElasticSearch]: {{< url path="ElasticSearch.MainDoc" >}}
+[Splunk]: {{< url path="Splunk.MainDoc" >}}
 
-[dynamic]: {{< url "Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
-[Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[DateTimeOffset]: {{< url "Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
-[Nullable]: {{< url "Cortex.Reference.DataTypes.Other.Nullable.MainDoc" >}}
-[EventSeverity]: {{< url "Cortex.Reference.DataTypes.Logs.EventSeverity.MainDoc" >}}
+[dynamic]: {{< url path="Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
+[Structure]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[DateTimeOffset]: {{< url path="Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
+[Nullable]: {{< url path="Cortex.Reference.DataTypes.Other.Nullable.MainDoc" >}}
+[EventSeverity]: {{< url path="Cortex.Reference.DataTypes.Logs.EventSeverity.MainDoc" >}}
 
-[Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
-[Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Literal]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
+[Expression]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}

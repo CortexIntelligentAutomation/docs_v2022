@@ -6,7 +6,7 @@ description: "Information regarding empty text and whitespace."
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

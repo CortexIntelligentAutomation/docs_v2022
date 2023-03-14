@@ -60,12 +60,12 @@ None
 
 [Toggling Advanced Properties]: {{< ref "#toggling-advanced-properties" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
-[Block Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
+[Block Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
 
-[Property Editor]: {{< url "Cortex.Guides.Studio.EastPanel.PropertyEditor" >}}
+[Property Editor]: {{< url path="Cortex.Guides.Studio.EastPanel.PropertyEditor" >}}
 
-[All Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
+[All Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
 
-[Data Type]: {{< url "Cortex.Reference.DataTypes.MainDoc" >}}
+[Data Type]: {{< url path="Cortex.Reference.DataTypes.MainDoc" >}}

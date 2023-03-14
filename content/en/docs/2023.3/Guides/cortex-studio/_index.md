@@ -5,4 +5,4 @@ description: "The web-based, low-code, integrated development environment (IDE) 
 weight: 100
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

@@ -6,7 +6,7 @@ description: "Information regarding .Net regex syntax."
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

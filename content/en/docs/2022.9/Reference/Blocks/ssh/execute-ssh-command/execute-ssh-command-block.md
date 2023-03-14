@@ -269,37 +269,37 @@ None
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
 [Closing Sessions]: {{< ref "#closing-sessions" >}}
 
-[IDictionary]: {{< url "Cortex.Reference.DataTypes.Collections.IDictionary.MainDoc" >}}
-[Dictionary]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
-[EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
+[IDictionary]: {{< url path="Cortex.Reference.DataTypes.Collections.IDictionary.MainDoc" >}}
+[Dictionary]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
+[EncryptableText]: {{< url path="Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
 
-[SshCertificateCredentials]: {{< url "Cortex.Reference.DataTypes.Ssh.Authentication.SshCertificateCredentials.MainDoc" >}}
+[SshCertificateCredentials]: {{< url path="Cortex.Reference.DataTypes.Ssh.Authentication.SshCertificateCredentials.MainDoc" >}}
 
-[SshSessionDetails]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.MainDoc" >}}
-[SshSessionDetails Host]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Host" >}}
-[SshSessionDetails Port]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Port" >}}
-[SshSessionDetails Credentials]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Credentials" >}}
-[SshSessionDetails TerminalPrompt]: {{< url "Cortex.Reference.DataTypes.Ssh.SshSessionDetails.TerminalPrompt" >}}
+[SshSessionDetails]: {{< url path="Cortex.Reference.DataTypes.Ssh.SshSessionDetails.MainDoc" >}}
+[SshSessionDetails Host]: {{< url path="Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Host" >}}
+[SshSessionDetails Port]: {{< url path="Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Port" >}}
+[SshSessionDetails Credentials]: {{< url path="Cortex.Reference.DataTypes.Ssh.SshSessionDetails.Credentials" >}}
+[SshSessionDetails TerminalPrompt]: {{< url path="Cortex.Reference.DataTypes.Ssh.SshSessionDetails.TerminalPrompt" >}}
 
-[SshLogs]: {{< url "Cortex.Reference.DataTypes.Ssh.SshLogs.MainDoc" >}}
+[SshLogs]: {{< url path="Cortex.Reference.DataTypes.Ssh.SshLogs.MainDoc" >}}
 
-[Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
-[dynamic]: {{< url "Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
+[Boolean]: {{< url path="Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
+[dynamic]: {{< url path="Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[UserCredentials]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
 
-[PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
-[PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
-[PropertyValueOutOfRangeException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyValueOutOfRangeException.MainDoc" >}}
-[SshClientException]: {{< url "Cortex.Reference.Exceptions.Ssh.SshClientException" >}}
-[SshResponseException]: {{< url "Cortex.Reference.Exceptions.Ssh.SshResponseException" >}}
-[RegexMatchTimeoutException]: {{< url "MSDocs.DotNet.Api.System.Text.RegularExpressions.RegexMatchTimeoutException" >}}
-[RegexParsingFailedException]: {{< url "Cortex.Reference.Exceptions.Text.Regex.RegexParsingFailedException.MainDoc" >}}
+[PropertyNullException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
+[PropertyEmptyException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
+[PropertyValueOutOfRangeException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyValueOutOfRangeException.MainDoc" >}}
+[SshClientException]: {{< url path="Cortex.Reference.Exceptions.Ssh.SshClientException" >}}
+[SshResponseException]: {{< url path="Cortex.Reference.Exceptions.Ssh.SshResponseException" >}}
+[RegexMatchTimeoutException]: {{< url path="MSDocs.DotNet.Api.System.Text.RegularExpressions.RegexMatchTimeoutException" >}}
+[RegexParsingFailedException]: {{< url path="Cortex.Reference.Exceptions.Text.Regex.RegexParsingFailedException.MainDoc" >}}
 
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
-[Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
-[Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
+[Expression]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Literal]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}

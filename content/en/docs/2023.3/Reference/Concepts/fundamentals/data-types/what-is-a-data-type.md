@@ -7,7 +7,7 @@ weight: 1
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 
@@ -85,11 +85,11 @@ TODO:
 - [Builtin Types][]
 - [Default Values][]
 
-[Reference Types]: {{< url "MSDocs.CSharp.ReferenceTypes" >}}
-[Value Types]: {{< url "MSDocs.CSharp.ValueTypes" >}}
-[Builtin Types]: {{< url "MSDocs.CSharp.BuiltinTypes" >}}
-[Default Values]: {{< url "MSDocs.CSharp.DefaultValues" >}}
+[Reference Types]: {{< url path="MSDocs.CSharp.ReferenceTypes" >}}
+[Value Types]: {{< url path="MSDocs.CSharp.ValueTypes" >}}
+[Builtin Types]: {{< url path="MSDocs.CSharp.BuiltinTypes" >}}
+[Default Values]: {{< url path="MSDocs.CSharp.DefaultValues" >}}
 
-[All Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
+[All Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
 
-[Data Type]: {{< url "Cortex.Reference.DataTypes.MainDoc" >}}
+[Data Type]: {{< url path="Cortex.Reference.DataTypes.MainDoc" >}}

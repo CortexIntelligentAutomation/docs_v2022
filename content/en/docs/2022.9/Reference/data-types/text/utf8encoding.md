@@ -8,7 +8,7 @@ description: "Used to represent UTF8 character encoding."
 
 <p class="namespace">(System.Text.UTF8Encoding)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

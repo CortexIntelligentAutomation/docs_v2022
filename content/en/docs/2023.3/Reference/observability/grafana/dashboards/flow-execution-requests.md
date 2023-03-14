@@ -211,6 +211,6 @@ None
 [time range]: #time-range
 
 <!-- Other links -->
-[customise threholds]: {{< url "Cortex.Reference.Observability.Grafana.Dashboards.Grafana.AdvancedSetup.ConfigureThresholds.MainDoc" >}}
-[status codes]: {{< url "Wikipedia.HttpStatusCodes" >}}
-[Time range controls]: {{< url "Grafana.Products.Grafana.TimeRange" >}}
+[customise threholds]: {{< url path="Cortex.Reference.Observability.Grafana.Dashboards.Grafana.AdvancedSetup.ConfigureThresholds.MainDoc" >}}
+[status codes]: {{< url path="Wikipedia.HttpStatusCodes" >}}
+[Time range controls]: {{< url path="Grafana.Products.Grafana.TimeRange" >}}

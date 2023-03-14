@@ -8,7 +8,7 @@ description: "Used to define how text searches determine whether text matches th
 
 <p class="namespace">(Cortex.DataTypes.Text.SearchOptions)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

@@ -7,7 +7,7 @@ weight: 1
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 
@@ -41,4 +41,4 @@ TODO
 
 TODO
 
-[All Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
+[All Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}

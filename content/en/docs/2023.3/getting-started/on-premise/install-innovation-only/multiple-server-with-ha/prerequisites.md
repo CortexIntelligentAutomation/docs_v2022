@@ -288,23 +288,23 @@ See [SSL Best Practices][] for a full list of the security changes which will be
 
 1. [Install Application Servers and Load Balancer][]
 
-[Port Requirements]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.PortRequirements" >}}
-[Install Application Servers and Load Balancer]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.InstallApplicationAndLoadBalancerServers" >}}
-[Installing Gateway]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.InstallGateway" >}}
-[Architecture]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.Architecture" >}}
-[Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.CreateSelfSignedCertificates" >}}
-[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
-[gobetween]: {{< url "GoBetween.MainDoc" >}}
-[Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
-[Anycast]: {{< url "Anycast.MainDoc" >}}
+[Port Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.PortRequirements" >}}
+[Install Application Servers and Load Balancer]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.InstallApplicationAndLoadBalancerServers" >}}
+[Installing Gateway]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.InstallGateway" >}}
+[Architecture]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.Architecture" >}}
+[Create Self-Signed Certificates]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.CreateSelfSignedCertificates" >}}
+[SSL Best Practices]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
+[gobetween]: {{< url path="GoBetween.MainDoc" >}}
+[Cortex Service Portal]: {{< url path="Cortex.ServicePortal.MainDoc" >}}
+[Anycast]: {{< url path="Anycast.MainDoc" >}}
 [alternative load balancer]: {{< ref "#alternative-load-balancer-requirements" >}}
-[Microsoft Server 2019]: {{< url "MSEval.WindowsServer.2019" >}}
-[Microsoft Server 2016]: {{< url "MSEval.WindowsServer.2016" >}}
-[NET Framework 471]: {{< url "MSDotNet.Framework471.MainDoc" >}}
-[Microsoft SQL Server 2019]: {{< url "MSEval.SQLServer.2019" >}}
-[Microsoft SQL Server 2016]: {{< url "MSEval.SQLServer.2016" >}}
-[Microsoft SQL Express 2016]: {{< url "MSDownload.SqlServerExpress.2016" >}}
-[IIS Url Rewrite]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}
-[Web Deploy]: {{< url "MSDownload.WebDeploy" >}}
-[C++ Redistributable]: {{< url "MSDownload.CPlusPlusRedistributable.2013" >}}
-[Transparent Data Encryption]: {{< url "MSDocs.SqlServer.TransparentDataEncryption" >}}
+[Microsoft Server 2019]: {{< url path="MSEval.WindowsServer.2019" >}}
+[Microsoft Server 2016]: {{< url path="MSEval.WindowsServer.2016" >}}
+[NET Framework 471]: {{< url path="MSDotNet.Framework471.MainDoc" >}}
+[Microsoft SQL Server 2019]: {{< url path="MSEval.SQLServer.2019" >}}
+[Microsoft SQL Server 2016]: {{< url path="MSEval.SQLServer.2016" >}}
+[Microsoft SQL Express 2016]: {{< url path="MSDownload.SqlServerExpress.2016" >}}
+[IIS Url Rewrite]: {{< url path="IIS.Downloads.UrlRewrite-2_1" >}}
+[Web Deploy]: {{< url path="MSDownload.WebDeploy" >}}
+[C++ Redistributable]: {{< url path="MSDownload.CPlusPlusRedistributable.2013" >}}
+[Transparent Data Encryption]: {{< url path="MSDocs.SqlServer.TransparentDataEncryption" >}}

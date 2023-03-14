@@ -199,29 +199,29 @@ This limitation may be removed in the future.
 [Text Property]: {{< ref "#text" >}}
 [Format Property]: {{< ref "#format" >}}
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
-[TextEncodingFormat]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.MainDoc" >}}
+[TextEncodingFormat]: {{< url path="Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.MainDoc" >}}
 
-[ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
-[TextDecodingException]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.MainDoc" >}}
+[ArgumentException]: {{< url path="MSDocs.DotNet.Api.System.ArgumentException" >}}
+[TextDecodingException]: {{< url path="Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.MainDoc" >}}
 
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[Html]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Html" >}}
-[Base64]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64" >}}
-[Hex]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Hex" >}}
-[Base64Url]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64Url" >}}
-[Url]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Url" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[Html]: {{< url path="Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Html" >}}
+[Base64]: {{< url path="Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64" >}}
+[Hex]: {{< url path="Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Hex" >}}
+[Base64Url]: {{< url path="Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64Url" >}}
+[Url]: {{< url path="Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Url" >}}
 
-[Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
+[Literal]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
 
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
 
-[InvalidBase64]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidBase64" >}}
-[InvalidHex]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidHex" >}}
-[InvalidBase64Url]: {{< url "Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidBase64Url" >}}
+[InvalidBase64]: {{< url path="Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidBase64" >}}
+[InvalidHex]: {{< url path="Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidHex" >}}
+[InvalidBase64Url]: {{< url path="Cortex.Reference.Exceptions.Text.Encoding.TextDecodingException.InvalidBase64Url" >}}
 
-[Encode Text]: {{< url "Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}
-[HTMLEntity]: {{< url "Cortex.Reference.Glossary.F-J.HTMLEntity" >}}
+[Encode Text]: {{< url path="Cortex.Reference.Blocks.Text.EncodeText.EncodeText.MainDoc" >}}
+[HTMLEntity]: {{< url path="Cortex.Reference.Glossary.F-J.HTMLEntity" >}}

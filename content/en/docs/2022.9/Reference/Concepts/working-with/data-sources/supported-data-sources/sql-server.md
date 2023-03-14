@@ -6,7 +6,7 @@ description: "Information regarding SQL Server as a data source."
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

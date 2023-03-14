@@ -6,7 +6,7 @@ description: "Information regarding object equality, and what defines two object
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

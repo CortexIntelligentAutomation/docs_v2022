@@ -63,5 +63,5 @@ It is important to verify that Grafana is only accessible through HTTPS.
 
 1. [Install Grafana Loki][]
 
-[Install Grafana Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
-[Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.WebAppCertificateRequirements" >}}
+[Install Grafana Loki]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.MainDoc" >}}
+[Certificate Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.WebAppCertificateRequirements" >}}

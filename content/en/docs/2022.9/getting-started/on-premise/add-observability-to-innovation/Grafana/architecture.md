@@ -33,8 +33,8 @@ The following architecture requires 1 + 1..n servers:
 
 1. [Prerequisites][]
 
-[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
-[Grafana]: {{< url "Grafana.Products.Grafana.MainDoc" >}}
-[Grafana Loki]: {{< url "Grafana.Products.Loki.MainDoc" >}}
-[Promtail]: {{< url "Grafana.Products.Loki.Promtail.MainDoc" >}}
-[IIS]: {{< url "IIS.MainDoc" >}}
+[Prerequisites]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
+[Grafana]: {{< url path="Grafana.Products.Grafana.MainDoc" >}}
+[Grafana Loki]: {{< url path="Grafana.Products.Loki.MainDoc" >}}
+[Promtail]: {{< url path="Grafana.Products.Loki.Promtail.MainDoc" >}}
+[IIS]: {{< url path="IIS.MainDoc" >}}

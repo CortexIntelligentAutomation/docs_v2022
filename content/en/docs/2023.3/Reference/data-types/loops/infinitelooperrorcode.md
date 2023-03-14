@@ -8,7 +8,7 @@ description: "Used to represent an error code explaining the reason an `Infinite
 
 <p class="namespace">(Cortex.DataTypes.Loops.InfiniteLoopErrorCode)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

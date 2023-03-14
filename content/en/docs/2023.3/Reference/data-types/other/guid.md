@@ -8,7 +8,7 @@ description: "Used to represent a globally unique identifier (GUID)."
 
 <p class="namespace">(System.Guid)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

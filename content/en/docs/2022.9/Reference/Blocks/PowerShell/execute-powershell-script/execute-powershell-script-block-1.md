@@ -351,41 +351,41 @@ None
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
 [Closing Sessions]: {{< ref "#closing-sessions" >}}
 
-[IList]: {{< url "Cortex.Reference.DataTypes.Collections.IList.MainDoc" >}}
-[IDictionary]: {{< url "Cortex.Reference.DataTypes.Collections.IDictionary.MainDoc" >}}
-[Dictionary]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
-[dynamic]: {{< url "Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[EncryptableText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
-[EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
-[Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
-[ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
-[ServerDetails Host]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
-[ServerDetails Port]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Port" >}}
-[ServerDetails UseSsl]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.UseSsl" >}}
+[IList]: {{< url path="Cortex.Reference.DataTypes.Collections.IList.MainDoc" >}}
+[IDictionary]: {{< url path="Cortex.Reference.DataTypes.Collections.IDictionary.MainDoc" >}}
+[Dictionary]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
+[dynamic]: {{< url path="Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[EncryptableText]: {{< url path="Cortex.Reference.DataTypes.Text.EncryptableText.MainDoc" >}}
+[EncryptedText]: {{< url path="Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
+[Boolean]: {{< url path="Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
+[ServerDetails]: {{< url path="Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
+[ServerDetails Host]: {{< url path="Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
+[ServerDetails Port]: {{< url path="Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Port" >}}
+[ServerDetails UseSsl]: {{< url path="Cortex.Reference.DataTypes.SessionDetails.ServerDetails.UseSsl" >}}
 
-[UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
-[UserCredentials Domain]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Domain" >}}
-[UserCredentials Username]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
-[UserCredentials Password]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
+[UserCredentials]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
+[UserCredentials Domain]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.Domain" >}}
+[UserCredentials Username]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
+[UserCredentials Password]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
 
-[PowerShellWinRMSessionDetails]: {{< url "Cortex.Reference.DataTypes.PowerShell.PowerShellWinRMSessionDetails.MainDoc" >}}
-[Records]: {{< url "Cortex.Reference.DataTypes.PowerShell.Records.MainDoc" >}}
+[PowerShellWinRMSessionDetails]: {{< url path="Cortex.Reference.DataTypes.PowerShell.PowerShellWinRMSessionDetails.MainDoc" >}}
+[Records]: {{< url path="Cortex.Reference.DataTypes.PowerShell.Records.MainDoc" >}}
 
-[PowerShellSessionDetails]: {{< url "Cortex.Reference.DataTypes.PowerShell.PowerShellSessionDetails.MainDoc" >}}
-[PowerShellSessionDetails Server Details]: {{< url "Cortex.Reference.DataTypes.PowerShell.PowerShellSessionDetails.ServerDetails" >}}
-[Credentials]: {{< url "Cortex.Reference.DataTypes.PowerShell.PowerShellSessionDetails.Credentials" >}}
-[PsConfiguration]: {{< url "Cortex.Reference.DataTypes.PowerShell.PowerShellSessionDetails.PsConfiguration" >}}
+[PowerShellSessionDetails]: {{< url path="Cortex.Reference.DataTypes.PowerShell.PowerShellSessionDetails.MainDoc" >}}
+[PowerShellSessionDetails Server Details]: {{< url path="Cortex.Reference.DataTypes.PowerShell.PowerShellSessionDetails.ServerDetails" >}}
+[Credentials]: {{< url path="Cortex.Reference.DataTypes.PowerShell.PowerShellSessionDetails.Credentials" >}}
+[PsConfiguration]: {{< url path="Cortex.Reference.DataTypes.PowerShell.PowerShellSessionDetails.PsConfiguration" >}}
 
-[PSException]: {{< url "Cortex.Reference.Exceptions.PowerShell.PSException.MainDoc" >}}
-[PSRemotingException]: {{< url "Cortex.Reference.Exceptions.PowerShell.PSRemotingException.MainDoc" >}}
-[PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
-[PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
+[PSException]: {{< url path="Cortex.Reference.Exceptions.PowerShell.PSException.MainDoc" >}}
+[PSRemotingException]: {{< url path="Cortex.Reference.Exceptions.PowerShell.PSRemotingException.MainDoc" >}}
+[PropertyNullException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
+[PropertyEmptyException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
 
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
-[Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
-[Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
+[Expression]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Literal]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}

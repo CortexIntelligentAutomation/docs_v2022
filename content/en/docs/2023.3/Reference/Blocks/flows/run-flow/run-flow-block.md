@@ -218,29 +218,29 @@ In future this limitation may be removed.
 [Default Values]: {{< ref "#default-values" >}}
 [Exceptions Thrown by a Child Flow]: {{< ref "#exceptions-thrown-by-a-child-flow" >}}
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
-[Literal Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Variable Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
-[Input Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.FlowInputVariable" >}}
-[Output Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.OutputVariablesStructure" >}}
-[Handling Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.HandlingExceptions.MainDoc" >}}
-[Validation Error]: {{< url "Cortex.Reference.Concepts.Fundamentals.Messages.MainDoc" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Literal Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Variable Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
+[Input Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.FlowInputVariable" >}}
+[Output Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.OutputVariablesStructure" >}}
+[Handling Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.HandlingExceptions.MainDoc" >}}
+[Validation Error]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Messages.MainDoc" >}}
 
-[Undoing]: {{< url "Cortex.Guides.Studio.MainDisplayArea.Undo" >}}
+[Undoing]: {{< url path="Cortex.Guides.Studio.MainDisplayArea.Undo" >}}
 
-[FlowReference]: {{< url "Cortex.Reference.DataTypes.Flows.FlowReference.MainDoc" >}}
-[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
-[InputVariables]: {{< url "Cortex.Reference.DataTypes.Flows.InputVariables.MainDoc" >}}
-[Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
+[FlowReference]: {{< url path="Cortex.Reference.DataTypes.Flows.FlowReference.MainDoc" >}}
+[Int32]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
+[InputVariables]: {{< url path="Cortex.Reference.DataTypes.Flows.InputVariables.MainDoc" >}}
+[Structure]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
 
-[InvalidInputVariablesException]: {{< url "Cortex.Reference.Exceptions.Flows.Execution.InvalidInputVariablesException.MainDoc" >}}
-[Missing Input Variables]: {{< url "Cortex.Reference.Exceptions.Flows.Execution.InvalidInputVariablesException.MissingInputVariables" >}}
-[Extra Input Variables]: {{< url "Cortex.Reference.Exceptions.Flows.Execution.InvalidInputVariablesException.ExtraInputVariables" >}}
-[Input Variables of an Invalid Type]: {{< url "Cortex.Reference.Exceptions.Flows.Execution.InvalidInputVariablesException.InputVariablesOfAnInvalidType" >}}
+[InvalidInputVariablesException]: {{< url path="Cortex.Reference.Exceptions.Flows.Execution.InvalidInputVariablesException.MainDoc" >}}
+[Missing Input Variables]: {{< url path="Cortex.Reference.Exceptions.Flows.Execution.InvalidInputVariablesException.MissingInputVariables" >}}
+[Extra Input Variables]: {{< url path="Cortex.Reference.Exceptions.Flows.Execution.InvalidInputVariablesException.ExtraInputVariables" >}}
+[Input Variables of an Invalid Type]: {{< url path="Cortex.Reference.Exceptions.Flows.Execution.InvalidInputVariablesException.InputVariablesOfAnInvalidType" >}}
 
-[Handle Block Exception blocks]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.MainDoc" >}}
-[Handle Flow Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleFlow.HandleFlowException.MainDoc" >}}
-[Handle Workspace Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleWorkspace.HandleWorkspaceException.MainDoc" >}}
+[Handle Block Exception blocks]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleBlock.MainDoc" >}}
+[Handle Flow Exception]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleFlow.HandleFlowException.MainDoc" >}}
+[Handle Workspace Exception]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleWorkspace.HandleWorkspaceException.MainDoc" >}}
 
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}

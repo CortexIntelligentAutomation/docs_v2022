@@ -8,7 +8,7 @@ description: "Used to represent information about a file."
 
 <p class="namespace">(Cortex.DataTypes.FilesAndFolders.FileInformation)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

@@ -25,8 +25,8 @@ The following architecture requires 1..n Application servers and 1 [Grafana Clou
 
 1. [Prerequisites][]
 
-[Prerequisites]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Prerequisites.MainDoc" >}}
-[Grafana]: {{< url "Grafana.Products.Grafana.MainDoc" >}}
-[Grafana Cloud]: {{< url "Grafana.MainDoc" >}}
-[Grafana Loki]: {{< url "Grafana.Products.Loki.MainDoc" >}}
-[Promtail]: {{< url "Grafana.Products.Loki.Promtail.MainDoc" >}}
+[Prerequisites]: {{< url path="Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Prerequisites.MainDoc" >}}
+[Grafana]: {{< url path="Grafana.Products.Grafana.MainDoc" >}}
+[Grafana Cloud]: {{< url path="Grafana.MainDoc" >}}
+[Grafana Loki]: {{< url path="Grafana.Products.Loki.MainDoc" >}}
+[Promtail]: {{< url path="Grafana.Products.Loki.Promtail.MainDoc" >}}

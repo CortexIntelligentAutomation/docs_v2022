@@ -5,7 +5,7 @@ description: "Southern panel for Executions, Messages, and Variables"
 weight: 1
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

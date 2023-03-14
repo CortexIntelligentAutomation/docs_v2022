@@ -322,16 +322,16 @@ Ensure that the installation files are backed up or kept on the server, especial
 
 1. [Upgrade v7.2 Gateway to Include Innovation][]
 
-[Eula]: {{< url "Cortex.Website.Eula.MainDoc" >}}
-[Upgrade v7.2 Gateway to Include Innovation]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.AddInnovationTo72WebApplicationServer" >}}
-[Certificate Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.CertificateRequirements" >}}
-[Upgrade Gateway]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.InstallGateway" >}}
-[Troubleshooting During Installation]: {{< url "Cortex.Reference.Troubleshooting.Installation.TroubleshootingDuringInstallation" >}}
-[Antivirus Exclusions]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.AntivirusExclusions" >}}
+[Eula]: {{< url path="Cortex.Website.Eula.MainDoc" >}}
+[Upgrade v7.2 Gateway to Include Innovation]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.AddInnovationTo72WebApplicationServer" >}}
+[Certificate Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.CertificateRequirements" >}}
+[Upgrade Gateway]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.InstallGateway" >}}
+[Troubleshooting During Installation]: {{< url path="Cortex.Reference.Troubleshooting.Installation.TroubleshootingDuringInstallation" >}}
+[Antivirus Exclusions]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.AntivirusExclusions" >}}
 [Configure Installation Script]:  {{< ref "#configure-installation-script" >}}
-[Prerequisites for adding Innovation to v7.2]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.Prerequisites" >}}
-[alternative load balancer]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.AltLoadBalancer" >}}
-[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
-[Cortex Encrypted]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.EncryptText" >}}
-[Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
-[NET Framework 471]: {{< url "MSDotNet.Framework471.MainDoc" >}}
+[Prerequisites for adding Innovation to v7.2]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.Prerequisites" >}}
+[alternative load balancer]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.AltLoadBalancer" >}}
+[SSL Best Practices]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
+[Cortex Encrypted]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.EncryptText" >}}
+[Cortex Service Portal]: {{< url path="Cortex.ServicePortal.MainDoc" >}}
+[NET Framework 471]: {{< url path="MSDotNet.Framework471.MainDoc" >}}

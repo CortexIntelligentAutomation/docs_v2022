@@ -75,16 +75,16 @@ None
 
 * [System.Collections.Generic.IList&lt;TItem&gt;][]
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[System.Collections.Generic.IList&lt;TItem&gt;]: {{< url "MSDocs.DotNet.Api.System.Collections.Generic.IList" >}}
+[System.Collections.Generic.IList&lt;TItem&gt;]: {{< url path="MSDocs.DotNet.Api.System.Collections.Generic.IList" >}}
 
-[IEnumerable]: {{< url "Cortex.Reference.DataTypes.Collections.IEnumerable.MainDoc" >}}
-[IEnumerable&lt;TItem&gt;]: {{< url "Cortex.Reference.DataTypes.Collections.IEnumerable_TItem.MainDoc" >}}
-[List&lt;TItem&gt;]: {{< url "Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
-[ListCreateNew]: {{< url "Cortex.Reference.DataTypes.Collections.List.CreateNew" >}}
-[ListConvertToText]: {{< url "Cortex.Reference.DataTypes.Collections.List.ConvertToText" >}}
+[IEnumerable]: {{< url path="Cortex.Reference.DataTypes.Collections.IEnumerable.MainDoc" >}}
+[IEnumerable&lt;TItem&gt;]: {{< url path="Cortex.Reference.DataTypes.Collections.IEnumerable_TItem.MainDoc" >}}
+[List&lt;TItem&gt;]: {{< url path="Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
+[ListCreateNew]: {{< url path="Cortex.Reference.DataTypes.Collections.List.CreateNew" >}}
+[ListConvertToText]: {{< url path="Cortex.Reference.DataTypes.Collections.List.ConvertToText" >}}
 
-[Working with Collections]: {{< url "Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}
+[Working with Collections]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}

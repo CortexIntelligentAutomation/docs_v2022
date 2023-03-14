@@ -6,7 +6,7 @@ description: "Information regarding casting an object to different data types."
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

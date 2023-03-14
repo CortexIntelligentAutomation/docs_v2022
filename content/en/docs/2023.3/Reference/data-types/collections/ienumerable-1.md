@@ -91,25 +91,25 @@ None
 
 [Most Common IEnumerable&lt;TItem&gt; Data Types]: {{< ref "#most-common-ienumerablelttitemgt-data-types" >}}
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[System.Collections.Generic.IEnumerable&lt;TItem&gt;]: {{< url "MSDocs.DotNet.Api.System.Collections.Generic.IEnumerable_TItem" >}}
+[System.Collections.Generic.IEnumerable&lt;TItem&gt;]: {{< url path="MSDocs.DotNet.Api.System.Collections.Generic.IEnumerable_TItem" >}}
 
-[IEnumerable]: {{< url "Cortex.Reference.DataTypes.Collections.IEnumerable.MainDoc" >}}
-[IList&lt;TItem&gt;]: {{< url "Cortex.Reference.DataTypes.Collections.IList.MainDoc" >}}
-[List&lt;TItem&gt;]: {{< url "Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
-[ListCreateNew]: {{< url "Cortex.Reference.DataTypes.Collections.List.CreateNew" >}}
-[ListConvertToText]: {{< url "Cortex.Reference.DataTypes.Collections.List.ConvertToText" >}}
-[IDictionary&lt;TKey, TItem&gt;]: {{< url "Cortex.Reference.DataTypes.Collections.IDictionary.MainDoc" >}}
-[Dictionary&lt;TKey, TItem&gt;]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
-[DictionaryCreateNew]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.CreateNew" >}}
-[DictionaryConvertToText]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.ConvertToText" >}}
-[Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
-[StructureCreateNew]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.CreateNew" >}}
-[StructureConvertToText]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.ConvertToText" >}}
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[StringCreateNew]: {{< url "Cortex.Reference.DataTypes.Text.String.CreateNew" >}}
+[IEnumerable]: {{< url path="Cortex.Reference.DataTypes.Collections.IEnumerable.MainDoc" >}}
+[IList&lt;TItem&gt;]: {{< url path="Cortex.Reference.DataTypes.Collections.IList.MainDoc" >}}
+[List&lt;TItem&gt;]: {{< url path="Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
+[ListCreateNew]: {{< url path="Cortex.Reference.DataTypes.Collections.List.CreateNew" >}}
+[ListConvertToText]: {{< url path="Cortex.Reference.DataTypes.Collections.List.ConvertToText" >}}
+[IDictionary&lt;TKey, TItem&gt;]: {{< url path="Cortex.Reference.DataTypes.Collections.IDictionary.MainDoc" >}}
+[Dictionary&lt;TKey, TItem&gt;]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
+[DictionaryCreateNew]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.CreateNew" >}}
+[DictionaryConvertToText]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.ConvertToText" >}}
+[Structure]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
+[StructureCreateNew]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.CreateNew" >}}
+[StructureConvertToText]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.ConvertToText" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[StringCreateNew]: {{< url path="Cortex.Reference.DataTypes.Text.String.CreateNew" >}}
 
-[Working with Collections]: {{< url "Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}
+[Working with Collections]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}

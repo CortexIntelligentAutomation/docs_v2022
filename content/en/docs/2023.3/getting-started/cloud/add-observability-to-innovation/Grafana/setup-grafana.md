@@ -28,5 +28,5 @@ weight: 30
 1. [Set up Grafana Loki][]
 
 <!-- Other links -->
-[Grafana Labs]: {{< url "Grafana.MainDoc" >}}
-[Set up Grafana Loki]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupLoki.MainDoc" >}}
+[Grafana Labs]: {{< url path="Grafana.MainDoc" >}}
+[Set up Grafana Loki]: {{< url path="Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupLoki.MainDoc" >}}

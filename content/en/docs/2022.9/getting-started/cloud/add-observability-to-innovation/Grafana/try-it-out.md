@@ -42,6 +42,6 @@ If other requests have been made then there may be more than one request visible
 If other requests have been made then there may be more than one request visible on the dashboard.
 {{% / alert %}}
 
-[Postman]: {{< url "Postman.Downloads.MainDoc" >}}
-[HA Installation script configuration]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.ConfigureInstallationScript" >}}
-[Non-HA Installation script configuration]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.ConfigureInstallationScript" >}}
+[Postman]: {{< url path="Postman.Downloads.MainDoc" >}}
+[HA Installation script configuration]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.MultipleServerWithHA.ConfigureInstallationScript" >}}
+[Non-HA Installation script configuration]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.ConfigureInstallationScript" >}}

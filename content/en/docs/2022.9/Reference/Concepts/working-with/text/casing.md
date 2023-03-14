@@ -6,7 +6,7 @@ description: "Information regarding text casing."
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 
@@ -125,4 +125,4 @@ TODO
 [Specific Cultures]: {{< ref "#specific-cultures" >}}
 [Custom Cultures]: {{< ref "#custom-cultures" >}}
 
-[CultureInfo]: {{< url "MSDocs.DotNet.Api.System.Globalization.CultureInfo" >}}
+[CultureInfo]: {{< url path="MSDocs.DotNet.Api.System.Globalization.CultureInfo" >}}

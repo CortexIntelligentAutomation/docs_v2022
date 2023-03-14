@@ -67,5 +67,5 @@ The load balancer server must be able to retrieve traffic via HTTPS. The followi
 |--------------------|----------------------|-----------------|-------------|-----------|--------|
 | GoBetweenTlsPort   | loadBalancerTlsPort  | 443             | TCP         | Inbound   | Any    |
 
-[Dynamic Ports]: {{< url "MSSupport.Troubleshooting.DynamicPorts" >}}
-[Service Fabric reverse proxy]: {{< url "MSDocs.ServiceFabric.ReverseProxy" >}}
+[Dynamic Ports]: {{< url path="MSSupport.Troubleshooting.DynamicPorts" >}}
+[Service Fabric reverse proxy]: {{< url path="MSDocs.ServiceFabric.ReverseProxy" >}}

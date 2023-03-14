@@ -176,31 +176,31 @@ Typeahead is a language prediction tool that is used to provide suggestions base
 [SMTP]: {{< ref "#smtp" >}}
 [SSL]: {{< ref "#ssl" >}}
 
-[Block Property]: {{< url "Cortex.Reference.Glossary.A-E.BlockProperty" >}}
-[C#]: {{< url "Cortex.Reference.Glossary.A-E.CSharp" >}}
-[camelCase]: {{< url "Cortex.Reference.Glossary.A-E.CamelCase" >}}
-[code]: {{< url "Cortex.Reference.Glossary.A-E.Code" >}}
-[data type]: {{< url "Cortex.Reference.Glossary.A-E.DataType" >}}
-[expression editor]: {{< url "Cortex.Reference.Glossary.A-E.ExpressionEditor" >}}
-[Intellisense]: {{< url "Cortex.Reference.Glossary.F-J.Intellisense" >}}
-[IMAP]: {{< url "Cortex.Reference.Glossary.F-J.IMAP" >}}
-[tasks]: {{< url "Cortex.Reference.Glossary.P-T.Task" >}}
-[Windows PowerShell]: {{< url "Cortex.Reference.Glossary.U-Z.WindowsPowerShell" >}}
+[Block Property]: {{< url path="Cortex.Reference.Glossary.A-E.BlockProperty" >}}
+[C#]: {{< url path="Cortex.Reference.Glossary.A-E.CSharp" >}}
+[camelCase]: {{< url path="Cortex.Reference.Glossary.A-E.CamelCase" >}}
+[code]: {{< url path="Cortex.Reference.Glossary.A-E.Code" >}}
+[data type]: {{< url path="Cortex.Reference.Glossary.A-E.DataType" >}}
+[expression editor]: {{< url path="Cortex.Reference.Glossary.A-E.ExpressionEditor" >}}
+[Intellisense]: {{< url path="Cortex.Reference.Glossary.F-J.Intellisense" >}}
+[IMAP]: {{< url path="Cortex.Reference.Glossary.F-J.IMAP" >}}
+[tasks]: {{< url path="Cortex.Reference.Glossary.P-T.Task" >}}
+[Windows PowerShell]: {{< url path="Cortex.Reference.Glossary.U-Z.WindowsPowerShell" >}}
 
-[Data Types > String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[Data Types > Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
-[Data Types > Single]: {{< url "Cortex.Reference.DataTypes.Numbers.Single.MainDoc" >}}
+[Data Types > String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[Data Types > Structure]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
+[Data Types > Single]: {{< url path="Cortex.Reference.DataTypes.Numbers.Single.MainDoc" >}}
 
-[Exception]: {{< url "Cortex.Reference.Exceptions.MainDoc" >}}
+[Exception]: {{< url path="Cortex.Reference.Exceptions.MainDoc" >}}
 
-[Block Properties > What is a Block Property]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
+[Block Properties > What is a Block Property]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
 
-[Input Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[Property Expressions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.PropertyExpressions" >}}
+[Property Expressions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.PropertyExpressions" >}}
 
-[What is PowerShell?]: {{< url "MSDocs.PowerShell.WhatIsPowerShell" >}}
+[What is PowerShell?]: {{< url path="MSDocs.PowerShell.WhatIsPowerShell" >}}
 
-[What is Service Fabric?]: {{< url "MSDocs.ServiceFabric.MainDoc" >}}
+[What is Service Fabric?]: {{< url path="MSDocs.ServiceFabric.MainDoc" >}}

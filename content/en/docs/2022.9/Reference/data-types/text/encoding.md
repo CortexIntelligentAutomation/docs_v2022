@@ -8,7 +8,7 @@ description: "The data type that all encodings inherit from. An encoding is used
 
 <p class="namespace">(System.Text.Encoding)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

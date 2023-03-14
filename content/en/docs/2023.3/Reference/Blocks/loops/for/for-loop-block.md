@@ -233,22 +233,22 @@ The variable used for [Current Index][CurrentIndex Property] must have an [Int32
 
 [StartIndexGreaterThanEndIndex Example]: {{< ref "#loop-between-20-and-10-incrementing-by--5" >}}
 
-[Indexes]: {{< url "Cortex.Reference.Concepts.WorkingWith.Collections.Indexes.MainDoc" >}}
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Indexes]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Collections.Indexes.MainDoc" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
-[InfiniteLoopException]: {{< url "Cortex.Reference.Exceptions.Loops.InfiniteLoopException.MainDoc" >}}
-[Increment Is Zero]: {{< url "Cortex.Reference.Exceptions.Loops.InfiniteLoopException.IncrementIsZero" >}}
-[Increment Is Negative]: {{< url "Cortex.Reference.Exceptions.Loops.InfiniteLoopException.IncrementIsNegative" >}}
-[Increment Is Positive]: {{< url "Cortex.Reference.Exceptions.Loops.InfiniteLoopException.IncrementIsPositive" >}}
+[InfiniteLoopException]: {{< url path="Cortex.Reference.Exceptions.Loops.InfiniteLoopException.MainDoc" >}}
+[Increment Is Zero]: {{< url path="Cortex.Reference.Exceptions.Loops.InfiniteLoopException.IncrementIsZero" >}}
+[Increment Is Negative]: {{< url path="Cortex.Reference.Exceptions.Loops.InfiniteLoopException.IncrementIsNegative" >}}
+[Increment Is Positive]: {{< url path="Cortex.Reference.Exceptions.Loops.InfiniteLoopException.IncrementIsPositive" >}}
 
-[InvalidPropertyValueException]: {{< url "Cortex.Reference.Exceptions.Flows.Blocks.InvalidPropertyValueException.MainDoc" >}}
-[Value Is Invalid]: {{< url "Cortex.Reference.Exceptions.Flows.Blocks.InvalidPropertyValueException.ValueIsInvalid" >}}
+[InvalidPropertyValueException]: {{< url path="Cortex.Reference.Exceptions.Flows.Blocks.InvalidPropertyValueException.MainDoc" >}}
+[Value Is Invalid]: {{< url path="Cortex.Reference.Exceptions.Flows.Blocks.InvalidPropertyValueException.ValueIsInvalid" >}}
 
-[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
+[Int32]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 
-[Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
-[Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Literal]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
+[Expression]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
 
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}

@@ -8,7 +8,7 @@ description: "Used to represent information about a specific culture, including 
 
 <p class="namespace">(System.Globalization.CultureInfo)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

@@ -8,7 +8,7 @@ description: "Used to represent text that must be encrypted."
 
 <p class="namespace">(Cortex.DataTypes.Text.EncryptedText)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

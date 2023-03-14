@@ -88,25 +88,25 @@ None
 
 * [System.Double][]
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[Convert.ToDouble]: {{< url "MSDocs.DotNet.Api.System.Convert.ToDouble" >}}
-[Convert.ToString]: {{< url "MSDocs.DotNet.Api.System.Convert.ToString" >}}
+[Convert.ToDouble]: {{< url path="MSDocs.DotNet.Api.System.Convert.ToDouble" >}}
+[Convert.ToString]: {{< url path="MSDocs.DotNet.Api.System.Convert.ToString" >}}
 
-[System.Double]: {{< url "MSDocs.DotNet.Api.System.Double.MainDoc" >}}
-[Double.MaxValue]: {{< url "MSDocs.DotNet.Api.System.Double.MaxValue" >}}
-[Double.MinValue]: {{< url "MSDocs.DotNet.Api.System.Double.MinValue" >}}
-[Double.Parse]: {{< url "MSDocs.DotNet.Api.System.Double.Parse" >}}
-[Double.ToString]: {{< url "MSDocs.DotNet.Api.System.Double.ToString" >}}
+[System.Double]: {{< url path="MSDocs.DotNet.Api.System.Double.MainDoc" >}}
+[Double.MaxValue]: {{< url path="MSDocs.DotNet.Api.System.Double.MaxValue" >}}
+[Double.MinValue]: {{< url path="MSDocs.DotNet.Api.System.Double.MinValue" >}}
+[Double.Parse]: {{< url path="MSDocs.DotNet.Api.System.Double.Parse" >}}
+[Double.ToString]: {{< url path="MSDocs.DotNet.Api.System.Double.ToString" >}}
 
-[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
-[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+[Convert Object To Text]: {{< url path="Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url path="Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
 
-[Int16]: {{< url "Cortex.Reference.DataTypes.Numbers.Int16.MainDoc" >}}
-[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
-[Int64]: {{< url "Cortex.Reference.DataTypes.Numbers.Int64.MainDoc" >}}
-[Single]: {{< url "Cortex.Reference.DataTypes.Numbers.Single.MainDoc" >}}
+[Int16]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int16.MainDoc" >}}
+[Int32]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
+[Int64]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int64.MainDoc" >}}
+[Single]: {{< url path="Cortex.Reference.DataTypes.Numbers.Single.MainDoc" >}}
 
-[Working with Numbers]: {{< url "Cortex.Reference.Concepts.WorkingWith.Numbers.MainDoc" >}}
+[Working with Numbers]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Numbers.MainDoc" >}}

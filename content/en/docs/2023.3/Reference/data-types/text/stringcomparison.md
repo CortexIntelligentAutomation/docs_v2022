@@ -8,7 +8,7 @@ description: "Used to indicate how 2 pieces of text are compared against each ot
 
 <p class="namespace">(System.StringComparison)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

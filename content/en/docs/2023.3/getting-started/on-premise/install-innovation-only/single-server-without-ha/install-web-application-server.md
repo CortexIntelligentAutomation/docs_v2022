@@ -494,25 +494,25 @@ Ensure that the installation files are backed up or kept on the server, especial
 
 1. [Setup Gateway][]
 
-[Eula]: {{< url "Cortex.Website.Eula.MainDoc" >}}
-[Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.CreateSelfSignedCertificates" >}}
-[Setup Gateway]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.SetupGateway" >}}
-[Try it out]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.TryItOut" >}}
-[Configure Firewalls]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.ConfigureFirewalls" >}}
-[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
-[Configure Installation Script]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.ConfigureInstallationScript" >}}
+[Eula]: {{< url path="Cortex.Website.Eula.MainDoc" >}}
+[Create Self-Signed Certificates]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.CreateSelfSignedCertificates" >}}
+[Setup Gateway]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.SetupGateway" >}}
+[Try it out]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.TryItOut" >}}
+[Configure Firewalls]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.ConfigureFirewalls" >}}
+[SSL Best Practices]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
+[Configure Installation Script]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.ConfigureInstallationScript" >}}
 [Configure Web Site]: {{< ref "#configure-web-site" >}}
 [Create Web Site]: {{< ref "#create-web-site" >}}
 [Create Application]: {{< ref "#create-new-web-application" >}}
 [Get Application Pool User]: {{< ref "#get-application-pool-user-1" >}}
 [Create New Web Application]: {{< ref "#create-new-web-application" >}}
-[Install Application Server]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.InstallApplicationServer" >}}
-[Install Gateway]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.InstallGateway" >}}
-[Licensing Requirements]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.LicensingRequirements" >}}
-[Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
-[Cortex Encrypted]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.EncryptText" >}}
+[Install Application Server]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.InstallApplicationServer" >}}
+[Install Gateway]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.InstallGateway" >}}
+[Licensing Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.LicensingRequirements" >}}
+[Cortex Service Portal]: {{< url path="Cortex.ServicePortal.MainDoc" >}}
+[Cortex Encrypted]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.EncryptText" >}}
 [Configure Debugger Installation Script]: {{< ref "#configure-installation-script" >}}
-[URL Rewrite]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}
-[NET Framework 471]: {{< url "MSDotNet.Framework471.MainDoc" >}}
-[Microsoft Web Deploy]: {{< url "MSDownload.WebDeploy" >}}
-[C++ Redistributable]: {{< url "MSDownload.CPlusPlusRedistributable.2013" >}}
+[URL Rewrite]: {{< url path="IIS.Downloads.UrlRewrite-2_1" >}}
+[NET Framework 471]: {{< url path="MSDotNet.Framework471.MainDoc" >}}
+[Microsoft Web Deploy]: {{< url path="MSDownload.WebDeploy" >}}
+[C++ Redistributable]: {{< url path="MSDownload.CPlusPlusRedistributable.2013" >}}

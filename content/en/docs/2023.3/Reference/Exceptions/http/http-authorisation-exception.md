@@ -8,4 +8,4 @@ description: "The exception thrown when an issue occurs during the authorisation
 
 <p class="namespace">(Cortex.Exceptions.Http.HttpAuthorisationException)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

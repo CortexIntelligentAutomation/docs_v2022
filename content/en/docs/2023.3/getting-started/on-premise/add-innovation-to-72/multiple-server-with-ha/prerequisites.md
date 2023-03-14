@@ -316,29 +316,29 @@ See [SSL Best Practices][] for a full list of the security changes which will be
 Application Servers and Load Balancer server are installed in the same way regardless of whether new or existing hardware is being used:
 1. [Install Application Servers and Load Balancer][]
 
-[Port Requirements]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.PortRequirements" >}}
-[Install Application Servers and Load Balancer]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.InstallApplicationAndLoadBalancerServers" >}}
-[Upgrading Gateway]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.InstallGateway" >}}
-[Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.Architecture" >}}
-[Recommended Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.RecommendedArchitecture" >}}
-[Minimum Architecture]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.MinimumArchitecture" >}}
-[Alternative Architectures]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.AlternativeArchitectures" >}}
-[Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.CreateSelfSignedCertificates" >}}
-[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
-[gobetween]: {{< url "GoBetween.MainDoc" >}}
-[Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
-[Anycast]: {{< url "Anycast.MainDoc" >}}
+[Port Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.PortRequirements" >}}
+[Install Application Servers and Load Balancer]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.InstallApplicationAndLoadBalancerServers" >}}
+[Upgrading Gateway]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.InstallGateway" >}}
+[Architecture]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.Architecture" >}}
+[Recommended Architecture]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.RecommendedArchitecture" >}}
+[Minimum Architecture]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.MinimumArchitecture" >}}
+[Alternative Architectures]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.AlternativeArchitectures" >}}
+[Create Self-Signed Certificates]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.CreateSelfSignedCertificates" >}}
+[SSL Best Practices]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
+[gobetween]: {{< url path="GoBetween.MainDoc" >}}
+[Cortex Service Portal]: {{< url path="Cortex.ServicePortal.MainDoc" >}}
+[Anycast]: {{< url path="Anycast.MainDoc" >}}
 [alternative load balancer]: {{< ref "#alternative-load-balancer-requirements" >}}
-[Microsoft Server 2019]: {{< url "MSEval.WindowsServer.2019" >}}
-[Microsoft Server 2016]: {{< url "MSEval.WindowsServer.2016" >}}
-[NET Framework 471]: {{< url "MSDotNet.Framework471.MainDoc" >}}
-[Microsoft SQL Server 2019]: {{< url "MSEval.SQLServer.2019" >}}
-[Microsoft SQL Server 2016]: {{< url "MSEval.SQLServer.2016" >}}
-[Microsoft SQL Express 2016]: {{< url "MSDownload.SqlServerExpress.2016" >}}
-[IIS Url Rewrite]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}
-[Web Deploy]: {{< url "MSDownload.WebDeploy" >}}
-[C++ Redistributable]: {{< url "MSDownload.CPlusPlusRedistributable.2013" >}}
+[Microsoft Server 2019]: {{< url path="MSEval.WindowsServer.2019" >}}
+[Microsoft Server 2016]: {{< url path="MSEval.WindowsServer.2016" >}}
+[NET Framework 471]: {{< url path="MSDotNet.Framework471.MainDoc" >}}
+[Microsoft SQL Server 2019]: {{< url path="MSEval.SQLServer.2019" >}}
+[Microsoft SQL Server 2016]: {{< url path="MSEval.SQLServer.2016" >}}
+[Microsoft SQL Express 2016]: {{< url path="MSDownload.SqlServerExpress.2016" >}}
+[IIS Url Rewrite]: {{< url path="IIS.Downloads.UrlRewrite-2_1" >}}
+[Web Deploy]: {{< url path="MSDownload.WebDeploy" >}}
+[C++ Redistributable]: {{< url path="MSDownload.CPlusPlusRedistributable.2013" >}}
 [Requirements For Minimum Architecture]: {{< ref "#minimum-architecture" >}}
 [Requirements For Recommended Architecture]: {{< ref "#recommended-architecture" >}}
 [Requirements For Alternative Architectures]: {{< ref "#alternative-architectures" >}}
-[Transparent Data Encryption]: {{< url "MSDocs.SqlServer.TransparentDataEncryption" >}}
+[Transparent Data Encryption]: {{< url path="MSDocs.SqlServer.TransparentDataEncryption" >}}

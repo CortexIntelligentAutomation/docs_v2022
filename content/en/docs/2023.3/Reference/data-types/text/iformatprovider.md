@@ -8,7 +8,7 @@ description: "The data type providing the contract that all data types that cont
 
 <p class="namespace">(System.IFormatProvider)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

@@ -429,66 +429,66 @@ None
 [Executing a request using SOAP 1.1]: {{< ref "#executing-a-request-using-soap-11" >}}
 [Executing a request using SOAP 1.2]: {{< ref "#executing-a-request-using-soap-12" >}}
 
-[SoapRequest]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.MainDoc" >}}
-[SoapMessage Property]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.SoapMessage" >}}
-[Uri]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Uri" >}}
-[Headers Request]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Headers" >}}
-[HttpVersion]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapRequest.HttpVersion" >}}
+[SoapRequest]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapRequest.MainDoc" >}}
+[SoapMessage Property]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapRequest.SoapMessage" >}}
+[Uri]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Uri" >}}
+[Headers Request]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapRequest.Headers" >}}
+[HttpVersion]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapRequest.HttpVersion" >}}
 
-[SoapMessage]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapMessage.MainDoc" >}}
-[Envelope]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapMessage.Envelope" >}}
+[SoapMessage]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapMessage.MainDoc" >}}
+[Envelope]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapMessage.Envelope" >}}
 
-[Soap11Message]: {{< url "Cortex.Reference.DataTypes.Http.Soap.Soap11Message.MainDoc" >}}
-[Action]: {{< url "Cortex.Reference.DataTypes.Http.Soap.Soap11Message.Action" >}}
+[Soap11Message]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.Soap11Message.MainDoc" >}}
+[Action]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.Soap11Message.Action" >}}
 
-[Soap12Message]: {{< url "Cortex.Reference.DataTypes.Http.Soap.Soap12Message.MainDoc" >}}
+[Soap12Message]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.Soap12Message.MainDoc" >}}
 
-[HttpCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
+[HttpCredentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.HttpCredentials.MainDoc" >}}
 
-[UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
-[Username]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
-[Password]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
+[UserCredentials]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
+[Username]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
+[Password]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
 
-[HttpOAuthClientCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.MainDoc" >}}
-[AccessTokenUri Client Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.AccessTokenUri" >}}
-[ClientAuthentication Client Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.ClientAuthentication" >}}
+[HttpOAuthClientCredentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.MainDoc" >}}
+[AccessTokenUri Client Credentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.AccessTokenUri" >}}
+[ClientAuthentication Client Credentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthClientCredentials.ClientAuthentication" >}}
 
-[HttpOAuthPasswordCredentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.MainDoc" >}}
-[ResourceOwnerUsername Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.ResourceOwnerUsername" >}}
-[ResourceOwnerPassword Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.ResourceOwnerPassword" >}}
-[AccessTokenUri Password Credentials]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.AccessTokenUri" >}}
+[HttpOAuthPasswordCredentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.MainDoc" >}}
+[ResourceOwnerUsername Password Credentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.ResourceOwnerUsername" >}}
+[ResourceOwnerPassword Password Credentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.ResourceOwnerPassword" >}}
+[AccessTokenUri Password Credentials]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.HttpOAuthPasswordCredentials.AccessTokenUri" >}}
 
-[ClientAuthentication]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.MainDoc" >}}
-[ClientId]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.ClientId" >}}
-[ClientSecret]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.ClientSecret" >}}
-[SendAs]: {{< url "Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.SendAs" >}}
+[ClientAuthentication]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.MainDoc" >}}
+[ClientId]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.ClientId" >}}
+[ClientSecret]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.ClientSecret" >}}
+[SendAs]: {{< url path="Cortex.Reference.DataTypes.Http.Authentication.OAuth.ClientAuthentication.SendAs" >}}
 
-[EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
+[EncryptedText]: {{< url path="Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
 
-[SoapResponse]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.MainDoc" >}}
-[ResponseEnvelope]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.ResponseEnvelope" >}}
-[ErrorMessage]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.ErrorMessage" >}}
-[Headers Response]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.Headers" >}}
-[StatusCode]: {{< url "Cortex.Reference.DataTypes.Http.Soap.SoapResponse.StatusCode" >}}
+[SoapResponse]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapResponse.MainDoc" >}}
+[ResponseEnvelope]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapResponse.ResponseEnvelope" >}}
+[ErrorMessage]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapResponse.ErrorMessage" >}}
+[Headers Response]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapResponse.Headers" >}}
+[StatusCode]: {{< url path="Cortex.Reference.DataTypes.Http.Soap.SoapResponse.StatusCode" >}}
 
-[HttpRequestVersion]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.MainDoc" >}}
-[HTTP10]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.HTTP10" >}}
-[HTTP11]: {{< url "Cortex.Reference.DataTypes.Http.HttpRequestVersion.HTTP11" >}}
+[HttpRequestVersion]: {{< url path="Cortex.Reference.DataTypes.Http.HttpRequestVersion.MainDoc" >}}
+[HTTP10]: {{< url path="Cortex.Reference.DataTypes.Http.HttpRequestVersion.HTTP10" >}}
+[HTTP11]: {{< url path="Cortex.Reference.DataTypes.Http.HttpRequestVersion.HTTP11" >}}
 
-[Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
+[Structure]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
 
-[PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
-[PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
-[HttpAuthorisationException]: {{< url "Cortex.Reference.Exceptions.Http.HttpAuthorisationException.MainDoc" >}}
-[InvalidRequestException]: {{< url "Cortex.Reference.Exceptions.Http.InvalidRequestException.MainDoc" >}}
-[InvalidResponseException]: {{< url "Cortex.Reference.Exceptions.Http.InvalidResponseException.MainDoc" >}}
+[PropertyNullException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
+[PropertyEmptyException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
+[HttpAuthorisationException]: {{< url path="Cortex.Reference.Exceptions.Http.HttpAuthorisationException.MainDoc" >}}
+[InvalidRequestException]: {{< url path="Cortex.Reference.Exceptions.Http.InvalidRequestException.MainDoc" >}}
+[InvalidResponseException]: {{< url path="Cortex.Reference.Exceptions.Http.InvalidResponseException.MainDoc" >}}
 
-[Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
-[Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Expression]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
+[Literal]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[API]: {{< url "Cortex.Reference.Glossary.A-E.API" >}}
+[API]: {{< url path="Cortex.Reference.Glossary.A-E.API" >}}

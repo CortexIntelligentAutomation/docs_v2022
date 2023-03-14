@@ -268,5 +268,5 @@ If Service Fabric certificates are going to expire in fewer than 30 days, a warn
 
 If this occurs on your server it is important to update your certificates as soon as possible using [Rollover Certificates][].
 
-[Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
-[Rollover Certificates]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.RolloverCertificates" >}}
+[Cortex Service Portal]: {{< url path="Cortex.ServicePortal.MainDoc" >}}
+[Rollover Certificates]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.RolloverCertificates" >}}

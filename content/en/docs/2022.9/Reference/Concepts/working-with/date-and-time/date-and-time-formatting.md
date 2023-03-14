@@ -143,28 +143,28 @@ TODO:
 [Format Specifiers]: {{< ref "#format-specifiers" >}}
 [Operating System Settings]: {{< ref "#operating-system-settings" >}}
 
-[Culture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Culture.MainDoc" >}}
+[Culture]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Culture.MainDoc" >}}
 
-[short date ("d") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.ShortDateFormat" >}}
-[short time ("t") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.ShortTimeFormat" >}}
-[long date ("D") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.LongDateFormat" >}}
-[long time ("T") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.LongTimeFormat" >}}
-[full date short time ("f") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.FullDateShortTimeFormat" >}}
-[full date long time ("F") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.FullDateLongTimeFormat" >}}
-[general date short time ("g") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.GeneralDateShortTimeFormat" >}}
-[general date long time ("G") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.GeneralDateLongTimeFormat" >}}
-[round-trip ("O", "o") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.RoundTripFormat" >}}
-[RFC1123 ("R", "r") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.RFC1123Format" >}}
-[sortable ("s") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.SortableFormat" >}}
-[universal sortable ("u") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.UniversalSortableFormat" >}}
-[universal full ("U") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.UniversalFullFormat" >}}
-[month ("M", "m") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.MonthDayFormat" >}}
-[year month ("Y") format specifier]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.YearMonthFormat" >}}
+[short date ("d") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.ShortDateFormat" >}}
+[short time ("t") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.ShortTimeFormat" >}}
+[long date ("D") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.LongDateFormat" >}}
+[long time ("T") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.LongTimeFormat" >}}
+[full date short time ("f") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.FullDateShortTimeFormat" >}}
+[full date long time ("F") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.FullDateLongTimeFormat" >}}
+[general date short time ("g") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.GeneralDateShortTimeFormat" >}}
+[general date long time ("G") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.GeneralDateLongTimeFormat" >}}
+[round-trip ("O", "o") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.RoundTripFormat" >}}
+[RFC1123 ("R", "r") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.RFC1123Format" >}}
+[sortable ("s") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.SortableFormat" >}}
+[universal sortable ("u") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.UniversalSortableFormat" >}}
+[universal full ("U") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.UniversalFullFormat" >}}
+[month ("M", "m") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.MonthDayFormat" >}}
+[year month ("Y") format specifier]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.YearMonthFormat" >}}
 
-[FormatException]: {{< url "MSDocs.DotNet.Api.System.FormatException" >}}
+[FormatException]: {{< url path="MSDocs.DotNet.Api.System.FormatException" >}}
 
-[DateTime]: {{< url "Cortex.Reference.DataTypes.DateAndTime.DateTime.MainDoc" >}}
-[DateTimeOffset]: {{< url "Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
+[DateTime]: {{< url path="Cortex.Reference.DataTypes.DateAndTime.DateTime.MainDoc" >}}
+[DateTimeOffset]: {{< url path="Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
 
 TODO Add concepts page for string/object formatting that links to:
 

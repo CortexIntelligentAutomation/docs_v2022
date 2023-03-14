@@ -55,13 +55,13 @@ See [What is PowerShell?][] for more information about PowerShell Core and Windo
 
 Zero Based is a way of numbering in which the initial item of a list is assigned the [index][] `0`.
 
-[index]: {{< url "Cortex.Reference.Glossary.F-J.Index" >}}
+[index]: {{< url path="Cortex.Reference.Glossary.F-J.Index" >}}
 
-[Block Properties]: {{< url "Cortex.Reference.Glossary.A-E.BlockProperty" >}}
-[Fundamentals > Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
+[Block Properties]: {{< url path="Cortex.Reference.Glossary.A-E.BlockProperty" >}}
+[Fundamentals > Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
 
-[Text > Empty Text and Whitespace]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.EmptyTextAndWhitespace.MainDoc" >}}
+[Text > Empty Text and Whitespace]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.EmptyTextAndWhitespace.MainDoc" >}}
 
-[What is Unicode?]: {{< url "Unicode.WhatIsUnicode" >}}
+[What is Unicode?]: {{< url path="Unicode.WhatIsUnicode" >}}
 
-[What is PowerShell?]: {{< url "MSDocs.PowerShell.WhatIsPowerShell" >}}
+[What is PowerShell?]: {{< url path="MSDocs.PowerShell.WhatIsPowerShell" >}}

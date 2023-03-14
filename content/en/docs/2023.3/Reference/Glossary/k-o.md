@@ -133,40 +133,40 @@ Outlook is a free web-based email service provided by Microsoft.
 [operator]: {{< ref "#operator" >}}
 [Object]: {{< ref "#object" >}}
 
-[expression]: {{< url "Cortex.Reference.Glossary.A-E.Expression" >}}
-[variable]: {{< url "Cortex.Reference.Glossary.U-Z.Variable" >}}
+[expression]: {{< url path="Cortex.Reference.Glossary.A-E.Expression" >}}
+[variable]: {{< url path="Cortex.Reference.Glossary.U-Z.Variable" >}}
 
-[automation]: {{< url "Cortex.Reference.Glossary.A-E.Automation" >}}
-[blocks]: {{< url "Cortex.Reference.Glossary.A-E.Block" >}}
-[Boolean]: {{< url "Cortex.Reference.Glossary.A-E.Boolean" >}}
-[Char]: {{< url "Cortex.Reference.Glossary.A-E.Char" >}}
-[code]: {{< url "Cortex.Reference.Glossary.A-E.Code" >}}
-[C#]: {{< url "Cortex.Reference.Glossary.A-E.CSharp" >}}
-[data type]: {{< url "Cortex.Reference.Glossary.A-E.DataType" >}}
-[developers]: {{< url "Cortex.Reference.Glossary.A-E.Developer" >}}
-[DLLs]: {{< url "Cortex.Reference.Glossary.A-E.DLL" >}}
-[drag-and-drop]: {{< url "Cortex.Reference.Glossary.A-E.DragAndDrop" >}}
-[Dictionary]: {{< url "Cortex.Reference.Glossary.A-E.Dictionary" >}}
-[Double]: {{< url "Cortex.Reference.Glossary.A-E.Double" >}}
-[expression editor]: {{< url "Cortex.Reference.Glossary.A-E.ExpressionEditor" >}}
-[GUI]: {{< url "Cortex.Reference.Glossary.F-J.GUI" >}}
-[initialised]: {{< url "Cortex.Reference.Glossary.F-J.Initialised" >}}
-[Int32]: {{< url "Cortex.Reference.Glossary.F-J.Int32" >}}
-[Int64]: {{< url "Cortex.Reference.Glossary.F-J.Int32" >}}
-[Single]: {{< url "Cortex.Reference.Glossary.P-T.Single" >}}
-[String]: {{< url "Cortex.Reference.Glossary.P-T.String" >}}
-[Structure]: {{< url "Cortex.Reference.Glossary.P-T.Structure" >}}
+[automation]: {{< url path="Cortex.Reference.Glossary.A-E.Automation" >}}
+[blocks]: {{< url path="Cortex.Reference.Glossary.A-E.Block" >}}
+[Boolean]: {{< url path="Cortex.Reference.Glossary.A-E.Boolean" >}}
+[Char]: {{< url path="Cortex.Reference.Glossary.A-E.Char" >}}
+[code]: {{< url path="Cortex.Reference.Glossary.A-E.Code" >}}
+[C#]: {{< url path="Cortex.Reference.Glossary.A-E.CSharp" >}}
+[data type]: {{< url path="Cortex.Reference.Glossary.A-E.DataType" >}}
+[developers]: {{< url path="Cortex.Reference.Glossary.A-E.Developer" >}}
+[DLLs]: {{< url path="Cortex.Reference.Glossary.A-E.DLL" >}}
+[drag-and-drop]: {{< url path="Cortex.Reference.Glossary.A-E.DragAndDrop" >}}
+[Dictionary]: {{< url path="Cortex.Reference.Glossary.A-E.Dictionary" >}}
+[Double]: {{< url path="Cortex.Reference.Glossary.A-E.Double" >}}
+[expression editor]: {{< url path="Cortex.Reference.Glossary.A-E.ExpressionEditor" >}}
+[GUI]: {{< url path="Cortex.Reference.Glossary.F-J.GUI" >}}
+[initialised]: {{< url path="Cortex.Reference.Glossary.F-J.Initialised" >}}
+[Int32]: {{< url path="Cortex.Reference.Glossary.F-J.Int32" >}}
+[Int64]: {{< url path="Cortex.Reference.Glossary.F-J.Int32" >}}
+[Single]: {{< url path="Cortex.Reference.Glossary.P-T.Single" >}}
+[String]: {{< url path="Cortex.Reference.Glossary.P-T.String" >}}
+[Structure]: {{< url path="Cortex.Reference.Glossary.P-T.Structure" >}}
 
-[Method Expressions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MethodExpressions" >}}
-[collection]: {{< url "Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}
-[Data Types > List&lt;TItem&gt;]: {{< url "Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
-[Data Types > Object]: {{< url "Cortex.Reference.DataTypes.All.Object.MainDoc" >}}
+[Method Expressions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MethodExpressions" >}}
+[collection]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}
+[Data Types > List&lt;TItem&gt;]: {{< url path="Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
+[Data Types > Object]: {{< url path="Cortex.Reference.DataTypes.All.Object.MainDoc" >}}
 
-[Block Properties > Output Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Block Properties > Output Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[Collections > Occurrences]: {{< url "Cortex.Reference.Concepts.WorkingWith.Collections.Occurrences.MainDoc" >}}
+[Collections > Occurrences]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Collections.Occurrences.MainDoc" >}}
 
-[C# operators and expressions]: {{< url "MSDocs.CSharp.OperatorsAndExpressions" >}}
+[C# operators and expressions]: {{< url path="MSDocs.CSharp.OperatorsAndExpressions" >}}
 
-[Kickstarter]: {{< url "Cortex.Website.EngageWithUs.Kickstarter" >}}
-[Launch Program]: {{< url "Cortex.Website.EngageWithUs.LaunchProgram" >}}
+[Kickstarter]: {{< url path="Cortex.Website.EngageWithUs.Kickstarter" >}}
+[Launch Program]: {{< url path="Cortex.Website.EngageWithUs.LaunchProgram" >}}

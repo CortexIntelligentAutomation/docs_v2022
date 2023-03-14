@@ -8,7 +8,7 @@ description: "Used to define whether the Get Folder Content block should get fil
 
 <p class="namespace">(Cortex.DataTypes.FilesAndFolders.ContentOptions)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

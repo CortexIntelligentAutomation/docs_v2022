@@ -63,13 +63,13 @@ In the future it will be possible to call flows asynchronously; this means the c
 
 None
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[execution]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.WhatIsAnExecution.MainDoc" >}}
-[Executions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
-[flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
-[Flows]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[execution]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.WhatIsAnExecution.MainDoc" >}}
+[Executions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
+[flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
+[Flows]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
 
-[Run Flow]: {{< url "Cortex.Reference.Blocks.Flows.RunFlow.RunFlow.MainDoc" >}}
-[Run Flow Example]: {{< url "Cortex.Reference.Blocks.Flows.RunFlow.RunFlow.RunningAFlow" >}}
-[Execute HTTP Request]: {{< url "Cortex.Reference.Blocks.Http.ExecuteHttpRequest.ExecuteHttpRequest.MainDoc" >}}
-[Calling Another Flow]: {{< url "Cortex.Reference.Blocks.Http.ExecuteHttpRequest.ExecuteHttpRequest.CallingAnotherFlow" >}}
+[Run Flow]: {{< url path="Cortex.Reference.Blocks.Flows.RunFlow.RunFlow.MainDoc" >}}
+[Run Flow Example]: {{< url path="Cortex.Reference.Blocks.Flows.RunFlow.RunFlow.RunningAFlow" >}}
+[Execute HTTP Request]: {{< url path="Cortex.Reference.Blocks.Http.ExecuteHttpRequest.ExecuteHttpRequest.MainDoc" >}}
+[Calling Another Flow]: {{< url path="Cortex.Reference.Blocks.Http.ExecuteHttpRequest.ExecuteHttpRequest.CallingAnotherFlow" >}}

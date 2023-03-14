@@ -106,16 +106,16 @@ None
 
 [Message]: {{< ref "#message" >}}
 
-[Set Items With Keys]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithKeys.MainDoc" >}}
-[Set Items With Values]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithValues.MainDoc" >}}
+[Set Items With Keys]: {{< url path="Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithKeys.MainDoc" >}}
+[Set Items With Values]: {{< url path="Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithValues.MainDoc" >}}
 
-[Set Items At Indexes]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndexes.MainDoc" >}}
-[List Set Items With Values]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsWithValues.MainDoc" >}}
+[Set Items At Indexes]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndexes.MainDoc" >}}
+[List Set Items With Values]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsWithValues.MainDoc" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
-[Block Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
-[properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
-[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
+[Block Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
+[properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
 
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}

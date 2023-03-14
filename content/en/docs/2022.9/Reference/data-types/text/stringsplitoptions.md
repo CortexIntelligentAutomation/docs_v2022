@@ -8,7 +8,7 @@ description: "Used to specify settings for splitting text (i.e. whether to inclu
 
 <p class="namespace">(System.StringSplitOptions)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

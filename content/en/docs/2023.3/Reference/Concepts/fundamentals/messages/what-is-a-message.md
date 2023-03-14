@@ -77,31 +77,31 @@ None
 
 [messages]: {{< ref "#anatomy-of-a-message" >}}
 
-[Flows]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
-[flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
+[Flows]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
+[flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
-[property]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
-[literal editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
+[property]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
+[literal editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
 
-[Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
-[variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
-[Input variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.FlowInputVariable" >}}
+[Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
+[variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
+[Input variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.FlowInputVariable" >}}
 
-[Data Types]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
-[data type]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.WhatIsADataType.MainDoc" >}}
+[Data Types]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
+[data type]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.WhatIsADataType.MainDoc" >}}
 
-[Executions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
-[Starting an Execution in Development]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.ExecutionsInDevelopment.MainDoc" >}}
-[validated]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.ExecutionsInDevelopment.ValidatingAFlow" >}}
+[Executions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
+[Starting an Execution in Development]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.ExecutionsInDevelopment.MainDoc" >}}
+[validated]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.ExecutionsInDevelopment.ValidatingAFlow" >}}
 
-[All Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
+[All Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
 
-[All Data Types]: {{< url "Cortex.Reference.DataTypes.MainDoc" >}}
+[All Data Types]: {{< url path="Cortex.Reference.DataTypes.MainDoc" >}}
 
-[Validation]: {{< url "Cortex.Reference.Messages.Validation.MainDoc" >}}
+[Validation]: {{< url path="Cortex.Reference.Messages.Validation.MainDoc" >}}
 
-[Start an execution]: {{< url "Cortex.Guides.Studio.MainDisplayArea.StartAnExecution" >}}
-[Messages Grid]: {{< url "Cortex.Guides.Studio.SouthPanel.MessagesGrid" >}}
-[Settings Editor]: {{< url "Cortex.Guides.Studio.EastPanel.SettingsEditor" >}}
+[Start an execution]: {{< url path="Cortex.Guides.Studio.MainDisplayArea.StartAnExecution" >}}
+[Messages Grid]: {{< url path="Cortex.Guides.Studio.SouthPanel.MessagesGrid" >}}
+[Settings Editor]: {{< url path="Cortex.Guides.Studio.EastPanel.SettingsEditor" >}}

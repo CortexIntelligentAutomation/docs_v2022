@@ -200,4 +200,4 @@ Advanced configuration (such as port changes) can be undertaken by taking the fo
 
 1. Save and close the config file.
 
-[Troubleshooting Root Certificate Error]: {{< url "Cortex.Reference.Troubleshooting.Installation.TroubleshootingNoRootCertificate" >}}
+[Troubleshooting Root Certificate Error]: {{< url path="Cortex.Reference.Troubleshooting.Installation.TroubleshootingNoRootCertificate" >}}

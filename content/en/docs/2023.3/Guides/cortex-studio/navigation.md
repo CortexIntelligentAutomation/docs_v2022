@@ -5,7 +5,7 @@ description: "How to navigate between and in flows"
 weight: 1
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

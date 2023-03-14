@@ -8,7 +8,7 @@ description: "Used to represent the severity of an event when it is logged."
 
 <p class="namespace">(Cortex.DataTypes.Logs.EventSeverity)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

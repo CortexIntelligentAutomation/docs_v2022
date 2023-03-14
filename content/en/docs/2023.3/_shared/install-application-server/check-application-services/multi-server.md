@@ -34,4 +34,4 @@
     If no solution can be found, please contact [Cortex Service Portal][] for further assistance.
 
 [Configure Installation Script]:  {{< ref "#configure-installation-script" >}}
-[Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
+[Cortex Service Portal]: {{< url path="Cortex.ServicePortal.MainDoc" >}}

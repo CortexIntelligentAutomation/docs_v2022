@@ -8,7 +8,7 @@ description: "Used to represent a component of a `DateTimeOffset` (e.g. `Year`, 
 
 <p class="namespace">(Cortex.DataTypes.DateAndTime.DateTimeComponentType)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

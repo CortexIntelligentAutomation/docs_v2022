@@ -84,27 +84,27 @@ None
 
 [Anatomy of an Exception]: {{< ref "#anatomy-of-an-exception" >}}
 
-[Handling Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.HandlingExceptions.MainDoc" >}}
-[Throwing Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.ThrowingExceptions.MainDoc" >}}
+[Handling Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.HandlingExceptions.MainDoc" >}}
+[Throwing Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.ThrowingExceptions.MainDoc" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
 
-[Executions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
-[execution]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.WhatIsAnExecution.MainDoc" >}}
+[Executions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
+[execution]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.WhatIsAnExecution.MainDoc" >}}
 
-[Flows]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
-[flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
+[Flows]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
+[flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
 
-[All Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
-[Exception Blocks]: {{< url "Cortex.Reference.Blocks.Exceptions.MainDoc" >}}
-[Throw New Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.ThrowException.ThrowNewFlowException.MainDoc" >}}
-[Add Item With Key]: {{< url "Cortex.Reference.Blocks.Dictionaries.AddItem.AddItemWithKey.MainDoc" >}}
+[All Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
+[Exception Blocks]: {{< url path="Cortex.Reference.Blocks.Exceptions.MainDoc" >}}
+[Throw New Exception]: {{< url path="Cortex.Reference.Blocks.Exceptions.ThrowException.ThrowNewFlowException.MainDoc" >}}
+[Add Item With Key]: {{< url path="Cortex.Reference.Blocks.Dictionaries.AddItem.AddItemWithKey.MainDoc" >}}
 
-[Dictionary]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
+[Dictionary]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
 
-[Exceptions]: {{< url "Cortex.Reference.Exceptions.MainDoc" >}}
-[InfiniteLoopException: Category]: {{< url "Cortex.Reference.Exceptions.Loops.InfiniteLoopException.Category" >}}
-[InfiniteLoopException: Error Code]: {{< url "Cortex.Reference.Exceptions.Loops.InfiniteLoopException.ErrorCode" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Exceptions.MainDoc" >}}
+[InfiniteLoopException: Category]: {{< url path="Cortex.Reference.Exceptions.Loops.InfiniteLoopException.Category" >}}
+[InfiniteLoopException: Error Code]: {{< url path="Cortex.Reference.Exceptions.Loops.InfiniteLoopException.ErrorCode" >}}
 
-[Exceptions Viewer]: {{< url "Cortex.Guides.Studio.EastPanel.ExceptionsViewer" >}}
+[Exceptions Viewer]: {{< url path="Cortex.Guides.Studio.EastPanel.ExceptionsViewer" >}}

@@ -50,9 +50,9 @@ Alternative architectures are possible; any of the Innovation server roles may b
 
 1. [Prerequisites][]
 
-[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.Prerequisites" >}}
-[Hardware Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.HardwareRequirements" >}}
-[Hardware Requirements for Alternative Architectures]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.HardwareRequirementsAlternativeArchitecture" >}}
+[Prerequisites]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.Prerequisites" >}}
+[Hardware Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.HardwareRequirements" >}}
+[Hardware Requirements for Alternative Architectures]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.MultipleServerWithHA.HardwareRequirementsAlternativeArchitecture" >}}
 [Recommended]: {{< ref "#recommended-architecture" >}}
 [Minimum]: {{< ref "#minimum-architecture" >}}
 [Alternative]: {{< ref "#alternative-architectures" >}}

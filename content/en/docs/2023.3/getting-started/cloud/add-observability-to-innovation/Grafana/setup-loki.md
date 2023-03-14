@@ -28,6 +28,6 @@ The key name is used in the Grafana Cloud website to easily identify the key aft
 
 1. [Install Promtail][]
 
-[Install Promtail]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.InstallPromtail.MainDoc" >}}
-[Prerequisites]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Prerequisites.MainDoc" >}}
-[Sign Up For Grafana Cloud]: {{< url "Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupGrafana.SignUpForGrafanaCloud" >}}
+[Install Promtail]: {{< url path="Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.InstallPromtail.MainDoc" >}}
+[Prerequisites]: {{< url path="Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.Prerequisites.MainDoc" >}}
+[Sign Up For Grafana Cloud]: {{< url path="Cortex.GettingStarted.Cloud.AddObservabilityToInnovation.Grafana.SetupGrafana.SignUpForGrafanaCloud" >}}

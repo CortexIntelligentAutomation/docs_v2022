@@ -5,4 +5,4 @@ type: swagger
 description: "This section includes all reference documentation for the APIs exposed by the Cortex Flow Execution Service, which has now been replaced by the Cortex Execution Service."
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

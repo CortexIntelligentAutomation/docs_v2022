@@ -203,57 +203,57 @@ None
 [Block Output Property]: {{< ref "#block-output-property" >}}
 [Initialising Variables]: {{< ref "#initialising-variables" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[Block Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
-[Variable Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
-[Creating Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.CreatingVariables" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[Block Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Variable Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
+[Creating Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.CreatingVariables" >}}
 
-[Data Types Concept]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
-[basic data type]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.WhatIsADataType.BasicDataTypes" >}}
-[complex data type]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.WhatIsADataType.ComplexDataTypes" >}}
+[Data Types Concept]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
+[basic data type]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.WhatIsADataType.BasicDataTypes" >}}
+[complex data type]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.WhatIsADataType.ComplexDataTypes" >}}
 
-[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
 
-[Executions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
-[debugging a flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Executions.ExecutionsInDevelopment.MainDoc" >}}
+[Executions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.MainDoc" >}}
+[debugging a flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Executions.ExecutionsInDevelopment.MainDoc" >}}
 
-[Flows]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
+[Flows]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
 
-[Messages Concept]: {{< url "Cortex.Reference.Concepts.Fundamentals.Messages.MainDoc" >}}
-[Messages]: {{< url "Cortex.Reference.Concepts.Fundamentals.Messages.WhatIsAMessage.MainDoc" >}}
+[Messages Concept]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Messages.MainDoc" >}}
+[Messages]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Messages.WhatIsAMessage.MainDoc" >}}
 
-[uses a variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
-[scope]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.VariableScopes.MainDoc" >}}
+[uses a variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
+[scope]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.VariableScopes.MainDoc" >}}
 
-[Workspaces]: {{< url "Cortex.Reference.Concepts.Fundamentals.Workspaces.MainDoc" >}}
-[workspace]: {{< url "Cortex.Reference.Concepts.Fundamentals.Workspaces.WhatIsAWorkspace.MainDoc" >}}
+[Workspaces]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Workspaces.MainDoc" >}}
+[workspace]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Workspaces.WhatIsAWorkspace.MainDoc" >}}
 
-[implicitly cast]: {{< url "Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ImplicitCast" >}}
-[explicitly cast]: {{< url "Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ExplicitCast" >}}
+[implicitly cast]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ImplicitCast" >}}
+[explicitly cast]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ExplicitCast" >}}
 
-[Cortex API Gateway Service]: {{< url "Cortex.Reference.Apis.ApiGatewayService.MainDoc" >}}
+[Cortex API Gateway Service]: {{< url path="Cortex.Reference.Apis.ApiGatewayService.MainDoc" >}}
 
-[All Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
+[All Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
 
-[Data Types]: {{< url "Cortex.Reference.DataTypes.MainDoc" >}}
-[dynamic]: {{< url "Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
-[Collections]: {{< url "Cortex.Reference.DataTypes.Collections.MainDoc" >}}
-[Dictionary]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
-[List]: {{< url "Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
-[Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
-[Command]: {{< url "Cortex.Reference.DataTypes.Data.Command.MainDoc" >}}
+[Data Types]: {{< url path="Cortex.Reference.DataTypes.MainDoc" >}}
+[dynamic]: {{< url path="Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
+[Collections]: {{< url path="Cortex.Reference.DataTypes.Collections.MainDoc" >}}
+[Dictionary]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
+[List]: {{< url path="Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
+[Structure]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
+[Command]: {{< url path="Cortex.Reference.DataTypes.Data.Command.MainDoc" >}}
 
-[FlowException]: {{< url "Cortex.Reference.Exceptions.Flows.FlowException.MainDoc" >}}
+[FlowException]: {{< url path="Cortex.Reference.Exceptions.Flows.FlowException.MainDoc" >}}
 
-[Cortex Studio]: {{< url "Cortex.Guides.Studio.MainDoc" >}}
-[Variables Viewer]: {{< url "Cortex.Guides.Studio.EastPanel.VariablesViewer" >}}
-[Variable Details Viewer]: {{< url "Cortex.Guides.Studio.EastPanel.VariableDetailsViewer" >}}
-[Messages Grid]: {{< url "Cortex.Guides.Studio.SouthPanel.MessagesGrid" >}}
-[Variables Grid]: {{< url "Cortex.Guides.Studio.SouthPanel.VariablesGrid" >}}
-[create]: {{< url "Cortex.Guides.Studio.SouthPanel.CreatingVariables" >}}
-[view]: {{< url "Cortex.Guides.Studio.SouthPanel.ViewingVariables" >}}
-[modify]: {{< url "Cortex.Guides.Studio.SouthPanel.ModifyingVariables" >}}
-[delete]: {{< url "Cortex.Guides.Studio.SouthPanel.DeletingVariables" >}}
+[Cortex Studio]: {{< url path="Cortex.Guides.Studio.MainDoc" >}}
+[Variables Viewer]: {{< url path="Cortex.Guides.Studio.EastPanel.VariablesViewer" >}}
+[Variable Details Viewer]: {{< url path="Cortex.Guides.Studio.EastPanel.VariableDetailsViewer" >}}
+[Messages Grid]: {{< url path="Cortex.Guides.Studio.SouthPanel.MessagesGrid" >}}
+[Variables Grid]: {{< url path="Cortex.Guides.Studio.SouthPanel.VariablesGrid" >}}
+[create]: {{< url path="Cortex.Guides.Studio.SouthPanel.CreatingVariables" >}}
+[view]: {{< url path="Cortex.Guides.Studio.SouthPanel.ViewingVariables" >}}
+[modify]: {{< url path="Cortex.Guides.Studio.SouthPanel.ModifyingVariables" >}}
+[delete]: {{< url path="Cortex.Guides.Studio.SouthPanel.DeletingVariables" >}}

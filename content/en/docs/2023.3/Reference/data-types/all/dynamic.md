@@ -68,16 +68,16 @@ None
 
 [Object vs dynamic]: {{< ref "#object-vs-dynamic" >}}
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[Collection]: {{< url "Cortex.Reference.DataTypes.Collections.MainDoc" >}}
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
+[Collection]: {{< url path="Cortex.Reference.DataTypes.Collections.MainDoc" >}}
+[Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
 
-[System.Object]: {{< url "MSDocs.DotNet.Api.System.Object.MainDoc" >}}
-[Using dynamic]: {{< url "MSDocs.DotNet.Api.System.dynamic.MainDoc" >}}
+[System.Object]: {{< url path="MSDocs.DotNet.Api.System.Object.MainDoc" >}}
+[Using dynamic]: {{< url path="MSDocs.DotNet.Api.System.dynamic.MainDoc" >}}
 
-[Object]: {{< url "Cortex.Reference.DataTypes.All.Object.MainDoc" >}}
-[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[Object]: {{< url path="Cortex.Reference.DataTypes.All.Object.MainDoc" >}}
+[Int32]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}

@@ -8,7 +8,7 @@ description: "Used to represent a file matching a file search performed by the S
 
 <p class="namespace">(Cortex.DataTypes.FilesAndFolders.FileMatch)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

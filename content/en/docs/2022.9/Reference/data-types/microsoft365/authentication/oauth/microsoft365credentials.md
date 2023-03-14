@@ -9,4 +9,4 @@ weight: 1
 
 <p class="namespace">(Cortex.DataTypes.Microsoft365.Authentication.OAuth.Microsoft365Credentials)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

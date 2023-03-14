@@ -251,17 +251,17 @@ The user must be given `Log on as a service` and `Log on as a batch job` permiss
 ## Next Steps?
 1. [Try it out][]
 
-[Try it out]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.TryItOut" >}}
-[Configure Installation Script]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.ConfigureInstallationScript" >}}
+[Try it out]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.TryItOut" >}}
+[Configure Installation Script]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.ConfigureInstallationScript" >}}
 [Get Application Pool User]: {{< ref "#get-application-pool-user" >}}
 [Install Certificate]: {{< ref "#install-certificate" >}}
 [Configure Debugger Installation Script]: {{< ref "#configure-installation-script" >}}
-[Install Application Server]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.InstallApplicationServer" >}}
-[Install Gateway]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.InstallGateway" >}}
-[Licensing Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.LicensingRequirements" >}}
-[Cortex Encrypted]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.EncryptText" >}}
-[Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
-[URL Rewrite]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}
-[Microsoft Web Deploy]: {{< url "MSDownload.WebDeploy" >}}
-[C++ Redistributable]: {{< url "MSDownload.CPlusPlusRedistributable.2013" >}}
-[Eula]: {{< url "Cortex.Website.Eula.MainDoc" >}}
+[Install Application Server]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.InstallApplicationServer" >}}
+[Install Gateway]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.InstallGateway" >}}
+[Licensing Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.LicensingRequirements" >}}
+[Cortex Encrypted]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.EncryptText" >}}
+[Cortex Service Portal]: {{< url path="Cortex.ServicePortal.MainDoc" >}}
+[URL Rewrite]: {{< url path="IIS.Downloads.UrlRewrite-2_1" >}}
+[Microsoft Web Deploy]: {{< url path="MSDownload.WebDeploy" >}}
+[C++ Redistributable]: {{< url path="MSDownload.CPlusPlusRedistributable.2013" >}}
+[Eula]: {{< url path="Cortex.Website.Eula.MainDoc" >}}

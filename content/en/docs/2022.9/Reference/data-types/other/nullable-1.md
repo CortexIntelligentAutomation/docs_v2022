@@ -8,7 +8,7 @@ description: "Used to represent a value type that can be set to `null`."
 
 <p class="namespace">(System.Nullable&lt;T&gt;)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

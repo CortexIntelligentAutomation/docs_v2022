@@ -213,30 +213,30 @@ enable = true
 # Additional menu links
 [menu]
 [[menu.main]]
-identifier = 'documentation'
-name = 'Documentation'
-url = '/docs/2023.3'
-weight = 10
+	identifier = 'documentation'
+	name = 'Documentation'
+	url = '/docs/2023.3'
+	weight = 10
 
 [[menu.main]]
-identifier = 'community'
-name = 'Community'
-url = 'https://community.cortex.co.uk/'
-weight = 30
+	identifier = 'community'
+	name = 'Community'
+	url = 'https://community.cortex.co.uk/'
+	weight = 30
 
 
 # Releases menu
 [[params.versions]]
-  version = "2023.3"
-  url = "/docs/2023.3/"
-  dotNetVersion = "net-6.0"
-  latest = true
+	version = "2023.3"
+	url = "/docs/2023.3/"
+	dotNetVersion = "net-6.0"
+	latest = true
 
 [[params.versions]]
-  version = "2022.9"
-  url = "/docs/2022.9/"
-  dotNetVersion = "netcore-3.1"
+	version = "2022.9"
+	url = "/docs/2022.9/"
+	dotNetVersion = "netcore-3.1"
 
 [[params.versions]]
-  version = "7.2"
-  url = "https://community.cortex.co.uk/"
+	version = "7.2"
+	url = "https://community.cortex.co.uk/"

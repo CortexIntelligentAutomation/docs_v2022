@@ -125,8 +125,8 @@ To set up a reverse proxy, carry out the following configuration.
 
 1. [Install Promtail][]
 
-[Application Request Routing 3.0]: {{< url "IIS.Downloads.ApplicationRequestRouting-3_0" >}}
-[Install Promtail]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail.MainDoc" >}}
-[prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.WebAppCertificateRequirements" >}}
-[Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}
-[URL Rewrite module 2.1]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}
+[Application Request Routing 3.0]: {{< url path="IIS.Downloads.ApplicationRequestRouting-3_0" >}}
+[Install Promtail]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallPromtail.MainDoc" >}}
+[prerequisites]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.WebAppCertificateRequirements" >}}
+[Software Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}
+[URL Rewrite module 2.1]: {{< url path="IIS.Downloads.UrlRewrite-2_1" >}}

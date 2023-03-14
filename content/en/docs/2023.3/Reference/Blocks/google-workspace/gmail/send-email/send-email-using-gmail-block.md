@@ -646,96 +646,96 @@ None
 [Opening Sessions]: {{< ref "#opening-sessions" >}}
 [Closing Sessions]: {{< ref "#closing-sessions" >}}
 
-[Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
-[EncryptedText]: {{< url "Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
+[Boolean]: {{< url path="Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
+[EncryptedText]: {{< url path="Cortex.Reference.DataTypes.Text.EncryptedText.MainDoc" >}}
 
-[EmailMessage]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
-[To]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.To" >}}
-[From]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.From" >}}
-[Cc]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Cc" >}}
-[Bcc]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Bcc" >}}
-[Priority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Priority" >}}
-[Subject]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Subject" >}}
-[BodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.BodyFormat" >}}
-[Body]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Body" >}}
-[Attachments]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.Attachments" >}}
-[creating an EmailMessage using a constructor]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessage.CreateAnEmailMessage" >}}
+[EmailMessage]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.MainDoc" >}}
+[To]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.To" >}}
+[From]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.From" >}}
+[Cc]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.Cc" >}}
+[Bcc]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.Bcc" >}}
+[Priority]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.Priority" >}}
+[Subject]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.Subject" >}}
+[BodyFormat]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.BodyFormat" >}}
+[Body]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.Body" >}}
+[Attachments]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.Attachments" >}}
+[creating an EmailMessage using a constructor]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessage.CreateAnEmailMessage" >}}
 
-[GmailSessionDetails]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.MainDoc" >}}
-[ServerDetails Property]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.ServerDetails" >}}
-[Credentials Property]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.Credentials" >}}
+[GmailSessionDetails]: {{< url path="Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.MainDoc" >}}
+[ServerDetails Property]: {{< url path="Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.ServerDetails" >}}
+[Credentials Property]: {{< url path="Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.GmailSessionDetails.Credentials" >}}
 
-[ServerDetails]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
-[Host]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
-[Port]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Port" >}}
-[UseSsl]: {{< url "Cortex.Reference.DataTypes.SessionDetails.ServerDetails.UseSsl" >}}
+[ServerDetails]: {{< url path="Cortex.Reference.DataTypes.SessionDetails.ServerDetails.MainDoc" >}}
+[Host]: {{< url path="Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Host" >}}
+[Port]: {{< url path="Cortex.Reference.DataTypes.SessionDetails.ServerDetails.Port" >}}
+[UseSsl]: {{< url path="Cortex.Reference.DataTypes.SessionDetails.ServerDetails.UseSsl" >}}
 
-[UserCredentials]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
-[Domain]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Domain" >}}
-[Username]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
-[Password]: {{< url "Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
+[UserCredentials]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.MainDoc" >}}
+[Domain]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.Domain" >}}
+[Username]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.Username" >}}
+[Password]: {{< url path="Cortex.Reference.DataTypes.Credentials.UserCredentials.Password" >}}
 
-[GmailOAuthCertificateCredentials]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.MainDoc" >}}
-[CertificatePath]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePath" >}}
-[CertificatePassword]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePassword" >}}
-[FromAddress]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.FromAddress" >}}
-[ClientId]: {{< url "Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.ClientId" >}}
+[GmailOAuthCertificateCredentials]: {{< url path="Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.MainDoc" >}}
+[CertificatePath]: {{< url path="Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePath" >}}
+[CertificatePassword]: {{< url path="Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.CertificatePassword" >}}
+[FromAddress]: {{< url path="Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.FromAddress" >}}
+[ClientId]: {{< url path="Cortex.Reference.DataTypes.GoogleWorkspace.Gmail.Authentication.OAuth.GmailOAuthCertificateCredentials.ClientId" >}}
 
-[EmailAddress]: {{< url "Cortex.Reference.DataTypes.Email.EmailAddress.MainDoc" >}}
-[Address]: {{< url "Cortex.Reference.DataTypes.Email.EmailAddress.Address" >}}
+[EmailAddress]: {{< url path="Cortex.Reference.DataTypes.Email.EmailAddress.MainDoc" >}}
+[Address]: {{< url path="Cortex.Reference.DataTypes.Email.EmailAddress.Address" >}}
 
-[EmailMessagePriority]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
-[Normal]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.Normal" >}}
-[Urgent]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.Urgent" >}}
-[NonUrgent]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessagePriority.NonUrgent" >}}
+[EmailMessagePriority]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessagePriority.MainDoc" >}}
+[Normal]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessagePriority.Normal" >}}
+[Urgent]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessagePriority.Urgent" >}}
+[NonUrgent]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessagePriority.NonUrgent" >}}
 
-[EmailMessageBodyFormat]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
-[HTML]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.HTML" >}}
-[Text]: {{< url "Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
+[EmailMessageBodyFormat]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.MainDoc" >}}
+[HTML]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.HTML" >}}
+[Text]: {{< url path="Cortex.Reference.DataTypes.Email.EmailMessageBodyFormat.Text" >}}
 
-[Setting up an app password for a Gmail account]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpAppPassword" >}}
-[Setting up a Gmail account for OAuth authentication]: {{< url "Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpOAuthGmail" >}}
+[Setting up an app password for a Gmail account]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpAppPassword" >}}
+[Setting up a Gmail account for OAuth authentication]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Email.Authentication.SettingUpOAuthGmail" >}}
 
-[EmailSessionException]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.MainDoc" >}}
-[Invalid Port]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidPort" >}}
-[Invalid Host]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidHost" >}}
-[SSL Required]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslRequired" >}}
-[SSL Unsupported]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
-[Invalid User Credentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidUserCredentials" >}}
-[Invalid SSL Certificate]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidSslCertificate" >}}
-[Invalid Gmail Client Credentials]: {{< url "Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidClientCredentials" >}}
-[EmailSessionErrorCode Limitations]: {{< url "Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.Limitations" >}}
+[EmailSessionException]: {{< url path="Cortex.Reference.Exceptions.Email.EmailSessionException.MainDoc" >}}
+[Invalid Port]: {{< url path="Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidPort" >}}
+[Invalid Host]: {{< url path="Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidHost" >}}
+[SSL Required]: {{< url path="Cortex.Reference.Exceptions.Email.EmailSessionException.SslRequired" >}}
+[SSL Unsupported]: {{< url path="Cortex.Reference.Exceptions.Email.EmailSessionException.SslUnsupported" >}}
+[Invalid User Credentials]: {{< url path="Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidUserCredentials" >}}
+[Invalid SSL Certificate]: {{< url path="Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidSslCertificate" >}}
+[Invalid Gmail Client Credentials]: {{< url path="Cortex.Reference.Exceptions.Email.EmailSessionException.InvalidClientCredentials" >}}
+[EmailSessionErrorCode Limitations]: {{< url path="Cortex.Reference.DataTypes.Email.EmailSessionErrorCode.Limitations" >}}
 
-[ArgumentException]: {{< url "MSDocs.DotNet.Api.System.ArgumentException" >}}
-[ArgumentNullException]: {{< url "MSDocs.DotNet.Api.System.ArgumentNullException" >}}
-[FileNotFoundException]: {{< url "MSDocs.DotNet.Api.System.IO.FileNotFoundException" >}}
-[IOException]: {{< url "MSDocs.DotNet.Api.System.IO.IOException" >}}
-[PathTooLongException]: {{< url "MSDocs.DotNet.Api.System.IO.PathTooLongException" >}}
-[PropertyNullException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
-[PropertyEmptyException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
-[PropertyValueOutOfRangeException]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyValueOutOfRangeException.MainDoc" >}}
-[Property Is Invalid]: {{< url "Cortex.Reference.Exceptions.Common.Property.PropertyValueOutOfRangeException.PropertyIsInvalid">}}
-[SmtpCommandException]: {{< url "MimeKit.Docs.SmtpCommandException" >}}
-[UnauthorizedAccessException]: {{< url "MSDocs.DotNet.Api.System.UnauthorizedAccessException" >}}
+[ArgumentException]: {{< url path="MSDocs.DotNet.Api.System.ArgumentException" >}}
+[ArgumentNullException]: {{< url path="MSDocs.DotNet.Api.System.ArgumentNullException" >}}
+[FileNotFoundException]: {{< url path="MSDocs.DotNet.Api.System.IO.FileNotFoundException" >}}
+[IOException]: {{< url path="MSDocs.DotNet.Api.System.IO.IOException" >}}
+[PathTooLongException]: {{< url path="MSDocs.DotNet.Api.System.IO.PathTooLongException" >}}
+[PropertyNullException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyNullException.MainDoc" >}}
+[PropertyEmptyException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyEmptyException.MainDoc" >}}
+[PropertyValueOutOfRangeException]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyValueOutOfRangeException.MainDoc" >}}
+[Property Is Invalid]: {{< url path="Cortex.Reference.Exceptions.Common.Property.PropertyValueOutOfRangeException.PropertyIsInvalid">}}
+[SmtpCommandException]: {{< url path="MimeKit.Docs.SmtpCommandException" >}}
+[UnauthorizedAccessException]: {{< url path="MSDocs.DotNet.Api.System.UnauthorizedAccessException" >}}
 
-[Expression]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
-[Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
-[Literal]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
-[Advanced]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
-[File & Folder Paths]: {{< url "Cortex.Reference.Concepts.WorkingWith.FilesAndFolders.Paths.MainDoc" >}}
+[Expression]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.MainDoc" >}}
+[Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.UsingVariables.MainDoc" >}}
+[Literal]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
+[Advanced]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.AdvancedProperties.MainDoc" >}}
+[File & Folder Paths]: {{< url path="Cortex.Reference.Concepts.WorkingWith.FilesAndFolders.Paths.MainDoc" >}}
 
-[SASL]: {{< url "Cortex.Reference.Glossary.P-T.SASL" >}}
-[SMTP]: {{< url "Cortex.Reference.Glossary.P-T.SMTP" >}}
-[SSL]: {{< url "Cortex.Reference.Glossary.P-T.SSL" >}}
-[TLS]: {{< url "Cortex.Reference.Glossary.P-T.TLS" >}}
-[BCC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.BCC" >}}
-[CC Glossary]: {{< url "Cortex.Reference.Glossary.A-E.CC" >}}
-[CRL]: {{< url "Cortex.Reference.Glossary.A-E.CRL" >}}
-[Gmail]: {{< url "Cortex.Reference.Glossary.F-J.Gmail" >}}
-[Outlook]: {{< url "Cortex.Reference.Glossary.K-O.Outlook" >}}
+[SASL]: {{< url path="Cortex.Reference.Glossary.P-T.SASL" >}}
+[SMTP]: {{< url path="Cortex.Reference.Glossary.P-T.SMTP" >}}
+[SSL]: {{< url path="Cortex.Reference.Glossary.P-T.SSL" >}}
+[TLS]: {{< url path="Cortex.Reference.Glossary.P-T.TLS" >}}
+[BCC Glossary]: {{< url path="Cortex.Reference.Glossary.A-E.BCC" >}}
+[CC Glossary]: {{< url path="Cortex.Reference.Glossary.A-E.CC" >}}
+[CRL]: {{< url path="Cortex.Reference.Glossary.A-E.CRL" >}}
+[Gmail]: {{< url path="Cortex.Reference.Glossary.F-J.Gmail" >}}
+[Outlook]: {{< url path="Cortex.Reference.Glossary.K-O.Outlook" >}}
 
-[Less Secure Apps]: {{< url "Google.Authentication.LessSecureApps.MainDoc" >}}
-[RFC 5321]: {{< url "IETF.Email.RFC5321" >}}
+[Less Secure Apps]: {{< url path="Google.Authentication.LessSecureApps.MainDoc" >}}
+[RFC 5321]: {{< url path="IETF.Email.RFC5321" >}}

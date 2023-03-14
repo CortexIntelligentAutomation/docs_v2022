@@ -84,16 +84,16 @@ None
 
 * [System.Boolean][]
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[Convert.ToBoolean]: {{< url "MSDocs.DotNet.Api.System.Convert.ToBoolean" >}}
-[Convert.ToString]: {{< url "MSDocs.DotNet.Api.System.Convert.ToString" >}}
+[Convert.ToBoolean]: {{< url path="MSDocs.DotNet.Api.System.Convert.ToBoolean" >}}
+[Convert.ToString]: {{< url path="MSDocs.DotNet.Api.System.Convert.ToString" >}}
 
-[System.Boolean]: {{< url "MSDocs.DotNet.Api.System.Boolean.MainDoc" >}}
-[Boolean.Parse]: {{< url "MSDocs.DotNet.Api.System.Boolean.Parse" >}}
-[Boolean.ToString]: {{< url "MSDocs.DotNet.Api.System.Boolean.ToString" >}}
+[System.Boolean]: {{< url path="MSDocs.DotNet.Api.System.Boolean.MainDoc" >}}
+[Boolean.Parse]: {{< url path="MSDocs.DotNet.Api.System.Boolean.Parse" >}}
+[Boolean.ToString]: {{< url path="MSDocs.DotNet.Api.System.Boolean.ToString" >}}
 
-[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
-[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+[Convert Object To Text]: {{< url path="Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url path="Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}

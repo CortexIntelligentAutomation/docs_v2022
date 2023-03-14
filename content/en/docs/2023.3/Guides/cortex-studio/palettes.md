@@ -5,4 +5,4 @@ description: "Block palette information"
 weight: 1
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

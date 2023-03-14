@@ -28,5 +28,5 @@ This section explains how to change the colour coding of thresholds set for the 
 1. Save the changes to the dashboard by clicking on the save (disk) icon, in the top right of the dashboard.
 
 <!-- Other links -->
-[Flow Execution Requests]: {{< url "Cortex.Reference.Observability.Grafana.Dashboards.FlowExecutionRequests.MainDoc" >}}
-[Total Requests Errored]: {{< url "Cortex.Reference.Observability.Grafana.Dashboards.FlowExecutionRequests.TotalRequestsErrored" >}}
+[Flow Execution Requests]: {{< url path="Cortex.Reference.Observability.Grafana.Dashboards.FlowExecutionRequests.MainDoc" >}}
+[Total Requests Errored]: {{< url path="Cortex.Reference.Observability.Grafana.Dashboards.FlowExecutionRequests.TotalRequestsErrored" >}}

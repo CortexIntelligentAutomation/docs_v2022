@@ -5,4 +5,4 @@ description: "The Cortex Flow Debugger Service."
 weight: 200
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

@@ -44,12 +44,12 @@ None
 
 None
 
-[Flows]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
-[flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
+[Flows]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
+[flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
 
-[Rethrow Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.RethrowException.RethrowException.MainDoc" >}}
+[Rethrow Exception]: {{< url path="Cortex.Reference.Blocks.Exceptions.RethrowException.RethrowException.MainDoc" >}}
 
-[Throw New Flow Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.ThrowException.ThrowNewFlowException.MainDoc" >}}
-[calling another flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.CallingOtherFlows.MainDoc" >}}
+[Throw New Flow Exception]: {{< url path="Cortex.Reference.Blocks.Exceptions.ThrowException.ThrowNewFlowException.MainDoc" >}}
+[calling another flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.CallingOtherFlows.MainDoc" >}}

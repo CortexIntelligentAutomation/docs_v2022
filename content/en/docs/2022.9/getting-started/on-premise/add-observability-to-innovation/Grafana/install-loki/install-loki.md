@@ -24,9 +24,9 @@ This archive contains the `loki-local-config.yaml` configuration file, [NSSM][] 
 
 1. [Configure Loki][]
 
-[Configure Loki]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.ConfigureLoki" >}}
-[Grafana Loki 2.5.0]: {{< url "Grafana.SelfManaged.Downloads.GrafanaLoki.GrafanaLokiInstallZip" >}}
-[Grafana Loki Install.zip]: {{< url "GitHub.Cortex.Observability.GrafanaLokiInstallZip" >}}
-[NSSM]: {{< url "NSSM.MainDoc" >}}
-[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
-[Software Requirements]: {{< url "Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}
+[Configure Loki]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.InstallLoki.ConfigureLoki" >}}
+[Grafana Loki 2.5.0]: {{< url path="Grafana.SelfManaged.Downloads.GrafanaLoki.GrafanaLokiInstallZip" >}}
+[Grafana Loki Install.zip]: {{< url path="GitHub.Cortex.Observability.GrafanaLokiInstallZip" >}}
+[NSSM]: {{< url path="NSSM.MainDoc" >}}
+[Prerequisites]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.Prerequisites" >}}
+[Software Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.AddObservabilityToInnovation.Grafana.SoftwareRequirements" >}}

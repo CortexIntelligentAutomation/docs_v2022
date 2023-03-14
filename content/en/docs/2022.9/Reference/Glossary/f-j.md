@@ -203,49 +203,49 @@ JSON stands for JavaScript Object Notation, and is a format for storing and tran
 
 See [What is JSON][What is Json (W3)] for more information.
 
-[16-Bit]: {{< url "Cortex.Reference.Glossary.0-9.16Bit" >}}
-[32-Bit]: {{< url "Cortex.Reference.Glossary.0-9.32Bit" >}}
-[blocks]: {{< url "Cortex.Reference.Glossary.A-E.Block" >}}
-[code]: {{< url "Cortex.Reference.Glossary.A-E.Code" >}}
-[Cortex]: {{< url "Cortex.Reference.Glossary.A-E.Cortex" >}}
-[Cortex Studio]: {{< url "Cortex.Reference.Glossary.A-E.CortexStudio" >}}
-[C#]: {{< url "Cortex.Reference.Glossary.A-E.CSharp" >}}
-[data type]: {{< url "Cortex.Reference.Glossary.A-E.DataType" >}}
-[Explicit Cast]: {{< url "Cortex.Reference.Glossary.A-E.ExplicitCast" >}}
-[expressions]: {{< url "Cortex.Reference.Glossary.A-E.Expression" >}}
-[files]: {{< url "Cortex.Reference.Glossary.F-J.File" >}}
-[flows]: {{< url "Cortex.Reference.Glossary.F-J.Flow" >}}
-[flow developers]: {{< url "Cortex.Reference.Glossary.F-J.FlowDeveloper" >}}
-[heterogenous]: {{< url "Cortex.Reference.Glossary.F-J.Heterogenous" >}}
-[homogenous]: {{< url "Cortex.Reference.Glossary.F-J.Homogenous" >}}
-[integer]: {{< url "Cortex.Reference.Glossary.F-J.Integer" >}}
-[item]: {{< url "Cortex.Reference.Glossary.F-J.Item" >}}
-[list]: {{< url "Cortex.Reference.Glossary.K-O.List" >}}
-[platform]: {{< url "Cortex.Reference.Glossary.P-T.Platform" >}}
-[programming language]: {{< url "Cortex.Reference.Glossary.P-T.ProgrammingLanguage" >}}
-[snippets]: {{< url "Cortex.Reference.Glossary.P-T.Snippets" >}}
-[variable]: {{< url "Cortex.Reference.Glossary.U-Z.Variable" >}}
+[16-Bit]: {{< url path="Cortex.Reference.Glossary.0-9.16Bit" >}}
+[32-Bit]: {{< url path="Cortex.Reference.Glossary.0-9.32Bit" >}}
+[blocks]: {{< url path="Cortex.Reference.Glossary.A-E.Block" >}}
+[code]: {{< url path="Cortex.Reference.Glossary.A-E.Code" >}}
+[Cortex]: {{< url path="Cortex.Reference.Glossary.A-E.Cortex" >}}
+[Cortex Studio]: {{< url path="Cortex.Reference.Glossary.A-E.CortexStudio" >}}
+[C#]: {{< url path="Cortex.Reference.Glossary.A-E.CSharp" >}}
+[data type]: {{< url path="Cortex.Reference.Glossary.A-E.DataType" >}}
+[Explicit Cast]: {{< url path="Cortex.Reference.Glossary.A-E.ExplicitCast" >}}
+[expressions]: {{< url path="Cortex.Reference.Glossary.A-E.Expression" >}}
+[files]: {{< url path="Cortex.Reference.Glossary.F-J.File" >}}
+[flows]: {{< url path="Cortex.Reference.Glossary.F-J.Flow" >}}
+[flow developers]: {{< url path="Cortex.Reference.Glossary.F-J.FlowDeveloper" >}}
+[heterogenous]: {{< url path="Cortex.Reference.Glossary.F-J.Heterogenous" >}}
+[homogenous]: {{< url path="Cortex.Reference.Glossary.F-J.Homogenous" >}}
+[integer]: {{< url path="Cortex.Reference.Glossary.F-J.Integer" >}}
+[item]: {{< url path="Cortex.Reference.Glossary.F-J.Item" >}}
+[list]: {{< url path="Cortex.Reference.Glossary.K-O.List" >}}
+[platform]: {{< url path="Cortex.Reference.Glossary.P-T.Platform" >}}
+[programming language]: {{< url path="Cortex.Reference.Glossary.P-T.ProgrammingLanguage" >}}
+[snippets]: {{< url path="Cortex.Reference.Glossary.P-T.Snippets" >}}
+[variable]: {{< url path="Cortex.Reference.Glossary.U-Z.Variable" >}}
 
-[List&lt;TItem&gt;]: {{< url "Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
+[List&lt;TItem&gt;]: {{< url path="Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
 
-[Fundamentals > Flows]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
-[Text > Format Parameters]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Formatting.FormatTemplates" >}}
-[Text > Format Specifiers]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Formatting.FormatSpecifiers" >}}
-[Text > Format Templates]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Formatting.FormatTemplates" >}}
-[Working With > Invariant Culture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Culture.InvariantCulture.MainDoc" >}}
-[Block Properties > Input Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[Block Properties > InputOutput Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Fundamentals > Flows]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
+[Text > Format Parameters]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.Formatting.FormatTemplates" >}}
+[Text > Format Specifiers]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.Formatting.FormatSpecifiers" >}}
+[Text > Format Templates]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.Formatting.FormatTemplates" >}}
+[Working With > Invariant Culture]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Culture.InvariantCulture.MainDoc" >}}
+[Block Properties > Input Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Block Properties > InputOutput Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
-[collection]: {{< url "Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}
-[Collections > Indexes]: {{< url "Cortex.Reference.Concepts.WorkingWith.Collections.Indexes.MainDoc" >}}
-[Cortex Studio > Authorisation]: {{< url "Cortex.Guides.Gateway.Settings.StudioAuthorisation.MainDoc" >}}
+[collection]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}
+[Collections > Indexes]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Collections.Indexes.MainDoc" >}}
+[Cortex Studio > Authorisation]: {{< url path="Cortex.Guides.Gateway.Settings.StudioAuthorisation.MainDoc" >}}
 
-[Int16]: {{< url "Cortex.Reference.DataTypes.Numbers.Int16.MainDoc" >}}
-[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
-[Int64]: {{< url "Cortex.Reference.DataTypes.Numbers.Int64.MainDoc" >}}
+[Int16]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int16.MainDoc" >}}
+[Int32]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
+[Int64]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int64.MainDoc" >}}
 
-[Casting and type conversions (C# Programming Guide)]: {{< url "MSDocs.CSharp.Casting" >}}
+[Casting and type conversions (C# Programming Guide)]: {{< url path="MSDocs.CSharp.Casting" >}}
 
-[What is Json (W3)]: {{< url "W3.WhatIsJson" >}}
+[What is Json (W3)]: {{< url path="W3.WhatIsJson" >}}
 
-[Information Technology (Wikipedia)]: {{< url "Wikipedia.InformationTechnology" >}}
+[Information Technology (Wikipedia)]: {{< url path="Wikipedia.InformationTechnology" >}}

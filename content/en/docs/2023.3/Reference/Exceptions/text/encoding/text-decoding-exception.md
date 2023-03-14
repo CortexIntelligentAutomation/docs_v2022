@@ -145,21 +145,21 @@ None
 
 None
 
-[Decode Text]: {{< url "Cortex.Reference.Blocks.Text.DecodeText.DecodeText.MainDoc" >}}
+[Decode Text]: {{< url path="Cortex.Reference.Blocks.Text.DecodeText.DecodeText.MainDoc" >}}
 [InvalidBase64Character]: {{< ref "#100">}}
 [OddHexCharacters]: {{< ref "#300">}}
 [InvalidBase64UrlCharacter]: {{< ref "#600">}}
 [Category]: {{< ref "#category">}}
 [Error Code]: {{< ref "#error-code">}}
 
-[Base64]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64" >}}
-[Hex]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Hex" >}}
-[Base64URL]: {{< url "Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64Url" >}}
+[Base64]: {{< url path="Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64" >}}
+[Hex]: {{< url path="Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Hex" >}}
+[Base64URL]: {{< url path="Cortex.Reference.DataTypes.Text.Encoding.TextEncodingFormat.Base64Url" >}}
 
-[WorkingWithText]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
+[WorkingWithText]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
 
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
 
-[TextDecodingErrorCode]: {{< url "Cortex.Reference.DataTypes.Text.TextDecodingErrorCode.MainDoc" >}}
+[TextDecodingErrorCode]: {{< url path="Cortex.Reference.DataTypes.Text.TextDecodingErrorCode.MainDoc" >}}
 
-[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}

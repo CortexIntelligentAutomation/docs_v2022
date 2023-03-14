@@ -39,13 +39,13 @@ The minimum architecture for adding Innovation to a v7.2 Single Site, Single Ser
 
 1. [Prerequisites][]
 
-[Gateway Guide]: {{< url "Cortex.Guides.Gateway.MainDoc" >}}
-[Studio Guide]: {{< url "Cortex.Guides.Studio.MainDoc" >}}
-[Prerequisites]: {{< url "Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.Prerequisites" >}}
-[SQL&nbsp;Server&nbsp;Express]: {{< url "MSDownload.SqlServerExpress.2016"  >}}
-[SQL&nbsp;Server&nbsp;Standard]: {{< url "MSEval.SQLServer.2019" >}}
-[Microsoft&nbsp;Service&nbsp;Fabric]: {{< url "MSDocs.ServiceFabric.MainDoc" >}}
-[Microsoft&nbsp;Service&nbsp;Fabric&nbsp;Explorer]: {{< url "MSDocs.ServiceFabric.Explorer" >}}
-[Particular&nbsp;NServiceBus]: {{< url "Particular.NServiceBus.MainDoc" >}}
-[Pivotal&nbsp;RabbitMQ]: {{< url "RabbitMQ.MainDoc" >}}
-[Erlang&nbsp;OTP]: {{< url "ErlangOTP.MainDoc" >}}
+[Gateway Guide]: {{< url path="Cortex.Guides.Gateway.MainDoc" >}}
+[Studio Guide]: {{< url path="Cortex.Guides.Studio.MainDoc" >}}
+[Prerequisites]: {{< url path="Cortex.GettingStarted.OnPremise.AddInnovationTo72.SingleServerWithoutHA.Prerequisites" >}}
+[SQL&nbsp;Server&nbsp;Express]: {{< url path="MSDownload.SqlServerExpress.2016"  >}}
+[SQL&nbsp;Server&nbsp;Standard]: {{< url path="MSEval.SQLServer.2019" >}}
+[Microsoft&nbsp;Service&nbsp;Fabric]: {{< url path="MSDocs.ServiceFabric.MainDoc" >}}
+[Microsoft&nbsp;Service&nbsp;Fabric&nbsp;Explorer]: {{< url path="MSDocs.ServiceFabric.Explorer" >}}
+[Particular&nbsp;NServiceBus]: {{< url path="Particular.NServiceBus.MainDoc" >}}
+[Pivotal&nbsp;RabbitMQ]: {{< url path="RabbitMQ.MainDoc" >}}
+[Erlang&nbsp;OTP]: {{< url path="ErlangOTP.MainDoc" >}}

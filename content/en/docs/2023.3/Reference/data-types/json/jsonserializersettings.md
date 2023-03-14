@@ -8,7 +8,7 @@ description: "Used to specify settings for converting objects to and from Json."
 
 <p class="namespace">(Newtonsoft.Json.JsonSerializerSettings)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

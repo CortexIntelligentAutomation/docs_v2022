@@ -91,43 +91,43 @@ None
 
 * [System.DateTime][]
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[Convert.ToString]: {{< url "MSDocs.DotNet.Api.System.Convert.ToString" >}}
+[Convert.ToString]: {{< url path="MSDocs.DotNet.Api.System.Convert.ToString" >}}
 
-[Convert Text To DateTime]: {{< url "Cortex.Reference.Blocks.DateAndTime.ConvertDateTime.ConvertTextToDateTime.MainDoc" >}}
-[Convert DateTime To Text]: {{< url "Cortex.Reference.Blocks.DateAndTime.ConvertDateTime.ConvertDateTimeToText.MainDoc" >}}
-[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
-[Convert Object To Json]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
+[Convert Text To DateTime]: {{< url path="Cortex.Reference.Blocks.DateAndTime.ConvertDateTime.ConvertTextToDateTime.MainDoc" >}}
+[Convert DateTime To Text]: {{< url path="Cortex.Reference.Blocks.DateAndTime.ConvertDateTime.ConvertDateTimeToText.MainDoc" >}}
+[Convert Object To Text]: {{< url path="Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Json]: {{< url path="Cortex.Reference.Blocks.Json.ConvertJson.ConvertObjectToJson.MainDoc" >}}
 
-[Initializing a DateTime object]: {{< url "MSDocs.DotNet.Api.System.DateTime.InitializingADateTimeObject" >}}
+[Initializing a DateTime object]: {{< url path="MSDocs.DotNet.Api.System.DateTime.InitializingADateTimeObject" >}}
 
-[System.DateTime]: {{< url "MSDocs.DotNet.Api.System.DateTime.MainDoc" >}}
-[DateTime Constructors]: {{< url "MSDocs.DotNet.Api.System.DateTime.Ctors" >}}
-[DateTime.MinValue]: {{< url "MSDocs.DotNet.Api.System.DateTime.MinValue" >}}
-[DateTime.Now]: {{< url "MSDocs.DotNet.Api.System.DateTime.Now" >}}
-[DateTime.UtcNow]: {{< url "MSDocs.DotNet.Api.System.DateTime.UtcNow" >}}
-[DateTime.Parse]: {{< url "MSDocs.DotNet.Api.System.DateTime.Parse" >}}
-[DateTime.ToString]: {{< url "MSDocs.DotNet.Api.System.DateTime.ToString" >}}
+[System.DateTime]: {{< url path="MSDocs.DotNet.Api.System.DateTime.MainDoc" >}}
+[DateTime Constructors]: {{< url path="MSDocs.DotNet.Api.System.DateTime.Ctors" >}}
+[DateTime.MinValue]: {{< url path="MSDocs.DotNet.Api.System.DateTime.MinValue" >}}
+[DateTime.Now]: {{< url path="MSDocs.DotNet.Api.System.DateTime.Now" >}}
+[DateTime.UtcNow]: {{< url path="MSDocs.DotNet.Api.System.DateTime.UtcNow" >}}
+[DateTime.Parse]: {{< url path="MSDocs.DotNet.Api.System.DateTime.Parse" >}}
+[DateTime.ToString]: {{< url path="MSDocs.DotNet.Api.System.DateTime.ToString" >}}
 
-[DateTimeOffset.DateTime]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.DateTime" >}}
-[DateTimeOffset.LocalDateTime]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.LocalDateTime" >}}
-[DateTimeOffset.UtcDateTime]: {{< url "MSDocs.DotNet.Api.System.DateTimeOffset.UtcDateTime" >}}
+[DateTimeOffset.DateTime]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.DateTime" >}}
+[DateTimeOffset.LocalDateTime]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.LocalDateTime" >}}
+[DateTimeOffset.UtcDateTime]: {{< url path="MSDocs.DotNet.Api.System.DateTimeOffset.UtcDateTime" >}}
 
-[Date and Time Formatting]: {{< url "Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.MainDoc" >}}
-[StandardFormatTemplates]: {{< url "Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.StandardFormatTemplates" >}}
-[ISO 8601 Standard]: {{< url "Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.ISO8601Standard" >}}
-[Operating System Settings]: {{< url "Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.OperatingSystemSettings" >}}
+[Date and Time Formatting]: {{< url path="Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.MainDoc" >}}
+[StandardFormatTemplates]: {{< url path="Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.StandardFormatTemplates" >}}
+[ISO 8601 Standard]: {{< url path="Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.ISO8601Standard" >}}
+[Operating System Settings]: {{< url path="Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.OperatingSystemSettings" >}}
 
-[DateTimeOffset]: {{< url "Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
-[TimeSpan]: {{< url "Cortex.Reference.DataTypes.DateAndTime.TimeSpan.MainDoc" >}}
-[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
+[DateTimeOffset]: {{< url path="Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
+[TimeSpan]: {{< url path="Cortex.Reference.DataTypes.DateAndTime.TimeSpan.MainDoc" >}}
+[Int32]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
 
-[Working with Date and Time]: {{< url "Cortex.Reference.Concepts.WorkingWith.DateAndTime.MainDoc" >}}
+[Working with Date and Time]: {{< url path="Cortex.Reference.Concepts.WorkingWith.DateAndTime.MainDoc" >}}
 
-[Culture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Culture.MainDoc" >}}
-[Current Culture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Culture.CurrentCulture.MainDoc" >}}
+[Culture]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Culture.MainDoc" >}}
+[Current Culture]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Culture.CurrentCulture.MainDoc" >}}
 
-[Implicit Casting]: {{< url "Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ImplicitCast" >}}
+[Implicit Casting]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ImplicitCast" >}}

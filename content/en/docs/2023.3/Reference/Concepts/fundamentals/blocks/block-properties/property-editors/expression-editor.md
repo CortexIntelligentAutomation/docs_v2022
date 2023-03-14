@@ -663,86 +663,86 @@ This may change in future to allow developers to specifically select which of th
 [Casting expressions]: {{< ref "#casting-expressions" >}}
 [Index expressions]: {{< ref "#index-expressions" >}}
 
-[Data Type]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
+[Data Type]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
 
-[property editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.MainDoc" >}}
-[Literal Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
-[Variable Editor]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
+[property editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.MainDoc" >}}
+[Literal Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.LiteralEditor.MainDoc" >}}
+[Variable Editor]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.VariableEditor.MainDoc" >}}
 
-[Input Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[Output Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
-[InputOutput Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Input Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Output Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[InputOutput Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
 
-[Reference Data Types]: {{< url "Cortex.Reference.DataTypes.MainDoc" >}}
-[Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
-[Collections]: {{< url "Cortex.Reference.DataTypes.Collections.MainDoc" >}}
-[DateTimeOffset]: {{< url "Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
-[Dictionary]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
-[Create a Dictionary]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.CreateNew" >}}
-[Int16]: {{< url "Cortex.Reference.DataTypes.Numbers.Int16.MainDoc" >}}
-[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
-[Int32.MaxValue]: {{< url "MSDocs.DotNet.Api.System.Int32.MaxValue" >}}
-[Int32.MinValue]: {{< url "MSDocs.DotNet.Api.System.Int32.MinValue" >}}
-[Int64]: {{< url "Cortex.Reference.DataTypes.Numbers.Int64.MainDoc" >}}
-[Double]: {{< url "Cortex.Reference.DataTypes.Numbers.Double.MainDoc" >}}
-[List]: {{< url "Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
-[Create a List]: {{< url "Cortex.Reference.DataTypes.Collections.List.CreateNew" >}}
-[Object]: {{< url "Cortex.Reference.DataTypes.All.Object.MainDoc" >}}
-[Single]: {{< url "Cortex.Reference.DataTypes.Numbers.Single.MainDoc" >}}
-[Single.MaxValue]: {{< url "MSDocs.DotNet.Api.System.Single.MaxValue" >}}
-[Single.MinValue]: {{< url "MSDocs.DotNet.Api.System.Single.MinValue" >}}
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[Char]: {{< url "Cortex.Reference.DataTypes.Text.Char.MainDoc" >}}
-[Collection]: {{< url "Cortex.Reference.DataTypes.Collections.MainDoc" >}}
-[Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
-[Create a Structure]: {{< url "Cortex.Reference.DataTypes.Collections.Structure.CreateNew" >}}
+[Reference Data Types]: {{< url path="Cortex.Reference.DataTypes.MainDoc" >}}
+[Boolean]: {{< url path="Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
+[Collections]: {{< url path="Cortex.Reference.DataTypes.Collections.MainDoc" >}}
+[DateTimeOffset]: {{< url path="Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
+[Dictionary]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
+[Create a Dictionary]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.CreateNew" >}}
+[Int16]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int16.MainDoc" >}}
+[Int32]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
+[Int32.MaxValue]: {{< url path="MSDocs.DotNet.Api.System.Int32.MaxValue" >}}
+[Int32.MinValue]: {{< url path="MSDocs.DotNet.Api.System.Int32.MinValue" >}}
+[Int64]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int64.MainDoc" >}}
+[Double]: {{< url path="Cortex.Reference.DataTypes.Numbers.Double.MainDoc" >}}
+[List]: {{< url path="Cortex.Reference.DataTypes.Collections.List.MainDoc" >}}
+[Create a List]: {{< url path="Cortex.Reference.DataTypes.Collections.List.CreateNew" >}}
+[Object]: {{< url path="Cortex.Reference.DataTypes.All.Object.MainDoc" >}}
+[Single]: {{< url path="Cortex.Reference.DataTypes.Numbers.Single.MainDoc" >}}
+[Single.MaxValue]: {{< url path="MSDocs.DotNet.Api.System.Single.MaxValue" >}}
+[Single.MinValue]: {{< url path="MSDocs.DotNet.Api.System.Single.MinValue" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[Char]: {{< url path="Cortex.Reference.DataTypes.Text.Char.MainDoc" >}}
+[Collection]: {{< url path="Cortex.Reference.DataTypes.Collections.MainDoc" >}}
+[Structure]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.MainDoc" >}}
+[Create a Structure]: {{< url path="Cortex.Reference.DataTypes.Collections.Structure.CreateNew" >}}
 
-[Workspaces]: {{< url "Cortex.Reference.Concepts.Fundamentals.Workspaces.MainDoc" >}}
-[workspace]: {{< url "Cortex.Reference.Concepts.Fundamentals.Workspaces.WhatIsAWorkspace.MainDoc" >}}
-[Workspace Scope]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.VariableScopes.MainDoc" >}}
+[Workspaces]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Workspaces.MainDoc" >}}
+[workspace]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Workspaces.WhatIsAWorkspace.MainDoc" >}}
+[Workspace Scope]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.VariableScopes.MainDoc" >}}
 
-[Variables Concept]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
-[Variables: What Is a Variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
+[Variables Concept]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
+[Variables: What Is a Variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
 
-[Object Equality]: {{< url "Cortex.Reference.Concepts.WorkingWith.Objects.ObjectEquality.MainDoc" >}}
+[Object Equality]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Objects.ObjectEquality.MainDoc" >}}
 
-[Enum]: {{< url "Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
+[Enum]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Enums.MainDoc" >}}
 
-[Object Casting]: {{< url "Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.MainDoc" >}}
-[implicitly cast]: {{< url "Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ImplicitCast" >}}
+[Object Casting]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.MainDoc" >}}
+[implicitly cast]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Objects.ObjectCasting.ImplicitCast" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
-[Set Variable]: {{< url "Cortex.Reference.Blocks.Variables.SetVariable.SetVariable.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
+[Set Variable]: {{< url path="Cortex.Reference.Blocks.Variables.SetVariable.SetVariable.MainDoc" >}}
 
-[Expression Editor]: {{< url "Cortex.Guides.Studio.ExpressionEditor.MainDoc" >}}
+[Expression Editor]: {{< url path="Cortex.Guides.Studio.ExpressionEditor.MainDoc" >}}
 
-[Variables Grid]: {{< url "Cortex.Guides.Studio.SouthPanel.VariablesGrid" >}}
+[Variables Grid]: {{< url path="Cortex.Guides.Studio.SouthPanel.VariablesGrid" >}}
 
-[Boolean Literals]: {{< url "MSDocs.CSharp.BooleanLiterals" >}}
-[Char Literals]: {{< url "MSDocs.CSharp.CharLiterals" >}}
-[Integer Literals]: {{< url "MSDocs.CSharp.IntegerLiterals" >}}
-[Real Literals]: {{< url "MSDocs.CSharp.RealLiterals" >}}
-[String Literals]: {{< url "MSDocs.CSharp.StringLiterals" >}}
-[Arithmetic Operators]: {{< url "MSDocs.CSharp.ArithmeticOperators" >}}
-[Boolean Logical Operators]: {{< url "MSDocs.CSharp.BooleanLogicalOperators" >}}
-[Comparison Operators]: {{< url "MSDocs.CSharp.ComparisonOperators" >}}
-[Equality Operators]: {{< url "MSDocs.CSharp.EqualityOperators" >}}
-[Constructors]: {{< url "MSDocs.CSharp.Constructors" >}}
-[Methods External]: {{< url "MSDocs.CSharp.Methods" >}}
-[Properties]: {{< url "MSDocs.CSharp.Properties" >}}
-[Enumeration types]: {{< url "MSDocs.CSharp.EnumerationTypes" >}}
-[Explicit Conversions]: {{< url "MSDocs.CSharp.ExplicitConversions" >}}
-[Implicit Conversions]: {{< url "MSDocs.CSharp.ImplicitConversions" >}}
-[Indices and Ranges]: {{< url "MSDocs.CSharp.IndicesAndRanges" >}}
-[String concatenation]: {{< url "MSDocs.DotNet.Api.System.String.ConcatGuide" >}}
-[C# identifier naming rules]: {{< url "MSDocs.CSharp.IdentifierNamingRules" >}}
-[String interpolation]: {{< url "MSDocs.CSharp.Interpolation" >}}
-[Verbatim string literals]: {{< url "MSDocs.CSharp.Verbatim" >}}
-[Verbatim String Interpolation]: {{< url "MSDocs.CSharp.InterpolatedVerbatim" >}}
+[Boolean Literals]: {{< url path="MSDocs.CSharp.BooleanLiterals" >}}
+[Char Literals]: {{< url path="MSDocs.CSharp.CharLiterals" >}}
+[Integer Literals]: {{< url path="MSDocs.CSharp.IntegerLiterals" >}}
+[Real Literals]: {{< url path="MSDocs.CSharp.RealLiterals" >}}
+[String Literals]: {{< url path="MSDocs.CSharp.StringLiterals" >}}
+[Arithmetic Operators]: {{< url path="MSDocs.CSharp.ArithmeticOperators" >}}
+[Boolean Logical Operators]: {{< url path="MSDocs.CSharp.BooleanLogicalOperators" >}}
+[Comparison Operators]: {{< url path="MSDocs.CSharp.ComparisonOperators" >}}
+[Equality Operators]: {{< url path="MSDocs.CSharp.EqualityOperators" >}}
+[Constructors]: {{< url path="MSDocs.CSharp.Constructors" >}}
+[Methods External]: {{< url path="MSDocs.CSharp.Methods" >}}
+[Properties]: {{< url path="MSDocs.CSharp.Properties" >}}
+[Enumeration types]: {{< url path="MSDocs.CSharp.EnumerationTypes" >}}
+[Explicit Conversions]: {{< url path="MSDocs.CSharp.ExplicitConversions" >}}
+[Implicit Conversions]: {{< url path="MSDocs.CSharp.ImplicitConversions" >}}
+[Indices and Ranges]: {{< url path="MSDocs.CSharp.IndicesAndRanges" >}}
+[String concatenation]: {{< url path="MSDocs.DotNet.Api.System.String.ConcatGuide" >}}
+[C# identifier naming rules]: {{< url path="MSDocs.CSharp.IdentifierNamingRules" >}}
+[String interpolation]: {{< url path="MSDocs.CSharp.Interpolation" >}}
+[Verbatim string literals]: {{< url path="MSDocs.CSharp.Verbatim" >}}
+[Verbatim String Interpolation]: {{< url path="MSDocs.CSharp.InterpolatedVerbatim" >}}
 
-[C#]: {{< url "Cortex.Reference.Glossary.A-E.CSharp" >}}
-[operands]: {{< url "Cortex.Reference.Glossary.K-O.Operand" >}}
-[operators]: {{< url "Cortex.Reference.Glossary.K-O.Operator" >}}
-[PropertiesC#]: {{< url "Cortex.Reference.Glossary.P-T.PropertyCSharp" >}}
-[methods]: {{< url "Cortex.Reference.Glossary.K-O.Method" >}}
-[programming language]: {{< url "Cortex.Reference.Glossary.P-T.ProgrammingLanguage" >}}
+[C#]: {{< url path="Cortex.Reference.Glossary.A-E.CSharp" >}}
+[operands]: {{< url path="Cortex.Reference.Glossary.K-O.Operand" >}}
+[operators]: {{< url path="Cortex.Reference.Glossary.K-O.Operator" >}}
+[PropertiesC#]: {{< url path="Cortex.Reference.Glossary.P-T.PropertyCSharp" >}}
+[methods]: {{< url path="Cortex.Reference.Glossary.K-O.Method" >}}
+[programming language]: {{< url path="Cortex.Reference.Glossary.P-T.ProgrammingLanguage" >}}

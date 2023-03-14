@@ -5,7 +5,7 @@ description: "A guide on how to use the Variable Editor"
 weight: 0
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

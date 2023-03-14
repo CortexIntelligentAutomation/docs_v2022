@@ -8,7 +8,7 @@ description: "Used to represent a time interval (duration of time or elapsed tim
 
 <p class="namespace">(Cortex.DataTypes.DateAndTime.TimePeriod)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

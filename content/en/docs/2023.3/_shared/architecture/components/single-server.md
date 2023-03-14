@@ -16,17 +16,17 @@
 | [Pivotal RabbitMQ][]                              | {{< section "/architecture/components/purpose/pivotal-rabbitmq.md" >}}             | Required                    | Application Server                         |
 | [Erlang OTP][]                                    | {{< section "/architecture/components/purpose/erlang-otp.md" >}}                   | Required                    | Application Server                         |
 
-[Cortex API Gateway Service]: {{< url "Cortex.Guides.ApiGatewayService.MainDoc" >}}
-[Cortex Flow Debugger Service]: {{< url "Cortex.Guides.FlowDebuggerService.MainDoc" >}}
-[Cortex Execution Service]: {{< url "Cortex.Guides.ExecutionService.MainDoc" >}}
-[Cortex Package Service]: {{< url "Cortex.Guides.PackageService.MainDoc" >}}
-[Cortex Provisioning Service]: {{< url "Cortex.Guides.ProvisioningService.MainDoc" >}}
-[Gateway Guide]: {{< url "Cortex.Guides.Gateway.MainDoc" >}}
-[Studio Guide]: {{< url "Cortex.Guides.Studio.MainDoc" >}}
-[SQL Server Express]: {{< url "MSDownload.SqlServerExpress.2016" >}}
-[SQL Server Standard]: {{< url "MSEval.SQLServer.2019" >}}
-[Microsoft Service Fabric]: {{< url "MSDocs.ServiceFabric.MainDoc" >}}
-[Microsoft Service Fabric Explorer]: {{< url "MSDocs.ServiceFabric.Explorer" >}}
-[Particular NServiceBus]: {{< url "Particular.NServiceBus.MainDoc" >}}
-[Pivotal RabbitMQ]: {{< url "RabbitMQ.MainDoc" >}}
-[Erlang OTP]: {{< url "ErlangOTP.MainDoc" >}}
+[Cortex API Gateway Service]: {{< url path="Cortex.Guides.ApiGatewayService.MainDoc" >}}
+[Cortex Flow Debugger Service]: {{< url path="Cortex.Guides.FlowDebuggerService.MainDoc" >}}
+[Cortex Execution Service]: {{< url path="Cortex.Guides.ExecutionService.MainDoc" >}}
+[Cortex Package Service]: {{< url path="Cortex.Guides.PackageService.MainDoc" >}}
+[Cortex Provisioning Service]: {{< url path="Cortex.Guides.ProvisioningService.MainDoc" >}}
+[Gateway Guide]: {{< url path="Cortex.Guides.Gateway.MainDoc" >}}
+[Studio Guide]: {{< url path="Cortex.Guides.Studio.MainDoc" >}}
+[SQL Server Express]: {{< url path="MSDownload.SqlServerExpress.2016" >}}
+[SQL Server Standard]: {{< url path="MSEval.SQLServer.2019" >}}
+[Microsoft Service Fabric]: {{< url path="MSDocs.ServiceFabric.MainDoc" >}}
+[Microsoft Service Fabric Explorer]: {{< url path="MSDocs.ServiceFabric.Explorer" >}}
+[Particular NServiceBus]: {{< url path="Particular.NServiceBus.MainDoc" >}}
+[Pivotal RabbitMQ]: {{< url path="RabbitMQ.MainDoc" >}}
+[Erlang OTP]: {{< url path="ErlangOTP.MainDoc" >}}

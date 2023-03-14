@@ -6,7 +6,7 @@ description: "Information regarding file and folder paths."
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

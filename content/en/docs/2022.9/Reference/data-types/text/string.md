@@ -65,17 +65,17 @@ None
 
 * [System.String][]
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[Char]: {{< url "Cortex.Reference.DataTypes.Text.Char.MainDoc" >}}
+[Char]: {{< url path="Cortex.Reference.DataTypes.Text.Char.MainDoc" >}}
 
-[System.String]: {{< url "MSDocs.DotNet.Api.System.String.MainDoc" >}}
-[String.Concat]: {{< url "MSDocs.DotNet.Api.System.String.Concat" >}}
-[String Concatenation Operator]: {{< url "MSDocs.DotNet.Api.System.String.ConcatOperator" >}}
-[String.Format]: {{< url "MSDocs.DotNet.Api.System.String.Format" >}}
-[String.Insert]: {{< url "MSDocs.DotNet.Api.System.String.Insert" >}}
-[String.Join]: {{< url "MSDocs.DotNet.Api.System.String.Join" >}}
+[System.String]: {{< url path="MSDocs.DotNet.Api.System.String.MainDoc" >}}
+[String.Concat]: {{< url path="MSDocs.DotNet.Api.System.String.Concat" >}}
+[String Concatenation Operator]: {{< url path="MSDocs.DotNet.Api.System.String.ConcatOperator" >}}
+[String.Format]: {{< url path="MSDocs.DotNet.Api.System.String.Format" >}}
+[String.Insert]: {{< url path="MSDocs.DotNet.Api.System.String.Insert" >}}
+[String.Join]: {{< url path="MSDocs.DotNet.Api.System.String.Join" >}}
 
-[Working with Text]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
+[Working with Text]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}

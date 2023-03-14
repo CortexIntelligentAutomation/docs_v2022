@@ -8,7 +8,7 @@ description: "The data type that all exceptions inherit from."
 
 <p class="namespace">(System.Exception)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

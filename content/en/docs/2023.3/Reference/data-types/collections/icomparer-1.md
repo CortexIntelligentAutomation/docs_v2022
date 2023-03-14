@@ -72,16 +72,16 @@ None
 
 * [System.Collections.Generic.IComparer&lt;TItem&gt;][IComparer]
 
-[TPriority]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
+[TPriority]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.Generics.MainDoc" >}}
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
 
-[IComparer]: {{< url "MSDocs.DotNet.Api.System.IComparer.MainDoc" >}}
+[IComparer]: {{< url path="MSDocs.DotNet.Api.System.IComparer.MainDoc" >}}
 
-[QueueWithPriority<TItem, TPriority>]: {{< url "Cortex.Reference.DataTypes.Collections.QueueWithPriority.MainDoc" >}}
+[QueueWithPriority<TItem, TPriority>]: {{< url path="Cortex.Reference.DataTypes.Collections.QueueWithPriority.MainDoc" >}}
 
-[StringComparer]: {{< url "Cortex.Reference.DataTypes.Text.StringComparer.MainDoc">}}
-[StringComparerConvertToText]: {{< url "Cortex.Reference.DataTypes.Text.StringComparer.ConvertToText">}}
-[StringComparerCreateNew]: {{< url "Cortex.Reference.DataTypes.Text.StringComparer.CreateNew">}}
+[StringComparer]: {{< url path="Cortex.Reference.DataTypes.Text.StringComparer.MainDoc">}}
+[StringComparerConvertToText]: {{< url path="Cortex.Reference.DataTypes.Text.StringComparer.ConvertToText">}}
+[StringComparerCreateNew]: {{< url path="Cortex.Reference.DataTypes.Text.StringComparer.CreateNew">}}

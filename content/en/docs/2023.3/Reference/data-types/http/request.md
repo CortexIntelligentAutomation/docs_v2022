@@ -9,4 +9,4 @@ weight: 1
 
 <p class="namespace">(Cortex.DataTypes.Http.Request)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

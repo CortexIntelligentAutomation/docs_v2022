@@ -6,4 +6,4 @@ description: "This section includes all reference documentation for the APIs exp
 weight: 100
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

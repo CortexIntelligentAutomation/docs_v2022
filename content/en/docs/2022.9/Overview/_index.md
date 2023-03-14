@@ -85,33 +85,33 @@ Wherever you are on your automation journey and whatever you are trying to achie
 ||3. [Launch Program][] - A twelve week program which takes your team through the phases of mobilisation, design of automation, trial testing and sign-off to production.|
 ||4. [Acceleration Program][] - A three, six or nine month program that delivers the framework for organisations to effectively and efficiently accelerate their team in the design, development, and delivery of automation using the Cortex platform.|
 
-[FAQs]: {{< url "Cortex.Faqs.MainDoc" >}}
+[FAQs]: {{< url path="Cortex.Faqs.MainDoc" >}}
 
-[Getting Started]: {{< url "Cortex.GettingStarted.MainDoc" >}}
-[on-premise]: {{< url "Cortex.GettingStarted.OnPremise.MainDoc" >}}
+[Getting Started]: {{< url path="Cortex.GettingStarted.MainDoc" >}}
+[on-premise]: {{< url path="Cortex.GettingStarted.OnPremise.MainDoc" >}}
 
-[Guides]: {{< url "Cortex.Guides.MainDoc" >}}
-[Studio]: {{< url "Cortex.Guides.Studio.MainDoc" >}}
+[Guides]: {{< url path="Cortex.Guides.MainDoc" >}}
+[Studio]: {{< url path="Cortex.Guides.Studio.MainDoc" >}}
 
-[Tutorials]: {{< url "Cortex.Tutorials.MainDoc" >}}
+[Tutorials]: {{< url path="Cortex.Tutorials.MainDoc" >}}
 
-[Reference]: {{< url "Cortex.Reference.MainDoc" >}}
-[Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
+[Reference]: {{< url path="Cortex.Reference.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
 
-[Customers]: {{< url "Cortex.Website.Customers.MainDoc" >}}
+[Customers]: {{< url path="Cortex.Website.Customers.MainDoc" >}}
 
-[Engage With Us]: {{< url "Cortex.Website.EngageWithUs.MainDoc" >}}
-[Acceleration Program]: {{< url "Cortex.Website.EngageWithUs.AccelerationProgram" >}}
-[Design Sprint]: {{< url "Cortex.Website.EngageWithUs.DesignSprint" >}}
-[Kickstarter]: {{< url "Cortex.Website.EngageWithUs.Kickstarter" >}}
-[Launch Program]: {{< url "Cortex.Website.EngageWithUs.LaunchProgram" >}}
+[Engage With Us]: {{< url path="Cortex.Website.EngageWithUs.MainDoc" >}}
+[Acceleration Program]: {{< url path="Cortex.Website.EngageWithUs.AccelerationProgram" >}}
+[Design Sprint]: {{< url path="Cortex.Website.EngageWithUs.DesignSprint" >}}
+[Kickstarter]: {{< url path="Cortex.Website.EngageWithUs.Kickstarter" >}}
+[Launch Program]: {{< url path="Cortex.Website.EngageWithUs.LaunchProgram" >}}
 
-[Industries]: {{< url "Cortex.Website.Industries.MainDoc" >}}
-[BFSI]: {{< url "Cortex.Website.Industries.Bfsi" >}}
-[IT]: {{< url "Cortex.Website.Industries.It" >}}
-[Telco]: {{< url "Cortex.Website.Industries.Telco" >}}
+[Industries]: {{< url path="Cortex.Website.Industries.MainDoc" >}}
+[BFSI]: {{< url path="Cortex.Website.Industries.Bfsi" >}}
+[IT]: {{< url path="Cortex.Website.Industries.It" >}}
+[Telco]: {{< url path="Cortex.Website.Industries.Telco" >}}
 
-[use cases]: {{< url "Cortex.Website.UseCases.MainDoc" >}}
+[use cases]: {{< url path="Cortex.Website.UseCases.MainDoc" >}}
 
-[Videos]: {{< url "Cortex.YouTube.MainDoc" >}}
-[Webinars]: {{< url "Cortex.YouTube.Webinars.MainDoc" >}}
+[Videos]: {{< url path="Cortex.YouTube.MainDoc" >}}
+[Webinars]: {{< url path="Cortex.YouTube.Webinars.MainDoc" >}}

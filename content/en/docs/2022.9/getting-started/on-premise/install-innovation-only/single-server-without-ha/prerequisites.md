@@ -204,20 +204,20 @@ Supported versions of Active Directory are listed below:
 
 1. [Install Application Server][]
 
-[Architecture]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.Architecture" >}}
-[Install Application Server]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.InstallApplicationServer" >}}
-[Installing Gateway]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.InstallGateway" >}}
-[Create Self-Signed Certificates]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.CreateSelfSignedCertificates" >}}
-[Port Requirements]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.PortRequirements" >}}
-[SSL Best Practices]: {{< url "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
-[Cortex Service Portal]: {{< url "Cortex.ServicePortal.MainDoc" >}}
-[Microsoft Server 2019]: {{< url "MSEval.WindowsServer.2019" >}}
-[Microsoft Server 2016]: {{< url "MSEval.WindowsServer.2016" >}}
-[NET Framework 471]: {{< url "MSDotNet.Framework471.MainDoc" >}}
-[Microsoft SQL Server 2019]: {{< url "MSEval.SQLServer.2019" >}}
-[Microsoft SQL Server 2016]: {{< url "MSEval.SQLServer.2016" >}}
-[Microsoft SQL Express 2016]: {{< url "MSDownload.SqlServerExpress.2016" >}}
-[IIS URL Rewrite]: {{< url "IIS.Downloads.UrlRewrite-2_1" >}}
-[Web Deploy]: {{< url "MSDownload.WebDeploy" >}}
-[C++ Redistributable]: {{< url "MSDownload.CPlusPlusRedistributable.2013" >}}
-[Transparent Data Encryption]: {{< url "MSDocs.SqlServer.TransparentDataEncryption" >}}
+[Architecture]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.Architecture" >}}
+[Install Application Server]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.InstallApplicationServer" >}}
+[Installing Gateway]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.SingleServerWithoutHA.InstallGateway" >}}
+[Create Self-Signed Certificates]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.CreateSelfSignedCertificates" >}}
+[Port Requirements]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.PortRequirements" >}}
+[SSL Best Practices]: {{< url path="Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.SSLBestPractices" >}}
+[Cortex Service Portal]: {{< url path="Cortex.ServicePortal.MainDoc" >}}
+[Microsoft Server 2019]: {{< url path="MSEval.WindowsServer.2019" >}}
+[Microsoft Server 2016]: {{< url path="MSEval.WindowsServer.2016" >}}
+[NET Framework 471]: {{< url path="MSDotNet.Framework471.MainDoc" >}}
+[Microsoft SQL Server 2019]: {{< url path="MSEval.SQLServer.2019" >}}
+[Microsoft SQL Server 2016]: {{< url path="MSEval.SQLServer.2016" >}}
+[Microsoft SQL Express 2016]: {{< url path="MSDownload.SqlServerExpress.2016" >}}
+[IIS URL Rewrite]: {{< url path="IIS.Downloads.UrlRewrite-2_1" >}}
+[Web Deploy]: {{< url path="MSDownload.WebDeploy" >}}
+[C++ Redistributable]: {{< url path="MSDownload.CPlusPlusRedistributable.2013" >}}
+[Transparent Data Encryption]: {{< url path="MSDocs.SqlServer.TransparentDataEncryption" >}}

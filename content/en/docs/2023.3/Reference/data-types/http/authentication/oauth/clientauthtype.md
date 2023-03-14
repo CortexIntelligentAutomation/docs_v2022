@@ -9,4 +9,4 @@ weight: 1
 
 <p class="namespace">(Cortex.DataTypes.Http.Authentication.OAuth.ClientAuthType)</p>
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}

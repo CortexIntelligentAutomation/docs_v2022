@@ -169,62 +169,62 @@ None
 [block and execution are on different workspaces]: {{< ref "#set-next-block-to-execute-not-available-when-the-block-and-execution-are-on-different-workspaces" >}}
 [directly change the value of a variable without using a block]: {{< ref "#updating-a-variables-value-is-not-possible-without-using-a-block" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
-[connections]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.BlockConnections" >}}
-[Handling Exceptions within a Block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.HandlingExceptionsWithinABlock.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
+[connections]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.BlockConnections" >}}
+[Handling Exceptions within a Block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.HandlingExceptionsWithinABlock.MainDoc" >}}
 
-[Data Types]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
+[Data Types]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
 
-[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
-[exception]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.WhatIsAnException.MainDoc" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
+[exception]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.WhatIsAnException.MainDoc" >}}
 
-[Flows]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
-[flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
-[Handling Exceptions within a Flow]: {{< url "Cortex.Reference.Concepts.Fundamentals.Flows.HandlingExceptionsWithinAFlow.MainDoc" >}}
+[Flows]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.MainDoc" >}}
+[flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.WhatIsAFlow.MainDoc" >}}
+[Handling Exceptions within a Flow]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Flows.HandlingExceptionsWithinAFlow.MainDoc" >}}
 
-[Messages]: {{< url "Cortex.Reference.Concepts.Fundamentals.Messages.MainDoc" >}}
-[message]: {{< url "Cortex.Reference.Concepts.Fundamentals.Messages.WhatIsAMessage.MainDoc" >}}
+[Messages]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Messages.MainDoc" >}}
+[message]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Messages.WhatIsAMessage.MainDoc" >}}
 
-[Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
-[variable]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
-[Input Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.FlowInputVariable" >}}
-[Output Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.OutputVariablesStructure" >}}
+[Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
+[variable]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.MainDoc" >}}
+[Input Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.FlowInputVariable" >}}
+[Output Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.OutputVariablesStructure" >}}
 
-[Workspaces]: {{< url "Cortex.Reference.Concepts.Fundamentals.Workspaces.MainDoc" >}}
-[workspace]: {{< url "Cortex.Reference.Concepts.Fundamentals.Workspaces.WhatIsAWorkspace.MainDoc" >}}
-[Handling Exceptions within a Workspace]: {{< url "Cortex.Reference.Concepts.Fundamentals.Workspaces.HandlingExceptionsWithinAWorkspace.MainDoc" >}}
-[scope]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.VariableScopes.MainDoc" >}}
+[Workspaces]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Workspaces.MainDoc" >}}
+[workspace]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Workspaces.WhatIsAWorkspace.MainDoc" >}}
+[Handling Exceptions within a Workspace]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Workspaces.HandlingExceptionsWithinAWorkspace.MainDoc" >}}
+[scope]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.VariableScopes.MainDoc" >}}
 
-[All Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
-[Handle Flow Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleFlow.HandleFlowException.MainDoc" >}}
-[Log Event]: {{< url "Cortex.Reference.Blocks.Logs.LogEvent.LogEvent.MainDoc" >}}
+[All Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
+[Handle Flow Exception]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleFlow.HandleFlowException.MainDoc" >}}
+[Log Event]: {{< url path="Cortex.Reference.Blocks.Logs.LogEvent.LogEvent.MainDoc" >}}
 
-[All Data Types]: {{< url "Cortex.Reference.DataTypes.MainDoc" >}}
+[All Data Types]: {{< url path="Cortex.Reference.DataTypes.MainDoc" >}}
 
-[API call: Cortex Studio]: {{< url "Cortex.Reference.Apis.Studio.MainDoc" >}}
-[HTTP request: Cortex Studio]: {{< url "Cortex.Reference.Apis.Studio.MainDoc" >}}
-[HTTP response: Cortex Studio]: {{< url "Cortex.Reference.Apis.Studio.MainDoc" >}}
+[API call: Cortex Studio]: {{< url path="Cortex.Reference.Apis.Studio.MainDoc" >}}
+[HTTP request: Cortex Studio]: {{< url path="Cortex.Reference.Apis.Studio.MainDoc" >}}
+[HTTP response: Cortex Studio]: {{< url path="Cortex.Reference.Apis.Studio.MainDoc" >}}
 
-[Cortex Flow Debugger Service]: {{< url "Cortex.Reference.Logs.CortexFlowDebuggerService.MainDoc" >}}
+[Cortex Flow Debugger Service]: {{< url path="Cortex.Reference.Logs.CortexFlowDebuggerService.MainDoc" >}}
 
-[Validation]: {{< url "Cortex.Reference.Messages.Validation.MainDoc" >}}
+[Validation]: {{< url path="Cortex.Reference.Messages.Validation.MainDoc" >}}
 
-[Cortex Studio]: {{< url "Cortex.Guides.Studio.MainDoc" >}}
-[Set Next Block to Execute]: {{< url "Cortex.Guides.Studio.MainDisplayArea.SetNextBlockToExecute" >}}
-[breakpoint]: {{< url "Cortex.Guides.Studio.MainDisplayArea.Breakpoints" >}}
-[token]: {{< url "Cortex.Guides.Studio.MainDisplayArea.Executions" >}}
-[Start an execution]: {{< url "Cortex.Guides.Studio.MainDisplayArea.StartAnExecution" >}}
-[Edit and Continue]: {{< url "Cortex.Guides.Studio.MainDisplayArea.EditAndContinueAnExecution" >}}
-[Exceptions Viewer]: {{< url "Cortex.Guides.Studio.EastPanel.ExceptionsViewer" >}}
-[Variable Details Viewer]: {{< url "Cortex.Guides.Studio.EastPanel.VariableDetailsViewer" >}}
-[Load Value Button]: {{< url "Cortex.Guides.Studio.EastPanel.LoadValueButton" >}}
-[Variables Viewer]: {{< url "Cortex.Guides.Studio.EastPanel.VariablesViewer" >}}
-[Settings Editor]: {{< url "Cortex.Guides.Studio.EastPanel.SettingsEditor" >}}
-[Inputs Property]: {{< url "Cortex.Guides.Studio.EastPanel.InputsProperty" >}}
-[Executions Grid]: {{< url "Cortex.Guides.Studio.SouthPanel.ExecutionsGrid" >}}
-[Paused]: {{< url "Cortex.Guides.Studio.SouthPanel.PausingAnExecution" >}}
-[Stepped]: {{< url "Cortex.Guides.Studio.SouthPanel.SteppingAnExecution" >}}
-[Continued]: {{< url "Cortex.Guides.Studio.SouthPanel.ContinuingAnExecution" >}}
-[Stopped]: {{< url "Cortex.Guides.Studio.SouthPanel.StoppingAnExecution" >}}
-[Messages Grid]: {{< url "Cortex.Guides.Studio.SouthPanel.MessagesGrid" >}}
+[Cortex Studio]: {{< url path="Cortex.Guides.Studio.MainDoc" >}}
+[Set Next Block to Execute]: {{< url path="Cortex.Guides.Studio.MainDisplayArea.SetNextBlockToExecute" >}}
+[breakpoint]: {{< url path="Cortex.Guides.Studio.MainDisplayArea.Breakpoints" >}}
+[token]: {{< url path="Cortex.Guides.Studio.MainDisplayArea.Executions" >}}
+[Start an execution]: {{< url path="Cortex.Guides.Studio.MainDisplayArea.StartAnExecution" >}}
+[Edit and Continue]: {{< url path="Cortex.Guides.Studio.MainDisplayArea.EditAndContinueAnExecution" >}}
+[Exceptions Viewer]: {{< url path="Cortex.Guides.Studio.EastPanel.ExceptionsViewer" >}}
+[Variable Details Viewer]: {{< url path="Cortex.Guides.Studio.EastPanel.VariableDetailsViewer" >}}
+[Load Value Button]: {{< url path="Cortex.Guides.Studio.EastPanel.LoadValueButton" >}}
+[Variables Viewer]: {{< url path="Cortex.Guides.Studio.EastPanel.VariablesViewer" >}}
+[Settings Editor]: {{< url path="Cortex.Guides.Studio.EastPanel.SettingsEditor" >}}
+[Inputs Property]: {{< url path="Cortex.Guides.Studio.EastPanel.InputsProperty" >}}
+[Executions Grid]: {{< url path="Cortex.Guides.Studio.SouthPanel.ExecutionsGrid" >}}
+[Paused]: {{< url path="Cortex.Guides.Studio.SouthPanel.PausingAnExecution" >}}
+[Stepped]: {{< url path="Cortex.Guides.Studio.SouthPanel.SteppingAnExecution" >}}
+[Continued]: {{< url path="Cortex.Guides.Studio.SouthPanel.ContinuingAnExecution" >}}
+[Stopped]: {{< url path="Cortex.Guides.Studio.SouthPanel.StoppingAnExecution" >}}
+[Messages Grid]: {{< url path="Cortex.Guides.Studio.SouthPanel.MessagesGrid" >}}

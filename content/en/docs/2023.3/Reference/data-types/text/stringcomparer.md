@@ -131,20 +131,20 @@ None
 
 - [StringComparer][]
 
-[Input]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
-[Output]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
-[InputOutput]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
-[IComparer]: {{< url "Cortex.Reference.DataTypes.Collections.IComparer.MainDoc" >}}
-[StringComparer]: {{< url "MSDocs.DotNet.Api.System.StringComparer" >}}
+[Input]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Input" >}}
+[Output]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.Output" >}}
+[InputOutput]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.InputOutput" >}}
+[IComparer]: {{< url path="Cortex.Reference.DataTypes.Collections.IComparer.MainDoc" >}}
+[StringComparer]: {{< url path="MSDocs.DotNet.Api.System.StringComparer" >}}
 
-[Working With Text]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
+[Working With Text]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
 
-[CurrentCulture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.CurrentCulture" >}}
-[CurrentCultureIgnoreCase]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.CurrentCultureIgnoreCase" >}}
-[InvariantCulture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.InvariantCulture" >}}
-[InvariantCultureIgnoreCase]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.InvariantCultureIgnoreCase" >}}
-[Ordinal]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.Ordinal">}}
-[OrdinalIgnoreCase]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.OrdinalIgnoreCase">}}
+[CurrentCulture]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.CurrentCulture" >}}
+[CurrentCultureIgnoreCase]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.CurrentCultureIgnoreCase" >}}
+[InvariantCulture]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.InvariantCulture" >}}
+[InvariantCultureIgnoreCase]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.InvariantCultureIgnoreCase" >}}
+[Ordinal]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.Ordinal">}}
+[OrdinalIgnoreCase]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.Equality.ComparisonTypes.OrdinalIgnoreCase">}}
 
-[Object.ToString]: {{< url "MSDocs.DotNet.Api.System.Object.ToString" >}}
-[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Object.ToString]: {{< url path="MSDocs.DotNet.Api.System.Object.ToString" >}}
+[Convert Object To Text]: {{< url path="Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}

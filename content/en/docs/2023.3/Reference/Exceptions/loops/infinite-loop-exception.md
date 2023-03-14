@@ -163,11 +163,11 @@ None
 [IncrementIsNegative]: {{< ref "#101" >}}
 [IncrementIsPositive]: {{< ref "#102" >}}
 
-[For Loop]: {{< url "Cortex.Reference.Blocks.Loops.For.ForLoop.MainDoc" >}}
+[For Loop]: {{< url path="Cortex.Reference.Blocks.Loops.For.ForLoop.MainDoc" >}}
 
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
-[Int32]: {{< url "Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
-[InfiniteLoopErrorCode]: {{< url "Cortex.Reference.DataTypes.Loops.InfiniteLoopErrorCode.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[Int32]: {{< url path="Cortex.Reference.DataTypes.Numbers.Int32.MainDoc" >}}
+[InfiniteLoopErrorCode]: {{< url path="Cortex.Reference.DataTypes.Loops.InfiniteLoopErrorCode.MainDoc" >}}
 
-[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
-[Working with Loops]: {{< url "Cortex.Reference.Concepts.WorkingWith.Loops.MainDoc" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
+[Working with Loops]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Loops.MainDoc" >}}

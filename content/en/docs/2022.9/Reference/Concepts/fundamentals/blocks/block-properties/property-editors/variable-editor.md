@@ -7,7 +7,7 @@ weight: 100
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 
@@ -99,4 +99,4 @@ TODO
 
 TODO
 
-[C# identifier naming rules]: {{< url "MSDocs.CSharp.IdentifierNamingRules" >}}
+[C# identifier naming rules]: {{< url path="MSDocs.CSharp.IdentifierNamingRules" >}}

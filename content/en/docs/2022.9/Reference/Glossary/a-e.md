@@ -369,82 +369,82 @@ For more detailed information about the Expression Editor, see [Cortex Studio > 
 [Expression]: {{< ref "#expression" >}}
 [Expression Editor]: {{< ref "#expression-editor" >}}
 
-[Fundamentals > Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[Fundamentals > Block Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
-[Fundamentals > Data Types]: {{< url "Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
+[Fundamentals > Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[Fundamentals > Block Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
+[Fundamentals > Data Types]: {{< url path="Cortex.Reference.Concepts.Fundamentals.DataTypes.MainDoc" >}}
 
-[Working With > Culture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Culture.MainDoc" >}}
-[Working With > Current Culture]: {{< url "Cortex.Reference.Concepts.WorkingWith.Culture.CurrentCulture.MainDoc" >}}
+[Working With > Culture]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Culture.MainDoc" >}}
+[Working With > Current Culture]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Culture.CurrentCulture.MainDoc" >}}
 
-[Reference > Blocks]: {{< url "Cortex.Reference.Blocks.MainDoc" >}}
-[Blocks > Exception Blocks]: {{< url "Cortex.Reference.Blocks.Exceptions.MainDoc" >}}
-[Add Text At Beginning]: {{< url "Cortex.Reference.Blocks.Text.AddText.AddTextAtBeginning.MainDoc" >}}
+[Reference > Blocks]: {{< url path="Cortex.Reference.Blocks.MainDoc" >}}
+[Blocks > Exception Blocks]: {{< url path="Cortex.Reference.Blocks.Exceptions.MainDoc" >}}
+[Add Text At Beginning]: {{< url path="Cortex.Reference.Blocks.Text.AddText.AddTextAtBeginning.MainDoc" >}}
 
-[Examples]: {{< url "Cortex.Reference.Blocks.Text.AddText.AddTextAtBeginning.Examples" >}}
+[Examples]: {{< url path="Cortex.Reference.Blocks.Text.AddText.AddTextAtBeginning.Examples" >}}
 
-[Reference > Data Types]: {{< url "Cortex.Reference.DataTypes.MainDoc" >}}
-[Data Types > Boolean]: {{< url "Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
-[Data Types > Char]: {{< url "Cortex.Reference.DataTypes.Text.Char.MainDoc" >}}
-[Data Types > Double]: {{< url "Cortex.Reference.DataTypes.Numbers.Double.MainDoc" >}}
-[Data Types > dynamic]: {{< url "Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
-[Data Types > Dictionary&lt;TKey, TItem&gt;]: {{< url "Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
-[Fundamentals > Exceptions]: {{< url "Cortex.Reference.Exceptions.MainDoc" >}}
+[Reference > Data Types]: {{< url path="Cortex.Reference.DataTypes.MainDoc" >}}
+[Data Types > Boolean]: {{< url path="Cortex.Reference.DataTypes.ConditionalLogic.Boolean.MainDoc" >}}
+[Data Types > Char]: {{< url path="Cortex.Reference.DataTypes.Text.Char.MainDoc" >}}
+[Data Types > Double]: {{< url path="Cortex.Reference.DataTypes.Numbers.Double.MainDoc" >}}
+[Data Types > dynamic]: {{< url path="Cortex.Reference.DataTypes.All.dynamic.MainDoc" >}}
+[Data Types > Dictionary&lt;TKey, TItem&gt;]: {{< url path="Cortex.Reference.DataTypes.Collections.Dictionary.MainDoc" >}}
+[Fundamentals > Exceptions]: {{< url path="Cortex.Reference.Exceptions.MainDoc" >}}
 
-[Reference > Exceptions]: {{< url "Cortex.Reference.Exceptions.MainDoc" >}}
+[Reference > Exceptions]: {{< url path="Cortex.Reference.Exceptions.MainDoc" >}}
 
-[Flow]: {{< url "Cortex.Reference.Glossary.F-J.Flow" >}}
-[flow developers]: {{< url "Cortex.Reference.Glossary.F-J.FlowDeveloper" >}}
-[Functional Blocks]: {{< url "Cortex.Reference.Glossary.F-J.FunctionalBlock" >}}
-[Initialised]: {{< url "Cortex.Reference.Glossary.F-J.Initialised" >}}
-[Integer]: {{< url "Cortex.Reference.Glossary.F-J.Integer" >}}
-[Int16]: {{< url "Cortex.Reference.Glossary.F-J.Int16" >}}
-[Int32]: {{< url "Cortex.Reference.Glossary.F-J.Int32" >}}
-[Intellisense]: {{< url "Cortex.Reference.Glossary.F-J.Intellisense" >}}
-[IDE]: {{< url "Cortex.Reference.Glossary.F-J.IDE" >}}
-[Literals]: {{< url "Cortex.Reference.Glossary.K-O.Literal" >}}
-[LowerCase]: {{< url "Cortex.Reference.Glossary.K-O.LowerCase" >}}
-[Methods]: {{< url "Cortex.Reference.Glossary.K-O.Method" >}}
-[Non-Null]: {{< url "Cortex.Reference.Glossary.K-O.NonNull" >}}
-[Null]: {{< url "Cortex.Reference.Glossary.K-O.Null" >}}
-[Operands]: {{< url "Cortex.Reference.Glossary.K-O.Operand" >}}
-[Operators]: {{< url "Cortex.Reference.Glossary.K-O.Operator" >}}
-[PascalCase]: {{< url "Cortex.Reference.Glossary.P-T.PascalCase" >}}
-[Platform]: {{< url "Cortex.Reference.Glossary.P-T.Platform" >}}
-[Portal]: {{< url "Cortex.Reference.Glossary.P-T.Portal" >}}
-[Processes]: {{< url "Cortex.Reference.Glossary.P-T.Process" >}}
-[Programming Language]: {{< url "Cortex.Reference.Glossary.P-T.ProgrammingLanguage" >}}
-[Properties]: {{< url "Cortex.Reference.Glossary.P-T.PropertyBlock" >}}
-[PropertiesC#]: {{< url "Cortex.Reference.Glossary.P-T.PropertyCSharp" >}}
-[Request]: {{< url "Cortex.Reference.Glossary.P-T.Request" >}}
-[Snippets]: {{< url "Cortex.Reference.Glossary.P-T.Snippets" >}}
-[Syntax Highlighting]: {{< url "Cortex.Reference.Glossary.P-T.SyntaxHighlighting" >}}
-[tasks]: {{< url "Cortex.Reference.Glossary.P-T.Task" >}}
-[Text]: {{< url "Cortex.Reference.Glossary.P-T.Text" >}}
-[Type]: {{< url "Cortex.Reference.Glossary.P-T.Type" >}}
-[UpperCase]: {{< url "Cortex.Reference.Glossary.U-Z.UpperCase" >}}
-[Variables]: {{< url "Cortex.Reference.Glossary.U-Z.Variable" >}}
-[16-bit]: {{< url "Cortex.Reference.Glossary.0-9.16Bit" >}}
-[32-bit]: {{< url "Cortex.Reference.Glossary.0-9.32Bit" >}}
-[data type]: {{< url "Cortex.Reference.Glossary.A-E.DataType" >}}
+[Flow]: {{< url path="Cortex.Reference.Glossary.F-J.Flow" >}}
+[flow developers]: {{< url path="Cortex.Reference.Glossary.F-J.FlowDeveloper" >}}
+[Functional Blocks]: {{< url path="Cortex.Reference.Glossary.F-J.FunctionalBlock" >}}
+[Initialised]: {{< url path="Cortex.Reference.Glossary.F-J.Initialised" >}}
+[Integer]: {{< url path="Cortex.Reference.Glossary.F-J.Integer" >}}
+[Int16]: {{< url path="Cortex.Reference.Glossary.F-J.Int16" >}}
+[Int32]: {{< url path="Cortex.Reference.Glossary.F-J.Int32" >}}
+[Intellisense]: {{< url path="Cortex.Reference.Glossary.F-J.Intellisense" >}}
+[IDE]: {{< url path="Cortex.Reference.Glossary.F-J.IDE" >}}
+[Literals]: {{< url path="Cortex.Reference.Glossary.K-O.Literal" >}}
+[LowerCase]: {{< url path="Cortex.Reference.Glossary.K-O.LowerCase" >}}
+[Methods]: {{< url path="Cortex.Reference.Glossary.K-O.Method" >}}
+[Non-Null]: {{< url path="Cortex.Reference.Glossary.K-O.NonNull" >}}
+[Null]: {{< url path="Cortex.Reference.Glossary.K-O.Null" >}}
+[Operands]: {{< url path="Cortex.Reference.Glossary.K-O.Operand" >}}
+[Operators]: {{< url path="Cortex.Reference.Glossary.K-O.Operator" >}}
+[PascalCase]: {{< url path="Cortex.Reference.Glossary.P-T.PascalCase" >}}
+[Platform]: {{< url path="Cortex.Reference.Glossary.P-T.Platform" >}}
+[Portal]: {{< url path="Cortex.Reference.Glossary.P-T.Portal" >}}
+[Processes]: {{< url path="Cortex.Reference.Glossary.P-T.Process" >}}
+[Programming Language]: {{< url path="Cortex.Reference.Glossary.P-T.ProgrammingLanguage" >}}
+[Properties]: {{< url path="Cortex.Reference.Glossary.P-T.PropertyBlock" >}}
+[PropertiesC#]: {{< url path="Cortex.Reference.Glossary.P-T.PropertyCSharp" >}}
+[Request]: {{< url path="Cortex.Reference.Glossary.P-T.Request" >}}
+[Snippets]: {{< url path="Cortex.Reference.Glossary.P-T.Snippets" >}}
+[Syntax Highlighting]: {{< url path="Cortex.Reference.Glossary.P-T.SyntaxHighlighting" >}}
+[tasks]: {{< url path="Cortex.Reference.Glossary.P-T.Task" >}}
+[Text]: {{< url path="Cortex.Reference.Glossary.P-T.Text" >}}
+[Type]: {{< url path="Cortex.Reference.Glossary.P-T.Type" >}}
+[UpperCase]: {{< url path="Cortex.Reference.Glossary.U-Z.UpperCase" >}}
+[Variables]: {{< url path="Cortex.Reference.Glossary.U-Z.Variable" >}}
+[16-bit]: {{< url path="Cortex.Reference.Glossary.0-9.16Bit" >}}
+[32-bit]: {{< url path="Cortex.Reference.Glossary.0-9.32Bit" >}}
+[data type]: {{< url path="Cortex.Reference.Glossary.A-E.DataType" >}}
 
-[Guides > Cortex Studio]: {{< url "Cortex.Guides.Studio.MainDoc" >}}
-[Cortex Studio > Debugging]: {{< url "Cortex.Guides.Studio.Debugging.MainDoc" >}}
-[Cortex Studio > Expression Editor]: {{< url "Cortex.Guides.Studio.ExpressionEditor.MainDoc" >}}
+[Guides > Cortex Studio]: {{< url path="Cortex.Guides.Studio.MainDoc" >}}
+[Cortex Studio > Debugging]: {{< url path="Cortex.Guides.Studio.Debugging.MainDoc" >}}
+[Cortex Studio > Expression Editor]: {{< url path="Cortex.Guides.Studio.ExpressionEditor.MainDoc" >}}
 
-[Fundamentals > Expressions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.Expressions" >}}
+[Fundamentals > Expressions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.PropertyEditors.ExpressionEditor.Expressions" >}}
 
-[Acceleration Program]: {{< url "Cortex.Website.EngageWithUs.AccelerationProgram" >}}
-[Design Sprint]: {{< url "Cortex.Website.EngageWithUs.DesignSprint" >}}
+[Acceleration Program]: {{< url path="Cortex.Website.EngageWithUs.AccelerationProgram" >}}
+[Design Sprint]: {{< url path="Cortex.Website.EngageWithUs.DesignSprint" >}}
 
-[Casting and type conversions (C# Programming Guide)]: {{< url "MSDocs.CSharp.Casting" >}}
-[Cast expression (C# Reference)]: {{< url "MSDocs.CSharp.CastExpression" >}}
-[C# documentation]: {{< url "MSDocs.CSharp.MainDoc" >}}
-[List]: {{< url "MSDocs.DotNet.Api.System.Collections.Generic.List" >}}
-[String]: {{< url "MSDocs.DotNet.Api.System.String.MainDoc" >}}
+[Casting and type conversions (C# Programming Guide)]: {{< url path="MSDocs.CSharp.Casting" >}}
+[Cast expression (C# Reference)]: {{< url path="MSDocs.CSharp.CastExpression" >}}
+[C# documentation]: {{< url path="MSDocs.CSharp.MainDoc" >}}
+[List]: {{< url path="MSDocs.DotNet.Api.System.Collections.Generic.List" >}}
+[String]: {{< url path="MSDocs.DotNet.Api.System.String.MainDoc" >}}
 
-[Monaco Editor]: {{< url "MSGitHub.MonacoEditor.MainDoc" >}}
+[Monaco Editor]: {{< url path="MSGitHub.MonacoEditor.MainDoc" >}}
 
-[VS Code]: {{< url "VisualStudio.Code.MainDoc" >}}
+[VS Code]: {{< url path="VisualStudio.Code.MainDoc" >}}
 
-[Bit (Wikipedia)]: {{< url "Wikipedia.Bit" >}}
-[Byte (Wikipedia)]: {{< url "Wikipedia.Byte" >}}
+[Bit (Wikipedia)]: {{< url path="Wikipedia.Bit" >}}
+[Byte (Wikipedia)]: {{< url path="Wikipedia.Byte" >}}

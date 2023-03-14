@@ -42,4 +42,4 @@ For information about variables and scope, please see [Variables][].
 
 [WorkspaceScope]: {{< ref "#workspace-scope" >}}
 
-[Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}
+[Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.MainDoc" >}}

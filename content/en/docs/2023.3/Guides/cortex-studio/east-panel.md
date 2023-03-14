@@ -5,7 +5,7 @@ description: "Eastern panel for Property Editor, Execution Viewer and Exceptions
 weight: 1
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

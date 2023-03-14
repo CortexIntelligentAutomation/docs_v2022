@@ -220,138 +220,138 @@ None
 
 [Message]: {{< ref "#message" >}}
 
-[Execute Data Command]: {{< url "Cortex.Reference.Blocks.Data.ExecuteDataCommand.ExecuteDataCommand.MainDoc" >}}
+[Execute Data Command]: {{< url path="Cortex.Reference.Blocks.Data.ExecuteDataCommand.ExecuteDataCommand.MainDoc" >}}
 
-[Convert Text To Date Time]: {{< url "Cortex.Reference.Blocks.DateAndTime.ConvertDateTime.ConvertTextToDateTime.MainDoc" >}}
+[Convert Text To Date Time]: {{< url path="Cortex.Reference.Blocks.DateAndTime.ConvertDateTime.ConvertTextToDateTime.MainDoc" >}}
 
-[Add Item With Key]: {{< url "Cortex.Reference.Blocks.Dictionaries.AddItem.AddItemWithKey.MainDoc" >}}
-[Contains Item With Key And Value]: {{< url "Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemWithKeyAndValue.MainDoc" >}}
-[Contains Item With Key]: {{< url "Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemWithKey.MainDoc" >}}
-[Contains Item With Value]: {{< url "Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemWithValue.MainDoc" >}}
-[Contains Items With Keys]: {{< url "Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemsWithKeys.MainDoc" >}}
-[Contains Items With Values]: {{< url "Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemsWithValues.MainDoc" >}}
-[Get Count Of All Items]: {{< url "Cortex.Reference.Blocks.Dictionaries.GetCount.GetCountOfAllItems.MainDoc" >}}
-[Get Count Of Items With Value]: {{< url "Cortex.Reference.Blocks.Dictionaries.GetCount.GetCountOfItemsWithValue.MainDoc" >}}
-[Get Counts Of Items With Values]: {{< url "Cortex.Reference.Blocks.Dictionaries.GetCount.GetCountsOfItemsWithValues.MainDoc" >}}
-[Get All Items]: {{< url "Cortex.Reference.Blocks.Dictionaries.GetItem.GetAllItems.MainDoc" >}}
-[Get Item With Key]: {{< url "Cortex.Reference.Blocks.Dictionaries.GetItem.GetItemWithKey.MainDoc" >}}
-[Get Items With Key]: {{< url "Cortex.Reference.Blocks.Dictionaries.GetItem.GetItemsWithKey.MainDoc" >}}
-[Get All Keys]: {{< url "Cortex.Reference.Blocks.Dictionaries.GetKey.GetAllKeys.MainDoc" >}}
-[Remove All Items]: {{< url "Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveAllItems.MainDoc" >}}
-[Remove Item With Key]: {{< url "Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemWithKey.MainDoc" >}}
-[Remove Item With Value]: {{< url "Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemWithValue.MainDoc" >}}
-[Remove Items With Key]: {{< url "Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemsWithKey.MainDoc" >}}
-[Remove Items With Keys]: {{< url "Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemsWithKeys.MainDoc" >}}
-[Remove Items With Value]: {{< url "Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemsWithValue.MainDoc" >}}
-[Remove Items With Values]: {{< url "Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemsWithValues.MainDoc" >}}
-[Set All Items]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetAllItems.MainDoc" >}}
-[Set Item With Key]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemWithKey.MainDoc" >}}
-[Set Item With Value]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemWithValue.MainDoc" >}}
-[Set Items With Key]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithKey.MainDoc" >}}
-[Set Items With Keys]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithKeys.MainDoc" >}}
-[Set Items With Value]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithValue.MainDoc" >}}
-[Set Items With Values]: {{< url "Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithValues.MainDoc" >}}
+[Add Item With Key]: {{< url path="Cortex.Reference.Blocks.Dictionaries.AddItem.AddItemWithKey.MainDoc" >}}
+[Contains Item With Key And Value]: {{< url path="Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemWithKeyAndValue.MainDoc" >}}
+[Contains Item With Key]: {{< url path="Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemWithKey.MainDoc" >}}
+[Contains Item With Value]: {{< url path="Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemWithValue.MainDoc" >}}
+[Contains Items With Keys]: {{< url path="Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemsWithKeys.MainDoc" >}}
+[Contains Items With Values]: {{< url path="Cortex.Reference.Blocks.Dictionaries.ContainsItem.ContainsItemsWithValues.MainDoc" >}}
+[Get Count Of All Items]: {{< url path="Cortex.Reference.Blocks.Dictionaries.GetCount.GetCountOfAllItems.MainDoc" >}}
+[Get Count Of Items With Value]: {{< url path="Cortex.Reference.Blocks.Dictionaries.GetCount.GetCountOfItemsWithValue.MainDoc" >}}
+[Get Counts Of Items With Values]: {{< url path="Cortex.Reference.Blocks.Dictionaries.GetCount.GetCountsOfItemsWithValues.MainDoc" >}}
+[Get All Items]: {{< url path="Cortex.Reference.Blocks.Dictionaries.GetItem.GetAllItems.MainDoc" >}}
+[Get Item With Key]: {{< url path="Cortex.Reference.Blocks.Dictionaries.GetItem.GetItemWithKey.MainDoc" >}}
+[Get Items With Key]: {{< url path="Cortex.Reference.Blocks.Dictionaries.GetItem.GetItemsWithKey.MainDoc" >}}
+[Get All Keys]: {{< url path="Cortex.Reference.Blocks.Dictionaries.GetKey.GetAllKeys.MainDoc" >}}
+[Remove All Items]: {{< url path="Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveAllItems.MainDoc" >}}
+[Remove Item With Key]: {{< url path="Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemWithKey.MainDoc" >}}
+[Remove Item With Value]: {{< url path="Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemWithValue.MainDoc" >}}
+[Remove Items With Key]: {{< url path="Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemsWithKey.MainDoc" >}}
+[Remove Items With Keys]: {{< url path="Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemsWithKeys.MainDoc" >}}
+[Remove Items With Value]: {{< url path="Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemsWithValue.MainDoc" >}}
+[Remove Items With Values]: {{< url path="Cortex.Reference.Blocks.Dictionaries.RemoveItem.RemoveItemsWithValues.MainDoc" >}}
+[Set All Items]: {{< url path="Cortex.Reference.Blocks.Dictionaries.SetItem.SetAllItems.MainDoc" >}}
+[Set Item With Key]: {{< url path="Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemWithKey.MainDoc" >}}
+[Set Item With Value]: {{< url path="Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemWithValue.MainDoc" >}}
+[Set Items With Key]: {{< url path="Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithKey.MainDoc" >}}
+[Set Items With Keys]: {{< url path="Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithKeys.MainDoc" >}}
+[Set Items With Value]: {{< url path="Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithValue.MainDoc" >}}
+[Set Items With Values]: {{< url path="Cortex.Reference.Blocks.Dictionaries.SetItem.SetItemsWithValues.MainDoc" >}}
 
-[Send Email Using SMTP Server]: {{< url "Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.MainDoc" >}}
+[Send Email Using SMTP Server]: {{< url path="Cortex.Reference.Blocks.Email.SendEmail.SendEmailUsingSmtpServer.MainDoc" >}}
 
-[Handle Block Exception Matching Messages]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingMessages.MainDoc" >}}
-[Handle Block Exception Matching Type Name]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeName.MainDoc" >}}
-[Handle Block Exception Matching Type Names]: {{< url "Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeNames.MainDoc" >}}
-[Rethrow Exception]: {{< url "Cortex.Reference.Blocks.Exceptions.RethrowException.RethrowException.MainDoc" >}}
+[Handle Block Exception Matching Messages]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingMessages.MainDoc" >}}
+[Handle Block Exception Matching Type Name]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeName.MainDoc" >}}
+[Handle Block Exception Matching Type Names]: {{< url path="Cortex.Reference.Blocks.Exceptions.HandleBlock.HandleBlockExceptionMatchingTypeNames.MainDoc" >}}
+[Rethrow Exception]: {{< url path="Cortex.Reference.Blocks.Exceptions.RethrowException.RethrowException.MainDoc" >}}
 
-[Copy File]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFile.MainDoc" >}}
-[Copy Files]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFiles.MainDoc" >}}
-[Copy Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.CopyFolder.MainDoc" >}}
-[Copy Folders]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.CopyFolders.MainDoc" >}}
-[Create Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CreateFolder.CreateFolder.MainDoc" >}}
-[Create Folders]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CreateFolder.CreateFolders.MainDoc" >}}
-[Delete File]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.DeleteFile.DeleteFile.MainDoc" >}}
-[Delete Files]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.DeleteFile.DeleteFiles.MainDoc" >}}
-[Delete Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.DeleteFolder.DeleteFolder.MainDoc" >}}
-[Delete Folders]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.DeleteFolder.DeleteFolders.MainDoc" >}}
-[Duplicate Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.DuplicateFolder.MainDoc" >}}
-[Get File Information]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.GetFileInformation.GetFileInformation.MainDoc" >}}
-[Get Folder Content]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.GetFolderContent.GetFolderContent.MainDoc" >}}
-[Get Folder Information]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.GetFolderInformation.GetFolderInformation.MainDoc" >}}
-[Move File]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.MoveFile.MoveFile.MainDoc" >}}
-[Move Files]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.MoveFile.MoveFiles.MainDoc" >}}
-[Move Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.MoveFolder.MoveFolder.MainDoc" >}}
-[Move Folders]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.MoveFolder.MoveFolders.MainDoc" >}}
-[Read All Lines]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.ReadFile.ReadAllLines.MainDoc" >}}
-[Read All Text]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.ReadFile.ReadAllText.MainDoc" >}}
-[Rename Folder]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.RenameFolder.RenameFolder.MainDoc" >}}
-[Search File]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.SearchFile.SearchFile.MainDoc" >}}
-[Search Files]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.SearchFile.SearchFiles.MainDoc" >}}
-[Write All Lines]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.WriteFile.WriteAllLines.MainDoc" >}}
-[Write All Text]: {{< url "Cortex.Reference.Blocks.FilesAndFolders.WriteFile.WriteAllText.MainDoc" >}}
+[Copy File]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFile.MainDoc" >}}
+[Copy Files]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFile.CopyFiles.MainDoc" >}}
+[Copy Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.CopyFolder.MainDoc" >}}
+[Copy Folders]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.CopyFolders.MainDoc" >}}
+[Create Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CreateFolder.CreateFolder.MainDoc" >}}
+[Create Folders]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CreateFolder.CreateFolders.MainDoc" >}}
+[Delete File]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.DeleteFile.DeleteFile.MainDoc" >}}
+[Delete Files]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.DeleteFile.DeleteFiles.MainDoc" >}}
+[Delete Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.DeleteFolder.DeleteFolder.MainDoc" >}}
+[Delete Folders]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.DeleteFolder.DeleteFolders.MainDoc" >}}
+[Duplicate Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.CopyFolder.DuplicateFolder.MainDoc" >}}
+[Get File Information]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.GetFileInformation.GetFileInformation.MainDoc" >}}
+[Get Folder Content]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.GetFolderContent.GetFolderContent.MainDoc" >}}
+[Get Folder Information]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.GetFolderInformation.GetFolderInformation.MainDoc" >}}
+[Move File]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.MoveFile.MoveFile.MainDoc" >}}
+[Move Files]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.MoveFile.MoveFiles.MainDoc" >}}
+[Move Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.MoveFolder.MoveFolder.MainDoc" >}}
+[Move Folders]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.MoveFolder.MoveFolders.MainDoc" >}}
+[Read All Lines]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.ReadFile.ReadAllLines.MainDoc" >}}
+[Read All Text]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.ReadFile.ReadAllText.MainDoc" >}}
+[Rename Folder]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.RenameFolder.RenameFolder.MainDoc" >}}
+[Search File]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.SearchFile.SearchFile.MainDoc" >}}
+[Search Files]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.SearchFile.SearchFiles.MainDoc" >}}
+[Write All Lines]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.WriteFile.WriteAllLines.MainDoc" >}}
+[Write All Text]: {{< url path="Cortex.Reference.Blocks.FilesAndFolders.WriteFile.WriteAllText.MainDoc" >}}
 
-[Convert Json To Object]: {{< url "Cortex.Reference.Blocks.Json.ConvertJson.ConvertJsonToObject.MainDoc" >}}
+[Convert Json To Object]: {{< url path="Cortex.Reference.Blocks.Json.ConvertJson.ConvertJsonToObject.MainDoc" >}}
 
-[Add Item At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.AddItem.AddItemAtBeginning.MainDoc" >}}
-[Add Item At End]: {{< url "Cortex.Reference.Blocks.Lists.AddItem.AddItemAtEnd.MainDoc" >}}
-[Add Item At Index]: {{< url "Cortex.Reference.Blocks.Lists.AddItem.AddItemAtIndex.MainDoc" >}}
-[Add Items At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.AddItem.AddItemsAtBeginning.MainDoc" >}}
-[Add Items At End]: {{< url "Cortex.Reference.Blocks.Lists.AddItem.AddItemsAtEnd.MainDoc" >}}
-[Add Items At Index]: {{< url "Cortex.Reference.Blocks.Lists.AddItem.AddItemsAtIndex.MainDoc" >}}
-[List Contains Item With Value]: {{< url "Cortex.Reference.Blocks.Lists.ContainsItem.ContainsItemWithValue.MainDoc" >}}
-[List Contains Items With Values]: {{< url "Cortex.Reference.Blocks.Lists.ContainsItem.ContainsItemsWithValues.MainDoc" >}}
-[List Get Count Of All Items]: {{< url "Cortex.Reference.Blocks.Lists.GetCount.GetCountOfAllItems.MainDoc" >}}
-[List Get Count Of Items With Value]: {{< url "Cortex.Reference.Blocks.Lists.GetCount.GetCountOfItemsWithValue.MainDoc" >}}
-[List Get Count Of Items With Values]: {{< url "Cortex.Reference.Blocks.Lists.GetCount.GetCountOfItemsWithValues.MainDoc" >}}
-[Get Index Of Item With Value]: {{< url "Cortex.Reference.Blocks.Lists.GetIndex.GetIndexOfItemWithValue.MainDoc" >}}
-[Get Indexes Of Items With Value]: {{< url "Cortex.Reference.Blocks.Lists.GetIndex.GetIndexesOfItemsWithValue.MainDoc" >}}
-[Get Item At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemAtBeginning.MainDoc" >}}
-[Get Item At End]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemAtEnd.MainDoc" >}}
-[Get Item At Index]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemAtIndex.MainDoc" >}}
-[Get Items At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtBeginning.MainDoc" >}}
-[Get Items At End]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtEnd.MainDoc" >}}
-[Get Items At Index]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtIndex.MainDoc" >}}
-[Get Items At Indexes]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtIndexes.MainDoc" >}}
-[List Remove All Items]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveAllItems.MainDoc" >}}
-[Remove Duplicate Items]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveDuplicateItems.MainDoc" >}}
-[Remove Item At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemAtBeginning.MainDoc" >}}
-[Remove Item At End]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemAtEnd.MainDoc" >}}
-[Remove Item At Index]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemAtIndex.MainDoc" >}}
-[List Remove Item With Value]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemWithValue.MainDoc" >}}
-[Remove Items At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtBeginning.MainDoc" >}}
-[Remove Items At End]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtEnd.MainDoc" >}}
-[Remove Items At Index]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtIndex.MainDoc" >}}
-[Remove Items At Indexes]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtIndexes.MainDoc" >}}
-[List Remove Items With Value]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsWithValue.MainDoc" >}}
-[List Remove Items With Values]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsWithValues.MainDoc" >}}
-[List Set All Items]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetAllItems.MainDoc" >}}
-[Set Item At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemAtBeginning.MainDoc" >}}
-[Set Item At End]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemAtEnd.MainDoc" >}}
-[Set Item At Index]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemAtIndex.MainDoc" >}}
-[List Set Item With Value]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemWithValue.MainDoc" >}}
-[Set Items At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtBeginning.MainDoc" >}}
-[Set Items At End]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtEnd.MainDoc" >}}
-[Set Items At Index]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndex.MainDoc" >}}
-[Set Items At Indexes]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndexes.MainDoc" >}}
-[List Set Items With Value]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsWithValue.MainDoc" >}}
-[List Set Items With Values]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsWithValues.MainDoc" >}}
+[Add Item At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.AddItem.AddItemAtBeginning.MainDoc" >}}
+[Add Item At End]: {{< url path="Cortex.Reference.Blocks.Lists.AddItem.AddItemAtEnd.MainDoc" >}}
+[Add Item At Index]: {{< url path="Cortex.Reference.Blocks.Lists.AddItem.AddItemAtIndex.MainDoc" >}}
+[Add Items At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.AddItem.AddItemsAtBeginning.MainDoc" >}}
+[Add Items At End]: {{< url path="Cortex.Reference.Blocks.Lists.AddItem.AddItemsAtEnd.MainDoc" >}}
+[Add Items At Index]: {{< url path="Cortex.Reference.Blocks.Lists.AddItem.AddItemsAtIndex.MainDoc" >}}
+[List Contains Item With Value]: {{< url path="Cortex.Reference.Blocks.Lists.ContainsItem.ContainsItemWithValue.MainDoc" >}}
+[List Contains Items With Values]: {{< url path="Cortex.Reference.Blocks.Lists.ContainsItem.ContainsItemsWithValues.MainDoc" >}}
+[List Get Count Of All Items]: {{< url path="Cortex.Reference.Blocks.Lists.GetCount.GetCountOfAllItems.MainDoc" >}}
+[List Get Count Of Items With Value]: {{< url path="Cortex.Reference.Blocks.Lists.GetCount.GetCountOfItemsWithValue.MainDoc" >}}
+[List Get Count Of Items With Values]: {{< url path="Cortex.Reference.Blocks.Lists.GetCount.GetCountOfItemsWithValues.MainDoc" >}}
+[Get Index Of Item With Value]: {{< url path="Cortex.Reference.Blocks.Lists.GetIndex.GetIndexOfItemWithValue.MainDoc" >}}
+[Get Indexes Of Items With Value]: {{< url path="Cortex.Reference.Blocks.Lists.GetIndex.GetIndexesOfItemsWithValue.MainDoc" >}}
+[Get Item At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemAtBeginning.MainDoc" >}}
+[Get Item At End]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemAtEnd.MainDoc" >}}
+[Get Item At Index]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemAtIndex.MainDoc" >}}
+[Get Items At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtBeginning.MainDoc" >}}
+[Get Items At End]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtEnd.MainDoc" >}}
+[Get Items At Index]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtIndex.MainDoc" >}}
+[Get Items At Indexes]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtIndexes.MainDoc" >}}
+[List Remove All Items]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveAllItems.MainDoc" >}}
+[Remove Duplicate Items]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveDuplicateItems.MainDoc" >}}
+[Remove Item At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemAtBeginning.MainDoc" >}}
+[Remove Item At End]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemAtEnd.MainDoc" >}}
+[Remove Item At Index]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemAtIndex.MainDoc" >}}
+[List Remove Item With Value]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemWithValue.MainDoc" >}}
+[Remove Items At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtBeginning.MainDoc" >}}
+[Remove Items At End]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtEnd.MainDoc" >}}
+[Remove Items At Index]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtIndex.MainDoc" >}}
+[Remove Items At Indexes]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtIndexes.MainDoc" >}}
+[List Remove Items With Value]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsWithValue.MainDoc" >}}
+[List Remove Items With Values]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsWithValues.MainDoc" >}}
+[List Set All Items]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetAllItems.MainDoc" >}}
+[Set Item At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemAtBeginning.MainDoc" >}}
+[Set Item At End]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemAtEnd.MainDoc" >}}
+[Set Item At Index]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemAtIndex.MainDoc" >}}
+[List Set Item With Value]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemWithValue.MainDoc" >}}
+[Set Items At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtBeginning.MainDoc" >}}
+[Set Items At End]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtEnd.MainDoc" >}}
+[Set Items At Index]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndex.MainDoc" >}}
+[Set Items At Indexes]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndexes.MainDoc" >}}
+[List Set Items With Value]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsWithValue.MainDoc" >}}
+[List Set Items With Values]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsWithValues.MainDoc" >}}
 
-[Log Event]: {{< url "Cortex.Reference.Blocks.Logs.LogEvent.LogEvent.MainDoc" >}}
+[Log Event]: {{< url path="Cortex.Reference.Blocks.Logs.LogEvent.LogEvent.MainDoc" >}}
 
-[For Loop]: {{< url "Cortex.Reference.Blocks.Loops.For.ForLoop.MainDoc" >}}
+[For Loop]: {{< url path="Cortex.Reference.Blocks.Loops.For.ForLoop.MainDoc" >}}
 
-[Convert Object To Text]: {{< url "Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
+[Convert Object To Text]: {{< url path="Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 
-[Enqueue Item]: {{< url "Cortex.Reference.Blocks.Queues.EnqueueItem.EnqueueItemBlock.MainDoc" >}}
-[Peek Item]: {{< url "Cortex.Reference.Blocks.Queues.PeekItem.PeekItemBlock.MainDoc" >}}
+[Enqueue Item]: {{< url path="Cortex.Reference.Blocks.Queues.EnqueueItem.EnqueueItemBlock.MainDoc" >}}
+[Peek Item]: {{< url path="Cortex.Reference.Blocks.Queues.PeekItem.PeekItemBlock.MainDoc" >}}
 
-[Contains All Text]: {{< url "Cortex.Reference.Blocks.Text.ContainsText.ContainsAllText.MainDoc" >}}
-[Contains Any Text]: {{< url "Cortex.Reference.Blocks.Text.ContainsText.ContainsAnyText.MainDoc" >}}
-[Format Text With Values]: {{< url "Cortex.Reference.Blocks.Text.FormatText.FormatTextWithValues.MainDoc" >}}
-[Join Text]: {{< url "Cortex.Reference.Blocks.Text.JoinText.JoinText.MainDoc" >}}
+[Contains All Text]: {{< url path="Cortex.Reference.Blocks.Text.ContainsText.ContainsAllText.MainDoc" >}}
+[Contains Any Text]: {{< url path="Cortex.Reference.Blocks.Text.ContainsText.ContainsAnyText.MainDoc" >}}
+[Format Text With Values]: {{< url path="Cortex.Reference.Blocks.Text.FormatText.FormatTextWithValues.MainDoc" >}}
+[Join Text]: {{< url path="Cortex.Reference.Blocks.Text.JoinText.JoinText.MainDoc" >}}
 
-[Convert Structure To Xml]: {{< url "Cortex.Reference.Blocks.Xml.ConvertXml.ConvertStructureToXml.MainDoc" >}}
-[Convert Xml To Structure]: {{< url "Cortex.Reference.Blocks.Xml.ConvertXml.ConvertXmlToStructure.MainDoc" >}}
+[Convert Structure To Xml]: {{< url path="Cortex.Reference.Blocks.Xml.ConvertXml.ConvertStructureToXml.MainDoc" >}}
+[Convert Xml To Structure]: {{< url path="Cortex.Reference.Blocks.Xml.ConvertXml.ConvertXmlToStructure.MainDoc" >}}
 
-[Blocks]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
-[block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
-[Block Properties]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
-[property]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
-[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
+[Blocks]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.MainDoc" >}}
+[block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
+[Block Properties]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.MainDoc" >}}
+[property]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
 
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}

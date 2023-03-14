@@ -6,7 +6,7 @@ description: "Information regarding text equality."
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 
@@ -123,4 +123,4 @@ TODO
 [Ordinal]: {{< ref "#ordinal" >}}
 [Ordinal Ignore Case]: {{< ref "#ordinal-ignore-case" >}}
 
-[StringComparison]: {{< url "MSDocs.DotNet.Api.System.StringComparison" >}}
+[StringComparison]: {{< url path="MSDocs.DotNet.Api.System.StringComparison" >}}

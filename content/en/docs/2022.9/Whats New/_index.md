@@ -66,27 +66,27 @@ For a full list of what has been introduced in this release, please see the [202
 [Security]: {{< ref "#improved-security" >}}
 [Observability]: {{< ref "#improved-observability" >}}
 
-[2022.9 Release Notes]: {{< url "Cortex.Blogs.Releases.2022.9.MainDoc" >}}
-[new engine]: {{< url "Cortex.Blogs.Releases.2022.9.NewEngine" >}}
-[significant performance improvements]: {{< url "Cortex.Blogs.Releases.2022.9.ImprovedPerformance" >}}
-[high availability (HA) architecture]: {{< url "Cortex.Blogs.Releases.2022.9.HAArchitecture" >}}
-[simplified installation process]: {{< url "Cortex.Blogs.Releases.2022.9.SimplifiedInstallation" >}}
-[Package Management]: {{< url "Cortex.Blogs.Releases.2022.9.PackageManagement" >}}
-[180+ new blocks]: {{< url "Cortex.Blogs.Releases.2022.9.180NewBlocks" >}}
-[new Property Editor]: {{< url "Cortex.Blogs.Releases.2022.9.NewPropertyEditor" >}}
-[Messages]: {{< url "Cortex.Blogs.Releases.2022.9.Messages" >}}
-[Product Portal]: {{< url "Cortex.Blogs.Releases.2022.9.ProductPortal" >}}
-[Encryptable and Encrypted text]: {{< url "Cortex.Blogs.Releases.2022.9.EncryptableAndEncryptedText" >}}
-[Structured logging]: {{< url "Cortex.Blogs.Releases.2022.9.StructuredLogging" >}}
-[Dashboards]: {{< url "Cortex.Blogs.Releases.2022.9.GrafanaDashboards" >}}
-[Flow Contracts]: {{< url "Cortex.Blogs.Releases.2022.9.FlowContract" >}}
-[Debugging with Input Variables]: {{< url "Cortex.Blogs.Releases.2022.9.DebugWithInputVariables" >}}
-[Versioned APIs]: {{< url "Cortex.Blogs.Releases.2022.9.VersionedAPIs" >}}
+[2022.9 Release Notes]: {{< url path="Cortex.Blogs.Releases.2022.9.MainDoc" >}}
+[new engine]: {{< url path="Cortex.Blogs.Releases.2022.9.NewEngine" >}}
+[significant performance improvements]: {{< url path="Cortex.Blogs.Releases.2022.9.ImprovedPerformance" >}}
+[high availability (HA) architecture]: {{< url path="Cortex.Blogs.Releases.2022.9.HAArchitecture" >}}
+[simplified installation process]: {{< url path="Cortex.Blogs.Releases.2022.9.SimplifiedInstallation" >}}
+[Package Management]: {{< url path="Cortex.Blogs.Releases.2022.9.PackageManagement" >}}
+[180+ new blocks]: {{< url path="Cortex.Blogs.Releases.2022.9.180NewBlocks" >}}
+[new Property Editor]: {{< url path="Cortex.Blogs.Releases.2022.9.NewPropertyEditor" >}}
+[Messages]: {{< url path="Cortex.Blogs.Releases.2022.9.Messages" >}}
+[Product Portal]: {{< url path="Cortex.Blogs.Releases.2022.9.ProductPortal" >}}
+[Encryptable and Encrypted text]: {{< url path="Cortex.Blogs.Releases.2022.9.EncryptableAndEncryptedText" >}}
+[Structured logging]: {{< url path="Cortex.Blogs.Releases.2022.9.StructuredLogging" >}}
+[Dashboards]: {{< url path="Cortex.Blogs.Releases.2022.9.GrafanaDashboards" >}}
+[Flow Contracts]: {{< url path="Cortex.Blogs.Releases.2022.9.FlowContract" >}}
+[Debugging with Input Variables]: {{< url path="Cortex.Blogs.Releases.2022.9.DebugWithInputVariables" >}}
+[Versioned APIs]: {{< url path="Cortex.Blogs.Releases.2022.9.VersionedAPIs" >}}
 
-[block]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
-[Input Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.FlowInputVariable" >}}
-[Output Variables]: {{< url "Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.OutputVariablesStructure" >}}
+[block]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.WhatIsABlock.MainDoc" >}}
+[Input Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.FlowInputVariable" >}}
+[Output Variables]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Variables.WhatIsAVariable.OutputVariablesStructure" >}}
 
-[Cortex Studio]: {{< url "Cortex.Guides.Studio.MainDoc" >}}
+[Cortex Studio]: {{< url path="Cortex.Guides.Studio.MainDoc" >}}
 
-[flow developers]: {{< url "Cortex.Reference.Glossary.F-J.FlowDeveloper" >}}
+[flow developers]: {{< url path="Cortex.Reference.Glossary.F-J.FlowDeveloper" >}}

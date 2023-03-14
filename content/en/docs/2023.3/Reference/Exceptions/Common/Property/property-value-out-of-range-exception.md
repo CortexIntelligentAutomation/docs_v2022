@@ -305,52 +305,52 @@ None
 
 [Message]: {{< ref "#message" >}}
 
-[Add Time Period]: {{< url "Cortex.Reference.Blocks.DateAndTime.AddTimePeriod.AddTimePeriod.MainDoc" >}}
-[Subtract Time Period]: {{< url "Cortex.Reference.Blocks.DateAndTime.SubtractTimePeriod.SubtractTimePeriod.MainDoc" >}}
+[Add Time Period]: {{< url path="Cortex.Reference.Blocks.DateAndTime.AddTimePeriod.AddTimePeriod.MainDoc" >}}
+[Subtract Time Period]: {{< url path="Cortex.Reference.Blocks.DateAndTime.SubtractTimePeriod.SubtractTimePeriod.MainDoc" >}}
 
-[Add Item At Index]: {{< url "Cortex.Reference.Blocks.Lists.AddItem.AddItemAtIndex.MainDoc" >}}
-[Add Items At Index]: {{< url "Cortex.Reference.Blocks.Lists.AddItem.AddItemsAtIndex.MainDoc" >}}
-[Get Item At Index]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemAtIndex.MainDoc" >}}
-[Get Items At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtBeginning.MainDoc" >}}
-[Get Items At End]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtEnd.MainDoc" >}}
-[Get Items At Index]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtIndex.MainDoc" >}}
-[Get Items At Indexes]: {{< url "Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtIndexes.MainDoc" >}}
-[Remove Item At Index]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemAtIndex.MainDoc" >}}
-[Remove Items At Beginning]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtBeginning.MainDoc" >}}
-[Remove Items At End]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtEnd.MainDoc" >}}
-[Remove Items At Index]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtIndex.MainDoc" >}}
-[Remove Items At Indexes]: {{< url "Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtIndexes.MainDoc" >}}
-[Set Item At Index]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemAtIndex.MainDoc" >}}
-[Set Items At Index]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndex.MainDoc" >}}
-[Set Items At Indexes]: {{< url "Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndexes.MainDoc" >}}
+[Add Item At Index]: {{< url path="Cortex.Reference.Blocks.Lists.AddItem.AddItemAtIndex.MainDoc" >}}
+[Add Items At Index]: {{< url path="Cortex.Reference.Blocks.Lists.AddItem.AddItemsAtIndex.MainDoc" >}}
+[Get Item At Index]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemAtIndex.MainDoc" >}}
+[Get Items At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtBeginning.MainDoc" >}}
+[Get Items At End]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtEnd.MainDoc" >}}
+[Get Items At Index]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtIndex.MainDoc" >}}
+[Get Items At Indexes]: {{< url path="Cortex.Reference.Blocks.Lists.GetItem.GetItemsAtIndexes.MainDoc" >}}
+[Remove Item At Index]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemAtIndex.MainDoc" >}}
+[Remove Items At Beginning]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtBeginning.MainDoc" >}}
+[Remove Items At End]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtEnd.MainDoc" >}}
+[Remove Items At Index]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtIndex.MainDoc" >}}
+[Remove Items At Indexes]: {{< url path="Cortex.Reference.Blocks.Lists.RemoveItem.RemoveItemsAtIndexes.MainDoc" >}}
+[Set Item At Index]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemAtIndex.MainDoc" >}}
+[Set Items At Index]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndex.MainDoc" >}}
+[Set Items At Indexes]: {{< url path="Cortex.Reference.Blocks.Lists.SetItem.SetItemsAtIndexes.MainDoc" >}}
 
-[Wait For Duration]: {{< url "Cortex.Reference.Blocks.Schedules.WaitFor.WaitForDuration.MainDoc" >}}
+[Wait For Duration]: {{< url path="Cortex.Reference.Blocks.Schedules.WaitFor.WaitForDuration.MainDoc" >}}
 
-[Add Text After Index]: {{< url "Cortex.Reference.Blocks.Text.AddText.AddTextAfterIndex.MainDoc" >}}
-[Add Text Before Index]: {{< url "Cortex.Reference.Blocks.Text.AddText.AddTextBeforeIndex.MainDoc" >}}
-[Get Text At Beginning]: {{< url "Cortex.Reference.Blocks.Text.GetText.GetTextAtBeginning.MainDoc" >}}
-[Get Text At End]: {{< url "Cortex.Reference.Blocks.Text.GetText.GetTextAtEnd.MainDoc" >}}
-[Get Text At Index]: {{< url "Cortex.Reference.Blocks.Text.GetText.GetTextAtIndex.MainDoc" >}}
-[Get Text Before Index]: {{< url "Cortex.Reference.Blocks.Text.GetText.GetTextBeforeIndex.MainDoc" >}}
-[Get Text Between Indexes]: {{< url "Cortex.Reference.Blocks.Text.GetText.GetTextBetweenIndexes.MainDoc" >}}
-[Remove Text At Beginning]: {{< url "Cortex.Reference.Blocks.Text.RemoveText.RemoveTextAtBeginning.MainDoc" >}}
-[Remove Text At End]: {{< url "Cortex.Reference.Blocks.Text.RemoveText.RemoveTextAtEnd.MainDoc" >}}
-[Remove Text At Index]: {{< url "Cortex.Reference.Blocks.Text.RemoveText.RemoveTextAtIndex.MainDoc" >}}
-[Remove Text Before Index]: {{< url "Cortex.Reference.Blocks.Text.RemoveText.RemoveTextBeforeIndex.MainDoc" >}}
-[Remove Text Between Indexes]: {{< url "Cortex.Reference.Blocks.Text.RemoveText.RemoveTextBetweenIndexes.MainDoc" >}}
+[Add Text After Index]: {{< url path="Cortex.Reference.Blocks.Text.AddText.AddTextAfterIndex.MainDoc" >}}
+[Add Text Before Index]: {{< url path="Cortex.Reference.Blocks.Text.AddText.AddTextBeforeIndex.MainDoc" >}}
+[Get Text At Beginning]: {{< url path="Cortex.Reference.Blocks.Text.GetText.GetTextAtBeginning.MainDoc" >}}
+[Get Text At End]: {{< url path="Cortex.Reference.Blocks.Text.GetText.GetTextAtEnd.MainDoc" >}}
+[Get Text At Index]: {{< url path="Cortex.Reference.Blocks.Text.GetText.GetTextAtIndex.MainDoc" >}}
+[Get Text Before Index]: {{< url path="Cortex.Reference.Blocks.Text.GetText.GetTextBeforeIndex.MainDoc" >}}
+[Get Text Between Indexes]: {{< url path="Cortex.Reference.Blocks.Text.GetText.GetTextBetweenIndexes.MainDoc" >}}
+[Remove Text At Beginning]: {{< url path="Cortex.Reference.Blocks.Text.RemoveText.RemoveTextAtBeginning.MainDoc" >}}
+[Remove Text At End]: {{< url path="Cortex.Reference.Blocks.Text.RemoveText.RemoveTextAtEnd.MainDoc" >}}
+[Remove Text At Index]: {{< url path="Cortex.Reference.Blocks.Text.RemoveText.RemoveTextAtIndex.MainDoc" >}}
+[Remove Text Before Index]: {{< url path="Cortex.Reference.Blocks.Text.RemoveText.RemoveTextBeforeIndex.MainDoc" >}}
+[Remove Text Between Indexes]: {{< url path="Cortex.Reference.Blocks.Text.RemoveText.RemoveTextBetweenIndexes.MainDoc" >}}
 
-[property]: {{< url "Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
+[property]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Blocks.BlockProperties.WhatIsABlockProperty.MainDoc" >}}
 
-[Exceptions]: {{< url "Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
+[Exceptions]: {{< url path="Cortex.Reference.Concepts.Fundamentals.Exceptions.MainDoc" >}}
 
-[Working with Collections]: {{< url "Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}
+[Working with Collections]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Collections.MainDoc" >}}
 
-[Working with Date and Time]: {{< url "Cortex.Reference.Concepts.WorkingWith.DateAndTime.MainDoc" >}}
-[ISO 8601 format]: {{< url "Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.ISO8601Standard" >}}
+[Working with Date and Time]: {{< url path="Cortex.Reference.Concepts.WorkingWith.DateAndTime.MainDoc" >}}
+[ISO 8601 format]: {{< url path="Cortex.Reference.Concepts.WorkingWith.DateAndTime.DateAndTimeFormatting.ISO8601Standard" >}}
 
-[Working with Text]: {{< url "Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
+[Working with Text]: {{< url path="Cortex.Reference.Concepts.WorkingWith.Text.MainDoc" >}}
 
-[DateTimeOffset]: {{< url "Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
-[TimePeriod]: {{< url "Cortex.Reference.DataTypes.DateAndTime.TimePeriod.MainDoc" >}}
+[DateTimeOffset]: {{< url path="Cortex.Reference.DataTypes.DateAndTime.DateTimeOffset.MainDoc" >}}
+[TimePeriod]: {{< url path="Cortex.Reference.DataTypes.DateAndTime.TimePeriod.MainDoc" >}}
 
-[String]: {{< url "Cortex.Reference.DataTypes.Text.String.MainDoc" >}}
+[String]: {{< url path="Cortex.Reference.DataTypes.Text.String.MainDoc" >}}

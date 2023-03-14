@@ -6,7 +6,7 @@ description: "Information regarding file and folder attributes."
 
 # {{% param title %}}
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 

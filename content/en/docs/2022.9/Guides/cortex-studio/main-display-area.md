@@ -5,7 +5,7 @@ description: "The Main Display Area for developing and managing a flow"
 weight: 1
 ---
 
-<img src="/images/work-in-progress.jpg">
+{{< workinprogress >}}
 
 ## Summary
 
