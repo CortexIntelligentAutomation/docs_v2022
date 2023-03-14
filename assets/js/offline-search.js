@@ -170,11 +170,7 @@
                         $searchInput.data('offline-search-base-href') +
                         r.ref.replace(/^\//, '');
 
-                    const $entry = $('<div>').addClass('mt-4');
-
-                    $entry.append(
-                        $('<small>').addClass('d-block text-muted').text(r.ref)
-                    );
+                    const $entry = $('<div>').addClass('mt-4').addClass('search-result');
 
                     $entry.append(
                         $('<a>')
@@ -184,6 +180,10 @@
                             })
                             .attr('href', href)
                             .text(doc.title)
+                    );
+
+                    $entry.append(
+                        $('<small>').addClass('d-block text-muted').text(r.ref)
                     );
 
                     $entry.append($('<p>').text(doc.excerpt));
