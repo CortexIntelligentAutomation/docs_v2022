@@ -703,6 +703,10 @@
                     MainDoc = "/docs/reference/blocks/queues/get-count/"
                     [Cortex.Reference.Blocks.Queues.EnqueueItem.GetCountOfAllItemsBlock]
                         MainDoc = "/docs/reference/blocks/queues/get-count/get-count-of-all-items-block-2"
+                [Cortex.Reference.Blocks.Queues.RemoveItem]
+                    MainDoc = "/docs/reference/blocks/queues/remove-item/"
+                    [Cortex.Reference.Blocks.Queues.RemoveItem.RemoveAllItemsBlock]
+                        MainDoc = "/docs/reference/blocks/queues/remove-item/remove-all-items-block"
             [Cortex.Reference.Blocks.Ssh]
                 MainDoc = "/docs/reference/blocks/ssh/"
                 [Cortex.Reference.Blocks.Ssh.ExecuteSshCommand]
