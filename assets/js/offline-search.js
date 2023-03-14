@@ -52,17 +52,28 @@
                     this.field('title', { boost: 5 });
                     this.field('categories', { boost: 3 });
                     this.field('tags', { boost: 3 });
-                    // this.field('projects', { boost: 3 }); // example for an individual toxonomy called projects
                     this.field('description', { boost: 2 });
                     this.field('body');
 
-                    data.forEach((doc) => {
-                        this.add(doc);
+                    const searchPath = $searchInput.data('search-path');
 
-                        resultDetails.set(doc.ref, {
-                            title: doc.title,
-                            excerpt: doc.excerpt,
-                        });
+                    data.forEach((doc) => {
+                        let docToAdd;
+                        if (searchPath !== undefined && doc.ref.startsWith(searchPath)) {
+                            docToAdd = doc;
+                            
+                        } else if (searchPath === undefined) {
+                            docToAdd = doc;
+                        }
+
+                        if (docToAdd) {
+                            this.add(doc);
+
+                            resultDetails.set(doc.ref, {
+                                title: doc.title,
+                                excerpt: doc.excerpt,
+                            });
+                        }
                     });
                 });
 
