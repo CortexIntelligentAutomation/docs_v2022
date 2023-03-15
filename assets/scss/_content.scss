@@ -41,6 +41,12 @@
         @extend .img-fluid;
     }
 
+    .work-in-progress {
+        display: block;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
     > table {
         @extend .table-striped;
 
