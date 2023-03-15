@@ -203,8 +203,13 @@ Currently, only the `<property-name>` has been included in the exception. In fut
 * Objects
   * [Convert Object To Text][]
 * Queues
+  * [Dequeue Item][]
+  * [Dequeue Items][]
   * [Enqueue Item][]
+  * [Enqueue Items][]
+  * [Get Count Of All Items][Queues Get Count Of All Items]
   * [Peek Item][]
+  * [Remove All Items][Q Remove All Items]
 * Text
   * [Contains All Text][]
   * [Contains Any Text][]
@@ -337,8 +342,13 @@ None
 
 [Convert Object To Text]: {{< url path="Cortex.Reference.Blocks.Objects.ConvertObject.ConvertObjectToText.MainDoc" >}}
 
+[Dequeue Item]: {{< url path="Cortex.Reference.Blocks.Queues.DequeueItem.DequeueItemBlock.MainDoc" >}}
+[Dequeue Items]: {{< url path="Cortex.Reference.Blocks.Queues.DequeueItem.DequeueItemsBlock.MainDoc" >}}
 [Enqueue Item]: {{< url path="Cortex.Reference.Blocks.Queues.EnqueueItem.EnqueueItemBlock.MainDoc" >}}
+[Enqueue Items]: {{< url path="Cortex.Reference.Blocks.Queues.EnqueueItem.EnqueueItemsBlock.MainDoc" >}}
+[Queues Get Count Of All Items]: {{< url path="Cortex.Reference.Blocks.Queues.EnqueueItem.GetCountOfAllItemsBlock.MainDoc" >}}
 [Peek Item]: {{< url path="Cortex.Reference.Blocks.Queues.PeekItem.PeekItemBlock.MainDoc" >}}
+[Q Remove All Items]: {{< url path="Cortex.Reference.Blocks.Queues.RemoveItem.RemoveAllItemsBlock.MainDoc" >}}
 
 [Contains All Text]: {{< url path="Cortex.Reference.Blocks.Text.ContainsText.ContainsAllText.MainDoc" >}}
 [Contains Any Text]: {{< url path="Cortex.Reference.Blocks.Text.ContainsText.ContainsAnyText.MainDoc" >}}
