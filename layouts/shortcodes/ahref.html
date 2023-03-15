@@ -1,29 +1,6 @@
-{{- /*
-    Creates a hyperlink element with the provided link.
-*/}}
-{{- $url := urls.Parse (index .Site.Data.urls (split (.Get 0) ".")) }}
-{{- $link := (printf "%s://%s%s" $url.Scheme $url.Host $url.Path) }}
-{{- $currentVer := index (findRE `^\/docs\/[^\/]*\/` .Page.RelPermalink 1) 0 }}
-{{- $version := .Get "version" }}
-{{- if (not $currentVer) }}
-    {{- if $version }}
-        {{- range where .Site.Params.versions "version" $version }}
-            {{- $currentVer = .url }}
-        {{- end }}
-    {{- else }}
-        {{- range where .Site.Params.versions "latest" true }}
-            {{- $currentVer = .url }}
-        {{- end }}
-    {{- end }}
-{{- end }}
-{{- if hasPrefix $url "https://learn.microsoft.com/en-us/dotnet/api/" }}
-    {{- range where .Site.Params.versions "url" $currentVer }}
-        {{- $link = (printf "%s?view=%s" $link .dotNetVersion) }}
-        {{- if ne $url.Fragment "" }}
-            {{- $link = (printf "%s#%s" $link $url.Fragment) }}
-        {{- end }}
-        <a href="{{- $link }}">{{ .Get 1 }}</a>
-    {{- end }}
-{{- else }}
-    <a href="{{- $url }}">{{ .Get 1 }}</a>
-{{- end }}
+{{- /* Creates a hyperlink element with the provided link. This is currently not versioned. */}}
+{{ $url := urls.Parse (index .Site.Data.urls (split (.Get 0) ".")) }}{{ $link := (printf "%s://%s%s" $url.Scheme $url.Host $url.Path) }}{{ if hasPrefix $url "https://docs.microsoft.com/en-us/dotnet/api/" }}{{ $link = (printf "%s?view=%s" $link .Site.Params.dotNetVersion)}}{{ if ne $url.Fragment ""}}
+{{ $link = (printf "%s#%s" $link $url.Fragment)}}
+{{ end }}
+<a href="{{ $link }}">{{ .Get 1 }}</a>
+{{ else }}<a href="{{ $url }}">{{ .Get 1 }}</a>{{ end }}

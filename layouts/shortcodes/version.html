@@ -3,9 +3,7 @@
     This only works in files under /docs/.
 */}}
 {{- $currentVer := index (findRE `^\/docs\/[^\/]*\/` .Page.RelPermalink 1) 0 }}
-{{- if  $currentVer }}
-    {{/*  All GOOD  */}}
-{{- else }}
+{{- if (not $currentVer) }}
     {{/*  use latest doc as not in a versioned page  */}}
     {{ range where .Site.Params.versions "latest" true }}
         {{- $currentVer = .url }}
