@@ -12,9 +12,9 @@ This guide describes how to set up Grafana Loki in the cloud. Please ensure that
 ## Set up Grafana Loki
 
 1. Browse to the *Team URL* created during [Sign Up For Grafana Cloud][].
-1. Click the Lightening icon ![Lightening Icon](/images/GrafanaLighteningIcon.png 'Integrations and Connections Icon').
-1. Select *Integrations and Connections*.
-1. In the *Add and manage Grafana Cloud integrations and connections* click on the *Hosted Logs*..
+2. Click the Lightening icon {{< image src="/images/GrafanaLighteningIcon.png" title="Integrations and Connections Icon" >}}.
+3. Select *Integrations and Connections*.
+4. In the *Add and manage Grafana Cloud integrations and connections* click on the *Hosted Logs*..
   {{< figure src="/images/Grafana Cloud - Hosted Logs.png" >}}
 1. In the *Choose your usecase* section select *Send logs from a standalone host*.
   {{< figure src="/images/Grafana Cloud - Hosted Logs Config Usecase.png" >}}

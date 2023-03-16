@@ -103,7 +103,7 @@ Exceptions can be handled:
 
 If an exception occurs within the workspace of the [Handle Flow Exception][] block and is not handled, the execution will end with a status of Error.
 
-![Handling an Execution's Exceptions](/images/flow-error-status.png)
+{{< figure src="/images/flow-error-status.png" >}}
 
 ## Logs Generated
 

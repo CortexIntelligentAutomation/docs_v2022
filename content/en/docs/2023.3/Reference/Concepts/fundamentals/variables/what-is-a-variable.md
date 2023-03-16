@@ -20,7 +20,7 @@ Data in a variable can be read, updated, or removed by different blocks. Example
 
 ## Anatomy of a Variable
 
-![Example Variable in Variables Grid](/images/variables-grid.PNG)
+{{< figure src="/images/variables-grid.PNG" >}}
 
 Variables have the following properties that can be configured in the [Variables Grid][]:
 
@@ -107,7 +107,7 @@ If a variable has its `Is Input Variable?` and `Set Default Value?` properties s
 
 When [debugging a flow][debugging a flow] in [Cortex Studio][], selecting an execution will display all initialised variables that are in [scope][] in the [Variables Viewer][].
 
-![Variables Viewer](/images/reference/concepts/fundamentals/variables/what-is-a-variable-variable-panel-2.png)
+{{< figure src="/images/reference/concepts/fundamentals/variables/what-is-a-variable-variable-panel-2.png" >}}
 
 #### Viewing Basic Data Types
 
@@ -125,15 +125,15 @@ The following examples show the [Variable Details Viewer][] when showing a:
 
 - [Dictionary<string, dynamic>][Dictionary] variable
 
-![dictionary panel](/images/reference/concepts/fundamentals/variables/what-is-a-variable-dictionary-panel.png)
+{{< figure src="/images/reference/concepts/fundamentals/variables/what-is-a-variable-dictionary-panel.png" >}}
 
 - [Command][] variable
 
-![command panel](/images/reference/concepts/fundamentals/variables/what-is-a-variable-command-panel.png)
+{{< figure src="/images/reference/concepts/fundamentals/variables/what-is-a-variable-command-panel.png" >}}
 
 - [FlowException][] variable
 
-![exception panel](/images/reference/concepts/fundamentals/variables/what-is-a-variable-exception-panel.png)
+{{< figure src="/images/reference/concepts/fundamentals/variables/what-is-a-variable-exception-panel.png" >}}
 
 ### Updating Variables
 

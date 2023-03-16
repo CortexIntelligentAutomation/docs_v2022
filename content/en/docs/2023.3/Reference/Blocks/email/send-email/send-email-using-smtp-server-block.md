@@ -341,7 +341,7 @@ The exceptions thrown by the block can be found below:
 
 An email sent with [Urgent][] or [NonUrgent][] priority will have its priority displayed differently depending on the email client. For example, [Outlook][] displays an email that has an [Urgent][] priority with a red exclamation mark like so:
 
-![Important email](/images/send-email-using-smtp-server-important-email.png)
+{{< figure src="/images/send-email-using-smtp-server-important-email.png" >}}
 
 For more information on how the priority of an email will be displayed, see the help provided by the respective email client.
 
@@ -355,7 +355,7 @@ An email sent with an [HTML][] body will have its body displayed as an HTML page
 
 [Outlook][] will display the email body as follows:
 
-![HTML email](/images/send-email-using-smtp-server-html-email.png)
+{{< figure src="/images/send-email-using-smtp-server-html-email.png" >}}
 
 For more information on how the body of an email will be displayed, see the help provided by the respective email client.
 

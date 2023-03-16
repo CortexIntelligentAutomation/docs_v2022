@@ -13,7 +13,7 @@ This section explains how to change the colour coding of thresholds set for the 
 
 1. Log in to your configured Grafana with a user that has the *Admin* role.
 1. To open a dashboard:
-    1. Click the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *Browse*.
+    1. Click the Dashboards icon {{< image src="/images/DashboardsIcon.png" title="Dashboards Icon" >}} in the side menu, and then click *Browse*.
     1. Click the folder name that the dashboards were imported to.
     1. Click the name of the dashboard you wish to modify to open it.
 1. Open the panel you wish to configure in edit mode:

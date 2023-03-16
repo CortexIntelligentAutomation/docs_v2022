@@ -17,9 +17,7 @@ A workspace is used to group logic and actions within a [flow][], in order to re
 
 A flow can only contain one Top-Level Workspace, which acts as the entry point for the [flow execution][].
 
-| ![Example Flow](/images/top-level-workspace.svg) |
-|:--:|
-| ***Example Top-Level Workspace*** |
+{{< figure src="/images/top-level-workspace.svg" title="Example Top-Level Workspace" >}}
 
 * Start Flow block
   * Identifies where the [flow execution][] will start
@@ -64,9 +62,7 @@ The flow should be ended with an {{< ahref "Cortex.Reference.Blocks.Flows.EndFlo
 
 A flow can contain any number of other workspaces that are not the Top-Level Workspace, these act as a means to grouping logic and actions to reduce the complexity and make the flow easier to maintain.
 
-| ![Example Flow](/images/nested-workspace.svg) |
-|:--:|
-| ***Example Workspace*** |
+{{< figure src="/images/nested-workspace.svg" title="Example Workspace" >}}
 
 * Start Workspace block
   * Identifies where the [flow execution][] will start when the workspace is executed

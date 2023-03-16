@@ -63,7 +63,7 @@ To do this, follow these steps for all default Cortex Innovation dashboards impo
 
 1. Log in to your configured Grafana with a user that has the *Admin* role.
 1. To open a dashboard:
-    1. Click the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *Browse*.
+    1. Click the Dashboards icon {{< image src="/images/DashboardsIcon.png" title="Dashboards Icon" >}} in the side menu, and then click *Browse*.
     1. Click the folder name that the dashboards were imported to.
     1. Click the *Flow Execution Requests* dashboard to open it.
 1. Open the Dashboard Settings menu via the cog icon in the top right-hand side of the dashboard.

@@ -153,7 +153,7 @@ The exceptions thrown by the block can be found below:
 
 ### Selecting a Flow
 
-![Selecting a Flow Example](/images/run-flow-selecting-a-flow.gif)
+{{< figure src="/images/run-flow-selecting-a-flow.gif" >}}
 
 A flow can be selected using the [Literal Editor][] on the [Flow Property][], a list of all available flows will be presented to the developer and can be searched by the Name or Id of a flow.
 
@@ -182,7 +182,7 @@ For more information see [Handling Exceptions][].
 
 ### Syncing the Inputs Property with the Flow Contract
 
-![Updating the Flow Contract Example](/images/run-flow-contract-change.gif)
+{{< figure src="/images/run-flow-contract-change.gif" >}}
 
 When a flow is first selected the [Inputs Property][] will be synced with the Flow Contract.
 

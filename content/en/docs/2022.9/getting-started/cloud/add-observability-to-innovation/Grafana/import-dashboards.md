@@ -19,14 +19,14 @@ Please ensure that the set up for [Grafana][] and [Loki][] have been completed b
 ## Create Folder for Dashboards
 
 1. Log in to Grafana Cloud with a user that has the *Admin* role.
-1. Hover over the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *+ New folder*.
+1. Hover over the Dashboards icon {{< image src="/images/DashboardsIcon.png" title="Dashboards Icon" >}} in the side menu, and then click *+ New folder*.
 1. Enter a folder name, e.g. `Cortex`.
 1. Click *Create*.
 
 ## Import Dashboards
 
 1. Log in to Grafana Cloud with a user that has the *Admin* role.
-1. Hover over the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *Import*.
+1. Hover over the Dashboards icon {{< image src="/images/DashboardsIcon.png" title="Dashboards Icon" >}} in the side menu, and then click *Import*.
 1. Click the *Upload JSON file* button.
 1. Locate the `Flow Execution Requests.json` file extracted from the downloaded `Grafana.Dashboards.zip`.
 1. Select the file and click *Open*.
@@ -43,7 +43,7 @@ To do this, follow these steps for all default Cortex Innovation dashboards impo
 
 1. Log in to Grafana Cloud with a user that has the *Admin* role.
 1. To open a dashboard:
-    1. Hover over the Dashboards icon ![Dashboards Icon](/images/DashboardsIcon.png 'Dashboards Icon') in the side menu, and then click *Browse*.
+    1. Hover over the Dashboards icon {{< image src="/images/DashboardsIcon.png" title="Dashboards Icon" >}} in the side menu, and then click *Browse*.
     1. Click the folder name that the dashboards were imported to.
     1. Click the *Flow Execution Requests* dashboard to open it.
 1. Open the Dashboard Settings menu via the cog icon in the top right side of the dashboard.

@@ -21,7 +21,7 @@ For a complete list see [Validation][] messages.
 
 ## Anatomy of a Message
 
-![Example Message in Messages Grid](/images/messages-grid.PNG)
+{{< figure src="/images/messages-grid.PNG" >}}
 
 Related messages are grouped by the component affected (e.g. A [block][], or the [Settings Editor][])
 

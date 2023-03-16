@@ -17,7 +17,7 @@ Exceptions within a flow can be handled at the following levels:
 
 ## Handling Exceptions at the Block level
 
-![Example Message in Messages Grid](/images/block-exception.gif)
+{{< figure src="/images/block-exception.gif" >}}
 
 Exceptions thrown within the [execution][] of a [block][] can be handled by connecting a [Handle Block Exception block][Handle Block Exception blocks]  to the red exception output port. These blocks allow for specific [match criteria][] to be provided; if an exception matches the criteria it will be handled by the block and can be [saved to a variable][block saved to a variable], otherwise, it will be passed to the next [chained][] exception handling block. This process repeats until the exception is either handled or there are no more blocks in the chain; if the exception is not handled at this level it is passed up to the [workspace level][].
 
@@ -27,7 +27,7 @@ Exceptions thrown within the [execution][] of a [block][] can be handled by conn
 
 ### Chaining Block Exception Handling Blocks
 
-![Chaining Block Exception Handling Blocks](/images/chained-exception.gif)
+{{< figure src="/images/chained-exception.gif" >}}
 
 [Handle Block Exception blocks][] can be chained together by connecting the red exception output port of one [block][] to the red exception input port of another. When an exception is not handled, it will be passed to the next chained exception handling block. This process repeats until the exception is either handled or there are no more blocks in the chain; if the exception is not handled at this level it is passed up to the [workspace level][].
 
@@ -39,7 +39,7 @@ The [Handle Block Exception][] block can be used to handle all exceptions. This 
 
 ## Handling Exceptions at the Workspace level
 
-![Example Message in Messages Grid](/images/workspace-exception.gif)
+{{< figure src="/images/workspace-exception.gif" >}}
 
 Exceptions not handled at the [block level][] are passed up to the workspace level.
 
@@ -64,8 +64,7 @@ The [Handle Workspace Exception][] block can be used to save the handled excepti
 
 ## Handling Exceptions at the Flow level
 
-![Example Message in Messages Grid](/images/flow-exception.gif)
-
+{{< figure src="/images/flow-exception.gif" >}}
 
 If an unhandled exception occurs in or reaches the [Top-Level Workspace][], and is not handled at the [block level][] or [workspace level][], it will be passed up to the flow level, where:
 
@@ -84,7 +83,7 @@ The logic contained within the [Handle Flow Exception][] workspace must end the 
 
 Exceptions that occur within the [workspace][] of the [Handle Flow Exception][] block can be handled at the [block level][] and [workspace level][]. If an exception is not handled, the [execution][] will end with a status of Error.
 
-![Handling Exceptions in the Handle Flow Exception block](/images/flow-error-status.png)
+{{< figure src="/images/flow-error-status.png" >}}
 
 ### Saving the Flow Exception
 

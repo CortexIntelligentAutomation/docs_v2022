@@ -20,7 +20,7 @@ Rethrows an [Exception][Exception Property] which has previously been thrown and
 
 This example will rethrow the following handled [Exception][] thrown by an [Add Item At Beginning][] block:
 
-![Icon](/images/rethrow-original-list-exception.png)
+{{< figure src="/images/rethrow-original-list-exception.png" >}}
 
 #### Properties
 
@@ -32,7 +32,7 @@ This example will rethrow the following handled [Exception][] thrown by an [Add 
 
 Rethrowing `($)Exception` results in the [Exception][Exception Property] being rethrown and shown in the [Exceptions Viewer][]:
 
-![Icon](/images/rethrow-from-list-exception.png)
+{{< figure src="/images/rethrow-from-list-exception.png" >}}
 
 ***
 
@@ -66,7 +66,7 @@ The exceptions thrown by the block can be found below:
 
 Sometimes it is necessary to propagate exceptions thrown in a child flow to the flow that called it. Currently, using the [Rethrow Exception][] block to rethrow the [Exception][] from the [Handle Flow Exception][] workspace is the only way to achieve this. This can be seen below:
 
-![Rethrow from a subflow](/images/rethrow-from-subflow.gif)
+{{< figure src="/images/rethrow-from-subflow.gif" >}}
 
 In future, additional ways to propagate exceptions between flows may be added.
 

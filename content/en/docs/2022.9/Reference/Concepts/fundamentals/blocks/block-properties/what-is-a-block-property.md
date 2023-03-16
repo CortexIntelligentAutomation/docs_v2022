@@ -31,7 +31,7 @@ Input properties can be configured using the following editors:
 - [Variable Editor][]
 - [Expression Editor][]
 
-![Supported Editors](/images/editable/editor-types.png)
+{{< figure src="/images/editable/editor-types.png" >}}
 
 The icons used for Input properties are dark blue to distinguish them from [Output Properties][] or [InputOutput Properties][].
 
@@ -47,7 +47,7 @@ Output properties can be configured using the following editors:
 
 - [Variable Editor][]
 
-![Supported Editors](/images/editable/variable-editor.png)
+{{< figure src="/images/editable/variable-editor.png" >}}
 
 The icon used for Output properties are light blue to distinguish them from [Input Properties][].
 
@@ -62,7 +62,7 @@ Common reasons for discarding include:
 
 To discard an output value, the Output property should use the built-in `($)_` variable.
 
-![Supported Editors](/images/discarded-variable.PNG)
+{{< figure src="/images/discarded-variable.PNG" >}}
 
 ### InputOutput Properties
 
@@ -74,7 +74,7 @@ InputOutput properties can be configured using the following editors:
 
 - [Variable Editor][]
 
-![Supported Editors](/images/editable/variable-editor.png)
+{{< figure src="/images/editable/variable-editor.png" >}}
 
 The icons used for InputOutput properties are light blue to distinguish them from [Input Properties][].
 

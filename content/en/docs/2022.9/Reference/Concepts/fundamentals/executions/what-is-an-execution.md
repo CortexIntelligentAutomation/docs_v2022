@@ -16,7 +16,7 @@ An execution represents a running instance of a [flow][], the execution moves th
 
 ## Anatomy of an Execution
 
-![Example Execution in Executions Grid](/images/execution-in-grid.PNG)
+{{< figure src="/images/execution-in-grid.PNG" >}}
 
 | Property | Notes | Example |
 |----------|-------|---------|
@@ -31,7 +31,7 @@ An execution represents a running instance of a [flow][], the execution moves th
 
 When a [flow][] starts the execution of a child flow using the [Run Flow][] block, any child executions will be shown within a tree in the [Executions Grid][], for example:
 
-![Example Child Execution in Executions Grid](/images/child-execution-in-grid.PNG)
+{{< figure src="/images/child-execution-in-grid.PNG" >}}
 
 ### Execution Status
 

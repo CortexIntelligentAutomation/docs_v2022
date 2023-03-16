@@ -13,9 +13,7 @@ A flow is an object in [Cortex Studio][] that contains the logic and actions (in
 
 ## Anatomy of a Flow
 
-| ![Example Flow](/images/top-level-workspace.svg) |
-|:--:|
-| ***Example Flow*** |
+{{< figure src="/images/top-level-workspace.svg" title="Example Flow" >}}
 
 * Start Flow block
   * Identifies where the [flow execution][] will start
