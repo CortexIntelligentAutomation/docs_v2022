@@ -404,7 +404,7 @@
                 [Cortex.Reference.Blocks.Exceptions.HandleFlow]
                     MainDoc = "/docs/reference/blocks/exceptions/handle-flow-exception"
                     [Cortex.Reference.Blocks.Exceptions.HandleFlow.HandleFlowException]
-                        MainDoc = "/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block"
+                        MainDoc = "/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-workspace-block"
                         BlockRestrictions = "/docs/reference/blocks/exceptions/handle-flow-exception/handle-flow-exception-block/#block-restrictions"
                 [Cortex.Reference.Blocks.Exceptions.HandleWorkspace]
                     MainDoc = "/docs/reference/blocks/exceptions/handle-workspace-exception"
