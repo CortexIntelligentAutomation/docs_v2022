@@ -418,8 +418,6 @@ The exceptions thrown by the block can be found below:
 
 ## Remarks
 
-None
-
 ### Known Limitations
 
 None
